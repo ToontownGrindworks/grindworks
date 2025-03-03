@@ -88,6 +88,10 @@ func get_anomalies() -> Array[Script]:
 	var anomaly_files_pos: Array[String] = ANOMALIES_POSITIVE.duplicate()
 	var anomaly_files_neutral: Array[String] = ANOMALIES_NEUTRAL.duplicate()
 	var anomaly_files_neg: Array[String] = ANOMALIES_NEGATIVE.duplicate()
+	if Util.get_player().force_tightened_security:
+		var ts_path := load("res://scenes/game_floor/floor_modifiers/scripts/anomalies/floor_mod_level_up.gd")
+		mods.append(ts_path)
+		anomaly_files_neg.erase(ts_path)
 	for i in mod_count:
 		var rng_val := RandomService.randf_channel('floor_mods')
 		var mod_array: Array[String]

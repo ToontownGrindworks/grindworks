@@ -87,6 +87,7 @@ var less_shop_items := false
 var better_battle_rewards := false
 var throw_heals := true
 var trap_needs_lure := true
+var force_tightened_security := false
 ## Damage immunity from light-based obstacles, such as spotlights and goon beams.
 var immune_to_light_damage := false
 var laff_lock_enabled := false:

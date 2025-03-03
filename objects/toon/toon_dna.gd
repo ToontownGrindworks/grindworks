@@ -26,6 +26,7 @@ enum ToonSpecies {
 @export var head_index := 0
 @export var eyelashes := true
 @export var skirt := false
+@export var cheesy_effect := 0
 
 const SPECIES_SCALE := {
 	ToonSpecies.BEAR : 1.0,

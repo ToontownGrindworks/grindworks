@@ -4,12 +4,11 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://dyp4tbdvehhbu"
-path="res://.godot/imported/treasure_chest.fbx-d399a15272bb3709c253ceb8e58370d8.scn"
+valid=false
 
 [deps]
 
 source_file="res://models/props/treasure_chest/treasure_chest.fbx"
-dest_files=["res://.godot/imported/treasure_chest.fbx-d399a15272bb3709c253ceb8e58370d8.scn"]
 
 [params]
 
