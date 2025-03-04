@@ -1,0 +1,68 @@
+[gd_resource type="Resource" script_class="PlayerCharacter" load_steps=16 format=3 uid="uid://ikosvab38gt0"]
+
+[ext_resource type="Script" path="res://objects/battle/battle_resources/stats.gd" id="1_atowm"]
+[ext_resource type="Script" path="res://objects/toon/clothing/toon_bottoms.gd" id="2_dukkn"]
+[ext_resource type="Texture2D" uid="uid://0fi81q1rtwux" path="res://models/toon/textures/clothes/shorts/lazy_bones_bot.png" id="3_3k7u4"]
+[ext_resource type="Script" path="res://objects/toon/toon_dna.gd" id="4_tdoti"]
+[ext_resource type="Script" path="res://objects/toon/clothing/toon_shirt.gd" id="5_ogp01"]
+[ext_resource type="Texture2D" uid="uid://dk6hgv0v5ylww" path="res://models/toon/textures/clothes/shirts/lazy_bones_top.png" id="6_u1jid"]
+[ext_resource type="Texture2D" uid="uid://bx4oai6q4ms70" path="res://models/toon/textures/clothes/shirts/lazy_bones_sleeve.png" id="7_uhfjh"]
+[ext_resource type="Resource" uid="uid://tyi7ukxtvcgc" path="res://objects/battle/battle_resources/gag_loadouts/loadouts/standard_loadout.tres" id="8_m7j15"]
+[ext_resource type="Script" path="res://objects/player/character.gd" id="9_a086s"]
+[ext_resource type="Script" path="res://objects/items/classes/item.gd" id="10_368g1"]
+[ext_resource type="Resource" uid="uid://b52pii4rouksj" path="res://objects/items/resources/passive/Judgement.tres" id="11_dbb6c"]
+
+[sub_resource type="Resource" id="Resource_ls34v"]
+script = ExtResource("1_atowm")
+damage = 1.0
+defense = 1.0
+evasiveness = 1.5
+accuracy = 1.0
+speed = 1.0
+max_turns = 3
+max_hp = 1
+hp = 1
+turns = 3
+
+[sub_resource type="Resource" id="Resource_lhs2d"]
+script = ExtResource("2_dukkn")
+texture = ExtResource("3_3k7u4")
+base_color = Color(1, 1, 1, 1)
+color_type = 0
+
+[sub_resource type="Resource" id="Resource_qaohw"]
+script = ExtResource("5_ogp01")
+shirt_texture = ExtResource("6_u1jid")
+sleeve_texture = ExtResource("7_uhfjh")
+base_color = Color(1, 1, 1, 1)
+sleeve_color = Color(1, 1, 1, 1)
+color_type = 0
+
+[sub_resource type="Resource" id="Resource_hwgc0"]
+script = ExtResource("4_tdoti")
+body_type = 0
+species = 9
+head_index = 0
+eyelashes = false
+skirt = false
+cheesy_effect = 0
+head_color = Color(1, 1, 1, 1)
+torso_color = Color(0.856067, 0.856067, 0.856067, 1)
+leg_color = Color(0.798532, 0.539388, 0.738247, 1)
+shirt = SubResource("Resource_qaohw")
+bottoms = SubResource("Resource_lhs2d")
+
+[resource]
+script = ExtResource("9_a086s")
+character_name = "sans."
+character_summary = "- Permanent 1 Laff
+- Most damage delayed to end of round
+- Debuff stacks may stun Cog
+- ANY damage can be dodged with a QTE
+- Starts with all tracks and 3 turns"
+dna = SubResource("Resource_hwgc0")
+gag_loadout = ExtResource("8_m7j15")
+starting_laff = 1
+starting_items = Array[ExtResource("10_368g1")]([ExtResource("11_dbb6c")])
+base_stats = SubResource("Resource_ls34v")
+random_character_stored_name = ""

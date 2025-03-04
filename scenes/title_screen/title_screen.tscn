@@ -57,7 +57,7 @@ font_color = Color(1, 1, 0, 1)
 shadow_size = 8
 shadow_color = Color(0.411688, 0.411688, 3.85046e-07, 1)
 
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_fhoyq"]
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_f0t3g"]
 resource_local_to_scene = true
 shader = ExtResource("10_ngpco")
 shader_parameter/Shift_Hue = 0.585
@@ -73,7 +73,7 @@ shader = ExtResource("10_ngpco")
 shader_parameter/Shift_Hue = 0.045
 shader_parameter/alpha = 1.0
 
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_4eexr"]
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_ah8tx"]
 resource_local_to_scene = true
 shader = ExtResource("10_ngpco")
 shader_parameter/Shift_Hue = 0.585
@@ -269,7 +269,7 @@ alignment = 1
 
 [node name="BackButton" parent="GUI/NewGameMenu/ButtonContainer" instance=ExtResource("1_6oj83")]
 unique_name_in_owner = true
-material = SubResource("ShaderMaterial_fhoyq")
+material = SubResource("ShaderMaterial_f0t3g")
 custom_minimum_size = Vector2(164, 64)
 layout_mode = 2
 size_flags_horizontal = 0
@@ -374,7 +374,7 @@ label_settings = SubResource("LabelSettings_5vlir")
 
 [node name="ContinueButton" parent="GUI/NewGameMenu/MiddleButtons" instance=ExtResource("1_6oj83")]
 unique_name_in_owner = true
-material = SubResource("ShaderMaterial_4eexr")
+material = SubResource("ShaderMaterial_ah8tx")
 custom_minimum_size = Vector2(164, 64)
 layout_mode = 2
 size_flags_horizontal = 0

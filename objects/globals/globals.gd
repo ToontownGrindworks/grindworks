@@ -22,6 +22,7 @@ var suits := LazyLoader.defer_dict({
 ## Player Characters
 const TOON_UNLOCK_ORDER : Array[PlayerCharacter] = [
 	preload('res://objects/player/characters/king_pants.tres'),
+	preload('res://objects/player/characters/sans.tres'),
 	preload('res://objects/player/characters/flippy.tres'),
 	preload('res://objects/player/characters/clerk_clara.tres'),
 	preload('res://objects/player/characters/julius_wheezer.tres'),
@@ -162,6 +163,7 @@ var ToonHeads := LazyLoader.defer_dict({
 	mouse = 'res://objects/toon/head/mouse_heads.tscn',
 	pig = 'res://objects/toon/head/pig_heads.tscn',
 	rabbit = 'res://objects/toon/head/rabbit_heads.tscn',
+	sans = 'res://objects/toon/head/sans_heads.tscn',
 })
 
 
@@ -178,6 +180,7 @@ enum ToonDial {
 
 var yelp := LazyLoader.defer_dict({
 	ToonDNA.ToonSpecies.BEAR : "res://audio/sfx/toon/bear/AV_bear_exclaim.ogg",
+	ToonDNA.ToonSpecies.SANS : "res://audio/sfx/toon/bear/AV_bear_exclaim.ogg",
 	ToonDNA.ToonSpecies.CAT : "res://audio/sfx/toon/cat/AV_cat_exclaim.ogg",
 	ToonDNA.ToonSpecies.DOG : "res://audio/sfx/toon/dog/AV_dog_exclaim.ogg",
 	ToonDNA.ToonSpecies.DUCK : "res://audio/sfx/toon/duck/AV_duck_exclaim.ogg",
@@ -189,6 +192,7 @@ var yelp := LazyLoader.defer_dict({
 })
 var howl := LazyLoader.defer_dict({
 	ToonDNA.ToonSpecies.BEAR : "res://audio/sfx/toon/bear/AV_bear_howl.ogg",
+	ToonDNA.ToonSpecies.SANS : "res://audio/sfx/toon/bear/AV_bear_howl.ogg",
 	ToonDNA.ToonSpecies.CAT : "res://audio/sfx/toon/cat/AV_cat_howl.ogg",
 	ToonDNA.ToonSpecies.DOG : "res://audio/sfx/toon/dog/AV_dog_howl.ogg",
 	ToonDNA.ToonSpecies.DUCK : "res://audio/sfx/toon/duck/AV_duck_howl.ogg",
@@ -200,6 +204,7 @@ var howl := LazyLoader.defer_dict({
 })
 var speak_long := LazyLoader.defer_dict({
 	ToonDNA.ToonSpecies.BEAR : "res://audio/sfx/toon/bear/AV_bear_long.ogg",
+	ToonDNA.ToonSpecies.SANS : "res://audio/sfx/toon/bear/AV_bear_long.ogg",
 	ToonDNA.ToonSpecies.CAT : "res://audio/sfx/toon/cat/AV_cat_long.ogg",
 	ToonDNA.ToonSpecies.DOG : "res://audio/sfx/toon/dog/AV_dog_long.ogg",
 	ToonDNA.ToonSpecies.DUCK : "res://audio/sfx/toon/duck/AV_duck_long.ogg",
@@ -211,6 +216,7 @@ var speak_long := LazyLoader.defer_dict({
 })
 var speak_med := LazyLoader.defer_dict({
 	ToonDNA.ToonSpecies.BEAR : "res://audio/sfx/toon/bear/AV_bear_med.ogg",
+	ToonDNA.ToonSpecies.SANS : "res://audio/sfx/toon/bear/AV_bear_med.ogg",
 	ToonDNA.ToonSpecies.CAT : "res://audio/sfx/toon/cat/AV_cat_med.ogg",
 	ToonDNA.ToonSpecies.DOG : "res://audio/sfx/toon/dog/AV_dog_med.ogg",
 	ToonDNA.ToonSpecies.DUCK : "res://audio/sfx/toon/duck/AV_duck_med.ogg",
@@ -222,6 +228,7 @@ var speak_med := LazyLoader.defer_dict({
 })
 var speak_short := LazyLoader.defer_dict({
 	ToonDNA.ToonSpecies.BEAR : "res://audio/sfx/toon/bear/AV_bear_short.ogg",
+	ToonDNA.ToonSpecies.SANS : "res://audio/sfx/toon/bear/AV_bear_short.ogg",
 	ToonDNA.ToonSpecies.CAT : "res://audio/sfx/toon/cat/AV_cat_short.ogg",
 	ToonDNA.ToonSpecies.DOG : "res://audio/sfx/toon/dog/AV_dog_short.ogg",
 	ToonDNA.ToonSpecies.DUCK : "res://audio/sfx/toon/duck/AV_duck_short.ogg",
@@ -233,6 +240,7 @@ var speak_short := LazyLoader.defer_dict({
 })
 var question := LazyLoader.defer_dict({
 	ToonDNA.ToonSpecies.BEAR : "res://audio/sfx/toon/bear/AV_bear_question.ogg",
+	ToonDNA.ToonSpecies.SANS : "res://audio/sfx/toon/bear/AV_bear_question.ogg",
 	ToonDNA.ToonSpecies.CAT : "res://audio/sfx/toon/cat/AV_cat_question.ogg",
 	ToonDNA.ToonSpecies.DOG : "res://audio/sfx/toon/dog/AV_dog_question.ogg",
 	ToonDNA.ToonSpecies.DUCK : "res://audio/sfx/toon/duck/AV_duck_question.ogg",
@@ -244,6 +252,7 @@ var question := LazyLoader.defer_dict({
 })
 var falling := LazyLoader.defer_dict({
 	ToonDNA.ToonSpecies.BEAR : "res://audio/sfx/sequences/elevator_trick/elevator_trick_fall-bear.ogg",
+	ToonDNA.ToonSpecies.SANS : "res://audio/sfx/sequences/elevator_trick/elevator_trick_fall-bear.ogg",
 	ToonDNA.ToonSpecies.CAT : "res://audio/sfx/sequences/elevator_trick/elevator_trick_fall-cat.ogg",
 	ToonDNA.ToonSpecies.DOG : "res://audio/sfx/sequences/elevator_trick/elevator_trick_fall-dog.ogg",
 	ToonDNA.ToonSpecies.DUCK : "res://audio/sfx/sequences/elevator_trick/elevator_trick_fall-duck.ogg",
@@ -279,6 +288,7 @@ func get_species_sfx(speech_type : ToonDial, dna : ToonDNA) -> AudioStream:
 ## Laff Meters
 var laff_meters := {
 	bear ="res://ui_assets/player_ui/laff_meter/bear.png",
+	sans ="res://ui_assets/player_ui/laff_meter/bear.png",
 	cat ="res://ui_assets/player_ui/laff_meter/cat.png",
 	dog ="res://ui_assets/player_ui/laff_meter/dog.png",
 	duck ="res://ui_assets/player_ui/laff_meter/duck.png",

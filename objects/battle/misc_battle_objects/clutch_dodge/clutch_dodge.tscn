@@ -1,0 +1,197 @@
+[gd_scene load_steps=14 format=3 uid="uid://ckg6eaqorc174"]
+
+[ext_resource type="Script" path="res://objects/battle/misc_battle_objects/clutch_dodge/clutch_dodge.gd" id="1_khdpb"]
+[ext_resource type="Shader" path="res://objects/pause_menu/canvas_blur_shader.gdshader" id="2_euxtx"]
+[ext_resource type="PackedScene" uid="uid://b0d1er4oqiqcn" path="res://objects/general_ui/general_button/general_button.tscn" id="3_x5s3a"]
+[ext_resource type="Shader" path="res://scenes/title_screen/hue_shift.gdshader" id="4_h5wk2"]
+[ext_resource type="Texture2D" uid="uid://ddcktpjy3gdew" path="res://ui_assets/misc/uiAccessoryDelete_up.png" id="5_gtjum"]
+[ext_resource type="Texture2D" uid="uid://b7ri5sq021cvo" path="res://ui_assets/misc/uiAccessoryDelete_down.png" id="6_68rtl"]
+[ext_resource type="Texture2D" uid="uid://dn8vndd37lqom" path="res://ui_assets/misc/uiAccessoryDelete_rollover.png" id="7_b243n"]
+[ext_resource type="Texture2D" uid="uid://ddsopkixvucl4" path="res://objects/battle/misc_battle_objects/clutch_dodge/f6f18a860a90dd492e6e68464d85201b.webp" id="8_axhdr"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_lvkcj"]
+shader = ExtResource("2_euxtx")
+shader_parameter/strength = 10.0
+shader_parameter/sample_power = 3
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_10epn"]
+shader = ExtResource("4_h5wk2")
+shader_parameter/Shift_Hue = 0.585
+shader_parameter/alpha = 1.0
+
+[sub_resource type="Animation" id="Animation_klw45"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("BackdropHolder:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("BackdropHolder/Backdrop/Buttons:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-1, -10)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Blur:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_yqy0f"]
+resource_name = "pause_on"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("BackdropHolder:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.166667),
+"transitions": PackedFloat32Array(0.15, 1),
+"update": 0,
+"values": [Vector2(0, 100), Vector2(0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("BackdropHolder/Backdrop/Buttons:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.333333),
+"transitions": PackedFloat32Array(0.15, 1),
+"update": 0,
+"values": [Vector2(-1, -10), Vector2(-1, -10)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Blur:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.166667),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_gpmgs"]
+_data = {
+"RESET": SubResource("Animation_klw45"),
+"pause_on": SubResource("Animation_yqy0f")
+}
+
+[node name="ClutchDodge" type="Control"]
+process_mode = 3
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_khdpb")
+
+[node name="Blur" type="ColorRect" parent="."]
+unique_name_in_owner = true
+material = SubResource("ShaderMaterial_lvkcj")
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.856067, 0.856067, 0.856067, 1)
+
+[node name="BackdropHolder" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="Backdrop" type="ColorRect" parent="BackdropHolder"]
+custom_minimum_size = Vector2(0, 80)
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -80.0
+grow_horizontal = 2
+grow_vertical = 0
+color = Color(0, 0, 0, 0.34902)
+
+[node name="Buttons" type="HBoxContainer" parent="BackdropHolder/Backdrop"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -1.0
+offset_top = -10.0
+offset_right = -1.0
+offset_bottom = 10.0
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset = Vector2(152, 126)
+theme_override_constants/separation = 64
+alignment = 1
+
+[node name="Resume" parent="BackdropHolder/Backdrop/Buttons" instance=ExtResource("3_x5s3a")]
+material = SubResource("ShaderMaterial_10epn")
+custom_minimum_size = Vector2(230, 100)
+layout_mode = 2
+texture_normal = ExtResource("5_gtjum")
+texture_pressed = ExtResource("6_68rtl")
+texture_hover = ExtResource("7_b243n")
+texture_disabled = ExtResource("6_68rtl")
+hover_db_offset = 6.0
+press_db_offset = 0.0
+text = "Nah, I'd win"
+
+[node name="Quit" parent="BackdropHolder/Backdrop/Buttons" instance=ExtResource("3_x5s3a")]
+custom_minimum_size = Vector2(230, 100)
+layout_mode = 2
+texture_normal = ExtResource("5_gtjum")
+texture_pressed = ExtResource("6_68rtl")
+texture_hover = ExtResource("7_b243n")
+texture_disabled = ExtResource("6_68rtl")
+hover_db_offset = 6.0
+press_db_offset = 0.0
+text = "It's so over"
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_gpmgs")
+}
+
+[node name="F6f18a860a90Dd492e6e68464d85201b" type="Sprite2D" parent="."]
+position = Vector2(585, 281)
+scale = Vector2(4.89844, 3.49219)
+texture = ExtResource("8_axhdr")
+
+[connection signal="pressed" from="BackdropHolder/Backdrop/Buttons/Resume" to="." method="resume"]
+[connection signal="pressed" from="BackdropHolder/Backdrop/Buttons/Quit" to="." method="quit"]
