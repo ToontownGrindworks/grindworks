@@ -4,7 +4,7 @@
 [ext_resource type="Script" path="res://objects/items/classes/head_placement.gd" id="2_844g6"]
 [ext_resource type="Texture2D" uid="uid://cwsvhe2j2b3i6" path="res://models/accessories/glasses/dorky/dork_glasses.glb-pix-1.png" id="3_xdo4s"]
 [ext_resource type="Script" path="res://objects/items/custom/item_corporate_spectacles.gd" id="4_8fxce"]
-[ext_resource type="PackedScene" uid="uid://b53p74ixvf8rh" path="res://models/accessories/glasses/dorky/dork_glasses.glb" id="5_cfb0f"]
+[ext_resource type="PackedScene" uid="uid://6wh3uip2himx" path="res://models/accessories/glasses/pants_glasses/pants_glasses.tscn" id="5_k307b"]
 [ext_resource type="Script" path="res://objects/items/classes/item_accessory.gd" id="5_x1t2n"]
 
 [sub_resource type="Resource" id="Resource_8pqho"]
@@ -269,7 +269,7 @@ species = 8
 head_index = 1
 position = Vector3(0.01, -0.14, 0.15)
 rotation = Vector3(-24.12, 0, 0)
-scale = Vector3(1, 1, 1)
+scale = Vector3(0.36, 0.36, 0.3)
 
 [sub_resource type="Resource" id="Resource_bkf5t"]
 script = ExtResource("2_844g6")
@@ -293,7 +293,7 @@ ui_cam_offset = 0.0
 item_name = "Corporate Spectacles"
 item_description = "We are fighter, brighter, igniter..."
 big_description = "All floors have Tightened Security, 20 second battle timer"
-model = ExtResource("5_cfb0f")
+model = ExtResource("5_k307b")
 stats_add = {}
 stats_multiply = {}
 player_values = {
