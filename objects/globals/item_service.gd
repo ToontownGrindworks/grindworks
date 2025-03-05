@@ -53,6 +53,12 @@ func get_random_item(pool: ItemPool, override_rolls := false) -> Item:
 	for item in pool.items:
 		if not item in seen_items:
 			trimmed_pool.append(item)
+			
+	# Transcendent Master: Trim out accessories
+	if !Util.get_player().stats.allow_item_chests:
+		for item in trimmed_pool:
+			if item in load("res://objects/items/pools/accessories.tres").items:
+				trimmed_pool.erase(item)
 	
 	# If no item can be given to the player, just give them treasure
 	if trimmed_pool.size() == 0:

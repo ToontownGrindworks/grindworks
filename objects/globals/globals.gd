@@ -32,6 +32,7 @@ const TOON_UNLOCK_ORDER : Array[PlayerCharacter] = [
 
 const CUSTOM_TOONS : Array[PlayerCharacter] = [
 	preload('res://objects/player/characters/king_pants.tres'),
+	preload('res://objects/player/characters/transcendent_master.tres'),
 ]
 
 var ALL_TOONS : Array[PlayerCharacter] = []

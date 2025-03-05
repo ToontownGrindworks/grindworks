@@ -68,7 +68,8 @@ func randomtoon(player: Player) -> void:
 	# Sneaky way of making sure only gags are randomized later
 	character_name = 'RandomGags'
 
-func randomgags(player: Player) -> void:
+# please do not name your toon generate_random_gags i will cry bruh
+func generate_random_gags(player: Player) -> void:
 	# Get one random offense and one random support track
 	var offense_tracks: Array[Track] = []
 	var support_tracks: Array[Track] = []
@@ -93,6 +94,9 @@ func randomgags(player: Player) -> void:
 	# Start player off with anywhere from level 1-3 gags
 	for track in selected_tracks:
 		player.stats.gags_unlocked[track.track_name] += RandomService.randi_channel('true_random') % 2 + 1
+
+func randomgags(player: Player) -> void:
+	generate_random_gags(player)
 	
 	# Reset character name
 	character_name = 'RandomToon'
@@ -132,3 +136,12 @@ func kingpants(player: Player) -> void:
 	player.stats.gags_unlocked['Throw'] = 1
 	player.stats.gags_unlocked['Drop'] = 1
 	player.stats.luck = 1.05
+
+func doctorgooglymoogly(player: Player) -> void:
+	generate_random_gags(player)
+
+func transcendent_master(player: Player) -> void:
+	player.stats.money_gain_rate /= 2
+	player.stats.allow_item_chests = false
+	player.stats.gags_unlocked['Squirt'] = 1
+	player.stats.gags_unlocked['Drop'] = 1

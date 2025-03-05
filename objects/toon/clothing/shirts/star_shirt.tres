@@ -8,6 +8,6 @@
 script = ExtResource("1_yb38e")
 shirt_texture = ExtResource("2_8wg8h")
 sleeve_texture = ExtResource("3_nw18o")
-base_color = Color(1, 1, 1, 1)
-sleeve_color = Color(1, 1, 1, 1)
+base_color = Color(0.564763, 0.000248932, 0.570514, 1)
+sleeve_color = Color(0.564706, 0, 0.568627, 1)
 color_type = 0
