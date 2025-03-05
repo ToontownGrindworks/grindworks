@@ -183,7 +183,7 @@ func apply_item() -> void:
 	# Reparent accessories to the player
 	# They will get tweened into position after this
 	if item is ItemAccessory:
-		var bone := ItemAccessory.get_bone(item,Util.get_player())
+		var bone := ItemAccessory.get_bone(item,Util.get_player().toon)
 		remove_current_item(bone)
 		model.reparent(bone)
 	
