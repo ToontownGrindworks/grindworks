@@ -17,12 +17,16 @@ enum SuitType {
 }
 @export var suit := SuitType.SUIT_A
 
-@export var custom_blazer_tex: Texture2D
-@export var custom_arm_tex: Texture2D
-@export var custom_leg_tex: Texture2D
-@export var custom_wrist_tex: Texture2D
-@export var custom_hand_tex: Texture2D
-@export var custom_shoe_tex: Texture2D
+# New suit texture!
+@export var custom_suit_tex: Texture2D
+
+# legacy
+var custom_blazer_tex: Texture2D
+var custom_arm_tex: Texture2D
+var custom_leg_tex: Texture2D
+var custom_wrist_tex: Texture2D
+var custom_hand_tex: Texture2D
+var custom_shoe_tex: Texture2D
 
 @export var cog_name: String = "Cog"
 @export var name_plural: String = ""
@@ -50,7 +54,8 @@ enum SuitType {
 
 @export var external_assets := {
 	head_model = "",
-	head_textures = []
+	head_textures = [],
+	suit_texture = ""
 }
 
 func get_head() -> Node3D:
@@ -149,5 +154,28 @@ func combine_names(name1: String, name2: String) -> String:
 func get_plural_name() -> String:
 	if not name_plural == "": return name_plural
 	return cog_name + "s"
+
+func update_custom_suit_texture():
+	var old_tex: Texture2D
+	
+	if custom_blazer_tex:
+		if not old_tex: old_tex = custom_blazer_tex
+		custom_blazer_tex = null
+	if custom_arm_tex:
+		if not old_tex: old_tex = custom_arm_tex
+		custom_arm_tex = null
+	if custom_leg_tex:
+		if not old_tex: old_tex = custom_leg_tex
+		custom_leg_tex = null
+	
+	if old_tex:
+		# Weird method but it works :v
+		var slice_id = old_tex.resource_path.get_slice_count("/") - 2
+		var parent = old_tex.resource_path.get_slice("/", slice_id)
+		custom_suit_tex = load("res://models/cogs/textures/suit_" + parent + ".png")
+	
+	if external_assets.has('suit_texture') and external_assets['suit_texture'] != "":
+		var img: Image = Image.load_from_file(external_assets['suit_texture'])
+		custom_suit_tex = ImageTexture.create_from_image(img)
 
 const DEFAULT_HEAD := "res://models/cogs/heads/flunky.glb"

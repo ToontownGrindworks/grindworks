@@ -1,11 +1,10 @@
-[gd_resource type="Resource" script_class="CogDNA" load_steps=14 format=3 uid="uid://d0jhddwl6gem1"]
+[gd_resource type="Resource" script_class="CogDNA" load_steps=13 format=3 uid="uid://d0jhddwl6gem1"]
 
 [ext_resource type="Script" path="res://objects/battle/battle_resources/cog_attacks/cog_attack.gd" id="1_nmqtv"]
 [ext_resource type="Resource" uid="uid://sey860nn14jg" path="res://objects/battle/battle_resources/cog_attacks/resources/pick_pocket.tres" id="2_fstwe"]
 [ext_resource type="Resource" uid="uid://c3gg5tsci6aye" path="res://objects/battle/battle_resources/cog_attacks/resources/hang_up.tres" id="4_4hbio"]
 [ext_resource type="Resource" uid="uid://by0leo7nlf311" path="res://objects/battle/battle_resources/cog_attacks/resources/heckle.tres" id="4_se2ob"]
-[ext_resource type="Texture2D" uid="uid://dnrnk4pxnsid2" path="res://models/cogs/textures/clown/sleeveClown.png" id="7_qhoq4"]
-[ext_resource type="Texture2D" uid="uid://btgvnsbwmgf80" path="res://models/cogs/textures/clown/blazerClown.png" id="8_5x5k3"]
+[ext_resource type="Texture2D" uid="uid://cm144f5fnkcrm" path="res://models/cogs/textures/suit_clown.png" id="5_0icb4"]
 [ext_resource type="PackedScene" uid="uid://bggx7d4j5bnr5" path="res://models/cogs/heads/clown2.glb" id="9_xupvl"]
 [ext_resource type="Texture2D" uid="uid://bo5ojd8rwaa68" path="res://models/cogs/heads/clown1_faceClown.png" id="10_y07gu"]
 [ext_resource type="Texture2D" uid="uid://bwmakebpdpncg" path="res://models/cogs/heads/clown1_hatClown.png" id="11_fn4pt"]
@@ -18,9 +17,7 @@
 script = ExtResource("12_x8ntq")
 department = 0
 suit = 1
-custom_blazer_tex = ExtResource("8_5x5k3")
-custom_arm_tex = ExtResource("7_qhoq4")
-custom_leg_tex = ExtResource("7_qhoq4")
+custom_suit_tex = ExtResource("5_0icb4")
 cog_name = "Clown"
 name_plural = ""
 head = ExtResource("9_xupvl")

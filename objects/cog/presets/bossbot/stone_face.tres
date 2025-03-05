@@ -1,12 +1,10 @@
-[gd_resource type="Resource" script_class="CogDNA" load_steps=12 format=3 uid="uid://daagjnbh60gqo"]
+[gd_resource type="Resource" script_class="CogDNA" load_steps=10 format=3 uid="uid://daagjnbh60gqo"]
 
 [ext_resource type="Script" path="res://objects/battle/battle_resources/cog_attacks/cog_attack.gd" id="1_hu7aq"]
 [ext_resource type="Resource" uid="uid://dxpqtt8gh5brv" path="res://objects/battle/battle_resources/cog_attacks/resources/finger_wag.tres" id="2_q8r7n"]
 [ext_resource type="Resource" uid="uid://dwkmwkdn3ws4k" path="res://objects/battle/battle_resources/cog_attacks/resources/evil_eye.tres" id="4_avhkc"]
 [ext_resource type="Resource" uid="uid://sey860nn14jg" path="res://objects/battle/battle_resources/cog_attacks/resources/pick_pocket.tres" id="4_os2ng"]
-[ext_resource type="Texture2D" uid="uid://2fj5qbvh3qa1" path="res://models/cogs/textures/misc/sleeve_2.png" id="5_oy7eb"]
-[ext_resource type="Texture2D" uid="uid://idf1e68fml3o" path="res://models/cogs/textures/misc/blazer_1.png" id="6_2sxav"]
-[ext_resource type="Texture2D" uid="uid://o3hrfvdxeisb" path="res://models/cogs/textures/misc/leg_4.png" id="7_snpeu"]
+[ext_resource type="Texture2D" uid="uid://b4fvjpcmb10lt" path="res://models/cogs/textures/suit_misc.png" id="5_jx7r2"]
 [ext_resource type="PackedScene" uid="uid://bvvma15ymq0yp" path="res://models/cogs/heads/statueman.tscn" id="8_e7tpa"]
 [ext_resource type="Script" path="res://objects/cog/cogdna.gd" id="9_ya37k"]
 [ext_resource type="Script" path="res://objects/battle/battle_resources/status_effect.gd" id="10_f4rxc"]
@@ -16,9 +14,7 @@
 script = ExtResource("9_ya37k")
 department = 3
 suit = 0
-custom_blazer_tex = ExtResource("6_2sxav")
-custom_arm_tex = ExtResource("5_oy7eb")
-custom_leg_tex = ExtResource("7_snpeu")
+custom_suit_tex = ExtResource("5_jx7r2")
 cog_name = "Stone Face"
 name_plural = ""
 head = ExtResource("8_e7tpa")

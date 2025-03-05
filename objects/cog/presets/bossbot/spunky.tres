@@ -1,11 +1,9 @@
-[gd_resource type="Resource" script_class="CogDNA" load_steps=12 format=3 uid="uid://cl12y4k5plcs0"]
+[gd_resource type="Resource" script_class="CogDNA" load_steps=10 format=3 uid="uid://cl12y4k5plcs0"]
 
 [ext_resource type="Script" path="res://objects/battle/battle_resources/cog_attacks/cog_attack.gd" id="1_j2m33"]
 [ext_resource type="Resource" uid="uid://dimhdaxn1tyey" path="res://objects/battle/battle_resources/cog_attacks/resources/tee_off.tres" id="2_pbwfv"]
 [ext_resource type="Resource" uid="uid://c27ek2anjbx88" path="res://objects/battle/battle_resources/cog_attacks/resources/pound_key.tres" id="2_y6htd"]
-[ext_resource type="Texture2D" uid="uid://2fj5qbvh3qa1" path="res://models/cogs/textures/misc/sleeve_2.png" id="4_761eu"]
-[ext_resource type="Texture2D" uid="uid://idf1e68fml3o" path="res://models/cogs/textures/misc/blazer_1.png" id="5_a648u"]
-[ext_resource type="Texture2D" uid="uid://o3hrfvdxeisb" path="res://models/cogs/textures/misc/leg_4.png" id="6_jqj4w"]
+[ext_resource type="Texture2D" uid="uid://b4fvjpcmb10lt" path="res://models/cogs/textures/suit_misc.png" id="4_juncr"]
 [ext_resource type="PackedScene" uid="uid://dyur4g6dt1hio" path="res://models/cogs/heads/Spunky.glb" id="7_xwdgh"]
 [ext_resource type="Texture2D" uid="uid://c4rtcb5vx4ej4" path="res://models/cogs/heads/Spunky_Spunky.png" id="8_dh2si"]
 [ext_resource type="Script" path="res://objects/cog/cogdna.gd" id="9_5dpq5"]
@@ -16,9 +14,7 @@
 script = ExtResource("9_5dpq5")
 department = 3
 suit = 0
-custom_blazer_tex = ExtResource("5_a648u")
-custom_arm_tex = ExtResource("4_761eu")
-custom_leg_tex = ExtResource("6_jqj4w")
+custom_suit_tex = ExtResource("4_juncr")
 cog_name = "Spunky"
 name_plural = ""
 head = ExtResource("7_xwdgh")

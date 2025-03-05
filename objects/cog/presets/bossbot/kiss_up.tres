@@ -1,15 +1,13 @@
-[gd_resource type="Resource" script_class="CogDNA" load_steps=13 format=3 uid="uid://crfps8y3g8jav"]
+[gd_resource type="Resource" script_class="CogDNA" load_steps=11 format=3 uid="uid://crfps8y3g8jav"]
 
 [ext_resource type="Script" path="res://objects/battle/battle_resources/cog_attacks/cog_attack.gd" id="1_3xc46"]
 [ext_resource type="Resource" uid="uid://c24yy1wqmg24o" path="res://objects/battle/battle_resources/cog_attacks/resources/razzle_dazzle.tres" id="3_i2f1o"]
 [ext_resource type="Resource" uid="uid://dxpqtt8gh5brv" path="res://objects/battle/battle_resources/cog_attacks/resources/finger_wag.tres" id="4_5hb1l"]
 [ext_resource type="Resource" uid="uid://doowiij7lpxy1" path="res://objects/battle/battle_resources/cog_attacks/resources/rubber_stamp.tres" id="4_rn8tn"]
+[ext_resource type="Texture2D" uid="uid://b4fvjpcmb10lt" path="res://models/cogs/textures/suit_misc.png" id="5_goajp"]
 [ext_resource type="PackedScene" uid="uid://irtn2e1gj41k" path="res://models/cogs/heads/mingler.glb" id="5_ilthg"]
-[ext_resource type="Texture2D" uid="uid://2fj5qbvh3qa1" path="res://models/cogs/textures/misc/sleeve_2.png" id="5_kga1q"]
 [ext_resource type="Texture2D" uid="uid://m6esimykv0kv" path="res://models/cogs/heads/kissup_tex.png" id="6_f6ooy"]
-[ext_resource type="Texture2D" uid="uid://idf1e68fml3o" path="res://models/cogs/textures/misc/blazer_1.png" id="6_iorra"]
 [ext_resource type="Script" path="res://objects/cog/cogdna.gd" id="7_5vyas"]
-[ext_resource type="Texture2D" uid="uid://o3hrfvdxeisb" path="res://models/cogs/textures/misc/leg_4.png" id="7_ciwiw"]
 [ext_resource type="Script" path="res://objects/battle/battle_resources/status_effect.gd" id="8_orhpk"]
 [ext_resource type="Resource" uid="uid://b4vuuxwhv0d3v" path="res://objects/battle/battle_resources/status_effects/resources/status_effect_mod_cog.tres" id="9_rpq43"]
 
@@ -17,9 +15,7 @@
 script = ExtResource("7_5vyas")
 department = 3
 suit = 0
-custom_blazer_tex = ExtResource("6_iorra")
-custom_arm_tex = ExtResource("5_kga1q")
-custom_leg_tex = ExtResource("7_ciwiw")
+custom_suit_tex = ExtResource("5_goajp")
 cog_name = "Kiss Up"
 name_plural = ""
 head = ExtResource("5_ilthg")

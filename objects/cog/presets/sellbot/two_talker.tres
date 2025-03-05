@@ -1,25 +1,21 @@
-[gd_resource type="Resource" script_class="CogDNA" load_steps=13 format=3 uid="uid://d2dgwcpb35g3q"]
+[gd_resource type="Resource" script_class="CogDNA" load_steps=11 format=3 uid="uid://d2dgwcpb35g3q"]
 
 [ext_resource type="Script" path="res://objects/battle/battle_resources/cog_attacks/cog_attack.gd" id="1_k7mja"]
 [ext_resource type="Resource" uid="uid://dwkmwkdn3ws4k" path="res://objects/battle/battle_resources/cog_attacks/resources/evil_eye.tres" id="2_qg0m6"]
 [ext_resource type="Resource" uid="uid://c24yy1wqmg24o" path="res://objects/battle/battle_resources/cog_attacks/resources/razzle_dazzle.tres" id="3_axc08"]
 [ext_resource type="Resource" uid="uid://c3gg5tsci6aye" path="res://objects/battle/battle_resources/cog_attacks/resources/hang_up.tres" id="4_v5qjv"]
+[ext_resource type="Texture2D" uid="uid://b4fvjpcmb10lt" path="res://models/cogs/textures/suit_misc.png" id="5_3ac5o"]
 [ext_resource type="PackedScene" uid="uid://i37l7x6g6luj" path="res://models/cogs/heads/twoface.glb" id="5_g1pn2"]
-[ext_resource type="Texture2D" uid="uid://2fj5qbvh3qa1" path="res://models/cogs/textures/misc/sleeve_2.png" id="5_sxeki"]
-[ext_resource type="Texture2D" uid="uid://idf1e68fml3o" path="res://models/cogs/textures/misc/blazer_1.png" id="6_1v0ih"]
 [ext_resource type="Texture2D" uid="uid://c1tgadika2h4n" path="res://models/cogs/heads/doubleface2.png" id="6_awq36"]
 [ext_resource type="Script" path="res://objects/cog/cogdna.gd" id="6_fsn22"]
 [ext_resource type="Script" path="res://objects/battle/battle_resources/status_effect.gd" id="7_ql3k8"]
-[ext_resource type="Texture2D" uid="uid://o3hrfvdxeisb" path="res://models/cogs/textures/misc/leg_4.png" id="7_vasf4"]
 [ext_resource type="Resource" uid="uid://b4vuuxwhv0d3v" path="res://objects/battle/battle_resources/status_effects/resources/status_effect_mod_cog.tres" id="9_64xf8"]
 
 [resource]
 script = ExtResource("6_fsn22")
 department = 0
 suit = 0
-custom_blazer_tex = ExtResource("6_1v0ih")
-custom_arm_tex = ExtResource("5_sxeki")
-custom_leg_tex = ExtResource("7_vasf4")
+custom_suit_tex = ExtResource("5_3ac5o")
 cog_name = "Two-Talker"
 name_plural = ""
 head = ExtResource("5_g1pn2")

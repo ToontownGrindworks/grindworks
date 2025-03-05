@@ -28,6 +28,7 @@ func _prepare_menus() -> void:
 	_ready_body()
 	_ready_head_mod()
 	_ready_head_tex()
+	_ready_suit_tex()
 	_ready_colors()
 	_ready_attribute()
 	_ready_attacks()
@@ -292,13 +293,51 @@ func reset_textures() -> void:
 #endregion
 
 #region SUIT TEXTURE SELECTOR
-@export var suits : Array[Dictionary]
+@export var suit_texture_files : Array[Texture2D]
 
-func suit_changed(index : int) -> void:
-	var suit := suits[index]
-	cog.dna.custom_arm_tex = suit['custom_arm_tex']
-	cog.dna.custom_blazer_tex = suit['custom_blazer_tex']
-	cog.dna.custom_leg_tex = suit['custom_leg_tex']
+@onready var suit_tex_directory : DirectoryViewer = $Menus/SuitSelector/SuitTexDirectory
+
+var suit_textures : Array[UIFile] = []
+
+func _ready_suit_tex() -> void:
+	suit_textures.clear()
+	gather_suit_textures()
+
+func gather_suit_textures() -> void:
+	for tex : Texture2D in suit_texture_files:
+		var file := UIFile.new()
+		file.file_path = tex.resource_path
+		file.icon = tex
+		suit_textures.append(file)
+	for tex in Globals.custom_cog_tex_directory:
+		var file := UIFile.new()
+		file.file_path = tex
+		file.icon = Globals.custom_cog_tex_directory[tex]
+		suit_textures.append(file)
+	suit_tex_directory.show_custom_file_list(suit_textures)
+
+func set_suit_texture(file : UIFile) -> void:
+	if file.file_path.begins_with("res://"):
+		cog.dna.custom_suit_tex = load(file.file_path)
+		cog.dna.external_assets['suit_texture'] = ""
+	else:
+		cog.dna.custom_suit_tex = null
+		cog.dna.external_assets['suit_texture'] = file.file_path
+	
+	_refresh_cog()
+
+func new_suit_texture_loaded(texture : Variant, file_path : String) -> void:
+	if not texture is Texture2D:
+		printerr("Loaded texture not in proper format!")
+	var new_file := UIFile.new()
+	new_file.icon = texture
+	new_file.file_path = file_path
+	suit_textures.append(new_file)
+	suit_tex_directory.show_custom_file_list(suit_textures)
+	Globals.custom_cog_tex_directory[file_path] = texture
+
+func reset_suit_textures() -> void:
+	cog.dna.custom_suit_tex = null
 	_refresh_cog()
 
 #endregion

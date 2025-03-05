@@ -1,4 +1,4 @@
-[gd_scene load_steps=208 format=3 uid="uid://b3wmyoqcbv6wd"]
+[gd_scene load_steps=198 format=3 uid="uid://b3wmyoqcbv6wd"]
 
 [ext_resource type="PackedScene" uid="uid://dflwjcy6fj0av" path="res://objects/cog/cog.tscn" id="1_uqjo6"]
 [ext_resource type="Script" path="res://scenes/cog_creator/cog_creator.gd" id="1_xx4e4"]
@@ -163,26 +163,6 @@
 [ext_resource type="Texture2D" uid="uid://bhgp2rx51bvin" path="res://models/cogs/heads/tt_t_ene_hed_robberBaron.png" id="103_m24m6"]
 [ext_resource type="Texture2D" uid="uid://rip6w68eis6c" path="res://models/cogs/heads/twoface_tt_t_ene_hed_twoface.png" id="104_4h6np"]
 [ext_resource type="Texture2D" uid="uid://8pq3hd4c6g11" path="res://models/cogs/heads/yesman_tt_t_ene_hed_yesMan.png" id="105_3k3kn"]
-[ext_resource type="Texture2D" uid="uid://6p25n425gm87" path="res://models/cogs/textures/sell/blazer.png" id="106_unk2c"]
-[ext_resource type="Texture2D" uid="uid://xmgws2vnhrdy" path="res://models/cogs/textures/sell/sleeve.png" id="107_qflpq"]
-[ext_resource type="Texture2D" uid="uid://drto8mshmx6tu" path="res://models/cogs/textures/sell/leg.png" id="108_tlfiu"]
-[ext_resource type="Texture2D" uid="uid://2ypgaxuc4w7l" path="res://models/cogs/textures/cash/blazer.png" id="109_3maim"]
-[ext_resource type="Texture2D" uid="uid://dlu4g5oiwhrjt" path="res://models/cogs/textures/cash/sleeve.png" id="110_nnqhj"]
-[ext_resource type="Texture2D" uid="uid://c5ax3th0ylb3u" path="res://models/cogs/textures/cash/leg.png" id="111_tbjms"]
-[ext_resource type="Texture2D" uid="uid://bmc4flbdyynfc" path="res://models/cogs/textures/law/blazer.png" id="112_x2v6w"]
-[ext_resource type="Texture2D" uid="uid://cb056w2i1gky0" path="res://models/cogs/textures/law/sleeve.png" id="113_k15rk"]
-[ext_resource type="Texture2D" uid="uid://q3f5rh8oklei" path="res://models/cogs/textures/law/leg.png" id="114_jlej4"]
-[ext_resource type="Texture2D" uid="uid://c1hrivmmm03xq" path="res://models/cogs/textures/boss/blazer.png" id="115_ikptt"]
-[ext_resource type="Texture2D" uid="uid://53dqjekuqhch" path="res://models/cogs/textures/boss/sleeve.png" id="116_5er2l"]
-[ext_resource type="Texture2D" uid="uid://da3cgj0d5ttcp" path="res://models/cogs/textures/boss/leg.png" id="117_iy6cn"]
-[ext_resource type="Texture2D" uid="uid://btgvnsbwmgf80" path="res://models/cogs/textures/clown/blazerClown.png" id="118_ytbb6"]
-[ext_resource type="Texture2D" uid="uid://dnrnk4pxnsid2" path="res://models/cogs/textures/clown/sleeveClown.png" id="119_aujm6"]
-[ext_resource type="Texture2D" uid="uid://b2niomlt7hl2b" path="res://models/cogs/textures/slender/blazer.png" id="120_vywwt"]
-[ext_resource type="Texture2D" uid="uid://c3nvfyus0sjvs" path="res://models/cogs/textures/slender/sleeve.png" id="121_8b4py"]
-[ext_resource type="Texture2D" uid="uid://b0njt70w0o750" path="res://models/cogs/textures/slender/leg.png" id="122_nqadl"]
-[ext_resource type="Texture2D" uid="uid://idf1e68fml3o" path="res://models/cogs/textures/misc/blazer_1.png" id="123_mbq05"]
-[ext_resource type="Texture2D" uid="uid://2fj5qbvh3qa1" path="res://models/cogs/textures/misc/sleeve_2.png" id="124_0igwy"]
-[ext_resource type="Texture2D" uid="uid://o3hrfvdxeisb" path="res://models/cogs/textures/misc/leg_4.png" id="125_dapyj"]
 [ext_resource type="Resource" uid="uid://ctfcm05cbc4n1" path="res://objects/cog/presets/sellbot/mad_hander.tres" id="126_kct4q"]
 [ext_resource type="Texture2D" uid="uid://b5y26u8btf5pg" path="res://models/cogs/heads/bookkeeper_BookkeeperFinal.png" id="144_88j4t"]
 [ext_resource type="Theme" uid="uid://dhqxwi6busihb" path="res://objects/general_ui/settings_menu/slider_theme.tres" id="144_xnv5s"]
@@ -197,6 +177,16 @@
 [ext_resource type="Texture2D" uid="uid://cam2cj6dqh32m" path="res://models/cogs/heads/sales_director_SalesDirector.png" id="153_4240y"]
 [ext_resource type="Texture2D" uid="uid://cyblyj7cst741" path="res://models/cogs/heads/surgeongeneral_tex.png" id="154_0632o"]
 [ext_resource type="Texture2D" uid="uid://crmdxpsen5to" path="res://models/cogs/heads/whistleblower_WhistleblowerFinal.png" id="155_lc32i"]
+[ext_resource type="Texture2D" uid="uid://btrlpoxtxmhll" path="res://models/cogs/textures/suit_sell.png" id="157_d81sn"]
+[ext_resource type="Texture2D" uid="uid://d3imfb24fvbkw" path="res://models/cogs/textures/suit_cash.png" id="158_rp1ih"]
+[ext_resource type="Texture2D" uid="uid://7e6vspydd25m" path="res://models/cogs/textures/suit_law.png" id="159_hayl3"]
+[ext_resource type="Texture2D" uid="uid://by37ijkhrokhk" path="res://models/cogs/textures/suit_boss.png" id="160_h6wxo"]
+[ext_resource type="Texture2D" uid="uid://cm144f5fnkcrm" path="res://models/cogs/textures/suit_clown.png" id="161_r6ghq"]
+[ext_resource type="Texture2D" uid="uid://b77vnppjyq5u4" path="res://models/cogs/textures/suit_slender.png" id="162_gp5nl"]
+[ext_resource type="Texture2D" uid="uid://b4fvjpcmb10lt" path="res://models/cogs/textures/suit_misc.png" id="163_u64yv"]
+[ext_resource type="Texture2D" uid="uid://dili5kaasahk7" path="res://models/cogs/textures/suit_statue_blue.png" id="164_mkwhd"]
+[ext_resource type="Texture2D" uid="uid://b4f2limtwohva" path="res://models/cogs/textures/suit_statue_gray.png" id="165_ebv2k"]
+[ext_resource type="Texture2D" uid="uid://bayxwh6bd517e" path="res://models/cogs/textures/suit_waiter.png" id="166_4ftvo"]
 
 [sub_resource type="Resource" id="Resource_ookrr"]
 script = ExtResource("34_d7aur")
@@ -282,39 +272,7 @@ suit_b_attacks = Array[ExtResource("2_7snwl")]([ExtResource("4_mo0ki"), ExtResou
 suit_c_attacks = Array[ExtResource("2_7snwl")]([ExtResource("4_mo0ki"), ExtResource("7_cqov3"), ExtResource("8_g6yi0"), ExtResource("9_vqpv7"), ExtResource("10_jqtea"), ExtResource("11_gumtp"), ExtResource("12_l0hiu"), ExtResource("13_ve7ja"), ExtResource("15_fepq6"), ExtResource("16_6vi4n"), ExtResource("25_vjhwn"), ExtResource("20_ax72v"), ExtResource("21_dqjqy")])
 head_model_files = Array[PackedScene]([ExtResource("26_1idp3"), ExtResource("27_jtab4"), ExtResource("28_xy0hj"), ExtResource("29_4nblf"), ExtResource("30_0r2c0"), ExtResource("31_ewahd"), ExtResource("32_hc727"), ExtResource("33_86iti"), ExtResource("34_kl2gn"), ExtResource("35_5f7lc"), ExtResource("36_b7tri"), ExtResource("37_cqllc"), ExtResource("38_581re"), ExtResource("39_ne4ff"), ExtResource("40_cifb8"), ExtResource("41_i2fyg"), ExtResource("42_mfnxn"), ExtResource("43_52xx6"), ExtResource("44_ns551"), ExtResource("45_ewar8"), ExtResource("46_c378u"), ExtResource("47_ii8hj"), ExtResource("48_wg4gk"), ExtResource("50_osnmm"), ExtResource("51_cbyii"), ExtResource("52_5kwmk"), ExtResource("53_u7456"), ExtResource("54_j1bmg"), ExtResource("87_ixtf3"), ExtResource("88_ms8ih"), ExtResource("89_tu2we"), ExtResource("90_4utcy"), ExtResource("91_hhsae"), ExtResource("92_jeae5"), ExtResource("93_gbgc5")])
 head_texture_files = Array[Texture2D]([ExtResource("54_5jknc"), ExtResource("55_6fope"), ExtResource("56_jj50y"), ExtResource("57_ab4gj"), ExtResource("58_klt22"), ExtResource("59_2a6un"), ExtResource("60_vdtor"), ExtResource("61_717gm"), ExtResource("62_deqng"), ExtResource("63_iuj0i"), ExtResource("64_ottww"), ExtResource("65_qlmt5"), ExtResource("66_v88ni"), ExtResource("67_72yvm"), ExtResource("68_3b6bm"), ExtResource("69_jc5g3"), ExtResource("70_hbxl5"), ExtResource("71_dfklg"), ExtResource("72_eph4v"), ExtResource("73_q65bc"), ExtResource("74_v8bl5"), ExtResource("75_a36lf"), ExtResource("76_1152r"), ExtResource("77_7tvju"), ExtResource("78_7h5xt"), ExtResource("79_66dpc"), ExtResource("80_m3d0u"), ExtResource("81_x6lbw"), ExtResource("82_eky0p"), ExtResource("83_v5f6h"), ExtResource("84_8wcri"), ExtResource("85_yyfnp"), ExtResource("86_u705b"), ExtResource("87_wiix7"), ExtResource("88_a02uu"), ExtResource("89_uij5l"), ExtResource("90_66tk2"), ExtResource("91_doy7v"), ExtResource("93_3483s"), ExtResource("94_vj3ok"), ExtResource("95_y8ar1"), ExtResource("96_oi8s5"), ExtResource("97_4w68l"), ExtResource("98_ak3ji"), ExtResource("99_ydsna"), ExtResource("100_1k5yg"), ExtResource("101_mgpfd"), ExtResource("102_ga6ho"), ExtResource("103_m24m6"), ExtResource("104_4h6np"), ExtResource("105_3k3kn"), ExtResource("144_88j4t"), ExtResource("145_bn3ui"), ExtResource("146_y1u1o"), ExtResource("147_4sbrr"), ExtResource("148_74607"), ExtResource("149_httwg"), ExtResource("150_xiai8"), ExtResource("85_yyfnp"), ExtResource("151_4ilq8"), ExtResource("152_8v6oh"), ExtResource("153_4240y"), ExtResource("154_0632o"), ExtResource("155_lc32i")])
-suits = Array[Dictionary]([{
-"custom_arm_tex": null,
-"custom_blazer_tex": null,
-"custom_leg_tex": null
-}, {
-"custom_arm_tex": ExtResource("107_qflpq"),
-"custom_blazer_tex": ExtResource("106_unk2c"),
-"custom_leg_tex": ExtResource("108_tlfiu")
-}, {
-"custom_arm_tex": ExtResource("110_nnqhj"),
-"custom_blazer_tex": ExtResource("109_3maim"),
-"custom_leg_tex": ExtResource("111_tbjms")
-}, {
-"custom_arm_tex": ExtResource("113_k15rk"),
-"custom_blazer_tex": ExtResource("112_x2v6w"),
-"custom_leg_tex": ExtResource("114_jlej4")
-}, {
-"custom_arm_tex": ExtResource("116_5er2l"),
-"custom_blazer_tex": ExtResource("115_ikptt"),
-"custom_leg_tex": ExtResource("117_iy6cn")
-}, {
-"custom_arm_tex": ExtResource("119_aujm6"),
-"custom_blazer_tex": ExtResource("118_ytbb6"),
-"custom_leg_tex": ExtResource("119_aujm6")
-}, {
-"custom_arm_tex": ExtResource("121_8b4py"),
-"custom_blazer_tex": ExtResource("120_vywwt"),
-"custom_leg_tex": ExtResource("122_nqadl")
-}, {
-"custom_arm_tex": ExtResource("124_0igwy"),
-"custom_blazer_tex": ExtResource("123_mbq05"),
-"custom_leg_tex": ExtResource("125_dapyj")
-}])
+suit_texture_files = Array[Texture2D]([ExtResource("157_d81sn"), ExtResource("158_rp1ih"), ExtResource("159_hayl3"), ExtResource("160_h6wxo"), ExtResource("161_r6ghq"), ExtResource("162_gp5nl"), ExtResource("163_u64yv"), ExtResource("164_mkwhd"), ExtResource("165_ebv2k"), ExtResource("166_4ftvo")])
 
 [node name="World3D" type="Node3D" parent="."]
 
@@ -469,33 +427,39 @@ grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
 
-[node name="OptionContainer" type="VBoxContainer" parent="Menus/SuitSelector"]
+[node name="SuitTexDirectory" parent="Menus/SuitSelector" instance=ExtResource("9_3fnlq")]
 layout_mode = 1
 anchors_preset = 6
 anchor_left = 1.0
-anchor_top = 0.5
 anchor_right = 1.0
-anchor_bottom = 0.5
-offset_left = -333.0
-offset_top = -117.5
-offset_right = -123.0
-offset_bottom = 117.5
+offset_left = -528.0
+offset_right = 0.0
 grow_horizontal = 0
-grow_vertical = 2
-scale = Vector2(1.25, 1.25)
-alignment = 1
+save_dir = "user://save/custom_cogs"
+allowed_types = Array[String](["png", "jpg"])
 
-[node name="ScaleLabel" type="Label" parent="Menus/SuitSelector/OptionContainer"]
-layout_mode = 2
-text = "Override Suit:"
-label_settings = SubResource("LabelSettings_w0kd7")
-horizontal_alignment = 1
+[node name="OpenButton" parent="Menus/SuitSelector/SuitTexDirectory/FooterButtons" index="0"]
+hover_db_offset = 6.0
+press_db_offset = 0.0
 
-[node name="SuitScroller" parent="Menus/SuitSelector/OptionContainer" instance=ExtResource("7_kyrf2")]
+[node name="GeneralButton" parent="Menus/SuitSelector/SuitTexDirectory/FooterButtons" index="1" instance=ExtResource("3_ca28p")]
+custom_minimum_size = Vector2(180, 60)
 layout_mode = 2
-options = Array[String](["Default", "Sellbot", "Cashbot", "Lawbot", "Bossbot", "Clown", "Slender", "Proxy"])
-wrap_around = false
-default_center_text = "Suit"
+texture_normal = ExtResource("4_hj08j")
+texture_pressed = ExtResource("5_nipba")
+texture_hover = ExtResource("6_34nqq")
+texture_disabled = null
+hover_db_offset = 6.0
+press_db_offset = 0.0
+text = "Use Default"
+
+[node name="Label" parent="Menus/SuitSelector/SuitTexDirectory/FooterButtons/GeneralButton" index="0"]
+text = "Use Default"
+label_settings = SubResource("LabelSettings_ujs02")
+
+[node name="CancelButton" parent="Menus/SuitSelector/SuitTexDirectory/LoadPanel" index="1"]
+hover_db_offset = 6.0
+press_db_offset = 0.0
 
 [node name="BodyColors" type="Control" parent="Menus"]
 visible = false
@@ -1521,7 +1485,9 @@ press_db_offset = 0.0
 [connection signal="s_file_imported" from="Menus/HeadTextureSelector/HeadTexDirectory" to="." method="new_texture_loaded"]
 [connection signal="s_file_selected" from="Menus/HeadTextureSelector/HeadTexDirectory" to="." method="set_head_texture"]
 [connection signal="pressed" from="Menus/HeadTextureSelector/HeadTexDirectory/FooterButtons/GeneralButton" to="." method="reset_textures"]
-[connection signal="s_option_changed" from="Menus/SuitSelector/OptionContainer/SuitScroller" to="." method="suit_changed"]
+[connection signal="s_file_imported" from="Menus/SuitSelector/SuitTexDirectory" to="." method="new_suit_texture_loaded"]
+[connection signal="s_file_selected" from="Menus/SuitSelector/SuitTexDirectory" to="." method="set_suit_texture"]
+[connection signal="pressed" from="Menus/SuitSelector/SuitTexDirectory/FooterButtons/GeneralButton" to="." method="reset_suit_textures"]
 [connection signal="color_changed" from="Menus/BodyColors/OptionContainer/HeadColor/ColorPickerButton" to="." method="set_head_color"]
 [connection signal="color_changed" from="Menus/BodyColors/OptionContainer/HandColor/ColorPickerButton" to="." method="set_hand_color"]
 [connection signal="text_changed" from="Menus/AtrributeSelectors/VBoxContainer/NameSelector/LineEdit" to="." method="set_cog_name"]
@@ -1547,4 +1513,8 @@ press_db_offset = 0.0
 [editable path="Menus/HeadTextureSelector/HeadTexDirectory/FooterButtons/OpenButton"]
 [editable path="Menus/HeadTextureSelector/HeadTexDirectory/FooterButtons/GeneralButton"]
 [editable path="Menus/HeadTextureSelector/HeadTexDirectory/LoadPanel/CancelButton"]
+[editable path="Menus/SuitSelector/SuitTexDirectory"]
+[editable path="Menus/SuitSelector/SuitTexDirectory/FooterButtons/OpenButton"]
+[editable path="Menus/SuitSelector/SuitTexDirectory/FooterButtons/GeneralButton"]
+[editable path="Menus/SuitSelector/SuitTexDirectory/LoadPanel/CancelButton"]
 [editable path="Menus/BattlePhraseEditor/Panel/AddButton"]

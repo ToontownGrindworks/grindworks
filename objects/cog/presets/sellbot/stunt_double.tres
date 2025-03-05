@@ -1,11 +1,9 @@
-[gd_resource type="Resource" script_class="CogDNA" load_steps=12 format=3 uid="uid://dijc7gdvoapli"]
+[gd_resource type="Resource" script_class="CogDNA" load_steps=10 format=3 uid="uid://dijc7gdvoapli"]
 
 [ext_resource type="Script" path="res://objects/battle/battle_resources/cog_attacks/cog_attack.gd" id="1_f20re"]
 [ext_resource type="Resource" uid="uid://c24yy1wqmg24o" path="res://objects/battle/battle_resources/cog_attacks/resources/razzle_dazzle.tres" id="2_xe2q4"]
 [ext_resource type="Resource" uid="uid://sey860nn14jg" path="res://objects/battle/battle_resources/cog_attacks/resources/pick_pocket.tres" id="3_eaodq"]
-[ext_resource type="Texture2D" uid="uid://2fj5qbvh3qa1" path="res://models/cogs/textures/misc/sleeve_2.png" id="4_3ensw"]
-[ext_resource type="Texture2D" uid="uid://idf1e68fml3o" path="res://models/cogs/textures/misc/blazer_1.png" id="5_ksxam"]
-[ext_resource type="Texture2D" uid="uid://o3hrfvdxeisb" path="res://models/cogs/textures/misc/leg_4.png" id="6_15n13"]
+[ext_resource type="Texture2D" uid="uid://b4fvjpcmb10lt" path="res://models/cogs/textures/suit_misc.png" id="4_4qfn8"]
 [ext_resource type="PackedScene" uid="uid://i3q2b1jvfc74" path="res://models/cogs/heads/yesman.glb" id="7_5qv0i"]
 [ext_resource type="Texture2D" uid="uid://d0tvo1y74ovms" path="res://models/cogs/heads/idkman_lambert2SG_color.png" id="8_timya"]
 [ext_resource type="Script" path="res://objects/cog/cogdna.gd" id="9_5vm36"]
@@ -16,9 +14,7 @@
 script = ExtResource("9_5vm36")
 department = 0
 suit = 0
-custom_blazer_tex = ExtResource("5_ksxam")
-custom_arm_tex = ExtResource("4_3ensw")
-custom_leg_tex = ExtResource("6_15n13")
+custom_suit_tex = ExtResource("4_4qfn8")
 cog_name = "Stunt Double"
 name_plural = ""
 head = ExtResource("7_5qv0i")
@@ -29,6 +25,7 @@ head_textures = Array[Texture2D]([ExtResource("8_timya")])
 hand_color = Color(0.94902, 0.74902, 0.94902, 1)
 head_color = Color(1, 1, 1, 1)
 custom_nametag_height = 0.0
+custom_nametag_suffix = ""
 attacks = Array[ExtResource("1_f20re")]([ExtResource("2_xe2q4"), ExtResource("3_eaodq")])
 level_low = 8
 level_high = 20

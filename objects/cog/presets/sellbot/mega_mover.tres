@@ -1,16 +1,14 @@
-[gd_resource type="Resource" script_class="CogDNA" load_steps=14 format=3 uid="uid://c6t5atiyjrguq"]
+[gd_resource type="Resource" script_class="CogDNA" load_steps=12 format=3 uid="uid://c6t5atiyjrguq"]
 
 [ext_resource type="Script" path="res://objects/battle/battle_resources/cog_attacks/cog_attack.gd" id="1_m73se"]
 [ext_resource type="Resource" uid="uid://6hjcsu17tt4g" path="res://objects/battle/battle_resources/cog_attacks/resources/brain_storm.tres" id="2_x3r4q"]
 [ext_resource type="Resource" uid="uid://bddy50xh8sfc8" path="res://objects/battle/battle_resources/cog_attacks/resources/tremor.tres" id="3_5c8h7"]
 [ext_resource type="Resource" uid="uid://cae3lr6y4rrb8" path="res://objects/battle/battle_resources/cog_attacks/resources/quake.tres" id="4_hn5tk"]
 [ext_resource type="Resource" uid="uid://55lp6noha8te" path="res://objects/battle/battle_resources/cog_attacks/resources/shake.tres" id="5_klla1"]
-[ext_resource type="Texture2D" uid="uid://2fj5qbvh3qa1" path="res://models/cogs/textures/misc/sleeve_2.png" id="6_e2tme"]
+[ext_resource type="Texture2D" uid="uid://b4fvjpcmb10lt" path="res://models/cogs/textures/suit_misc.png" id="6_5i5vo"]
 [ext_resource type="PackedScene" uid="uid://d2pl7oar1aevb" path="res://models/cogs/heads/movershaker.glb" id="6_vy1bi"]
 [ext_resource type="Texture2D" uid="uid://8jclto0lc8r0" path="res://models/cogs/heads/movershaker_tt_t_ene_hed_moverShaker.png" id="7_6vavy"]
-[ext_resource type="Texture2D" uid="uid://idf1e68fml3o" path="res://models/cogs/textures/misc/blazer_1.png" id="7_l6hbv"]
 [ext_resource type="Script" path="res://objects/cog/cogdna.gd" id="8_352lp"]
-[ext_resource type="Texture2D" uid="uid://o3hrfvdxeisb" path="res://models/cogs/textures/misc/leg_4.png" id="8_ly0k1"]
 [ext_resource type="Script" path="res://objects/battle/battle_resources/status_effect.gd" id="9_rgaxd"]
 [ext_resource type="Resource" uid="uid://b4vuuxwhv0d3v" path="res://objects/battle/battle_resources/status_effects/resources/status_effect_mod_cog.tres" id="13_0xong"]
 
@@ -18,9 +16,7 @@
 script = ExtResource("8_352lp")
 department = 0
 suit = 1
-custom_blazer_tex = ExtResource("7_l6hbv")
-custom_arm_tex = ExtResource("6_e2tme")
-custom_leg_tex = ExtResource("8_ly0k1")
+custom_suit_tex = ExtResource("6_5i5vo")
 cog_name = "Mega-Mover"
 name_plural = ""
 head = ExtResource("6_vy1bi")

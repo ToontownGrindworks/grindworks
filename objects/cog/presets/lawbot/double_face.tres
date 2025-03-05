@@ -1,13 +1,11 @@
-[gd_resource type="Resource" script_class="CogDNA" load_steps=11 format=3 uid="uid://bacpdagvulbls"]
+[gd_resource type="Resource" script_class="CogDNA" load_steps=9 format=3 uid="uid://bacpdagvulbls"]
 
 [ext_resource type="Script" path="res://objects/battle/battle_resources/cog_attacks/cog_attack.gd" id="1_obnxk"]
 [ext_resource type="Resource" uid="uid://doowiij7lpxy1" path="res://objects/battle/battle_resources/cog_attacks/resources/rubber_stamp.tres" id="2_4a3q1"]
-[ext_resource type="Texture2D" uid="uid://2fj5qbvh3qa1" path="res://models/cogs/textures/misc/sleeve_2.png" id="3_mnclt"]
+[ext_resource type="Texture2D" uid="uid://b4fvjpcmb10lt" path="res://models/cogs/textures/suit_misc.png" id="3_sinwv"]
 [ext_resource type="PackedScene" uid="uid://i37l7x6g6luj" path="res://models/cogs/heads/twoface.glb" id="3_t44bn"]
 [ext_resource type="Texture2D" uid="uid://yplsj78np13m" path="res://models/cogs/heads/doubleface.png" id="4_di6e4"]
-[ext_resource type="Texture2D" uid="uid://idf1e68fml3o" path="res://models/cogs/textures/misc/blazer_1.png" id="4_kckpw"]
 [ext_resource type="Script" path="res://objects/cog/cogdna.gd" id="5_cl1kd"]
-[ext_resource type="Texture2D" uid="uid://o3hrfvdxeisb" path="res://models/cogs/textures/misc/leg_4.png" id="5_qes5e"]
 [ext_resource type="Script" path="res://objects/battle/battle_resources/status_effect.gd" id="6_i4liu"]
 [ext_resource type="Resource" uid="uid://b4vuuxwhv0d3v" path="res://objects/battle/battle_resources/status_effects/resources/status_effect_mod_cog.tres" id="7_aao6l"]
 
@@ -15,9 +13,7 @@
 script = ExtResource("5_cl1kd")
 department = 2
 suit = 0
-custom_blazer_tex = ExtResource("4_kckpw")
-custom_arm_tex = ExtResource("3_mnclt")
-custom_leg_tex = ExtResource("5_qes5e")
+custom_suit_tex = ExtResource("3_sinwv")
 cog_name = "Double Face"
 name_plural = ""
 head = ExtResource("3_t44bn")

@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="CogDNA" load_steps=13 format=3 uid="uid://b343pcatcpagr"]
+[gd_resource type="Resource" script_class="CogDNA" load_steps=11 format=3 uid="uid://b343pcatcpagr"]
 
 [ext_resource type="Script" path="res://objects/battle/battle_resources/cog_attacks/cog_attack.gd" id="1_uj63m"]
 [ext_resource type="Script" path="res://objects/cog/cogdna.gd" id="2_7r63x"]
@@ -7,19 +7,15 @@
 [ext_resource type="Script" path="res://objects/battle/battle_resources/status_effect.gd" id="3_tcrmr"]
 [ext_resource type="Resource" uid="uid://c24yy1wqmg24o" path="res://objects/battle/battle_resources/cog_attacks/resources/razzle_dazzle.tres" id="4_nr71f"]
 [ext_resource type="Resource" uid="uid://b4vuuxwhv0d3v" path="res://objects/battle/battle_resources/status_effects/resources/status_effect_mod_cog.tres" id="4_xy74k"]
-[ext_resource type="Texture2D" uid="uid://2fj5qbvh3qa1" path="res://models/cogs/textures/misc/sleeve_2.png" id="5_7mvpa"]
+[ext_resource type="Texture2D" uid="uid://b4fvjpcmb10lt" path="res://models/cogs/textures/suit_misc.png" id="5_45cx8"]
 [ext_resource type="Texture2D" uid="uid://bd1o0dprf170" path="res://models/cogs/heads/peoplepleaser.png" id="6_ibwyo"]
-[ext_resource type="Texture2D" uid="uid://idf1e68fml3o" path="res://models/cogs/textures/misc/blazer_1.png" id="6_j03k7"]
-[ext_resource type="Texture2D" uid="uid://o3hrfvdxeisb" path="res://models/cogs/textures/misc/leg_4.png" id="7_hsu6a"]
 [ext_resource type="PackedScene" uid="uid://b82mf74d37xbi" path="res://models/cogs/heads/tf_new.fbx" id="8_1qjxy"]
 
 [resource]
 script = ExtResource("2_7r63x")
 department = 2
 suit = 0
-custom_blazer_tex = ExtResource("6_j03k7")
-custom_arm_tex = ExtResource("5_7mvpa")
-custom_leg_tex = ExtResource("7_hsu6a")
+custom_suit_tex = ExtResource("5_45cx8")
 cog_name = "People Pleaser"
 name_plural = ""
 head = ExtResource("8_1qjxy")

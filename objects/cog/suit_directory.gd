@@ -69,40 +69,25 @@ func set_dna(dna: CogDNA):
 
 	# SUIT TEXTURE
 	# Get department name (not convoluted)
-	var torso_tex: Texture2D
-	var sleeve_tex: Texture2D
-	var leg_tex: Texture2D
+	var suit_tex: Texture2D
 	var dept = CogDNA.CogDept.keys()[int(dna.department)].to_lower()
-	# Get each texture
-	torso_tex = load("res://models/cogs/textures/" + dept + "/blazer.png")
-	sleeve_tex = load("res://models/cogs/textures/" + dept + "/sleeve.png")
-	leg_tex = load("res://models/cogs/textures/" + dept + "/leg.png")
+	# Get our suit texture
+	suit_tex = load("res://models/cogs/textures/suit_" + dept + ".png")
 	
+	# Old custom suit texture fix
+	dna.update_custom_suit_texture()
 	# Allow for custom textures
-	if dna.custom_arm_tex: sleeve_tex = dna.custom_arm_tex
-	if dna.custom_blazer_tex: torso_tex = dna.custom_blazer_tex
-	if dna.custom_leg_tex: leg_tex = dna.custom_leg_tex
+	if dna.custom_suit_tex: suit_tex = dna.custom_suit_tex
 	
-	# Get the current working materials
-	var torso_mat = torso.mesh.surface_get_material(0).duplicate()
-	var leg_mat = legs.mesh.surface_get_material(0).duplicate()
-	var sleeve_mat = arms.mesh.surface_get_material(0).duplicate()
-	# Replace albedo textures
-	torso_mat.albedo_texture = torso_tex
-	sleeve_mat.albedo_texture = sleeve_tex
-	leg_mat.albedo_texture = leg_tex
-	# Place textures onto body parts
-	torso.set_surface_override_material(0, torso_mat)
-	legs.set_surface_override_material(0, leg_mat)
-	arms.set_surface_override_material(0, sleeve_mat)
-	# Get hand material
-	var hand_mat = hands.mesh.surface_get_material(0).duplicate()
-	# Apply custom texture
-	if dna.custom_hand_tex: hand_mat.albedo_texture = dna.custom_hand_tex
-	# Change color
-	hand_mat.albedo_color = dna.hand_color
-	# Place mat on hand meshes
-	hands.set_surface_override_material(0, hand_mat)
+	# For every mesh in the model, replace its texture
+	for obj in $rig_deform/Skeleton3D.get_children():
+		if obj is MeshInstance3D:
+			var mat = obj.mesh.surface_get_material(0).duplicate()
+			mat.albedo_texture = suit_tex
+			# Hand colors
+			if obj.name == "hands":
+				mat.albedo_color = dna.hand_color
+			obj.set_surface_override_material(0, mat)
 
 	# Add head mats to the override mats for color
 	if head:

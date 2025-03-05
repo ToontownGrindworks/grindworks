@@ -1,13 +1,11 @@
-[gd_resource type="Resource" script_class="CogDNA" load_steps=12 format=3 uid="uid://dkfcdpyuf8vj4"]
+[gd_resource type="Resource" script_class="CogDNA" load_steps=10 format=3 uid="uid://dkfcdpyuf8vj4"]
 
 [ext_resource type="Script" path="res://objects/battle/battle_resources/cog_attacks/cog_attack.gd" id="1_r1578"]
 [ext_resource type="Resource" uid="uid://b4kaq7rjifwfc" path="res://objects/battle/battle_resources/cog_attacks/resources/liquidate.tres" id="2_dflc4"]
 [ext_resource type="Resource" uid="uid://bddy50xh8sfc8" path="res://objects/battle/battle_resources/cog_attacks/resources/tremor.tres" id="3_wrxfr"]
-[ext_resource type="Texture2D" uid="uid://2fj5qbvh3qa1" path="res://models/cogs/textures/misc/sleeve_2.png" id="4_gb531"]
+[ext_resource type="Texture2D" uid="uid://b4fvjpcmb10lt" path="res://models/cogs/textures/suit_misc.png" id="4_cgjka"]
 [ext_resource type="PackedScene" uid="uid://d2pl7oar1aevb" path="res://models/cogs/heads/movershaker.glb" id="4_mf53g"]
 [ext_resource type="Texture2D" uid="uid://8vri7bn76cva" path="res://models/cogs/heads/tt_t_ene_hed_bloodSucker.png" id="5_1wvt8"]
-[ext_resource type="Texture2D" uid="uid://idf1e68fml3o" path="res://models/cogs/textures/misc/blazer_1.png" id="5_micxp"]
-[ext_resource type="Texture2D" uid="uid://o3hrfvdxeisb" path="res://models/cogs/textures/misc/leg_4.png" id="6_0l8n7"]
 [ext_resource type="Script" path="res://objects/cog/cogdna.gd" id="6_684hx"]
 [ext_resource type="Script" path="res://objects/battle/battle_resources/status_effect.gd" id="7_jwwvn"]
 [ext_resource type="Resource" uid="uid://b4vuuxwhv0d3v" path="res://objects/battle/battle_resources/status_effects/resources/status_effect_mod_cog.tres" id="8_7utma"]
@@ -16,9 +14,7 @@
 script = ExtResource("6_684hx")
 department = 2
 suit = 1
-custom_blazer_tex = ExtResource("5_micxp")
-custom_arm_tex = ExtResource("4_gb531")
-custom_leg_tex = ExtResource("6_0l8n7")
+custom_suit_tex = ExtResource("4_cgjka")
 cog_name = "Viper"
 name_plural = ""
 head = ExtResource("4_mf53g")

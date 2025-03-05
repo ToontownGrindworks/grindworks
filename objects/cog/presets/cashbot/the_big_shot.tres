@@ -1,11 +1,9 @@
-[gd_resource type="Resource" script_class="CogDNA" load_steps=12 format=3 uid="uid://cujwm36qft7u2"]
+[gd_resource type="Resource" script_class="CogDNA" load_steps=10 format=3 uid="uid://cujwm36qft7u2"]
 
 [ext_resource type="Script" path="res://objects/battle/battle_resources/cog_attacks/cog_attack.gd" id="1_atffr"]
 [ext_resource type="Resource" uid="uid://dimhdaxn1tyey" path="res://objects/battle/battle_resources/cog_attacks/resources/tee_off.tres" id="2_u2ujs"]
 [ext_resource type="Resource" uid="uid://bhl72hd7pn8s2" path="res://objects/battle/battle_resources/cog_attacks/resources/workout.tres" id="3_7djn3"]
-[ext_resource type="Texture2D" uid="uid://2fj5qbvh3qa1" path="res://models/cogs/textures/misc/sleeve_2.png" id="4_4mwjw"]
-[ext_resource type="Texture2D" uid="uid://idf1e68fml3o" path="res://models/cogs/textures/misc/blazer_1.png" id="5_ummnj"]
-[ext_resource type="Texture2D" uid="uid://o3hrfvdxeisb" path="res://models/cogs/textures/misc/leg_4.png" id="6_v3q7d"]
+[ext_resource type="Texture2D" uid="uid://b4fvjpcmb10lt" path="res://models/cogs/textures/suit_misc.png" id="4_s3w00"]
 [ext_resource type="PackedScene" uid="uid://i3q2b1jvfc74" path="res://models/cogs/heads/yesman.glb" id="7_0olyk"]
 [ext_resource type="Texture2D" uid="uid://3iek0b78cpre" path="res://models/cogs/heads/bigshot.png" id="8_7strd"]
 [ext_resource type="Script" path="res://objects/cog/cogdna.gd" id="9_tigo6"]
@@ -16,9 +14,7 @@
 script = ExtResource("9_tigo6")
 department = 1
 suit = 0
-custom_blazer_tex = ExtResource("5_ummnj")
-custom_arm_tex = ExtResource("4_4mwjw")
-custom_leg_tex = ExtResource("6_v3q7d")
+custom_suit_tex = ExtResource("4_s3w00")
 cog_name = "The Big Shot"
 name_plural = ""
 head = ExtResource("7_0olyk")

@@ -1,9 +1,7 @@
-[gd_resource type="Resource" script_class="CogDNA" load_steps=10 format=3 uid="uid://dy5pfjs8ivlt3"]
+[gd_resource type="Resource" script_class="CogDNA" load_steps=8 format=3 uid="uid://dy5pfjs8ivlt3"]
 
 [ext_resource type="Script" path="res://objects/battle/battle_resources/cog_attacks/cog_attack.gd" id="1_dwl5n"]
-[ext_resource type="Texture2D" uid="uid://c3nvfyus0sjvs" path="res://models/cogs/textures/slender/sleeve.png" id="2_v8rfy"]
-[ext_resource type="Texture2D" uid="uid://b2niomlt7hl2b" path="res://models/cogs/textures/slender/blazer.png" id="3_smhmb"]
-[ext_resource type="Texture2D" uid="uid://b0njt70w0o750" path="res://models/cogs/textures/slender/leg.png" id="4_8mecp"]
+[ext_resource type="Texture2D" uid="uid://b77vnppjyq5u4" path="res://models/cogs/textures/suit_slender.png" id="2_034du"]
 [ext_resource type="PackedScene" uid="uid://i3q2b1jvfc74" path="res://models/cogs/heads/yesman.glb" id="5_ysp4v"]
 [ext_resource type="Texture2D" uid="uid://in7gk76fauii" path="res://models/cogs/heads/no_more_face_man.png" id="6_dnuno"]
 [ext_resource type="Script" path="res://objects/cog/cogdna.gd" id="7_7s1xb"]
@@ -24,9 +22,7 @@ one_time_use = false
 script = ExtResource("7_7s1xb")
 department = 3
 suit = 0
-custom_blazer_tex = ExtResource("3_smhmb")
-custom_arm_tex = ExtResource("2_v8rfy")
-custom_leg_tex = ExtResource("4_8mecp")
+custom_suit_tex = ExtResource("2_034du")
 cog_name = "Vessel"
 name_plural = ""
 head = ExtResource("5_ysp4v")

@@ -1,13 +1,11 @@
-[gd_resource type="Resource" script_class="CogDNA" load_steps=12 format=3 uid="uid://50cgeo6mliss"]
+[gd_resource type="Resource" script_class="CogDNA" load_steps=10 format=3 uid="uid://50cgeo6mliss"]
 
 [ext_resource type="Script" path="res://objects/battle/battle_resources/cog_attacks/cog_attack.gd" id="1_xrq3e"]
 [ext_resource type="Resource" uid="uid://c27ek2anjbx88" path="res://objects/battle/battle_resources/cog_attacks/resources/pound_key.tres" id="2_leqed"]
 [ext_resource type="Resource" uid="uid://b4kaq7rjifwfc" path="res://objects/battle/battle_resources/cog_attacks/resources/liquidate.tres" id="3_cl1hu"]
-[ext_resource type="Texture2D" uid="uid://2fj5qbvh3qa1" path="res://models/cogs/textures/misc/sleeve_2.png" id="3_lld0e"]
 [ext_resource type="PackedScene" uid="uid://b3ckmevkvxrq6" path="res://models/cogs/heads/backstabber.glb" id="3_qu33c"]
-[ext_resource type="Texture2D" uid="uid://idf1e68fml3o" path="res://models/cogs/textures/misc/blazer_1.png" id="4_b4r0l"]
+[ext_resource type="Texture2D" uid="uid://b4fvjpcmb10lt" path="res://models/cogs/textures/suit_misc.png" id="4_mjlfg"]
 [ext_resource type="Texture2D" uid="uid://duwvie5y7m36c" path="res://models/cogs/heads/greatwhiteshark_tex.png" id="4_nmntx"]
-[ext_resource type="Texture2D" uid="uid://o3hrfvdxeisb" path="res://models/cogs/textures/misc/leg_4.png" id="5_jbasa"]
 [ext_resource type="Script" path="res://objects/cog/cogdna.gd" id="5_mbc1a"]
 [ext_resource type="Script" path="res://objects/battle/battle_resources/status_effect.gd" id="6_xpvol"]
 [ext_resource type="Resource" uid="uid://b4vuuxwhv0d3v" path="res://objects/battle/battle_resources/status_effects/resources/status_effect_mod_cog.tres" id="11_2hy5k"]
@@ -16,9 +14,7 @@
 script = ExtResource("5_mbc1a")
 department = 2
 suit = 0
-custom_blazer_tex = ExtResource("4_b4r0l")
-custom_arm_tex = ExtResource("3_lld0e")
-custom_leg_tex = ExtResource("5_jbasa")
+custom_suit_tex = ExtResource("4_mjlfg")
 cog_name = "Doctor White"
 name_plural = ""
 head = ExtResource("3_qu33c")

@@ -1,11 +1,9 @@
-[gd_resource type="Resource" script_class="CogDNA" load_steps=12 format=3 uid="uid://b8unldthyldm"]
+[gd_resource type="Resource" script_class="CogDNA" load_steps=10 format=3 uid="uid://b8unldthyldm"]
 
 [ext_resource type="Script" path="res://objects/battle/battle_resources/cog_attacks/cog_attack.gd" id="1_v721g"]
 [ext_resource type="Resource" uid="uid://c27ek2anjbx88" path="res://objects/battle/battle_resources/cog_attacks/resources/pound_key.tres" id="2_6enlv"]
 [ext_resource type="Resource" uid="uid://dwkmwkdn3ws4k" path="res://objects/battle/battle_resources/cog_attacks/resources/evil_eye.tres" id="3_4sy8p"]
-[ext_resource type="Texture2D" uid="uid://2fj5qbvh3qa1" path="res://models/cogs/textures/misc/sleeve_2.png" id="4_syaha"]
-[ext_resource type="Texture2D" uid="uid://idf1e68fml3o" path="res://models/cogs/textures/misc/blazer_1.png" id="5_prigs"]
-[ext_resource type="Texture2D" uid="uid://o3hrfvdxeisb" path="res://models/cogs/textures/misc/leg_4.png" id="6_c64v8"]
+[ext_resource type="Texture2D" uid="uid://b4fvjpcmb10lt" path="res://models/cogs/textures/suit_misc.png" id="4_yrf0e"]
 [ext_resource type="PackedScene" uid="uid://2ewnjjvwgpwy" path="res://models/cogs/heads/coldcaller.glb" id="7_7xbt4"]
 [ext_resource type="Texture2D" uid="uid://bq8afiw8fq5r4" path="res://models/cogs/heads/coldcaller_desat.png" id="8_vcsnp"]
 [ext_resource type="Script" path="res://objects/cog/cogdna.gd" id="9_iwy0p"]
@@ -16,9 +14,7 @@
 script = ExtResource("9_iwy0p")
 department = 0
 suit = 2
-custom_blazer_tex = ExtResource("5_prigs")
-custom_arm_tex = ExtResource("4_syaha")
-custom_leg_tex = ExtResource("6_c64v8")
+custom_suit_tex = ExtResource("4_yrf0e")
 cog_name = "Lukewarm Receptionist"
 name_plural = ""
 head = ExtResource("7_7xbt4")

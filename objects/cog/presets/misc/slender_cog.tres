@@ -1,11 +1,9 @@
-[gd_resource type="Resource" script_class="CogDNA" load_steps=12 format=3 uid="uid://cfgq4sxagf8fo"]
+[gd_resource type="Resource" script_class="CogDNA" load_steps=10 format=3 uid="uid://cfgq4sxagf8fo"]
 
 [ext_resource type="Script" path="res://objects/cog/cogdna.gd" id="1_21e8a"]
-[ext_resource type="Texture2D" uid="uid://c3nvfyus0sjvs" path="res://models/cogs/textures/slender/sleeve.png" id="1_n1cnc"]
 [ext_resource type="Script" path="res://objects/battle/battle_resources/cog_attacks/cog_attack.gd" id="1_rm1bc"]
 [ext_resource type="Script" path="res://objects/battle/battle_resources/misc_movies/slendercog_boss/slender_static_increase.gd" id="2_iq3wl"]
-[ext_resource type="Texture2D" uid="uid://b2niomlt7hl2b" path="res://models/cogs/textures/slender/blazer.png" id="2_lb7e6"]
-[ext_resource type="Texture2D" uid="uid://b0njt70w0o750" path="res://models/cogs/textures/slender/leg.png" id="3_gkwbl"]
+[ext_resource type="Texture2D" uid="uid://b77vnppjyq5u4" path="res://models/cogs/textures/suit_slender.png" id="3_3svst"]
 [ext_resource type="PackedScene" uid="uid://cwg7ajjhom2dw" path="res://models/cogs/heads/telemarketer.glb" id="7_baj6f"]
 [ext_resource type="Texture2D" uid="uid://d03j2xfi6q4nk" path="res://models/cogs/heads/slendercog.png" id="8_g2m0a"]
 [ext_resource type="Script" path="res://objects/battle/battle_resources/status_effect.gd" id="9_ndiyl"]
@@ -27,9 +25,7 @@ one_time_use = false
 script = ExtResource("1_21e8a")
 department = 3
 suit = 1
-custom_blazer_tex = ExtResource("2_lb7e6")
-custom_arm_tex = ExtResource("1_n1cnc")
-custom_leg_tex = ExtResource("3_gkwbl")
+custom_suit_tex = ExtResource("3_3svst")
 cog_name = "Slendercog"
 name_plural = ""
 head = ExtResource("7_baj6f")
@@ -51,5 +47,6 @@ health_mod = 2.0
 battle_phrases = Array[String](["..."])
 external_assets = {
 "head_model": "",
-"head_textures": []
+"head_textures": [],
+"suit_texture": ""
 }
