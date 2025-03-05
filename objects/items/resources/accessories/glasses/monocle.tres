@@ -295,6 +295,7 @@ big_description = "Shows a detailed description for items when you're nearby the
 model = ExtResource("2_x6de0")
 stats_add = {}
 stats_multiply = {}
+stats_set = {}
 player_values = {
 "see_descriptions": true
 }

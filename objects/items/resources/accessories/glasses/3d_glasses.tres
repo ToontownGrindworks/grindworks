@@ -297,6 +297,7 @@ stats_add = {}
 stats_multiply = {
 "gag_boost:Lure": 1.25
 }
+stats_set = {}
 player_values = {}
 arbitrary_data = {}
 remember_item = true

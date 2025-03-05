@@ -296,6 +296,7 @@ big_description = "All floors have Tightened Security, 20 second battle timer"
 model = ExtResource("5_k307b")
 stats_add = {}
 stats_multiply = {}
+stats_set = {}
 player_values = {
 "force_tightened_security": true
 }

@@ -51,6 +51,9 @@ func assign_item(world_item: WorldItem):
 		var scripted_item: Item = SCRIPTED_PROGRESSION_ITEMS[Util.floor_number]
 		# 5th floor has a +8 laff boost
 		if scripted_item == LAFF_BOOST:
+			# No laff for forced 1 laffers
+			if Util.player.stats.melancholic:
+				return
 			scripted_item = scripted_item.duplicate()
 			scripted_item.stats_add['max_hp'] = 8
 			scripted_item.stats_add['hp'] = 8

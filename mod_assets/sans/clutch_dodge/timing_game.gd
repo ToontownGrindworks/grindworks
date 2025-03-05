@@ -12,6 +12,9 @@ var targets_hit := 0
 var grace_period_tick := 0.0
 var freeze_period_tick := 0.0
 
+const SFX_FREEZE = preload("res://mod_assets/sans/clutch_dodge/snd_bell.wav")
+const SFX_HIT = preload("res://mod_assets/sans/clutch_dodge/mus_sfx_eyeflash.wav")
+
 signal game_finished(result: bool)
 
 # Called when the node enters the scene tree for the first time.
@@ -59,12 +62,15 @@ func _input(event):
 		if AimedTarget is Node:
 			AimedTarget.queue_free()
 			AimedTarget = false
+			AudioManager.play_sound(SFX_HIT)
 			targets_hit += 1
 			if targets_hit >= TargetsToSend:
 				print("Game won!")
+				await get_tree().create_timer(1.0).timeout
 				game_finished.emit(true)
 			grace_period_tick = GracePeriod
 
 		else:
 			print("Missed!")
+			AudioManager.play_sound(SFX_FREEZE)
 			freeze_period_tick = FreezePeriod

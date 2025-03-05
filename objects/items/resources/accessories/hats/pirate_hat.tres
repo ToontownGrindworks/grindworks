@@ -296,6 +296,7 @@ big_description = "Every Proxy Cog defeated drops 2 jellybeans."
 model = ExtResource("5_ufk50")
 stats_add = {}
 stats_multiply = {}
+stats_set = {}
 player_values = {}
 arbitrary_data = {}
 item_script = ExtResource("3_eebrd")

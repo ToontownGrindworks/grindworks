@@ -295,6 +295,7 @@ big_description = "Allows Trap gags to be placed under already lured Cogs."
 model = ExtResource("4_bi30q")
 stats_add = {}
 stats_multiply = {}
+stats_set = {}
 player_values = {
 "trap_needs_lure": false
 }

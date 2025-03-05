@@ -14,12 +14,13 @@
 
 [sub_resource type="Resource" id="Resource_ls34v"]
 script = ExtResource("1_atowm")
+melancholic = true
 damage = 1.0
 defense = 1.0
 evasiveness = 1.0
 accuracy = 1.0
 speed = 1.0
-max_turns = 3
+max_turns = 5
 max_hp = 1
 hp = 1
 turns = 3

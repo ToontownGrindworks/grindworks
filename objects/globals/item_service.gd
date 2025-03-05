@@ -39,7 +39,7 @@ func get_random_item(pool: ItemPool, override_rolls := false) -> Item:
 		# Laff roll
 		var laff_roll := RandomService.randf_channel("laff_rolls")
 		print('laff rate is %f, and laff roll is %f' % [get_laff_rate(), laff_roll])
-		if laff_roll < get_laff_rate():
+		if laff_roll < get_laff_rate() and not Util.player.stats.melancholic:
 			print('forcing laff spawn')
 			return load('res://objects/items/resources/passive/laff_boost.tres')
 		var bean_roll := RandomService.randf_channel("bean_rolls")
