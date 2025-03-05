@@ -2,7 +2,7 @@ extends ActionScript
 class_name ElevatorReinforcements
 
 func action() -> void:
-	var cogs_needed := mini(4 - manager.cogs.size(), 2)
+	var cogs_needed := mini(5 - manager.cogs.size(), 2)
 	
 	if cogs_needed <= 0:
 		return
