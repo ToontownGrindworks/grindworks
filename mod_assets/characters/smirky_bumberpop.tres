@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="PlayerCharacter" load_steps=17 format=3 uid="uid://donajs6l6anbd"]
+[gd_resource type="Resource" script_class="PlayerCharacter" load_steps=18 format=3 uid="uid://donajs6l6anbd"]
 
 [ext_resource type="Script" path="res://objects/battle/battle_resources/stats.gd" id="1_ale64"]
 [ext_resource type="Script" path="res://objects/toon/clothing/toon_bottoms.gd" id="2_4dr0v"]
@@ -12,6 +12,7 @@
 [ext_resource type="Script" path="res://objects/items/classes/item.gd" id="10_ewl0y"]
 [ext_resource type="Resource" uid="uid://ci3d516op8yr7" path="res://objects/items/resources/accessories/hats/smirky_baseball_cap.tres" id="11_6j38w"]
 [ext_resource type="Resource" uid="uid://clcnuojw0d4h2" path="res://objects/items/resources/accessories/glasses/dorky_glasses.tres" id="12_rvd1j"]
+[ext_resource type="Resource" uid="uid://br0iywk53ga73" path="res://objects/items/resources/accessories/glasses/monocle.tres" id="13_dpx1f"]
 
 [sub_resource type="Resource" id="Resource_jj61k"]
 script = ExtResource("1_ale64")
@@ -63,6 +64,6 @@ character_summary = "- Cannot get Sound, but can crowdsource
 dna = SubResource("Resource_ncdqk")
 gag_loadout = ExtResource("8_el7k0")
 starting_laff = 30
-starting_items = Array[ExtResource("10_ewl0y")]([ExtResource("11_6j38w"), ExtResource("12_rvd1j")])
+starting_items = Array[ExtResource("10_ewl0y")]([ExtResource("13_dpx1f"), ExtResource("11_6j38w"), ExtResource("12_rvd1j")])
 base_stats = SubResource("Resource_jj61k")
 random_character_stored_name = ""
