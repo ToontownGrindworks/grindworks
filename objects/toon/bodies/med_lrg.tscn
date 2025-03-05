@@ -3379,7 +3379,7 @@ transform = Transform3D(1, 0, 0, 0, 0.967729, 0.251993, 0, -0.251993, 0.967729, 
 [node name="dogLLshorts_xx_fk_cageA" type="Node3D" parent="dogLLshorts_LLDog_shorts/dogLLshorts_Controllers/dogLLshorts_Main_controller/dogLLshorts_xxx_fk_pelvis/dogLLshorts_xx_fk_pelvis/dogLLshorts_ctrl_fk_pelvis/dogLLshorts_xxx_fk_spineA/dogLLshorts_xx_fk_spineA/dogLLshorts_ctrl_fk_spineA/dogLLshorts_xxx_fk_spineB/dogLLshorts_xx_fk_spineB/dogLLshorts_ctrl_fk_spineB/dogLLshorts_xxx_fk_cageA"]
 
 [node name="dogLLshorts_ctrl_fk_cageA" type="Node3D" parent="dogLLshorts_LLDog_shorts/dogLLshorts_Controllers/dogLLshorts_Main_controller/dogLLshorts_xxx_fk_pelvis/dogLLshorts_xx_fk_pelvis/dogLLshorts_ctrl_fk_pelvis/dogLLshorts_xxx_fk_spineA/dogLLshorts_xx_fk_spineA/dogLLshorts_ctrl_fk_spineA/dogLLshorts_xxx_fk_spineB/dogLLshorts_xx_fk_spineB/dogLLshorts_ctrl_fk_spineB/dogLLshorts_xxx_fk_cageA/dogLLshorts_xx_fk_cageA"]
-transform = Transform3D(0.9998, -0.01943, -0.0047354, 0.0187972, 0.993845, -0.109169, 0.00682741, 0.109058, 0.994012, 0, 0, 0)
+transform = Transform3D(0.9998, -0.01943, -0.00473541, 0.0187972, 0.993845, -0.109169, 0.00682742, 0.109058, 0.994012, 0, 0, 0)
 
 [node name="dogLLshorts_xxx_fk_neck" type="Node3D" parent="dogLLshorts_LLDog_shorts/dogLLshorts_Controllers/dogLLshorts_Main_controller/dogLLshorts_xxx_fk_pelvis/dogLLshorts_xx_fk_pelvis/dogLLshorts_ctrl_fk_pelvis/dogLLshorts_xxx_fk_spineA/dogLLshorts_xx_fk_spineA/dogLLshorts_ctrl_fk_spineA/dogLLshorts_xxx_fk_spineB/dogLLshorts_xx_fk_spineB/dogLLshorts_ctrl_fk_spineB/dogLLshorts_xxx_fk_cageA/dogLLshorts_xx_fk_cageA/dogLLshorts_ctrl_fk_cageA"]
 transform = Transform3D(1, 0, 0, 0, 0.937884, -0.346949, 0, 0.346949, 0.937884, -3.56416e-16, 0.951187, 0.0402283)
@@ -3387,7 +3387,7 @@ transform = Transform3D(1, 0, 0, 0, 0.937884, -0.346949, 0, 0.346949, 0.937884, 
 [node name="dogLLshorts_xx_fk_neck" type="Node3D" parent="dogLLshorts_LLDog_shorts/dogLLshorts_Controllers/dogLLshorts_Main_controller/dogLLshorts_xxx_fk_pelvis/dogLLshorts_xx_fk_pelvis/dogLLshorts_ctrl_fk_pelvis/dogLLshorts_xxx_fk_spineA/dogLLshorts_xx_fk_spineA/dogLLshorts_ctrl_fk_spineA/dogLLshorts_xxx_fk_spineB/dogLLshorts_xx_fk_spineB/dogLLshorts_ctrl_fk_spineB/dogLLshorts_xxx_fk_cageA/dogLLshorts_xx_fk_cageA/dogLLshorts_ctrl_fk_cageA/dogLLshorts_xxx_fk_neck"]
 
 [node name="dogLLshorts_ctrl_fk_neck" type="Node3D" parent="dogLLshorts_LLDog_shorts/dogLLshorts_Controllers/dogLLshorts_Main_controller/dogLLshorts_xxx_fk_pelvis/dogLLshorts_xx_fk_pelvis/dogLLshorts_ctrl_fk_pelvis/dogLLshorts_xxx_fk_spineA/dogLLshorts_xx_fk_spineA/dogLLshorts_ctrl_fk_spineA/dogLLshorts_xxx_fk_spineB/dogLLshorts_xx_fk_spineB/dogLLshorts_ctrl_fk_spineB/dogLLshorts_xxx_fk_cageA/dogLLshorts_xx_fk_cageA/dogLLshorts_ctrl_fk_cageA/dogLLshorts_xxx_fk_neck/dogLLshorts_xx_fk_neck"]
-transform = Transform3D(0.999888, 0.00547023, 0.0138713, -0.00581878, 0.999663, 0.0252124, -0.0137287, -0.0252903, 0.999586, 0, 0, 0)
+transform = Transform3D(0.999888, 0.00547019, 0.0138714, -0.00581875, 0.999663, 0.0252126, -0.0137288, -0.0252905, 0.999586, 0, 0, 0)
 
 [node name="dogLLshorts_xxx_fk_head" type="Node3D" parent="dogLLshorts_LLDog_shorts/dogLLshorts_Controllers/dogLLshorts_Main_controller/dogLLshorts_xxx_fk_pelvis/dogLLshorts_xx_fk_pelvis/dogLLshorts_ctrl_fk_pelvis/dogLLshorts_xxx_fk_spineA/dogLLshorts_xx_fk_spineA/dogLLshorts_ctrl_fk_spineA/dogLLshorts_xxx_fk_spineB/dogLLshorts_xx_fk_spineB/dogLLshorts_ctrl_fk_spineB/dogLLshorts_xxx_fk_cageA/dogLLshorts_xx_fk_cageA/dogLLshorts_ctrl_fk_cageA/dogLLshorts_xxx_fk_neck/dogLLshorts_xx_fk_neck/dogLLshorts_ctrl_fk_neck"]
 transform = Transform3D(1, 0, 0, 0, 0.996695, 0.0812364, 0, -0.0812364, 0.996695, -5.82915e-16, 0.679185, -7.10543e-16)
@@ -3395,7 +3395,7 @@ transform = Transform3D(1, 0, 0, 0, 0.996695, 0.0812364, 0, -0.0812364, 0.996695
 [node name="dogLLshorts_xx_fk_head" type="Node3D" parent="dogLLshorts_LLDog_shorts/dogLLshorts_Controllers/dogLLshorts_Main_controller/dogLLshorts_xxx_fk_pelvis/dogLLshorts_xx_fk_pelvis/dogLLshorts_ctrl_fk_pelvis/dogLLshorts_xxx_fk_spineA/dogLLshorts_xx_fk_spineA/dogLLshorts_ctrl_fk_spineA/dogLLshorts_xxx_fk_spineB/dogLLshorts_xx_fk_spineB/dogLLshorts_ctrl_fk_spineB/dogLLshorts_xxx_fk_cageA/dogLLshorts_xx_fk_cageA/dogLLshorts_ctrl_fk_cageA/dogLLshorts_xxx_fk_neck/dogLLshorts_xx_fk_neck/dogLLshorts_ctrl_fk_neck/dogLLshorts_xxx_fk_head"]
 
 [node name="dogLLshorts_ctrl_fk_head" type="Node3D" parent="dogLLshorts_LLDog_shorts/dogLLshorts_Controllers/dogLLshorts_Main_controller/dogLLshorts_xxx_fk_pelvis/dogLLshorts_xx_fk_pelvis/dogLLshorts_ctrl_fk_pelvis/dogLLshorts_xxx_fk_spineA/dogLLshorts_xx_fk_spineA/dogLLshorts_ctrl_fk_spineA/dogLLshorts_xxx_fk_spineB/dogLLshorts_xx_fk_spineB/dogLLshorts_ctrl_fk_spineB/dogLLshorts_xxx_fk_cageA/dogLLshorts_xx_fk_cageA/dogLLshorts_ctrl_fk_cageA/dogLLshorts_xxx_fk_neck/dogLLshorts_xx_fk_neck/dogLLshorts_ctrl_fk_neck/dogLLshorts_xxx_fk_head/dogLLshorts_xx_fk_head"]
-transform = Transform3D(0.998991, -0.0448837, -0.00181769, 0.0448936, 0.996177, 0.0749586, -0.00155368, -0.0749647, 0.997184, -0.0370607, -0.00375789, 0.0146657)
+transform = Transform3D(0.998991, -0.0448838, -0.00181769, 0.0448937, 0.996177, 0.0749586, -0.00155369, -0.0749647, 0.997184, -0.0370607, -0.00375789, 0.0146657)
 
 [node name="dogLLshorts_xxx_ik_cageA" type="Node3D" parent="dogLLshorts_LLDog_shorts/dogLLshorts_Controllers/dogLLshorts_Main_controller/dogLLshorts_xxx_fk_pelvis/dogLLshorts_xx_fk_pelvis/dogLLshorts_ctrl_fk_pelvis"]
 transform = Transform3D(1, 0, 0, 0, 0.971734, 0.236077, 0, -0.236077, 0.971734, -1.09452e-16, 1.49855, 0.0659669)
@@ -3454,7 +3454,7 @@ transform = Transform3D(0.333333, 0, 0, 0, 0.333333, 0, 0, 0, 0.333333, 2.62954e
 transform = Transform3D(1, 0, 0, 0, 0.997725, 0.0674157, 0, -0.0674157, 0.997725, -2.60324e-31, -3.22516, 0.261983)
 
 [node name="dogLLshorts_xxx_fk_left_shoulder" type="Node3D" parent="dogLLshorts_LLDog_shorts/dogLLshorts_Controllers/dogLLshorts_Main_controller"]
-transform = Transform3D(0.999892, 0.00284425, 0.014366, 0.000635662, 0.971606, -0.236605, -0.0146311, 0.236589, 0.971499, 0.364523, 5.29881, 0.10609)
+transform = Transform3D(0.999892, 0.00284425, 0.014366, 0.000635658, 0.971606, -0.236605, -0.0146311, 0.236589, 0.971499, 0.364523, 5.29881, 0.10609)
 
 [node name="dogLLshorts_xx_fk_left_shoulder" type="Node3D" parent="dogLLshorts_LLDog_shorts/dogLLshorts_Controllers/dogLLshorts_Main_controller/dogLLshorts_xxx_fk_left_shoulder"]
 transform = Transform3D(1, 0, 3.46945e-17, 0, 1, 0, -3.46945e-17, 0, 1, -7.10543e-17, 1.13687e-15, 1.77636e-17)
@@ -3476,7 +3476,7 @@ transform = Transform3D(0.99889, 0, 0.0471145, 0, 1, 0, -0.0471145, 0, 0.99889, 
 [node name="dogLLshorts_xx_fk_left_forearm" type="Node3D" parent="dogLLshorts_LLDog_shorts/dogLLshorts_Controllers/dogLLshorts_Main_controller/dogLLshorts_xxx_fk_left_shoulder/dogLLshorts_xx_fk_left_shoulder/dogLLshorts_ctrl_fk_left_shoulder/dogLLshorts_xxx_fk_left_elbow/dogLLshorts_xx_fk_left_elbow/dogLLshorts_ctrl_fk_left_elbow/dogLLshorts_xxx_fk_left_forearm"]
 
 [node name="dogLLshorts_ctrl_fk_left_forearm" type="Node3D" parent="dogLLshorts_LLDog_shorts/dogLLshorts_Controllers/dogLLshorts_Main_controller/dogLLshorts_xxx_fk_left_shoulder/dogLLshorts_xx_fk_left_shoulder/dogLLshorts_ctrl_fk_left_shoulder/dogLLshorts_xxx_fk_left_elbow/dogLLshorts_xx_fk_left_elbow/dogLLshorts_ctrl_fk_left_elbow/dogLLshorts_xxx_fk_left_forearm/dogLLshorts_xx_fk_left_forearm"]
-transform = Transform3D(0.999999, 0.00168397, 0.000140748, -0.00168399, 0.986151, 0.165844, 0.000140477, -0.165844, 0.986151, 5.68434e-16, 0, -3.19744e-16)
+transform = Transform3D(0.999999, 0.00168395, 0.000140748, -0.00168397, 0.986151, 0.165844, 0.000140474, -0.165844, 0.986151, 5.68434e-16, 0, -3.19744e-16)
 
 [node name="dogLLshorts_xxx_fk_left_wrist" type="Node3D" parent="dogLLshorts_LLDog_shorts/dogLLshorts_Controllers/dogLLshorts_Main_controller/dogLLshorts_xxx_fk_left_shoulder/dogLLshorts_xx_fk_left_shoulder/dogLLshorts_ctrl_fk_left_shoulder/dogLLshorts_xxx_fk_left_elbow/dogLLshorts_xx_fk_left_elbow/dogLLshorts_ctrl_fk_left_elbow/dogLLshorts_xxx_fk_left_forearm/dogLLshorts_xx_fk_left_forearm/dogLLshorts_ctrl_fk_left_forearm"]
 transform = Transform3D(0.999914, 0, -0.013082, 0, 1, 0, 0.013082, 0, 0.999914, 0.136114, -6.82121e-15, 0)
@@ -3484,10 +3484,10 @@ transform = Transform3D(0.999914, 0, -0.013082, 0, 1, 0, 0.013082, 0, 0.999914, 
 [node name="dogLLshorts_xx_fk_left_wrist" type="Node3D" parent="dogLLshorts_LLDog_shorts/dogLLshorts_Controllers/dogLLshorts_Main_controller/dogLLshorts_xxx_fk_left_shoulder/dogLLshorts_xx_fk_left_shoulder/dogLLshorts_ctrl_fk_left_shoulder/dogLLshorts_xxx_fk_left_elbow/dogLLshorts_xx_fk_left_elbow/dogLLshorts_ctrl_fk_left_elbow/dogLLshorts_xxx_fk_left_forearm/dogLLshorts_xx_fk_left_forearm/dogLLshorts_ctrl_fk_left_forearm/dogLLshorts_xxx_fk_left_wrist"]
 
 [node name="dogLLshorts_ctrl_fk_left_wrist" type="Node3D" parent="dogLLshorts_LLDog_shorts/dogLLshorts_Controllers/dogLLshorts_Main_controller/dogLLshorts_xxx_fk_left_shoulder/dogLLshorts_xx_fk_left_shoulder/dogLLshorts_ctrl_fk_left_shoulder/dogLLshorts_xxx_fk_left_elbow/dogLLshorts_xx_fk_left_elbow/dogLLshorts_ctrl_fk_left_elbow/dogLLshorts_xxx_fk_left_forearm/dogLLshorts_xx_fk_left_forearm/dogLLshorts_ctrl_fk_left_forearm/dogLLshorts_xxx_fk_left_wrist/dogLLshorts_xx_fk_left_wrist"]
-transform = Transform3D(0.97924, 0.199599, 0.0353462, -0.199938, 0.979788, 0.00630087, -0.0333741, -0.0132371, 0.999356, -0.00424111, -0.0419437, 0.00468576)
+transform = Transform3D(0.97924, 0.199599, 0.035346, -0.199938, 0.979788, 0.00630087, -0.033374, -0.0132371, 0.999356, -0.00424111, -0.0419437, 0.00468576)
 
 [node name="dogLLshorts_xxx_ik_left_shoulder" type="Node3D" parent="dogLLshorts_LLDog_shorts/dogLLshorts_Controllers/dogLLshorts_Main_controller"]
-transform = Transform3D(0.999892, 0.00284425, 0.014366, 0.000635662, 0.971606, -0.236605, -0.0146311, 0.236589, 0.971499, 0.364523, 5.29881, 0.10609)
+transform = Transform3D(0.999892, 0.00284425, 0.014366, 0.000635658, 0.971606, -0.236605, -0.0146311, 0.236589, 0.971499, 0.364523, 5.29881, 0.10609)
 
 [node name="dogLLshorts_xx_ik_left_shoulder" type="Node3D" parent="dogLLshorts_LLDog_shorts/dogLLshorts_Controllers/dogLLshorts_Main_controller/dogLLshorts_xxx_ik_left_shoulder"]
 transform = Transform3D(1, 0, 4.16334e-17, 0, 1, 0, -4.16334e-17, 0, 1, -7.10543e-17, 1.13687e-15, 1.77636e-17)
@@ -3510,7 +3510,7 @@ transform = Transform3D(0.997852, 9.09911e-16, -0.0655119, -9.09911e-16, 1, 2.98
 [node name="dogLLshorts_xx_fk_right_elbow" type="Node3D" parent="dogLLshorts_LLDog_shorts/dogLLshorts_Controllers/dogLLshorts_Main_controller/dogLLshorts_xxx_fk_right_shoulder/dogLLshorts_xx_fk_right_shoulder/dogLLshorts_ctrl_fk_right_shoulder/dogLLshorts_xxx_fk_right_elbow"]
 
 [node name="dogLLshorts_ctrl_fk_right_elbow" type="Node3D" parent="dogLLshorts_LLDog_shorts/dogLLshorts_Controllers/dogLLshorts_Main_controller/dogLLshorts_xxx_fk_right_shoulder/dogLLshorts_xx_fk_right_shoulder/dogLLshorts_ctrl_fk_right_shoulder/dogLLshorts_xxx_fk_right_elbow/dogLLshorts_xx_fk_right_elbow"]
-transform = Transform3D(0.763229, 3.98951e-06, -0.646127, -8.18279e-06, 1, -3.49132e-06, 0.646127, 7.9518e-06, 0.763229, 8.52651e-16, -1.42109e-15, -2.84217e-16)
+transform = Transform3D(0.763229, 3.9895e-06, -0.646127, -8.18275e-06, 1, -3.4913e-06, 0.646127, 7.95177e-06, 0.763229, 8.52651e-16, -1.42109e-15, -2.84217e-16)
 
 [node name="dogLLshorts_xxx_fk_right_forearm" type="Node3D" parent="dogLLshorts_LLDog_shorts/dogLLshorts_Controllers/dogLLshorts_Main_controller/dogLLshorts_xxx_fk_right_shoulder/dogLLshorts_xx_fk_right_shoulder/dogLLshorts_ctrl_fk_right_shoulder/dogLLshorts_xxx_fk_right_elbow/dogLLshorts_xx_fk_right_elbow/dogLLshorts_ctrl_fk_right_elbow"]
 transform = Transform3D(0.99889, -6.54384e-16, 0.0471145, 6.54384e-16, 1, 1.54241e-17, -0.0471145, 1.54241e-17, 0.99889, -1.03651, 0, -6.28161e-08)
@@ -3543,7 +3543,7 @@ transform = Transform3D(0.0474223, 0.0117898, 0.998805, -0.970568, -0.235814, 0.
 [node name="dogLLshorts_xx_fk_left_hip" type="Node3D" parent="dogLLshorts_LLDog_shorts/dogLLshorts_Controllers/dogLLshorts_Main_controller/dogLLshorts_xxx_fk_left_hip"]
 
 [node name="dogLLshorts_ctrl_fk_left_hip" type="Node3D" parent="dogLLshorts_LLDog_shorts/dogLLshorts_Controllers/dogLLshorts_Main_controller/dogLLshorts_xxx_fk_left_hip/dogLLshorts_xx_fk_left_hip"]
-transform = Transform3D(0.989311, 0.0516803, -0.136366, -0.0205521, 0.975176, 0.220473, 0.144375, -0.215314, 0.965813, 0, 0, 0)
+transform = Transform3D(0.989311, 0.0516802, -0.136365, -0.0205521, 0.975176, 0.220473, 0.144375, -0.215314, 0.965813, 0, 0, 0)
 
 [node name="dogLLshorts_xxx_fk_left_knee" type="Node3D" parent="dogLLshorts_LLDog_shorts/dogLLshorts_Controllers/dogLLshorts_Main_controller/dogLLshorts_xxx_fk_left_hip/dogLLshorts_xx_fk_left_hip/dogLLshorts_ctrl_fk_left_hip"]
 transform = Transform3D(0.903267, -0.429074, -0.00210659, 0.429074, 0.903269, -0.000474912, 0.00210659, -0.000474912, 0.999998, 1.58855, -3.55271e-16, 1.42109e-16)
@@ -3551,7 +3551,7 @@ transform = Transform3D(0.903267, -0.429074, -0.00210659, 0.429074, 0.903269, -0
 [node name="dogLLshorts_xx_fk_left_knee" type="Node3D" parent="dogLLshorts_LLDog_shorts/dogLLshorts_Controllers/dogLLshorts_Main_controller/dogLLshorts_xxx_fk_left_hip/dogLLshorts_xx_fk_left_hip/dogLLshorts_ctrl_fk_left_hip/dogLLshorts_xxx_fk_left_knee"]
 
 [node name="dogLLshorts_ctrl_fk_left_knee" type="Node3D" parent="dogLLshorts_LLDog_shorts/dogLLshorts_Controllers/dogLLshorts_Main_controller/dogLLshorts_xxx_fk_left_hip/dogLLshorts_xx_fk_left_hip/dogLLshorts_ctrl_fk_left_hip/dogLLshorts_xxx_fk_left_knee/dogLLshorts_xx_fk_left_knee"]
-transform = Transform3D(0.969357, -0.245646, -0.00120546, 0.245646, 0.969358, -0.000139885, 0.00120288, -0.000160517, 0.999999, -8.52651e-16, 3.01981e-16, -1.06581e-16)
+transform = Transform3D(0.969357, -0.245646, -0.00120545, 0.245646, 0.969358, -0.000139886, 0.00120288, -0.000160515, 0.999999, -8.52651e-16, 3.01981e-16, -1.06581e-16)
 
 [node name="dogLLshorts_xxx_fk_left_ankle" type="Node3D" parent="dogLLshorts_LLDog_shorts/dogLLshorts_Controllers/dogLLshorts_Main_controller/dogLLshorts_xxx_fk_left_hip/dogLLshorts_xx_fk_left_hip/dogLLshorts_ctrl_fk_left_hip/dogLLshorts_xxx_fk_left_knee/dogLLshorts_xx_fk_left_knee/dogLLshorts_ctrl_fk_left_knee"]
 transform = Transform3D(0.00111109, -0.979038, -0.203674, -2.02656e-06, 0.203674, -0.979039, 0.999999, 0.00108814, 0.000224352, 1.68486, -0.206365, -0.256672)
@@ -3577,7 +3577,7 @@ transform = Transform3D(0.0474223, 0.0117898, 0.998805, -0.970568, -0.235814, 0.
 [node name="dogLLshorts_ctrl_ik_left_hip" type="Node3D" parent="dogLLshorts_LLDog_shorts/dogLLshorts_Controllers/dogLLshorts_Main_controller/dogLLshorts_xxx_ik_left_hip/dogLLshorts_xx_ik_left_hip"]
 
 [node name="dogLLshorts_xxx_fk_right_hip" type="Node3D" parent="dogLLshorts_LLDog_shorts/dogLLshorts_Controllers/dogLLshorts_Main_controller"]
-transform = Transform3D(0.048524, 0.0117894, 0.998752, -0.970514, -0.235816, 0.0499356, 0.236111, -0.971725, -9.96141e-07, -0.262509, 3.07244, -0.233909)
+transform = Transform3D(0.0485239, 0.0117891, 0.998752, -0.970514, -0.235816, 0.0499354, 0.236111, -0.971725, -1.23426e-06, -0.262509, 3.07244, -0.233909)
 
 [node name="dogLLshorts_xx_fk_right_hip" type="Node3D" parent="dogLLshorts_LLDog_shorts/dogLLshorts_Controllers/dogLLshorts_Main_controller/dogLLshorts_xxx_fk_right_hip"]
 
@@ -3590,7 +3590,7 @@ transform = Transform3D(0.903267, -0.429079, 1.81304e-06, 0.429079, 0.903267, 4.
 [node name="dogLLshorts_xx_fk_right_knee" type="Node3D" parent="dogLLshorts_LLDog_shorts/dogLLshorts_Controllers/dogLLshorts_Main_controller/dogLLshorts_xxx_fk_right_hip/dogLLshorts_xx_fk_right_hip/dogLLshorts_ctrl_fk_right_hip/dogLLshorts_xxx_fk_right_knee"]
 
 [node name="dogLLshorts_ctrl_fk_right_knee" type="Node3D" parent="dogLLshorts_LLDog_shorts/dogLLshorts_Controllers/dogLLshorts_Main_controller/dogLLshorts_xxx_fk_right_hip/dogLLshorts_xx_fk_right_hip/dogLLshorts_ctrl_fk_right_hip/dogLLshorts_xxx_fk_right_knee/dogLLshorts_xx_fk_right_knee"]
-transform = Transform3D(0.948051, -0.318115, -4.2275e-06, 0.318115, 0.948051, -3.22872e-07, 4.11059e-06, -1.03873e-06, 1, 0, 1.35003e-15, -7.10543e-17)
+transform = Transform3D(0.948051, -0.318115, -4.2275e-06, 0.318115, 0.948051, -3.22875e-07, 4.11059e-06, -1.03873e-06, 1, 0, 1.35003e-15, -7.10543e-17)
 
 [node name="dogLLshorts_xxx_fk_right_ankle" type="Node3D" parent="dogLLshorts_LLDog_shorts/dogLLshorts_Controllers/dogLLshorts_Main_controller/dogLLshorts_xxx_fk_right_hip/dogLLshorts_xx_fk_right_hip/dogLLshorts_ctrl_fk_right_hip/dogLLshorts_xxx_fk_right_knee/dogLLshorts_xx_fk_right_knee/dogLLshorts_ctrl_fk_right_knee"]
 transform = Transform3D(-9.53674e-07, -0.979038, -0.203677, -2.98023e-08, 0.203677, -0.979038, 1, -9.23872e-07, -2.38419e-07, 1.68514, -0.206367, 0.252893)
@@ -3609,7 +3609,7 @@ transform = Transform3D(0, -1.17392e-06, 1, -5.68434e-14, -1, -1.17392e-06, 1, 0
 transform = Transform3D(1, -1.22461e-16, -1.22461e-16, 1.22461e-16, 1, -5.32632e-07, 1.22461e-16, 5.32632e-07, 1, 3.99358e-06, 2.32844e-06, -4.62693e-06)
 
 [node name="dogLLshorts_xxx_ik_right_hip" type="Node3D" parent="dogLLshorts_LLDog_shorts/dogLLshorts_Controllers/dogLLshorts_Main_controller"]
-transform = Transform3D(0.048524, 0.0117894, 0.998752, -0.970514, -0.235816, 0.0499356, 0.236111, -0.971725, -9.96141e-07, -0.262509, 3.07244, -0.233909)
+transform = Transform3D(0.0485239, 0.0117891, 0.998752, -0.970514, -0.235816, 0.0499354, 0.236111, -0.971725, -1.23426e-06, -0.262509, 3.07244, -0.233909)
 
 [node name="dogLLshorts_xx_ik_right_hip" type="Node3D" parent="dogLLshorts_LLDog_shorts/dogLLshorts_Controllers/dogLLshorts_Main_controller/dogLLshorts_xxx_ik_right_hip"]
 
@@ -3758,7 +3758,7 @@ transform = Transform3D(0.00133632, 0.907768, -0.41947, 0.985251, -0.0729695, -0
 [node name="dogLLshorts_ctrl_right_Armsdk" type="Node3D" parent="dogLLshorts_LLDog_shorts/dogLLshorts_Controllers/dogLLshorts_Main_controller/dogLLshorts_xxx_right_Armsdk/dogLLshorts_xx_right_Armsdk"]
 
 [node name="dogLLshorts_grp_left_ears" type="Node3D" parent="dogLLshorts_LLDog_shorts/dogLLshorts_Controllers/dogLLshorts_Main_controller"]
-transform = Transform3D(0.998839, -0.0406525, 0.025865, 0.0438479, 0.989436, -0.138172, -0.0199748, 0.139145, 0.990071, 0.19435, -0.12538, -0.412888)
+transform = Transform3D(0.998839, -0.0406524, 0.025865, 0.0438478, 0.989436, -0.138172, -0.0199748, 0.139145, 0.990071, 0.19435, -0.12538, -0.412888)
 
 [node name="dogLLshorts_xxx_left_earA" type="Node3D" parent="dogLLshorts_LLDog_shorts/dogLLshorts_Controllers/dogLLshorts_Main_controller/dogLLshorts_grp_left_ears"]
 transform = Transform3D(0.883158, 0, 0.469075, 0.0830837, 0.984189, -0.156427, -0.461659, 0.177122, 0.869195, 0.367766, 6.9937, -0.183242)
@@ -3774,7 +3774,7 @@ transform = Transform3D(0.141301, 0.872233, -0.468234, -0.979791, 0.190859, 0.05
 [node name="dogLLshorts_xx_left_earB" type="Node3D" parent="dogLLshorts_LLDog_shorts/dogLLshorts_Controllers/dogLLshorts_Main_controller/dogLLshorts_grp_left_ears/dogLLshorts_xxx_left_earA/dogLLshorts_xx_left_earA/dogLLshorts_ctrl_left_earA/dogLLshorts_xxx_left_earB"]
 
 [node name="dogLLshorts_ctrl_left_earB" type="Node3D" parent="dogLLshorts_LLDog_shorts/dogLLshorts_Controllers/dogLLshorts_Main_controller/dogLLshorts_grp_left_ears/dogLLshorts_xxx_left_earA/dogLLshorts_xx_left_earA/dogLLshorts_ctrl_left_earA/dogLLshorts_xxx_left_earB/dogLLshorts_xx_left_earB"]
-transform = Transform3D(0.991436, -0.00223537, -0.130586, 0.00558194, 0.999666, 0.0252669, 0.130486, -0.0257794, 0.991114, 0, 0, -7.88861e-33)
+transform = Transform3D(0.991436, -0.00223545, -0.130586, 0.00558208, 0.999666, 0.0252671, 0.130487, -0.0257797, 0.991114, 0, 0, -7.88861e-33)
 
 [node name="dogLLshorts_xxx_left_earC" type="Node3D" parent="dogLLshorts_LLDog_shorts/dogLLshorts_Controllers/dogLLshorts_Main_controller/dogLLshorts_grp_left_ears/dogLLshorts_xxx_left_earA/dogLLshorts_xx_left_earA/dogLLshorts_ctrl_left_earA/dogLLshorts_xxx_left_earB/dogLLshorts_xx_left_earB/dogLLshorts_ctrl_left_earB"]
 transform = Transform3D(0.96382, 0.240125, -0.115717, -0.239138, 0.970724, 0.0225411, 0.117742, 0.00594669, 0.993026, 0.386381, 8.52651e-16, 4.26326e-16)
@@ -3790,10 +3790,10 @@ transform = Transform3D(1, -6.93889e-18, -1.2326e-32, 6.93889e-18, 1, 7.88861e-3
 [node name="dogLLshorts_xx_left_earD" type="Node3D" parent="dogLLshorts_LLDog_shorts/dogLLshorts_Controllers/dogLLshorts_Main_controller/dogLLshorts_grp_left_ears/dogLLshorts_xxx_left_earA/dogLLshorts_xx_left_earA/dogLLshorts_ctrl_left_earA/dogLLshorts_xxx_left_earB/dogLLshorts_xx_left_earB/dogLLshorts_ctrl_left_earB/dogLLshorts_xxx_left_earC/dogLLshorts_xx_left_earC/dogLLshorts_ctrl_left_earC/dogLLshorts_xxx_left_earD"]
 
 [node name="dogLLshorts_ctrl_left_earD" type="Node3D" parent="dogLLshorts_LLDog_shorts/dogLLshorts_Controllers/dogLLshorts_Main_controller/dogLLshorts_grp_left_ears/dogLLshorts_xxx_left_earA/dogLLshorts_xx_left_earA/dogLLshorts_ctrl_left_earA/dogLLshorts_xxx_left_earB/dogLLshorts_xx_left_earB/dogLLshorts_ctrl_left_earB/dogLLshorts_xxx_left_earC/dogLLshorts_xx_left_earC/dogLLshorts_ctrl_left_earC/dogLLshorts_xxx_left_earD/dogLLshorts_xx_left_earD"]
-transform = Transform3D(0.996822, -0.0448446, -0.0658372, 0.0440487, 0.998938, -0.0134916, 0.0663724, 0.0105487, 0.997738, 0, 0, 0)
+transform = Transform3D(0.996822, -0.0448453, -0.0658382, 0.0440494, 0.998938, -0.0134918, 0.0663734, 0.0105488, 0.997738, 0, 0, 0)
 
 [node name="dogLLshorts_grp_right_ears" type="Node3D" parent="dogLLshorts_LLDog_shorts/dogLLshorts_Controllers/dogLLshorts_Main_controller"]
-transform = Transform3D(0.998839, -0.0406525, 0.025865, 0.0438479, 0.989436, -0.138172, -0.0199748, 0.139145, 0.990071, 0.19435, -0.12538, -0.412888)
+transform = Transform3D(0.998839, -0.0406524, 0.025865, 0.0438478, 0.989436, -0.138172, -0.0199748, 0.139145, 0.990071, 0.19435, -0.12538, -0.412888)
 
 [node name="dogLLshorts_xxx_right_earA" type="Node3D" parent="dogLLshorts_LLDog_shorts/dogLLshorts_Controllers/dogLLshorts_Main_controller/dogLLshorts_grp_right_ears"]
 transform = Transform3D(0.883158, 0, 0.469075, -0.0830837, -0.984189, 0.156427, 0.461659, -0.177122, -0.869195, -0.367766, 6.9937, -0.183242)
@@ -3816,7 +3816,7 @@ transform = Transform3D(0.96382, 0.240125, -0.115717, -0.239138, 0.970724, 0.022
 [node name="dogLLshorts_xx_right_earC" type="Node3D" parent="dogLLshorts_LLDog_shorts/dogLLshorts_Controllers/dogLLshorts_Main_controller/dogLLshorts_grp_right_ears/dogLLshorts_xxx_right_earA/dogLLshorts_xx_right_earA/dogLLshorts_ctrl_right_earA/dogLLshorts_xxx_right_earB/dogLLshorts_xx_right_earB/dogLLshorts_ctrl_right_earB/dogLLshorts_xxx_right_earC"]
 
 [node name="dogLLshorts_ctrl_right_earC" type="Node3D" parent="dogLLshorts_LLDog_shorts/dogLLshorts_Controllers/dogLLshorts_Main_controller/dogLLshorts_grp_right_ears/dogLLshorts_xxx_right_earA/dogLLshorts_xx_right_earA/dogLLshorts_ctrl_right_earA/dogLLshorts_xxx_right_earB/dogLLshorts_xx_right_earB/dogLLshorts_ctrl_right_earB/dogLLshorts_xxx_right_earC/dogLLshorts_xx_right_earC"]
-transform = Transform3D(0.996947, -0.061909, -0.0475952, 0.0611969, 0.997993, -0.0162788, 0.0485075, 0.0133164, 0.998735, 0, 0, 0)
+transform = Transform3D(0.996947, -0.0619091, -0.0475952, 0.0611969, 0.997993, -0.0162788, 0.0485075, 0.0133164, 0.998735, 0, 0, 0)
 
 [node name="dogLLshorts_xxx_right_earD" type="Node3D" parent="dogLLshorts_LLDog_shorts/dogLLshorts_Controllers/dogLLshorts_Main_controller/dogLLshorts_grp_right_ears/dogLLshorts_xxx_right_earA/dogLLshorts_xx_right_earA/dogLLshorts_ctrl_right_earA/dogLLshorts_xxx_right_earB/dogLLshorts_xx_right_earB/dogLLshorts_ctrl_right_earB/dogLLshorts_xxx_right_earC/dogLLshorts_xx_right_earC/dogLLshorts_ctrl_right_earC"]
 transform = Transform3D(1, -6.93889e-18, 4.93038e-32, 6.93889e-18, 1, 0, -4.93038e-32, 0, 1, -0.433982, 4.56542e-08, 7.10543e-17)
@@ -3824,7 +3824,7 @@ transform = Transform3D(1, -6.93889e-18, 4.93038e-32, 6.93889e-18, 1, 0, -4.9303
 [node name="dogLLshorts_xx_right_earD" type="Node3D" parent="dogLLshorts_LLDog_shorts/dogLLshorts_Controllers/dogLLshorts_Main_controller/dogLLshorts_grp_right_ears/dogLLshorts_xxx_right_earA/dogLLshorts_xx_right_earA/dogLLshorts_ctrl_right_earA/dogLLshorts_xxx_right_earB/dogLLshorts_xx_right_earB/dogLLshorts_ctrl_right_earB/dogLLshorts_xxx_right_earC/dogLLshorts_xx_right_earC/dogLLshorts_ctrl_right_earC/dogLLshorts_xxx_right_earD"]
 
 [node name="dogLLshorts_ctrl_right_earD" type="Node3D" parent="dogLLshorts_LLDog_shorts/dogLLshorts_Controllers/dogLLshorts_Main_controller/dogLLshorts_grp_right_ears/dogLLshorts_xxx_right_earA/dogLLshorts_xx_right_earA/dogLLshorts_ctrl_right_earA/dogLLshorts_xxx_right_earB/dogLLshorts_xx_right_earB/dogLLshorts_ctrl_right_earB/dogLLshorts_xxx_right_earC/dogLLshorts_xx_right_earC/dogLLshorts_ctrl_right_earC/dogLLshorts_xxx_right_earD/dogLLshorts_xx_right_earD"]
-transform = Transform3D(0.996221, -0.0459385, -0.0737135, 0.0452083, 0.998911, -0.0115446, 0.0741635, 0.00816846, 0.997213, 0, 0, 0)
+transform = Transform3D(0.996221, -0.0459389, -0.0737135, 0.0452088, 0.998911, -0.0115446, 0.0741635, 0.00816847, 0.997213, 0, 0, 0)
 
 [node name="dogLLshorts_grp_left_pants" type="Node3D" parent="dogLLshorts_LLDog_shorts/dogLLshorts_Controllers/dogLLshorts_Main_controller"]
 transform = Transform3D(0.930857, -0.148924, 0.333657, 0.13255, 0.988598, 0.071453, -0.340494, -0.0222863, 0.939982, 0.567366, -0.118009, 0.145404)
@@ -3911,7 +3911,7 @@ transform = Transform3D(0.997674, -0.0681712, 3.53036e-06, 0.0681712, 0.997674, 
 [node name="dogLLshorts_xx_left_palm" type="Node3D" parent="dogLLshorts_LLDog_shorts/dogLLshorts_Controllers/dogLLshorts_Main_controller/dogLLshorts_grp_left_fingers/dogLLshorts_xxx_left_palm"]
 
 [node name="dogLLshorts_ctrl_left_palm" type="Node3D" parent="dogLLshorts_LLDog_shorts/dogLLshorts_Controllers/dogLLshorts_Main_controller/dogLLshorts_grp_left_fingers/dogLLshorts_xxx_left_palm/dogLLshorts_xx_left_palm"]
-transform = Transform3D(0.99672, 0.0809317, 0.000277048, -0.0809322, 0.996716, 0.00253758, -7.07675e-05, -0.00255168, 0.999996, 0, 0, 0)
+transform = Transform3D(0.99672, 0.0809317, 0.00027705, -0.0809322, 0.996716, 0.00253758, -7.07699e-05, -0.00255168, 0.999996, 0, 0, 0)
 
 [node name="dogLLshorts_xxx_left_midA" type="Node3D" parent="dogLLshorts_LLDog_shorts/dogLLshorts_Controllers/dogLLshorts_Main_controller/dogLLshorts_grp_left_fingers/dogLLshorts_xxx_left_palm/dogLLshorts_xx_left_palm/dogLLshorts_ctrl_left_palm"]
 transform = Transform3D(0.999653, 0.0263306, 8.12528e-07, -0.0263306, 0.999653, -2.14018e-08, -8.1281e-07, 8.88178e-16, 1, 0.25933, 1.13687e-15, 2.66454e-16)
@@ -3919,7 +3919,7 @@ transform = Transform3D(0.999653, 0.0263306, 8.12528e-07, -0.0263306, 0.999653, 
 [node name="dogLLshorts_xx_left_midA" type="Node3D" parent="dogLLshorts_LLDog_shorts/dogLLshorts_Controllers/dogLLshorts_Main_controller/dogLLshorts_grp_left_fingers/dogLLshorts_xxx_left_palm/dogLLshorts_xx_left_palm/dogLLshorts_ctrl_left_palm/dogLLshorts_xxx_left_midA"]
 
 [node name="dogLLshorts_ctrl_left_midA" type="Node3D" parent="dogLLshorts_LLDog_shorts/dogLLshorts_Controllers/dogLLshorts_Main_controller/dogLLshorts_grp_left_fingers/dogLLshorts_xxx_left_palm/dogLLshorts_xx_left_palm/dogLLshorts_ctrl_left_palm/dogLLshorts_xxx_left_midA/dogLLshorts_xx_left_midA"]
-transform = Transform3D(0.991609, 0.129268, 0.000434934, -0.129269, 0.991601, 0.00405959, 9.34952e-05, -0.00408175, 0.999992, 0, 0, 0)
+transform = Transform3D(0.991609, 0.129268, 0.000434943, -0.129269, 0.991601, 0.00405959, 9.34867e-05, -0.00408175, 0.999992, 0, 0, 0)
 
 [node name="dogLLshorts_xxx_left_midB" type="Node3D" parent="dogLLshorts_LLDog_shorts/dogLLshorts_Controllers/dogLLshorts_Main_controller/dogLLshorts_grp_left_fingers/dogLLshorts_xxx_left_palm/dogLLshorts_xx_left_palm/dogLLshorts_ctrl_left_palm/dogLLshorts_xxx_left_midA/dogLLshorts_xx_left_midA/dogLLshorts_ctrl_left_midA"]
 transform = Transform3D(1, -2.89395e-18, 0, 2.89395e-18, 1, 0, 0, 0, 1, 0.280937, 6.82121e-15, -3.55271e-17)
@@ -3927,7 +3927,7 @@ transform = Transform3D(1, -2.89395e-18, 0, 2.89395e-18, 1, 0, 0, 0, 1, 0.280937
 [node name="dogLLshorts_xx_left_midB" type="Node3D" parent="dogLLshorts_LLDog_shorts/dogLLshorts_Controllers/dogLLshorts_Main_controller/dogLLshorts_grp_left_fingers/dogLLshorts_xxx_left_palm/dogLLshorts_xx_left_palm/dogLLshorts_ctrl_left_palm/dogLLshorts_xxx_left_midA/dogLLshorts_xx_left_midA/dogLLshorts_ctrl_left_midA/dogLLshorts_xxx_left_midB"]
 
 [node name="dogLLshorts_ctrl_left_midB" type="Node3D" parent="dogLLshorts_LLDog_shorts/dogLLshorts_Controllers/dogLLshorts_Main_controller/dogLLshorts_grp_left_fingers/dogLLshorts_xxx_left_palm/dogLLshorts_xx_left_palm/dogLLshorts_ctrl_left_palm/dogLLshorts_xxx_left_midA/dogLLshorts_xx_left_midA/dogLLshorts_ctrl_left_midA/dogLLshorts_xxx_left_midB/dogLLshorts_xx_left_midB"]
-transform = Transform3D(0.986901, 0.161325, 0.000626421, -0.161326, 0.986888, 0.00506256, 0.000198509, -0.0050973, 0.999987, 0, 0, 0)
+transform = Transform3D(0.986901, 0.161325, 0.000626407, -0.161326, 0.986888, 0.00506256, 0.000198521, -0.0050973, 0.999987, 0, 0, 0)
 
 [node name="dogLLshorts_xxx_left_thumbA" type="Node3D" parent="dogLLshorts_LLDog_shorts/dogLLshorts_Controllers/dogLLshorts_Main_controller/dogLLshorts_grp_left_fingers"]
 transform = Transform3D(0.492073, 3.03333e-14, -0.870554, -1.22616e-16, 1, 3.47744e-14, 0.870554, -1.70048e-14, 0.492073, 2.84638, 5.44132, 0.0169087)
@@ -3943,7 +3943,7 @@ transform = Transform3D(0.999998, -0.00171128, 0.000534423, 0.00171076, 0.999998
 [node name="dogLLshorts_xx_left_thumbB" type="Node3D" parent="dogLLshorts_LLDog_shorts/dogLLshorts_Controllers/dogLLshorts_Main_controller/dogLLshorts_grp_left_fingers/dogLLshorts_xxx_left_thumbA/dogLLshorts_xx_left_thumbA/dogLLshorts_ctrl_left_thumbA/dogLLshorts_xxx_left_thumbB"]
 
 [node name="dogLLshorts_ctrl_left_thumbB" type="Node3D" parent="dogLLshorts_LLDog_shorts/dogLLshorts_Controllers/dogLLshorts_Main_controller/dogLLshorts_grp_left_fingers/dogLLshorts_xxx_left_thumbA/dogLLshorts_xx_left_thumbA/dogLLshorts_ctrl_left_thumbA/dogLLshorts_xxx_left_thumbB/dogLLshorts_xx_left_thumbB"]
-transform = Transform3D(0.985137, 0.134489, 0.106835, -0.134271, 0.9909, -0.0092604, -0.107108, -0.00522206, 0.994234, 0, 0, 0)
+transform = Transform3D(0.985137, 0.134489, 0.106835, -0.134271, 0.9909, -0.00926052, -0.107108, -0.00522195, 0.994234, 0, 0, 0)
 
 [node name="dogLLshorts_xxx_left_thumbC" type="Node3D" parent="dogLLshorts_LLDog_shorts/dogLLshorts_Controllers/dogLLshorts_Main_controller/dogLLshorts_grp_left_fingers/dogLLshorts_xxx_left_thumbA/dogLLshorts_xx_left_thumbA/dogLLshorts_ctrl_left_thumbA/dogLLshorts_xxx_left_thumbB/dogLLshorts_xx_left_thumbB/dogLLshorts_ctrl_left_thumbB"]
 transform = Transform3D(1, -2.1684e-19, 0, 2.1684e-19, 1, -1.0842e-19, 0, 1.0842e-19, 1, 0.157147, 2.27374e-15, -2.55795e-15)
@@ -3951,7 +3951,7 @@ transform = Transform3D(1, -2.1684e-19, 0, 2.1684e-19, 1, -1.0842e-19, 0, 1.0842
 [node name="dogLLshorts_xx_left_thumbC" type="Node3D" parent="dogLLshorts_LLDog_shorts/dogLLshorts_Controllers/dogLLshorts_Main_controller/dogLLshorts_grp_left_fingers/dogLLshorts_xxx_left_thumbA/dogLLshorts_xx_left_thumbA/dogLLshorts_ctrl_left_thumbA/dogLLshorts_xxx_left_thumbB/dogLLshorts_xx_left_thumbB/dogLLshorts_ctrl_left_thumbB/dogLLshorts_xxx_left_thumbC"]
 
 [node name="dogLLshorts_ctrl_left_thumbC" type="Node3D" parent="dogLLshorts_LLDog_shorts/dogLLshorts_Controllers/dogLLshorts_Main_controller/dogLLshorts_grp_left_fingers/dogLLshorts_xxx_left_thumbA/dogLLshorts_xx_left_thumbA/dogLLshorts_ctrl_left_thumbA/dogLLshorts_xxx_left_thumbB/dogLLshorts_xx_left_thumbB/dogLLshorts_ctrl_left_thumbB/dogLLshorts_xxx_left_thumbC/dogLLshorts_xx_left_thumbC"]
-transform = Transform3D(0.984167, 0.177237, 0.000822471, -0.177238, 0.984142, 0.00708385, 0.00044609, -0.00711748, 0.999973, 0, 0, 0)
+transform = Transform3D(0.984167, 0.177237, 0.000822468, -0.177238, 0.984142, 0.00708381, 0.000446087, -0.00711744, 0.999973, 0, 0, 0)
 
 [node name="dogLLshorts_grp_right_fingers" type="Node3D" parent="dogLLshorts_LLDog_shorts/dogLLshorts_Controllers/dogLLshorts_Main_controller"]
 transform = Transform3D(0.012982, -0.907573, 0.419694, 0.984233, 0.085648, 0.154766, -0.176408, 0.411067, 0.894374, 3.95286, 5.48395, -2.62412)
@@ -3970,7 +3970,7 @@ transform = Transform3D(0.999653, 0.0263306, 8.12528e-07, -0.0263306, 0.999653, 
 [node name="dogLLshorts_xx_right_midA" type="Node3D" parent="dogLLshorts_LLDog_shorts/dogLLshorts_Controllers/dogLLshorts_Main_controller/dogLLshorts_grp_right_fingers/dogLLshorts_xxx_right_palm/dogLLshorts_xx_right_palm/dogLLshorts_ctrl_right_palm/dogLLshorts_xxx_right_midA"]
 
 [node name="dogLLshorts_ctrl_right_midA" type="Node3D" parent="dogLLshorts_LLDog_shorts/dogLLshorts_Controllers/dogLLshorts_Main_controller/dogLLshorts_grp_right_fingers/dogLLshorts_xxx_right_palm/dogLLshorts_xx_right_palm/dogLLshorts_ctrl_right_palm/dogLLshorts_xxx_right_midA/dogLLshorts_xx_right_midA"]
-transform = Transform3D(0.9916, 0.12934, 3.87437e-05, -0.12934, 0.9916, 0.000391764, 1.22525e-05, -0.000393484, 1, 0, 0, 0)
+transform = Transform3D(0.9916, 0.12934, 3.87437e-05, -0.12934, 0.9916, 0.000391763, 1.22525e-05, -0.000393484, 1, 0, 0, 0)
 
 [node name="dogLLshorts_xxx_right_midB" type="Node3D" parent="dogLLshorts_LLDog_shorts/dogLLshorts_Controllers/dogLLshorts_Main_controller/dogLLshorts_grp_right_fingers/dogLLshorts_xxx_right_palm/dogLLshorts_xx_right_palm/dogLLshorts_ctrl_right_palm/dogLLshorts_xxx_right_midA/dogLLshorts_xx_right_midA/dogLLshorts_ctrl_right_midA"]
 transform = Transform3D(1, 4.01479e-18, 0, -4.01479e-18, 1, 3.63959e-23, 0, -3.63959e-23, 1, -0.280937, -4.8719e-06, -2.20703e-07)
@@ -3994,7 +3994,7 @@ transform = Transform3D(0.999998, -0.00171128, 0.000534423, 0.00171076, 0.999998
 [node name="dogLLshorts_xx_right_thumbB" type="Node3D" parent="dogLLshorts_LLDog_shorts/dogLLshorts_Controllers/dogLLshorts_Main_controller/dogLLshorts_grp_right_fingers/dogLLshorts_xxx_right_thumbA/dogLLshorts_xx_right_thumbA/dogLLshorts_ctrl_right_thumbA/dogLLshorts_xxx_right_thumbB"]
 
 [node name="dogLLshorts_ctrl_right_thumbB" type="Node3D" parent="dogLLshorts_LLDog_shorts/dogLLshorts_Controllers/dogLLshorts_Main_controller/dogLLshorts_grp_right_fingers/dogLLshorts_xxx_right_thumbA/dogLLshorts_xx_right_thumbA/dogLLshorts_ctrl_right_thumbA/dogLLshorts_xxx_right_thumbB/dogLLshorts_xx_right_thumbB"]
-transform = Transform3D(0.970209, 0.155914, 0.185432, -0.153424, 0.98777, -0.0277918, -0.187498, -0.0014859, 0.982261, 0, 0, 0)
+transform = Transform3D(0.970209, 0.155914, 0.185432, -0.153424, 0.98777, -0.0277919, -0.187498, -0.00148585, 0.982261, 0, 0, 0)
 
 [node name="dogLLshorts_xxx_right_thumbC" type="Node3D" parent="dogLLshorts_LLDog_shorts/dogLLshorts_Controllers/dogLLshorts_Main_controller/dogLLshorts_grp_right_fingers/dogLLshorts_xxx_right_thumbA/dogLLshorts_xx_right_thumbA/dogLLshorts_ctrl_right_thumbA/dogLLshorts_xxx_right_thumbB/dogLLshorts_xx_right_thumbB/dogLLshorts_ctrl_right_thumbB"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.157147, -1.15784e-06, -1.18123e-06)
@@ -4002,7 +4002,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.157147, -1.15784e-06, -1.1
 [node name="dogLLshorts_xx_right_thumbC" type="Node3D" parent="dogLLshorts_LLDog_shorts/dogLLshorts_Controllers/dogLLshorts_Main_controller/dogLLshorts_grp_right_fingers/dogLLshorts_xxx_right_thumbA/dogLLshorts_xx_right_thumbA/dogLLshorts_ctrl_right_thumbA/dogLLshorts_xxx_right_thumbB/dogLLshorts_xx_right_thumbB/dogLLshorts_ctrl_right_thumbB/dogLLshorts_xxx_right_thumbC"]
 
 [node name="dogLLshorts_ctrl_right_thumbC" type="Node3D" parent="dogLLshorts_LLDog_shorts/dogLLshorts_Controllers/dogLLshorts_Main_controller/dogLLshorts_grp_right_fingers/dogLLshorts_xxx_right_thumbA/dogLLshorts_xx_right_thumbA/dogLLshorts_ctrl_right_thumbA/dogLLshorts_xxx_right_thumbB/dogLLshorts_xx_right_thumbB/dogLLshorts_ctrl_right_thumbB/dogLLshorts_xxx_right_thumbC/dogLLshorts_xx_right_thumbC"]
-transform = Transform3D(0.962265, 0.27211, 0.000708847, -0.272111, 0.962261, 0.00312708, 0.000168816, -0.00320197, 0.999995, 0, 0, 0)
+transform = Transform3D(0.962265, 0.27211, 0.000708843, -0.272111, 0.962261, 0.00312708, 0.00016882, -0.00320197, 0.999995, 0, 0, 0)
 
 [node name="dogLLshorts_RIG_DO_NOT_TOUCH" type="Node3D" parent="dogLLshorts_LLDog_shorts/dogLLshorts_Controllers/dogLLshorts_Main_controller"]
 
@@ -4417,10 +4417,10 @@ transform = Transform3D(0.99875, -0.0499282, -0.00254184, 0.0498795, 0.998618, -
 [node name="dogLLshorts_spine_crv" type="Node3D" parent="dogLLshorts_LLDog_shorts/dogLLshorts_Controllers/dogLLshorts_Main_controller/dogLLshorts_RIG_DO_NOT_TOUCH/dogLLshorts_Extras"]
 
 [node name="dogLLshorts_neg_left_wrist_loc" type="Node3D" parent="dogLLshorts_LLDog_shorts/dogLLshorts_Controllers/dogLLshorts_Main_controller/dogLLshorts_RIG_DO_NOT_TOUCH/dogLLshorts_Extras"]
-transform = Transform3D(1, 0, 0, 0, 0.999912, 0.0132445, 0, -0.0132445, 0.999912, 0.799885, 4.31594, -0.281558)
+transform = Transform3D(1, 0, 0, 0, 0.999912, 0.0132446, 0, -0.0132446, 0.999912, 0.799885, 4.31594, -0.281558)
 
 [node name="dogLLshorts_neg_right_wrist_loc" type="Node3D" parent="dogLLshorts_LLDog_shorts/dogLLshorts_Controllers/dogLLshorts_Main_controller/dogLLshorts_RIG_DO_NOT_TOUCH/dogLLshorts_Extras"]
-transform = Transform3D(1, 0, 0, 0, 1, 0.00051281, 0, -0.00051281, 1, -0.899236, 4.36914, -0.360081)
+transform = Transform3D(1, 0, 0, 0, 1, 0.000512816, 0, -0.000512816, 1, -0.899236, 4.36914, -0.360081)
 
 [node name="dogLLshorts_neg_left_wrist_ik" type="Node3D" parent="dogLLshorts_LLDog_shorts/dogLLshorts_Controllers/dogLLshorts_Main_controller/dogLLshorts_RIG_DO_NOT_TOUCH/dogLLshorts_Extras"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.799885, 4.31594, -0.281558)

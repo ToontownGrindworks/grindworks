@@ -16,9 +16,12 @@ want_ui_spin = true
 ui_cam_offset = 0.0
 item_name = "The Weakest Enemy"
 item_description = "what? you think i'm just gonna stand there and take it?"
-big_description = "Any damage can be dodged with a quick reaction; Becomes more difficult each time but is easier with Defense and Evasiveness"
+big_description = "Any damage can be dodged with a quick reaction (-10% Defense when activated), Difficulty depends on Defense and Evasiveness"
 stats_add = {}
 stats_multiply = {}
+stats_set = {
+"clutch": true
+}
 player_values = {}
 arbitrary_data = {}
 item_script = ExtResource("1_fhiev")

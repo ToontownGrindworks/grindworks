@@ -57,6 +57,9 @@ signal s_luck_changed(new_luck: float)
 
 @export var proxy_chance_boost := 0.0
 
+# sans - The Weakest Enemy
+@export var clutch := false
+
 ## Sets the player's base gag loadout
 func set_loadout(loadout: GagLoadout) -> void:
 	var gag_dicts := [gags_unlocked, gag_balance, gag_effectiveness, gag_regeneration, gag_vouchers]

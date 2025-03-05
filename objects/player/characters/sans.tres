@@ -16,7 +16,7 @@
 script = ExtResource("1_atowm")
 damage = 1.0
 defense = 1.0
-evasiveness = 1.5
+evasiveness = 1.0
 accuracy = 1.0
 speed = 1.0
 max_turns = 3
@@ -56,9 +56,9 @@ bottoms = SubResource("Resource_lhs2d")
 script = ExtResource("9_a086s")
 character_name = "sans."
 character_summary = "- Permanent 1 Laff
-- Most damage delayed to end of round
-- Debuff stacks may stun Cog
-- ANY damage can be dodged with a QTE
+- Most damage delayed to end of round (N/A)
+- Debuff stacks may stun Cog (N/A)
+- ANY damage is dodged with precise reaction
 - Starts with all tracks and 3 turns"
 dna = SubResource("Resource_hwgc0")
 gag_loadout = ExtResource("8_m7j15")

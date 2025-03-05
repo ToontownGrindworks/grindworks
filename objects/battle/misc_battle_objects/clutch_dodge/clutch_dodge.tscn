@@ -1,29 +1,22 @@
-[gd_scene load_steps=14 format=3 uid="uid://ckg6eaqorc174"]
+[gd_scene load_steps=19 format=3 uid="uid://ckg6eaqorc174"]
 
 [ext_resource type="Script" path="res://objects/battle/misc_battle_objects/clutch_dodge/clutch_dodge.gd" id="1_khdpb"]
 [ext_resource type="Shader" path="res://objects/pause_menu/canvas_blur_shader.gdshader" id="2_euxtx"]
-[ext_resource type="PackedScene" uid="uid://b0d1er4oqiqcn" path="res://objects/general_ui/general_button/general_button.tscn" id="3_x5s3a"]
-[ext_resource type="Shader" path="res://scenes/title_screen/hue_shift.gdshader" id="4_h5wk2"]
-[ext_resource type="Texture2D" uid="uid://ddcktpjy3gdew" path="res://ui_assets/misc/uiAccessoryDelete_up.png" id="5_gtjum"]
-[ext_resource type="Texture2D" uid="uid://b7ri5sq021cvo" path="res://ui_assets/misc/uiAccessoryDelete_down.png" id="6_68rtl"]
-[ext_resource type="Texture2D" uid="uid://dn8vndd37lqom" path="res://ui_assets/misc/uiAccessoryDelete_rollover.png" id="7_b243n"]
-[ext_resource type="Texture2D" uid="uid://ddsopkixvucl4" path="res://objects/battle/misc_battle_objects/clutch_dodge/f6f18a860a90dd492e6e68464d85201b.webp" id="8_axhdr"]
+[ext_resource type="Script" path="res://mod_assets/sans/clutch_dodge/timing_game.gd" id="4_jj2nr"]
+[ext_resource type="Texture2D" uid="uid://cvcj7n2tqymoi" path="res://mod_assets/sans/clutch_dodge/ut_targetscroll.png" id="5_ck6l3"]
+[ext_resource type="Texture2D" uid="uid://ueap1jalw7le" path="res://mod_assets/sans/clutch_dodge/ut_targetprompt.png" id="5_w8fev"]
+[ext_resource type="Texture2D" uid="uid://dbooht48surcl" path="res://mod_assets/sans/clutch_dodge/ut_knifeslice_fx.png" id="9_7qwg4"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_lvkcj"]
 shader = ExtResource("2_euxtx")
 shader_parameter/strength = 10.0
 shader_parameter/sample_power = 3
 
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_10epn"]
-shader = ExtResource("4_h5wk2")
-shader_parameter/Shift_Hue = 0.585
-shader_parameter/alpha = 1.0
-
 [sub_resource type="Animation" id="Animation_klw45"]
 length = 0.001
 tracks/0/type = "value"
 tracks/0/imported = false
-tracks/0/enabled = true
+tracks/0/enabled = false
 tracks/0/path = NodePath("BackdropHolder:position")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
@@ -35,23 +28,11 @@ tracks/0/keys = {
 }
 tracks/1/type = "value"
 tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("BackdropHolder/Backdrop/Buttons:position")
+tracks/1/enabled = false
+tracks/1/path = NodePath("Blur:modulate")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(-1, -10)]
-}
-tracks/2/type = "value"
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/path = NodePath("Blur:modulate")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
@@ -75,22 +56,10 @@ tracks/0/keys = {
 tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("BackdropHolder/Backdrop/Buttons:position")
+tracks/1/path = NodePath("Blur:modulate")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
-"times": PackedFloat32Array(0, 0.333333),
-"transitions": PackedFloat32Array(0.15, 1),
-"update": 0,
-"values": [Vector2(-1, -10), Vector2(-1, -10)]
-}
-tracks/2/type = "value"
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/path = NodePath("Blur:modulate")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/keys = {
 "times": PackedFloat32Array(0, 0.166667),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
@@ -102,6 +71,63 @@ _data = {
 "RESET": SubResource("Animation_klw45"),
 "pause_on": SubResource("Animation_yqy0f")
 }
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gq44h"]
+atlas = ExtResource("9_7qwg4")
+region = Rect2(0, 0, 30, 110)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_iktge"]
+atlas = ExtResource("9_7qwg4")
+region = Rect2(30, 0, 30, 110)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kdid3"]
+atlas = ExtResource("9_7qwg4")
+region = Rect2(60, 0, 30, 110)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_phjnk"]
+atlas = ExtResource("9_7qwg4")
+region = Rect2(90, 0, 30, 110)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_721u6"]
+atlas = ExtResource("9_7qwg4")
+region = Rect2(120, 0, 30, 110)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rs7f0"]
+atlas = ExtResource("9_7qwg4")
+region = Rect2(150, 0, 30, 110)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_e6ep8"]
+atlas = ExtResource("9_7qwg4")
+region = Rect2(180, 0, 30, 110)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_4l20c"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gq44h")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_iktge")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kdid3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_phjnk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_721u6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rs7f0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_e6ep8")
+}],
+"loop": false,
+"name": &"default",
+"speed": 5.0
+}]
 
 [node name="ClutchDodge" type="Control"]
 process_mode = 3
@@ -115,6 +141,7 @@ script = ExtResource("1_khdpb")
 
 [node name="Blur" type="ColorRect" parent="."]
 unique_name_in_owner = true
+visible = false
 material = SubResource("ShaderMaterial_lvkcj")
 layout_mode = 1
 anchors_preset = 15
@@ -140,58 +167,61 @@ anchors_preset = 12
 anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_top = -80.0
+offset_top = -648.0
 grow_horizontal = 2
 grow_vertical = 0
 color = Color(0, 0, 0, 0.34902)
-
-[node name="Buttons" type="HBoxContainer" parent="BackdropHolder/Backdrop"]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = -1.0
-offset_top = -10.0
-offset_right = -1.0
-offset_bottom = 10.0
-grow_horizontal = 2
-grow_vertical = 2
-pivot_offset = Vector2(152, 126)
-theme_override_constants/separation = 64
-alignment = 1
-
-[node name="Resume" parent="BackdropHolder/Backdrop/Buttons" instance=ExtResource("3_x5s3a")]
-material = SubResource("ShaderMaterial_10epn")
-custom_minimum_size = Vector2(230, 100)
-layout_mode = 2
-texture_normal = ExtResource("5_gtjum")
-texture_pressed = ExtResource("6_68rtl")
-texture_hover = ExtResource("7_b243n")
-texture_disabled = ExtResource("6_68rtl")
-hover_db_offset = 6.0
-press_db_offset = 0.0
-text = "Nah, I'd win"
-
-[node name="Quit" parent="BackdropHolder/Backdrop/Buttons" instance=ExtResource("3_x5s3a")]
-custom_minimum_size = Vector2(230, 100)
-layout_mode = 2
-texture_normal = ExtResource("5_gtjum")
-texture_pressed = ExtResource("6_68rtl")
-texture_hover = ExtResource("7_b243n")
-texture_disabled = ExtResource("6_68rtl")
-hover_db_offset = 6.0
-press_db_offset = 0.0
-text = "It's so over"
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
 "": SubResource("AnimationLibrary_gpmgs")
 }
 
-[node name="F6f18a860a90Dd492e6e68464d85201b" type="Sprite2D" parent="."]
-position = Vector2(585, 281)
-scale = Vector2(4.89844, 3.49219)
-texture = ExtResource("8_axhdr")
+[node name="KnifeSlice" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+position = Vector2(576, 280)
+scale = Vector2(5.03333, 5.03333)
+sprite_frames = SubResource("SpriteFrames_4l20c")
+frame = 6
+frame_progress = 1.0
+speed_scale = 0.8
 
-[connection signal="pressed" from="BackdropHolder/Backdrop/Buttons/Resume" to="." method="resume"]
-[connection signal="pressed" from="BackdropHolder/Backdrop/Buttons/Quit" to="." method="quit"]
+[node name="TimingGame" type="Control" parent="."]
+anchors_preset = 0
+offset_left = 576.0
+offset_top = 448.0
+offset_right = 576.0
+offset_bottom = 448.0
+script = ExtResource("4_jj2nr")
+
+[node name="UtTargetprompt" type="TextureRect" parent="TimingGame"]
+texture_filter = 1
+layout_mode = 0
+offset_left = -280.0
+offset_top = -64.0
+offset_right = 282.0
+offset_bottom = 64.0
+scale = Vector2(1.75, 1.75)
+pivot_offset = Vector2(281, 64)
+texture = ExtResource("5_w8fev")
+
+[node name="Targets" type="Control" parent="TimingGame"]
+anchors_preset = 0
+offset_left = -576.0
+offset_top = -104.0
+offset_right = 576.0
+offset_bottom = 101.0
+pivot_offset = Vector2(576, 102)
+
+[node name="Target" type="TextureRect" parent="TimingGame/Targets"]
+texture_filter = 1
+layout_mode = 1
+offset_left = -24.0
+offset_top = 40.0
+offset_right = -10.0
+offset_bottom = 168.0
+scale = Vector2(1.75, 1.75)
+pivot_offset = Vector2(7, 64)
+texture = ExtResource("5_ck6l3")
+
+[connection signal="game_finished" from="TimingGame" to="." method="_on_timing_game_game_finished"]

@@ -150,6 +150,7 @@ cashbot_boost = 1.0
 lawbot_boost = 1.0
 bossbot_boost = 1.0
 proxy_chance_boost = 0.0
+clutch = false
 damage = 2.0
 defense = 1.2
 evasiveness = 1.1

@@ -1,7 +1,5 @@
 extends ItemScript
 
-var current_hp := 0
-
 func on_collect(_item: Item, _object: Node3D) -> void:
 	setup()
 
@@ -20,14 +18,8 @@ func setup() -> void:
 
 func hp_changed(hp: int) -> void:
 	if hp > 0:
-		current_hp = hp
 		return
-	Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
-	Util.get_tree().get_root().add_child(load("res://objects/battle/misc_battle_objects/clutch_dodge/clutch_dodge.tscn").instantiate())
-	var won = await Util.s_clutch_ended
-	current_hp = hp
-	if won:
-		++current_hp
+	Util.get_player().stats.defense -= 0.05
 
 func do_heal(amount: int) -> void:
 	Util.get_player().quick_heal(amount)

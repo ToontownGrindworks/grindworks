@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3 uid="uid://bnauai5tgu3rd"]
+
+[ext_resource type="Texture2D" uid="uid://cvcj7n2tqymoi" path="res://mod_assets/sans/clutch_dodge/ut_targetscroll.png" id="1_nlkxq"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0qywr"]
+size = Vector2(19.1429, 128)
+
+[node name="Target" type="Area2D"]
+texture_filter = 1
+position = Vector2(-480, 172)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0.428562, 0)
+scale = Vector2(1.75, 1.75)
+shape = SubResource("RectangleShape2D_0qywr")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+scale = Vector2(1.75, 1.75)
+texture = ExtResource("1_nlkxq")
