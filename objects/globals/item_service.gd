@@ -206,6 +206,9 @@ func get_laff_rate() -> float:
 	if not is_instance_valid(Util.get_player()):
 		return 0.0
 	
+	if Util.get_player().stats.melancholic:
+		return 0.0
+	
 	# Get the current laff total
 	# Take player's max hp + all the other laff boost items in play
 	var laff_total := Util.get_player().stats.max_hp

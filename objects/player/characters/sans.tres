@@ -55,7 +55,7 @@ bottoms = SubResource("Resource_lhs2d")
 
 [resource]
 script = ExtResource("9_a086s")
-character_name = "sans."
+character_name = "sans"
 character_summary = "- Permanent 1 Laff
 - Most damage delayed to end of round (N/A)
 - Debuff stacks may stun Cog (N/A)
