@@ -145,7 +145,7 @@ func run_timer(time := 5.0, anchor := Control.PRESET_BOTTOM_RIGHT) -> GameTimer:
 	return timer
 
 func get_hazard_damage(damage := 0) -> int:
-	return damage + max(Globals.MAX_HAZARD_DAMAGE,-(floor_number + 1) * 1)
+	return damage + max(Globals.MAX_HAZARD_DAMAGE,-(floor_number + 1) * 2)
 
 func circle_in(time : float) -> void:
 	var circle: CircleTransition = CIRCLE_TRANSITION.load().instantiate()
