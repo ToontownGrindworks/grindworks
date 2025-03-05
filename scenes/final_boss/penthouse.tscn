@@ -271,6 +271,16 @@ transform = Transform3D(0.0447877, 0, -0.998996, 0, 1, 0, 0.998996, 0, 0.0447877
 dna = ExtResource("15_25tuy")
 skelecog_chance = 0
 
+[node name="BossCog3" parent="BattleNode" index="5" instance=ExtResource("4_p2l1n")]
+transform = Transform3D(-0.0447878, 0, 0.998996, 0, 1, 0, -0.998996, 0, -0.0447878, -1.5, 0, -11.115)
+dna = ExtResource("15_25tuy")
+skelecog_chance = 0
+
+[node name="BossCog4" parent="BattleNode" index="6" instance=ExtResource("4_p2l1n")]
+transform = Transform3D(0.0447877, 0, -0.998996, 0, 1, 0, 0.998996, 0, 0.0447877, 3, 0, -11.23)
+dna = ExtResource("15_25tuy")
+skelecog_chance = 0
+
 [node name="CharPositions" type="Node3D" parent="." index="8"]
 
 [node name="StartPos" type="Node3D" parent="CharPositions" index="0"]

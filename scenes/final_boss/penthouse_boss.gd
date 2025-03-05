@@ -8,9 +8,11 @@ const COG_SCENE := preload("res://objects/cog/cog.tscn")
 const SFX_CAGE_LOWER := preload("res://audio/sfx/misc/CHQ_SOS_cage_lower.ogg")
 const SFX_CAGE_LAND := preload("res://audio/sfx/misc/CHQ_SOS_cage_land.ogg")
 
-var WANT_DEBUG_BOSSES := false
+var WANT_DEBUG_BOSSES := true
 var DEBUG_FORCE_BOSS_ONE: CogDNA = load("res://objects/cog/presets/lawbot/whistleblower.tres")
 var DEBUG_FORCE_BOSS_TWO: CogDNA = load("res://objects/cog/presets/bossbot/union_buster.tres")
+var DEBUG_FORCE_BOSS_THREE: CogDNA = load("res://objects/cog/presets/sellbot/traffic_manager.tres")
+var DEBUG_FORCE_BOSS_FOUR: CogDNA = load("res://objects/cog/presets/cashbot/bookkeeper.tres")
 
 var MUSIC_TRACK: AudioStream = load("res://audio/music/Bossbot_Entry_v2.ogg")
 
@@ -20,6 +22,8 @@ var MUSIC_TRACK: AudioStream = load("res://audio/music/Bossbot_Entry_v2.ogg")
 @onready var caged_toon: Toon = $Grp_animation/toonCage/CagedToon
 @onready var boss_cog: Cog = $BattleNode/BossCog
 @onready var boss_cog_2: Cog = $BattleNode/BossCog2
+@onready var boss_cog_3: Cog = $BattleNode/BossCog3
+@onready var boss_cog_4: Cog = $BattleNode/BossCog4
 @onready var toon_cage: MeshInstance3D = $Grp_animation/toonCage
 
 @onready var scene_animator: AnimationPlayer = $SceneAnimator
@@ -34,9 +38,13 @@ var unlock_toon := false
 const COG_LEVEL_RANGE := Vector2i(8, 12)
 var boss_one_choice: CogDNA
 var boss_two_choice: CogDNA
+var boss_three_choice: CogDNA
+var boss_four_choice: CogDNA
 
 var boss_one_alive := true
 var boss_two_alive := true
+var boss_three_alive := true
+var boss_four_alive := true
 
 var darkened_sky := false
 
@@ -55,13 +63,24 @@ func _ready() -> void:
 	# Pick the second boss
 	if DEBUG_FORCE_BOSS_TWO != null and OS.is_debug_build() and WANT_DEBUG_BOSSES:
 		boss_two_choice = DEBUG_FORCE_BOSS_TWO
+		boss_three_choice = DEBUG_FORCE_BOSS_THREE
+		boss_four_choice = DEBUG_FORCE_BOSS_FOUR
 	else:
 		boss_two_choice = RandomService.array_pick_random('base_seed', boss_choices)
 	boss_cog_2.set_dna(boss_two_choice)
+	boss_cog_3.set_dna(boss_three_choice)
+	boss_cog_4.set_dna(boss_four_choice)
+
 
 	# Nerf their damage got damn!!!
 	boss_cog.stats.damage = 1.2
 	boss_cog_2.stats.damage = 1.2
+	boss_cog_3.stats.damage = 1.2
+	boss_cog_4.stats.damage = 1.2
+
+	# Append boss_cog_3 and boss_cog_4 to the battle node's cogs array
+	battle.cogs.append(boss_cog_3)
+	battle.cogs.append(boss_cog_4)
 
 	# Start the battle
 	Util.get_player().state = Player.PlayerState.WALK
@@ -76,7 +95,7 @@ func _ready() -> void:
 	BattleService.ongoing_battle.s_battle_ending.connect(battle_ending)
 
 func try_add_cogs(_actions: Array[BattleAction]) -> void:
-	if BattleService.ongoing_battle.current_round % 2 == 0 and (boss_one_alive or boss_two_alive):
+	if BattleService.ongoing_battle.current_round % 2 == 0 and (boss_one_alive or boss_two_alive or boss_three_alive or boss_four_alive):
 		var new_reinforcements := ElevatorReinforcements.new()
 		new_reinforcements.user = self
 		BattleService.ongoing_battle.round_end_actions.append(new_reinforcements)
@@ -88,6 +107,13 @@ func participant_died(who: Node3D) -> void:
 	elif who == boss_cog_2:
 		boss_two_alive = false
 		a_boss_died()
+	elif who == boss_cog_3:
+		boss_three_alive = false
+		a_boss_died()
+	elif who == boss_cog_4:
+		boss_four_alive = false
+		a_boss_died()
+
 
 func battle_ending() -> void:
 	Util.get_player().game_timer_tick = false
