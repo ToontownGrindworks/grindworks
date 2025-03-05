@@ -8,7 +8,7 @@ const COG_SCENE := preload("res://objects/cog/cog.tscn")
 const SFX_CAGE_LOWER := preload("res://audio/sfx/misc/CHQ_SOS_cage_lower.ogg")
 const SFX_CAGE_LAND := preload("res://audio/sfx/misc/CHQ_SOS_cage_land.ogg")
 
-var WANT_DEBUG_BOSSES := true
+var WANT_DEBUG_BOSSES := false
 var DEBUG_FORCE_BOSS_ONE: CogDNA = load("res://objects/cog/presets/lawbot/whistleblower.tres")
 var DEBUG_FORCE_BOSS_TWO: CogDNA = load("res://objects/cog/presets/bossbot/union_buster.tres")
 var DEBUG_FORCE_BOSS_THREE: CogDNA = load("res://objects/cog/presets/sellbot/traffic_manager.tres")
@@ -51,8 +51,10 @@ var darkened_sky := false
 func _ready() -> void:
 	set_caged_toon_dna(get_caged_toon_dna())
 	AudioManager.set_music(MUSIC_TRACK)
-	# Pick the first boss
+	# Duplicate the possible bosses array to avoid modifying the original
 	var boss_choices := possible_bosses.duplicate()
+
+	# Pick the first boss
 	if DEBUG_FORCE_BOSS_ONE != null and OS.is_debug_build() and WANT_DEBUG_BOSSES:
 		boss_one_choice = DEBUG_FORCE_BOSS_ONE
 	else:
@@ -63,14 +65,26 @@ func _ready() -> void:
 	# Pick the second boss
 	if DEBUG_FORCE_BOSS_TWO != null and OS.is_debug_build() and WANT_DEBUG_BOSSES:
 		boss_two_choice = DEBUG_FORCE_BOSS_TWO
-		boss_three_choice = DEBUG_FORCE_BOSS_THREE
-		boss_four_choice = DEBUG_FORCE_BOSS_FOUR
 	else:
 		boss_two_choice = RandomService.array_pick_random('base_seed', boss_choices)
 	boss_cog_2.set_dna(boss_two_choice)
-	boss_cog_3.set_dna(boss_three_choice)
-	boss_cog_4.set_dna(boss_four_choice)
+	boss_choices.erase(boss_two_choice)
 
+	# Pick the third boss
+	if DEBUG_FORCE_BOSS_THREE != null and OS.is_debug_build() and WANT_DEBUG_BOSSES:
+		boss_three_choice = DEBUG_FORCE_BOSS_THREE
+	else:
+		boss_three_choice = RandomService.array_pick_random('base_seed', boss_choices)
+	boss_cog_3.set_dna(boss_three_choice)
+	boss_choices.erase(boss_three_choice)
+
+	# Pick the fourth boss
+	if DEBUG_FORCE_BOSS_FOUR != null and OS.is_debug_build() and WANT_DEBUG_BOSSES:
+		boss_four_choice = DEBUG_FORCE_BOSS_FOUR
+	else:
+		boss_four_choice = RandomService.array_pick_random('base_seed', boss_choices)
+	boss_cog_4.set_dna(boss_four_choice)
+	boss_choices.erase(boss_four_choice)
 
 	# Nerf their damage got damn!!!
 	boss_cog.stats.damage = 1.2
@@ -132,11 +146,26 @@ func to_dusk() -> void:
 	dusk_tween.finished.connect(dusk_tween.kill)
 	
 func a_boss_died() -> void:
-	if not darkened_sky:
-		darkened_sky = true
-		to_dusk()
-		# to unlock-loop
-		AudioManager.set_clip(2)
+	var dead_bosses = 0
+	
+	# Check if each boss is dead
+	if not boss_one_alive:
+		dead_bosses += 1
+	if not boss_two_alive:
+		dead_bosses += 1
+	if not boss_three_alive:
+		dead_bosses += 1
+	if not boss_four_alive:
+		dead_bosses += 1
+	
+	# If at least two bosses are dead, unlock the loop
+	if dead_bosses >= 2:
+		if not darkened_sky:
+			darkened_sky = true
+			to_dusk()
+			# to unlock-loop
+			AudioManager.set_clip(2)
+
 
 func set_caged_toon_dna(dna: ToonDNA) -> void:
 	caged_toon.construct_toon(dna)
