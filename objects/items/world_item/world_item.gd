@@ -32,6 +32,11 @@ func _ready() -> void:
 func roll_for_item() -> void:
 	item = ItemService.get_random_item(pool, override_replacement_rolls)
 	
+	# Transcendent Master: Reroll if accessory
+	if !Util.get_player().stats.allow_item_chests:
+			if item in load("res://objects/items/pools/accessories.tres").items:
+				reroll()
+	
 	if not item:
 		printerr("Item pool returned null. Freeing world item instance.")
 		queue_free()

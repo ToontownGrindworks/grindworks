@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="GagLoadout" load_steps=8 format=3 uid="uid://bcreonlub2ngx"]
+
+[ext_resource type="Script" path="res://objects/battle/battle_resources/gag_loadouts/track.gd" id="1_443cp"]
+[ext_resource type="Resource" uid="uid://dvxiqtapdvmj4" path="res://objects/battle/battle_resources/gag_loadouts/gag_tracks/squirt.tres" id="2_03hev"]
+[ext_resource type="Resource" uid="uid://5dld88ul3rb5" path="res://objects/battle/battle_resources/gag_loadouts/gag_tracks/trap.tres" id="3_mft5y"]
+[ext_resource type="Resource" uid="uid://dqldfsmn7g606" path="res://objects/battle/battle_resources/gag_loadouts/gag_tracks/lure.tres" id="4_bop03"]
+[ext_resource type="Resource" uid="uid://lf7h5xkbt2op" path="res://objects/battle/battle_resources/gag_loadouts/gag_tracks/drop.tres" id="6_cvlcr"]
+[ext_resource type="Resource" uid="uid://0528viy6hdsv" path="res://objects/battle/battle_resources/gag_loadouts/gag_tracks/throw.tres" id="6_yr2gx"]
+[ext_resource type="Script" path="res://objects/battle/battle_resources/gag_loadouts/gag_loadout.gd" id="7_ew2m0"]
+
+[resource]
+script = ExtResource("7_ew2m0")
+loadout = Array[ExtResource("1_443cp")]([ExtResource("2_03hev"), ExtResource("3_mft5y"), ExtResource("4_bop03"), ExtResource("6_yr2gx"), ExtResource("6_cvlcr")])
