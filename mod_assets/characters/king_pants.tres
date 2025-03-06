@@ -45,7 +45,7 @@ bottoms = SubResource("Resource_jw3nq")
 [resource]
 script = ExtResource("4_w2exb")
 character_name = "King Pants"
-character_summary = "- Corporate Spectacles: All floors have Tightened Security, 20 second Battle Timer
+character_summary = "Corporate Spectacles: All floors have Tightened Security, 20 second Battle Timer
 - 25% more damage
 - Starts with Throw and Drop"
 dna = SubResource("Resource_gqohd")

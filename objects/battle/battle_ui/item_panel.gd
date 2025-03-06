@@ -37,10 +37,14 @@ func _ready_vouchers() -> void:
 
 func _populate_vouchers() -> void:
 	var vouchers := get_voucher_counts()
+	var new_button: Control
 	
 	for entry in vouchers.keys():
-		var gag_track := get_track(entry)
-		var new_button := create_new_voucher(gag_track, vouchers[entry])
+		if Util.get_player().stats.has_item("Friendly Influence") and entry == "Sound":
+			new_button = create_smirky_voucher(vouchers[entry])
+		else:
+			var gag_track := get_track(entry)
+			new_button = create_new_voucher(gag_track, vouchers[entry])
 		voucher_container.add_child(new_button)
 
 func get_voucher_counts() -> Dictionary:
@@ -58,6 +62,19 @@ func create_new_voucher(track: Track, count: int) -> Control:
 	button_copy.get_node('GagSprite').set_disabled(count == 0)
 	button_copy.get_node('GagSprite').pressed.connect(use_voucher.bind(track))
 	button_copy.get_node('GagSprite').mouse_entered.connect(HoverManager.hover.bind("+5 %s points" % track.track_name))
+	button_copy.get_node('GagSprite').mouse_exited.connect(HoverManager.stop_hover)
+	if button_copy.get_node('GagSprite').disabled: button_copy.modulate = Color.GRAY
+	return button_copy
+	
+func create_smirky_voucher(count: int) -> Control:
+	var button_copy := voucher_template.duplicate()
+	button_copy.show()
+	button_copy.get_node('GagSprite').texture_normal = load("res://mod_assets/smirky/smirksHeart.png")
+	button_copy.get_node('TrackName').set_text("Sound")
+	button_copy.get_node('Quantity').set_text("x%d" % count)
+	button_copy.get_node('GagSprite').set_disabled(count == 0)
+	#button_copy.get_node('GagSprite').pressed.connect(use_voucher.bind(""))
+	button_copy.get_node('GagSprite').mouse_entered.connect(HoverManager.hover.bind("Call a friend!"))
 	button_copy.get_node('GagSprite').mouse_exited.connect(HoverManager.stop_hover)
 	if button_copy.get_node('GagSprite').disabled: button_copy.modulate = Color.GRAY
 	return button_copy
