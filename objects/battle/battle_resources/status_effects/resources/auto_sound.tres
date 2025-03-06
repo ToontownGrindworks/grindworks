@@ -13,5 +13,5 @@ mini_icon_scale = 1.0
 visible = true
 description = "This is a Status Effect"
 status_name = "Status Effect"
-id = 0
+id = 34
 _generate_id = false
