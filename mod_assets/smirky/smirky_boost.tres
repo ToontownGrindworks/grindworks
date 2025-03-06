@@ -1,0 +1,28 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3 uid="uid://p8l3jgbfmf1m"]
+
+[ext_resource type="Script" path="res://mod_assets/smirky/item_smirky_boost.gd" id="1_g0y7q"]
+[ext_resource type="Script" path="res://objects/items/classes/item.gd" id="2_n1b2t"]
+
+[resource]
+script = ExtResource("2_n1b2t")
+qualitoon = 0
+qualitoon_rarity = 6
+evergreen = false
+realtime = false
+slot = 0
+world_scale = 1.0
+want_ui_spin = true
+ui_cam_offset = 0.0
+item_name = "Smirky Boost"
+item_description = ""
+big_description = "we have bessie at home"
+stats_add = {}
+stats_multiply = {}
+player_values = {}
+arbitrary_data = {}
+item_script = ExtResource("1_g0y7q")
+remember_item = true
+shop_category_title = "Boost Item"
+shop_category_color = Color(0.196078, 0.580392, 0.917647, 1)
+force_show_shop_category = false
+custom_shop_price = 0
