@@ -13,7 +13,8 @@ func cleanup() -> void:
 
 func round_started(_actions: Array[BattleAction]) -> void:
 	var new_sound: GagSound = sound_gag.duplicate()
-	new_sound.targets = [target]
+	new_sound.main_target = target
+	new_sound.targets = Util.get_splash_targets(manager.cogs.find(target), manager)
 	new_sound.user = Util.get_player()
 	#TODO: Make this into toon summons with sound
 	#new_sound.special_action_exclude = true

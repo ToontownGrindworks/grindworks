@@ -218,6 +218,27 @@ func barrier(_signal: Signal, timeout: float = 10.0) -> Signal:
 func do_item_hover(item: Item) -> void:
 	var desc: String = item.big_description if Util.get_player().see_descriptions else item.item_description
 	HoverManager.hover(desc, 18, 0.025, item.item_name, item.shop_category_color.darkened(0.3))
+	
+func get_splash_targets(selection: int, _manager: BattleManager) -> Array:
+	var new_targets: Array = [_manager.cogs[selection]]
+	var indices: Array = []
+	if selection == 0:
+		# Far left selection, extend our range to the right
+		indices = [1, 2]
+	elif selection == _manager.cogs.size() - 1:
+		indices = [-1, -2]
+		# Far right selection, extend our range to the left
+	else:
+		# Regular selection, range to the left and right
+		indices = [-1, 1]
+
+	# Now apply the indices
+	for idx: int in indices:
+		var adjust_idx: int = selection + idx
+		if adjust_idx < 0 or adjust_idx >= _manager.cogs.size():
+			continue
+		new_targets.append(_manager.cogs[adjust_idx])
+	return new_targets
 
 #region Mod Cogs
 

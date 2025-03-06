@@ -27,7 +27,7 @@ func try_apply_sound(manager: BattleManager) -> void:
 		var cog: Cog = RandomService.array_pick_random('true_random', manager.cogs)
 		var new_status := AUTO_SOUND.duplicate()
 		new_status.sound_gag = get_random_sound_resource()
-		new_status.main_target = cog
+		new_status.target = cog
 		manager.add_status_effect(new_status)
 
 func get_random_sound_resource() -> GagSound:
