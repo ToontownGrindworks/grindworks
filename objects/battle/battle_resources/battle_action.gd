@@ -55,10 +55,10 @@ func set_camera_angle(transform: Transform3D) -> void:
 		manager.battle_node.battle_cam.reparent(manager.battle_node)
 	manager.battle_node.battle_cam.transform = transform
 
-func reassess_splash_targets(selection: int, _manager: BattleManager) -> void:
+func reassess_splash_targets(selection: int, manager: BattleManager) -> void:
 	if target_type != ActionTarget.ENEMY_SPLASH:
 		return
-	main_target = _manager.cogs[selection]
+	main_target = manager.cogs[selection]
 	# Now set the targets!
 	targets = Util.get_splash_targets(selection, manager)
 
