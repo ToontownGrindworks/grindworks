@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3 uid="uid://dmqj8ppngvrcl"]
+
+[ext_resource type="Script" path="res://objects/items/custom/item_pete_ability.gd" id="1_88y1x"]
+[ext_resource type="Script" path="res://objects/items/classes/item.gd" id="1_f6a11"]
+
+[resource]
+script = ExtResource("1_f6a11")
+qualitoon = 5
+evergreen = false
+realtime = false
+slot = 0
+world_scale = 1.0
+ui_scale = 1.0
+item_name = "PeteAbility"
+item_description = ""
+big_description = "Unique to Professor Pete"
+stats_add = {}
+stats_multiply = {}
+player_values = {}
+arbitrary_data = {}
+item_script = ExtResource("1_88y1x")
+remember_item = true

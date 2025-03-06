@@ -1,0 +1,66 @@
+[gd_resource type="Resource" script_class="PlayerCharacter" load_steps=16 format=3 uid="uid://cbumr2pvgy1io"]
+
+[ext_resource type="Script" path="res://objects/toon/toon_dna.gd" id="1_4idkh"]
+[ext_resource type="Script" path="res://objects/toon/clothing/toon_bottoms.gd" id="1_ivgnp"]
+[ext_resource type="Script" path="res://objects/player/character.gd" id="1_joak5"]
+[ext_resource type="Script" path="res://objects/battle/battle_resources/stats.gd" id="1_vg416"]
+[ext_resource type="Texture2D" uid="uid://bc47fggqh8gbp" path="res://models/toon/textures/clothes/shorts/desat_shorts_2.png" id="2_io7we"]
+[ext_resource type="Script" path="res://objects/toon/clothing/toon_shirt.gd" id="2_j4ef6"]
+[ext_resource type="Resource" uid="uid://tyi7ukxtvcgc" path="res://objects/battle/battle_resources/gag_loadouts/loadouts/standard_loadout.tres" id="2_pvta8"]
+[ext_resource type="Texture2D" uid="uid://dsikqlc2iiid4" path="res://models/toon/textures/clothes/shirts/desat_shirt_1_4.png" id="3_cc2cr"]
+[ext_resource type="Texture2D" uid="uid://dh7dyokcfyw43" path="res://models/toon/textures/clothes/shirts/desat_sleeve_1.png" id="4_ikk8d"]
+[ext_resource type="Script" path="res://objects/items/classes/item.gd" id="9_t8yrd"]
+[ext_resource type="Resource" uid="uid://dmqj8ppngvrcl" path="res://objects/items/resources/passive/peteability.tres" id="10_81tpj"]
+
+[sub_resource type="Resource" id="Resource_jj61k"]
+script = ExtResource("1_vg416")
+damage = 1.0
+defense = 1.0
+evasiveness = 0.8
+accuracy = 1.0
+speed = 0.95
+max_turns = 3
+max_hp = 25
+hp = 25
+turns = 1
+
+[sub_resource type="Resource" id="Resource_ugrs1"]
+script = ExtResource("1_ivgnp")
+texture = ExtResource("2_io7we")
+base_color = Color(0.969, 0.678, 0.498, 1)
+color_type = 0
+
+[sub_resource type="Resource" id="Resource_2lryd"]
+script = ExtResource("2_j4ef6")
+shirt_texture = ExtResource("3_cc2cr")
+sleeve_texture = ExtResource("4_ikk8d")
+base_color = Color(0.992, 0.894, 0.318, 1)
+sleeve_color = Color(0.992, 0.894, 0.318, 1)
+color_type = 0
+
+[sub_resource type="Resource" id="Resource_ax4gq"]
+script = ExtResource("1_4idkh")
+body_type = 2
+species = 1
+head_index = 0
+eyelashes = false
+skirt = false
+head_color = Color(0.188, 0.561, 0.773, 1)
+torso_color = Color(0.188, 0.561, 0.773, 1)
+leg_color = Color(0.188, 0.561, 0.773, 1)
+shirt = SubResource("Resource_2lryd")
+bottoms = SubResource("Resource_ugrs1")
+
+[resource]
+script = ExtResource("1_joak5")
+character_name = "Professor Pete"
+character_summary = "- Gag point capacity begins at 20
+- Starts with no passive gag point regeneration.
+- Defeating a cog restores 2 gag points.
+- Starts with all tracks"
+dna = SubResource("Resource_ax4gq")
+gag_loadout = ExtResource("2_pvta8")
+starting_laff = 30
+starting_items = Array[ExtResource("9_t8yrd")]([ExtResource("10_81tpj")])
+base_stats = SubResource("Resource_jj61k")
+random_character_stored_name = ""

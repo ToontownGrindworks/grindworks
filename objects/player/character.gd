@@ -127,3 +127,12 @@ func moezart(player: Player) -> void:
 	player.stats.gags_unlocked['Sound'] = 1
 	player.stats.gags_unlocked['Drop'] = 1
 	player.stats.luck = 1.05
+	
+func professorpete(player: Player) -> void:
+	for track in player.stats.gags_unlocked.keys():
+		player.stats.gags_unlocked[track] = 1
+	player.stats.luck = 1.05
+	player.stats.gag_cap = 20
+	for track in player.stats.gag_regeneration.keys():
+		player.stats.gag_regeneration[track] = 0
+		player.stats.gag_balance[track] = 20
