@@ -18,7 +18,7 @@ const SfxData := {
 	"Drop": [SFX_DROP, 0.0],
 }
 
-signal s_voucher_used
+signal s_voucher_used()
 
 
 func _ready() -> void:
@@ -73,7 +73,7 @@ func create_smirky_voucher(count: int) -> Control:
 	button_copy.get_node('TrackName').set_text("Sound")
 	button_copy.get_node('Quantity').set_text("x%d" % count)
 	button_copy.get_node('GagSprite').set_disabled(count == 0)
-	#button_copy.get_node('GagSprite').pressed.connect(use_voucher.bind(""))
+	button_copy.get_node('GagSprite').pressed.connect(use_special_voucher.bind("Sound"))
 	button_copy.get_node('GagSprite').mouse_entered.connect(HoverManager.hover.bind("Call a friend!"))
 	button_copy.get_node('GagSprite').mouse_exited.connect(HoverManager.stop_hover)
 	if button_copy.get_node('GagSprite').disabled: button_copy.modulate = Color.GRAY
@@ -87,15 +87,26 @@ func _refresh_vouchers() -> void:
 	_clear_vouchers()
 	_populate_vouchers()
 
-func use_voucher(track: Track) -> void:
-	Util.get_player().stats.gag_vouchers[track.track_name] -= 1
-	Util.get_player().stats.gag_balance[track.track_name] += 5
+func use_special_voucher(name: String) -> void:
+	# special vouchers use a signal emission from parent for item interactions + aren't track ownership dependent
+	get_parent().s_special_voucher_used.emit(name)
+	Util.get_player().stats.gag_vouchers[name] -= 1
 	_refresh_vouchers()
 	for child in get_parent().gag_tracks.get_children():
 		child.refresh()
 	s_voucher_used.emit()
-	var sfx_data: Array = SfxData[track.track_name]
-	AudioManager.play_snippet(sfx_data[0], sfx_data[1])
+
+func use_voucher(track: Track) -> void:
+	var sfx_data: Array
+	Util.get_player().stats.gag_balance[track.track_name] += 5
+	sfx_data = SfxData[track.track_name]
+	Util.get_player().stats.gag_vouchers[track.track_name] -= 1
+	_refresh_vouchers()
+	for child in get_parent().gag_tracks.get_children():
+		child.refresh()
+	s_voucher_used.emit()
+	if sfx_data:
+		AudioManager.play_snippet(sfx_data[0], sfx_data[1])
 
 #endregion
 #region Toon-Up
