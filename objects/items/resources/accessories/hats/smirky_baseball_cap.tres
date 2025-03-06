@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" path="res://objects/items/classes/accessory_placement.gd" id="1_50xsb"]
 [ext_resource type="Script" path="res://objects/items/classes/head_placement.gd" id="2_a78qq"]
+[ext_resource type="Texture2D" uid="uid://wu11mym7pwn1" path="res://mod_assets/smirky/smirksHeart.png" id="3_3hh1e"]
 [ext_resource type="Script" path="res://mod_assets/smirky/item_smirky_baseball_cap.gd" id="3_a45b2"]
 [ext_resource type="PackedScene" uid="uid://dqhggw6ul8td7" path="res://mod_assets/smirky/smirky_tt_m_chr_avt_acc_hat_baseball.tscn" id="4_f7lib"]
 [ext_resource type="Script" path="res://objects/items/classes/item_accessory.gd" id="5_oqwco"]
@@ -278,9 +279,6 @@ position = Vector3(0, -0.1, -0.47)
 rotation = Vector3(-30, 0, 0)
 scale = Vector3(0.4, 0.4, 0.4)
 
-[sub_resource type="Resource" id="Resource_7q6ew"]
-metadata/__load_path__ = "res://mod_assets/smirky/smirksHeart.png"
-
 [resource]
 script = ExtResource("5_oqwco")
 accessory_placements = Array[ExtResource("1_50xsb")]([SubResource("Resource_bc1ca"), SubResource("Resource_a7loe"), SubResource("Resource_6ng26"), SubResource("Resource_683x7"), SubResource("Resource_mp1qg"), SubResource("Resource_0efvx"), SubResource("Resource_6vut8"), SubResource("Resource_8uit7"), SubResource("Resource_ln0sb"), SubResource("Resource_pg1g4"), SubResource("Resource_cdau8"), SubResource("Resource_ydlwi"), SubResource("Resource_snjuc"), SubResource("Resource_btdc1"), SubResource("Resource_e4le2"), SubResource("Resource_1qee6"), SubResource("Resource_h8b4b"), SubResource("Resource_f73wm"), SubResource("Resource_wnrct"), SubResource("Resource_gl383"), SubResource("Resource_akbxi"), SubResource("Resource_bakhg"), SubResource("Resource_ybg8g"), SubResource("Resource_p2hya"), SubResource("Resource_jtahe"), SubResource("Resource_jnlip"), SubResource("Resource_x1q33"), SubResource("Resource_j5b2n"), SubResource("Resource_m4tnr"), SubResource("Resource_py6ra"), SubResource("Resource_1u1pd"), SubResource("Resource_3kgqx"), SubResource("Resource_1dj05"), SubResource("Resource_lumed")])
@@ -302,7 +300,7 @@ player_values = {}
 arbitrary_data = {}
 item_script = ExtResource("3_a45b2")
 remember_item = true
-icon = SubResource("Resource_7q6ew")
+icon = ExtResource("3_3hh1e")
 shop_category_title = "Boost Item"
 shop_category_color = Color(0.196078, 0.580392, 0.917647, 1)
 force_show_shop_category = false
