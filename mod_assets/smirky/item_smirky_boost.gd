@@ -29,7 +29,7 @@ func on_battle_started(_manager: BattleManager) -> void:
 	manager = _manager
 	manager.battle_ui.s_special_voucher_used.connect(on_special_voucher_used)
 	
-func on_battle_ended(_manager: BattleManager) -> void:
+func on_battle_ended() -> void:
 	manager.battle_ui.s_special_voucher_used.disconnect(on_special_voucher_used)
 
 func on_special_voucher_used(type: String) -> void:

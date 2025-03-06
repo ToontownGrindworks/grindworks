@@ -8,7 +8,7 @@
 [ext_resource type="Script" path="res://objects/player/character.gd" id="4_w2exb"]
 [ext_resource type="Script" path="res://objects/items/classes/item.gd" id="5_nq0nn"]
 [ext_resource type="Resource" uid="uid://cdkh5jqkoodih" path="res://objects/toon/clothing/shirts/vampire_shirt.tres" id="5_prxa1"]
-[ext_resource type="Resource" uid="uid://g4r0lp1evug6" path="res://objects/items/resources/accessories/glasses/corporate_spectacles.tres" id="8_2m5ne"]
+[ext_resource type="Resource" uid="uid://g4r0lp1evug6" path="res://mod_assets/kingpants/corporate_spectacles.tres" id="8_2m5ne"]
 
 [sub_resource type="Resource" id="Resource_q3qk8"]
 script = ExtResource("1_pnnf4")

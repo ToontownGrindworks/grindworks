@@ -10,7 +10,7 @@
 [ext_resource type="Resource" uid="uid://bcreonlub2ngx" path="res://mod_assets/smirky/smirky_loadout.tres" id="8_el7k0"]
 [ext_resource type="Script" path="res://objects/player/character.gd" id="9_338hm"]
 [ext_resource type="Script" path="res://objects/items/classes/item.gd" id="10_ewl0y"]
-[ext_resource type="Resource" uid="uid://ci3d516op8yr7" path="res://objects/items/resources/accessories/hats/smirky_baseball_cap.tres" id="11_6j38w"]
+[ext_resource type="Resource" uid="uid://ci3d516op8yr7" path="res://mod_assets/kingpants/smirky_baseball_cap.tres" id="11_6j38w"]
 [ext_resource type="Resource" uid="uid://p8l3jgbfmf1m" path="res://mod_assets/smirky/smirky_boost.tres" id="11_i5hy5"]
 [ext_resource type="Resource" uid="uid://clcnuojw0d4h2" path="res://objects/items/resources/accessories/glasses/dorky_glasses.tres" id="12_rvd1j"]
 

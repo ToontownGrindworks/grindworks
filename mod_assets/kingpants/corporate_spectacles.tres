@@ -3,7 +3,7 @@
 [ext_resource type="Script" path="res://objects/items/classes/accessory_placement.gd" id="1_1x0vv"]
 [ext_resource type="Script" path="res://objects/items/classes/head_placement.gd" id="2_844g6"]
 [ext_resource type="Texture2D" uid="uid://cwsvhe2j2b3i6" path="res://models/accessories/glasses/dorky/dork_glasses.glb-pix-1.png" id="3_xdo4s"]
-[ext_resource type="Script" path="res://objects/items/custom/item_corporate_spectacles.gd" id="4_8fxce"]
+[ext_resource type="Script" path="res://mod_assets/kingpants/item_corporate_spectacles.gd" id="4_8fxce"]
 [ext_resource type="PackedScene" uid="uid://6wh3uip2himx" path="res://models/accessories/glasses/pants_glasses/pants_glasses.tscn" id="5_k307b"]
 [ext_resource type="Script" path="res://objects/items/classes/item_accessory.gd" id="5_x1t2n"]
 
@@ -282,8 +282,8 @@ scale = Vector3(0.36, 0.36, 0.3)
 [resource]
 script = ExtResource("5_x1t2n")
 accessory_placements = Array[ExtResource("1_1x0vv")]([SubResource("Resource_8pqho"), SubResource("Resource_4qx3c"), SubResource("Resource_s7khx"), SubResource("Resource_g7cfs"), SubResource("Resource_10r2o"), SubResource("Resource_1pn5b"), SubResource("Resource_12s3o"), SubResource("Resource_ri0uk"), SubResource("Resource_iuwe1"), SubResource("Resource_4hlks"), SubResource("Resource_rrf6k"), SubResource("Resource_shykx"), SubResource("Resource_5lxyc"), SubResource("Resource_h15cx"), SubResource("Resource_2gm5v"), SubResource("Resource_ss5a7"), SubResource("Resource_g43iw"), SubResource("Resource_s5fl3"), SubResource("Resource_n3gkc"), SubResource("Resource_k5eti"), SubResource("Resource_5rw3p"), SubResource("Resource_2enl1"), SubResource("Resource_7heev"), SubResource("Resource_1bdb1"), SubResource("Resource_c36o5"), SubResource("Resource_jafqh"), SubResource("Resource_7roc0"), SubResource("Resource_46dnc"), SubResource("Resource_0y12l"), SubResource("Resource_kbcnn"), SubResource("Resource_nk2mc"), SubResource("Resource_57ry5"), SubResource("Resource_y5ahc"), SubResource("Resource_bkf5t")])
-qualitoon = 2
-qualitoon_rarity = 4
+qualitoon = 0
+qualitoon_rarity = 6
 evergreen = false
 realtime = false
 slot = 2
