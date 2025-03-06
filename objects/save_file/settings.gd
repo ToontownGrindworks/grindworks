@@ -41,6 +41,7 @@ const SpeedOptions = [1.0, 1.25, 1.5, 1.75]
 @export var dev_tools := false
 @export var use_custom_cogs := true
 
+@export var discord_rpc := false
 ## CONTROLS
 # To preserve the ordering of controls, we must have two dictionaries
 # And the array for the order to display controls in
