@@ -26,10 +26,10 @@ func resolve_hype(result: bool) -> void:
 		streak += 1
 		for i in streak:
 			popup_message += "!"
-		var bonus := floori(100 / streak * streak_bonus)
+		var bonus := floori((streak * streak_bonus) / 100)
 		bonus += int(RandomService.randi_channel('true_random') % 100 < (streak * streak_bonus))
-		if bonus > 0:
-			popup_message += " (x" + str(bonus) + ")"
+		if bonus > 1:
+			popup_message += " (x" + str(1 + bonus) + ")"
 		player.stats.gag_vouchers["Sound"] += 1 + bonus
 	else:
 		streak = 0
