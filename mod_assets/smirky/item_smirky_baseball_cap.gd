@@ -3,7 +3,7 @@ extends ItemScript
 var current_battle: BattleManager
 var round_limit := 2
 var streak := 0
-var streak_bonus := 20
+var streak_bonus := 15
 
 func setup() -> void:
 	BattleService.s_battle_started.connect(on_battle_start)

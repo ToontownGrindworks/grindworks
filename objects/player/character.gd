@@ -68,33 +68,6 @@ func randomtoon(player: Player) -> void:
 	# Sneaky way of making sure only gags are randomized later
 	character_name = 'RandomGags'
 
-# please do not name your toon generate_random_gags i will cry bruh
-func generate_random_gags(player: Player) -> void:
-	# Get one random offense and one random support track
-	var offense_tracks: Array[Track] = []
-	var support_tracks: Array[Track] = []
-	var selected_tracks: Array[Track] = []
-	for track in gag_loadout.loadout:
-		if track.track_type == Track.TrackType.OFFENSE:
-			offense_tracks.append(track)
-		else:
-			support_tracks.append(track)
-	# Choose two random tracks if either support or offense is empty
-	# Probably won't ever run but yk
-	if offense_tracks.is_empty() or support_tracks.is_empty():
-		var selected_track: Track
-		while selected_tracks.size() < 2 or not selected_track in selected_tracks:
-			selected_track = gag_loadout.loadout[RandomService.randi_channel('true_random') % gag_loadout.loadout.size()]
-			if not selected_track in selected_tracks: selected_tracks.append(selected_track)
-	# Otherwise run like normal
-	else:
-		selected_tracks.append(offense_tracks[RandomService.randi_channel('true_random') % offense_tracks.size()])
-		selected_tracks.append(support_tracks[RandomService.randi_channel('true_random') % support_tracks.size()])
-	
-	# Start player off with anywhere from level 1-3 gags
-	for track in selected_tracks:
-		player.stats.gags_unlocked[track.track_name] += RandomService.randi_channel('true_random') % 2 + 1
-
 func randomgags(player: Player) -> void:
 	generate_random_gags(player)
 	
@@ -154,3 +127,30 @@ func transcendent_master(player: Player) -> void:
 	player.stats.allow_item_chests = false
 	player.stats.gags_unlocked['Squirt'] = 1
 	player.stats.gags_unlocked['Drop'] = 1
+
+# please do not name your toon generate_random_gags i will cry bruh
+func generate_random_gags(player: Player) -> void:
+	# Get one random offense and one random support track
+	var offense_tracks: Array[Track] = []
+	var support_tracks: Array[Track] = []
+	var selected_tracks: Array[Track] = []
+	for track in gag_loadout.loadout:
+		if track.track_type == Track.TrackType.OFFENSE:
+			offense_tracks.append(track)
+		else:
+			support_tracks.append(track)
+	# Choose two random tracks if either support or offense is empty
+	# Probably won't ever run but yk
+	if offense_tracks.is_empty() or support_tracks.is_empty():
+		var selected_track: Track
+		while selected_tracks.size() < 2 or not selected_track in selected_tracks:
+			selected_track = gag_loadout.loadout[RandomService.randi_channel('true_random') % gag_loadout.loadout.size()]
+			if not selected_track in selected_tracks: selected_tracks.append(selected_track)
+	# Otherwise run like normal
+	else:
+		selected_tracks.append(offense_tracks[RandomService.randi_channel('true_random') % offense_tracks.size()])
+		selected_tracks.append(support_tracks[RandomService.randi_channel('true_random') % support_tracks.size()])
+	
+	# Start player off with anywhere from level 1-3 gags
+	for track in selected_tracks:
+		player.stats.gags_unlocked[track.track_name] += RandomService.randi_channel('true_random') % 2 + 1

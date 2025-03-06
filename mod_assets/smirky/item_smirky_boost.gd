@@ -1,8 +1,8 @@
 extends ItemScript
 
-const SOUND_GAGS := preload("res://objects/battle/battle_resources/gag_loadouts/gag_tracks/sound.tres")
-const AUTO_SOUND := preload("res://objects/battle/battle_resources/status_effects/resources/auto_sound.tres")
-const SFX_VOUCHER := preload("res://audio/sfx/battle/gags/sound/LB_receive_evidence.ogg")
+@onready var SOUND_GAGS := load("res://objects/battle/battle_resources/gag_loadouts/gag_tracks/sound.tres")
+@onready var AUTO_SOUND := load("res://objects/battle/battle_resources/status_effects/resources/auto_sound.tres")
+const SFX_VOUCHER := "res://audio/sfx/battle/gags/sound/LB_receive_evidence.ogg"
 
 var player: Player
 
@@ -45,7 +45,7 @@ func try_apply_sound(manager: BattleManager) -> void:
 		new_status.target = cog
 		manager.add_status_effect(new_status)
 		manager.battle_ui.repopulate_status_effects()
-		AudioManager.play_sound(SFX_VOUCHER)
+		AudioManager.play_sound(load(SFX_VOUCHER))
 
 func get_random_sound_resource() -> GagSound:
 	var idx: int = RandomService.randi_range_channel('true_random', 0, player.stats.get_highest_gag_level() - 1)
