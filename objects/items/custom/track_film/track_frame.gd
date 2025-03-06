@@ -70,7 +70,7 @@ func get_hat() -> Array[String]:
 			hat.append(gag_track.track_name)
 	
 	# Remove the gags from the floor that have already been spawned
-	for item : Item in ItemService.items_in_play:
+	for item : Item in ItemService.items_in_play:www
 		if item.arbitrary_data.has('track'):
 			hat.erase(item.arbitrary_data['track'])
 	

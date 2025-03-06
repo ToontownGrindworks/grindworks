@@ -145,7 +145,7 @@ func smirkybumberpop(player: Player) -> void:
 	# Same case as Bessie
 	player.stats.gag_effectiveness['Sound'] = 1.0
 	player.stats.gag_vouchers['Sound'] = 2
-
+	
 func doctorgooglymoogly(player: Player) -> void:
 	generate_random_gags(player)
 

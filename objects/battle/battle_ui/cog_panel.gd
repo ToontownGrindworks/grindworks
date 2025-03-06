@@ -53,7 +53,7 @@ func populate_status_effects(target : Cog) -> void:
 		status_container.add_child(new_icon)
 
 func clear_status_effect_icons() -> void:
-	for child in get_children():
+	for child in status_container.get_children():
 		if child is StatusEffectIcon:
 			child.queue_free()
 		

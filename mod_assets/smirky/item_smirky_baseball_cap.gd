@@ -3,7 +3,7 @@ extends ItemScript
 var current_battle: BattleManager
 var round_limit := 2
 var streak := 0
-var streak_bonus := 10
+var streak_bonus := 20
 
 func setup() -> void:
 	BattleService.s_battle_started.connect(on_battle_start)
@@ -26,10 +26,11 @@ func resolve_hype(result: bool) -> void:
 		streak += 1
 		for i in streak:
 			popup_message += "!"
-		player.stats.gag_vouchers["Sound"] += 1 
-		var bonus := RandomService.randi_channel('true_random') % 100 < (streak * streak_bonus)
-		if bonus:
-			popup_message += " (x2)"
+		var bonus := floori(100 / streak * streak_bonus)
+		bonus += int(RandomService.randi_channel('true_random') % 100 < (streak * streak_bonus))
+		if bonus > 0:
+			popup_message += " (x" + str(bonus) + ")"
+		player.stats.gag_vouchers["Sound"] += 1 + bonus
 	else:
 		streak = 0
 		popup_message += "Influence Reset"

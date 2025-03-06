@@ -282,7 +282,7 @@ scale = Vector3(0.4, 0.4, 0.4)
 [resource]
 script = ExtResource("5_oqwco")
 accessory_placements = Array[ExtResource("1_50xsb")]([SubResource("Resource_bc1ca"), SubResource("Resource_a7loe"), SubResource("Resource_6ng26"), SubResource("Resource_683x7"), SubResource("Resource_mp1qg"), SubResource("Resource_0efvx"), SubResource("Resource_6vut8"), SubResource("Resource_8uit7"), SubResource("Resource_ln0sb"), SubResource("Resource_pg1g4"), SubResource("Resource_cdau8"), SubResource("Resource_ydlwi"), SubResource("Resource_snjuc"), SubResource("Resource_btdc1"), SubResource("Resource_e4le2"), SubResource("Resource_1qee6"), SubResource("Resource_h8b4b"), SubResource("Resource_f73wm"), SubResource("Resource_wnrct"), SubResource("Resource_gl383"), SubResource("Resource_akbxi"), SubResource("Resource_bakhg"), SubResource("Resource_ybg8g"), SubResource("Resource_p2hya"), SubResource("Resource_jtahe"), SubResource("Resource_jnlip"), SubResource("Resource_x1q33"), SubResource("Resource_j5b2n"), SubResource("Resource_m4tnr"), SubResource("Resource_py6ra"), SubResource("Resource_1u1pd"), SubResource("Resource_3kgqx"), SubResource("Resource_1dj05"), SubResource("Resource_lumed")])
-qualitoon = 6
+qualitoon = 0
 qualitoon_rarity = 6
 evergreen = false
 realtime = false
