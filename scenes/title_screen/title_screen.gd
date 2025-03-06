@@ -216,6 +216,7 @@ func begin_game(character: PlayerCharacter, falling_scene := false) -> void:
 	player.reset_stats()
 	player.stats.max_out()
 	SceneLoader.add_persistent_node(player)
+	DiscordManager.update_presence()
 	SaveFileService.progress_file.new_games += 1
 	if falling_scene:
 		SceneLoader.load_into_scene("res://scenes/falling_scene/falling_scene.tscn")

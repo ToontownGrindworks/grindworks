@@ -37,6 +37,7 @@ SaveFileService="*res://objects/globals/save_file_service.gd"
 RandomService="*res://objects/globals/random_service.gd"
 HoverManager="*res://objects/globals/hover_manager.tscn"
 DiscordRPCLoader="*res://addons/discord-rpc-gd/nodes/discord_autoload.gd"
+DiscordManager="*res://objects/globals/discord_manager.gd"
 
 [debug]
 

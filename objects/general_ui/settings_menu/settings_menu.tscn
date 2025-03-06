@@ -71,7 +71,7 @@ offset_top = -284.0
 offset_right = 266.0
 offset_bottom = 284.0
 script = ExtResource("2_2jdde")
-title = "Settings"
+title = ""
 body = ""
 
 [node name="Panel" parent="." index="0"]
@@ -528,6 +528,34 @@ text = "Off"
 text = "Off"
 label_settings = SubResource("LabelSettings_xxrhd")
 
+[node name="DiscordRPC" type="HBoxContainer" parent="Panel/SettingScroller/MarginContainer/SettingContainer/GameplaySettings" index="9"]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Panel/SettingScroller/MarginContainer/SettingContainer/GameplaySettings/DiscordRPC" index="0"]
+layout_mode = 2
+text = "Discord Rich Presence:"
+label_settings = SubResource("LabelSettings_n41hl")
+
+[node name="DiscordRPCButton" parent="Panel/SettingScroller/MarginContainer/SettingContainer/GameplaySettings/DiscordRPC" index="1" instance=ExtResource("4_aygce")]
+unique_name_in_owner = true
+material = SubResource("ShaderMaterial_vnbpc")
+custom_minimum_size = Vector2(160, 60)
+layout_mode = 2
+size_flags_horizontal = 10
+size_flags_vertical = 4
+texture_normal = ExtResource("5_p4xtr")
+texture_pressed = ExtResource("6_bs0ac")
+texture_hover = ExtResource("7_nxqst")
+texture_disabled = ExtResource("6_bs0ac")
+hover_db_offset = 6.0
+press_db_offset = 0.0
+text = "On"
+
+[node name="Label" parent="Panel/SettingScroller/MarginContainer/SettingContainer/GameplaySettings/DiscordRPC/DiscordRPCButton" index="0"]
+text = "On"
+label_settings = SubResource("LabelSettings_xxrhd")
+
 [node name="ControlSettings" type="VBoxContainer" parent="Panel/SettingScroller/MarginContainer/SettingContainer" index="4"]
 unique_name_in_owner = true
 layout_mode = 2
@@ -609,6 +637,7 @@ label_settings = SubResource("LabelSettings_xxrhd")
 [connection signal="pressed" from="Panel/SettingScroller/MarginContainer/SettingContainer/GameplaySettings/ItemReactions/ReactionButton" to="." method="toggle_item_reactions"]
 [connection signal="pressed" from="Panel/SettingScroller/MarginContainer/SettingContainer/GameplaySettings/ShowTimer/TimerButton" to="." method="toggle_timer"]
 [connection signal="pressed" from="Panel/SettingScroller/MarginContainer/SettingContainer/GameplaySettings/IntroSkip/IntroSkipButton" to="." method="toggle_intro_skip"]
+[connection signal="pressed" from="Panel/SettingScroller/MarginContainer/SettingContainer/GameplaySettings/DiscordRPC/DiscordRPCButton" to="." method="toggle_discord_rpc"]
 [connection signal="pressed" from="Panel/SaveButton" to="." method="close" binds= [true]]
 
 [editable path="Panel/SettingScroller/MarginContainer/SettingContainer/VideoSettings/Fullscreen/FullscreenButton"]
@@ -622,5 +651,6 @@ label_settings = SubResource("LabelSettings_xxrhd")
 [editable path="Panel/SettingScroller/MarginContainer/SettingContainer/GameplaySettings/ItemReactions/ReactionButton"]
 [editable path="Panel/SettingScroller/MarginContainer/SettingContainer/GameplaySettings/ShowTimer/TimerButton"]
 [editable path="Panel/SettingScroller/MarginContainer/SettingContainer/GameplaySettings/IntroSkip/IntroSkipButton"]
+[editable path="Panel/SettingScroller/MarginContainer/SettingContainer/GameplaySettings/DiscordRPC/DiscordRPCButton"]
 [editable path="Panel/SaveButton"]
 [editable path="ControlTemplate/GeneralButton"]

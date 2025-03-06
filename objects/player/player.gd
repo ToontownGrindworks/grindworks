@@ -404,8 +404,11 @@ func connect_stats() -> void:
 	laff_meter.lock_enabled = laff_lock_enabled
 	bean_jar.bean_count = stats.money
 	stats.hp_changed.connect(laff_meter.set_laff)
+	stats.hp_changed.connect(DiscordManager.update_presence)
 	stats.max_hp_changed.connect(laff_meter.set_max_laff)
+	stats.max_hp_changed.connect(DiscordManager.update_presence)
 	stats.s_money_changed.connect(func(x: int): bean_jar.bean_count = x)
+	stats.s_money_changed.connect(DiscordManager.update_presence)
 	stats.s_gained_money.connect(bean_jar.scale_pop)
 	stats.hp_changed.connect(check_hp)
 	stats.s_extra_lives_changed.connect(func(x: int): laff_meter.extra_lives = x)
