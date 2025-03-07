@@ -1,7 +1,7 @@
 [gd_resource type="Resource" script_class="CogDNA" load_steps=12 format=3 uid="uid://ch01vicvrjrve"]
 
-[ext_resource type="Script" path="res://objects/battle/battle_resources/cog_attacks/cog_attack.gd" id="1_ssr7r"]
-[ext_resource type="Script" path="res://objects/cog/cogdna.gd" id="2_stcta"]
+[ext_resource type="Script" uid="uid://bb27him60xtnk" path="res://objects/battle/battle_resources/cog_attacks/cog_attack.gd" id="1_ssr7r"]
+[ext_resource type="Script" uid="uid://okjbx502s3r5" path="res://objects/cog/cogdna.gd" id="2_stcta"]
 [ext_resource type="Resource" uid="uid://dxpqtt8gh5brv" path="res://objects/battle/battle_resources/cog_attacks/resources/finger_wag.tres" id="2_yx0yl"]
 [ext_resource type="Resource" uid="uid://cfwymrymjx7s5" path="res://objects/battle/battle_resources/cog_attacks/resources/write_off.tres" id="3_bsqqh"]
 [ext_resource type="PackedScene" uid="uid://dekjiyikbfa4f" path="res://models/cogs/heads/pushedpencil.glb" id="4_kujp8"]
@@ -9,7 +9,7 @@
 [ext_resource type="Texture2D" uid="uid://idf1e68fml3o" path="res://models/cogs/textures/misc/blazer_1.png" id="5_2ud7u"]
 [ext_resource type="Texture2D" uid="uid://mxoxt5bg5t34" path="res://models/cogs/heads/pushedpencil_pushedpencil.png" id="5_jsjgc"]
 [ext_resource type="Texture2D" uid="uid://o3hrfvdxeisb" path="res://models/cogs/textures/misc/leg_4.png" id="6_gjxex"]
-[ext_resource type="Script" path="res://objects/battle/battle_resources/status_effect.gd" id="7_xckql"]
+[ext_resource type="Script" uid="uid://df7irk63ikx4k" path="res://objects/battle/battle_resources/status_effect.gd" id="7_xckql"]
 [ext_resource type="Resource" uid="uid://b4vuuxwhv0d3v" path="res://objects/battle/battle_resources/status_effects/resources/status_effect_mod_cog.tres" id="8_gb58m"]
 
 [resource]
@@ -39,6 +39,6 @@ is_admin = false
 health_mod = 1.0
 battle_phrases = Array[String](["You won't push me around.", "Don't mistake me for dull.", "I have plenty of job experience.", "Good, I could use some sharpening.", "You've pushed me too far.", "Time to push for some big changes.", "Watch out, I'm about to snap."])
 external_assets = {
-"head_model": "",
-"head_textures": []
+&"head_model": "",
+&"head_textures": []
 }

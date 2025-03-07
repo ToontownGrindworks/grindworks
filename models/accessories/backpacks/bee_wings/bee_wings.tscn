@@ -1,0 +1,15 @@
+[gd_scene load_steps=4 format=3 uid="uid://dn2h7vcu3ysw5"]
+
+[ext_resource type="PackedScene" uid="uid://bruf1ay3yedcn" path="res://models/accessories/backpacks/bee_wings/tt_m_chr_avt_acc_pac_beeWings.glb" id="1_bi6j3"]
+[ext_resource type="Texture2D" uid="uid://bny3tdg2yy0yi" path="res://models/accessories/backpacks/bee_wings/tt_m_chr_avt_acc_pac_beeWings_tt_t_chr_avt_acc_pac_beeWings.png" id="2_mf11o"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_x22xv"]
+resource_name = "default.285"
+cull_mode = 2
+vertex_color_use_as_albedo = true
+albedo_texture = ExtResource("2_mf11o")
+
+[node name="tt_m_chr_avt_acc_pac_beeWings" instance=ExtResource("1_bi6j3")]
+
+[node name="beeWing" parent="." index="0"]
+surface_material_override/0 = SubResource("StandardMaterial3D_x22xv")

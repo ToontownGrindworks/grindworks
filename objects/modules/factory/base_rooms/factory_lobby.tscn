@@ -18,7 +18,7 @@
 [ext_resource type="Texture2D" uid="uid://c82dhpdhopvet" path="res://models/facilities/factory/FINALFACTORY_7.png" id="16_ppxfd"]
 [ext_resource type="PackedScene" uid="uid://dkytqefa8iykn" path="res://models/facilities/factory/factory_lobby.fbx" id="17_u0kpm"]
 [ext_resource type="Texture2D" uid="uid://cuuqo4vscu2mm" path="res://models/facilities/factory/FINALFACTORY_Fans.png" id="18_1br73"]
-[ext_resource type="Script" path="res://objects/modules/factory/base_rooms/gear_spin.gd" id="18_ked08"]
+[ext_resource type="Script" uid="uid://dqpyvwnain3c5" path="res://objects/modules/factory/base_rooms/gear_spin.gd" id="18_ked08"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_nmdgi"]
 resource_name = "BoilerRoomT_CementFloorx4"
@@ -3102,10 +3102,10 @@ resource_name = "FINALFACTORY_Fans"
 render_priority = 0
 shader = SubResource("Shader_hi4mr")
 shader_parameter/albedo = Color(1, 1, 1, 1)
+shader_parameter/texture_albedo = ExtResource("18_1br73")
 shader_parameter/uv1_scale = Vector3(1, 1, 1)
 shader_parameter/uv1_offset = Vector3(0, 0, 0)
 shader_parameter/uv1_scroll = Vector3(0.65, 0, 0)
-shader_parameter/texture_albedo = ExtResource("18_1br73")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_gk6p3"]
 albedo_color = Color(0, 0, 0, 1)

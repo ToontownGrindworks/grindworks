@@ -2,26 +2,21 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://lf2oggm362e3"
-path.s3tc="res://.godot/imported/fishing_rod_reelstring.png-96bdb38b17d0887014f6be15770333f0.s3tc.ctex"
-path.etc2="res://.godot/imported/fishing_rod_reelstring.png-96bdb38b17d0887014f6be15770333f0.etc2.ctex"
+uid="uid://cy18jvvkx3xrb"
+path="res://.godot/imported/fishing_rod_reelstring.png-96bdb38b17d0887014f6be15770333f0.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc", "etc2_astc"],
-"vram_texture": true
-}
-generator_parameters={
-"md5": "9409e1cdb98e037a64c9f32da0bbe66b"
+"vram_texture": false
 }
 
 [deps]
 
 source_file="res://models/props/gags/fishing_rod/fishing_rod_reelstring.png"
-dest_files=["res://.godot/imported/fishing_rod_reelstring.png-96bdb38b17d0887014f6be15770333f0.s3tc.ctex", "res://.godot/imported/fishing_rod_reelstring.png-96bdb38b17d0887014f6be15770333f0.etc2.ctex"]
+dest_files=["res://.godot/imported/fishing_rod_reelstring.png-96bdb38b17d0887014f6be15770333f0.ctex"]
 
 [params]
 
-compress/mode=2
-compress/high_quality=false
+compress/mode=3
+compress/high_quality=true
 compress/lossy_quality=0.7
 compress/hdr_compression=1
 compress/normal_map=0

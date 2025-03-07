@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="GeneratedMesh" load_steps=2 format=3 uid="uid://bl8d30qa6enyq"]
 
-[ext_resource type="Script" path="res://general_resources/generated_meshes/generated_mesh.gd" id="1_pi3j4"]
+[ext_resource type="Script" uid="uid://bs68gjgha43jt" path="res://general_resources/generated_meshes/generated_mesh.gd" id="1_pi3j4"]
 
 [resource]
 script = ExtResource("1_pi3j4")

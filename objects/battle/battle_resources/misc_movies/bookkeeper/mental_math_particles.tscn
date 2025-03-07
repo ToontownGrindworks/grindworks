@@ -1,6 +1,6 @@
 [gd_scene load_steps=13 format=3 uid="uid://qxr8btpub25g"]
 
-[ext_resource type="Script" path="res://objects/battle/battle_resources/misc_movies/bookkeeper/mental_math_particles.gd" id="1_7p7di"]
+[ext_resource type="Script" uid="uid://c1uu5hdxkvo7k" path="res://objects/battle/battle_resources/misc_movies/bookkeeper/mental_math_particles.gd" id="1_7p7di"]
 [ext_resource type="FontFile" uid="uid://dyjvd6wmo0bmg" path="res://fonts/vtRemingtonPortable.ttf" id="1_77s3r"]
 
 [sub_resource type="Curve" id="Curve_2yeve"]

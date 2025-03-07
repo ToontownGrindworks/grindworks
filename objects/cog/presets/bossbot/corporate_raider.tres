@@ -1,12 +1,12 @@
 [gd_resource type="Resource" script_class="CogDNA" load_steps=8 format=3 uid="uid://wt32frxolvqs"]
 
-[ext_resource type="Script" path="res://objects/battle/battle_resources/cog_attacks/cog_attack.gd" id="1_bjrff"]
-[ext_resource type="Script" path="res://objects/cog/cogdna.gd" id="2_1y4y0"]
+[ext_resource type="Script" uid="uid://bb27him60xtnk" path="res://objects/battle/battle_resources/cog_attacks/cog_attack.gd" id="1_bjrff"]
+[ext_resource type="Script" uid="uid://okjbx502s3r5" path="res://objects/cog/cogdna.gd" id="2_1y4y0"]
 [ext_resource type="Resource" uid="uid://dwkmwkdn3ws4k" path="res://objects/battle/battle_resources/cog_attacks/resources/evil_eye.tres" id="2_he3j6"]
 [ext_resource type="PackedScene" uid="uid://qqdyuilfkd7y" path="res://models/cogs/heads/corporate_raider.glb" id="3_g2j3y"]
 [ext_resource type="Resource" uid="uid://bhl72hd7pn8s2" path="res://objects/battle/battle_resources/cog_attacks/resources/workout.tres" id="3_kqbbr"]
 [ext_resource type="Texture2D" uid="uid://cngso70oyfm86" path="res://models/cogs/heads/corporate_raider_tt_t_ene_hed_corporateRaider.png" id="4_51tnt"]
-[ext_resource type="Script" path="res://objects/battle/battle_resources/status_effect.gd" id="5_n5a4u"]
+[ext_resource type="Script" uid="uid://df7irk63ikx4k" path="res://objects/battle/battle_resources/status_effect.gd" id="5_n5a4u"]
 
 [resource]
 script = ExtResource("2_1y4y0")
@@ -15,13 +15,14 @@ suit = 2
 cog_name = "Corporate Raider"
 name_plural = ""
 head = ExtResource("3_g2j3y")
-head_scale = 1.0
+head_scale = Vector3(1, 1, 1)
 head_pos = Vector3(0, 0, 0)
 scale = 6.75
 head_textures = Array[Texture2D]([ExtResource("4_51tnt")])
 hand_color = Color(0.85, 0.55, 0.55, 1)
 head_color = null
 custom_nametag_height = 0.0
+custom_nametag_suffix = ""
 attacks = Array[ExtResource("1_bjrff")]([ExtResource("2_he3j6"), ExtResource("3_kqbbr")])
 level_low = 7
 level_high = 14
@@ -31,6 +32,6 @@ is_admin = false
 health_mod = 1.0
 battle_phrases = Array[String](["RAID!", "Prepare to be raided!", "You don't fit in my corporation.", "Looks like you're primed for a take-over.", "This is not proper corporate attire.", "You're looking rather vulnerable.", "Time to sign over your assets.", "I'm on a Toon removal crusade.", "You are defenseless against my ideas.", "Relax, you'll find this is for the best.", "I'm taking over your company."])
 external_assets = {
-"head_model": "",
-"head_textures": []
+&"head_model": "",
+&"head_textures": []
 }

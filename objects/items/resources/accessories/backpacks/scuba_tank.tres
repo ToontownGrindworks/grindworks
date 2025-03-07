@@ -1,10 +1,10 @@
 [gd_resource type="Resource" script_class="ItemAccessory" load_steps=9 format=3 uid="uid://dlhap5enouu26"]
 
-[ext_resource type="Script" path="res://objects/items/classes/accessory_placement.gd" id="1_jlpi7"]
-[ext_resource type="Script" path="res://objects/items/classes/body_placement.gd" id="2_fdplg"]
+[ext_resource type="Script" uid="uid://fb0tqfojo57q" path="res://objects/items/classes/accessory_placement.gd" id="1_jlpi7"]
+[ext_resource type="Script" uid="uid://duxq3xtgnln43" path="res://objects/items/classes/body_placement.gd" id="2_fdplg"]
 [ext_resource type="Texture2D" uid="uid://c18nmb8f5vwh3" path="res://models/accessories/backpacks/scuba_tank/tt_m_chr_avt_acc_pac_scubaTank.glb-pix-1.png" id="3_ubwpq"]
 [ext_resource type="PackedScene" uid="uid://ciewifd8684q" path="res://models/accessories/backpacks/scuba_tank/tt_m_chr_avt_acc_pac_scubaTank.glb" id="4_be6kg"]
-[ext_resource type="Script" path="res://objects/items/classes/item_accessory.gd" id="5_jjy6s"]
+[ext_resource type="Script" uid="uid://dvu24b3o8i3sj" path="res://objects/items/classes/item_accessory.gd" id="5_jjy6s"]
 
 [sub_resource type="Resource" id="Resource_3frid"]
 script = ExtResource("2_fdplg")
@@ -31,7 +31,7 @@ scale = Vector3(0.3, 0.3, 0.3)
 script = ExtResource("5_jjy6s")
 accessory_placements = Array[ExtResource("1_jlpi7")]([SubResource("Resource_3frid"), SubResource("Resource_3jk26"), SubResource("Resource_cixyy")])
 qualitoon = 3
-qualitoon_rarity = 6
+rarity = 0
 evergreen = false
 realtime = false
 slot = 3
@@ -40,7 +40,7 @@ want_ui_spin = true
 ui_cam_offset = 0.0
 item_name = "Scuba Tank"
 item_description = "Deep diver"
-big_description = "Increases Squirt's Drenched effect from 20% to 30%."
+big_description = "Adds +10% to Squirt's drenched effect"
 model = ExtResource("4_be6kg")
 stats_add = {
 "squirt_defense_boost": -0.1

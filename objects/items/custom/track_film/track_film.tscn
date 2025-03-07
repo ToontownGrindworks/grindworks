@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://bh0u7gp0bk2xe"]
 
 [ext_resource type="Texture2D" uid="uid://ce0sy8ma2flt1" path="res://objects/items/custom/track_film/filmstrip.png" id="1_sdvvj"]
-[ext_resource type="Script" path="res://objects/items/custom/track_film/track_frame.gd" id="2_awun1"]
+[ext_resource type="Script" uid="uid://x34lh7fqix1i" path="res://objects/items/custom/track_film/track_frame.gd" id="2_awun1"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ql6t2"]
 cull_mode = 2

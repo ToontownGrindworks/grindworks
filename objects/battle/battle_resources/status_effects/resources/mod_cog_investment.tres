@@ -1,12 +1,11 @@
 [gd_resource type="Resource" load_steps=2 format=3 uid="uid://esv2o7vnbdaf"]
 
-[ext_resource type="Script" path="res://objects/battle/battle_resources/status_effects/mod_cog_effects/cog_mod_investment.gd" id="1_xe128"]
+[ext_resource type="Script" uid="uid://dncagyb1ovp2u" path="res://objects/battle/battle_resources/status_effects/mod_cog_effects/cog_mod_investment.gd" id="1_xe128"]
 
 [resource]
 script = ExtResource("1_xe128")
 quality = 0
 rounds = -1
-requires_user = false
 icon_color = Color(1, 1, 1, 1)
 icon_scale = 1.0
 mini_icon_color = Color(1, 1, 1, 1)

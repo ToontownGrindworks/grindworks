@@ -11,6 +11,8 @@ signal s_battle_initialized(battle_node: BattleNode)
 signal s_round_started(turn_array: Array[BattleAction])
 signal s_round_ended(manager: BattleManager)
 signal s_battle_participant_died(participant: Node3D)
+## A cog died above 0 HP due to an item
+signal s_cog_died_early(cog: Cog)
 signal s_cog_died(cog: Cog)
 signal s_boss_died(cog: Cog)
 signal s_battle_ending

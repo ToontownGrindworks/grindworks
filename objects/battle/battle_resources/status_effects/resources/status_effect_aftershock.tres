@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="StatEffectAftershock" load_steps=2 format=3 uid="uid://4gavfg4a6iac"]
 
-[ext_resource type="Script" path="res://objects/battle/battle_resources/status_effects/status_effect_aftershock.gd" id="1_nhdpi"]
+[ext_resource type="Script" uid="uid://dnqyx264b8anr" path="res://objects/battle/battle_resources/status_effects/status_effect_aftershock.gd" id="1_nhdpi"]
 
 [resource]
 script = ExtResource("1_nhdpi")
@@ -8,8 +8,12 @@ amount = 0
 instant_effect = false
 quality = 1
 rounds = 2
-requires_user = false
+icon_color = Color(1, 1, 1, 1)
+icon_scale = 1.0
+mini_icon_color = Color(1, 1, 1, 1)
+mini_icon_scale = 1.0
 visible = true
 description = "This is a Status Effect"
+status_name = "Status Effect"
 id = 3
 _generate_id = false

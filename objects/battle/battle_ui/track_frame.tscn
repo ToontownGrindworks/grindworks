@@ -1,7 +1,7 @@
 [gd_scene load_steps=19 format=4 uid="uid://b530aevsguwxr"]
 
 [ext_resource type="Texture2D" uid="uid://dx5m2crt3ywt6" path="res://ui_assets/battle/InventoryRow.png" id="1_bgpxa"]
-[ext_resource type="Script" path="res://objects/battle/battle_ui/gag_track.gd" id="2_pviot"]
+[ext_resource type="Script" uid="uid://bnpkyjdtm26x8" path="res://objects/battle/battle_ui/gag_track.gd" id="2_pviot"]
 [ext_resource type="PackedScene" uid="uid://yxu25u6bk3mo" path="res://objects/battle/battle_ui/gag_button.tscn" id="3_q38fp"]
 
 [sub_resource type="Image" id="Image_ffac2"]

@@ -1,11 +1,11 @@
 [gd_scene load_steps=32 format=3 uid="uid://gpi3rtcvtk4r"]
 
-[ext_resource type="Script" path="res://objects/pause_menu/pause_menu.gd" id="1_0r2dl"]
+[ext_resource type="Script" uid="uid://b2dsu58yfd5a7" path="res://objects/pause_menu/pause_menu.gd" id="1_0r2dl"]
 [ext_resource type="FontFile" uid="uid://cup2yr5w7or1l" path="res://fonts/Minnie.TTF" id="1_nhuu3"]
 [ext_resource type="PackedScene" uid="uid://b0d1er4oqiqcn" path="res://objects/general_ui/general_button/general_button.tscn" id="2_fdjxk"]
-[ext_resource type="Shader" path="res://objects/pause_menu/canvas_blur_shader.gdshader" id="2_jjheh"]
+[ext_resource type="Shader" uid="uid://dri3mi0a32658" path="res://objects/pause_menu/canvas_blur_shader.gdshader" id="2_jjheh"]
 [ext_resource type="FontFile" uid="uid://815gwlftl5ik" path="res://fonts/impress-bt.ttf" id="3_ij621"]
-[ext_resource type="Shader" path="res://scenes/title_screen/hue_shift.gdshader" id="4_sgslx"]
+[ext_resource type="Shader" uid="uid://ryrnfqn0ixe5" path="res://scenes/title_screen/hue_shift.gdshader" id="4_sgslx"]
 [ext_resource type="PackedScene" uid="uid://ewhq7f4agtnn" path="res://objects/quests/scroll/quest_scroll.tscn" id="4_wy1sv"]
 [ext_resource type="Texture2D" uid="uid://ddcktpjy3gdew" path="res://ui_assets/misc/uiAccessoryDelete_up.png" id="6_2ls0o"]
 [ext_resource type="Texture2D" uid="uid://b7ri5sq021cvo" path="res://ui_assets/misc/uiAccessoryDelete_down.png" id="7_pio3r"]
@@ -390,8 +390,8 @@ tracks/15/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_gpmgs"]
 _data = {
-"RESET": SubResource("Animation_klw45"),
-"pause_on": SubResource("Animation_yqy0f")
+&"RESET": SubResource("Animation_klw45"),
+&"pause_on": SubResource("Animation_yqy0f")
 }
 
 [node name="PauseMenu" type="Control" node_paths=PackedStringArray("quest_scrolls")]

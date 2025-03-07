@@ -2,26 +2,21 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dk52un2hk7cm6"
-path.s3tc="res://.godot/imported/suita_c_sleeve.png-fc6bfadcc470411f0bf61707740ea8fa.s3tc.ctex"
-path.etc2="res://.godot/imported/suita_c_sleeve.png-fc6bfadcc470411f0bf61707740ea8fa.etc2.ctex"
+uid="uid://dh78bsr87huwy"
+path="res://.godot/imported/suita_c_sleeve.png-fc6bfadcc470411f0bf61707740ea8fa.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc", "etc2_astc"],
-"vram_texture": true
-}
-generator_parameters={
-"md5": "19f70a97d20011266a670b18ff924cc6"
+"vram_texture": false
 }
 
 [deps]
 
 source_file="res://models/cogs/suita/suita_c_sleeve.png"
-dest_files=["res://.godot/imported/suita_c_sleeve.png-fc6bfadcc470411f0bf61707740ea8fa.s3tc.ctex", "res://.godot/imported/suita_c_sleeve.png-fc6bfadcc470411f0bf61707740ea8fa.etc2.ctex"]
+dest_files=["res://.godot/imported/suita_c_sleeve.png-fc6bfadcc470411f0bf61707740ea8fa.ctex"]
 
 [params]
 
-compress/mode=2
-compress/high_quality=false
+compress/mode=3
+compress/high_quality=true
 compress/lossy_quality=0.7
 compress/hdr_compression=1
 compress/normal_map=0

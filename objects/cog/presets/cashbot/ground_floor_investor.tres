@@ -1,13 +1,13 @@
 [gd_resource type="Resource" script_class="CogDNA" load_steps=9 format=3 uid="uid://y03gsvpck4x5"]
 
-[ext_resource type="Script" path="res://objects/battle/battle_resources/cog_attacks/cog_attack.gd" id="1_7r2kr"]
-[ext_resource type="Script" path="res://objects/cog/cogdna.gd" id="2_8p77o"]
+[ext_resource type="Script" uid="uid://bb27him60xtnk" path="res://objects/battle/battle_resources/cog_attacks/cog_attack.gd" id="1_7r2kr"]
+[ext_resource type="Script" uid="uid://okjbx502s3r5" path="res://objects/cog/cogdna.gd" id="2_8p77o"]
 [ext_resource type="Resource" uid="uid://6hjcsu17tt4g" path="res://objects/battle/battle_resources/cog_attacks/resources/brain_storm.tres" id="2_f58nn"]
 [ext_resource type="PackedScene" uid="uid://i3q2b1jvfc74" path="res://models/cogs/heads/yesman.glb" id="2_p1alw"]
 [ext_resource type="Resource" uid="uid://dxpqtt8gh5brv" path="res://objects/battle/battle_resources/cog_attacks/resources/finger_wag.tres" id="3_a8nmv"]
 [ext_resource type="Texture2D" uid="uid://bpai1ahhh6nw6" path="res://models/cogs/heads/investor.png" id="3_mx0h6"]
 [ext_resource type="Resource" uid="uid://b8evcct5837aq" path="res://objects/battle/battle_resources/cog_attacks/resources/pick_pocket_money.tres" id="4_e8voy"]
-[ext_resource type="Script" path="res://objects/battle/battle_resources/status_effect.gd" id="7_m1gf8"]
+[ext_resource type="Script" uid="uid://df7irk63ikx4k" path="res://objects/battle/battle_resources/status_effect.gd" id="7_m1gf8"]
 
 [resource]
 script = ExtResource("2_8p77o")
@@ -33,6 +33,6 @@ is_admin = true
 health_mod = 2.0
 battle_phrases = Array[String](["You're on shaky ground."])
 external_assets = {
-"head_model": "",
-"head_textures": []
+&"head_model": "",
+&"head_textures": []
 }

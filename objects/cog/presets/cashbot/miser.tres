@@ -1,15 +1,15 @@
 [gd_resource type="Resource" script_class="CogDNA" load_steps=12 format=3 uid="uid://tmgiunbld4mr"]
 
-[ext_resource type="Script" path="res://objects/battle/battle_resources/cog_attacks/cog_attack.gd" id="1_v2usq"]
+[ext_resource type="Script" uid="uid://bb27him60xtnk" path="res://objects/battle/battle_resources/cog_attacks/cog_attack.gd" id="1_v2usq"]
 [ext_resource type="Resource" uid="uid://dxpqtt8gh5brv" path="res://objects/battle/battle_resources/cog_attacks/resources/finger_wag.tres" id="2_jt2i3"]
 [ext_resource type="Resource" uid="uid://b4kaq7rjifwfc" path="res://objects/battle/battle_resources/cog_attacks/resources/liquidate.tres" id="3_8d6i6"]
 [ext_resource type="Texture2D" uid="uid://2fj5qbvh3qa1" path="res://models/cogs/textures/misc/sleeve_2.png" id="5_0oiml"]
 [ext_resource type="PackedScene" uid="uid://cia8tr5rx1b5x" path="res://models/cogs/heads/tightwad.glb" id="5_uosvn"]
 [ext_resource type="Texture2D" uid="uid://idf1e68fml3o" path="res://models/cogs/textures/misc/blazer_1.png" id="6_agv0n"]
 [ext_resource type="Texture2D" uid="uid://d4cv4wai7eajr" path="res://models/cogs/heads/tightwad_tt_t_ene_hed_tightwad.png" id="6_qu7r2"]
-[ext_resource type="Script" path="res://objects/cog/cogdna.gd" id="7_0r4gr"]
+[ext_resource type="Script" uid="uid://okjbx502s3r5" path="res://objects/cog/cogdna.gd" id="7_0r4gr"]
 [ext_resource type="Texture2D" uid="uid://o3hrfvdxeisb" path="res://models/cogs/textures/misc/leg_4.png" id="7_pdtxj"]
-[ext_resource type="Script" path="res://objects/battle/battle_resources/status_effect.gd" id="8_hxac6"]
+[ext_resource type="Script" uid="uid://df7irk63ikx4k" path="res://objects/battle/battle_resources/status_effect.gd" id="8_hxac6"]
 [ext_resource type="Resource" uid="uid://b4vuuxwhv0d3v" path="res://objects/battle/battle_resources/status_effects/resources/status_effect_mod_cog.tres" id="9_26hv7"]
 
 [resource]
@@ -39,6 +39,6 @@ is_admin = false
 health_mod = 1.0
 battle_phrases = Array[String](["Your jokey humbug won't fly here.", "A penny saved, a penny earned.", "You'll make a fine addition to my profits.", "Time is money, and I refuse to spend more than I must with you.", "I'm too much.", "You'll go sad in my clutch."])
 external_assets = {
-"head_model": "",
-"head_textures": []
+&"head_model": "",
+&"head_textures": []
 }

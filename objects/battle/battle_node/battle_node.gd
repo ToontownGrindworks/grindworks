@@ -292,8 +292,7 @@ func get_mod_cog_chance() -> float:
 	if mod_cogs >= max_mod_cogs:
 		return 0.0
 	
-	var chance := -0.1
-	chance += (floor_num * 0.075) + 0.1
+	var chance := (floor_num * 0.075)
 	if Util.get_player() and not is_equal_approx(Util.get_player().stats.proxy_chance_boost, 0.0):
 		chance += Util.get_player().stats.proxy_chance_boost
 	return chance

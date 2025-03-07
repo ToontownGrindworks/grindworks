@@ -1,7 +1,7 @@
 [gd_resource type="Resource" script_class="Liquidate" load_steps=3 format=3 uid="uid://bpupdhbap1rq"]
 
 [ext_resource type="PackedScene" uid="uid://7374wvctrryy" path="res://objects/battle/effects/cloud_attacks/snow.tscn" id="1_g4d4b"]
-[ext_resource type="Script" path="res://objects/battle/battle_resources/cog_attacks/liquidate.gd" id="1_gs3qh"]
+[ext_resource type="Script" uid="uid://cvbmppwfs711e" path="res://objects/battle/battle_resources/cog_attacks/liquidate.gd" id="1_gs3qh"]
 
 [resource]
 script = ExtResource("1_gs3qh")
@@ -10,6 +10,7 @@ animation = 0
 melt_toon = false
 accuracy = 75
 damage = 3
+ignore_stats = false
 summary = ""
 attack_lines = Array[String](["Your assets are mine.", "Do you feel a draft?", "Hope you don't have plans.", "This should keep you on ice.", "There's a chill in the air.", "Winter is coming early this year.", "Are you feeling a little blue?", "Let me crystallize my plan.", "You're going to take this hard.", "This should cause freezer burn.", "I hope you like cold cuts.", "I'm very cold blooded."])
 target_type = 0

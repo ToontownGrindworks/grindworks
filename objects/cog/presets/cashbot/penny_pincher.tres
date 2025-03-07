@@ -1,13 +1,13 @@
 [gd_resource type="Resource" script_class="CogDNA" load_steps=9 format=3 uid="uid://uduwri1drnbo"]
 
-[ext_resource type="Script" path="res://objects/battle/battle_resources/cog_attacks/cog_attack.gd" id="1_r1gt7"]
-[ext_resource type="Script" path="res://objects/cog/cogdna.gd" id="2_1omjg"]
+[ext_resource type="Script" uid="uid://bb27him60xtnk" path="res://objects/battle/battle_resources/cog_attacks/cog_attack.gd" id="1_r1gt7"]
+[ext_resource type="Script" uid="uid://okjbx502s3r5" path="res://objects/cog/cogdna.gd" id="2_1omjg"]
 [ext_resource type="Resource" uid="uid://dxpqtt8gh5brv" path="res://objects/battle/battle_resources/cog_attacks/resources/finger_wag.tres" id="2_arj5j"]
 [ext_resource type="Resource" uid="uid://bpupdhbap1rq" path="res://objects/battle/battle_resources/cog_attacks/resources/freeze_assets.tres" id="3_ocrcf"]
 [ext_resource type="Resource" uid="uid://b8evcct5837aq" path="res://objects/battle/battle_resources/cog_attacks/resources/pick_pocket_money.tres" id="4_vgj2q"]
 [ext_resource type="Texture2D" uid="uid://ctdhiopxlij5k" path="res://models/cogs/heads/penny_pincher_tt_t_ene_hed_pennyPincher.png" id="5_1vr0p"]
 [ext_resource type="PackedScene" uid="uid://btxp8ptniqnjl" path="res://models/cogs/heads/penny_pincher.glb" id="5_uhcv3"]
-[ext_resource type="Script" path="res://objects/battle/battle_resources/status_effect.gd" id="6_x2ru8"]
+[ext_resource type="Script" uid="uid://df7irk63ikx4k" path="res://objects/battle/battle_resources/status_effect.gd" id="6_x2ru8"]
 
 [resource]
 script = ExtResource("2_1omjg")
@@ -16,13 +16,14 @@ suit = 0
 cog_name = "Penny Pincher"
 name_plural = ""
 head = ExtResource("5_uhcv3")
-head_scale = 1.0
+head_scale = Vector3(1, 1, 1)
 head_pos = Vector3(0, 0, 0)
 scale = 3.55
 head_textures = Array[Texture2D]([ExtResource("5_1vr0p")])
 hand_color = Color(1, 0.5, 0.6, 1)
 head_color = Color(1, 1, 1, 1)
 custom_nametag_height = 13.0
+custom_nametag_suffix = ""
 attacks = Array[ExtResource("1_r1gt7")]([ExtResource("2_arj5j"), ExtResource("3_ocrcf"), ExtResource("4_vgj2q")])
 level_low = 2
 level_high = 9
@@ -32,6 +33,6 @@ is_admin = false
 health_mod = 1.0
 battle_phrases = Array[String](["Heads, I win, tails, you lose.", "I'm going to give you a pinch for luck.", "A Penny for your Gags.", "I'm going to put a crimp in your smile.", "Let me add my two cents.", "This is going to sting a little.", "I'll prove you're not dreaming.", "A penny saved is a penny earned.", "You don't want to press your luck with me.", "I think a big fat pinch is in order."])
 external_assets = {
-"head_model": "",
-"head_textures": []
+&"head_model": "",
+&"head_textures": []
 }

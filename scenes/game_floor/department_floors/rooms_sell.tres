@@ -1,9 +1,9 @@
 [gd_resource type="Resource" script_class="DepartmentFloor" load_steps=37 format=3 uid="uid://c1kumm74qwmtf"]
 
 [ext_resource type="AudioStream" uid="uid://b8q4035btjkkk" path="res://audio/music/CHQ_FACT_bg.ogg" id="1_57p8i"]
-[ext_resource type="Script" path="res://scenes/game_floor/department_floors/department_floor.gd" id="1_mxwab"]
+[ext_resource type="Script" uid="uid://bs13ap551050v" path="res://scenes/game_floor/department_floors/department_floor.gd" id="1_mxwab"]
 [ext_resource type="AudioStream" uid="uid://cw2dv426p5vjy" path="res://audio/music/encntr_general_bg.ogg" id="2_3fcy8"]
-[ext_resource type="Script" path="res://objects/modules/facility_room.gd" id="3_jw8rd"]
+[ext_resource type="Script" uid="uid://dhyadt7p1gv78" path="res://objects/modules/facility_room.gd" id="3_jw8rd"]
 [ext_resource type="PackedScene" uid="uid://dui2hdkuqux28" path="res://objects/modules/factory/variants/factory_gear_room_battle.tscn" id="4_i1303"]
 [ext_resource type="PackedScene" uid="uid://b1sjkcka65imo" path="res://objects/modules/factory/base_rooms/factory_entrance.tscn" id="4_n2qep"]
 [ext_resource type="PackedScene" uid="uid://cfye5nnqbgqn4" path="res://objects/modules/factory/variants/factory_boiler_room_battle.tscn" id="5_0wskm"]

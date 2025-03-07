@@ -1,8 +1,8 @@
 [gd_resource type="Resource" script_class="ItemAccessory" load_steps=40 format=3 uid="uid://dinjr3feh1ubb"]
 
-[ext_resource type="Script" path="res://objects/items/classes/accessory_placement.gd" id="1_rtx8a"]
-[ext_resource type="Script" path="res://objects/items/classes/item_accessory.gd" id="2_32jd1"]
-[ext_resource type="Script" path="res://objects/items/classes/head_placement.gd" id="2_m4yrn"]
+[ext_resource type="Script" uid="uid://fb0tqfojo57q" path="res://objects/items/classes/accessory_placement.gd" id="1_rtx8a"]
+[ext_resource type="Script" uid="uid://dvu24b3o8i3sj" path="res://objects/items/classes/item_accessory.gd" id="2_32jd1"]
+[ext_resource type="Script" uid="uid://c4eyu1xvv7h2l" path="res://objects/items/classes/head_placement.gd" id="2_m4yrn"]
 [ext_resource type="PackedScene" uid="uid://bu2pxahlevsrn" path="res://models/accessories/glasses/eye_patch/tt_m_chr_avt_acc_msk_eyepatch.glb" id="2_uecrr"]
 [ext_resource type="Texture2D" uid="uid://dwblyk012ilns" path="res://models/accessories/glasses/eye_patch/tt_m_chr_avt_acc_msk_eyepatch.glb-pix-1.png" id="3_1lctm"]
 
@@ -26,9 +26,9 @@ scale = Vector3(0.4, 0.4, 0.4)
 script = ExtResource("2_m4yrn")
 species = 2
 head_index = 2
-position = Vector3(0, 0.35, 0)
-rotation = Vector3(0, 0, 0)
-scale = Vector3(0.4, 0.4, 0.4)
+position = Vector3(0, 0.35, -0.09)
+rotation = Vector3(-3.62, 0, 0)
+scale = Vector3(0.34, 0.31, 0.48)
 
 [sub_resource type="Resource" id="Resource_p4km4"]
 script = ExtResource("2_m4yrn")
@@ -202,9 +202,9 @@ scale = Vector3(0.4, 0.4, 0.4)
 script = ExtResource("2_m4yrn")
 species = 6
 head_index = 1
-position = Vector3(0, 0.45, 0.1)
-rotation = Vector3(0, 0, 0)
-scale = Vector3(0.4, 0.4, 0.4)
+position = Vector3(-0.06, 0.45, 0.1)
+rotation = Vector3(2.91, 0, 0)
+scale = Vector3(0.48, 0.5, 0.36)
 
 [sub_resource type="Resource" id="Resource_8livv"]
 script = ExtResource("2_m4yrn")
@@ -250,9 +250,9 @@ scale = Vector3(0.4, 0.4, 0.4)
 script = ExtResource("2_m4yrn")
 species = 8
 head_index = 3
-position = Vector3(0, 0, 0)
+position = Vector3(0, 0, -0.02)
 rotation = Vector3(0, 0, 0)
-scale = Vector3(0.4, 0.4, 0.4)
+scale = Vector3(0.41, 0.4, 0.4)
 
 [sub_resource type="Resource" id="Resource_31mvl"]
 script = ExtResource("2_m4yrn")
@@ -281,8 +281,8 @@ scale = Vector3(0.4, 0.4, 0.4)
 [resource]
 script = ExtResource("2_32jd1")
 accessory_placements = Array[ExtResource("1_rtx8a")]([SubResource("Resource_6dx77"), SubResource("Resource_d5s6c"), SubResource("Resource_g8kot"), SubResource("Resource_p4km4"), SubResource("Resource_2aoat"), SubResource("Resource_lefav"), SubResource("Resource_lf3il"), SubResource("Resource_mht4r"), SubResource("Resource_cwjnk"), SubResource("Resource_0x7b6"), SubResource("Resource_wvxun"), SubResource("Resource_j1dqx"), SubResource("Resource_aojc2"), SubResource("Resource_aboa5"), SubResource("Resource_4wope"), SubResource("Resource_c1kt4"), SubResource("Resource_vxfx4"), SubResource("Resource_3aimq"), SubResource("Resource_38br2"), SubResource("Resource_e3ed1"), SubResource("Resource_ah0ex"), SubResource("Resource_tgs5o"), SubResource("Resource_1fwh0"), SubResource("Resource_gkgct"), SubResource("Resource_iv4g5"), SubResource("Resource_8livv"), SubResource("Resource_623os"), SubResource("Resource_hsf4r"), SubResource("Resource_gumcs"), SubResource("Resource_8boqk"), SubResource("Resource_8qija"), SubResource("Resource_31mvl"), SubResource("Resource_34v0p"), SubResource("Resource_rbbrq")])
-qualitoon = 1
-qualitoon_rarity = 6
+qualitoon = 0
+rarity = 0
 evergreen = false
 realtime = false
 slot = 2

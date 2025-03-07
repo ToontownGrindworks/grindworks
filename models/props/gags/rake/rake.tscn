@@ -133,9 +133,9 @@ tracks/1/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_4vp4l"]
 _data = {
-"RESET": SubResource("Animation_57yjn"),
-"spring": SubResource("Animation_x16ub"),
-"toss": SubResource("Animation_ue70d")
+&"RESET": SubResource("Animation_57yjn"),
+&"spring": SubResource("Animation_x16ub"),
+&"toss": SubResource("Animation_ue70d")
 }
 
 [node name="rake2" type="Node3D"]

@@ -1,29 +1,37 @@
 [gd_resource type="Resource" script_class="CogDNA" load_steps=8 format=3 uid="uid://btwvqyac544p0"]
 
-[ext_resource type="Script" path="res://objects/battle/battle_resources/cog_attacks/cog_attack.gd" id="1_qq5yy"]
+[ext_resource type="Script" uid="uid://bb27him60xtnk" path="res://objects/battle/battle_resources/cog_attacks/cog_attack.gd" id="1_qq5yy"]
 [ext_resource type="Resource" uid="uid://doowiij7lpxy1" path="res://objects/battle/battle_resources/cog_attacks/resources/rubber_stamp.tres" id="2_d8rm8"]
 [ext_resource type="PackedScene" uid="uid://bptrv8nm0esos" path="res://models/cogs/heads/gladhander.glb" id="3_26t3a"]
 [ext_resource type="Resource" uid="uid://bhl72hd7pn8s2" path="res://objects/battle/battle_resources/cog_attacks/resources/workout.tres" id="3_rqeil"]
 [ext_resource type="Texture2D" uid="uid://d0tvo1y74ovms" path="res://models/cogs/heads/idkman_lambert2SG_color.png" id="4_7ypox"]
-[ext_resource type="Script" path="res://objects/cog/cogdna.gd" id="5_he33u"]
-[ext_resource type="Script" path="res://objects/battle/battle_resources/status_effect.gd" id="6_ltpj6"]
+[ext_resource type="Script" uid="uid://okjbx502s3r5" path="res://objects/cog/cogdna.gd" id="5_he33u"]
+[ext_resource type="Script" uid="uid://df7irk63ikx4k" path="res://objects/battle/battle_resources/status_effect.gd" id="6_ltpj6"]
 
 [resource]
 script = ExtResource("5_he33u")
 department = 0
 suit = 2
 cog_name = "Meh Hander"
+name_plural = ""
 head = ExtResource("3_26t3a")
+head_scale = Vector3(1, 1, 1)
+head_pos = Vector3(0, 0, 0)
 scale = 4.75
 head_textures = Array[Texture2D]([ExtResource("4_7ypox")])
 hand_color = Color(0.94902, 0.74902, 0.94902, 1)
 head_color = Color(1, 1, 1, 1)
+custom_nametag_height = 0.0
+custom_nametag_suffix = ""
 attacks = Array[ExtResource("1_qq5yy")]([ExtResource("2_d8rm8"), ExtResource("3_rqeil")])
 level_low = 4
 level_high = 8
 status_effects = Array[ExtResource("6_ltpj6")]([])
+is_mod_cog = false
+is_admin = false
+health_mod = 1.0
 battle_phrases = Array[String](["Oh. Hey."])
 external_assets = {
-"head_model": "",
-"head_textures": []
+&"head_model": "",
+&"head_textures": []
 }

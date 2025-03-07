@@ -2,12 +2,12 @@
 
 [ext_resource type="Texture2D" uid="uid://lsqyjogr7grx" path="res://objects/items/custom/oil_can/oil_can_item-pix-1.png" id="1_o2wmk"]
 [ext_resource type="PackedScene" uid="uid://b48v41ol4ujwi" path="res://objects/items/custom/oil_can/oil_can_item.tscn" id="2_umilv"]
-[ext_resource type="Script" path="res://objects/items/classes/item.gd" id="3_j3gkw"]
+[ext_resource type="Script" uid="uid://combwqypom1ru" path="res://objects/items/classes/item.gd" id="3_j3gkw"]
 
 [resource]
 script = ExtResource("3_j3gkw")
-qualitoon = 2
-qualitoon_rarity = 5
+qualitoon = 1
+rarity = 5
 evergreen = false
 realtime = false
 slot = 0

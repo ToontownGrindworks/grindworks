@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="FingerWag" load_steps=2 format=3 uid="uid://bswa5jw5ll30f"]
 
-[ext_resource type="Script" path="res://objects/battle/battle_resources/cog_attacks/finger_wag.gd" id="1_ns1hc"]
+[ext_resource type="Script" uid="uid://xaes6j4t2nyu" path="res://objects/battle/battle_resources/cog_attacks/finger_wag.gd" id="1_ns1hc"]
 
 [resource]
 script = ExtResource("1_ns1hc")

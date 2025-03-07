@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://b02pbmv2b5i1n"]
 
 [ext_resource type="PackedScene" uid="uid://bqvkntyk0ljsq" path="res://objects/goon/goon.tscn" id="1_xa61e"]
-[ext_resource type="Script" path="res://objects/goon/flying_goon.gd" id="2_1nss4"]
+[ext_resource type="Script" uid="uid://s05jtjp06px4" path="res://objects/goon/flying_goon.gd" id="2_1nss4"]
 [ext_resource type="PackedScene" uid="uid://dkt5x3vk2hd24" path="res://objects/props/etc/propeller.tscn" id="2_yx4wp"]
 
 [node name="FlyingGoon" instance=ExtResource("1_xa61e")]

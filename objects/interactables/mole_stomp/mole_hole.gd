@@ -69,7 +69,7 @@ func try_stomp() -> void:
 			make_hit_tween()
 			s_stomped.emit()
 			%CogGears.emitting = true
-			await TaskMgr.delay(0.35)
+			await Task.delay(0.35)
 			%CogGears.emitting = false
 		Mole.NORMAL:
 			AudioManager.play_sound(SFX_SURPRISE)
@@ -197,7 +197,7 @@ func launch_player() -> void:
 	player.position = newpos
 	player.set_animation('slip_backward')
 	AudioManager.play_sound(SFX_LAND)
-	await TaskMgr.delay(2.75)
+	await Task.delay(2.75)
 	player.toon.body_node.rotation_degrees = Vector3.ZERO
 	player.state = Player.PlayerState.WALK
 	if Util.get_player().stats.hp <= 0:
@@ -208,7 +208,7 @@ func slip_player() -> void:
 	s_launched.emit()
 	player.state = Player.PlayerState.STOPPED
 	player.set_animation('slip_backward')
-	await TaskMgr.delay(2.75)
+	await Task.delay(2.75)
 	player.state = Player.PlayerState.WALK
 	if Util.get_player().stats.hp <= 0:
 		Util.get_player().lose()

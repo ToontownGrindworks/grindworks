@@ -1,13 +1,13 @@
 [gd_resource type="Resource" script_class="CogDNA" load_steps=10 format=3 uid="uid://dy5pfjs8ivlt3"]
 
-[ext_resource type="Script" path="res://objects/battle/battle_resources/cog_attacks/cog_attack.gd" id="1_dwl5n"]
+[ext_resource type="Script" uid="uid://bb27him60xtnk" path="res://objects/battle/battle_resources/cog_attacks/cog_attack.gd" id="1_dwl5n"]
 [ext_resource type="Texture2D" uid="uid://c3nvfyus0sjvs" path="res://models/cogs/textures/slender/sleeve.png" id="2_v8rfy"]
 [ext_resource type="Texture2D" uid="uid://b2niomlt7hl2b" path="res://models/cogs/textures/slender/blazer.png" id="3_smhmb"]
 [ext_resource type="Texture2D" uid="uid://b0njt70w0o750" path="res://models/cogs/textures/slender/leg.png" id="4_8mecp"]
 [ext_resource type="PackedScene" uid="uid://i3q2b1jvfc74" path="res://models/cogs/heads/yesman.glb" id="5_ysp4v"]
 [ext_resource type="Texture2D" uid="uid://in7gk76fauii" path="res://models/cogs/heads/no_more_face_man.png" id="6_dnuno"]
-[ext_resource type="Script" path="res://objects/cog/cogdna.gd" id="7_7s1xb"]
-[ext_resource type="Script" path="res://objects/battle/battle_resources/status_effect.gd" id="8_blpyc"]
+[ext_resource type="Script" uid="uid://okjbx502s3r5" path="res://objects/cog/cogdna.gd" id="7_7s1xb"]
+[ext_resource type="Script" uid="uid://df7irk63ikx4k" path="res://objects/battle/battle_resources/status_effect.gd" id="8_blpyc"]
 
 [sub_resource type="Resource" id="Resource_1evcu"]
 script = ExtResource("1_dwl5n")
@@ -47,6 +47,6 @@ is_admin = false
 health_mod = 1.3
 battle_phrases = Array[String](["You need some positive enforcement.", "I haven't been wrong yet.", "Want to meet? I say yes, anytime.", "I won't take no for an answer", "I'll be sure to end this on a positive note.", "I'm positive you're not going to like this.", "\"I'm confirming our meeting time.", "I don't know the meaning of no."])
 external_assets = {
-"head_model": "",
-"head_textures": []
+&"head_model": "",
+&"head_textures": []
 }

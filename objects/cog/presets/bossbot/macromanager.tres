@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="CogDNA" load_steps=13 format=3 uid="uid://t7sj4r60qyv6"]
 
-[ext_resource type="Script" path="res://objects/battle/battle_resources/cog_attacks/cog_attack.gd" id="1_hprm8"]
+[ext_resource type="Script" uid="uid://bb27him60xtnk" path="res://objects/battle/battle_resources/cog_attacks/cog_attack.gd" id="1_hprm8"]
 [ext_resource type="Resource" uid="uid://dxpqtt8gh5brv" path="res://objects/battle/battle_resources/cog_attacks/resources/finger_wag.tres" id="2_ue7d3"]
 [ext_resource type="Resource" uid="uid://6hjcsu17tt4g" path="res://objects/battle/battle_resources/cog_attacks/resources/brain_storm.tres" id="3_qluk7"]
 [ext_resource type="Resource" uid="uid://bhl72hd7pn8s2" path="res://objects/battle/battle_resources/cog_attacks/resources/workout.tres" id="4_rac6w"]
@@ -9,8 +9,8 @@
 [ext_resource type="Texture2D" uid="uid://idf1e68fml3o" path="res://models/cogs/textures/misc/blazer_1.png" id="6_f3f8f"]
 [ext_resource type="Texture2D" uid="uid://g2arre8hbe1f" path="res://models/cogs/heads/micromanager_tt_t_ene_hed_micromanager.png" id="6_ve288"]
 [ext_resource type="Texture2D" uid="uid://o3hrfvdxeisb" path="res://models/cogs/textures/misc/leg_4.png" id="7_2e3xi"]
-[ext_resource type="Script" path="res://objects/cog/cogdna.gd" id="7_le21w"]
-[ext_resource type="Script" path="res://objects/battle/battle_resources/status_effect.gd" id="8_y3efp"]
+[ext_resource type="Script" uid="uid://okjbx502s3r5" path="res://objects/cog/cogdna.gd" id="7_le21w"]
+[ext_resource type="Script" uid="uid://df7irk63ikx4k" path="res://objects/battle/battle_resources/status_effect.gd" id="8_y3efp"]
 [ext_resource type="Resource" uid="uid://b4vuuxwhv0d3v" path="res://objects/battle/battle_resources/status_effects/resources/status_effect_mod_cog.tres" id="9_mu5fl"]
 
 [resource]
@@ -40,6 +40,6 @@ is_admin = false
 health_mod = 1.0
 battle_phrases = Array[String](["Big things are coming.", "No job is too big for me.", "I'm the big boss now.", "I used to be small, but now I'm standing tall."])
 external_assets = {
-"head_model": "",
-"head_textures": []
+&"head_model": "",
+&"head_textures": []
 }

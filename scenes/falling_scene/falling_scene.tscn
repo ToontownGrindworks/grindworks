@@ -1,8 +1,8 @@
 [gd_scene load_steps=41 format=3 uid="uid://bj77r2tf6iaig"]
 
-[ext_resource type="Script" path="res://scenes/falling_scene/falling_scene.gd" id="1_17q1f"]
+[ext_resource type="Script" uid="uid://dtmyltil1p10m" path="res://scenes/falling_scene/falling_scene.gd" id="1_17q1f"]
 [ext_resource type="PackedScene" uid="uid://cy4iox7mj5ei0" path="res://objects/toon/toon.tscn" id="1_o31sf"]
-[ext_resource type="Script" path="res://objects/toon/toon_dna.gd" id="2_uw8r3"]
+[ext_resource type="Script" uid="uid://yg7gxug4rab" path="res://objects/toon/toon_dna.gd" id="2_uw8r3"]
 [ext_resource type="PackedScene" uid="uid://clb5aeit6u56k" path="res://models/props/gags/aoogah/aoogah.tscn" id="3_t6k10"]
 [ext_resource type="PackedScene" uid="uid://dha1jvcr7co3d" path="res://models/props/gags/banana_peel/banana_peel.tscn" id="4_n5y81"]
 [ext_resource type="PackedScene" uid="uid://sqd5qfy78aql" path="res://models/props/gags/bday_cake/bday_cake.glb" id="5_qp603"]

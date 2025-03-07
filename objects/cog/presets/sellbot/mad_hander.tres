@@ -1,13 +1,13 @@
 [gd_resource type="Resource" script_class="CogDNA" load_steps=10 format=3 uid="uid://ctfcm05cbc4n1"]
 
-[ext_resource type="Script" path="res://objects/battle/battle_resources/cog_attacks/cog_attack.gd" id="1_x602y"]
+[ext_resource type="Script" uid="uid://bb27him60xtnk" path="res://objects/battle/battle_resources/cog_attacks/cog_attack.gd" id="1_x602y"]
 [ext_resource type="Resource" uid="uid://doowiij7lpxy1" path="res://objects/battle/battle_resources/cog_attacks/resources/rubber_stamp.tres" id="2_14dyf"]
 [ext_resource type="PackedScene" uid="uid://cknjjx1p36adh" path="res://models/cogs/heads/madhander.glb" id="3_iwx3s"]
 [ext_resource type="Texture2D" uid="uid://2fj5qbvh3qa1" path="res://models/cogs/textures/misc/sleeve_2.png" id="3_qvppc"]
 [ext_resource type="Texture2D" uid="uid://idf1e68fml3o" path="res://models/cogs/textures/misc/blazer_1.png" id="4_1fxtv"]
-[ext_resource type="Script" path="res://objects/battle/battle_resources/status_effect.gd" id="5_23vmy"]
+[ext_resource type="Script" uid="uid://df7irk63ikx4k" path="res://objects/battle/battle_resources/status_effect.gd" id="5_23vmy"]
 [ext_resource type="Texture2D" uid="uid://o3hrfvdxeisb" path="res://models/cogs/textures/misc/leg_4.png" id="5_c4fvv"]
-[ext_resource type="Script" path="res://objects/cog/cogdna.gd" id="5_yjb5q"]
+[ext_resource type="Script" uid="uid://okjbx502s3r5" path="res://objects/cog/cogdna.gd" id="5_yjb5q"]
 [ext_resource type="Resource" uid="uid://b4vuuxwhv0d3v" path="res://objects/battle/battle_resources/status_effects/resources/status_effect_mod_cog.tres" id="6_ppebk"]
 
 [resource]
@@ -37,6 +37,6 @@ is_admin = false
 health_mod = 1.0
 battle_phrases = Array[String](["I won't ask nicely.", "You'll find I have a short fuse.", "Toons only serve to make me angrier.", "Backhanded compliments are my specialty.", "Time to hand out some harsh words."])
 external_assets = {
-"head_model": "",
-"head_textures": []
+&"head_model": "",
+&"head_textures": []
 }

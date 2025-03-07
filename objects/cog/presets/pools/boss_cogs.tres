@@ -1,7 +1,7 @@
 [gd_resource type="Resource" script_class="CogPool" load_steps=14 format=3 uid="uid://dygkbemtyushf"]
 
-[ext_resource type="Script" path="res://objects/cog/cogdna.gd" id="1_wrfv2"]
-[ext_resource type="Script" path="res://objects/cog/cog_pool.gd" id="2_nkewf"]
+[ext_resource type="Script" uid="uid://okjbx502s3r5" path="res://objects/cog/cogdna.gd" id="1_wrfv2"]
+[ext_resource type="Script" uid="uid://ocitcstc3bru" path="res://objects/cog/cog_pool.gd" id="2_nkewf"]
 [ext_resource type="Resource" uid="uid://y03gsvpck4x5" path="res://objects/cog/presets/cashbot/ground_floor_investor.tres" id="4_k6h68"]
 [ext_resource type="Resource" uid="uid://d0jhddwl6gem1" path="res://objects/cog/presets/misc/clown2.tres" id="6_dk2r6"]
 [ext_resource type="Resource" uid="uid://baep1t1jv5ebj" path="res://objects/cog/presets/misc/clown.tres" id="7_0uabd"]

@@ -1,17 +1,17 @@
 [gd_resource type="Resource" script_class="Track" load_steps=25 format=3 uid="uid://ct1l0ln1js2xw"]
 
-[ext_resource type="Script" path="res://objects/battle/battle_resources/toon_attacks/toon_attack.gd" id="1_4e6pq"]
+[ext_resource type="Script" uid="uid://cwnjrxjvy5kc3" path="res://objects/battle/battle_resources/toon_attacks/toon_attack.gd" id="1_4e6pq"]
 [ext_resource type="Texture2D" uid="uid://d287ggcuhiolk" path="res://ui_assets/battle/gags/inventory_feather.png" id="2_mk5mw"]
-[ext_resource type="Script" path="res://objects/battle/battle_resources/toon_attacks/toonup.gd" id="3_3nxeb"]
+[ext_resource type="Script" uid="uid://dk4ey3b6nuk2y" path="res://objects/battle/battle_resources/toon_attacks/toonup.gd" id="3_3nxeb"]
 [ext_resource type="Texture2D" uid="uid://cwpi1cl23exds" path="res://ui_assets/battle/gags/inventory_bamboo_cane.png" id="5_b6fii"]
-[ext_resource type="Script" path="res://objects/battle/battle_resources/status_effects/stat_boost.gd" id="6_5nyuh"]
+[ext_resource type="Script" uid="uid://csl6saufv84ri" path="res://objects/battle/battle_resources/status_effects/stat_boost.gd" id="6_5nyuh"]
 [ext_resource type="Texture2D" uid="uid://gfcmfv3uoov7" path="res://ui_assets/battle/gags/inventory_lipstick.png" id="7_480hh"]
 [ext_resource type="Texture2D" uid="uid://bsmmrav5fwlhx" path="res://ui_assets/battle/gags/inventory_juggling_cubes.png" id="8_3w7na"]
 [ext_resource type="Texture2D" uid="uid://cirwmv4jg6xt4" path="res://ui_assets/battle/gags/inventory_pixiedust.png" id="9_e8hrd"]
-[ext_resource type="Script" path="res://objects/battle/battle_resources/status_effects/status_effect_regeneration.gd" id="9_o3o8k"]
+[ext_resource type="Script" uid="uid://dhmdr2mhqoo50" path="res://objects/battle/battle_resources/status_effects/status_effect_regeneration.gd" id="9_o3o8k"]
 [ext_resource type="Texture2D" uid="uid://dbec0grbtboqd" path="res://ui_assets/battle/gags/inventory_megaphone.png" id="10_mgua5"]
 [ext_resource type="Texture2D" uid="uid://datjlhrdr4i4p" path="res://ui_assets/battle/gags/inventory_ladder.png" id="11_32ks8"]
-[ext_resource type="Script" path="res://objects/battle/battle_resources/gag_loadouts/track.gd" id="11_vgh4o"]
+[ext_resource type="Script" uid="uid://b6b6pfoqyolr" path="res://objects/battle/battle_resources/gag_loadouts/track.gd" id="11_vgh4o"]
 
 [sub_resource type="Resource" id="Resource_ykd0g"]
 script = ExtResource("6_5nyuh")
@@ -27,7 +27,6 @@ visible = true
 description = "This is a Status Effect"
 status_name = "Status Effect"
 id = 0
-_generate_id = false
 
 [sub_resource type="Resource" id="Resource_654rw"]
 script = ExtResource("3_3nxeb")
@@ -55,7 +54,6 @@ visible = true
 description = "This is a Status Effect"
 status_name = "Status Effect"
 id = 0
-_generate_id = false
 
 [sub_resource type="Resource" id="Resource_f160u"]
 script = ExtResource("3_3nxeb")
@@ -94,7 +92,6 @@ visible = true
 description = "This is a Status Effect"
 status_name = "Status Effect"
 id = 0
-_generate_id = false
 
 [sub_resource type="Resource" id="Resource_n8qmn"]
 script = ExtResource("3_3nxeb")
@@ -122,7 +119,6 @@ visible = true
 description = "20% Laff Regeneration"
 status_name = "Status Effect"
 id = 0
-_generate_id = false
 
 [sub_resource type="Resource" id="Resource_l5wod"]
 script = ExtResource("3_3nxeb")
@@ -150,7 +146,6 @@ visible = true
 description = "This is a Status Effect"
 status_name = "Status Effect"
 id = 0
-_generate_id = false
 
 [sub_resource type="Resource" id="Resource_bci3h"]
 script = ExtResource("3_3nxeb")

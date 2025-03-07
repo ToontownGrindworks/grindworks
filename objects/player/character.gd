@@ -60,7 +60,7 @@ func randomtoon(player: Player) -> void:
 	var item_pool: ItemPool = load('res://objects/items/pools/accessories.tres')
 	var slots_taken := []
 	while slots_taken.size() < 2:
-		var item: Item = item_pool.items[RandomService.randi_channel('true_random') % item_pool.items.size()]
+		var item: Item = ItemService.get_random_item(item_pool, true)
 		if not item in starting_items and not item.slot in slots_taken:
 			starting_items.append(item)
 			slots_taken.append(item.slot)

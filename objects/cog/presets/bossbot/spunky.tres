@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="CogDNA" load_steps=12 format=3 uid="uid://cl12y4k5plcs0"]
 
-[ext_resource type="Script" path="res://objects/battle/battle_resources/cog_attacks/cog_attack.gd" id="1_j2m33"]
+[ext_resource type="Script" uid="uid://bb27him60xtnk" path="res://objects/battle/battle_resources/cog_attacks/cog_attack.gd" id="1_j2m33"]
 [ext_resource type="Resource" uid="uid://dimhdaxn1tyey" path="res://objects/battle/battle_resources/cog_attacks/resources/tee_off.tres" id="2_pbwfv"]
 [ext_resource type="Resource" uid="uid://c27ek2anjbx88" path="res://objects/battle/battle_resources/cog_attacks/resources/pound_key.tres" id="2_y6htd"]
 [ext_resource type="Texture2D" uid="uid://2fj5qbvh3qa1" path="res://models/cogs/textures/misc/sleeve_2.png" id="4_761eu"]
@@ -8,8 +8,8 @@
 [ext_resource type="Texture2D" uid="uid://o3hrfvdxeisb" path="res://models/cogs/textures/misc/leg_4.png" id="6_jqj4w"]
 [ext_resource type="PackedScene" uid="uid://dyur4g6dt1hio" path="res://models/cogs/heads/Spunky.glb" id="7_xwdgh"]
 [ext_resource type="Texture2D" uid="uid://c4rtcb5vx4ej4" path="res://models/cogs/heads/Spunky_Spunky.png" id="8_dh2si"]
-[ext_resource type="Script" path="res://objects/cog/cogdna.gd" id="9_5dpq5"]
-[ext_resource type="Script" path="res://objects/battle/battle_resources/status_effect.gd" id="10_v1je0"]
+[ext_resource type="Script" uid="uid://okjbx502s3r5" path="res://objects/cog/cogdna.gd" id="9_5dpq5"]
+[ext_resource type="Script" uid="uid://df7irk63ikx4k" path="res://objects/battle/battle_resources/status_effect.gd" id="10_v1je0"]
 [ext_resource type="Resource" uid="uid://b4vuuxwhv0d3v" path="res://objects/battle/battle_resources/status_effects/resources/status_effect_mod_cog.tres" id="11_g2kab"]
 
 [resource]
@@ -39,6 +39,6 @@ is_admin = false
 health_mod = 1.0
 battle_phrases = Array[String](["I've climbed the corporate ladder.", "I'm no Flunky - and I'm real spunky.", "Time to send you tumbling down the corporate ladder.", "Looks like another promotion is in my future.", "The boss won't need to bother with you.", "I assure you, my job performance is second to none."])
 external_assets = {
-"head_model": "",
-"head_textures": []
+&"head_model": "",
+&"head_textures": []
 }

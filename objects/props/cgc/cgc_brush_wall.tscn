@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://rmq8qnyxi0yu"]
 
-[ext_resource type="Script" path="res://objects/props/cgc/cgc_brush_wall.gd" id="1_45y1n"]
-[ext_resource type="Texture2D" uid="uid://bbsa2cbkvax14" path="res://models/facilities/cgc/textures/CogHedgeFar2.png" id="2_25h7j"]
+[ext_resource type="Script" uid="uid://jjx642b4ea2t" path="res://objects/props/cgc/cgc_brush_wall.gd" id="1_45y1n"]
+[ext_resource type="Texture2D" uid="uid://dn3ce1gbwb6ie" path="res://models/facilities/cgc/textures/CogHedgeFar2.png" id="2_25h7j"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_s4hr7"]
 resource_name = "fartrees_lambert156"

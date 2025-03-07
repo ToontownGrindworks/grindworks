@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="CogDNA" load_steps=12 format=3 uid="uid://db873b4wfde6n"]
 
-[ext_resource type="Script" path="res://objects/battle/battle_resources/cog_attacks/cog_attack.gd" id="1_ufu1x"]
+[ext_resource type="Script" uid="uid://bb27him60xtnk" path="res://objects/battle/battle_resources/cog_attacks/cog_attack.gd" id="1_ufu1x"]
 [ext_resource type="Resource" uid="uid://dxpqtt8gh5brv" path="res://objects/battle/battle_resources/cog_attacks/resources/finger_wag.tres" id="2_11voo"]
 [ext_resource type="Resource" uid="uid://bpupdhbap1rq" path="res://objects/battle/battle_resources/cog_attacks/resources/freeze_assets.tres" id="3_7nyi2"]
 [ext_resource type="Texture2D" uid="uid://2fj5qbvh3qa1" path="res://models/cogs/textures/misc/sleeve_2.png" id="4_557su"]
@@ -8,8 +8,8 @@
 [ext_resource type="PackedScene" uid="uid://btxp8ptniqnjl" path="res://models/cogs/heads/penny_pincher.glb" id="5_qts51"]
 [ext_resource type="Texture2D" uid="uid://y1jibpbb886m" path="res://models/cogs/heads/tt_t_ene_hed_pennyPincher_desat.png" id="6_3gty1"]
 [ext_resource type="Texture2D" uid="uid://o3hrfvdxeisb" path="res://models/cogs/textures/misc/leg_4.png" id="6_gg1xd"]
-[ext_resource type="Script" path="res://objects/cog/cogdna.gd" id="6_x3akv"]
-[ext_resource type="Script" path="res://objects/battle/battle_resources/status_effect.gd" id="7_pqws0"]
+[ext_resource type="Script" uid="uid://okjbx502s3r5" path="res://objects/cog/cogdna.gd" id="6_x3akv"]
+[ext_resource type="Script" uid="uid://df7irk63ikx4k" path="res://objects/battle/battle_resources/status_effect.gd" id="7_pqws0"]
 [ext_resource type="Resource" uid="uid://b4vuuxwhv0d3v" path="res://objects/battle/battle_resources/status_effects/resources/status_effect_mod_cog.tres" id="8_kfcca"]
 
 [resource]
@@ -39,6 +39,6 @@ is_admin = false
 health_mod = 1.0
 battle_phrases = Array[String](["I'm gonna nickel and dime you.", "There is no silver lining.", "Another day, another nickel.", "Five seconds is all I'll need for you.", "You'd better start making cents, Toon.", "Careful, I'm told I have sticky fingers."])
 external_assets = {
-"head_model": "",
-"head_textures": []
+&"head_model": "",
+&"head_textures": []
 }

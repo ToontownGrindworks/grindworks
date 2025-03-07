@@ -4,10 +4,10 @@
 [ext_resource type="Texture2D" uid="uid://dmelmjyqb5mqh" path="res://models/facilities/office/textures/LB_Carpet.png" id="5_nl5fk"]
 [ext_resource type="PackedScene" uid="uid://dbrst2twjd0pu" path="res://objects/interactables/button/button.tscn" id="7_q5d2e"]
 [ext_resource type="PackedScene" uid="uid://bqo1n7rw85igy" path="res://objects/interactables/elevators/elevator_law.tscn" id="8_onmkf"]
-[ext_resource type="Script" path="res://objects/interactables/lawbot_puzzles/puzzle_run.gd" id="9_nymlb"]
+[ext_resource type="Script" uid="uid://c873n3duiy2t4" path="res://objects/interactables/lawbot_puzzles/puzzle_run.gd" id="9_nymlb"]
 [ext_resource type="PackedScene" uid="uid://dxyq5lb5oineo" path="res://objects/interactables/treasure_chest/treasure_chest.tscn" id="10_ce2fe"]
-[ext_resource type="Script" path="res://objects/interactables/lawbot_puzzles/puzzle_skull_finder.gd" id="11_6xe4u"]
-[ext_resource type="Script" path="res://objects/interactables/lawbot_puzzles/puzzle_avoid_skulls.gd" id="11_eqt47"]
+[ext_resource type="Script" uid="uid://bv8cu0qj4m224" path="res://objects/interactables/lawbot_puzzles/puzzle_skull_finder.gd" id="11_6xe4u"]
+[ext_resource type="Script" uid="uid://di0qmrsiibwv8" path="res://objects/interactables/lawbot_puzzles/puzzle_avoid_skulls.gd" id="11_eqt47"]
 [ext_resource type="PackedScene" uid="uid://btajacdw0exth" path="res://objects/props/office/partition.tscn" id="12_s38sp"]
 [ext_resource type="PackedScene" uid="uid://cng3jffjmwdv8" path="res://objects/props/office/couch.tscn" id="15_qr1bn"]
 [ext_resource type="PackedScene" uid="uid://d0bnakgqatchq" path="res://objects/props/office/lamp_big.tscn" id="16_0lofk"]
@@ -117,7 +117,7 @@ beam_height = 5.0
 [node name="Partitions" type="Node3D" parent="." index="11"]
 
 [node name="LeftSide" type="Node3D" parent="Partitions" index="0"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.9525, 0, 9.27181)
+transform = Transform3D(1, 0, 0, 0, 1.25, 0, 0, 0, 1, 4.9525, 0, 9.27181)
 
 [node name="partition" parent="Partitions/LeftSide" index="0" instance=ExtResource("12_s38sp")]
 
@@ -143,7 +143,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.1621, 0, 0)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.47957, 0, 0)
 
 [node name="RightSide" type="Node3D" parent="Partitions" index="1"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.62276, 0, -7.89796)
+transform = Transform3D(1, 0, 0, 0, 1.25, 0, 0, 0, 1, 3.62276, 0, -7.89796)
 
 [node name="partition" parent="Partitions/RightSide" index="0" instance=ExtResource("12_s38sp")]
 

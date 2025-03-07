@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=3 uid="uid://dpeyx1twbx7yb"]
 
 [ext_resource type="PackedScene" uid="uid://desjar6lq1nmn" path="res://models/props/gags/geyser/geyser.fbx" id="1_bfqua"]
-[ext_resource type="Script" path="res://models/props/gags/geyser/geyser_prop.gd" id="2_mae3k"]
+[ext_resource type="Script" uid="uid://cxooeuinpuyxr" path="res://models/props/gags/geyser/geyser_prop.gd" id="2_mae3k"]
 
 [sub_resource type="Animation" id="Animation_ngvd3"]
 length = 0.001
@@ -61,8 +61,8 @@ tracks/1/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_4w6g1"]
 _data = {
-"RESET": SubResource("Animation_ngvd3"),
-"squirt": SubResource("Animation_ogrhl")
+&"RESET": SubResource("Animation_ngvd3"),
+&"squirt": SubResource("Animation_ogrhl")
 }
 
 [node name="geyser" node_paths=PackedStringArray("splashes") instance=ExtResource("1_bfqua")]

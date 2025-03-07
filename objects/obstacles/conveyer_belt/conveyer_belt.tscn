@@ -1,15 +1,15 @@
 [gd_scene load_steps=6 format=3 uid="uid://p33fqws4qewy"]
 
 [ext_resource type="PackedScene" uid="uid://d0o37sg2xvqe6" path="res://models/props/facility_objects/conveyor_platform/platform.glb" id="1_0hyvl"]
-[ext_resource type="Script" path="res://objects/obstacles/conveyer_belt/conveyer_belt.gd" id="1_cey7s"]
+[ext_resource type="Script" uid="uid://b12sj13k0ngpy" path="res://objects/obstacles/conveyer_belt/conveyer_belt.gd" id="1_cey7s"]
 [ext_resource type="Texture2D" uid="uid://bj0ye0oxq1fea" path="res://models/props/facility_objects/conveyor_platform/platform_CVBelt1.png" id="2_5yx4i"]
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_h13do"]
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_8qram"]
 resource_name = "ConveyerBeltV3SHD"
 cull_mode = 2
 albedo_texture = ExtResource("2_5yx4i")
 roughness = 0.552786
-uv1_offset = Vector3(0, -0.733335, 0)
+uv1_offset = Vector3(0, -0.683334, 0)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_dyhen"]
 resource_local_to_scene = true
@@ -18,13 +18,13 @@ size = Vector3(3.05, 0.15, 3.05)
 [node name="ConveyerBelt" type="StaticBody3D"]
 constant_linear_velocity = Vector3(0, 0, 1)
 script = ExtResource("1_cey7s")
-platform_mat = SubResource("StandardMaterial3D_h13do")
+platform_mat = SubResource("StandardMaterial3D_8qram")
 
 [node name="platform2" parent="." instance=ExtResource("1_0hyvl")]
 
 [node name="platform" parent="platform2" index="0"]
-surface_material_override/1 = SubResource("StandardMaterial3D_h13do")
-surface_material_override/2 = SubResource("StandardMaterial3D_h13do")
+surface_material_override/1 = SubResource("StandardMaterial3D_8qram")
+surface_material_override/2 = SubResource("StandardMaterial3D_8qram")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.075973, 0)

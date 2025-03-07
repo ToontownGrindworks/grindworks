@@ -48,7 +48,7 @@ func button_pressed(button: CogButton) -> void:
 				continue
 			else:
 				button_.retract()
-		await TaskMgr.delay(1.0)
+		await Task.delay(1.0)
 		button.retract()
 
 func win() -> void:

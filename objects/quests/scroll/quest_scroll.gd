@@ -9,6 +9,7 @@ const DICE_ROLLOVER_SUFFIX := "_ro"
 const DICE_BUTTON_TYPE := ".png"
 
 @onready var icon: TextureRect = %QuestIcon
+@onready var icon_viewer: TextureRect = %QuestIconViewer
 @onready var title: Label = %TitleLabel
 @onready var quest_label: Label = %QuotaLabel
 @onready var location: Label = %LocationLabel
@@ -50,8 +51,14 @@ func update_quest() -> void:
 		progress_bar.hide()
 		title.set_text("COMPLETE")
 		collect_button.show()
-	
-	icon.texture = await quest.get_icon()
+
+	icon.texture = null
+	icon_viewer.node = null
+
+	if quest.uses_3d_model():
+		icon_viewer.node = quest.get_3d_model()
+	else:
+		icon.texture = await quest.get_icon()
 
 func set_item(item: Item) -> void:
 	var item_model = item.model.instantiate()

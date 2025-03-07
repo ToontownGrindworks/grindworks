@@ -1,11 +1,12 @@
 [gd_resource type="Resource" script_class="CogAttackSinkHole" load_steps=2 format=3 uid="uid://b6smgrhefhpdk"]
 
-[ext_resource type="Script" path="res://objects/battle/battle_resources/cog_attacks/sink_hole.gd" id="1_b8y5x"]
+[ext_resource type="Script" uid="uid://mvuo3yfxfmlb" path="res://objects/battle/battle_resources/cog_attacks/sink_hole.gd" id="1_b8y5x"]
 
 [resource]
 script = ExtResource("1_b8y5x")
 accuracy = 75
 damage = 2
+ignore_stats = false
 summary = "Get ready!"
 attack_lines = Array[String](["This will cost you greatly.", "Good luck clawing your way out.", "You're well below par."])
 target_type = 0

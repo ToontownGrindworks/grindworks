@@ -15,7 +15,7 @@
 [ext_resource type="Texture2D" uid="uid://xtwvenijoyef" path="res://models/facilities/factory/FINALFACTORY_36.png" id="13_jq4hh"]
 [ext_resource type="Texture2D" uid="uid://hxg8wbeq6uin" path="res://models/facilities/factory/FINALFACTORY_37.png" id="14_l4k3s"]
 [ext_resource type="Texture2D" uid="uid://bg588ay7if4d2" path="res://models/facilities/factory/FINALFACTORY_38.png" id="15_kalpy"]
-[ext_resource type="Script" path="res://objects/modules/factory/base_rooms/gear_spin.gd" id="15_qm1ww"]
+[ext_resource type="Script" uid="uid://dqpyvwnain3c5" path="res://objects/modules/factory/base_rooms/gear_spin.gd" id="15_qm1ww"]
 [ext_resource type="Texture2D" uid="uid://dqu8lyq18oohc" path="res://models/facilities/factory/FINALFACTORY_39.png" id="16_4k0jg"]
 [ext_resource type="Texture2D" uid="uid://c3npt2tir0a3b" path="res://models/facilities/factory/FINALFACTORY_40.png" id="17_81vfu"]
 [ext_resource type="Texture2D" uid="uid://bxd3oqn380koa" path="res://models/facilities/factory/FINALFACTORY_20.png" id="18_lgtvy"]

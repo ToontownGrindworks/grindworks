@@ -1,7 +1,7 @@
 [gd_resource type="Resource" script_class="ThrowPaper" load_steps=3 format=3 uid="uid://berwbvcnp521g"]
 
 [ext_resource type="PackedScene" uid="uid://cxj4gdkxgwknm" path="res://models/props/cog_props/pink_slip/pink_slip.glb" id="1_nhdfy"]
-[ext_resource type="Script" path="res://objects/battle/battle_resources/cog_attacks/throw_paper.gd" id="1_ob8ys"]
+[ext_resource type="Script" uid="uid://itkxki65d0v7" path="res://objects/battle/battle_resources/cog_attacks/throw_paper.gd" id="1_ob8ys"]
 
 [resource]
 script = ExtResource("1_ob8ys")
@@ -10,6 +10,7 @@ wait_time = 3.2
 custom_method = "pink_slip"
 accuracy = 75
 damage = 3
+ignore_stats = false
 summary = ""
 attack_lines = Array[String](["Try not to slip up.", "Are you frightened? You've turned pink!", "This one will surely slip you up.", "Oops, I guess you slipped there, huh?", "Watch yourself, wouldn't want to slip!", "This one's slippery when wet.", "I'll just slip this one in.", "Don't mind if you slip by, do you?", "Pink isn't really your color.", "Here's your pink slip, you're outta here!"])
 target_type = 0

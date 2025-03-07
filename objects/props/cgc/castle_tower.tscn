@@ -1,7 +1,7 @@
 [gd_scene load_steps=16 format=4 uid="uid://dbjjb2sjjolvo"]
 
 [ext_resource type="Texture2D" uid="uid://csmkpukc6maca" path="res://models/facilities/cgc/textures/StoneWall1e.png" id="1_5v7lf"]
-[ext_resource type="Texture2D" uid="uid://7c70kvdyj32i" path="res://models/facilities/cgc/textures/smoothwall_4.png" id="2_5m0k6"]
+[ext_resource type="Texture2D" uid="uid://dshqhxjrtkw3w" path="res://models/facilities/cgc/textures/smoothwall_4.png" id="2_5m0k6"]
 [ext_resource type="Texture2D" uid="uid://dbpos4t8tc4i0" path="res://models/facilities/cgc/textures/WallBricksBig2.png" id="3_m5772"]
 [ext_resource type="Texture2D" uid="uid://cmesa8kdn5qgs" path="res://models/facilities/cgc/textures/Shingles.png" id="4_eepqo"]
 

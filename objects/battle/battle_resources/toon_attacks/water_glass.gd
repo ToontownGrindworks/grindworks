@@ -48,7 +48,7 @@ func action():
 			else:
 				target.set_animation('squirt-small')
 			apply_debuff(target)
-			await TaskMgr.delay(0.5 * (2 if was_lured else 1))
+			await Task.delay(0.5 * (2 if was_lured else 1))
 			manager.battle_text(target, "Drenched!", BattleText.colors.orange[0], BattleText.colors.orange[1])
 		else:
 			manager.battle_text(target, "IMMUNE")

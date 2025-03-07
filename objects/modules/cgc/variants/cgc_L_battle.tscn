@@ -8,7 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://d3br8qv0sep7h" path="res://objects/props/cgc/tree1.tscn" id="3_fxgjf"]
 [ext_resource type="PackedScene" uid="uid://bwu5l3d7uncro" path="res://objects/props/cgc/hedge_pillar_spiked.tscn" id="4_tim1r"]
 [ext_resource type="PackedScene" uid="uid://ksciix5yj6x1" path="res://objects/props/cgc/cgc_flat_tree_b.tscn" id="4_xcae4"]
-[ext_resource type="Script" path="res://objects/modules/cgc/variants/cgc_fence_gate.gd" id="5_6w4g4"]
+[ext_resource type="Script" uid="uid://h0b48xrci8d6" path="res://objects/modules/cgc/variants/cgc_fence_gate.gd" id="5_6w4g4"]
 [ext_resource type="PackedScene" uid="uid://5m1a0suouie8" path="res://objects/props/cgc/fence_with_end.tscn" id="5_jdas8"]
 [ext_resource type="PackedScene" uid="uid://b3p8q3fhmuo35" path="res://objects/props/cgc/resizeable_hedge_cube.tscn" id="11_6hihm"]
 [ext_resource type="PackedScene" uid="uid://pn7r3ut085aw" path="res://objects/props/cgc/hedge_pillar.tscn" id="13_wngv4"]

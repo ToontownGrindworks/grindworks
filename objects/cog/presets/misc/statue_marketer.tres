@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="CogDNA" load_steps=12 format=3 uid="uid://nviywnurxiiy"]
 
-[ext_resource type="Script" path="res://objects/battle/battle_resources/cog_attacks/cog_attack.gd" id="1_sag4d"]
+[ext_resource type="Script" uid="uid://bb27him60xtnk" path="res://objects/battle/battle_resources/cog_attacks/cog_attack.gd" id="1_sag4d"]
 [ext_resource type="Texture2D" uid="uid://ctbip2k8dsipl" path="res://models/cogs/textures/statue_gray/statue_arm.png" id="2_v32hw"]
 [ext_resource type="Texture2D" uid="uid://ch8fhemep6og1" path="res://models/cogs/textures/statue_gray/statue_blazer.png" id="3_2xby3"]
 [ext_resource type="Texture2D" uid="uid://cst63oun01i6y" path="res://models/cogs/textures/statue_gray/statue_hand.png" id="4_ihlrn"]
@@ -9,8 +9,8 @@
 [ext_resource type="PackedScene" uid="uid://cwg7ajjhom2dw" path="res://models/cogs/heads/telemarketer.glb" id="7_0n2q4"]
 [ext_resource type="Texture2D" uid="uid://ytxx2xotlj1p" path="res://models/cogs/textures/statue_gray/statue_shoe.png" id="7_kx8os"]
 [ext_resource type="Texture2D" uid="uid://cib3c57krgwx" path="res://models/cogs/heads/telemarketer_statue.png" id="8_syk52"]
-[ext_resource type="Script" path="res://objects/cog/cogdna.gd" id="9_x3l55"]
-[ext_resource type="Script" path="res://objects/battle/battle_resources/status_effect.gd" id="10_yay3c"]
+[ext_resource type="Script" uid="uid://okjbx502s3r5" path="res://objects/cog/cogdna.gd" id="9_x3l55"]
+[ext_resource type="Script" uid="uid://df7irk63ikx4k" path="res://objects/battle/battle_resources/status_effect.gd" id="10_yay3c"]
 
 [resource]
 script = ExtResource("9_x3l55")
@@ -25,13 +25,14 @@ custom_shoe_tex = ExtResource("7_kx8os")
 cog_name = "Statue Man"
 name_plural = "Statue Men"
 head = ExtResource("7_0n2q4")
-head_scale = 1.0
+head_scale = Vector3(1, 1, 1)
 head_pos = Vector3(0, 0, 0)
 scale = 3.75
 head_textures = Array[Texture2D]([ExtResource("8_syk52")])
 hand_color = Color(1, 1, 1, 1)
 head_color = Color(1, 1, 1, 1)
 custom_nametag_height = 0.0
+custom_nametag_suffix = ""
 attacks = Array[ExtResource("1_sag4d")]([])
 level_low = 3
 level_high = 5
@@ -41,6 +42,6 @@ is_admin = false
 health_mod = 1.0
 battle_phrases = Array[String](["My business strategy is rock solid."])
 external_assets = {
-"head_model": "",
-"head_textures": []
+&"head_model": "",
+&"head_textures": []
 }

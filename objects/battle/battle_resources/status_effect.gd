@@ -82,7 +82,7 @@ static func load_registry() -> void:
 	if Engine.is_editor_hint():
 		return
 	if not registry:
-		registry = await get_fresh_registry(StatusEffect)
+		registry = get_fresh_registry(StatusEffect)
 
 static func get_registry_path() -> String:
 	return "res://objects/battle/battle_resources/status_effects/resources"

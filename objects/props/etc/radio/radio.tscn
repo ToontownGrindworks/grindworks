@@ -1,7 +1,7 @@
 [gd_scene load_steps=18 format=3 uid="uid://cnpgawnj8vd27"]
 
 [ext_resource type="PackedScene" uid="uid://cctflkqgkyy2c" path="res://models/props/toon_props/radio/radioRigged.fbx" id="1_rhepe"]
-[ext_resource type="Script" path="res://objects/props/etc/radio/radio.gd" id="2_3l47l"]
+[ext_resource type="Script" uid="uid://bvix770he2f7a" path="res://objects/props/etc/radio/radio.gd" id="2_3l47l"]
 [ext_resource type="AudioStream" uid="uid://dprkiapdwi251" path="res://audio/music/MG_Pairing.ogg" id="3_dg6xs"]
 [ext_resource type="Texture2D" uid="uid://b0ugla28grpj0" path="res://models/props/toon_props/radio/knob_new_fin.png" id="3_hq86e"]
 [ext_resource type="AudioStream" uid="uid://brt2ls3r1qaih" path="res://audio/music/FF_safezone.ogg" id="4_1c0x1"]
@@ -28,7 +28,7 @@ stream_4/stream = ExtResource("7_o68hs")
 stream_5/stream = ExtResource("8_j73tw")
 
 [sub_resource type="Curve" id="Curve_ncf0e"]
-max_value = 2.0
+_limits = [0.0, 2.0, 0.0, 1.0]
 _data = [Vector2(0, 0), 0.0, 0.0, 0, 0, Vector2(0.5, 2), 0.0, 0.0, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]
 point_count = 3
 

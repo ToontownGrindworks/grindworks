@@ -1,12 +1,12 @@
 [gd_resource type="Resource" script_class="CogDNA" load_steps=8 format=3 uid="uid://j3g10bkhu2xx"]
 
-[ext_resource type="Script" path="res://objects/battle/battle_resources/cog_attacks/cog_attack.gd" id="1_xr5pg"]
-[ext_resource type="Script" path="res://objects/cog/cogdna.gd" id="2_0xuqy"]
+[ext_resource type="Script" uid="uid://bb27him60xtnk" path="res://objects/battle/battle_resources/cog_attacks/cog_attack.gd" id="1_xr5pg"]
+[ext_resource type="Script" uid="uid://okjbx502s3r5" path="res://objects/cog/cogdna.gd" id="2_0xuqy"]
 [ext_resource type="Resource" uid="uid://dimhdaxn1tyey" path="res://objects/battle/battle_resources/cog_attacks/resources/tee_off.tres" id="2_3fymi"]
 [ext_resource type="Resource" uid="uid://bhl72hd7pn8s2" path="res://objects/battle/battle_resources/cog_attacks/resources/workout.tres" id="3_ddobw"]
 [ext_resource type="PackedScene" uid="uid://c66nfw5bkeier" path="res://models/cogs/heads/bigcheese.glb" id="3_hhlib"]
 [ext_resource type="Texture2D" uid="uid://cxm7mr0o2vr3p" path="res://models/cogs/heads/bigcheese_big_cheese_new_1.png" id="4_n31ye"]
-[ext_resource type="Script" path="res://objects/battle/battle_resources/status_effect.gd" id="5_xj7j3"]
+[ext_resource type="Script" uid="uid://df7irk63ikx4k" path="res://objects/battle/battle_resources/status_effect.gd" id="5_xj7j3"]
 
 [resource]
 script = ExtResource("2_0xuqy")
@@ -15,13 +15,14 @@ suit = 0
 cog_name = "The Big Cheese"
 name_plural = ""
 head = ExtResource("3_hhlib")
-head_scale = 1.0
+head_scale = Vector3(1, 1, 1)
 head_pos = Vector3(0, 0, 0)
 scale = 7.0
 head_textures = Array[Texture2D]([ExtResource("4_n31ye")])
 hand_color = Color(0.75, 0.95, 0.749, 1)
 head_color = Color(1, 1, 1, 1)
 custom_nametag_height = 0.0
+custom_nametag_suffix = ""
 attacks = Array[ExtResource("1_xr5pg")]([ExtResource("2_3fymi"), ExtResource("3_ddobw")])
 level_low = 8
 level_high = 15
@@ -31,6 +32,6 @@ is_admin = false
 health_mod = 1.0
 battle_phrases = Array[String](["I'm going to make mozzarella outta ya.", "I've been told I'm very strong.", "You can call me Jack.", "I'm going to cream you!", "Careful, I know your expiration date.", "Beating you will be a brieeze.", "Watch out, I'm Gouda get ya.", "Are you sure? I can be a real Muenster at times.", "Don't you think I've aged well?", "Watch out, I'm a wiz at this game.", "Well finally, I was afraid you were stringing me along."])
 external_assets = {
-"head_model": "",
-"head_textures": []
+&"head_model": "",
+&"head_textures": []
 }

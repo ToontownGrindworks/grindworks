@@ -2,9 +2,9 @@
 
 [ext_resource type="PackedScene" uid="uid://dmnep8phelnvy" path="res://models/misc_zones/field_office/penthouse/penthouse.fbx" id="1_vkvjg"]
 [ext_resource type="Texture2D" uid="uid://cjcugdtkiwqwy" path="res://models/misc_zones/field_office/penthouse/penthouse_23.png" id="2_8ud3v"]
-[ext_resource type="Script" path="res://scenes/final_boss/penthouse_boss.gd" id="2_bn0hh"]
+[ext_resource type="Script" uid="uid://d0qj3lyj16xr5" path="res://scenes/final_boss/penthouse_boss.gd" id="2_bn0hh"]
 [ext_resource type="Texture2D" uid="uid://b63aa1vfsnk6" path="res://models/misc_zones/field_office/penthouse/penthouse_8.png" id="2_ge76q"]
-[ext_resource type="Script" path="res://objects/cog/cogdna.gd" id="3_pu03o"]
+[ext_resource type="Script" uid="uid://okjbx502s3r5" path="res://objects/cog/cogdna.gd" id="3_pu03o"]
 [ext_resource type="Resource" uid="uid://bkkauwbcsnukc" path="res://objects/cog/presets/sellbot/traffic_manager.tres" id="4_7haf7"]
 [ext_resource type="PackedScene" uid="uid://dflwjcy6fj0av" path="res://objects/cog/cog.tscn" id="4_p2l1n"]
 [ext_resource type="PackedScene" uid="uid://cy4iox7mj5ei0" path="res://objects/toon/toon.tscn" id="5_s3u6r"]
@@ -15,7 +15,7 @@
 [ext_resource type="Resource" uid="uid://ba7yjm7wpt1fu" path="res://objects/cog/presets/bossbot/union_buster.tres" id="7_y0ea0"]
 [ext_resource type="AudioStream" uid="uid://bkthwpyj2bvjr" path="res://audio/music/encntr_penultimate/encntr_penultimate_interactive.tres" id="13_utcau"]
 [ext_resource type="Resource" uid="uid://c5dbwjk742di6" path="res://objects/cog/presets/bossbot/flunky.tres" id="15_25tuy"]
-[ext_resource type="Script" path="res://objects/battle/battle_resources/misc_movies/final_boss/final_boss_intro.gd" id="15_qmw7d"]
+[ext_resource type="Script" uid="uid://bexhvgaggjj0i" path="res://objects/battle/battle_resources/misc_movies/final_boss/final_boss_intro.gd" id="15_qmw7d"]
 [ext_resource type="PackedScene" uid="uid://rd3cif0wap2n" path="res://models/misc_zones/field_office/ImportantPortrait.fbx" id="17_sk75u"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4lrhb"]
@@ -162,8 +162,8 @@ tracks/2/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_tjyyh"]
 _data = {
-"RESET": SubResource("Animation_pkrw8"),
-"default": SubResource("Animation_ql12b")
+&"RESET": SubResource("Animation_pkrw8"),
+&"default": SubResource("Animation_ql12b")
 }
 
 [sub_resource type="GDScript" id="GDScript_i03po"]

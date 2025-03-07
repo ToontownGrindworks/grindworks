@@ -1,17 +1,19 @@
 [gd_resource type="Resource" script_class="Item" load_steps=4 format=3 uid="uid://b3e3bj8ick774"]
 
 [ext_resource type="PackedScene" uid="uid://cf80j11m31apb" path="res://objects/items/custom/jellybean/pink_jellybean.tscn" id="1_w3nw4"]
-[ext_resource type="Script" path="res://objects/items/classes/item.gd" id="2_8mvlp"]
+[ext_resource type="Script" uid="uid://combwqypom1ru" path="res://objects/items/classes/item.gd" id="2_8mvlp"]
 [ext_resource type="AudioStream" uid="uid://b8pshap2d5xwv" path="res://audio/sfx/ui/tick_counter.ogg" id="2_vp3ab"]
 
 [resource]
 script = ExtResource("2_8mvlp")
-qualitoon = 3
+qualitoon = 2
+rarity = 0
 evergreen = true
 realtime = false
 slot = 0
 world_scale = 0.25
-ui_scale = 0.75
+want_ui_spin = true
+ui_cam_offset = 0.0
 item_name = "Purple Jellybean"
 item_description = "Sweet, sweet profit"
 big_description = ""
@@ -24,3 +26,5 @@ arbitrary_data = {}
 remember_item = false
 shop_category_title = "Boost Item"
 shop_category_color = Color(1, 0.54902, 0, 1)
+force_show_shop_category = false
+custom_shop_price = 0

@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://cy4iox7mj5ei0"]
 
-[ext_resource type="Script" path="res://objects/toon/toon.gd" id="1_6asl0"]
+[ext_resource type="Script" uid="uid://t6oqxsyf1qia" path="res://objects/toon/toon.gd" id="1_6asl0"]
 [ext_resource type="PackedScene" uid="uid://suibio7o1avg" path="res://objects/misc/drop_shadow/drop_shadow.tscn" id="2_6lsek"]
 
 [node name="Toon" type="Node3D"]

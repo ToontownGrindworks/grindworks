@@ -19,7 +19,7 @@
 [ext_resource type="Texture2D" uid="uid://5lxinqtnrxn0" path="res://objects/props/etc/dust_cloud/Dust_17.png" id="17_7bt2c"]
 [ext_resource type="Texture2D" uid="uid://dvolr8wd21gsm" path="res://objects/props/etc/dust_cloud/Dust_18.png" id="18_uiuh5"]
 [ext_resource type="Texture2D" uid="uid://q4lima34n1i6" path="res://objects/props/etc/dust_cloud/Dust_19.png" id="19_12rmx"]
-[ext_resource type="Script" path="res://objects/props/etc/dust_cloud/dust_cloud.gd" id="20_qd3gx"]
+[ext_resource type="Script" uid="uid://cnwjqv7x0nqq7" path="res://objects/props/etc/dust_cloud/dust_cloud.gd" id="20_qd3gx"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_vjm4n"]
 animations = [{

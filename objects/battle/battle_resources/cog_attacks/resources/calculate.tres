@@ -1,12 +1,13 @@
 [gd_resource type="Resource" script_class="Tabulate" load_steps=2 format=3 uid="uid://bik8l6ycrnufq"]
 
-[ext_resource type="Script" path="res://objects/battle/battle_resources/cog_attacks/tabulate.gd" id="1_kr51v"]
+[ext_resource type="Script" uid="uid://hamb7hsc7s4i" path="res://objects/battle/battle_resources/cog_attacks/tabulate.gd" id="1_kr51v"]
 
 [resource]
 script = ExtResource("1_kr51v")
 play_sound = false
 accuracy = 75
 damage = 3
+ignore_stats = false
 summary = ""
 attack_lines = Array[String](["These numbers do add up!", "Did you count on this?", "Add it up, you're going down.", "Let me help you add this up.", "Did you register all your expenses?", "According to my calculations, you won't be around much longer.", "Here's the grand total.", "Wow, your bill is adding up.", "Try fiddling with these numbers!", "Cogs: 1 Toons: 0"])
 target_type = 0

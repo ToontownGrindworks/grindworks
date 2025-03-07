@@ -1,6 +1,6 @@
 [gd_resource type="ShaderMaterial" load_steps=5 format=3 uid="uid://cp8vv8al3i6nl"]
 
-[ext_resource type="Shader" path="res://general_resources/shaders/liquid_shader.gdshader" id="1_q1aqf"]
+[ext_resource type="Shader" uid="uid://b3xje7jv3si6v" path="res://general_resources/shaders/liquid_shader.gdshader" id="1_q1aqf"]
 [ext_resource type="Texture2D" uid="uid://bdf3g7nyxirat" path="res://models/facilities/cgc/textures/oil.png" id="2_4hpg5"]
 
 [sub_resource type="FastNoiseLite" id="FastNoiseLite_mqphr"]
@@ -21,9 +21,9 @@ resource_name = "lava"
 render_priority = 0
 shader = ExtResource("1_q1aqf")
 shader_parameter/albedo = Color(0.847474, 0.847474, 0.847474, 1)
+shader_parameter/texture_albedo = ExtResource("2_4hpg5")
 shader_parameter/uv1_scale = Vector3(20, 10, 15)
 shader_parameter/uv1_offset = Vector3(0, 0, 0)
 shader_parameter/uv1_scroll = 0.03
 shader_parameter/height_scale = 0.6
-shader_parameter/texture_albedo = ExtResource("2_4hpg5")
 shader_parameter/displacement = SubResource("NoiseTexture2D_r0pwm")

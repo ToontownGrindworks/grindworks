@@ -39,3 +39,9 @@ func expire() -> void:
 
 func get_status_name() -> String:
 	return "Poison"
+
+func combine(effect: StatusEffect) -> bool:
+	if effect.rounds == rounds:
+		amount += effect.amount
+		return true
+	return false

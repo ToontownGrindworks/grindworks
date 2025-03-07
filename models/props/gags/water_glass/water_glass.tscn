@@ -130,7 +130,7 @@ tracks/2/keys = PackedFloat32Array(0, 1, 1, 1, 1, 1.56667, 1, 1, 1, 1, 1.6, 1, 1
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_6hceo"]
 _data = {
-"water_glass": SubResource("Animation_rtlnn")
+&"water_glass": SubResource("Animation_rtlnn")
 }
 
 [node name="Root Scene" type="Node3D"]

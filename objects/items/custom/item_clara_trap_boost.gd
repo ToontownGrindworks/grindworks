@@ -71,7 +71,7 @@ func queue_text(text: String) -> void:
 func run_text(text: String) -> void:
 	do_battle_text(text)
 	can_queue_text = false
-	await TaskMgr.delay(STAGGER_TIME)
+	await Task.delay(STAGGER_TIME)
 	if text_queue.is_empty():
 		can_queue_text = true
 	else:

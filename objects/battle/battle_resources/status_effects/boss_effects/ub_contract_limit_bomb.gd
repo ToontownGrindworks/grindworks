@@ -57,7 +57,7 @@ func renew() -> void:
 	battle_node.add_child(stomper)
 	stomper.global_position = target.global_position
 
-	var stomper_tween := get_stomper_tween(stomper)
+	var _stomper_tween := get_stomper_tween(stomper)
 
 	movie.tween_callback(battle_node.focus_character.bind(target))
 	# Damage multiplied by how much health was left on the Cog
@@ -101,10 +101,10 @@ func apply_buff(_target: Cog, boost_amount: float) -> void:
 	if manager.battle_stats.has(_target):
 		manager.battle_stats[_target].damage *= boost_amount
 
-func make_explosion(target: Cog) -> void:
+func make_explosion(_target: Cog) -> void:
 	var explosion: AnimatedSprite3D = load('res://models/cogs/misc/explosion/cog_explosion.tscn').instantiate()
 	manager.battle_node.add_child(explosion)
-	explosion.global_position = target.department_emblem.global_position
+	explosion.global_position = _target.department_emblem.global_position
 	explosion.scale = Vector3(15, 15, 15)
 	explosion.play('explode')
 	await Util.barrier(explosion.animation_finished, 0.5)

@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="AchievementQuota" load_steps=3 format=3 uid="uid://bpitaio17vysa"]
 
-[ext_resource type="Script" path="res://objects/save_file/achievements/quota_achievement.gd" id="1_n5fks"]
+[ext_resource type="Script" uid="uid://bma611yu4pdu8" path="res://objects/save_file/achievements/quota_achievement.gd" id="1_n5fks"]
 [ext_resource type="Texture2D" uid="uid://cn4w2jt6qpch" path="res://ui_assets/achievements/icon_achievement_bessie.png" id="1_vq4fb"]
 
 [resource]

@@ -1,7 +1,7 @@
 [gd_scene load_steps=17 format=4 uid="uid://bx6mubx7yx00x"]
 
 [ext_resource type="PackedScene" uid="uid://bi4g7g3i40ln3" path="res://models/props/facility_objects/mint/pipes/pipes_D2.fbx" id="1_ld7y1"]
-[ext_resource type="Texture2D" uid="uid://crrthl7u12as4" path="res://models/props/facility_objects/mint/pipes/textures/LocomotiveDetail1.png" id="2_g6gik"]
+[ext_resource type="Texture2D" uid="uid://c6crsry4n2agx" path="res://models/props/facility_objects/mint/pipes/textures/LocomotiveDetail1.png" id="2_g6gik"]
 [ext_resource type="Texture2D" uid="uid://cg2uccg6r4tku" path="res://models/props/facility_objects/mint/pipes/textures/CogIntPlate1b.png" id="3_ltf41"]
 [ext_resource type="Texture2D" uid="uid://df5qrrkvi3ijy" path="res://models/props/facility_objects/mint/pipes/textures/CogIntPipeCapTop1.png" id="4_nmp2a"]
 

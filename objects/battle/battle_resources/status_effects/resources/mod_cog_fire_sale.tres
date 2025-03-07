@@ -1,0 +1,19 @@
+[gd_resource type="Resource" load_steps=3 format=3 uid="uid://cbqxiwx86xuq"]
+
+[ext_resource type="Script" uid="uid://dg6m56vh5lhdk" path="res://objects/battle/battle_resources/status_effects/mod_cog_effects/cog_mod_fire_sale.gd" id="1_msd6u"]
+[ext_resource type="Texture2D" uid="uid://d23er1qplly1g" path="res://ui_assets/battle/statuses/fire_sale_dot.png" id="1_vx3q1"]
+
+[resource]
+script = ExtResource("1_msd6u")
+quality = 0
+rounds = -1
+icon = ExtResource("1_vx3q1")
+icon_color = Color(1, 1, 1, 1)
+icon_scale = 1.0
+mini_icon_color = Color(1, 1, 1, 1)
+mini_icon_scale = 1.0
+visible = true
+description = "Applies damage over time while this Cog is active"
+status_name = "Fire Sale"
+id = 34
+metadata/_custom_type_script = "uid://df7irk63ikx4k"

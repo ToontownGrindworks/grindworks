@@ -1,7 +1,7 @@
 [gd_scene load_steps=11 format=3 uid="uid://d21jw3a2pwo0m"]
 
 [ext_resource type="PackedScene" uid="uid://dflwjcy6fj0av" path="res://objects/cog/cog.tscn" id="1_4jfnm"]
-[ext_resource type="Script" path="res://scenes/test/directors.gd" id="1_7duf2"]
+[ext_resource type="Script" uid="uid://dmpnrm02mfn78" path="res://scenes/test/directors.gd" id="1_7duf2"]
 [ext_resource type="PackedScene" uid="uid://dmnep8phelnvy" path="res://models/misc_zones/field_office/penthouse/penthouse.fbx" id="2_53r85"]
 [ext_resource type="Resource" uid="uid://bkkauwbcsnukc" path="res://objects/cog/presets/sellbot/traffic_manager.tres" id="2_upt7r"]
 [ext_resource type="PackedScene" uid="uid://b8mtvfipu1qsg" path="res://objects/interactables/elevators/cogdo_elevator.tscn" id="3_uitrp"]

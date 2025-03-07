@@ -1,12 +1,13 @@
 [gd_resource type="Resource" script_class="SalesDirectorReboot" load_steps=2 format=3 uid="uid://bi6m53t0a0yag"]
 
-[ext_resource type="Script" path="res://objects/battle/battle_resources/misc_movies/sales_director/sd_reboot.gd" id="1_u1fyf"]
+[ext_resource type="Script" uid="uid://c87dip08ur3la" path="res://objects/battle/battle_resources/misc_movies/sales_director/sd_reboot.gd" id="1_u1fyf"]
 
 [resource]
 script = ExtResource("1_u1fyf")
 cog_amount = 2
 accuracy = 75
 damage = 1
+ignore_stats = false
 summary = "Summons reinforcements!"
 attack_lines = Array[String]([])
 target_type = 0

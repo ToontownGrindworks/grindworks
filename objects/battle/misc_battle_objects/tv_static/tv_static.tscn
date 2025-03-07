@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=3 uid="uid://bdp0i14kr0hs4"]
 
-[ext_resource type="Shader" path="res://objects/battle/misc_battle_objects/tv_static/vignette.gdshader" id="1_gxrfl"]
-[ext_resource type="Script" path="res://objects/battle/misc_battle_objects/tv_static/tv_static.gd" id="1_jq8un"]
+[ext_resource type="Shader" uid="uid://e1qa08jjtmws" path="res://objects/battle/misc_battle_objects/tv_static/vignette.gdshader" id="1_gxrfl"]
+[ext_resource type="Script" uid="uid://dufurkcn6ri5p" path="res://objects/battle/misc_battle_objects/tv_static/tv_static.gd" id="1_jq8un"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_ejlte"]
 shader = ExtResource("1_gxrfl")

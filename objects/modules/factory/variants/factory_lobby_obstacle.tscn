@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=3 uid="uid://c620sk7k7hisa"]
+[gd_scene load_steps=21 format=3 uid="uid://c620sk7k7hisa"]
 
 [ext_resource type="PackedScene" uid="uid://dmapsp85ra1fb" path="res://objects/modules/factory/base_rooms/factory_lobby.tscn" id="1_g03v4"]
 [ext_resource type="PackedScene" uid="uid://p33fqws4qewy" path="res://objects/obstacles/conveyer_belt/conveyer_belt.tscn" id="3_npx4s"]
@@ -11,29 +11,29 @@
 [ext_resource type="PackedScene" uid="uid://ciyyhun2e5nmf" path="res://objects/props/etc/crate/crate_general.tscn" id="8_bsfb4"]
 [ext_resource type="PackedScene" uid="uid://dxyq5lb5oineo" path="res://objects/interactables/treasure_chest/treasure_chest.tscn" id="10_on8h2"]
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_mx117"]
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jhq05"]
 resource_name = "ConveyerBeltV3SHD"
 cull_mode = 2
 albedo_texture = ExtResource("4_kml2i")
 roughness = 0.552786
 uv1_scale = Vector3(1, 8, 1)
-uv1_offset = Vector3(0, 1.86111, 0)
+uv1_offset = Vector3(0, 0.691985, 0)
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_hrm55"]
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_wcxic"]
 resource_name = "ConveyerBeltV3SHD"
 cull_mode = 2
 albedo_texture = ExtResource("4_kml2i")
 roughness = 0.552786
 uv1_scale = Vector3(1, 8, 1)
-uv1_offset = Vector3(0, -2.33333, 0)
+uv1_offset = Vector3(0, -1.80756, 0)
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ikvmj"]
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7r6n7"]
 resource_name = "ConveyerBeltV3SHD"
 cull_mode = 2
 albedo_texture = ExtResource("4_kml2i")
 roughness = 0.552786
 uv1_scale = Vector3(1, 8, 1)
-uv1_offset = Vector3(0, 0.541689, 0)
+uv1_offset = Vector3(0, 1.64425, 0)
 
 [sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_tcgni"]
 data = PackedVector3Array(9.2647, -9.2647, 0.0191, -9.2647, -9.2647, 0.0191, -9.2647, -9.2647, 9.2792, -9.2647, -9.2647, 9.2792, 9.2647, -9.2647, 9.2792, 9.2647, -9.2647, 0.0191, 9.2647, 9.2647, 9.2792, -9.2647, 9.2647, 9.2792, -9.2647, 9.2647, 0.0191, -9.2647, 9.2647, 0.0191, 9.2647, 9.2647, 0.0191, 9.2647, 9.2647, 9.2792, 6.2624, -6.2624, 11.8353, -6.2624, -6.2624, 11.8353, -6.2624, 6.2624, 11.8353, -6.2624, 6.2624, 11.8353, 6.2624, 6.2624, 11.8353, 6.2624, -6.2624, 11.8353, -7.4652, -7.4652, 10.3864, -9.2647, -9.2647, 9.2792, -9.2647, 9.2647, 9.2792, -9.2647, 9.2647, 9.2792, -7.4652, 7.4652, 10.3864, -7.4652, -7.4652, 10.3864, -9.2647, -9.2647, 9.2792, -7.4652, -7.4652, 10.3864, 7.4652, -7.4652, 10.3864, 7.4652, -7.4652, 10.3864, 9.2647, -9.2647, 9.2792, -9.2647, -9.2647, 9.2792, 7.4652, -7.4652, 10.3864, 7.4652, 7.4652, 10.3864, 9.2647, 9.2647, 9.2792, 9.2647, 9.2647, 9.2792, 9.2647, -9.2647, 9.2792, 7.4652, -7.4652, 10.3864, -7.4652, 7.4652, 10.3864, -9.2647, 9.2647, 9.2792, 9.2647, 9.2647, 9.2792, 9.2647, 9.2647, 9.2792, 7.4652, 7.4652, 10.3864, -7.4652, 7.4652, 10.3864, -6.2624, -6.2624, 11.8353, -7.4652, -7.4652, 10.3864, -7.4652, 7.4652, 10.3864, -7.4652, 7.4652, 10.3864, -6.2624, 6.2624, 11.8353, -6.2624, -6.2624, 11.8353, 6.2624, -6.2624, 11.8353, 7.4652, -7.4652, 10.3864, -7.4652, -7.4652, 10.3864, -7.4652, -7.4652, 10.3864, -6.2624, -6.2624, 11.8353, 6.2624, -6.2624, 11.8353, 6.2624, -6.2624, 11.8353, 6.2624, 6.2624, 11.8353, 7.4652, 7.4652, 10.3864, 7.4652, 7.4652, 10.3864, 7.4652, -7.4652, 10.3864, 6.2624, -6.2624, 11.8353, -6.2624, 6.2624, 11.8353, -7.4652, 7.4652, 10.3864, 7.4652, 7.4652, 10.3864, 7.4652, 7.4652, 10.3864, 6.2624, 6.2624, 11.8353, -6.2624, 6.2624, 11.8353, 9.2647, 9.2647, 0.0191, -9.2647, 9.2647, 0.0191, -9.2647, -9.2647, 0.0191, -9.2647, -9.2647, 0.0191, 9.2647, -9.2647, 0.0191, 9.2647, 9.2647, 0.0191, 9.2647, 9.2647, 0.0191, 9.2647, -9.2647, 0.0191, 9.2647, -9.2647, 9.2792, 9.2647, -9.2647, 9.2792, 9.2647, 9.2647, 9.2792, 9.2647, 9.2647, 0.0191, -9.2647, -9.2647, 9.2792, -9.2647, -9.2647, 0.0191, -9.2647, 9.2647, 0.0191, -9.2647, 9.2647, 0.0191, -9.2647, 9.2647, 9.2792, -9.2647, -9.2647, 9.2792)
@@ -45,8 +45,18 @@ radius = 1.28955
 [sub_resource type="BoxShape3D" id="BoxShape3D_1s7ix"]
 size = Vector3(0.609924, 0.0248394, 0.610602)
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_sna0x"]
+size = Vector3(23.131, 15.9344, 3.22339)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_jhq05"]
+size = Vector3(24.1646, 15.9344, 3.22339)
+
 [sub_resource type="BoxShape3D" id="BoxShape3D_qhada"]
-size = Vector3(25.9094, 15.9344, 3.22339)
+size = Vector3(23.2357, 15.9344, 3.22339)
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_jhq05"]
+radius = 1.47669
+height = 17.4513
 
 [node name="FactoryLobby" instance=ExtResource("1_g03v4")]
 
@@ -117,10 +127,10 @@ visible = false
 visible = false
 
 [node name="FanBlade1" parent="factory_lobby" index="1"]
-transform = Transform3D(-6.25396, 18.0783, -7.3852e-07, 18.0783, 6.25396, 7.38518e-07, 2.12719e-06, -1.03372e-06, -8.44768, 24.7621, 2.51024, -60.6563)
+transform = Transform3D(-5.57961, -18.2977, 7.3852e-07, -18.2977, 5.57961, 7.38518e-07, -2.08741e-06, -1.11185e-06, -8.44768, 24.7621, 2.51024, -60.6563)
 
 [node name="FanBlade2" parent="factory_lobby" index="2"]
-transform = Transform3D(-5.19139, 18.4115, -7.3852e-07, 18.4115, 5.19139, 7.38526e-07, 2.06344e-06, -1.15573e-06, -8.44768, 28.4435, 2.51024, -60.6563)
+transform = Transform3D(18.8331, -3.35372, 7.3852e-07, -3.35372, -18.8331, 7.38525e-07, 1.35325e-06, -1.93965e-06, -8.44768, 28.4435, 2.51024, -60.6563)
 
 [node name="BlackCeiling" parent="." index="6"]
 transform = Transform3D(1.2, 0, 0, 0, -5.24537e-08, -1.2, 0, 1.2, -5.24537e-08, 6.92766, 14.4774, -39.3033)
@@ -133,21 +143,21 @@ transform = Transform3D(1.2, 0, 0, 0, -5.24537e-08, -1.2, 0, 1.2, -5.24537e-08, 
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 7.03549, 0, -26.1647)
 constant_linear_velocity = Vector3(5, 0, 2.18557e-07)
 size = Vector3(1.75, 1, 8)
-platform_mat = SubResource("StandardMaterial3D_mx117")
+platform_mat = SubResource("StandardMaterial3D_jhq05")
 speed = -5.0
 
 [node name="ConveyerBelt2" parent="Props/Conveyors" index="1" instance=ExtResource("3_npx4s")]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 7.03549, 0, -35.0423)
 constant_linear_velocity = Vector3(-7, 0, -3.0598e-07)
 size = Vector3(1.75, 1, 8)
-platform_mat = SubResource("StandardMaterial3D_hrm55")
+platform_mat = SubResource("StandardMaterial3D_wcxic")
 speed = 7.0
 
 [node name="ConveyerBelt3" parent="Props/Conveyors" index="2" instance=ExtResource("3_npx4s")]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 7.03549, 0, -44.1473)
 constant_linear_velocity = Vector3(4.432, 0, 1.93729e-07)
 size = Vector3(1.75, 1, 8)
-platform_mat = SubResource("StandardMaterial3D_ikvmj")
+platform_mat = SubResource("StandardMaterial3D_7r6n7")
 speed = -4.432
 
 [node name="Stompers" type="Node3D" parent="Props" index="1"]
@@ -743,16 +753,28 @@ transform = Transform3D(-1, -8.74228e-08, 0, 8.74228e-08, -1, 0, 0, 0, 1, 0.2493
 [node name="Blockers" type="StaticBody3D" parent="." index="8"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Blockers" index="0"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.1468, 7.46719, -30.6477)
-shape = SubResource("BoxShape3D_qhada")
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.242415, 7.46719, -30.6477)
+shape = SubResource("BoxShape3D_sna0x")
 
 [node name="CollisionShape3D3" type="CollisionShape3D" parent="Blockers" index="1"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.1468, 7.46719, -48.4882)
-shape = SubResource("BoxShape3D_qhada")
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.61126, 7.46719, -48.4882)
+shape = SubResource("BoxShape3D_jhq05")
 
 [node name="CollisionShape3D2" type="CollisionShape3D" parent="Blockers" index="2"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.8304, 7.46719, -39.7052)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.1673, 7.46719, -39.7052)
 shape = SubResource("BoxShape3D_qhada")
+
+[node name="CollisionShape3D4" type="CollisionShape3D" parent="Blockers" index="3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.6077, 6.43635, -30.3023)
+shape = SubResource("CapsuleShape3D_jhq05")
+
+[node name="CollisionShape3D5" type="CollisionShape3D" parent="Blockers" index="4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.571563, 6.43635, -39.984)
+shape = SubResource("CapsuleShape3D_jhq05")
+
+[node name="CollisionShape3D6" type="CollisionShape3D" parent="Blockers" index="5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.1301, 6.43635, -48.2499)
+shape = SubResource("CapsuleShape3D_jhq05")
 
 [node name="treasure_chest" parent="." index="9" instance=ExtResource("10_on8h2")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 1.03362, 0, -52.7452)

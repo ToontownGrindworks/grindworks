@@ -1,7 +1,7 @@
 [gd_resource type="Resource" load_steps=3 format=3 uid="uid://bndwuvwfiwayd"]
 
 [ext_resource type="Texture2D" uid="uid://dgltuiyhtm25j" path="res://ui_assets/battle/statuses/green_light.png" id="1_7bn8m"]
-[ext_resource type="Script" path="res://objects/battle/battle_resources/misc_movies/traffic_manager/status_effect_green_light.gd" id="2_upu1s"]
+[ext_resource type="Script" uid="uid://bg72cds7qm21p" path="res://objects/battle/battle_resources/misc_movies/traffic_manager/status_effect_green_light.gd" id="2_upu1s"]
 
 [resource]
 script = ExtResource("2_upu1s")

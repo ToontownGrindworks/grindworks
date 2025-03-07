@@ -1,7 +1,7 @@
 [gd_scene load_steps=10 format=4 uid="uid://bwu5l3d7uncro"]
 
-[ext_resource type="Texture2D" uid="uid://csi8gmbinwmx1" path="res://models/facilities/cgc/textures/StoneWall1e.png" id="1_7dwnv"]
-[ext_resource type="Texture2D" uid="uid://7c70kvdyj32i" path="res://models/facilities/cgc/textures/smoothwall_4.png" id="2_wc07i"]
+[ext_resource type="Texture2D" uid="uid://csmkpukc6maca" path="res://models/facilities/cgc/textures/StoneWall1e.png" id="1_7dwnv"]
+[ext_resource type="Texture2D" uid="uid://dshqhxjrtkw3w" path="res://models/facilities/cgc/textures/smoothwall_4.png" id="2_wc07i"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_a83w2"]
 resource_name = "BossbotBattle_doorsall_landscape_lambert3"

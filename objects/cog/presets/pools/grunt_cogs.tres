@@ -1,6 +1,6 @@
-[gd_resource type="Resource" script_class="CogPool" load_steps=34 format=3 uid="uid://bnubj377geur5"]
+[gd_resource type="Resource" script_class="CogPool" load_steps=35 format=3 uid="uid://bnubj377geur5"]
 
-[ext_resource type="Script" path="res://objects/cog/cogdna.gd" id="1_y0kkr"]
+[ext_resource type="Script" uid="uid://okjbx502s3r5" path="res://objects/cog/cogdna.gd" id="1_y0kkr"]
 [ext_resource type="Resource" uid="uid://c5dbwjk742di6" path="res://objects/cog/presets/bossbot/flunky.tres" id="2_xtsos"]
 [ext_resource type="Resource" uid="uid://dix6b1st0kqmw" path="res://objects/cog/presets/bossbot/pencil_pusher.tres" id="3_s5kbe"]
 [ext_resource type="Resource" uid="uid://rggq704t8yst" path="res://objects/cog/presets/bossbot/yesman.tres" id="4_8sbuo"]
@@ -27,13 +27,14 @@
 [ext_resource type="Resource" uid="uid://dijh2jf6717ci" path="res://objects/cog/presets/cashbot/robber_baron.tres" id="25_5g6tp"]
 [ext_resource type="Resource" uid="uid://b4jf6084dolhy" path="res://objects/cog/presets/sellbot/cold_caller.tres" id="26_ifs84"]
 [ext_resource type="Resource" uid="uid://4msaan0a5lf3" path="res://objects/cog/presets/sellbot/telemarketer.tres" id="27_t3ycq"]
-[ext_resource type="Resource" uid="uid://d32ij14c50gys" path="res://objects/cog/presets/sellbot/name_dropper.tres" id="28_32fie"]
 [ext_resource type="Resource" uid="uid://canccpjghjae7" path="res://objects/cog/presets/sellbot/glad_hander.tres" id="29_vw8jy"]
+[ext_resource type="Resource" uid="uid://d32ij14c50gys" path="res://objects/cog/presets/sellbot/name_dropper.tres" id="30_dneib"]
+[ext_resource type="Resource" uid="uid://b0iiauyxvm2su" path="res://objects/cog/presets/sellbot/mover_shaker.tres" id="30_gc3xn"]
 [ext_resource type="Resource" uid="uid://c2sbco2b7ddrt" path="res://objects/cog/presets/sellbot/two_face.tres" id="30_n5bip"]
 [ext_resource type="Resource" uid="uid://d3j6v3o7y5d0w" path="res://objects/cog/presets/sellbot/the_mingler.tres" id="31_f1q40"]
 [ext_resource type="Resource" uid="uid://q8ev1hag3yvy" path="res://objects/cog/presets/sellbot/mr_hollywood.tres" id="32_uqoxg"]
-[ext_resource type="Script" path="res://objects/cog/cog_pool.gd" id="33_jctrj"]
+[ext_resource type="Script" uid="uid://ocitcstc3bru" path="res://objects/cog/cog_pool.gd" id="33_jctrj"]
 
 [resource]
 script = ExtResource("33_jctrj")
-cogs = Array[ExtResource("1_y0kkr")]([ExtResource("2_xtsos"), ExtResource("3_s5kbe"), ExtResource("4_8sbuo"), ExtResource("5_bwnq7"), ExtResource("6_fgdg8"), ExtResource("7_cf02s"), ExtResource("8_rggdc"), ExtResource("9_tib3p"), ExtResource("10_0lx72"), ExtResource("11_w7h7e"), ExtResource("12_ywv3i"), ExtResource("13_qwsp1"), ExtResource("14_5ijjq"), ExtResource("15_5nr3g"), ExtResource("16_8djul"), ExtResource("17_0ysoa"), ExtResource("18_yelot"), ExtResource("19_uqo1l"), ExtResource("20_kjbrq"), ExtResource("21_17vp5"), ExtResource("22_2ktm4"), ExtResource("23_ixead"), ExtResource("24_f317y"), ExtResource("25_5g6tp"), ExtResource("26_ifs84"), ExtResource("27_t3ycq"), ExtResource("28_32fie"), ExtResource("28_32fie"), ExtResource("29_vw8jy"), ExtResource("30_n5bip"), ExtResource("31_f1q40"), ExtResource("32_uqoxg")])
+cogs = Array[ExtResource("1_y0kkr")]([ExtResource("2_xtsos"), ExtResource("3_s5kbe"), ExtResource("4_8sbuo"), ExtResource("5_bwnq7"), ExtResource("6_fgdg8"), ExtResource("7_cf02s"), ExtResource("8_rggdc"), ExtResource("9_tib3p"), ExtResource("10_0lx72"), ExtResource("11_w7h7e"), ExtResource("12_ywv3i"), ExtResource("13_qwsp1"), ExtResource("14_5ijjq"), ExtResource("15_5nr3g"), ExtResource("16_8djul"), ExtResource("17_0ysoa"), ExtResource("18_yelot"), ExtResource("19_uqo1l"), ExtResource("20_kjbrq"), ExtResource("21_17vp5"), ExtResource("22_2ktm4"), ExtResource("23_ixead"), ExtResource("24_f317y"), ExtResource("25_5g6tp"), ExtResource("26_ifs84"), ExtResource("27_t3ycq"), ExtResource("30_dneib"), ExtResource("29_vw8jy"), ExtResource("30_gc3xn"), ExtResource("30_n5bip"), ExtResource("31_f1q40"), ExtResource("32_uqoxg")])

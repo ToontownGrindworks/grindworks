@@ -1,7 +1,7 @@
 [gd_scene load_steps=16 format=3 uid="uid://bsglorrhanjv2"]
 
 [ext_resource type="PackedScene" uid="uid://dsvvfxr70tpmc" path="res://models/cogs/suitb/skelecog/lose_model/suitB-skelecog-lose.glb" id="1_0xovy"]
-[ext_resource type="Script" path="res://objects/cog/skelecog_directory.gd" id="1_oy25y"]
+[ext_resource type="Script" uid="uid://djrvaa2pgbrps" path="res://objects/cog/skelecog_directory.gd" id="1_oy25y"]
 [ext_resource type="Texture2D" uid="uid://csyn6i71uv3s2" path="res://models/cogs/suitb/skelecog/suitB-skelecog_cogB_bulb1b.png" id="3_jl154"]
 [ext_resource type="Texture2D" uid="uid://cmjss0pvkovre" path="res://models/cogs/suitb/skelecog/suitB-skelecog_cogB_armB1.png" id="4_nfkxf"]
 [ext_resource type="Texture2D" uid="uid://drrs5agk2gp30" path="res://models/cogs/suitb/skelecog/suitB-skelecog_cogB_armB2.png" id="5_ewu5u"]
@@ -4249,10 +4249,10 @@ tracks/149/keys = PackedFloat32Array(0, 1, 1, 1, 1, 2.33333, 1, 1, 1, 1, 2.4, 1,
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_wfynm"]
 _data = {
-"lose": SubResource("Animation_60qhl"),
-"suitB-lose": SubResource("Animation_6mhic"),
-"suitB-lose_002": SubResource("Animation_iy7kk"),
-"suitB-lose_004": SubResource("Animation_y20aa")
+&"lose": SubResource("Animation_60qhl"),
+&"suitB-lose": SubResource("Animation_6mhic"),
+&"suitB-lose_002": SubResource("Animation_iy7kk"),
+&"suitB-lose_004": SubResource("Animation_y20aa")
 }
 
 [node name="suitB-skelecog-lose" node_paths=PackedStringArray("skeleton", "animator", "tie_mesh") instance=ExtResource("1_0xovy")]
