@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="ToonShirt" load_steps=4 format=3 uid="uid://8fdqrfrfgdmt"]
 
-[ext_resource type="Script" path="res://objects/toon/clothing/toon_shirt.gd" id="1_m64v1"]
+[ext_resource type="Script" uid="uid://dfqwh4jmdy0iw" path="res://objects/toon/clothing/toon_shirt.gd" id="1_m64v1"]
 [ext_resource type="Texture2D" uid="uid://4nfjljijmx8f" path="res://models/toon/textures/clothes/shirts/desat_shirt_18.png" id="2_4fn8f"]
 [ext_resource type="Texture2D" uid="uid://dh7dyokcfyw43" path="res://models/toon/textures/clothes/shirts/desat_sleeve_1.png" id="3_n34tp"]
 

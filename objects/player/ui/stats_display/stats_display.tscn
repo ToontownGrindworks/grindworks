@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://cetlxmq8ig00a"]
 
-[ext_resource type="Script" path="res://objects/player/ui/stats_display/stats_display.gd" id="1_5s3tf"]
+[ext_resource type="Script" uid="uid://cl1fr8r4jm7ie" path="res://objects/player/ui/stats_display/stats_display.gd" id="1_5s3tf"]
 
 [node name="StatsDisplay" type="VBoxContainer"]
 anchors_preset = 15

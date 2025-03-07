@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://b1lwy5glu10he" path="res://models/props/facility_objects/conveyor_platform/platform_CVBeltEdge.png" id="1_5smeo"]
 [ext_resource type="Texture2D" uid="uid://bj0ye0oxq1fea" path="res://models/props/facility_objects/conveyor_platform/platform_CVBelt1.png" id="2_4hqq7"]
-[ext_resource type="Script" path="res://objects/obstacles/rhythm_platforms/rhythm_platform_sink.gd" id="3_op2l6"]
+[ext_resource type="Script" uid="uid://d3vtssnyvcvx3" path="res://objects/obstacles/rhythm_platforms/rhythm_platform_sink.gd" id="3_op2l6"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_060mp"]
 resource_name = "ConveyerBeltEdgeSHD"

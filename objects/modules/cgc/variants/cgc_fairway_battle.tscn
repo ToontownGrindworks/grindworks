@@ -7,7 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://dbrst2twjd0pu" path="res://objects/interactables/button/button.tscn" id="6_gkpxy"]
 [ext_resource type="PackedScene" uid="uid://dxyq5lb5oineo" path="res://objects/interactables/treasure_chest/treasure_chest.tscn" id="7_ea5jh"]
 [ext_resource type="Resource" uid="uid://j75am6rbrvrj" path="res://objects/items/pools/progressives.tres" id="8_pkw7w"]
-[ext_resource type="Script" path="res://objects/modules/cgc/variants/cgc_fence_gate.gd" id="9_37dxp"]
+[ext_resource type="Script" uid="uid://h0b48xrci8d6" path="res://objects/modules/cgc/variants/cgc_fence_gate.gd" id="9_37dxp"]
 [ext_resource type="PackedScene" uid="uid://pn7r3ut085aw" path="res://objects/props/cgc/hedge_pillar.tscn" id="9_sbr13"]
 [ext_resource type="PackedScene" uid="uid://bwu5l3d7uncro" path="res://objects/props/cgc/hedge_pillar_spiked.tscn" id="10_gp8wa"]
 

@@ -13,7 +13,7 @@ func on_action_start(action : BattleAction) -> void:
 		action.accuracy = Globals.ACCURACY_GUARANTEE_HIT
 
 func cleanup() -> void:
-	manager.s_actions_ended.disconnect(on_action_start)
+	manager.s_action_started.disconnect(on_action_start)
 
 func get_status_name() -> String:
 	return "Pinpoint"

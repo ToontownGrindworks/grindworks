@@ -1,11 +1,11 @@
-[gd_resource type="Resource" script_class="ItemAccessory" load_steps=41 format=3 uid="uid://rvhj26x82w0f"]
+[gd_resource type="Resource" script_class="ItemAccessory" load_steps=41 format=3 uid="uid://b481tsqe158fk"]
 
-[ext_resource type="Script" path="res://objects/items/classes/accessory_placement.gd" id="1_3p8ag"]
-[ext_resource type="Script" path="res://objects/items/classes/item_accessory.gd" id="2_4al5t"]
+[ext_resource type="Script" uid="uid://fb0tqfojo57q" path="res://objects/items/classes/accessory_placement.gd" id="1_3p8ag"]
+[ext_resource type="Script" uid="uid://dvu24b3o8i3sj" path="res://objects/items/classes/item_accessory.gd" id="2_4al5t"]
 [ext_resource type="PackedScene" uid="uid://i3nhmwxwps3u" path="res://models/accessories/hats/witch_hat/tt_m_chr_avt_acc_hat_witch.glb" id="2_dp6aq"]
-[ext_resource type="Script" path="res://objects/items/classes/head_placement.gd" id="2_lty77"]
+[ext_resource type="Script" uid="uid://c4eyu1xvv7h2l" path="res://objects/items/classes/head_placement.gd" id="2_lty77"]
 [ext_resource type="Texture2D" uid="uid://dlnl6qrbkhw2l" path="res://models/accessories/hats/witch_hat/tt_m_chr_avt_acc_hat_witch.glb-pix-1.png" id="3_6d4or"]
-[ext_resource type="Script" path="res://objects/items/custom/item_witch_hat.gd" id="3_k6hh1"]
+[ext_resource type="Script" uid="uid://bsfakdm8sqawx" path="res://objects/items/custom/item_witch_hat.gd" id="3_k6hh1"]
 
 [sub_resource type="Resource" id="Resource_ha20r"]
 script = ExtResource("2_lty77")
@@ -27,9 +27,9 @@ scale = Vector3(0.3, 0.3, 0.3)
 script = ExtResource("2_lty77")
 species = 2
 head_index = 2
-position = Vector3(0.01, -0.27, 0.15)
-rotation = Vector3(-10, 0, 0)
-scale = Vector3(0.3, 0.3, 0.3)
+position = Vector3(-0.01, -0.52, 0.01)
+rotation = Vector3(-20.39, -57.66, 29)
+scale = Vector3(0.38, 0.38, 0.38)
 
 [sub_resource type="Resource" id="Resource_akm0w"]
 script = ExtResource("2_lty77")
@@ -107,17 +107,17 @@ scale = Vector3(0.3, 0.3, 0.3)
 script = ExtResource("2_lty77")
 species = 3
 head_index = 0
-position = Vector3(0.01, -0.15, -0.2)
-rotation = Vector3(-10, 0, 0)
-scale = Vector3(0.35, 0.35, 0.35)
+position = Vector3(0, -0.48, -0.17)
+rotation = Vector3(-0.82, -91.2, 24.34)
+scale = Vector3(0.56, 0.56, 0.56)
 
 [sub_resource type="Resource" id="Resource_kvbky"]
 script = ExtResource("2_lty77")
 species = 3
 head_index = 1
-position = Vector3(0, 0, -0.25)
-rotation = Vector3(-15, 0, 0)
-scale = Vector3(0.4, 0.4, 0.4)
+position = Vector3(0, -0.33, -0.17)
+rotation = Vector3(-0.82, -91.2, 24.34)
+scale = Vector3(0.56, 0.56, 0.56)
 
 [sub_resource type="Resource" id="Resource_qoo4k"]
 script = ExtResource("2_lty77")
@@ -139,17 +139,17 @@ scale = Vector3(0.35, 0.35, 0.35)
 script = ExtResource("2_lty77")
 species = 3
 head_index = 2
-position = Vector3(0.01, -0.15, -0.2)
-rotation = Vector3(-10, 0, 0)
-scale = Vector3(0.35, 0.35, 0.35)
+position = Vector3(0, -0.48, -0.17)
+rotation = Vector3(-0.82, -91.2, 24.34)
+scale = Vector3(0.56, 0.56, 0.56)
 
 [sub_resource type="Resource" id="Resource_5ss6p"]
 script = ExtResource("2_lty77")
 species = 3
 head_index = 3
-position = Vector3(0, 0, -0.25)
-rotation = Vector3(-15, 0, 0)
-scale = Vector3(0.4, 0.4, 0.4)
+position = Vector3(0, -0.33, -0.17)
+rotation = Vector3(-0.82, -91.2, 24.34)
+scale = Vector3(0.56, 0.56, 0.56)
 
 [sub_resource type="Resource" id="Resource_s2ssm"]
 script = ExtResource("2_lty77")
@@ -203,17 +203,17 @@ scale = Vector3(0.4, 0.4, 0.4)
 script = ExtResource("2_lty77")
 species = 6
 head_index = 0
-position = Vector3(0, -0.25, 0)
-rotation = Vector3(-15, 0, 0)
-scale = Vector3(0.4, 0.4, 0.4)
+position = Vector3(0, -0.58, 0.03)
+rotation = Vector3(-1.75, -85.61, 33.65)
+scale = Vector3(0.56, 0.56, 0.56)
 
 [sub_resource type="Resource" id="Resource_4iwcm"]
 script = ExtResource("2_lty77")
 species = 6
 head_index = 1
-position = Vector3(0, 0.15, 0)
-rotation = Vector3(-15, 0, 0)
-scale = Vector3(0.4, 0.4, 0.4)
+position = Vector3(0, -0.39, -0.05)
+rotation = Vector3(-0.82, -91.2, 24.34)
+scale = Vector3(0.62, 0.62, 0.62)
 
 [sub_resource type="Resource" id="Resource_luo35"]
 script = ExtResource("2_lty77")
@@ -282,8 +282,8 @@ scale = Vector3(0.4, 0.4, 0.4)
 [resource]
 script = ExtResource("2_4al5t")
 accessory_placements = Array[ExtResource("1_3p8ag")]([SubResource("Resource_ha20r"), SubResource("Resource_sic67"), SubResource("Resource_y8b6u"), SubResource("Resource_akm0w"), SubResource("Resource_1oxbp"), SubResource("Resource_jkv5u"), SubResource("Resource_4t44a"), SubResource("Resource_0snq8"), SubResource("Resource_gdx36"), SubResource("Resource_ydtmm"), SubResource("Resource_xg0u3"), SubResource("Resource_6ih24"), SubResource("Resource_tlmyw"), SubResource("Resource_kvbky"), SubResource("Resource_qoo4k"), SubResource("Resource_sma1l"), SubResource("Resource_eihia"), SubResource("Resource_5ss6p"), SubResource("Resource_s2ssm"), SubResource("Resource_hflui"), SubResource("Resource_taqhb"), SubResource("Resource_fpx6k"), SubResource("Resource_rlrdp"), SubResource("Resource_7p5sj"), SubResource("Resource_qa1i7"), SubResource("Resource_4iwcm"), SubResource("Resource_luo35"), SubResource("Resource_bth8t"), SubResource("Resource_08my1"), SubResource("Resource_2arqe"), SubResource("Resource_xut04"), SubResource("Resource_i02sp"), SubResource("Resource_hs7mc"), SubResource("Resource_ieafq")])
-qualitoon = 3
-qualitoon_rarity = 6
+qualitoon = 2
+rarity = 0
 evergreen = false
 realtime = false
 slot = 1
@@ -291,7 +291,7 @@ world_scale = 0.15
 want_ui_spin = true
 ui_cam_offset = 0.0
 item_name = "Witch Hat"
-item_description = "A venemous concoction"
+item_description = "A venomous concoction"
 big_description = "Squirt inflicts poison damage upon Cogs."
 model = ExtResource("2_dp6aq")
 stats_add = {}

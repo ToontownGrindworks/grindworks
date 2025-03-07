@@ -29,7 +29,7 @@ func _hook_up() -> void:
 func increment_amount(_arg1=null,_arg2=null,_arg3=null,_arg4=null) -> void:
 	if get_completed(): return
 	# Pause briefly to allow progress file to receive the information first
-	await TaskMgr.delay(0.1)
+	await Task.delay(0.1)
 	if SaveFileService.progress_file.get(progress_value) >= quota:
 		if not get_completed():
 			unlock()

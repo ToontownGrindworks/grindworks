@@ -57,7 +57,7 @@ func set_text(string: String):
 		return
 
 	# Create a local timer to wait out before freeing
-	await TaskMgr.delay(2.0 + (string.length() * 0.1))
+	await Task.delay(2.0 + (string.length() * 0.1))
 	finished.emit()
 
 func set_font(font: Font):

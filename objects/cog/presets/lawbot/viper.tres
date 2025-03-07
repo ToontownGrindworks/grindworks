@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="CogDNA" load_steps=12 format=3 uid="uid://dkfcdpyuf8vj4"]
 
-[ext_resource type="Script" path="res://objects/battle/battle_resources/cog_attacks/cog_attack.gd" id="1_r1578"]
+[ext_resource type="Script" uid="uid://bb27him60xtnk" path="res://objects/battle/battle_resources/cog_attacks/cog_attack.gd" id="1_r1578"]
 [ext_resource type="Resource" uid="uid://b4kaq7rjifwfc" path="res://objects/battle/battle_resources/cog_attacks/resources/liquidate.tres" id="2_dflc4"]
 [ext_resource type="Resource" uid="uid://bddy50xh8sfc8" path="res://objects/battle/battle_resources/cog_attacks/resources/tremor.tres" id="3_wrxfr"]
 [ext_resource type="Texture2D" uid="uid://2fj5qbvh3qa1" path="res://models/cogs/textures/misc/sleeve_2.png" id="4_gb531"]
@@ -8,8 +8,8 @@
 [ext_resource type="Texture2D" uid="uid://8vri7bn76cva" path="res://models/cogs/heads/tt_t_ene_hed_bloodSucker.png" id="5_1wvt8"]
 [ext_resource type="Texture2D" uid="uid://idf1e68fml3o" path="res://models/cogs/textures/misc/blazer_1.png" id="5_micxp"]
 [ext_resource type="Texture2D" uid="uid://o3hrfvdxeisb" path="res://models/cogs/textures/misc/leg_4.png" id="6_0l8n7"]
-[ext_resource type="Script" path="res://objects/cog/cogdna.gd" id="6_684hx"]
-[ext_resource type="Script" path="res://objects/battle/battle_resources/status_effect.gd" id="7_jwwvn"]
+[ext_resource type="Script" uid="uid://okjbx502s3r5" path="res://objects/cog/cogdna.gd" id="6_684hx"]
+[ext_resource type="Script" uid="uid://df7irk63ikx4k" path="res://objects/battle/battle_resources/status_effect.gd" id="7_jwwvn"]
 [ext_resource type="Resource" uid="uid://b4vuuxwhv0d3v" path="res://objects/battle/battle_resources/status_effects/resources/status_effect_mod_cog.tres" id="8_7utma"]
 
 [resource]
@@ -39,6 +39,6 @@ is_admin = false
 health_mod = 1.0
 battle_phrases = Array[String](["Lookssss like you're hisssstory.", "I have no time for Toony ssssimpletonssss.", "Too bad, you rolled ssssnake eyessss.", "Lookssss like ssssupper has arrived."])
 external_assets = {
-"head_model": "",
-"head_textures": []
+&"head_model": "",
+&"head_textures": []
 }

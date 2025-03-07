@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://dxjmp8jiwlcmm"]
+[gd_scene load_steps=12 format=4 uid="uid://dxjmp8jiwlcmm"]
 
 [ext_resource type="Texture2D" uid="uid://6ieoxbt7y7ku" path="res://models/props/cog_props/teeth/teeth_Sparkle.png" id="1_ivo7a"]
 [ext_resource type="Texture2D" uid="uid://cx8qh60s40mtg" path="res://models/props/cog_props/teeth/teeth_Smile.png" id="2_usvcq"]
@@ -15,12 +15,12 @@ _surfaces = [{
 "aabb": AABB(-81.8985, -48.8533, -312.277, 13.8815, 127.065, 126.757),
 "format": 34896613377,
 "index_count": 6,
-"index_data": PackedByteArray(0, 0, 2, 0, 1, 0, 0, 0, 3, 0, 2, 0),
+"index_data": PackedByteArray("AAACAAEAAAADAAIA"),
 "name": "suit_props_cvs_PICTURES_Sparkle_picShader",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
 "vertex_count": 4,
-"vertex_data": PackedByteArray(254, 255, 197, 104, 254, 255, 0, 0, 84, 50, 255, 255, 55, 152, 0, 0, 0, 0, 57, 151, 0, 0, 0, 0, 170, 205, 0, 0, 199, 103, 0, 0)
+"vertex_data": PackedByteArray("/v/FaP7/AABUMv//N5gAAAAAOZcAAAAAqs0AAMdnAAA=")
 }]
 blend_shape_mode = 0
 
@@ -28,16 +28,16 @@ blend_shape_mode = 0
 resource_name = "teeth_Mesh"
 _surfaces = [{
 "aabb": AABB(-81.8985, -48.8533, -312.277, 13.8815, 127.065, 126.757),
-"attribute_data": PackedByteArray(123, 184, 0, 0, 255, 255, 209, 171, 131, 71, 254, 255, 0, 0, 45, 84),
+"attribute_data": PackedByteArray("e7gAAP//0auDR/7/AAAtVA=="),
 "format": 34896613399,
 "index_count": 6,
-"index_data": PackedByteArray(0, 0, 2, 0, 1, 0, 0, 0, 3, 0, 2, 0),
+"index_data": PackedByteArray("AAACAAEAAAADAAIA"),
 "material": SubResource("StandardMaterial3D_160ol"),
 "name": "suit_props_cvs_PICTURES_Sparkle_picShader",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
 "vertex_count": 4,
-"vertex_data": PackedByteArray(254, 255, 197, 104, 254, 255, 205, 54, 84, 50, 255, 255, 55, 152, 205, 54, 0, 0, 57, 151, 0, 0, 205, 54, 170, 205, 0, 0, 199, 103, 205, 54, 180, 197, 70, 225, 180, 197, 70, 225, 180, 197, 70, 225, 180, 197, 70, 225)
+"vertex_data": PackedByteArray("/v/FaP7/zTZUMv//N5jNNgAAOZcAAM02qs0AAMdnzTa0xUbhtMVG4bTFRuG0xUbh")
 }]
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_yotj8")
@@ -53,12 +53,12 @@ _surfaces = [{
 "aabb": AABB(-37.8988, -20.2284, -322.853, 22.7036, 22.2883, 372.594),
 "format": 34359742465,
 "index_count": 12,
-"index_data": PackedByteArray(0, 0, 2, 0, 1, 0, 0, 0, 3, 0, 2, 0, 2, 0, 4, 0, 1, 0, 2, 0, 5, 0, 4, 0),
+"index_data": PackedByteArray("AAACAAEAAAADAAIAAgAEAAEAAgAFAAQA"),
 "name": "lambert3",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
 "vertex_count": 6,
-"vertex_data": PackedByteArray(103, 152, 23, 194, 36, 213, 3, 64, 28, 74, 161, 195, 176, 215, 216, 193, 198, 34, 71, 193, 57, 109, 161, 195, 115, 41, 201, 193, 173, 211, 161, 193, 189, 222, 69, 66, 58, 163, 15, 194, 27, 207, 185, 192, 180, 246, 70, 66, 175, 111, 137, 193, 249, 99, 250, 63, 70, 107, 161, 195, 196, 31, 115, 193, 154, 147, 190, 192, 104, 237, 69, 66)
+"vertex_data": PackedByteArray("Z5gXwiTVA0AcSqHDsNfYwcYiR8E5baHDcynJwa3TocG93kVCOqMPwhvPucC09kZCr2+Jwflj+j9Ga6HDxB9zwZqTvsBo7UVC")
 }]
 blend_shape_mode = 0
 
@@ -66,16 +66,16 @@ blend_shape_mode = 0
 resource_name = "teeth_Mesh_001"
 _surfaces = [{
 "aabb": AABB(-37.8988, -20.2284, -322.853, 22.7036, 22.2883, 372.594),
-"attribute_data": PackedByteArray(0, 0, 0, 0, 0, 0, 128, 63, 0, 0, 0, 0, 0, 0, 128, 63, 0, 0, 0, 0, 0, 0, 128, 63, 0, 0, 0, 0, 0, 0, 128, 63, 0, 0, 0, 0, 0, 0, 128, 63, 0, 0, 0, 0, 0, 0, 128, 63, 0, 0, 0, 0, 0, 0, 128, 63, 0, 0, 0, 0, 0, 0, 128, 63),
+"attribute_data": PackedByteArray("AAAAAAAAgD8AAAAAAACAPwAAAAAAAIA/AAAAAAAAgD8AAAAAAACAPwAAAAAAAIA/AAAAAAAAgD8AAAAAAACAPw=="),
 "format": 34359742487,
 "index_count": 12,
-"index_data": PackedByteArray(0, 0, 2, 0, 1, 0, 0, 0, 3, 0, 2, 0, 4, 0, 6, 0, 5, 0, 4, 0, 7, 0, 6, 0),
+"index_data": PackedByteArray("AAACAAEAAAADAAIABAAGAAUABAAHAAYA"),
 "material": SubResource("StandardMaterial3D_3g6eq"),
 "name": "lambert3",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
 "vertex_count": 8,
-"vertex_data": PackedByteArray(103, 152, 23, 194, 36, 213, 3, 64, 28, 74, 161, 195, 176, 215, 216, 193, 198, 34, 71, 193, 57, 109, 161, 195, 115, 41, 201, 193, 173, 211, 161, 193, 189, 222, 69, 66, 58, 163, 15, 194, 27, 207, 185, 192, 180, 246, 70, 66, 115, 41, 201, 193, 173, 211, 161, 193, 189, 222, 69, 66, 176, 215, 216, 193, 198, 34, 71, 193, 57, 109, 161, 195, 175, 111, 137, 193, 249, 99, 250, 63, 70, 107, 161, 195, 196, 31, 115, 193, 154, 147, 190, 192, 104, 237, 69, 66, 82, 54, 235, 72, 255, 255, 255, 191, 70, 54, 247, 72, 255, 255, 255, 191, 82, 54, 235, 72, 255, 255, 255, 191, 94, 54, 221, 72, 255, 255, 255, 191, 52, 204, 182, 74, 255, 255, 255, 191, 95, 204, 231, 74, 255, 255, 255, 191, 53, 204, 183, 74, 255, 255, 255, 191, 8, 204, 137, 74, 255, 255, 255, 191)
+"vertex_data": PackedByteArray("Z5gXwiTVA0AcSqHDsNfYwcYiR8E5baHDcynJwa3TocG93kVCOqMPwhvPucC09kZCcynJwa3TocG93kVCsNfYwcYiR8E5baHDr2+Jwflj+j9Ga6HDxB9zwZqTvsBo7UVCUjbrSP///79GNvdI////v1I260j///+/XjbdSP///780zLZK////v1/M50r///+/Ncy3Sv///78IzIlK////vw==")
 }]
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_vpkmu")
@@ -92,12 +92,12 @@ _surfaces = [{
 "aabb": AABB(-150.49, -1.3021, -301.603, 247.036, 3.14851, 125.707),
 "format": 34896613377,
 "index_count": 6,
-"index_data": PackedByteArray(0, 0, 2, 0, 1, 0, 2, 0, 3, 0, 1, 0),
+"index_data": PackedByteArray("AAACAAEAAgADAAEA"),
 "name": "suit_props_cvs_PICTURES_Smile_picShader",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
 "vertex_count": 4,
-"vertex_data": PackedByteArray(0, 0, 254, 255, 180, 2, 0, 0, 176, 0, 78, 42, 255, 255, 0, 0, 78, 255, 175, 213, 0, 0, 0, 0, 255, 255, 0, 0, 74, 253, 0, 0)
+"vertex_data": PackedByteArray("AAD+/7QCAACwAE4q//8AAE7/r9UAAAAA//8AAEr9AAA=")
 }]
 blend_shape_mode = 0
 
@@ -105,16 +105,16 @@ blend_shape_mode = 0
 resource_name = "teeth_Mesh_002"
 _surfaces = [{
 "aabb": AABB(-150.49, -1.3021, -301.603, 247.036, 3.14851, 125.707),
-"attribute_data": PackedByteArray(0, 0, 0, 0, 0, 0, 255, 255, 255, 255, 0, 0, 255, 255, 255, 255),
+"attribute_data": PackedByteArray("AAAAAAAA/////wAA/////w=="),
 "format": 34896613399,
 "index_count": 6,
-"index_data": PackedByteArray(0, 0, 2, 0, 1, 0, 2, 0, 3, 0, 1, 0),
+"index_data": PackedByteArray("AAACAAEAAgADAAEA"),
 "material": SubResource("StandardMaterial3D_pqqt7"),
 "name": "suit_props_cvs_PICTURES_Smile_picShader",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
 "vertex_count": 4,
-"vertex_data": PackedByteArray(0, 0, 254, 255, 180, 2, 35, 191, 176, 0, 78, 42, 255, 255, 35, 191, 78, 255, 175, 213, 0, 0, 35, 191, 255, 255, 0, 0, 74, 253, 35, 191, 131, 255, 78, 127, 131, 255, 78, 127, 131, 255, 78, 127, 131, 255, 78, 127)
+"vertex_data": PackedByteArray("AAD+/7QCI7+wAE4q//8jv07/r9UAACO///8AAEr9I7+D/05/g/9Of4P/Tn+D/05/")
 }]
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_fxg6n")

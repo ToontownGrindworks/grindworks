@@ -1,12 +1,12 @@
 [gd_resource type="Resource" script_class="CogDNA" load_steps=11 format=3 uid="uid://ckn41hxv8gwaw"]
 
-[ext_resource type="Script" path="res://objects/battle/battle_resources/cog_attacks/cog_attack.gd" id="1_gysk3"]
+[ext_resource type="Script" uid="uid://bb27him60xtnk" path="res://objects/battle/battle_resources/cog_attacks/cog_attack.gd" id="1_gysk3"]
 [ext_resource type="Resource" uid="uid://dxpqtt8gh5brv" path="res://objects/battle/battle_resources/cog_attacks/resources/finger_wag.tres" id="2_cmets"]
 [ext_resource type="Resource" uid="uid://6hjcsu17tt4g" path="res://objects/battle/battle_resources/cog_attacks/resources/brain_storm.tres" id="3_c7u7g"]
 [ext_resource type="PackedScene" uid="uid://dynoamqq0xs8u" path="res://models/cogs/heads/whistleblower.glb" id="4_m7cdr"]
 [ext_resource type="Texture2D" uid="uid://crmdxpsen5to" path="res://models/cogs/heads/whistleblower_WhistleblowerFinal.png" id="5_rj6wt"]
-[ext_resource type="Script" path="res://objects/cog/cogdna.gd" id="6_6bmsy"]
-[ext_resource type="Script" path="res://objects/battle/battle_resources/status_effect.gd" id="7_jouat"]
+[ext_resource type="Script" uid="uid://okjbx502s3r5" path="res://objects/cog/cogdna.gd" id="6_6bmsy"]
+[ext_resource type="Script" uid="uid://df7irk63ikx4k" path="res://objects/battle/battle_resources/status_effect.gd" id="7_jouat"]
 [ext_resource type="Resource" uid="uid://c8rs8upqmscoh" path="res://objects/battle/battle_resources/status_effects/resources/attentive.tres" id="7_mtd56"]
 [ext_resource type="Resource" uid="uid://bos0wcgjeyg4w" path="res://objects/battle/battle_resources/status_effects/resources/tenure_status.tres" id="8_djofu"]
 [ext_resource type="Resource" uid="uid://bq2178jc2wy8h" path="res://objects/battle/battle_resources/status_effects/resources/boss_logic_whistleblower.tres" id="8_q51ym"]
@@ -35,6 +35,6 @@ is_admin = false
 health_mod = 4.87
 battle_phrases = Array[String](["I am the whistle blower"])
 external_assets = {
-"head_model": "",
-"head_textures": []
+&"head_model": "",
+&"head_textures": []
 }

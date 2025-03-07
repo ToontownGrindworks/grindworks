@@ -1,7 +1,7 @@
 [gd_scene load_steps=9 format=3 uid="uid://ciesu8xyj70oc"]
 
 [ext_resource type="PackedScene" uid="uid://dvslagwd6sk4r" path="res://objects/props/etc/shop_counter.tscn" id="1_qcbok"]
-[ext_resource type="Script" path="res://objects/interactables/shop/toon_shop.gd" id="2_vftls"]
+[ext_resource type="Script" uid="uid://daaahmd3o4n3n" path="res://objects/interactables/shop/toon_shop.gd" id="2_vftls"]
 [ext_resource type="Resource" uid="uid://br3mtjoo6t1xc" path="res://objects/items/pools/shop_rewards.tres" id="3_p7vyn"]
 [ext_resource type="PackedScene" uid="uid://dd0wuj2dwr7st" path="res://objects/items/world_item/world_item.tscn" id="4_g4xfv"]
 [ext_resource type="Resource" uid="uid://d4by7sqhd5sko" path="res://objects/items/pools/shop_progressives.tres" id="5_lqr8r"]

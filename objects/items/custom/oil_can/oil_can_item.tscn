@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://b48v41ol4ujwi"]
 
 [ext_resource type="PackedScene" uid="uid://0rlsnj5jgpfa" path="res://objects/props/etc/oil_can/oil_can.tscn" id="1_cjkl2"]
-[ext_resource type="Script" path="res://objects/items/custom/oil_can/oil_can_item.gd" id="1_wjw1b"]
+[ext_resource type="Script" uid="uid://boopve8iyqvpk" path="res://objects/items/custom/oil_can/oil_can_item.gd" id="1_wjw1b"]
 
 [node name="OilCanItem" type="Node3D"]
 script = ExtResource("1_wjw1b")

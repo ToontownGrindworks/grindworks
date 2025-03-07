@@ -1,12 +1,12 @@
 [gd_resource type="Resource" script_class="Item" load_steps=3 format=3 uid="uid://be4btivsjwqhe"]
 
 [ext_resource type="PackedScene" uid="uid://eqtswktr1h3j" path="res://objects/items/custom/gag_voucher/gag_voucher.tscn" id="1_47fq5"]
-[ext_resource type="Script" path="res://objects/items/classes/item.gd" id="2_gmhl7"]
+[ext_resource type="Script" uid="uid://combwqypom1ru" path="res://objects/items/classes/item.gd" id="2_gmhl7"]
 
 [resource]
 script = ExtResource("2_gmhl7")
-qualitoon = 2
-qualitoon_rarity = 6
+qualitoon = 1
+rarity = 0
 evergreen = true
 realtime = false
 slot = 0
@@ -25,3 +25,4 @@ remember_item = false
 shop_category_title = "Boost Item"
 shop_category_color = Color(0.196078, 0.580392, 0.917647, 1)
 force_show_shop_category = false
+custom_shop_price = 0

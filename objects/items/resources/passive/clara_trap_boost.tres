@@ -1,16 +1,18 @@
 [gd_resource type="Resource" script_class="Item" load_steps=3 format=3 uid="uid://bno5mdegu8mb0"]
 
-[ext_resource type="Script" path="res://objects/items/custom/item_clara_trap_boost.gd" id="1_h4agw"]
-[ext_resource type="Script" path="res://objects/items/classes/item.gd" id="1_ivkl1"]
+[ext_resource type="Script" uid="uid://fh1lo4pbx0ln" path="res://objects/items/custom/item_clara_trap_boost.gd" id="1_h4agw"]
+[ext_resource type="Script" uid="uid://combwqypom1ru" path="res://objects/items/classes/item.gd" id="1_ivkl1"]
 
 [resource]
 script = ExtResource("1_ivkl1")
-qualitoon = 5
+qualitoon = 4
+rarity = 0
 evergreen = false
 realtime = false
 slot = 0
 world_scale = 1.0
-ui_scale = 1.0
+want_ui_spin = true
+ui_cam_offset = 0.0
 item_name = "Clara Trap Boost"
 item_description = ""
 big_description = "Unique to Clerk Clara"
@@ -19,3 +21,8 @@ stats_multiply = {}
 player_values = {}
 arbitrary_data = {}
 item_script = ExtResource("1_h4agw")
+remember_item = true
+shop_category_title = "Boost Item"
+shop_category_color = Color(0.196078, 0.580392, 0.917647, 1)
+force_show_shop_category = false
+custom_shop_price = 0

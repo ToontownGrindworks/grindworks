@@ -1,7 +1,7 @@
 [gd_resource type="Resource" script_class="Liquidate" load_steps=4 format=3 uid="uid://b4kaq7rjifwfc"]
 
 [ext_resource type="PackedScene" uid="uid://dd8hmy8x3naei" path="res://objects/battle/effects/cloud_attacks/rain_drops.tscn" id="1_7v1yh"]
-[ext_resource type="Script" path="res://objects/battle/battle_resources/cog_attacks/liquidate.gd" id="1_a127j"]
+[ext_resource type="Script" uid="uid://cvbmppwfs711e" path="res://objects/battle/battle_resources/cog_attacks/liquidate.gd" id="1_a127j"]
 [ext_resource type="AudioStream" uid="uid://d2jwqefxwkium" path="res://audio/sfx/battle/cogs/attacks/SA_liquidate.ogg" id="3_5vxrm"]
 
 [resource]
@@ -12,6 +12,7 @@ animation = 2
 melt_toon = true
 accuracy = 75
 damage = 4
+ignore_stats = false
 summary = ""
 attack_lines = Array[String](["I like to keep things fluid.", "Are you having some cash flow problems?", "I'll have to purge your assets.", "Time for you to go with the flow.", "Remember it's slippery when wet.", "Your numbers are running.", "You seem to be slipping.", "It's all crashing down on you.", "I think you're diluted.", "You're all washed up."])
 target_type = 0

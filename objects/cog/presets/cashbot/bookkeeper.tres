@@ -1,13 +1,13 @@
 [gd_resource type="Resource" script_class="CogDNA" load_steps=12 format=3 uid="uid://bkkkabh3sre13"]
 
-[ext_resource type="Script" path="res://objects/battle/battle_resources/cog_attacks/cog_attack.gd" id="1_68i6a"]
+[ext_resource type="Script" uid="uid://bb27him60xtnk" path="res://objects/battle/battle_resources/cog_attacks/cog_attack.gd" id="1_68i6a"]
 [ext_resource type="Resource" uid="uid://bik8l6ycrnufq" path="res://objects/battle/battle_resources/cog_attacks/resources/calculate.tres" id="2_7sios"]
 [ext_resource type="Resource" uid="uid://doowiij7lpxy1" path="res://objects/battle/battle_resources/cog_attacks/resources/rubber_stamp.tres" id="3_0f0y2"]
 [ext_resource type="PackedScene" uid="uid://cbfrdks8hon58" path="res://models/cogs/heads/bookkeeper.glb" id="4_6ql6r"]
 [ext_resource type="Resource" uid="uid://bxeasogxfcdk2" path="res://objects/battle/battle_resources/cog_attacks/resources/tabulate.tres" id="4_f3d4a"]
 [ext_resource type="Texture2D" uid="uid://b5y26u8btf5pg" path="res://models/cogs/heads/bookkeeper_BookkeeperFinal.png" id="5_n3v2s"]
-[ext_resource type="Script" path="res://objects/cog/cogdna.gd" id="6_5168u"]
-[ext_resource type="Script" path="res://objects/battle/battle_resources/status_effect.gd" id="7_1kdhu"]
+[ext_resource type="Script" uid="uid://okjbx502s3r5" path="res://objects/cog/cogdna.gd" id="6_5168u"]
+[ext_resource type="Script" uid="uid://df7irk63ikx4k" path="res://objects/battle/battle_resources/status_effect.gd" id="7_1kdhu"]
 [ext_resource type="Resource" uid="uid://c8rs8upqmscoh" path="res://objects/battle/battle_resources/status_effects/resources/attentive.tres" id="8_kct6m"]
 [ext_resource type="Resource" uid="uid://bfsdklo5d7n2m" path="res://objects/battle/battle_resources/status_effects/resources/boss_logic_bookkeeper.tres" id="9_tgwk5"]
 [ext_resource type="Resource" uid="uid://bos0wcgjeyg4w" path="res://objects/battle/battle_resources/status_effects/resources/tenure_status.tres" id="10_onfbe"]
@@ -36,6 +36,6 @@ is_admin = false
 health_mod = 4.87
 battle_phrases = Array[String](["I am the bookkeeper"])
 external_assets = {
-"head_model": "",
-"head_textures": []
+&"head_model": "",
+&"head_textures": []
 }

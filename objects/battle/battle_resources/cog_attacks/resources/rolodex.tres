@@ -1,11 +1,12 @@
 [gd_resource type="Resource" script_class="Rolodex" load_steps=2 format=3 uid="uid://erbbarg5bxm8"]
 
-[ext_resource type="Script" path="res://objects/battle/battle_resources/cog_attacks/rolodex.gd" id="1_koc33"]
+[ext_resource type="Script" uid="uid://d0qjwtfreiful" path="res://objects/battle/battle_resources/cog_attacks/rolodex.gd" id="1_koc33"]
 
 [resource]
 script = ExtResource("1_koc33")
 accuracy = 75
 damage = 2
+ignore_stats = false
 summary = ""
 attack_lines = Array[String](["Your card's in here somewhere.", "Here's the number for a pest exterminator.", "I want to give you my card.", "I've got your number right here.", "I've got you covered from a-z.", "You'll flip over this.", "Take this for a spin.", "Watch out for paper cuts.", "I'll let my fingers do the knocking.", "Is this how I can contact you?", "I want to make sure we stay in touch."])
 target_type = 0

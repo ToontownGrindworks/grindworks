@@ -1,7 +1,7 @@
 [gd_scene load_steps=11 format=3 uid="uid://dqrr4us7712x"]
 
 [ext_resource type="PackedScene" uid="uid://cusc221nmsk06" path="res://models/cogs/suita/lose_model/suitA-lose.glb" id="1_41ito"]
-[ext_resource type="Script" path="res://objects/cog/suit_directory.gd" id="1_b1c51"]
+[ext_resource type="Script" uid="uid://cqkt0omtc1wel" path="res://objects/cog/suit_directory.gd" id="1_b1c51"]
 [ext_resource type="Texture2D" uid="uid://b2ng7fxqmbv54" path="res://models/cogs/suita/suita_hand.png" id="3_0fm3y"]
 [ext_resource type="Texture2D" uid="uid://batrs8pvrxnlg" path="res://models/cogs/suita/suita_c_arm.png" id="3_l3iws"]
 [ext_resource type="Texture2D" uid="uid://i6n6vssb1e3" path="res://models/cogs/suita/suita_shoe.png" id="4_j0cdr"]
@@ -23,7 +23,7 @@ albedo_texture = ExtResource("4_j0cdr")
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_3j1ri"]
 _data = {
-"lose": ExtResource("5_pdtgf")
+&"lose": ExtResource("5_pdtgf")
 }
 
 [node name="suitA-lose" node_paths=PackedStringArray("skeleton", "animator", "wrists_and_shoes", "head_bone") instance=ExtResource("1_41ito")]

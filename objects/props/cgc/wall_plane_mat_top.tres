@@ -1,6 +1,6 @@
 [gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://cliv41wabcywl"]
 
-[ext_resource type="Texture2D" uid="uid://dnaqvfhc07vcf" path="res://models/facilities/cgc/textures/BQ_Fireplace_1.png" id="1_m508d"]
+[ext_resource type="Texture2D" uid="uid://bep7r50vkeks6" path="res://models/facilities/cgc/textures/BQ_Fireplace_1.png" id="1_m508d"]
 
 [resource]
 resource_name = "lambert167"

@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://dxh0j2g8vs0jk"]
 
 [ext_resource type="PackedScene" uid="uid://fojg0o0rvj5g" path="res://models/accessories/hats/pirate_hat/tt_m_chr_avt_acc_hat_pirateHat.glb" id="1_yda08"]
-[ext_resource type="Script" path="res://objects/items/custom/pirate_hat/pirate_hat.gd" id="2_sajtk"]
+[ext_resource type="Script" uid="uid://4kylxc5j82f5" path="res://objects/items/custom/pirate_hat/pirate_hat.gd" id="2_sajtk"]
 
 [node name="tt_m_chr_avt_acc_hat_pirateHat" instance=ExtResource("1_yda08")]
 script = ExtResource("2_sajtk")

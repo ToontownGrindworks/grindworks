@@ -1,10 +1,10 @@
-[gd_scene load_steps=208 format=3 uid="uid://b3wmyoqcbv6wd"]
+[gd_scene load_steps=210 format=3 uid="uid://b3wmyoqcbv6wd"]
 
 [ext_resource type="PackedScene" uid="uid://dflwjcy6fj0av" path="res://objects/cog/cog.tscn" id="1_uqjo6"]
-[ext_resource type="Script" path="res://scenes/cog_creator/cog_creator.gd" id="1_xx4e4"]
+[ext_resource type="Script" uid="uid://pe4vewmekb22" path="res://scenes/cog_creator/cog_creator.gd" id="1_xx4e4"]
 [ext_resource type="PackedScene" uid="uid://wcbaaifovixx" path="res://objects/modules/mint/base_rooms/mint_entrance.tscn" id="2_5kygc"]
-[ext_resource type="Script" path="res://objects/battle/battle_resources/cog_attacks/cog_attack.gd" id="2_7snwl"]
-[ext_resource type="Script" path="res://objects/cog/cogdna.gd" id="2_ymhyv"]
+[ext_resource type="Script" uid="uid://bb27him60xtnk" path="res://objects/battle/battle_resources/cog_attacks/cog_attack.gd" id="2_7snwl"]
+[ext_resource type="Script" uid="uid://okjbx502s3r5" path="res://objects/cog/cogdna.gd" id="2_ymhyv"]
 [ext_resource type="Resource" uid="uid://dc3wprcrjg58t" path="res://objects/battle/battle_resources/cog_attacks/resources/audit.tres" id="3_7mf4x"]
 [ext_resource type="Resource" uid="uid://dix6b1st0kqmw" path="res://objects/cog/presets/bossbot/pencil_pusher.tres" id="3_c1spy"]
 [ext_resource type="PackedScene" uid="uid://b0d1er4oqiqcn" path="res://objects/general_ui/general_button/general_button.tscn" id="3_ca28p"]
@@ -38,7 +38,6 @@
 [ext_resource type="Texture2D" uid="uid://doudfntbyce4m" path="res://ui_assets/general/tt_t_gui_mat_nextDisabled.png" id="13_qtds6"]
 [ext_resource type="Resource" uid="uid://sey860nn14jg" path="res://objects/battle/battle_resources/cog_attacks/resources/pick_pocket.tres" id="13_ve7ja"]
 [ext_resource type="Resource" uid="uid://berwbvcnp521g" path="res://objects/battle/battle_resources/cog_attacks/resources/pink_slip.tres" id="14_gjbj0"]
-[ext_resource type="Resource" uid="uid://sfiho4ougsnc" path="res://objects/cog/presets/lawbot/back_stabber.tres" id="14_l11bx"]
 [ext_resource type="Resource" uid="uid://crdecksepx8wc" path="res://objects/cog/presets/lawbot/spin_doctor.tres" id="15_7yf5c"]
 [ext_resource type="Resource" uid="uid://bmp6wgk24lvba" path="res://objects/battle/battle_resources/cog_attacks/resources/pop_quiz_math.tres" id="15_fepq6"]
 [ext_resource type="Resource" uid="uid://c27ek2anjbx88" path="res://objects/battle/battle_resources/cog_attacks/resources/pound_key.tres" id="16_6vi4n"]
@@ -71,14 +70,13 @@
 [ext_resource type="PackedScene" uid="uid://c66nfw5bkeier" path="res://models/cogs/heads/bigcheese.glb" id="29_4nblf"]
 [ext_resource type="Resource" uid="uid://canccpjghjae7" path="res://objects/cog/presets/sellbot/glad_hander.tres" id="29_litv7"]
 [ext_resource type="PackedScene" uid="uid://dmnge5iq11t6m" path="res://models/cogs/heads/bigwig.glb" id="30_0r2c0"]
-[ext_resource type="Resource" uid="uid://d32ij14c50gys" path="res://objects/cog/presets/sellbot/name_dropper.tres" id="30_sklfm"]
 [ext_resource type="PackedScene" uid="uid://byxlrkmrk4vbr" path="res://models/cogs/heads/clown1.tscn" id="31_ewahd"]
 [ext_resource type="Resource" uid="uid://c2sbco2b7ddrt" path="res://objects/cog/presets/sellbot/two_face.tres" id="31_hidwc"]
 [ext_resource type="PackedScene" uid="uid://bggx7d4j5bnr5" path="res://models/cogs/heads/clown2.glb" id="32_hc727"]
 [ext_resource type="Resource" uid="uid://d3j6v3o7y5d0w" path="res://objects/cog/presets/sellbot/the_mingler.tres" id="32_ucl0k"]
 [ext_resource type="PackedScene" uid="uid://2ewnjjvwgpwy" path="res://models/cogs/heads/coldcaller.glb" id="33_86iti"]
 [ext_resource type="Resource" uid="uid://q8ev1hag3yvy" path="res://objects/cog/presets/sellbot/mr_hollywood.tres" id="33_ekdjq"]
-[ext_resource type="Script" path="res://objects/cog/cog_pool.gd" id="34_d7aur"]
+[ext_resource type="Script" uid="uid://ocitcstc3bru" path="res://objects/cog/cog_pool.gd" id="34_d7aur"]
 [ext_resource type="PackedScene" uid="uid://qqdyuilfkd7y" path="res://models/cogs/heads/corporate_raider.glb" id="34_kl2gn"]
 [ext_resource type="PackedScene" uid="uid://bgx7270etnyok" path="res://models/cogs/heads/flunky.glb" id="35_5f7lc"]
 [ext_resource type="PackedScene" uid="uid://bptrv8nm0esos" path="res://models/cogs/heads/gladhander.glb" id="36_b7tri"]
@@ -114,7 +112,7 @@
 [ext_resource type="Texture2D" uid="uid://bmxk7cpgu8f0o" path="res://models/cogs/heads/big_cheese_new_2.png" id="60_vdtor"]
 [ext_resource type="Texture2D" uid="uid://ctnk81jaxjdij" path="res://models/cogs/heads/blueface.png" id="61_717gm"]
 [ext_resource type="Texture2D" uid="uid://bo5ojd8rwaa68" path="res://models/cogs/heads/clown1_faceClown.png" id="62_deqng"]
-[ext_resource type="Texture2D" uid="uid://bwmakebpdpncg" path="res://models/cogs/heads/clown1_hatClown.png" id="63_iuj0i"]
+[ext_resource type="Texture2D" uid="uid://u5kphma0y0af" path="res://models/cogs/heads/clown1_hatClown.png" id="63_iuj0i"]
 [ext_resource type="Texture2D" uid="uid://dis22fn42wyq4" path="res://models/cogs/heads/clown2_faceClown.png" id="64_ottww"]
 [ext_resource type="Texture2D" uid="uid://doywpucmykow3" path="res://models/cogs/heads/clown2_hatClown.png" id="65_qlmt5"]
 [ext_resource type="Texture2D" uid="uid://nkkehd2wkbso" path="res://models/cogs/heads/clownsizer_hatClown.png" id="66_v88ni"]
@@ -148,7 +146,9 @@
 [ext_resource type="Texture2D" uid="uid://d03j2xfi6q4nk" path="res://models/cogs/heads/slendercog.png" id="90_66tk2"]
 [ext_resource type="Texture2D" uid="uid://l0uswjwbs1c7" path="res://models/cogs/heads/spindoctor.png" id="91_doy7v"]
 [ext_resource type="PackedScene" uid="uid://dynoamqq0xs8u" path="res://models/cogs/heads/whistleblower.glb" id="91_hhsae"]
+[ext_resource type="PackedScene" uid="uid://dpejpsndqd0fs" path="res://models/cogs/heads/traffic_manager.glb" id="92_fhgvf"]
 [ext_resource type="PackedScene" uid="uid://b82mf74d37xbi" path="res://models/cogs/heads/tf_new.fbx" id="92_jeae5"]
+[ext_resource type="PackedScene" uid="uid://cf4icv3p0tfoq" path="res://models/cogs/heads/blowhard.glb" id="93_4jwa1"]
 [ext_resource type="Texture2D" uid="uid://but3ektlu8h0h" path="res://models/cogs/heads/statueman_HeadFactoryStatue4.png" id="93_3483s"]
 [ext_resource type="PackedScene" uid="uid://56cye21p077f" path="res://models/cogs/heads/GoldenGoose.glb" id="93_gbgc5"]
 [ext_resource type="Texture2D" uid="uid://cib3c57krgwx" path="res://models/cogs/heads/telemarketer_statue.png" id="94_vj3ok"]
@@ -197,10 +197,12 @@
 [ext_resource type="Texture2D" uid="uid://cam2cj6dqh32m" path="res://models/cogs/heads/sales_director_SalesDirector.png" id="153_4240y"]
 [ext_resource type="Texture2D" uid="uid://cyblyj7cst741" path="res://models/cogs/heads/surgeongeneral_tex.png" id="154_0632o"]
 [ext_resource type="Texture2D" uid="uid://crmdxpsen5to" path="res://models/cogs/heads/whistleblower_WhistleblowerFinal.png" id="155_lc32i"]
+[ext_resource type="Texture2D" uid="uid://gck1qqhfvd8h" path="res://models/cogs/heads/traffic_manager_TrafficManagerFinal.png" id="156_n27as"]
+[ext_resource type="Texture2D" uid="uid://85hrkw5gu46w" path="res://models/cogs/heads/blowhard_blowhard_tex.png" id="158_gm4s2"]
 
 [sub_resource type="Resource" id="Resource_ookrr"]
 script = ExtResource("34_d7aur")
-cogs = Array[ExtResource("2_ymhyv")]([ExtResource("3_c1spy"), ExtResource("4_bjwkv"), ExtResource("5_34d33"), ExtResource("6_e4tj4"), ExtResource("7_6nxmy"), ExtResource("8_pfqi7"), ExtResource("9_fiaen"), ExtResource("10_xymlm"), ExtResource("11_4x0y7"), ExtResource("12_g4irf"), ExtResource("13_qdxev"), ExtResource("14_l11bx"), ExtResource("15_7yf5c"), ExtResource("16_ttk3a"), ExtResource("17_5xody"), ExtResource("18_yiw33"), ExtResource("19_8m8ul"), ExtResource("20_prtpq"), ExtResource("21_aypfi"), ExtResource("22_8am5k"), ExtResource("23_qr026"), ExtResource("24_330da"), ExtResource("25_svvu7"), ExtResource("26_lh6k5"), ExtResource("27_jckd4"), ExtResource("30_sklfm"), ExtResource("29_litv7"), ExtResource("30_sklfm"), ExtResource("31_hidwc"), ExtResource("32_ucl0k"), ExtResource("33_ekdjq")])
+cogs = Array[ExtResource("2_ymhyv")]([ExtResource("3_c1spy"), ExtResource("4_bjwkv"), ExtResource("5_34d33"), ExtResource("6_e4tj4"), ExtResource("7_6nxmy"), ExtResource("8_pfqi7"), ExtResource("9_fiaen"), ExtResource("10_xymlm"), ExtResource("11_4x0y7"), ExtResource("12_g4irf"), ExtResource("13_qdxev"), ExtResource("15_7yf5c"), ExtResource("16_ttk3a"), ExtResource("17_5xody"), ExtResource("18_yiw33"), ExtResource("19_8m8ul"), ExtResource("20_prtpq"), ExtResource("21_aypfi"), ExtResource("22_8am5k"), ExtResource("23_qr026"), ExtResource("24_330da"), ExtResource("25_svvu7"), ExtResource("26_lh6k5"), ExtResource("27_jckd4"), ExtResource("29_litv7"), ExtResource("31_hidwc"), ExtResource("32_ucl0k"), ExtResource("33_ekdjq")])
 
 [sub_resource type="Environment" id="Environment_5pl30"]
 ambient_light_source = 2
@@ -280,8 +282,8 @@ safe_cogs = SubResource("Resource_ookrr")
 suit_a_attacks = Array[ExtResource("2_7snwl")]([ExtResource("3_7mf4x"), ExtResource("4_mo0ki"), ExtResource("5_ilbr4"), ExtResource("7_cqov3"), ExtResource("8_g6yi0"), ExtResource("9_vqpv7"), ExtResource("10_jqtea"), ExtResource("11_gumtp"), ExtResource("12_l0hiu"), ExtResource("13_ve7ja"), ExtResource("14_gjbj0"), ExtResource("15_fepq6"), ExtResource("16_6vi4n"), ExtResource("17_1g3fl"), ExtResource("18_c0cie"), ExtResource("19_8qu84"), ExtResource("20_24o5i"), ExtResource("20_ax72v"), ExtResource("21_dqjqy")])
 suit_b_attacks = Array[ExtResource("2_7snwl")]([ExtResource("4_mo0ki"), ExtResource("8_g6yi0"), ExtResource("10_jqtea"), ExtResource("11_gumtp"), ExtResource("12_l0hiu"), ExtResource("13_ve7ja"), ExtResource("14_gjbj0"), ExtResource("15_fepq6"), ExtResource("16_6vi4n"), ExtResource("21_rrcpx"), ExtResource("18_c0cie"), ExtResource("22_6onif"), ExtResource("23_sum7q"), ExtResource("24_nkk6o"), ExtResource("20_ax72v"), ExtResource("21_dqjqy")])
 suit_c_attacks = Array[ExtResource("2_7snwl")]([ExtResource("4_mo0ki"), ExtResource("7_cqov3"), ExtResource("8_g6yi0"), ExtResource("9_vqpv7"), ExtResource("10_jqtea"), ExtResource("11_gumtp"), ExtResource("12_l0hiu"), ExtResource("13_ve7ja"), ExtResource("15_fepq6"), ExtResource("16_6vi4n"), ExtResource("25_vjhwn"), ExtResource("20_ax72v"), ExtResource("21_dqjqy")])
-head_model_files = Array[PackedScene]([ExtResource("26_1idp3"), ExtResource("27_jtab4"), ExtResource("28_xy0hj"), ExtResource("29_4nblf"), ExtResource("30_0r2c0"), ExtResource("31_ewahd"), ExtResource("32_hc727"), ExtResource("33_86iti"), ExtResource("34_kl2gn"), ExtResource("35_5f7lc"), ExtResource("36_b7tri"), ExtResource("37_cqllc"), ExtResource("38_581re"), ExtResource("39_ne4ff"), ExtResource("40_cifb8"), ExtResource("41_i2fyg"), ExtResource("42_mfnxn"), ExtResource("43_52xx6"), ExtResource("44_ns551"), ExtResource("45_ewar8"), ExtResource("46_c378u"), ExtResource("47_ii8hj"), ExtResource("48_wg4gk"), ExtResource("50_osnmm"), ExtResource("51_cbyii"), ExtResource("52_5kwmk"), ExtResource("53_u7456"), ExtResource("54_j1bmg"), ExtResource("87_ixtf3"), ExtResource("88_ms8ih"), ExtResource("89_tu2we"), ExtResource("90_4utcy"), ExtResource("91_hhsae"), ExtResource("92_jeae5"), ExtResource("93_gbgc5")])
-head_texture_files = Array[Texture2D]([ExtResource("54_5jknc"), ExtResource("55_6fope"), ExtResource("56_jj50y"), ExtResource("57_ab4gj"), ExtResource("58_klt22"), ExtResource("59_2a6un"), ExtResource("60_vdtor"), ExtResource("61_717gm"), ExtResource("62_deqng"), ExtResource("63_iuj0i"), ExtResource("64_ottww"), ExtResource("65_qlmt5"), ExtResource("66_v88ni"), ExtResource("67_72yvm"), ExtResource("68_3b6bm"), ExtResource("69_jc5g3"), ExtResource("70_hbxl5"), ExtResource("71_dfklg"), ExtResource("72_eph4v"), ExtResource("73_q65bc"), ExtResource("74_v8bl5"), ExtResource("75_a36lf"), ExtResource("76_1152r"), ExtResource("77_7tvju"), ExtResource("78_7h5xt"), ExtResource("79_66dpc"), ExtResource("80_m3d0u"), ExtResource("81_x6lbw"), ExtResource("82_eky0p"), ExtResource("83_v5f6h"), ExtResource("84_8wcri"), ExtResource("85_yyfnp"), ExtResource("86_u705b"), ExtResource("87_wiix7"), ExtResource("88_a02uu"), ExtResource("89_uij5l"), ExtResource("90_66tk2"), ExtResource("91_doy7v"), ExtResource("93_3483s"), ExtResource("94_vj3ok"), ExtResource("95_y8ar1"), ExtResource("96_oi8s5"), ExtResource("97_4w68l"), ExtResource("98_ak3ji"), ExtResource("99_ydsna"), ExtResource("100_1k5yg"), ExtResource("101_mgpfd"), ExtResource("102_ga6ho"), ExtResource("103_m24m6"), ExtResource("104_4h6np"), ExtResource("105_3k3kn"), ExtResource("144_88j4t"), ExtResource("145_bn3ui"), ExtResource("146_y1u1o"), ExtResource("147_4sbrr"), ExtResource("148_74607"), ExtResource("149_httwg"), ExtResource("150_xiai8"), ExtResource("85_yyfnp"), ExtResource("151_4ilq8"), ExtResource("152_8v6oh"), ExtResource("153_4240y"), ExtResource("154_0632o"), ExtResource("155_lc32i")])
+head_model_files = Array[PackedScene]([ExtResource("26_1idp3"), ExtResource("27_jtab4"), ExtResource("28_xy0hj"), ExtResource("29_4nblf"), ExtResource("30_0r2c0"), ExtResource("31_ewahd"), ExtResource("32_hc727"), ExtResource("33_86iti"), ExtResource("34_kl2gn"), ExtResource("35_5f7lc"), ExtResource("36_b7tri"), ExtResource("37_cqllc"), ExtResource("38_581re"), ExtResource("39_ne4ff"), ExtResource("40_cifb8"), ExtResource("41_i2fyg"), ExtResource("42_mfnxn"), ExtResource("43_52xx6"), ExtResource("44_ns551"), ExtResource("45_ewar8"), ExtResource("46_c378u"), ExtResource("47_ii8hj"), ExtResource("48_wg4gk"), ExtResource("50_osnmm"), ExtResource("51_cbyii"), ExtResource("52_5kwmk"), ExtResource("53_u7456"), ExtResource("54_j1bmg"), ExtResource("87_ixtf3"), ExtResource("88_ms8ih"), ExtResource("89_tu2we"), ExtResource("90_4utcy"), ExtResource("91_hhsae"), ExtResource("92_jeae5"), ExtResource("93_gbgc5"), ExtResource("92_fhgvf"), ExtResource("93_4jwa1")])
+head_texture_files = Array[Texture2D]([ExtResource("54_5jknc"), ExtResource("55_6fope"), ExtResource("56_jj50y"), ExtResource("57_ab4gj"), ExtResource("58_klt22"), ExtResource("59_2a6un"), ExtResource("60_vdtor"), ExtResource("61_717gm"), ExtResource("62_deqng"), ExtResource("63_iuj0i"), ExtResource("64_ottww"), ExtResource("65_qlmt5"), ExtResource("66_v88ni"), ExtResource("67_72yvm"), ExtResource("68_3b6bm"), ExtResource("69_jc5g3"), ExtResource("70_hbxl5"), ExtResource("71_dfklg"), ExtResource("72_eph4v"), ExtResource("73_q65bc"), ExtResource("74_v8bl5"), ExtResource("75_a36lf"), ExtResource("76_1152r"), ExtResource("77_7tvju"), ExtResource("78_7h5xt"), ExtResource("79_66dpc"), ExtResource("80_m3d0u"), ExtResource("81_x6lbw"), ExtResource("82_eky0p"), ExtResource("83_v5f6h"), ExtResource("84_8wcri"), ExtResource("85_yyfnp"), ExtResource("86_u705b"), ExtResource("87_wiix7"), ExtResource("88_a02uu"), ExtResource("89_uij5l"), ExtResource("90_66tk2"), ExtResource("91_doy7v"), ExtResource("93_3483s"), ExtResource("94_vj3ok"), ExtResource("95_y8ar1"), ExtResource("96_oi8s5"), ExtResource("97_4w68l"), ExtResource("98_ak3ji"), ExtResource("99_ydsna"), ExtResource("100_1k5yg"), ExtResource("101_mgpfd"), ExtResource("102_ga6ho"), ExtResource("103_m24m6"), ExtResource("104_4h6np"), ExtResource("105_3k3kn"), ExtResource("144_88j4t"), ExtResource("145_bn3ui"), ExtResource("146_y1u1o"), ExtResource("147_4sbrr"), ExtResource("148_74607"), ExtResource("149_httwg"), ExtResource("150_xiai8"), ExtResource("85_yyfnp"), ExtResource("151_4ilq8"), ExtResource("152_8v6oh"), ExtResource("153_4240y"), ExtResource("154_0632o"), ExtResource("155_lc32i"), ExtResource("156_n27as"), ExtResource("158_gm4s2")])
 suits = Array[Dictionary]([{
 "custom_arm_tex": null,
 "custom_blazer_tex": null,
@@ -386,7 +388,7 @@ layout_mode = 2
 layout_mode = 2
 theme = ExtResource("144_xnv5s")
 min_value = 2.5
-max_value = 7.0
+max_value = 10.0
 step = 0.05
 value = 2.5
 
@@ -436,10 +438,6 @@ grow_horizontal = 0
 save_dir = "user://save/custom_cogs/"
 allowed_types = Array[String](["png", "jpg"])
 
-[node name="OpenButton" parent="Menus/HeadTextureSelector/HeadTexDirectory/FooterButtons" index="0"]
-hover_db_offset = 6.0
-press_db_offset = 0.0
-
 [node name="GeneralButton" parent="Menus/HeadTextureSelector/HeadTexDirectory/FooterButtons" index="1" instance=ExtResource("3_ca28p")]
 custom_minimum_size = Vector2(180, 60)
 layout_mode = 2
@@ -454,10 +452,6 @@ text = "Use Default"
 [node name="Label" parent="Menus/HeadTextureSelector/HeadTexDirectory/FooterButtons/GeneralButton" index="0"]
 text = "Use Default"
 label_settings = SubResource("LabelSettings_ujs02")
-
-[node name="CancelButton" parent="Menus/HeadTextureSelector/HeadTexDirectory/LoadPanel" index="1"]
-hover_db_offset = 6.0
-press_db_offset = 0.0
 
 [node name="SuitSelector" type="Control" parent="Menus"]
 visible = false
@@ -628,6 +622,19 @@ theme = ExtResource("144_xnv5s")
 min_value = 1.0
 max_value = 12.0
 value = 1.0
+
+[node name="ProxyToggle" type="HBoxContainer" parent="Menus/AtrributeSelectors/VBoxContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="Label" type="Label" parent="Menus/AtrributeSelectors/VBoxContainer/ProxyToggle"]
+layout_mode = 2
+text = "Is Proxy:"
+label_settings = SubResource("LabelSettings_w0kd7")
+
+[node name="CheckBox" type="CheckBox" parent="Menus/AtrributeSelectors/VBoxContainer/ProxyToggle"]
+layout_mode = 2
+focus_mode = 0
 
 [node name="AttackPicker" type="Control" parent="Menus"]
 visible = false
@@ -1528,6 +1535,7 @@ press_db_offset = 0.0
 [connection signal="text_changed" from="Menus/AtrributeSelectors/VBoxContainer/NameSelectorPlural/LineEdit" to="." method="set_plural_name"]
 [connection signal="value_changed" from="Menus/AtrributeSelectors/VBoxContainer/LevelMinimum/HSlider" to="." method="set_minimum_level"]
 [connection signal="value_changed" from="Menus/AtrributeSelectors/VBoxContainer/LevelMaximum/HSlider" to="." method="set_maximum_level"]
+[connection signal="toggled" from="Menus/AtrributeSelectors/VBoxContainer/ProxyToggle/CheckBox" to="." method="proxy_toggled"]
 [connection signal="pressed" from="Menus/BattlePhraseEditor/Panel/AddButton" to="." method="add_battle_phrase"]
 [connection signal="pressed" from="Header/NewButton" to="." method="new_pressed"]
 [connection signal="pressed" from="Header/SaveButton" to="." method="save_file"]

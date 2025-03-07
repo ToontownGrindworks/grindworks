@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://dmv7dbgr2b2nr"]
 
-[ext_resource type="Script" path="res://objects/obstacles/lava_floor/lava_floor.gd" id="1_bia8b"]
+[ext_resource type="Script" uid="uid://0v6jh8nv5lnx" path="res://objects/obstacles/lava_floor/lava_floor.gd" id="1_bia8b"]
 
 [node name="LavaFloor" type="Area3D"]
 collision_mask = 2

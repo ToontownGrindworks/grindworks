@@ -119,7 +119,7 @@ func begin_turn():
 func run_actions():
 	# Iterate through batte actions
 	while not round_actions.is_empty():
-		await TaskMgr.delay(0.05)
+		await Task.delay(0.05)
 		current_action = round_actions.pop_front()
 		if current_action == null:
 			continue
@@ -259,11 +259,22 @@ func end_battle() -> void:
 	s_round_ended.emit()
 	s_battle_ended.emit()
 
+func is_target_dead(target: Node3D) -> bool:
+	var health_ratio: float = float(target.stats.hp) / float(target.stats.max_hp)
+
+	if target is Cog and Util.get_player() and not is_equal_approx(Util.get_player().stats.cog_hp_death_threshold, 0.0):
+		if target.stats.hp > 0 and health_ratio <= Util.get_player().stats.cog_hp_death_threshold:
+			# Need to force the hp to 0 with this condition or there are PROBLEMS!!
+			target.stats.hp = 0
+			BattleService.s_cog_died_early.emit(target)
+			return true
+	return target.stats.hp <= 0
+
 # If you need to check for multiple potentially dead targets
 func check_pulses(targets):
 	var dead_guys := []
 	for target in targets:
-		if target.stats.hp <= 0:
+		if is_target_dead(target):
 			dead_guys.append(target)
 	for i in dead_guys.size():
 		someone_died(dead_guys[i])
@@ -276,7 +287,7 @@ func sleep(seconds: float):
 	await get_tree().create_timer(seconds).timeout
 
 func barrier(_signal: Signal, timeout: float = 10.0) -> Signal:
-	return SignalBarrier.new([_signal, TaskMgr.delay(timeout)], SignalBarrier.BarrierType.ANY).s_complete
+	return SignalBarrier.new([_signal, Task.delay(timeout)], SignalBarrier.BarrierType.ANY).s_complete
 
 ## Returns a positive value if it deals damage, negative if it heals.
 func affect_target(target: Node3D, stat: String, amount: float, multiply: bool, ignore_current_action := false) -> int:
@@ -315,7 +326,7 @@ func affect_target(target: Node3D, stat: String, amount: float, multiply: bool, 
 			if (current_action and current_action.user and current_action.user is Player) and (not target is Player) and amount > 0:
 				should_crit = roll_for_crit(current_action)
 				if should_crit:
-					amount = roundi(amount * battle_stats[current_action.user].crit_mult)
+					amount = roundi(amount * battle_stats[current_action.user].get_stat("crit_mult"))
 			target.stats.set(stat, pre_stat - amount)
 			if sign(target.stats.get(stat) - pre_stat) == -1:
 				if target is Player:
@@ -330,13 +341,13 @@ func affect_target(target: Node3D, stat: String, amount: float, multiply: bool, 
 				else:
 					if should_crit:
 						raise_height = 0.4
-						string = str("%s\nCRIT!" % -amount)
+						string = str("%s\nCRIT!" % -roundi(amount))
 						text_color = BattleText.colors.yellow[0]
 						outline_color = BattleText.colors.yellow[1]
 						AudioManager.play_sound(RandomService.array_pick_random('true_random', CRIT_SFX))
 						BattleService.s_toon_crit.emit()
 					else:
-						string = str(-amount)
+						string = str(-roundi(amount))
 						if current_action and current_action.user is Player:
 							BattleService.s_toon_didnt_crit.emit()
 					if current_action and current_action.user is Player and target is Cog:
@@ -344,7 +355,7 @@ func affect_target(target: Node3D, stat: String, amount: float, multiply: bool, 
 			else:
 				text_color = Color('00ff00')
 				outline_color = Color('007100')
-				string = '+' + str(target.stats.get(stat) - pre_stat)
+				string = '+' + str(roundi(target.stats.get(stat) - pre_stat))
 	if text_color:
 		battle_text(target, string, text_color, outline_color, raise_height)
 	else:
@@ -356,7 +367,7 @@ func affect_target(target: Node3D, stat: String, amount: float, multiply: bool, 
 			Util.get_player().boost_queue.queue_text.callv(boost_text_arr)
 		current_action.stored_boost_text = []
 
-	return amount
+	return roundi(amount)
 
 func battle_text(target, string, text_color: Color = Color('ff0000'), outline_color: Color = Color('7a0000'), raise_height := 0.0):
 	var txt = load('res://objects/battle/3d_text/3d_text.tscn').instantiate()
@@ -390,7 +401,7 @@ func get_damage(damage: float, action: BattleAction, target: Node3D) -> int:
 	var boosted_damage := float(damage) * dmg_boost
 
 	if user is Player:
-		var user_stats: PlayerStats = user.stats
+		var user_stats: PlayerStats = battle_stats[user]
 		if action is GagLure:
 			boosted_damage *= user_stats.gag_effectiveness['Trap']
 		elif action is GagSound:
@@ -552,7 +563,7 @@ func renew_status_effects():
 			await expire_status_effect(effect)
 		elif effect.rounds > 0:
 			effect.rounds -= 1
-		await TaskMgr.delay(0.05)
+		await Task.delay(0.05)
 
 ## Removes all effects with no targets
 func audit_status_effects() -> void:
@@ -717,5 +728,5 @@ func create_v2_cog(cog: Cog) -> Cog:
 	new_cog.battle_start()
 	new_cog.hide()
 	add_cog(new_cog)
-	TaskMgr.delay(6.0).connect(new_cog.show)
+	Task.delay(6.0).connect(new_cog.show)
 	return new_cog

@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="DepartmentFloor" load_steps=42 format=3 uid="uid://c0m70b5ovs2i3"]
 
-[ext_resource type="Script" path="res://scenes/game_floor/department_floors/department_floor.gd" id="1_0g203"]
+[ext_resource type="Script" uid="uid://bs13ap551050v" path="res://scenes/game_floor/department_floors/department_floor.gd" id="1_0g203"]
 [ext_resource type="AudioStream" uid="uid://c5x454f48rd1p" path="res://audio/music/BossBot_CEO_v1.ogg" id="1_01kaf"]
 [ext_resource type="AudioStream" uid="uid://jcuoj1vwt87o" path="res://audio/music/Bossbot_Factory_v1.ogg" id="2_6f5q8"]
 [ext_resource type="AudioStream" uid="uid://b7vfh3lu12ew2" path="res://audio/music/Bossbot_Factory_v2.ogg" id="2_ulnjd"]
@@ -8,7 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://bck84ftelia7y" path="res://objects/modules/cgc/variants/cgc_fairway_battle.tscn" id="3_vwifd"]
 [ext_resource type="PackedScene" uid="uid://dyu8ektwg1iyh" path="res://objects/modules/cgc/variants/cgc_mole_room_battle.tscn" id="4_ad3pl"]
 [ext_resource type="PackedScene" uid="uid://dpbpe64cp628v" path="res://objects/modules/cgc/base_rooms/cgc_conector1.tscn" id="4_posks"]
-[ext_resource type="Script" path="res://objects/modules/facility_room.gd" id="5_6sw3f"]
+[ext_resource type="Script" uid="uid://dhyadt7p1gv78" path="res://objects/modules/facility_room.gd" id="5_6sw3f"]
 [ext_resource type="PackedScene" uid="uid://vqyn38aio7i2" path="res://objects/modules/cgc/variants/cgc_mole_stomp.tscn" id="8_7dl2x"]
 [ext_resource type="PackedScene" uid="uid://bs4e6ma7thn53" path="res://objects/modules/cgc/base_rooms/cgc_connector_2.tscn" id="8_fxemb"]
 [ext_resource type="PackedScene" uid="uid://bn5ivmft0p2vy" path="res://objects/modules/cgc/variants/cgc_entrance_standard.tscn" id="8_iwjji"]

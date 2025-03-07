@@ -1,5 +1,6 @@
-[gd_resource type="Resource" script_class="CogPool" load_steps=10 format=3 uid="uid://b14s6jiqdlynh"]
+[gd_resource type="Resource" script_class="CogPool" load_steps=11 format=3 uid="uid://b14s6jiqdlynh"]
 
+[ext_resource type="Script" uid="uid://okjbx502s3r5" path="res://objects/cog/cogdna.gd" id="1_0kloe"]
 [ext_resource type="Resource" uid="uid://deum0qw8ucod3" path="res://objects/cog/presets/cashbot/short_change.tres" id="1_6ecc5"]
 [ext_resource type="Resource" uid="uid://uduwri1drnbo" path="res://objects/cog/presets/cashbot/penny_pincher.tres" id="2_cd6jr"]
 [ext_resource type="Resource" uid="uid://damgl643aokb3" path="res://objects/cog/presets/cashbot/tightwad.tres" id="3_y6s4x"]
@@ -8,8 +9,8 @@
 [ext_resource type="Resource" uid="uid://c8mjcydt684s6" path="res://objects/cog/presets/cashbot/money_bags.tres" id="6_1cdwu"]
 [ext_resource type="Resource" uid="uid://bhkr2rukaqiv6" path="res://objects/cog/presets/cashbot/loan_shark.tres" id="7_lhf8h"]
 [ext_resource type="Resource" uid="uid://dijh2jf6717ci" path="res://objects/cog/presets/cashbot/robber_baron.tres" id="8_uaihg"]
-[ext_resource type="Script" path="res://objects/cog/cog_pool.gd" id="9_nj0dt"]
+[ext_resource type="Script" uid="uid://ocitcstc3bru" path="res://objects/cog/cog_pool.gd" id="9_nj0dt"]
 
 [resource]
 script = ExtResource("9_nj0dt")
-cogs = Array[Resource("res://objects/cog/cogdna.gd")]([ExtResource("1_6ecc5"), ExtResource("2_cd6jr"), ExtResource("3_y6s4x"), ExtResource("4_bqcfk"), ExtResource("5_f0jb5"), ExtResource("6_1cdwu"), ExtResource("7_lhf8h"), ExtResource("8_uaihg")])
+cogs = Array[ExtResource("1_0kloe")]([ExtResource("1_6ecc5"), ExtResource("2_cd6jr"), ExtResource("3_y6s4x"), ExtResource("4_bqcfk"), ExtResource("5_f0jb5"), ExtResource("6_1cdwu"), ExtResource("7_lhf8h"), ExtResource("8_uaihg")])

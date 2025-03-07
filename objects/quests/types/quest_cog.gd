@@ -130,10 +130,22 @@ func participant_died(participant : Node3D) -> void:
 	if current_amount == quota:
 		s_quest_complete.emit()
 
-func get_icon() -> Texture2D:
+func uses_3d_model() -> bool:
 	if specific_cog:
-		return await Util.get_cog_head_icon(specific_cog)
-	elif not department == CogDNA.CogDept.NULL:
+		return true
+
+	return false
+
+func get_3d_model() -> Node3D:
+	if not specific_cog:
+		return Node3D.new()
+
+	var head: Node3D = specific_cog.get_head()
+	head.scale = specific_cog.head_scale
+	return head
+
+func get_icon() -> Texture2D:
+	if not department == CogDNA.CogDept.NULL:
 		return Cog.get_department_emblem(department)
 	else:
 		return FALLBACK_ICON

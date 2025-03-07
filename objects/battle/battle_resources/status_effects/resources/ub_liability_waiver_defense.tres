@@ -1,7 +1,7 @@
 [gd_resource type="Resource" script_class="UBLiabilityWaiverDefense" load_steps=3 format=3 uid="uid://b2n41ksg5qn4k"]
 
 [ext_resource type="Texture2D" uid="uid://cos47pgy467h3" path="res://ui_assets/battle/statuses/liability_waiver.png" id="1_sp4gr"]
-[ext_resource type="Script" path="res://objects/battle/battle_resources/status_effects/boss_effects/ub_liability_waiver_defense.gd" id="2_6ipeu"]
+[ext_resource type="Script" uid="uid://f0p3vma15agr" path="res://objects/battle/battle_resources/status_effects/boss_effects/ub_liability_waiver_defense.gd" id="2_6ipeu"]
 
 [resource]
 script = ExtResource("2_6ipeu")

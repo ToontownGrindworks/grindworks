@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=3 uid="uid://d3br8qv0sep7h"]
 
 [ext_resource type="Texture2D" uid="uid://4415lam3y8re" path="res://models/facilities/cgc/textures/CogHedgeVine.png" id="1_064ew"]
-[ext_resource type="Script" path="res://objects/props/cgc/tree_1.gd" id="2_wns8t"]
+[ext_resource type="Script" uid="uid://bby8xu4hfek24" path="res://objects/props/cgc/tree_1.gd" id="2_wns8t"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0r4am"]
 transparency = 1

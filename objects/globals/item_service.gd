@@ -26,26 +26,24 @@ func reset() -> void:
 	items_in_play.clear()
 
 func get_random_item(pool: ItemPool, override_rolls := false) -> Item:
-	
 	## Rolls to force progression items when they're needed:
 	if not override_rolls:
-		
 		# Gag roll
 		var gag_roll := RandomService.randf_channel("gag_rolls")
-		print('gag rate is '+str(get_gag_rate())+' gag roll is '+str(gag_roll))
+		print('Gag rate is ' + str(get_gag_rate()) + ' Gag roll is ' + str(gag_roll))
 		if gag_roll < get_gag_rate():
-			print('forcing gag spawn')
+			print('Forcing gag spawn')
 			return load('res://objects/items/resources/passive/track_frame.tres')
 		# Laff roll
 		var laff_roll := RandomService.randf_channel("laff_rolls")
-		print('laff rate is %f, and laff roll is %f' % [get_laff_rate(), laff_roll])
+		print('Laff rate is %f, and Laff roll is %f' % [get_laff_rate(), laff_roll])
 		if laff_roll < get_laff_rate():
-			print('forcing laff spawn')
+			print('Forcing laff spawn')
 			return load('res://objects/items/resources/passive/laff_boost.tres')
 		var bean_roll := RandomService.randf_channel("bean_rolls")
-		print('bean rate is %f and bean roll is %f' % [get_bean_rate(), bean_roll])
+		print('Bean rate is %f and bean roll is %f' % [get_bean_rate(), bean_roll])
 		if bean_roll < get_bean_rate():
-			print('forcing bean spawn')
+			print('Forcing bean spawn')
 			return get_random_item(BEAN_POOL, true)
 	
 	# Trim out all seen items from pool
@@ -56,24 +54,48 @@ func get_random_item(pool: ItemPool, override_rolls := false) -> Item:
 	
 	# If no item can be given to the player, just give them treasure
 	if trimmed_pool.size() == 0:
-		return load('res://objects/items/resources/passive/ice_cream_treasure.tres')
-	
+		return get_random_roll_fail_item()
+
 	# Quality-scaled rarities
-	var quality_trimmed_pool : Array[Item] = []
-	var qualitoon_goal := 0
-	while RandomService.randi_channel('item_quality_roll')%100 < 85 and qualitoon_goal < 5:
-		qualitoon_goal+=1
-	for item in trimmed_pool:
-		var qualitoon := int(item.qualitoon_rarity)
-		if qualitoon == Item.QualitoonRating.NIL:
-			qualitoon = int(item.qualitoon)
-		if qualitoon <= qualitoon_goal:
-			quality_trimmed_pool.append(item)
-	
+	var quality_trimmed_pool: Array[Item] = []
+	var rarity_goal: int = 0
+	# Rarity goal determines what item rarities we want to allow into the pool.
+	# Once the rarity goal is determined, any item up to and including that rarity can be drawn.
+	# Include Q1: 100%
+	# Include Q2: 80%
+	# Include Q3: 64%
+	# Include Q4: 51.2%
+	# Include Q5: 41%
+	# Include Q6: 32.8%
+	# Include Q7: 26.2%
+	# If a low rarity is drawn that has no items available, there is a continuous 50% chance to upgrade to the next rarity.
+	# If this fails, a random treasure will be given to the player instead.
+	while RandomService.randi_channel('item_quality_roll') % 100 < 80 and rarity_goal < Item.Rarity.values().max():
+		rarity_goal += 1
+
+	var is_first_roll := true
+	while quality_trimmed_pool.is_empty() and (is_first_roll or RandomService.randf_channel('item_quality_roll') < 0.5) and rarity_goal <= Item.Rarity.values().max():
+		if is_first_roll:
+			is_first_roll = false
+		else:
+			rarity_goal += 1
+
+		for item: Item in trimmed_pool:
+			var rarity: Item.Rarity = item.rarity
+			if rarity == Item.Rarity.NIL:
+				rarity = Item.QualityToRarity[item.qualitoon]
+			if Item.RarityToRolls[rarity] <= rarity_goal:
+				quality_trimmed_pool.append(item)
+
+	# If STILL no item can be given to the player, just give them treasure
 	if quality_trimmed_pool.is_empty():
-		return load('res://objects/items/resources/passive/ice_cream_treasure.tres')
-	else:
-		return quality_trimmed_pool[RandomService.randi_channel(pool.resource_name)%quality_trimmed_pool.size()]
+		print("Empty quality-trimmed pool. Spawning fallback.")
+		return get_random_roll_fail_item()
+
+	return RandomService.array_pick_random('item_rolls', quality_trimmed_pool)
+
+func get_random_roll_fail_item() -> Item:
+	return get_random_item(load("res://objects/items/pools/item_roll_fails.tres"), true)
 
 func seen_item(item: Item):
 	if not item in seen_items:

@@ -1,7 +1,7 @@
 [gd_resource type="Resource" script_class="ItemPool" load_steps=7 format=3 uid="uid://dixbsy1ngy5xs"]
 
-[ext_resource type="Script" path="res://objects/items/classes/item.gd" id="1_r8bar"]
-[ext_resource type="Script" path="res://objects/items/classes/item_pool.gd" id="2_qetba"]
+[ext_resource type="Script" uid="uid://combwqypom1ru" path="res://objects/items/classes/item.gd" id="1_r8bar"]
+[ext_resource type="Script" uid="uid://wiibpvvki8vs" path="res://objects/items/classes/item_pool.gd" id="2_qetba"]
 [ext_resource type="Resource" uid="uid://dqvuaib7ycu2y" path="res://objects/items/resources/passive/candies/candy_super_damage.tres" id="2_tbc4u"]
 [ext_resource type="Resource" uid="uid://dyxf8l3n5r0vb" path="res://objects/items/resources/passive/candies/candy_super_defense.tres" id="3_ycb1k"]
 [ext_resource type="Resource" uid="uid://drm7n8ce5entv" path="res://objects/items/resources/passive/candies/candy_super_evasiveness.tres" id="4_lesst"]

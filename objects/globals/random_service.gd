@@ -25,7 +25,7 @@ func get_channel_seed(channel_name: String) -> int:
 
 func increment_channel(channel_name: String) -> void:
 	if not channel_name == "base_seed" and channels.has(channel_name):
-		channels[channel_name] += 1
+		channels[channel_name] = str(channels[channel_name] + 1).hash()
 
 func generate_seed() -> int:
 	randomize()
@@ -73,6 +73,15 @@ func array_pick_random(channel_name: String, array: Array):
 	seed(base_seed)
 	increment_channel(channel_name)
 	return ret
+
+func random_weights(channel: String, dict: Dictionary):
+	var weight_sum: float = dict.values().reduce(func (x, y): return x + y)
+	var weight_rng: float = randf_channel(channel) * weight_sum
+	var total: float = 0
+	for key in dict.keys():
+		total += dict[key]
+		if total >= weight_rng:
+			return key
 
 func _ready() -> void: 
 	generate_seed()

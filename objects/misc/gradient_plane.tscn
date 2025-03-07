@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://b860ba06jbjwm"]
 
 [ext_resource type="Texture2D" uid="uid://bl6lm6ttgsfmi" path="res://objects/misc/gradient.png" id="1_juohp"]
-[ext_resource type="Script" path="res://objects/misc/gradient_plane.gd" id="2_1af8m"]
+[ext_resource type="Script" uid="uid://fra8t7nespnx" path="res://objects/misc/gradient_plane.gd" id="2_1af8m"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_srwjb"]
 resource_local_to_scene = true

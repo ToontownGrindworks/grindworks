@@ -15,10 +15,10 @@
 [ext_resource type="Resource" uid="uid://j75am6rbrvrj" path="res://objects/items/pools/progressives.tres" id="13_at5x7"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_0akml"]
-size = Vector3(12.0627, 4.10962, 10.9252)
+size = Vector3(15.087, 20.3477, 10.9252)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_q3bqs"]
-size = Vector3(11.6777, 4.3508, 8.6762)
+size = Vector3(14.3852, 12.1217, 8.6762)
 
 [node name="OfficeBattleRoom" instance=ExtResource("1_sgdmf")]
 
@@ -29,7 +29,7 @@ transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 0, 
 cogs = [NodePath("Cog2"), NodePath("Cog")]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Battles/BattleNode" index="2"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0448623, 2.13196, 0.119884)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.891198, 10.251, 0.119884)
 shape = SubResource("BoxShape3D_0akml")
 
 [node name="Cog" parent="Battles/BattleNode" index="3" instance=ExtResource("3_5tbv4")]
@@ -43,7 +43,7 @@ transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -2.859
 cogs = [NodePath("Cog"), NodePath("Cog2"), NodePath("Cog3")]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Battles/BattleNode2" index="2"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.147662, 2.25447, 1.33647)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.685585, 6.13991, 1.33647)
 shape = SubResource("BoxShape3D_q3bqs")
 
 [node name="Cog" parent="Battles/BattleNode2" index="3" instance=ExtResource("3_5tbv4")]

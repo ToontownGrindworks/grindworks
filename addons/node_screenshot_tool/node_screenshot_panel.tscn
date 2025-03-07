@@ -1,6 +1,6 @@
 [gd_scene load_steps=12 format=3 uid="uid://0n7vqdtlmtr1"]
 
-[ext_resource type="Script" path="res://addons/node_screenshot_tool/node_screenshot_panel.gd" id="1_g74om"]
+[ext_resource type="Script" uid="uid://8rjfiq5gw4tu" path="res://addons/node_screenshot_tool/node_screenshot_panel.gd" id="1_g74om"]
 [ext_resource type="Environment" uid="uid://dfbffixgqukix" path="res://scenes/game_floor/default_environment.tres" id="2_n4ja1"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xdgv7"]

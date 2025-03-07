@@ -39,12 +39,13 @@ func set_platform_mat(material: StandardMaterial3D) -> void:
 	platform_mesh.set_surface_override_material(1, material)
 	platform_mesh.set_surface_override_material(2, material)
 
-func _physics_process(delta : float) -> void:
+func _process(delta: float) -> void:
 	# UV scroll
 	platform_mat.uv1_offset.y -= (speed / 3.0) * delta
 	if ceil(abs(platform_mat.uv1_offset.y)) - abs(platform_mat.uv1_offset.y) < 0.01:
 		platform_mat.uv1_offset.y = 0.0
-	
+
+func _physics_process(_delta: float) -> void:
 	# Set the constant velocity based on the object's rotation
 	var rot := global_rotation.y
 	var base_velocity := Vector3(0.0, 0.0, speed)

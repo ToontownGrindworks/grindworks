@@ -2,6 +2,7 @@ extends ItemScript
 
 const STAGGER_TIME := 0.5
 const HEAL_AMT := 0.8
+const DMG_BOOST := 0.5
 
 var health_monitoring := false
 var current_hp := 0
@@ -73,9 +74,9 @@ func hp_changed(hp: int) -> void:
 	
 	if sign(current_hp - previous_hp) == -1:
 		if inverted:
-			boost -= ceili((abs(current_hp - previous_hp)) * 0.75)
+			boost -= ceili((abs(current_hp - previous_hp)) * DMG_BOOST)
 		else:
-			boost += ceili((abs(current_hp - previous_hp)) * 0.75)
+			boost += ceili((abs(current_hp - previous_hp)) * DMG_BOOST)
 		print("Moe Zart: Boost set to %d" % boost)
 
 func participant_died(participant: Node3D) -> void:
@@ -94,7 +95,7 @@ func queue_heal(amount: int) -> void:
 func run_heal(amount: int) -> void:
 	do_heal(amount)
 	can_queue_heal = false
-	await TaskMgr.delay(STAGGER_TIME)
+	await Task.delay(STAGGER_TIME)
 	if heal_queue.is_empty():
 		can_queue_heal = true
 	else:

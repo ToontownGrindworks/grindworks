@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://cov8sw7eluipo"]
 
-[ext_resource type="Script" path="res://objects/obstacles/stomper/stomper.gd" id="1_5ymn8"]
+[ext_resource type="Script" uid="uid://dgm8xffhe5pw4" path="res://objects/obstacles/stomper/stomper.gd" id="1_5ymn8"]
 
 [node name="Stomper" type="Node3D"]
 script = ExtResource("1_5ymn8")

@@ -2,13 +2,10 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bythf5q8i162t"
+uid="uid://cxhypcs84lvk5"
 path="res://.godot/imported/tt_m_chr_avt_acc_hat_policeHat_tt_t_chr_avt_acc_hat_policeHat.png-a42879263b8fafd09899a0a889ddaaae.ctex"
 metadata={
 "vram_texture": false
-}
-generator_parameters={
-"md5": "c7dae59761fbfc1f8ad31aef02eb47be"
 }
 
 [deps]
@@ -19,7 +16,7 @@ dest_files=["res://.godot/imported/tt_m_chr_avt_acc_hat_policeHat_tt_t_chr_avt_a
 [params]
 
 compress/mode=3
-compress/high_quality=false
+compress/high_quality=true
 compress/lossy_quality=0.7
 compress/hdr_compression=1
 compress/normal_map=0

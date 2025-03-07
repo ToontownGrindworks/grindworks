@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="ItemPool" load_steps=9 format=3 uid="uid://bk0jiiuypfye1"]
+
+[ext_resource type="Script" uid="uid://combwqypom1ru" path="res://objects/items/classes/item.gd" id="1_ftruq"]
+[ext_resource type="Script" uid="uid://wiibpvvki8vs" path="res://objects/items/classes/item_pool.gd" id="2_actsy"]
+[ext_resource type="Resource" uid="uid://cpk24jes1t7we" path="res://objects/items/resources/passive/ice_cream_treasure.tres" id="2_psoa7"]
+[ext_resource type="Resource" uid="uid://bbt6o1b1xao18" path="res://objects/items/resources/passive/starfish_treasure.tres" id="3_wpnjd"]
+[ext_resource type="Resource" uid="uid://d0n6coya2868f" path="res://objects/items/resources/passive/flower_treasure.tres" id="4_h1xoi"]
+[ext_resource type="Resource" uid="uid://c8yh80vqngv1b" path="res://objects/items/resources/passive/music_treasure.tres" id="5_n4a6u"]
+[ext_resource type="Resource" uid="uid://ck66os8hfom1c" path="res://objects/items/resources/passive/snowflake_treasure.tres" id="6_lqx3p"]
+[ext_resource type="Resource" uid="uid://duygfpffob40k" path="res://objects/items/resources/passive/zzz_treasure.tres" id="7_2wqhk"]
+
+[resource]
+script = ExtResource("2_actsy")
+items = Array[ExtResource("1_ftruq")]([ExtResource("2_psoa7"), ExtResource("3_wpnjd"), ExtResource("4_h1xoi"), ExtResource("5_n4a6u"), ExtResource("6_lqx3p"), ExtResource("7_2wqhk")])
+metadata/_custom_type_script = "uid://wiibpvvki8vs"

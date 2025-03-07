@@ -22,7 +22,7 @@ var buttons_pressed := 0
 func _ready() -> void:
 	base_elevator_y = elevator.position.y
 	var elevator_transform := elevator.transform
-	await TaskMgr.delay(3.0)
+	await Task.delay(3.0)
 	elevator.transform = elevator_transform
 
 func body_entered(body: Node3D) -> void:

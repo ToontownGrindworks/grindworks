@@ -1,6 +1,6 @@
 [gd_scene load_steps=20 format=3 uid="uid://cumojo4vtowmv"]
 
-[ext_resource type="Script" path="res://objects/toon/laff_meter.gd" id="1_k1sjt"]
+[ext_resource type="Script" uid="uid://plr0fl4706tw" path="res://objects/toon/laff_meter.gd" id="1_k1sjt"]
 [ext_resource type="Texture2D" uid="uid://dy5ow0hhwlmlw" path="res://ui_assets/player_ui/laff_meter/dog.png" id="2_0oixq"]
 [ext_resource type="Texture2D" uid="uid://csw1srjt6dik3" path="res://ui_assets/player_ui/laff_meter/laff_eyes.png" id="2_3paw8"]
 [ext_resource type="Texture2D" uid="uid://p82unmxrapek" path="res://ui_assets/player_ui/laff_meter/LM_frown.png" id="3_gnyfo"]
@@ -79,8 +79,8 @@ tracks/1/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_5ij2f"]
 _data = {
-"RESET": SubResource("Animation_xd5is"),
-"bounce": SubResource("Animation_ai162")
+&"RESET": SubResource("Animation_xd5is"),
+&"bounce": SubResource("Animation_ai162")
 }
 
 [node name="LaffMeter" type="Control"]

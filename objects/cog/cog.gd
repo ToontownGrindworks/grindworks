@@ -201,18 +201,17 @@ func roll_for_dna() -> void:
 
 func get_attacks() -> Array[CogAttack]:
 	var atk: Array[CogAttack] = []
-	# Allow for override of a Cog's attacks if one would so choose
 	atk = dna.attacks
-	
-	# Failsafe for spawning with no attacks
-	if atk.is_empty():
-		var failsafe_attack := PickPocket.new()
-		failsafe_attack.action_name = "ERR: COG HAS NO ATTACKS"
-		failsafe_attack.summary = "This is actually a bug."
-		failsafe_attack.attack_lines = ["Boy, I really hope someone got fired for that blunder."]
-		atk.append(failsafe_attack)
-	
 	return atk
+
+func get_debug_attack() -> PickPocket:
+	var failsafe_attack := PickPocket.new()
+	failsafe_attack.action_name = "ERR: COG HAS NO ATTACKS"
+	failsafe_attack.summary = "This is actually a bug."
+	failsafe_attack.attack_lines = ["Boy, I really hope someone got fired for that blunder."]
+	failsafe_attack.user = self
+	failsafe_attack.targets = get_targets(failsafe_attack.target_type)
+	return
 
 ## Scales the Cog's stats based on its level
 func set_up_stats() -> void:
@@ -393,6 +392,9 @@ func get_attack() -> CogAttack:
 	if stunned:
 		return null
 	else:
+		if attacks.size() == 0:
+			return get_debug_attack()
+		
 		var attack: CogAttack = attacks[RandomService.randi_channel('true_random') % attacks.size()].duplicate()
 		attack.user = self
 		attack.damage += get_damage_boost()

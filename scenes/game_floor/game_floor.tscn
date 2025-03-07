@@ -1,6 +1,6 @@
 [gd_scene load_steps=7 format=3 uid="uid://bqwsksiexwsjb"]
 
-[ext_resource type="Script" path="res://scenes/game_floor/game_floor.gd" id="1_wq628"]
+[ext_resource type="Script" uid="uid://cew6qsyark53w" path="res://scenes/game_floor/game_floor.gd" id="1_wq628"]
 [ext_resource type="Resource" uid="uid://d3bnj680tmqdo" path="res://scenes/game_floor/floor_variants/base_floors/cog_golf_course.tres" id="2_nl7ln"]
 [ext_resource type="PackedScene" uid="uid://cc7m72lopmrgg" path="res://objects/general_ui/anomaly_tracker/anomaly_tracker.tscn" id="3_2oy21"]
 [ext_resource type="Resource" uid="uid://bnubj377geur5" path="res://objects/cog/presets/pools/grunt_cogs.tres" id="3_6rlqe"]

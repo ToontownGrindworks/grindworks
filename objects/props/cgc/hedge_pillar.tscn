@@ -1,7 +1,7 @@
 [gd_scene load_steps=50 format=4 uid="uid://pn7r3ut085aw"]
 
-[ext_resource type="Texture2D" uid="uid://csi8gmbinwmx1" path="res://models/facilities/cgc/textures/StoneWall1e.png" id="1_skvam"]
-[ext_resource type="Texture2D" uid="uid://dnaqvfhc07vcf" path="res://models/facilities/cgc/textures/BQ_Fireplace_1.png" id="2_fhgie"]
+[ext_resource type="Texture2D" uid="uid://csmkpukc6maca" path="res://models/facilities/cgc/textures/StoneWall1e.png" id="1_skvam"]
+[ext_resource type="Texture2D" uid="uid://bep7r50vkeks6" path="res://models/facilities/cgc/textures/BQ_Fireplace_1.png" id="2_fhgie"]
 [ext_resource type="Material" uid="uid://do7bpsdy2nk" path="res://models/facilities/cgc/materials/branch_mat.tres" id="3_401bj"]
 [ext_resource type="Material" uid="uid://bv4ojtkb3obxf" path="res://models/facilities/cgc/materials/hedge_mat_full.tres" id="4_0vgtg"]
 [ext_resource type="Material" uid="uid://c3vi6h4mq71ow" path="res://models/facilities/cgc/materials/hedge_mat_partial.tres" id="5_08gt0"]

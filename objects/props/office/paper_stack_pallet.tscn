@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://bsov0c5ailqgh"]
 
-[ext_resource type="PackedScene" uid="uid://bncb8udy8wyk3" path="res://models/props/facility_objects/da_office/paper_stack_pallet/paper_stack_pallet.fbx" id="1_jmgyo"]
+[ext_resource type="PackedScene" uid="uid://cc3cl0ysiuupf" path="res://models/props/facility_objects/da_office/paper_stack_pallet/paper_stack_pallet.fbx" id="1_jmgyo"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_n2o3b"]
 size = Vector3(4.80029, 0.585815, 4.08246)

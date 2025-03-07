@@ -5,7 +5,7 @@ const LABEL_SETTINGS_TITLE := preload("res://scenes/title_screen/release_notes/r
 const LABEL_SETTINGS_ENTRY := preload("res://scenes/title_screen/release_notes/releases_entry_settings.tres")
 
 @export var release_version: String
-@export_multiline var notes: Array[String] = []
+@export_multiline var notes: String
 
 func make_label_for_note(note: String) -> Label:
 	var new_label := Label.new()

@@ -2,10 +2,10 @@
 
 [ext_resource type="PackedScene" uid="uid://bbpa14c3mhbii" path="res://models/facilities/mint/mint_conveyor_room.fbx" id="1_3hn8j"]
 [ext_resource type="Texture2D" uid="uid://2yv2gsrwpljc" path="res://models/facilities/mint/textures/CementFloorx4.png" id="2_cncj2"]
-[ext_resource type="Script" path="res://objects/modules/mint/base_rooms/mint_conveyor_room.gd" id="2_m2mgh"]
+[ext_resource type="Script" uid="uid://bxhii68t1wesv" path="res://objects/modules/mint/base_rooms/mint_conveyor_room.gd" id="2_m2mgh"]
 [ext_resource type="Texture2D" uid="uid://do8mo6ao1sm0e" path="res://models/facilities/factory/FINALFACTORY_66.png" id="3_1kqjs"]
 [ext_resource type="Texture2D" uid="uid://dlb57gt3f7n2q" path="res://models/facilities/mint/textures/CB_Glass.png" id="3_c4x01"]
-[ext_resource type="Texture2D" uid="uid://yv5u8lprdb2f" path="res://models/facilities/mint/textures/LocomotiveSide5.png" id="4_jkybm"]
+[ext_resource type="Texture2D" uid="uid://dcasoiu0axwxw" path="res://models/facilities/mint/textures/LocomotiveSide5.png" id="4_jkybm"]
 [ext_resource type="Texture2D" uid="uid://cl67spfbv4ht1" path="res://models/facilities/mint/textures/MagnetControl.png" id="5_d7l0k"]
 [ext_resource type="Texture2D" uid="uid://brracvf0fwcfn" path="res://models/facilities/mint/textures/PaintedWall.png" id="5_fqqp6"]
 [ext_resource type="Texture2D" uid="uid://b2bemkg545ldp" path="res://models/facilities/mint/textures/FINALFACTORY_66.png" id="5_xrlv2"]

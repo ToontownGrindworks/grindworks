@@ -35,5 +35,6 @@ func create_multipliers() -> void:
 		var mult := StatMultiplier.new()
 		mult.stat = stat
 		mult.amount = 0.0
+		mult.additive = true
 		multipliers.append(mult)
 		Util.get_player().stats.multipliers.append(mult)

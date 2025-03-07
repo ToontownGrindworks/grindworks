@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://dg0htgo4qjau2"]
 
-[ext_resource type="Script" path="res://objects/obstacles/elevating_platform/elevating_platform.gd" id="1_dpbgj"]
+[ext_resource type="Script" uid="uid://wlghymuwvi8o" path="res://objects/obstacles/elevating_platform/elevating_platform.gd" id="1_dpbgj"]
 [ext_resource type="PackedScene" uid="uid://d0o37sg2xvqe6" path="res://models/props/facility_objects/conveyor_platform/platform.glb" id="2_e2ics"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_if7d7"]

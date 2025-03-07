@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=3 uid="uid://rf0cstkfloyf"]
 
 [ext_resource type="PackedScene" uid="uid://cxxprjr32bsro" path="res://models/props/facility_objects/factory/factory_elevator/factory_elevator.fbx" id="1_7glco"]
-[ext_resource type="Script" path="res://objects/interactables/factory_elevator/factory_elevator.gd" id="1_j4a61"]
+[ext_resource type="Script" uid="uid://c02c8d11bjsnp" path="res://objects/interactables/factory_elevator/factory_elevator.gd" id="1_j4a61"]
 [ext_resource type="AudioStream" uid="uid://cs27p1imeklg1" path="res://audio/sfx/misc/CHQ_FACT_elevator_up_down.ogg" id="3_wygux"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_ghnh7"]

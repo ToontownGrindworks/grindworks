@@ -107,7 +107,7 @@ func _physics_process(delta) -> void:
 		GoonState.WALK:
 			# Follow path
 			path_follow.progress_ratio += spd * delta
-			position = starting_pos+ (path_follow.position)
+			position = starting_pos + (path_follow.position)
 			
 			# Detect when a point is reached
 			if not next_point == 0:
@@ -324,9 +324,9 @@ func explode() -> void:
 	explosion.play()
 	explosion.position.y = 0.5
 	explosion.scale *= 4.0
-	await TaskMgr.delay(0.25)
+	await Task.delay(0.25)
 	skeleton.hide()
-	await TaskMgr.delay(0.2)
+	await Task.delay(0.2)
 	explosion.hide()
 	await audio_player.finished
 	queue_free()

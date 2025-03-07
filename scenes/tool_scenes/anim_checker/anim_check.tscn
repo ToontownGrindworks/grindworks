@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://bwm8xbjxw8mo"]
 
-[ext_resource type="Script" path="res://scenes/tool_scenes/anim_checker/anim_check.gd" id="1_w11cp"]
+[ext_resource type="Script" uid="uid://8asix8p5v12o" path="res://scenes/tool_scenes/anim_checker/anim_check.gd" id="1_w11cp"]
 
 [node name="AnimCheck" type="Node"]
 script = ExtResource("1_w11cp")

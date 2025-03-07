@@ -43,10 +43,13 @@ var selected_character: PlayerCharacter
 var random_toon_name := ""
 var elevator: BuildingElevator
 
+@onready var click_label_text: String = %ClickLabel.text
 var releases_menu: UIPanel = null
 
 var has_existing_run: bool:
 	get: return SaveFileService.run_file != null
+
+var is_loading := true
 
 
 func _ready() -> void:
@@ -59,8 +62,12 @@ func _ready() -> void:
 	if Util.stored_try_again_char_name:
 		for character: PlayerCharacter in Globals.TOON_UNLOCK_ORDER:
 			if character.character_name == Util.stored_try_again_char_name:
+				character = character.duplicate()
+				if character.character_name == "RandomToon":
+					character.dna.randomize_dna()
+					character.random_character_stored_name = Globals.get_random_toon_name()
 				Util.stored_try_again_char_name = ""
-				begin_game(character.duplicate(), true)
+				begin_game(character, true)
 				return
 
 	Util.circle_in.call_deferred.bind(10.0)
@@ -82,17 +89,19 @@ func _ready() -> void:
 			get_tree().quit()
 	)
 	
+	%ClickLabel.text = 'Loading...'
+	
 	Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
 	
 	random_toon_name = Globals.get_random_toon_name()
 	
 	Util.floor_number = -1
-	
+
 	var fade_tween := create_tween()
 	fade_tween.tween_property(click_label, 'self_modulate:a', 0.0, 1.0)
 	fade_tween.tween_property(click_label, 'self_modulate:a', 1.0, 1.0)
 	fade_tween.set_loops()
-	
+
 	%VersionLabel.set_text(Globals.VERSION_NUMBER)
 	
 	SaveFileService.load_run()
@@ -105,6 +114,16 @@ func _process(delta: float) -> void:
 		spring_arm.rotation_degrees.y += CAMERA_SPEED * delta
 		if spring_arm.rotation_degrees.y - 360.0 > 0:
 			spring_arm.rotation_degrees.y -= 360.0
+		
+		for loader_ref in LazyLoader.lazy_loaders:
+			var lazy_loader: LazyLoader = loader_ref.get_ref()
+			if lazy_loader and not lazy_loader.is_loaded():
+				return
+
+		if is_loading:
+			is_loading = false
+			%ClickLabel.label_settings.font_color = Color.WHITE
+			%ClickLabel.text = click_label_text
 
 func _input(event) -> void:
 	match state:
@@ -114,7 +133,10 @@ func _input(event) -> void:
 func _input_rotating(event) -> void:
 	if releases_menu or %ReleaseNotesButton.get_global_rect().has_point(get_global_mouse_position()):
 		return
-
+	
+	if is_loading:
+		return
+	
 	if event is InputEventMouseButton:
 		if event.button_index == MOUSE_BUTTON_LEFT and event.pressed:
 			play_pressed()
@@ -142,7 +164,7 @@ func create_toons() -> void:
 	if toons.size() % 2 == 0: starting_point += (TOON_SEPARATION / 2.0)
 	
 	for character : PlayerCharacter in toons:
-		await TaskMgr.delay(0.25)
+		await Task.delay(0.25)
 		var toon := spawn_toon(character)
 		toon_origin.add_child(toon)
 		toon.construct_toon(toon.toon_dna)
@@ -192,7 +214,7 @@ func new_game() -> void:
 	toon_tween.tween_callback(elevator.close)
 	await toon_tween.finished
 	toon_tween.kill()
-	await TaskMgr.delay(3.0)
+	await Task.delay(3.0)
 	if SaveFileService.settings_file.skip_intro:
 		begin_game(selected_character, true)
 	else:

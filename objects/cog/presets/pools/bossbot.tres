@@ -1,5 +1,6 @@
-[gd_resource type="Resource" script_class="CogPool" load_steps=10 format=3 uid="uid://05unenh4dgjs"]
+[gd_resource type="Resource" script_class="CogPool" load_steps=11 format=3 uid="uid://05unenh4dgjs"]
 
+[ext_resource type="Script" uid="uid://okjbx502s3r5" path="res://objects/cog/cogdna.gd" id="1_4llr3"]
 [ext_resource type="Resource" uid="uid://c5dbwjk742di6" path="res://objects/cog/presets/bossbot/flunky.tres" id="1_br6ic"]
 [ext_resource type="Resource" uid="uid://dix6b1st0kqmw" path="res://objects/cog/presets/bossbot/pencil_pusher.tres" id="2_ya1ek"]
 [ext_resource type="Resource" uid="uid://rggq704t8yst" path="res://objects/cog/presets/bossbot/yesman.tres" id="3_ce8v2"]
@@ -8,8 +9,8 @@
 [ext_resource type="Resource" uid="uid://dpqmbcewheqv1" path="res://objects/cog/presets/bossbot/head_hunter.tres" id="6_xwlye"]
 [ext_resource type="Resource" uid="uid://wt32frxolvqs" path="res://objects/cog/presets/bossbot/corporate_raider.tres" id="7_sjmsj"]
 [ext_resource type="Resource" uid="uid://j3g10bkhu2xx" path="res://objects/cog/presets/bossbot/the_big_cheese.tres" id="8_j6pki"]
-[ext_resource type="Script" path="res://objects/cog/cog_pool.gd" id="9_yfd2v"]
+[ext_resource type="Script" uid="uid://ocitcstc3bru" path="res://objects/cog/cog_pool.gd" id="9_yfd2v"]
 
 [resource]
 script = ExtResource("9_yfd2v")
-cogs = Array[Resource("res://objects/cog/cogdna.gd")]([ExtResource("1_br6ic"), ExtResource("2_ya1ek"), ExtResource("3_ce8v2"), ExtResource("4_f02iq"), ExtResource("5_y1dky"), ExtResource("6_xwlye"), ExtResource("7_sjmsj"), ExtResource("8_j6pki")])
+cogs = Array[ExtResource("1_4llr3")]([ExtResource("1_br6ic"), ExtResource("2_ya1ek"), ExtResource("3_ce8v2"), ExtResource("4_f02iq"), ExtResource("5_y1dky"), ExtResource("6_xwlye"), ExtResource("7_sjmsj"), ExtResource("8_j6pki")])

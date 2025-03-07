@@ -1,7 +1,7 @@
 [gd_resource type="Resource" script_class="AchievementQuota" load_steps=3 format=3 uid="uid://cjf1w66jnvpys"]
 
 [ext_resource type="Texture2D" uid="uid://clftb8mkqcqyg" path="res://ui_assets/achievements/icon_achievement_one_hundo.png" id="1_0qqjx"]
-[ext_resource type="Script" path="res://objects/save_file/achievements/quota_achievement.gd" id="1_1oilw"]
+[ext_resource type="Script" uid="uid://bma611yu4pdu8" path="res://objects/save_file/achievements/quota_achievement.gd" id="1_1oilw"]
 
 [resource]
 script = ExtResource("1_1oilw")

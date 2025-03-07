@@ -1,11 +1,11 @@
 [gd_resource type="Resource" script_class="ItemAccessory" load_steps=10 format=3 uid="uid://rp2nc8f2wt77"]
 
-[ext_resource type="Script" path="res://objects/items/classes/accessory_placement.gd" id="1_gfdeh"]
-[ext_resource type="Script" path="res://objects/items/classes/body_placement.gd" id="2_8ug3b"]
-[ext_resource type="Script" path="res://objects/items/classes/item_accessory.gd" id="2_g18od"]
+[ext_resource type="Script" uid="uid://fb0tqfojo57q" path="res://objects/items/classes/accessory_placement.gd" id="1_gfdeh"]
+[ext_resource type="Script" uid="uid://duxq3xtgnln43" path="res://objects/items/classes/body_placement.gd" id="2_8ug3b"]
+[ext_resource type="Script" uid="uid://dvu24b3o8i3sj" path="res://objects/items/classes/item_accessory.gd" id="2_g18od"]
 [ext_resource type="PackedScene" uid="uid://bc23uw6xdu3b0" path="res://models/accessories/backpacks/dragon_wings/tt_m_chr_avt_acc_pac_dragonWing.glb" id="2_p4dy1"]
 [ext_resource type="Texture2D" uid="uid://dreq8a7i7lqbr" path="res://models/accessories/backpacks/dragon_wings/tt_m_chr_avt_acc_pac_dragonWing.glb-pix-1.png" id="3_8p1s6"]
-[ext_resource type="Script" path="res://objects/items/custom/item_dragon_wings.gd" id="3_38rmb"]
+[ext_resource type="Script" uid="uid://bky1vweu815df" path="res://objects/items/custom/item_dragon_wings.gd" id="3_38rmb"]
 
 [sub_resource type="Resource" id="Resource_xqi40"]
 script = ExtResource("2_8ug3b")
@@ -32,7 +32,7 @@ scale = Vector3(0.4, 0.4, 0.4)
 script = ExtResource("2_g18od")
 accessory_placements = Array[ExtResource("1_gfdeh")]([SubResource("Resource_xqi40"), SubResource("Resource_bsqs6"), SubResource("Resource_n1he7")])
 qualitoon = 4
-qualitoon_rarity = 5
+rarity = 0
 evergreen = false
 realtime = false
 slot = 3
@@ -42,11 +42,12 @@ ui_cam_offset = 0.15
 item_name = "Dragon Wings"
 item_description = "Your wealth is your power"
 big_description = "Shops have less items
-Every 5 jellybeans in your bank gives you:
-+ 1% Luck
-+ 1% Evasiveness
+Every 5 jellybeans in your bank gives:
++ 1% Damage
 + 1% Defense
-+ 1% Damage"
++ 1% Evasiveness
++ 1% Luck
++ 1% Speed"
 model = ExtResource("2_p4dy1")
 stats_add = {}
 stats_multiply = {}

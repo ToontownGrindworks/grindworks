@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="CogDNA" load_steps=12 format=3 uid="uid://csi88flvvxiaw"]
 
-[ext_resource type="Script" path="res://objects/battle/battle_resources/cog_attacks/cog_attack.gd" id="1_3jfe5"]
+[ext_resource type="Script" uid="uid://bb27him60xtnk" path="res://objects/battle/battle_resources/cog_attacks/cog_attack.gd" id="1_3jfe5"]
 [ext_resource type="Resource" uid="uid://cfwymrymjx7s5" path="res://objects/battle/battle_resources/cog_attacks/resources/write_off.tres" id="2_hg1o8"]
 [ext_resource type="Resource" uid="uid://cae3lr6y4rrb8" path="res://objects/battle/battle_resources/cog_attacks/resources/quake.tres" id="3_d0lm0"]
 [ext_resource type="PackedScene" uid="uid://cwg7ajjhom2dw" path="res://models/cogs/heads/telemarketer.glb" id="4_0m403"]
@@ -8,8 +8,8 @@
 [ext_resource type="Texture2D" uid="uid://idf1e68fml3o" path="res://models/cogs/textures/misc/blazer_1.png" id="5_04266"]
 [ext_resource type="Texture2D" uid="uid://cyblyj7cst741" path="res://models/cogs/heads/surgeongeneral_tex.png" id="5_ic8ag"]
 [ext_resource type="Texture2D" uid="uid://o3hrfvdxeisb" path="res://models/cogs/textures/misc/leg_4.png" id="6_83n3x"]
-[ext_resource type="Script" path="res://objects/cog/cogdna.gd" id="6_r5u2o"]
-[ext_resource type="Script" path="res://objects/battle/battle_resources/status_effect.gd" id="7_3exg4"]
+[ext_resource type="Script" uid="uid://okjbx502s3r5" path="res://objects/cog/cogdna.gd" id="6_r5u2o"]
+[ext_resource type="Script" uid="uid://df7irk63ikx4k" path="res://objects/battle/battle_resources/status_effect.gd" id="7_3exg4"]
 [ext_resource type="Resource" uid="uid://b4vuuxwhv0d3v" path="res://objects/battle/battle_resources/status_effects/resources/status_effect_mod_cog.tres" id="8_40khy"]
 
 [resource]
@@ -39,6 +39,6 @@ is_admin = false
 health_mod = 1.0
 battle_phrases = Array[String](["Generally, I'd say you're in trouble.", "You're under the knife now.", "I'm going to put you under.", "You'll need stitches after this."])
 external_assets = {
-"head_model": "",
-"head_textures": []
+&"head_model": "",
+&"head_textures": []
 }

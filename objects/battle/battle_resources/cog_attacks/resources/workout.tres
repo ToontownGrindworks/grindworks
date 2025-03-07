@@ -1,11 +1,12 @@
 [gd_resource type="Resource" script_class="CogAttackWorkout" load_steps=2 format=3 uid="uid://bhl72hd7pn8s2"]
 
-[ext_resource type="Script" path="res://objects/battle/battle_resources/cog_attacks/workout.gd" id="1_85kx4"]
+[ext_resource type="Script" uid="uid://cek2ied0n1mfo" path="res://objects/battle/battle_resources/cog_attacks/workout.gd" id="1_85kx4"]
 
 [resource]
 script = ExtResource("1_85kx4")
 accuracy = 100
 damage = 0
+ignore_stats = false
 summary = ""
 attack_lines = Array[String](["Let's even the playing field.", "This isn't going to work out well for you.", "Scared? You should be.", "Don't get too comfortable.", "No pain, no gain."])
 target_type = 4

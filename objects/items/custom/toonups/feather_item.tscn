@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://cp3jaujrj4tyk"]
 
 [ext_resource type="PackedScene" uid="uid://ctrqwink7eyj8" path="res://models/props/gags/feather/feather.glb" id="1_tvt3t"]
-[ext_resource type="Script" path="res://objects/items/custom/item_toonup_pickup.gd" id="2_g5rg2"]
+[ext_resource type="Script" uid="uid://xsesvqbgiawt" path="res://objects/items/custom/item_toonup_pickup.gd" id="2_g5rg2"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_efqap"]
 size = Vector3(1.72, 2.855, 0.2)

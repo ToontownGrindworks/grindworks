@@ -1,7 +1,7 @@
 [gd_scene load_steps=13 format=3 uid="uid://c8kkjyolhf1dt"]
 
 [ext_resource type="PackedScene" uid="uid://srxbjtdik0jv" path="res://objects/modules/mint/base_rooms/mint_skele_room2.tscn" id="1_hihgc"]
-[ext_resource type="Texture2D" uid="uid://yv5u8lprdb2f" path="res://models/facilities/mint/textures/LocomotiveSide5.png" id="2_7tq46"]
+[ext_resource type="Texture2D" uid="uid://dcasoiu0axwxw" path="res://models/facilities/mint/textures/LocomotiveSide5.png" id="2_7tq46"]
 [ext_resource type="PackedScene" uid="uid://direah3lbjuu5" path="res://objects/battle/battle_node/battle_node.tscn" id="2_r14cy"]
 [ext_resource type="PackedScene" uid="uid://dflwjcy6fj0av" path="res://objects/cog/cog.tscn" id="3_1an4g"]
 [ext_resource type="PackedScene" uid="uid://cfmtdq84k5wwh" path="res://objects/props/mint/pipes/kit/pipe_connector.tscn" id="5_kwydo"]

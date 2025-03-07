@@ -1,12 +1,13 @@
 [gd_resource type="Resource" script_class="Tabulate" load_steps=2 format=3 uid="uid://bxeasogxfcdk2"]
 
-[ext_resource type="Script" path="res://objects/battle/battle_resources/cog_attacks/tabulate.gd" id="1_2ay46"]
+[ext_resource type="Script" uid="uid://hamb7hsc7s4i" path="res://objects/battle/battle_resources/cog_attacks/tabulate.gd" id="1_2ay46"]
 
 [resource]
 script = ExtResource("1_2ay46")
 play_sound = false
 accuracy = 75
 damage = 3
+ignore_stats = false
 summary = ""
 attack_lines = Array[String](["This doesn't add up.", "By my count, you lose.", "You're racking up quite a tab.", "I'll have you totaled in a moment.", "Are you ready for these numbers?", "Your bill is now due and payable.", "Time for the reckoning.", "I like to put things in order.", "And the tally is...", "These numbers should prove to be quite powerful."])
 target_type = 0

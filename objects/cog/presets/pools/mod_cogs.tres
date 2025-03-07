@@ -1,7 +1,7 @@
-[gd_resource type="Resource" script_class="CogPool" load_steps=25 format=3 uid="uid://bmj3cbv7sk3jj"]
+[gd_resource type="Resource" script_class="CogPool" load_steps=26 format=3 uid="uid://bmj3cbv7sk3jj"]
 
-[ext_resource type="Script" path="res://objects/cog/cogdna.gd" id="1_lsh24"]
-[ext_resource type="Script" path="res://objects/cog/cog_pool.gd" id="2_7nern"]
+[ext_resource type="Script" uid="uid://okjbx502s3r5" path="res://objects/cog/cogdna.gd" id="1_lsh24"]
+[ext_resource type="Script" uid="uid://ocitcstc3bru" path="res://objects/cog/cog_pool.gd" id="2_7nern"]
 [ext_resource type="Resource" uid="uid://ch01vicvrjrve" path="res://objects/cog/presets/bossbot/pushed_pencil.tres" id="2_qrj4r"]
 [ext_resource type="Resource" uid="uid://db873b4wfde6n" path="res://objects/cog/presets/cashbot/nickel_nabber.tres" id="3_l57fc"]
 [ext_resource type="Resource" uid="uid://baaxso4jhvinp" path="res://objects/cog/presets/cashbot/quarter_catcher.tres" id="4_odnjs"]
@@ -24,7 +24,8 @@
 [ext_resource type="Resource" uid="uid://csi88flvvxiaw" path="res://objects/cog/presets/lawbot/surgeon_general.tres" id="21_4q70o"]
 [ext_resource type="Resource" uid="uid://50cgeo6mliss" path="res://objects/cog/presets/lawbot/doctor_white.tres" id="22_5ub6f"]
 [ext_resource type="Resource" uid="uid://crfps8y3g8jav" path="res://objects/cog/presets/bossbot/kiss_up.tres" id="23_eauh4"]
+[ext_resource type="Resource" uid="uid://vb0alxh52g8q" path="res://objects/cog/presets/bossbot/blowhard.tres" id="24_p8bl3"]
 
 [resource]
 script = ExtResource("2_7nern")
-cogs = Array[ExtResource("1_lsh24")]([ExtResource("2_qrj4r"), ExtResource("3_l57fc"), ExtResource("4_odnjs"), ExtResource("5_3ek2m"), ExtResource("6_bxs0h"), ExtResource("7_dq1c7"), ExtResource("8_qnfbc"), ExtResource("9_cmuvu"), ExtResource("10_ogwuy"), ExtResource("11_ymbqm"), ExtResource("12_3uo0b"), ExtResource("13_ewe0g"), ExtResource("14_qr3it"), ExtResource("15_uo5q3"), ExtResource("16_oe4d7"), ExtResource("17_y5diu"), ExtResource("18_dp360"), ExtResource("18_h1xy3"), ExtResource("20_mm6hb"), ExtResource("21_4q70o"), ExtResource("22_5ub6f"), ExtResource("23_eauh4")])
+cogs = Array[ExtResource("1_lsh24")]([ExtResource("2_qrj4r"), ExtResource("3_l57fc"), ExtResource("4_odnjs"), ExtResource("5_3ek2m"), ExtResource("6_bxs0h"), ExtResource("7_dq1c7"), ExtResource("8_qnfbc"), ExtResource("9_cmuvu"), ExtResource("10_ogwuy"), ExtResource("11_ymbqm"), ExtResource("12_3uo0b"), ExtResource("13_ewe0g"), ExtResource("14_qr3it"), ExtResource("15_uo5q3"), ExtResource("16_oe4d7"), ExtResource("17_y5diu"), ExtResource("18_dp360"), ExtResource("18_h1xy3"), ExtResource("20_mm6hb"), ExtResource("21_4q70o"), ExtResource("22_5ub6f"), ExtResource("23_eauh4"), ExtResource("24_p8bl3")])

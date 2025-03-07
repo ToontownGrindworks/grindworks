@@ -49,6 +49,12 @@ func get_icon() -> Texture2D:
 	await Util.s_process_frame
 	return icon
 
+func uses_3d_model() -> bool:
+	return false
+
+func get_3d_model() -> Node3D:
+	return Node3D.new()
+
 func set_up_item() -> void:
 	# Many items need access to the player on setup
 	# So ensure the player exists

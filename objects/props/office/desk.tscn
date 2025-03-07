@@ -2,7 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://dfnai3pw4os60" path="res://models/props/facility_objects/da_office/desk/desk.fbx" id="1_yvdar"]
 [ext_resource type="Texture2D" uid="uid://bwkgdly6omjlu" path="res://models/props/facility_objects/da_office/desk/desk_3.png" id="2_g7kn8"]
-[ext_resource type="Texture2D" uid="uid://ct5vjajjia8d5" path="res://models/props/facility_objects/da_office/desk/desk_0.png" id="3_ayk3x"]
+[ext_resource type="Texture2D" uid="uid://c0r6idtcwbndw" path="res://models/props/facility_objects/da_office/desk/desk_0.png" id="3_ayk3x"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jos5e"]
 resource_name = "LB_desk_woodBShader"

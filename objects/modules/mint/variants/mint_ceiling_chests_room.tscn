@@ -56,13 +56,13 @@ func open_win_area() -> void:
 	tween.tween_callback(sfx_fall.play)
 	tween.tween_callback(
 		func():
-			await TaskMgr.delay(0.85)
+			await Task.delay(0.85)
 			sfx_fall.stop()
 			sfx_land.play()
-			await TaskMgr.delay(1.0)
+			await Task.delay(1.0)
 			sfx_land.volume_db = -10.0
 			sfx_land.play()
-			await TaskMgr.delay(0.4)
+			await Task.delay(0.4)
 			sfx_land.volume_db = -20.0
 			sfx_land.play()
 	)
@@ -112,7 +112,7 @@ point_count = 5
 size = Vector3(8.86792, 4.53522, 6.48523)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_wd3rf"]
-size = Vector3(11.4302, 5.0177, 8.02594)
+size = Vector3(14.4553, 5.0177, 9.42557)
 
 [node name="MintCeilingChestsRoom" instance=ExtResource("1_rc1k0")]
 
@@ -318,7 +318,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.21523, 0, 0)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.26915, 0, 0)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="BattleNode2" index="7"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.25903, 2.57436, -0.477692)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.8176, 2.57436, -1.1775)
 shape = SubResource("BoxShape3D_wd3rf")
 
 [node name="Pipes" type="Node3D" parent="." index="12"]

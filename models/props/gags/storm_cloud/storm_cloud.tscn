@@ -51,7 +51,7 @@ tracks/5/keys = PackedFloat32Array(0.0416667, 1, 0.210001, 0.210001, 0.210001, 2
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_u71xv"]
 _data = {
-"rain": SubResource("Animation_emwww")
+&"rain": SubResource("Animation_emwww")
 }
 
 [sub_resource type="Animation" id="Animation_alidb"]
@@ -102,7 +102,7 @@ tracks/5/keys = PackedFloat32Array(0.0416667, 1, 0.210001, 0.210001, 0.210001, 2
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_oyqnw"]
 _data = {
-"storm_cloud": SubResource("Animation_alidb")
+&"storm_cloud": SubResource("Animation_alidb")
 }
 
 [sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_421jy"]

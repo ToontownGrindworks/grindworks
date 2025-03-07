@@ -125,7 +125,7 @@ tracks/1/keys = PackedFloat32Array(0, 1, 0.670001, 0.670001, 0.670001, 0.0666667
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_gplkl"]
 _data = {
-"sound": SubResource("Animation_1gw23")
+&"sound": SubResource("Animation_1gw23")
 }
 
 [node name="foghorn2" type="Node3D"]

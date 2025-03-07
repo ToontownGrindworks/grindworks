@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://bovhuxvp8u6p2"]
 
 [ext_resource type="ArrayMesh" uid="uid://csh56luyoqs5r" path="res://objects/battle/effects/pixie_dust/pixiedust.tres" id="1_vpxp6"]
-[ext_resource type="Script" path="res://objects/battle/effects/unite/unite.gd" id="2_mxt1h"]
+[ext_resource type="Script" uid="uid://2cpvx2566ywg" path="res://objects/battle/effects/unite/unite.gd" id="2_mxt1h"]
 
 [sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_hvd2s"]
 emission_shape = 2

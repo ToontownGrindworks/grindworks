@@ -75,6 +75,9 @@ func load() -> Variant:
 	ensure_realized()
 	return _cache
 	
+func is_loaded():
+	return _cache != null
+	
 func ensure_realized():
 	if load_thread.is_started():
 		# Our separate thread is already started, finish loading there.

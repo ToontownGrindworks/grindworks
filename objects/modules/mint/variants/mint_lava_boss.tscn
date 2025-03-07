@@ -15,7 +15,7 @@
 [ext_resource type="PackedScene" uid="uid://b860ba06jbjwm" path="res://objects/misc/gradient_plane.tscn" id="11_b6402"]
 [ext_resource type="Texture2D" uid="uid://bl6lm6ttgsfmi" path="res://objects/misc/gradient.png" id="12_b1omr"]
 [ext_resource type="PackedScene" uid="uid://dflwjcy6fj0av" path="res://objects/cog/cog.tscn" id="13_l0xot"]
-[ext_resource type="Script" path="res://objects/battle/battle_resources/misc_movies/lava_boss/lava_boss_movie.gd" id="13_tfm2o"]
+[ext_resource type="Script" uid="uid://dcrbwmjpomu5n" path="res://objects/battle/battle_resources/misc_movies/lava_boss/lava_boss_movie.gd" id="13_tfm2o"]
 [ext_resource type="Material" uid="uid://dklikd7tsg7k0" path="res://objects/obstacles/sinking_platform/edge_hot_mat.tres" id="14_m2r8c"]
 [ext_resource type="Resource" uid="uid://y03gsvpck4x5" path="res://objects/cog/presets/cashbot/ground_floor_investor.tres" id="15_4dds3"]
 [ext_resource type="Material" uid="uid://bt5le0br8qadm" path="res://objects/obstacles/sinking_platform/top_hot_mat.tres" id="15_4n8fl"]
@@ -1228,7 +1228,7 @@ subdivide_width = 16
 subdivide_depth = 16
 
 [sub_resource type="Curve" id="Curve_hc28v"]
-max_value = 0.7
+_limits = [0.0, 0.7, 0.0, 1.0]
 _data = [Vector2(0, 0), 0.0, 0.0, 0, 0, Vector2(0.0562249, 0.835582), 0.0, 0.0, 0, 0, Vector2(0.128514, 0.451939), 0.0, 0.0, 0, 0, Vector2(0.204819, 0.802698), 0.0, 0.0, 0, 0, Vector2(0.289157, 0.440978), 0.0, 0.0, 0, 0, Vector2(0.39759, 1), 0.0, 0.0, 0, 0, Vector2(0.481928, 0.397133), 0.0, 0.0, 0, 0, Vector2(0.554217, 1), 0.0, 0.0, 0, 0, Vector2(0.678715, 0.375211), 0.0, 0.0, 0, 0, Vector2(0.763052, 1), 0.0, 0.0, 0, 0, Vector2(0.871486, 0.408094), 0.0, 0.0, 0, 0, Vector2(0.939759, 1), 0.0, 0.0, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]
 point_count = 13
 

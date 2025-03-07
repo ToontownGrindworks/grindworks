@@ -33,8 +33,11 @@ func interp(ease := Tween.EASE_IN_OUT, trans := Tween.TRANS_LINEAR) -> LerpFunc:
 	self.trans = trans
 	return self
 
-func _onto_tween(tween: Tween):
+func _onto_tween(_owner: Node, tween: Tween):
 	tween.tween_method(method, from, to, duration).set_ease(ease).set_trans(trans)
 
 static func _do_nothing(_x = null):
 	pass
+
+func get_duration() -> float:
+	return duration

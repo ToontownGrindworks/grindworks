@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=3 uid="uid://bu0okv1jydf5c"]
 
-[ext_resource type="Script" path="res://objects/battle/battle_ui/status_effect_icon.gd" id="1_kmxcj"]
+[ext_resource type="Script" uid="uid://citga8di56ecl" path="res://objects/battle/battle_ui/status_effect_icon.gd" id="1_kmxcj"]
 [ext_resource type="Texture2D" uid="uid://dhn5kflsrx35n" path="res://ui_assets/battle/positive_icon.png" id="2_2v2fs"]
 [ext_resource type="Texture2D" uid="uid://cp4aaluignlma" path="res://objects/battle/effects/fire/fire.png" id="3_w28ga"]
 [ext_resource type="FontFile" uid="uid://cup2yr5w7or1l" path="res://fonts/Minnie.TTF" id="4_uyrus"]

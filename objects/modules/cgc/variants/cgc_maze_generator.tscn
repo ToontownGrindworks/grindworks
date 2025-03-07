@@ -2,7 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://vj40bldpstks" path="res://objects/modules/cgc/base_rooms/cgc_maze.tscn" id="1_1606g"]
 [ext_resource type="PackedScene" uid="uid://p8gvfa1hsxhc" path="res://objects/props/cgc/hedge.tscn" id="2_l5ohi"]
-[ext_resource type="Script" path="res://objects/modules/cgc/variants/maze_generator.gd" id="2_o0jwp"]
+[ext_resource type="Script" uid="uid://gigjxsvg8ojv" path="res://objects/modules/cgc/variants/maze_generator.gd" id="2_o0jwp"]
 [ext_resource type="PackedScene" uid="uid://dxyq5lb5oineo" path="res://objects/interactables/treasure_chest/treasure_chest.tscn" id="3_6t6a2"]
 [ext_resource type="Resource" uid="uid://j75am6rbrvrj" path="res://objects/items/pools/progressives.tres" id="4_5hufx"]
 

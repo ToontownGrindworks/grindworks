@@ -1,7 +1,7 @@
 [gd_resource type="Resource" script_class="AchievementQuota" load_steps=3 format=3 uid="uid://bj1jvshllu1h8"]
 
 [ext_resource type="Texture2D" uid="uid://b3bf0d3xmf66b" path="res://ui_assets/achievements/icon_achievement_boss_gear3.png" id="1_hmhtj"]
-[ext_resource type="Script" path="res://objects/save_file/achievements/quota_achievement.gd" id="1_ribuu"]
+[ext_resource type="Script" uid="uid://bma611yu4pdu8" path="res://objects/save_file/achievements/quota_achievement.gd" id="1_ribuu"]
 
 [resource]
 script = ExtResource("1_ribuu")
@@ -11,5 +11,5 @@ signal_source = 2
 signal_name = "s_boss_died"
 achievement_name = "Executive Dysfunction"
 achievement_summary = "Defeat 100 Boss Cogs."
-achievement_index = 9
+achievement_index = 8
 achievement_icon = ExtResource("1_hmhtj")

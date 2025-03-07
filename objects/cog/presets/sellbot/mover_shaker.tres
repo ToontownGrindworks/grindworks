@@ -1,38 +1,39 @@
-[gd_resource type="Resource" script_class="CogDNA" load_steps=10 format=3 uid="uid://d32ij14c50gys"]
+[gd_resource type="Resource" script_class="CogDNA" load_steps=10 format=3 uid="uid://b0iiauyxvm2su"]
 
-[ext_resource type="Script" path="res://objects/battle/battle_resources/cog_attacks/cog_attack.gd" id="1_mqx2x"]
-[ext_resource type="Resource" uid="uid://6hjcsu17tt4g" path="res://objects/battle/battle_resources/cog_attacks/resources/brain_storm.tres" id="2_4dc80"]
-[ext_resource type="Script" path="res://objects/cog/cogdna.gd" id="2_o8yvl"]
-[ext_resource type="Resource" uid="uid://bddy50xh8sfc8" path="res://objects/battle/battle_resources/cog_attacks/resources/tremor.tres" id="3_qoo6s"]
-[ext_resource type="Resource" uid="uid://cae3lr6y4rrb8" path="res://objects/battle/battle_resources/cog_attacks/resources/quake.tres" id="4_2mr1c"]
-[ext_resource type="Resource" uid="uid://55lp6noha8te" path="res://objects/battle/battle_resources/cog_attacks/resources/shake.tres" id="5_5v2a7"]
-[ext_resource type="PackedScene" uid="uid://d2pl7oar1aevb" path="res://models/cogs/heads/movershaker.glb" id="5_ae2hg"]
-[ext_resource type="Texture2D" uid="uid://8jclto0lc8r0" path="res://models/cogs/heads/movershaker_tt_t_ene_hed_moverShaker.png" id="7_irorw"]
-[ext_resource type="Script" path="res://objects/battle/battle_resources/status_effect.gd" id="8_ryquq"]
+[ext_resource type="Script" uid="uid://bb27him60xtnk" path="res://objects/battle/battle_resources/cog_attacks/cog_attack.gd" id="1_m5vcq"]
+[ext_resource type="Resource" uid="uid://6hjcsu17tt4g" path="res://objects/battle/battle_resources/cog_attacks/resources/brain_storm.tres" id="2_2rg62"]
+[ext_resource type="Resource" uid="uid://bddy50xh8sfc8" path="res://objects/battle/battle_resources/cog_attacks/resources/tremor.tres" id="3_jnshr"]
+[ext_resource type="Resource" uid="uid://cae3lr6y4rrb8" path="res://objects/battle/battle_resources/cog_attacks/resources/quake.tres" id="4_oduic"]
+[ext_resource type="Resource" uid="uid://55lp6noha8te" path="res://objects/battle/battle_resources/cog_attacks/resources/shake.tres" id="5_phrcf"]
+[ext_resource type="PackedScene" uid="uid://d2pl7oar1aevb" path="res://models/cogs/heads/movershaker.glb" id="6_8ik2y"]
+[ext_resource type="Texture2D" uid="uid://8jclto0lc8r0" path="res://models/cogs/heads/movershaker_tt_t_ene_hed_moverShaker.png" id="7_andep"]
+[ext_resource type="Script" uid="uid://okjbx502s3r5" path="res://objects/cog/cogdna.gd" id="8_f1gcb"]
+[ext_resource type="Script" uid="uid://df7irk63ikx4k" path="res://objects/battle/battle_resources/status_effect.gd" id="9_hqbam"]
 
 [resource]
-script = ExtResource("2_o8yvl")
+script = ExtResource("8_f1gcb")
 department = 0
 suit = 1
 cog_name = "Mover & Shaker"
 name_plural = ""
-head = ExtResource("5_ae2hg")
-head_scale = 1.0
+head = ExtResource("6_8ik2y")
+head_scale = Vector3(1, 1, 1)
 head_pos = Vector3(0, 0, 0)
 scale = 4.375
-head_textures = Array[Texture2D]([ExtResource("7_irorw")])
+head_textures = Array[Texture2D]([ExtResource("7_andep")])
 hand_color = Color(0.94902, 0.74902, 0.94902, 1)
 head_color = Color(1, 1, 1, 1)
 custom_nametag_height = 0.0
-attacks = Array[ExtResource("1_mqx2x")]([ExtResource("2_4dc80"), ExtResource("3_qoo6s"), ExtResource("4_2mr1c"), ExtResource("5_5v2a7")])
+custom_nametag_suffix = ""
+attacks = Array[ExtResource("1_m5vcq")]([ExtResource("2_2rg62"), ExtResource("3_jnshr"), ExtResource("4_oduic"), ExtResource("5_phrcf")])
 level_low = 5
 level_high = 12
-status_effects = Array[ExtResource("8_ryquq")]([])
+status_effects = Array[ExtResource("9_hqbam")]([])
 is_mod_cog = false
 is_admin = false
 health_mod = 1.0
 battle_phrases = Array[String](["This should shake you up.", "Prepare to be moved.", "I feel moved to defeat you.", "Are you shaking yet?", "I'm ready to make my move.", "This should be a moving moment.", "I think it's my move.", "Move it or lose it.", "Watch out, Toon, you're on shaky ground.", "You had better move out of the way."])
 external_assets = {
-"head_model": "",
-"head_textures": []
+&"head_model": "",
+&"head_textures": []
 }

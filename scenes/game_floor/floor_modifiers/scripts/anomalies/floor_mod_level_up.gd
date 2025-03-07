@@ -4,8 +4,7 @@ extends FloorModifier
 ## Increases the Cog level min/max for the floor
 func modify_floor() -> void:
 	game_floor.level_range.x += 1
-	if game_floor.level_range.y < 12:
-		game_floor.level_range.y += 1
+	game_floor.level_range.y += 1
 
 func get_mod_name() -> String:
 	return "Tightened Security"

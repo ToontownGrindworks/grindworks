@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=3 uid="uid://s7hcmq7vdag6"]
+[gd_scene load_steps=20 format=3 uid="uid://s7hcmq7vdag6"]
 
 [ext_resource type="PackedScene" uid="uid://cyai35bfek33x" path="res://objects/modules/office/base_rooms/office_puzzle_room1.tscn" id="1_7h0ko"]
 [ext_resource type="PackedScene" uid="uid://ceghombqxco7o" path="res://objects/props/office/bookshelf.tscn" id="2_a05ge"]
@@ -7,6 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://dxyq5lb5oineo" path="res://objects/interactables/treasure_chest/treasure_chest.tscn" id="5_01itd"]
 [ext_resource type="PackedScene" uid="uid://d0bnakgqatchq" path="res://objects/props/office/lamp_big.tscn" id="6_kdb6y"]
 [ext_resource type="PackedScene" uid="uid://dn6p7pcjhawfb" path="res://objects/props/office/chair.tscn" id="7_k4vm0"]
+[ext_resource type="Resource" uid="uid://j75am6rbrvrj" path="res://objects/items/pools/progressives.tres" id="7_ltqj7"]
 [ext_resource type="PackedScene" uid="uid://b4kk4sdrhkn2g" path="res://objects/props/office/cardboard_box.tscn" id="8_317cs"]
 [ext_resource type="PackedScene" uid="uid://umat7c5gw2t3" path="res://objects/props/office/filing_cabinet_open.tscn" id="9_j2hqu"]
 [ext_resource type="PackedScene" uid="uid://b4h3df6nrryna" path="res://objects/props/office/filing_cabinet.tscn" id="10_hds0k"]
@@ -111,6 +112,7 @@ transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 17.374
 
 [node name="treasure_chest2" parent="." index="9" instance=ExtResource("5_01itd")]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 17.3746, 2.38419e-07, 0.111535)
+item_pool = ExtResource("7_ltqj7")
 
 [node name="Props" type="Node3D" parent="." index="10"]
 

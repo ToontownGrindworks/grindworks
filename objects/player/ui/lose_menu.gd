@@ -36,6 +36,7 @@ func _ready() -> void:
 	toon.body.animator.seek(3.73, true)
 	toon.body.animator.pause()
 	toon.set_eyes(Toon.Emotion.SAD)
+	toon.reset_physics_interpolation()
 
 	Sequence.new([
 		LerpProperty.new(root, ^"modulate:a", 1.0, 1.0).interp(Tween.EASE_IN, Tween.TRANS_QUAD)

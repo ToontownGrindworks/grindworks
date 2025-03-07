@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="UBLiabilityWaiverEffect" load_steps=3 format=3 uid="uid://dks3qhrv4j3qg"]
 
-[ext_resource type="Script" path="res://objects/battle/battle_resources/status_effects/boss_effects/ub_liability_waiver.gd" id="1_c3vcg"]
+[ext_resource type="Script" uid="uid://by8yty562tul1" path="res://objects/battle/battle_resources/status_effects/boss_effects/ub_liability_waiver.gd" id="1_c3vcg"]
 [ext_resource type="Texture2D" uid="uid://cos47pgy467h3" path="res://ui_assets/battle/statuses/liability_waiver.png" id="1_mxxn1"]
 
 [resource]

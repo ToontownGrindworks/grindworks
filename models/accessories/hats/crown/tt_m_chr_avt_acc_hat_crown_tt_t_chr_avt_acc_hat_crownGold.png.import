@@ -2,13 +2,10 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bdqxodka4ivgt"
+uid="uid://7ibcvruaps0c"
 path="res://.godot/imported/tt_m_chr_avt_acc_hat_crown_tt_t_chr_avt_acc_hat_crownGold.png-4bf7b26309ee424cd08d15058cd64cd7.ctex"
 metadata={
 "vram_texture": false
-}
-generator_parameters={
-"md5": "53974a097dc9125b1ae66830007751fe"
 }
 
 [deps]
@@ -19,7 +16,7 @@ dest_files=["res://.godot/imported/tt_m_chr_avt_acc_hat_crown_tt_t_chr_avt_acc_h
 [params]
 
 compress/mode=3
-compress/high_quality=false
+compress/high_quality=true
 compress/lossy_quality=0.7
 compress/hdr_compression=1
 compress/normal_map=0

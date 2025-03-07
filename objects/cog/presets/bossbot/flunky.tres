@@ -1,12 +1,12 @@
 [gd_resource type="Resource" script_class="CogDNA" load_steps=8 format=3 uid="uid://c5dbwjk742di6"]
 
-[ext_resource type="Script" path="res://objects/battle/battle_resources/cog_attacks/cog_attack.gd" id="1_s338g"]
-[ext_resource type="Script" path="res://objects/cog/cogdna.gd" id="1_u5wga"]
+[ext_resource type="Script" uid="uid://bb27him60xtnk" path="res://objects/battle/battle_resources/cog_attacks/cog_attack.gd" id="1_s338g"]
+[ext_resource type="Script" uid="uid://okjbx502s3r5" path="res://objects/cog/cogdna.gd" id="1_u5wga"]
 [ext_resource type="Resource" uid="uid://3l28x2fofrgl" path="res://objects/battle/battle_resources/cog_attacks/resources/carbon_copy.tres" id="2_84e0q"]
 [ext_resource type="Resource" uid="uid://c27ek2anjbx88" path="res://objects/battle/battle_resources/cog_attacks/resources/pound_key.tres" id="3_28dpw"]
 [ext_resource type="PackedScene" uid="uid://bgx7270etnyok" path="res://models/cogs/heads/flunky.glb" id="3_h1rwp"]
 [ext_resource type="Texture2D" uid="uid://c2pvani3yo7i" path="res://models/cogs/heads/flunky_tt_t_ene_hed_flunky.png" id="5_47m6b"]
-[ext_resource type="Script" path="res://objects/battle/battle_resources/status_effect.gd" id="6_ywd5n"]
+[ext_resource type="Script" uid="uid://df7irk63ikx4k" path="res://objects/battle/battle_resources/status_effect.gd" id="6_ywd5n"]
 
 [resource]
 script = ExtResource("1_u5wga")
@@ -32,6 +32,6 @@ is_admin = false
 health_mod = 1.0
 battle_phrases = Array[String](["I'm gonna tell the boss about you!", "I may just be a flunky - but I'm real spunky.", "I'm going to use you to step up the corporate ladder.", "You're not going to like the way I work.", "The boss is counting on me to stop you.", "You'll have to go through me first.", "You're going to look good on my resume.", "I excel at Toon disposal.", "I'm sending you back to the playground.", "Let's see how you rate my job performance.", "You're never going to meet my boss."])
 external_assets = {
-"head_model": "",
-"head_textures": []
+&"head_model": "",
+&"head_textures": []
 }

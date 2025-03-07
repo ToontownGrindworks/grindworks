@@ -2,10 +2,10 @@
 
 [ext_resource type="PackedScene" uid="uid://d1qs8nf0s0y85" path="res://objects/general_ui/ui_panel/ui_panel.tscn" id="1_bwryn"]
 [ext_resource type="FontFile" uid="uid://815gwlftl5ik" path="res://fonts/impress-bt.ttf" id="2_0hji2"]
-[ext_resource type="Script" path="res://objects/general_ui/settings_menu/settings_menu.gd" id="2_2jdde"]
+[ext_resource type="Script" uid="uid://cupi2vaorp3f5" path="res://objects/general_ui/settings_menu/settings_menu.gd" id="2_2jdde"]
 [ext_resource type="FontFile" uid="uid://cup2yr5w7or1l" path="res://fonts/Minnie.TTF" id="3_7uwv2"]
 [ext_resource type="PackedScene" uid="uid://b0d1er4oqiqcn" path="res://objects/general_ui/general_button/general_button.tscn" id="4_aygce"]
-[ext_resource type="Shader" path="res://scenes/title_screen/hue_shift.gdshader" id="5_07ilt"]
+[ext_resource type="Shader" uid="uid://ryrnfqn0ixe5" path="res://scenes/title_screen/hue_shift.gdshader" id="5_07ilt"]
 [ext_resource type="Texture2D" uid="uid://ddcktpjy3gdew" path="res://ui_assets/misc/uiAccessoryDelete_up.png" id="5_p4xtr"]
 [ext_resource type="Texture2D" uid="uid://b7ri5sq021cvo" path="res://ui_assets/misc/uiAccessoryDelete_down.png" id="6_bs0ac"]
 [ext_resource type="Texture2D" uid="uid://dn8vndd37lqom" path="res://ui_assets/misc/uiAccessoryDelete_rollover.png" id="7_nxqst"]

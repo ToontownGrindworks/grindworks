@@ -1,6 +1,6 @@
-[gd_resource type="Resource" script_class="CogPool" load_steps=35 format=3 uid="uid://c3hbdphkya5o1"]
+[gd_resource type="Resource" script_class="CogPool" load_steps=34 format=3 uid="uid://c3hbdphkya5o1"]
 
-[ext_resource type="Script" path="res://objects/cog/cogdna.gd" id="1_1ugr8"]
+[ext_resource type="Script" uid="uid://okjbx502s3r5" path="res://objects/cog/cogdna.gd" id="1_1ugr8"]
 [ext_resource type="Resource" uid="uid://c5dbwjk742di6" path="res://objects/cog/presets/bossbot/flunky.tres" id="1_4jvb4"]
 [ext_resource type="Resource" uid="uid://dix6b1st0kqmw" path="res://objects/cog/presets/bossbot/pencil_pusher.tres" id="2_pfhqt"]
 [ext_resource type="Resource" uid="uid://rggq704t8yst" path="res://objects/cog/presets/bossbot/yesman.tres" id="3_5oaeg"]
@@ -9,7 +9,7 @@
 [ext_resource type="Resource" uid="uid://dpqmbcewheqv1" path="res://objects/cog/presets/bossbot/head_hunter.tres" id="6_uf8dg"]
 [ext_resource type="Resource" uid="uid://wt32frxolvqs" path="res://objects/cog/presets/bossbot/corporate_raider.tres" id="7_hfumy"]
 [ext_resource type="Resource" uid="uid://j3g10bkhu2xx" path="res://objects/cog/presets/bossbot/the_big_cheese.tres" id="8_03el6"]
-[ext_resource type="Script" path="res://objects/cog/cog_pool.gd" id="9_a4phd"]
+[ext_resource type="Script" uid="uid://ocitcstc3bru" path="res://objects/cog/cog_pool.gd" id="9_a4phd"]
 [ext_resource type="Resource" uid="uid://cx6xpa02hhvfj" path="res://objects/cog/presets/lawbot/bottom_feeder.tres" id="9_jcpse"]
 [ext_resource type="Resource" uid="uid://bqu2erj3ece7u" path="res://objects/cog/presets/lawbot/bloodsucker.tres" id="10_udyuv"]
 [ext_resource type="Resource" uid="uid://4fdep217ep8s" path="res://objects/cog/presets/lawbot/double_talker.tres" id="11_q4aip"]
@@ -28,13 +28,12 @@
 [ext_resource type="Resource" uid="uid://dijh2jf6717ci" path="res://objects/cog/presets/cashbot/robber_baron.tres" id="24_kvgde"]
 [ext_resource type="Resource" uid="uid://b4jf6084dolhy" path="res://objects/cog/presets/sellbot/cold_caller.tres" id="25_pdhse"]
 [ext_resource type="Resource" uid="uid://4msaan0a5lf3" path="res://objects/cog/presets/sellbot/telemarketer.tres" id="26_v025i"]
-[ext_resource type="Resource" uid="uid://d32ij14c50gys" path="res://objects/cog/presets/sellbot/name_dropper.tres" id="28_r7wy2"]
 [ext_resource type="Resource" uid="uid://canccpjghjae7" path="res://objects/cog/presets/sellbot/glad_hander.tres" id="29_dhmu6"]
-[ext_resource type="Resource" uid="uid://d32ij14c50gys" path="res://objects/cog/presets/sellbot/mover_shaker.tres" id="30_6lgey"]
+[ext_resource type="Resource" uid="uid://d32ij14c50gys" path="res://objects/cog/presets/sellbot/name_dropper.tres" id="30_6lgey"]
 [ext_resource type="Resource" uid="uid://c2sbco2b7ddrt" path="res://objects/cog/presets/sellbot/two_face.tres" id="30_t6hgs"]
 [ext_resource type="Resource" uid="uid://d3j6v3o7y5d0w" path="res://objects/cog/presets/sellbot/the_mingler.tres" id="31_nc3jo"]
 [ext_resource type="Resource" uid="uid://q8ev1hag3yvy" path="res://objects/cog/presets/sellbot/mr_hollywood.tres" id="32_qf5e7"]
 
 [resource]
 script = ExtResource("9_a4phd")
-cogs = Array[ExtResource("1_1ugr8")]([ExtResource("1_4jvb4"), ExtResource("2_pfhqt"), ExtResource("3_5oaeg"), ExtResource("4_xeom8"), ExtResource("5_vgvay"), ExtResource("6_uf8dg"), ExtResource("7_hfumy"), ExtResource("8_03el6"), ExtResource("9_jcpse"), ExtResource("10_udyuv"), ExtResource("11_q4aip"), ExtResource("12_gyi7w"), ExtResource("13_wvj64"), ExtResource("14_q4q2i"), ExtResource("15_23fng"), ExtResource("16_nvgto"), ExtResource("17_xjhdq"), ExtResource("18_kqpiv"), ExtResource("19_gvy2a"), ExtResource("20_2wxih"), ExtResource("21_mchcg"), ExtResource("22_mp8xo"), ExtResource("23_15528"), ExtResource("24_kvgde"), ExtResource("25_pdhse"), ExtResource("26_v025i"), ExtResource("28_r7wy2"), ExtResource("29_dhmu6"), ExtResource("30_6lgey"), ExtResource("30_t6hgs"), ExtResource("31_nc3jo"), ExtResource("32_qf5e7")])
+cogs = Array[ExtResource("1_1ugr8")]([ExtResource("1_4jvb4"), ExtResource("2_pfhqt"), ExtResource("3_5oaeg"), ExtResource("4_xeom8"), ExtResource("5_vgvay"), ExtResource("6_uf8dg"), ExtResource("7_hfumy"), ExtResource("8_03el6"), ExtResource("9_jcpse"), ExtResource("10_udyuv"), ExtResource("11_q4aip"), ExtResource("12_gyi7w"), ExtResource("13_wvj64"), ExtResource("14_q4q2i"), ExtResource("15_23fng"), ExtResource("16_nvgto"), ExtResource("17_xjhdq"), ExtResource("18_kqpiv"), ExtResource("19_gvy2a"), ExtResource("20_2wxih"), ExtResource("21_mchcg"), ExtResource("22_mp8xo"), ExtResource("23_15528"), ExtResource("24_kvgde"), ExtResource("25_pdhse"), ExtResource("26_v025i"), ExtResource("30_6lgey"), ExtResource("29_dhmu6"), ExtResource("30_6lgey"), ExtResource("30_t6hgs"), ExtResource("31_nc3jo"), ExtResource("32_qf5e7")])

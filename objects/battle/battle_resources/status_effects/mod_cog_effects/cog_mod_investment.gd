@@ -49,7 +49,7 @@ func renew() -> void:
 	movie.tween_callback(manager.affect_target.bind(cog, 'hp', heal_amount, false))
 	movie.tween_interval(4.0)
 
-	await TaskMgr.delay(0.4)
+	await Task.delay(0.4)
 	AudioManager.play_sound(SFX)
 
 	await movie.finished

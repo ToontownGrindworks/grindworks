@@ -39,7 +39,7 @@ func get_stats() -> String:
 		ActionTarget.ENEMY_SPLASH:
 			string += "Three Cogs"
 		
-	string += "\nDrenched: %s%%" % ((1.0 - get_player_stats().get_stat('squirt_defense_boost')) * 100)
+	string += "\nDrenched: %s%%" % roundi((1.0 - get_player_stats().get_stat('squirt_defense_boost')) * 100)
 	
 	if Util.get_player().stats.has_item('Witch Hat'):
 		string += "\nApplies: Poison"

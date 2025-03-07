@@ -1,7 +1,7 @@
 [gd_resource type="Resource" script_class="Heckle" load_steps=4 format=3 uid="uid://by0leo7nlf311"]
 
-[ext_resource type="Script" path="res://objects/battle/battle_resources/cog_attacks/heckle.gd" id="1_tb1o8"]
-[ext_resource type="Script" path="res://objects/battle/battle_resources/status_effects/stat_boost.gd" id="2_ke1w6"]
+[ext_resource type="Script" uid="uid://2rt6lrj4fpim" path="res://objects/battle/battle_resources/cog_attacks/heckle.gd" id="1_tb1o8"]
+[ext_resource type="Script" uid="uid://csl6saufv84ri" path="res://objects/battle/battle_resources/status_effects/stat_boost.gd" id="2_ke1w6"]
 
 [sub_resource type="Resource" id="Resource_g5qp3"]
 script = ExtResource("2_ke1w6")
@@ -17,7 +17,6 @@ visible = true
 description = "This is a Status Effect"
 status_name = "Status Effect"
 id = 2
-_generate_id = false
 
 [resource]
 script = ExtResource("1_tb1o8")

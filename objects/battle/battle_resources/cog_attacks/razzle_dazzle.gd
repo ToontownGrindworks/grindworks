@@ -47,7 +47,7 @@ func action():
 		manager.affect_target(target,'hp',damage,false)
 	
 	# Cleanup
-	await target.animator.animation_finished
+	await manager.barrier(target.animator.animation_finished, 4.0)
 	teeth.queue_free()
 	
 	

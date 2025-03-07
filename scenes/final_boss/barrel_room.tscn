@@ -2,7 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://ckmb6yt5n6p60" path="res://models/misc_zones/field_office/barrel_room/barrel_room.fbx" id="1_5rygu"]
 [ext_resource type="Texture2D" uid="uid://oln3ougwc0hm" path="res://models/misc_zones/field_office/barrel_room/barrel_room_13.png" id="2_cvh23"]
-[ext_resource type="Script" path="res://scenes/final_boss/barrel_room.gd" id="2_cvi7d"]
+[ext_resource type="Script" uid="uid://def84ygtijnp5" path="res://scenes/final_boss/barrel_room.gd" id="2_cvi7d"]
 [ext_resource type="Texture2D" uid="uid://bvhcg1acedmhx" path="res://models/misc_zones/field_office/barrel_room/barrel_room_10.png" id="3_8r8kd"]
 [ext_resource type="PackedScene" uid="uid://dxyq5lb5oineo" path="res://objects/interactables/treasure_chest/treasure_chest.tscn" id="4_kub1n"]
 [ext_resource type="PackedScene" uid="uid://b8mtvfipu1qsg" path="res://objects/interactables/elevators/cogdo_elevator.tscn" id="5_bolby"]

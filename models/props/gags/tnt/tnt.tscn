@@ -214,9 +214,9 @@ tracks/2/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_c0pae"]
 _data = {
-"RESET": SubResource("Animation_4ko6t"),
-"fuse": SubResource("Animation_occ7o"),
-"toss": SubResource("Animation_cppbr")
+&"RESET": SubResource("Animation_4ko6t"),
+&"fuse": SubResource("Animation_occ7o"),
+&"toss": SubResource("Animation_cppbr")
 }
 
 [node name="tnt2" type="Node3D"]

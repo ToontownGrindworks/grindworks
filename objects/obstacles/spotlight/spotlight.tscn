@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=3 uid="uid://b8786m8c0wm1o"]
 
-[ext_resource type="Script" path="res://objects/obstacles/spotlight/spotlight.gd" id="1_qban5"]
+[ext_resource type="Script" uid="uid://dsoyxag6xhrhf" path="res://objects/obstacles/spotlight/spotlight.gd" id="1_qban5"]
 [ext_resource type="PackedScene" uid="uid://bj5amoerd44or" path="res://models/props/facility_objects/stomper/stomper.fbx" id="1_wjerh"]
 [ext_resource type="AudioStream" uid="uid://bqxwvf714p6fm" path="res://audio/sfx/objects/spotlight/LB_laser_beam_hum_2.ogg" id="3_6sxgk"]
 [ext_resource type="AudioStream" uid="uid://ciuyvctevb6i7" path="res://audio/sfx/objects/goon/CHQ_GOON_tractor_beam_alarmed.ogg" id="3_hds27"]

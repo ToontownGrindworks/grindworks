@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="BookkeeperLogic" load_steps=2 format=3 uid="uid://bfsdklo5d7n2m"]
 
-[ext_resource type="Script" path="res://objects/battle/battle_resources/status_effects/boss_effects/boss_logic_bookkeeper.gd" id="1_h4xy0"]
+[ext_resource type="Script" uid="uid://brgeiacq0h1re" path="res://objects/battle/battle_resources/status_effects/boss_effects/boss_logic_bookkeeper.gd" id="1_h4xy0"]
 
 [resource]
 script = ExtResource("1_h4xy0")

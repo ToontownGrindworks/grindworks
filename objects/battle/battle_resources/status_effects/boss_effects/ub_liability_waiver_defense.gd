@@ -1,3 +1,4 @@
+@tool
 extends StatBoost
 class_name UBLiabilityWaiverDefense
 

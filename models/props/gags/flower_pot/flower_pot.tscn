@@ -349,7 +349,7 @@ tracks/10/keys = PackedFloat32Array(0, 1, -0.685289, 1.30959e-09, 2.04567e-08, 0
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_j11uv"]
 _data = {
-"drop": SubResource("Animation_3nofe")
+&"drop": SubResource("Animation_3nofe")
 }
 
 [node name="flower_pot" type="Node3D"]

@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://cc7m72lopmrgg"]
 
 [ext_resource type="FontFile" uid="uid://cup2yr5w7or1l" path="res://fonts/Minnie.TTF" id="1_2dfxk"]
-[ext_resource type="Script" path="res://objects/general_ui/anomaly_tracker/anomaly_tracker.gd" id="1_4ggd7"]
+[ext_resource type="Script" uid="uid://cgiatspw66bm3" path="res://objects/general_ui/anomaly_tracker/anomaly_tracker.gd" id="1_4ggd7"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_wuar6"]
 font = ExtResource("1_2dfxk")

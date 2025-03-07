@@ -1,12 +1,12 @@
 [gd_resource type="Resource" script_class="Item" load_steps=3 format=3 uid="uid://cp2b6gwnfjlib"]
 
 [ext_resource type="PackedScene" uid="uid://d4d0ila1f8k7o" path="res://objects/items/custom/toonups/cane_item.tscn" id="1_atcwe"]
-[ext_resource type="Script" path="res://objects/items/classes/item.gd" id="2_syry0"]
+[ext_resource type="Script" uid="uid://combwqypom1ru" path="res://objects/items/classes/item.gd" id="2_syry0"]
 
 [resource]
 script = ExtResource("2_syry0")
-qualitoon = 1
-qualitoon_rarity = 2
+qualitoon = 0
+rarity = 0
 evergreen = true
 realtime = false
 slot = 0
@@ -25,3 +25,4 @@ remember_item = false
 shop_category_title = "Consumable"
 shop_category_color = Color(0.105882, 0.54902, 0.537255, 1)
 force_show_shop_category = true
+custom_shop_price = 0
