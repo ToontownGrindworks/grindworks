@@ -44,10 +44,11 @@ func setup(_player : Player) -> void:
 	player.stats.hp_changed.connect(player_hp_change)
 	
 func player_hp_change(new_hp : int) -> void:
-	if new_hp < current_hp and stacks > 0:
-		modify_stats(-stacks)
-		stacks = 0
+	if new_hp < current_hp:
 		flawless_round = false
+		if stacks > 0:
+			modify_stats(-stacks)
+			stacks = 0
 	current_hp = new_hp
 
 ## Connect the gag track elements up to be shuffled
@@ -78,7 +79,7 @@ func modify_stats(factor: float) -> void:
 	var stats := player.stats
 	var battle_stats : BattleStats
 	if manager:
-		battle_stats = manager.battle_stats[player].stats
+		battle_stats = manager.battle_stats[player]
 	
 	for key in stat_mods:
 		if key in stats:
