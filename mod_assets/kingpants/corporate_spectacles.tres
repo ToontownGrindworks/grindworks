@@ -290,9 +290,12 @@ slot = 2
 world_scale = 0.17
 want_ui_spin = true
 ui_cam_offset = 0.0
-item_name = "Corporate Spectacles"
-item_description = "We are fighter, brighter, igniter..."
-big_description = "All floors have Tightened Security, 20 second battle timer"
+item_name = "Under the Heat"
+item_description = "I am the light!"
+big_description = "Gain 1 stack up to 8 for each round without taking damage, reset if hit;
++7% Damage, +7% Luck, +2% Evasiveness, -5% Defense, and -2 timer seconds per stack;
+22 second timer with 1 stack, time multiplied by Speed;
+Gain 1 extra turn at max stacks"
 model = ExtResource("5_k307b")
 stats_add = {}
 stats_multiply = {}

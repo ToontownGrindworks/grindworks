@@ -12,11 +12,11 @@
 
 [sub_resource type="Resource" id="Resource_q3qk8"]
 script = ExtResource("1_pnnf4")
-damage = 1.25
-defense = 0.8
+damage = 1.0
+defense = 1.0
 evasiveness = 1.0
 accuracy = 1.0
-speed = 1.05
+speed = 1.0
 max_turns = 3
 max_hp = 25
 hp = 25
@@ -45,9 +45,10 @@ bottoms = SubResource("Resource_jw3nq")
 [resource]
 script = ExtResource("4_w2exb")
 character_name = "King Pants"
-character_summary = "Corporate Spectacles: All floors have Tightened Security, 20 second Battle Timer
-- 25% more damage
-- Starts with Throw and Drop"
+character_summary = "Under the Heat: Flawless combat rounds increase power but enforce limits, resets when damaged
+- Speed helps resist the deadline
+- 1 guaranteed negative anomaly each floor
+- Start with Throw and Squirt"
 dna = SubResource("Resource_gqohd")
 gag_loadout = ExtResource("3_wwi1a")
 starting_laff = 30
