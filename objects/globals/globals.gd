@@ -1,6 +1,6 @@
 extends Node
 
-const VERSION_NUMBER := "v1.0.2"
+const VERSION_NUMBER := "Royal Convergence - Alpha 1"
 
 ## Holds any value you may want accessible globally and quickly
 
@@ -35,7 +35,7 @@ const CUSTOM_TOONS : Array[PlayerCharacter] = [
 	preload("res://mod_assets/characters/king_pants.tres"),
 	preload("res://mod_assets/characters/smirky_bumberpop.tres"),
 	# stop crashing my game
-	#preload("res://mod_assets/characters/transcendent_master.tres"),
+	preload("res://mod_assets/characters/transcendent_master.tres"),
 	preload("res://mod_assets/characters/doctor_googlymoogly.tres"),
 ]
 
