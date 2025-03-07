@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="StatusAutoDrop" load_steps=2 format=3 uid="uid://bps0p61yd6eay"]
 
-[ext_resource type="Script" path="res://objects/battle/battle_resources/status_effects/auto_drop.gd" id="1_77e8t"]
+[ext_resource type="Script" uid="uid://no8da70ptepj" path="res://objects/battle/battle_resources/status_effects/auto_drop.gd" id="1_77e8t"]
 
 [resource]
 script = ExtResource("1_77e8t")

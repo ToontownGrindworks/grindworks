@@ -1,10 +1,10 @@
-[gd_scene load_steps=87 format=3 uid="uid://cha3dccp1m281"]
+[gd_scene load_steps=88 format=3 uid="uid://cha3dccp1m281"]
 
 [ext_resource type="PackedScene" uid="uid://d1qs8nf0s0y85" path="res://objects/general_ui/ui_panel/ui_panel.tscn" id="1_py1ix"]
-[ext_resource type="Script" path="res://scenes/title_screen/credits/credits_panel.gd" id="2_3oeyj"]
+[ext_resource type="Script" uid="uid://b2tqjgqv6xn1p" path="res://scenes/title_screen/credits/credits_panel.gd" id="2_3oeyj"]
 [ext_resource type="Texture2D" uid="uid://c1u45a4o8oyty" path="res://icon.svg" id="2_s4vxw"]
 [ext_resource type="FontFile" uid="uid://815gwlftl5ik" path="res://fonts/impress-bt.ttf" id="3_8rgp0"]
-[ext_resource type="Script" path="res://scenes/title_screen/credits/game_credit.gd" id="3_ksngi"]
+[ext_resource type="Script" uid="uid://cjlnrijv3rd4r" path="res://scenes/title_screen/credits/game_credit.gd" id="3_ksngi"]
 [ext_resource type="Texture2D" uid="uid://c66ylu6x3jihn" path="res://scenes/title_screen/credits/icons/icon_evan.jpg" id="4_h6qo8"]
 [ext_resource type="Texture2D" uid="uid://cvyhl11ep7ahe" path="res://scenes/title_screen/credits/icons/icon_buck.png" id="4_hafue"]
 [ext_resource type="Texture2D" uid="uid://ctkpc50wxpiya" path="res://scenes/title_screen/credits/icons/icon_loonatic.jpg" id="5_n30h7"]
@@ -132,7 +132,7 @@ shadow_color = Color(0.0368, 0.23, 0.1817, 0.501961)
 script = ExtResource("3_ksngi")
 icon = ExtResource("12_fxlu6")
 name = "neoNote"
-role = "3D Artist & Texture Artist"
+role = "3D Artist, Texture Artist & Sound Designer"
 label_settings = SubResource("LabelSettings_q52wn")
 
 [sub_resource type="LabelSettings" id="LabelSettings_sejxq"]
@@ -270,6 +270,22 @@ name = "LadyMisticus"
 role = "Writer & Character Designer"
 label_settings = SubResource("LabelSettings_lp0s0")
 
+[sub_resource type="LabelSettings" id="LabelSettings_01t16"]
+font = ExtResource("3_8rgp0")
+font_size = 24
+font_color = Color(0.321569, 0.980392, 0.313726, 1)
+outline_color = Color(1.50409e-07, 0, 0.157023, 1)
+shadow_size = 4
+shadow_color = Color(0.0861411, 0.321197, 0.101117, 0.58)
+
+[sub_resource type="Resource" id="Resource_dgyyg"]
+script = ExtResource("3_ksngi")
+icon = ExtResource("18_jfa0w")
+name = "StuckTheDuck"
+role = "Writer"
+label_settings = SubResource("LabelSettings_01t16")
+metadata/_custom_type_script = "uid://cjlnrijv3rd4r"
+
 [sub_resource type="LabelSettings" id="LabelSettings_rf1qn"]
 font = ExtResource("3_8rgp0")
 font_size = 24
@@ -346,12 +362,6 @@ icon = ExtResource("27_xwo8y")
 name = "Princess Sandy"
 role = ""
 
-[sub_resource type="Resource" id="Resource_hc3ke"]
-script = ExtResource("3_ksngi")
-icon = ExtResource("18_jfa0w")
-name = "StuckTheDuck"
-role = ""
-
 [sub_resource type="LabelSettings" id="LabelSettings_eknjt"]
 font = ExtResource("23_ts00s")
 font_size = 42
@@ -388,8 +398,8 @@ offset_right = 254.0
 offset_bottom = 260.0
 pivot_offset = Vector2(254, 260)
 script = ExtResource("2_3oeyj")
-credits = Array[ExtResource("3_ksngi")]([SubResource("Resource_ttvt2"), SubResource("Resource_7jidy"), SubResource("Resource_kqonq"), SubResource("Resource_pbofr"), SubResource("Resource_2m611"), SubResource("Resource_1oxjh"), SubResource("Resource_hdogm"), SubResource("Resource_dib10"), SubResource("Resource_7gmnw"), SubResource("Resource_7hcke"), SubResource("Resource_5m0kl"), SubResource("Resource_5lw2h"), SubResource("Resource_qhht1"), SubResource("Resource_1g23c"), SubResource("Resource_4b13b"), SubResource("Resource_2bp18"), SubResource("Resource_coqfa"), SubResource("Resource_w23nx"), SubResource("Resource_ol1pa"), SubResource("Resource_mdpg3"), SubResource("Resource_c5kur")])
-special_thanks = Array[ExtResource("3_ksngi")]([SubResource("Resource_daahu"), SubResource("Resource_m42v0"), SubResource("Resource_ohm68"), SubResource("Resource_hc3ke")])
+credits = Array[ExtResource("3_ksngi")]([SubResource("Resource_ttvt2"), SubResource("Resource_7jidy"), SubResource("Resource_kqonq"), SubResource("Resource_pbofr"), SubResource("Resource_2m611"), SubResource("Resource_1oxjh"), SubResource("Resource_hdogm"), SubResource("Resource_dib10"), SubResource("Resource_7gmnw"), SubResource("Resource_7hcke"), SubResource("Resource_5m0kl"), SubResource("Resource_5lw2h"), SubResource("Resource_qhht1"), SubResource("Resource_1g23c"), SubResource("Resource_4b13b"), SubResource("Resource_2bp18"), SubResource("Resource_dgyyg"), SubResource("Resource_coqfa"), SubResource("Resource_w23nx"), SubResource("Resource_ol1pa"), SubResource("Resource_mdpg3"), SubResource("Resource_c5kur")])
+special_thanks = Array[ExtResource("3_ksngi")]([SubResource("Resource_daahu"), SubResource("Resource_m42v0"), SubResource("Resource_ohm68")])
 title = "Credits"
 body = ""
 

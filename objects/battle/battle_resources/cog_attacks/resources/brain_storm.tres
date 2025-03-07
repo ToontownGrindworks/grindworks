@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="Liquidate" load_steps=4 format=3 uid="uid://6hjcsu17tt4g"]
 
-[ext_resource type="Script" path="res://objects/battle/battle_resources/cog_attacks/liquidate.gd" id="1_gxmhg"]
+[ext_resource type="Script" uid="uid://cvbmppwfs711e" path="res://objects/battle/battle_resources/cog_attacks/liquidate.gd" id="1_gxmhg"]
 [ext_resource type="PackedScene" uid="uid://d03k2e6a74tko" path="res://objects/battle/effects/cloud_attacks/brain_storm.tscn" id="1_tmsix"]
 [ext_resource type="AudioStream" uid="uid://dbmpl58jist24" path="res://audio/sfx/battle/cogs/attacks/SA_brainstorm.ogg" id="3_axctg"]
 
@@ -12,6 +12,7 @@ animation = 1
 melt_toon = false
 accuracy = 75
 damage = 4
+ignore_stats = false
 summary = ""
 attack_lines = Array[String](["I forecast rain.", "Hope you packed your umbrella.", "I want to enlighten you.", "How about a few rain DROPS?", "Not so sunny now, are you Toon?", "Ready for a down pour?", "I'm going to take you by storm.", "I call this a lightning attack.", "I love to be a wet blanket."])
 target_type = 0

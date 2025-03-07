@@ -156,7 +156,7 @@ tracks/2/keys = PackedFloat32Array(0, 1, 2.05135, 2.05135, 2.05135, 0.0666667, 1
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_qofi5"]
 _data = {
-"sound": SubResource("Animation_rordi")
+&"sound": SubResource("Animation_rordi")
 }
 
 [node name="whistle2" type="Node3D"]

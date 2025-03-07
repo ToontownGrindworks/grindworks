@@ -1,13 +1,13 @@
 [gd_resource type="Resource" script_class="CogDNA" load_steps=9 format=3 uid="uid://dix6b1st0kqmw"]
 
-[ext_resource type="Script" path="res://objects/battle/battle_resources/cog_attacks/cog_attack.gd" id="1_8et33"]
-[ext_resource type="Script" path="res://objects/cog/cogdna.gd" id="2_hg6v5"]
+[ext_resource type="Script" uid="uid://bb27him60xtnk" path="res://objects/battle/battle_resources/cog_attacks/cog_attack.gd" id="1_8et33"]
+[ext_resource type="Script" uid="uid://okjbx502s3r5" path="res://objects/cog/cogdna.gd" id="2_hg6v5"]
 [ext_resource type="Resource" uid="uid://dxpqtt8gh5brv" path="res://objects/battle/battle_resources/cog_attacks/resources/finger_wag.tres" id="2_rqtgr"]
 [ext_resource type="Resource" uid="uid://cfwymrymjx7s5" path="res://objects/battle/battle_resources/cog_attacks/resources/write_off.tres" id="3_dv6cg"]
 [ext_resource type="PackedScene" uid="uid://cp0eu48o5hfej" path="res://models/cogs/heads/pencilpusher.glb" id="4_13fdm"]
 [ext_resource type="Resource" uid="uid://by0leo7nlf311" path="res://objects/battle/battle_resources/cog_attacks/resources/heckle.tres" id="4_a50of"]
 [ext_resource type="Texture2D" uid="uid://5647ad3k6qm" path="res://models/cogs/heads/pencilpusher_pencilpusher.png" id="5_s8g1d"]
-[ext_resource type="Script" path="res://objects/battle/battle_resources/status_effect.gd" id="6_xjos0"]
+[ext_resource type="Script" uid="uid://df7irk63ikx4k" path="res://objects/battle/battle_resources/status_effect.gd" id="6_xjos0"]
 
 [resource]
 script = ExtResource("2_hg6v5")
@@ -33,6 +33,6 @@ is_admin = false
 health_mod = 1.0
 battle_phrases = Array[String](["I'm going to rub you out!", "Hey, you can't push me around.", "I'm No. 2!", "I'm going to scratch you out.", "I'll have to make my point more clear.", "Let me get right to the point.", "Let's hurry, I bore easily.", "I hate it when things get dull.", "So you want to push your luck?", "Did you pencil me in?", "Careful, I may leave a mark."])
 external_assets = {
-"head_model": "",
-"head_textures": []
+&"head_model": "",
+&"head_textures": []
 }

@@ -40,14 +40,14 @@ func action() -> void:
 
 	elevator_cam.make_current()
 	elevator.open()
-	await TaskMgr.delay(1.5)
+	await Task.delay(1.5)
 
 	var move_tween: Tween
 	for cog: Cog in battle_node.cogs:
 		if cog in new_cogs:
 			move_tween = cog.move_to([end_pos_2, end_pos_1][new_cogs.find(cog)].global_position)
 
-	await TaskMgr.delay(1.0)
+	await Task.delay(1.0)
 	elevator.close()
 	suit_walk_cam.make_current()
 	await move_tween.finished

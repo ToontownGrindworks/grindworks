@@ -1,6 +1,6 @@
 [gd_scene load_steps=15 format=3 uid="uid://b6eexfh4v078o"]
 
-[ext_resource type="Script" path="res://objects/interactables/elevators/sellbot_elevator.gd" id="1_6a758"]
+[ext_resource type="Script" uid="uid://dydlaq1hqlyxo" path="res://objects/interactables/elevators/sellbot_elevator.gd" id="1_6a758"]
 [ext_resource type="PackedScene" uid="uid://4vgsokdvgcx2" path="res://models/props/facility_objects/transporters/sellbot_elevator/elevator_new.fbx" id="1_g5xfo"]
 
 [sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_gq5xi"]
@@ -128,10 +128,10 @@ tracks/1/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_apb5u"]
 _data = {
-"RESET": SubResource("Animation_qbqq8"),
-"RESET_OPEN": SubResource("Animation_rmywj"),
-"close": SubResource("Animation_ntubb"),
-"open": SubResource("Animation_5i3eh")
+&"RESET": SubResource("Animation_qbqq8"),
+&"RESET_OPEN": SubResource("Animation_rmywj"),
+&"close": SubResource("Animation_ntubb"),
+&"open": SubResource("Animation_5i3eh")
 }
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_3i012"]

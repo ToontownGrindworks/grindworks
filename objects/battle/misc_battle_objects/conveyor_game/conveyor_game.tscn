@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://djdyjfuos3lgp"]
 
-[ext_resource type="Script" path="res://objects/battle/misc_battle_objects/conveyor_game/conveyor_game.gd" id="1_5jxt1"]
+[ext_resource type="Script" uid="uid://dg7ytj05jhy0b" path="res://objects/battle/misc_battle_objects/conveyor_game/conveyor_game.gd" id="1_5jxt1"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jkg2i"]
 

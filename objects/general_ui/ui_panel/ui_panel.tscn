@@ -1,7 +1,7 @@
 [gd_scene load_steps=14 format=3 uid="uid://d1qs8nf0s0y85"]
 
 [ext_resource type="PackedScene" uid="uid://dkd6dg5s5uuef" path="res://objects/general_ui/base_panel.tscn" id="2_8spu8"]
-[ext_resource type="Script" path="res://objects/general_ui/ui_panel/ui_panel.gd" id="2_p4po8"]
+[ext_resource type="Script" uid="uid://c4qiao2iwpp53" path="res://objects/general_ui/ui_panel/ui_panel.gd" id="2_p4po8"]
 [ext_resource type="FontFile" uid="uid://815gwlftl5ik" path="res://fonts/impress-bt.ttf" id="3_3yw15"]
 [ext_resource type="Texture2D" uid="uid://bl4jam52awobx" path="res://ui_assets/battle/queued_gags/PartyPlanner_CancelButtonUp.png" id="4_e8yv3"]
 [ext_resource type="PackedScene" uid="uid://b0d1er4oqiqcn" path="res://objects/general_ui/general_button/general_button.tscn" id="4_pjrfy"]
@@ -69,9 +69,9 @@ tracks/0/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_dfm6d"]
 _data = {
-"RESET": SubResource("Animation_vik5u"),
-"pop_in": SubResource("Animation_0g0ed"),
-"pop_out": SubResource("Animation_awakr")
+&"RESET": SubResource("Animation_vik5u"),
+&"pop_in": SubResource("Animation_0g0ed"),
+&"pop_out": SubResource("Animation_awakr")
 }
 
 [node name="UIPanel" type="Control"]

@@ -1,9 +1,9 @@
 [gd_resource type="Resource" script_class="FloorVariant" load_steps=5 format=3 uid="uid://civq6v4d0gyud"]
 
-[ext_resource type="Script" path="res://scenes/game_floor/floor_variants/floor_variant.gd" id="1_4j4dm"]
+[ext_resource type="Script" uid="uid://cxvrtrods5hgg" path="res://scenes/game_floor/floor_variants/floor_variant.gd" id="1_4j4dm"]
 [ext_resource type="Texture2D" uid="uid://dpn4um17s6p73" path="res://models/cogs/misc/hp_light/law.png" id="1_kkmbj"]
 [ext_resource type="Resource" uid="uid://qky6hxt0lyw2" path="res://scenes/game_floor/department_floors/rooms_law.tres" id="1_vi1l7"]
-[ext_resource type="Script" path="res://objects/modules/facility_room.gd" id="1_w3g84"]
+[ext_resource type="Script" uid="uid://dhyadt7p1gv78" path="res://objects/modules/facility_room.gd" id="1_w3g84"]
 
 [resource]
 script = ExtResource("1_4j4dm")

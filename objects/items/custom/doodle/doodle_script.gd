@@ -28,7 +28,7 @@ func on_load(item : Item) -> void:
 	Util.get_player().partners.append(doodle)
 	
 	# Wait for a moment to set doodle state to avoid error
-	await TaskMgr.delay(1.0)
+	await Task.delay(1.0)
 	doodle.state = RoamingDoodle.DoodleState.AWAIT
 	
 	

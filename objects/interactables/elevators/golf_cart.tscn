@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=3 uid="uid://dcxxijtaocc15"]
 
 [ext_resource type="PackedScene" uid="uid://bl73ti2b4kpwe" path="res://models/props/facility_objects/transporters/golf_cart/cgc_cart.fbx" id="2_0k7bn"]
-[ext_resource type="Script" path="res://objects/interactables/elevators/golf_cart.gd" id="2_yiqmu"]
+[ext_resource type="Script" uid="uid://cjsg34fbbtjao" path="res://objects/interactables/elevators/golf_cart.gd" id="2_yiqmu"]
 [ext_resource type="Texture2D" uid="uid://do02bekksstto" path="res://models/props/facility_objects/transporters/golf_cart/cgc_cart_0.png" id="3_wruw8"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ywovn"]

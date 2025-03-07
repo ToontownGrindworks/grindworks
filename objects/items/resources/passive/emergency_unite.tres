@@ -2,12 +2,12 @@
 
 [ext_resource type="Texture2D" uid="uid://bubun4dua8es6" path="res://models/props/toon_props/resistance_fist/badge-pix-1.png" id="1_2wls7"]
 [ext_resource type="PackedScene" uid="uid://bge4d1wrscftk" path="res://models/props/toon_props/resistance_fist/badge.tscn" id="1_50aer"]
-[ext_resource type="Script" path="res://objects/items/classes/item.gd" id="2_dsog6"]
+[ext_resource type="Script" uid="uid://combwqypom1ru" path="res://objects/items/classes/item.gd" id="2_dsog6"]
 
 [resource]
 script = ExtResource("2_dsog6")
-qualitoon = 5
-qualitoon_rarity = 6
+qualitoon = 4
+rarity = 0
 evergreen = true
 realtime = false
 slot = 0

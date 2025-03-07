@@ -2,7 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://bpd84yeeupyim" path="res://models/cogs/suitb/lose_model/suitB-lose.glb" id="1_6xa7n"]
 [ext_resource type="Animation" uid="uid://citw87vlbobv2" path="res://models/cogs/suitb/animations/lose.res" id="1_gbnnt"]
-[ext_resource type="Script" path="res://objects/cog/suit_directory.gd" id="1_wvgtt"]
+[ext_resource type="Script" uid="uid://cqkt0omtc1wel" path="res://objects/cog/suit_directory.gd" id="1_wvgtt"]
 [ext_resource type="Texture2D" uid="uid://b2ng7fxqmbv54" path="res://models/cogs/suita/suita_hand.png" id="3_v4dv8"]
 [ext_resource type="Texture2D" uid="uid://i6n6vssb1e3" path="res://models/cogs/suita/suita_shoe.png" id="4_iqfgg"]
 [ext_resource type="Texture2D" uid="uid://batrs8pvrxnlg" path="res://models/cogs/suita/suita_c_arm.png" id="5_hosaj"]
@@ -23,7 +23,7 @@ albedo_texture = ExtResource("5_hosaj")
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_6plvx"]
 _data = {
-"lose": ExtResource("1_gbnnt")
+&"lose": ExtResource("1_gbnnt")
 }
 
 [node name="suitB-lose" node_paths=PackedStringArray("skeleton", "animator", "wrists_and_shoes", "head_bone") instance=ExtResource("1_6xa7n")]

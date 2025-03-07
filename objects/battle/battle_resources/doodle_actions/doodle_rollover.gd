@@ -18,7 +18,7 @@ func action():
 	# Do roll over anim
 	user.set_animation('rollover')
 	AudioManager.play_sound(SFX)
-	await TaskMgr.delay(3.9583 * 2.0)
+	await Task.delay(3.9583 * 2.0)
 	
 	
 	# Apply the 1 round status effect

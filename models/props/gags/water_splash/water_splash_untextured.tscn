@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=4 uid="uid://c7w0fjy28qcvr"]
 
-[ext_resource type="Script" path="res://models/props/gags/water_splash/water_splash_untextured.gd" id="1_4pyjo"]
+[ext_resource type="Script" uid="uid://10vbkw1hokq8" path="res://models/props/gags/water_splash/water_splash_untextured.gd" id="1_4pyjo"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_w3jx3"]
 albedo_color = Color(0.670588, 0.713726, 1, 1)

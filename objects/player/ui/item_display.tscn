@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://3wpuwo50gkt"]
 
-[ext_resource type="Script" path="res://objects/player/ui/item_display.gd" id="1_yadxl"]
+[ext_resource type="Script" uid="uid://c1eauoxbpgsk7" path="res://objects/player/ui/item_display.gd" id="1_yadxl"]
 
 [node name="ItemDisplay" type="ScrollContainer"]
 custom_minimum_size = Vector2(128, 80)

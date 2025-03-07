@@ -1,14 +1,14 @@
 [gd_resource type="Resource" script_class="CogDNA" load_steps=10 format=3 uid="uid://c4ocix1reawi8"]
 
-[ext_resource type="Script" path="res://objects/battle/battle_resources/cog_attacks/cog_attack.gd" id="1_jufpa"]
-[ext_resource type="Script" path="res://objects/cog/cogdna.gd" id="2_vbph8"]
+[ext_resource type="Script" uid="uid://bb27him60xtnk" path="res://objects/battle/battle_resources/cog_attacks/cog_attack.gd" id="1_jufpa"]
+[ext_resource type="Script" uid="uid://okjbx502s3r5" path="res://objects/cog/cogdna.gd" id="2_vbph8"]
 [ext_resource type="Resource" uid="uid://dc3wprcrjg58t" path="res://objects/battle/battle_resources/cog_attacks/resources/audit.tres" id="2_yh6og"]
 [ext_resource type="Resource" uid="uid://bik8l6ycrnufq" path="res://objects/battle/battle_resources/cog_attacks/resources/calculate.tres" id="3_5yak2"]
 [ext_resource type="PackedScene" uid="uid://bos8lmr7wb5dr" path="res://models/cogs/heads/numbercruncher.glb" id="3_n2s3n"]
 [ext_resource type="Resource" uid="uid://bxeasogxfcdk2" path="res://objects/battle/battle_resources/cog_attacks/resources/tabulate.tres" id="4_8uag5"]
 [ext_resource type="Resource" uid="uid://bhl72hd7pn8s2" path="res://objects/battle/battle_resources/cog_attacks/resources/workout.tres" id="5_e04ns"]
 [ext_resource type="Texture2D" uid="uid://2buj04u11fh8" path="res://models/cogs/heads/numbercruncher_tt_t_ene_hed_numberCruncher.png" id="6_kptss"]
-[ext_resource type="Script" path="res://objects/battle/battle_resources/status_effect.gd" id="7_qg0rp"]
+[ext_resource type="Script" uid="uid://df7irk63ikx4k" path="res://objects/battle/battle_resources/status_effect.gd" id="7_qg0rp"]
 
 [resource]
 script = ExtResource("2_vbph8")
@@ -17,13 +17,14 @@ suit = 0
 cog_name = "Number Cruncher"
 name_plural = ""
 head = ExtResource("3_n2s3n")
-head_scale = 1.0
+head_scale = Vector3(1, 1, 1)
 head_pos = Vector3(0, 0, 0)
 scale = 5.25
 head_textures = Array[Texture2D]([ExtResource("6_kptss")])
 hand_color = Color(0.65098, 0.94902, 0.85098, 1)
 head_color = Color(1, 1, 1, 1)
 custom_nametag_height = 0.0
+custom_nametag_suffix = ""
 attacks = Array[ExtResource("1_jufpa")]([ExtResource("2_yh6og"), ExtResource("3_5yak2"), ExtResource("4_8uag5"), ExtResource("5_e04ns")])
 level_low = 5
 level_high = 12
@@ -33,6 +34,6 @@ is_admin = false
 health_mod = 1.0
 battle_phrases = Array[String](["Is it time for crunch already?", "Where would you like to have your crunch today?", "Now you're really in a crunch.", "This will not be smooth.", "Let's do crunch.", "I hope you prefer extra crunchy.", "Looks like your number is up.", "It's crunch time!", "Go ahead, try and take a number.", "You've given me something to crunch on."])
 external_assets = {
-"head_model": "",
-"head_textures": []
+&"head_model": "",
+&"head_textures": []
 }

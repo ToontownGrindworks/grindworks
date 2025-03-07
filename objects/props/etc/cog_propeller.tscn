@@ -6,8 +6,8 @@
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_i18u7"]
 _data = {
-"retract": ExtResource("2_xvug0"),
-"spin": ExtResource("3_y6c2p")
+&"retract": ExtResource("2_xvug0"),
+&"spin": ExtResource("3_y6c2p")
 }
 
 [node name="propeller" instance=ExtResource("1_j06yx")]

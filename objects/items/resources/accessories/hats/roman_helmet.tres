@@ -1,0 +1,309 @@
+[gd_resource type="Resource" script_class="ItemAccessory" load_steps=41 format=3 uid="uid://dt2hd3tk44mog"]
+
+[ext_resource type="Script" uid="uid://fb0tqfojo57q" path="res://objects/items/classes/accessory_placement.gd" id="1_11pn8"]
+[ext_resource type="Script" uid="uid://c4eyu1xvv7h2l" path="res://objects/items/classes/head_placement.gd" id="2_ef5vb"]
+[ext_resource type="Texture2D" uid="uid://capfh8gkkargn" path="res://models/accessories/hats/roman_helmet/roman_helmet-pix-1.png" id="3_qqo28"]
+[ext_resource type="Script" uid="uid://be5t2d13wlmg0" path="res://objects/items/custom/item_roman_helmet.gd" id="4_7yjio"]
+[ext_resource type="PackedScene" uid="uid://dj20ibx427eum" path="res://models/accessories/hats/roman_helmet/roman_helmet.tscn" id="4_qj4qk"]
+[ext_resource type="Script" uid="uid://dvu24b3o8i3sj" path="res://objects/items/classes/item_accessory.gd" id="5_lynoq"]
+
+[sub_resource type="Resource" id="Resource_8pqho"]
+script = ExtResource("2_ef5vb")
+species = 2
+head_index = 0
+position = Vector3(0.01, -0.44, 0.09)
+rotation = Vector3(-1.95, 0, 0)
+scale = Vector3(0.52, 0.4, 0.45)
+
+[sub_resource type="Resource" id="Resource_4qx3c"]
+script = ExtResource("2_ef5vb")
+species = 2
+head_index = 1
+position = Vector3(0.01, -0.39, -0.03)
+rotation = Vector3(-1.95, 0, 0)
+scale = Vector3(0.52, 0.4, 0.45)
+
+[sub_resource type="Resource" id="Resource_s7khx"]
+script = ExtResource("2_ef5vb")
+species = 2
+head_index = 2
+position = Vector3(0.01, -0.44, 0.09)
+rotation = Vector3(-1.95, 0, 0)
+scale = Vector3(0.52, 0.4, 0.45)
+
+[sub_resource type="Resource" id="Resource_g7cfs"]
+script = ExtResource("2_ef5vb")
+species = 2
+head_index = 3
+position = Vector3(0.01, -0.39, -0.03)
+rotation = Vector3(-1.95, 0, 0)
+scale = Vector3(0.52, 0.4, 0.45)
+
+[sub_resource type="Resource" id="Resource_10r2o"]
+script = ExtResource("2_ef5vb")
+species = 0
+head_index = 3
+position = Vector3(0.01, -0.52, -0.29)
+rotation = Vector3(-22.76, 0, 0)
+scale = Vector3(0.55, 0.5, 0.5)
+
+[sub_resource type="Resource" id="Resource_1pn5b"]
+script = ExtResource("2_ef5vb")
+species = 0
+head_index = 2
+position = Vector3(0.01, -0.52, -0.29)
+rotation = Vector3(-22.76, 0, 0)
+scale = Vector3(0.55, 0.5, 0.5)
+
+[sub_resource type="Resource" id="Resource_12s3o"]
+script = ExtResource("2_ef5vb")
+species = 0
+head_index = 1
+position = Vector3(0.01, -0.27, -0.4)
+rotation = Vector3(-22.76, 0, 0)
+scale = Vector3(0.55, 0.5, 0.5)
+
+[sub_resource type="Resource" id="Resource_ri0uk"]
+script = ExtResource("2_ef5vb")
+species = 0
+head_index = 0
+position = Vector3(0.01, -0.27, -0.4)
+rotation = Vector3(-22.76, 0, 0)
+scale = Vector3(0.55, 0.5, 0.5)
+
+[sub_resource type="Resource" id="Resource_iuwe1"]
+script = ExtResource("2_ef5vb")
+species = 1
+head_index = 0
+position = Vector3(0.01, -0.57, -0.05)
+rotation = Vector3(6.03, 0, 0)
+scale = Vector3(0.58, 0.48, 0.58)
+
+[sub_resource type="Resource" id="Resource_4hlks"]
+script = ExtResource("2_ef5vb")
+species = 1
+head_index = 1
+position = Vector3(0.01, -0.57, -0.05)
+rotation = Vector3(6.03, 0, 0)
+scale = Vector3(0.58, 0.48, 0.58)
+
+[sub_resource type="Resource" id="Resource_rrf6k"]
+script = ExtResource("2_ef5vb")
+species = 1
+head_index = 2
+position = Vector3(0.01, -0.64, -0.08)
+rotation = Vector3(6.03, 0, 0)
+scale = Vector3(0.55, 0.45, 0.55)
+
+[sub_resource type="Resource" id="Resource_shykx"]
+script = ExtResource("2_ef5vb")
+species = 1
+head_index = 3
+position = Vector3(0.01, -0.64, -0.08)
+rotation = Vector3(6.03, 0, 0)
+scale = Vector3(0.55, 0.45, 0.55)
+
+[sub_resource type="Resource" id="Resource_5lxyc"]
+script = ExtResource("2_ef5vb")
+species = 3
+head_index = 0
+position = Vector3(0, -0.36, -0.16)
+rotation = Vector3(-1, 0, 0)
+scale = Vector3(0.65, 0.55, 0.7)
+
+[sub_resource type="Resource" id="Resource_h15cx"]
+script = ExtResource("2_ef5vb")
+species = 3
+head_index = 1
+position = Vector3(0, -0.36, -0.16)
+rotation = Vector3(-1, 0, 0)
+scale = Vector3(0.65, 0.65, 0.7)
+
+[sub_resource type="Resource" id="Resource_2gm5v"]
+script = ExtResource("2_ef5vb")
+species = 3
+head_index = 2
+position = Vector3(0, -0.36, -0.16)
+rotation = Vector3(-1, 0, 0)
+scale = Vector3(0.65, 0.55, 0.7)
+
+[sub_resource type="Resource" id="Resource_ss5a7"]
+script = ExtResource("2_ef5vb")
+species = 3
+head_index = 3
+position = Vector3(0, -0.36, -0.16)
+rotation = Vector3(-1, 0, 0)
+scale = Vector3(0.65, 0.65, 0.7)
+
+[sub_resource type="Resource" id="Resource_g43iw"]
+script = ExtResource("2_ef5vb")
+species = 4
+head_index = 3
+position = Vector3(0.01, -0.65, -0.24)
+rotation = Vector3(-11.25, 0, 0)
+scale = Vector3(0.52, 0.4, 0.45)
+
+[sub_resource type="Resource" id="Resource_s5fl3"]
+script = ExtResource("2_ef5vb")
+species = 4
+head_index = 2
+position = Vector3(0.01, -0.81, -0.11)
+rotation = Vector3(-11.25, 0, 0)
+scale = Vector3(0.52, 0.4, 0.45)
+
+[sub_resource type="Resource" id="Resource_n3gkc"]
+script = ExtResource("2_ef5vb")
+species = 4
+head_index = 1
+position = Vector3(0.01, -0.65, -0.24)
+rotation = Vector3(-11.25, 0, 0)
+scale = Vector3(0.52, 0.4, 0.45)
+
+[sub_resource type="Resource" id="Resource_k5eti"]
+script = ExtResource("2_ef5vb")
+species = 4
+head_index = 0
+position = Vector3(0.01, -0.81, -0.11)
+rotation = Vector3(-11.25, 0, 0)
+scale = Vector3(0.52, 0.4, 0.45)
+
+[sub_resource type="Resource" id="Resource_5rw3p"]
+script = ExtResource("2_ef5vb")
+species = 5
+head_index = 0
+position = Vector3(0.01, -0.36, -0.04)
+rotation = Vector3(-11.25, 0, 0)
+scale = Vector3(0.53, 0.4, 0.45)
+
+[sub_resource type="Resource" id="Resource_2enl1"]
+script = ExtResource("2_ef5vb")
+species = 5
+head_index = 1
+position = Vector3(0.01, -0.14, -0.13)
+rotation = Vector3(-11.25, 0, 0)
+scale = Vector3(0.65, 0.6, 0.5)
+
+[sub_resource type="Resource" id="Resource_7heev"]
+script = ExtResource("2_ef5vb")
+species = 5
+head_index = 2
+position = Vector3(0.01, -0.36, -0.04)
+rotation = Vector3(-11.25, 0, 0)
+scale = Vector3(0.53, 0.4, 0.45)
+
+[sub_resource type="Resource" id="Resource_1bdb1"]
+script = ExtResource("2_ef5vb")
+species = 5
+head_index = 3
+position = Vector3(0.01, -0.14, -0.13)
+rotation = Vector3(-11.25, 0, 0)
+scale = Vector3(0.65, 0.6, 0.5)
+
+[sub_resource type="Resource" id="Resource_c36o5"]
+script = ExtResource("2_ef5vb")
+species = 6
+head_index = 1
+position = Vector3(0.01, -0.11, -0.08)
+rotation = Vector3(2.03, 0, 0)
+scale = Vector3(0.7, 0.55, 0.55)
+
+[sub_resource type="Resource" id="Resource_jafqh"]
+script = ExtResource("2_ef5vb")
+species = 6
+head_index = 0
+position = Vector3(0.01, -0.35, -0.07)
+rotation = Vector3(2.03, 0, 0)
+scale = Vector3(0.65, 0.5, 0.55)
+
+[sub_resource type="Resource" id="Resource_7roc0"]
+script = ExtResource("2_ef5vb")
+species = 7
+head_index = 0
+position = Vector3(0, -0.73, -0.18)
+rotation = Vector3(-20.55, 0, 0)
+scale = Vector3(0.5, 0.5, 0.55)
+
+[sub_resource type="Resource" id="Resource_46dnc"]
+script = ExtResource("2_ef5vb")
+species = 7
+head_index = 1
+position = Vector3(0, -0.66, -0.24)
+rotation = Vector3(-20.55, 0, 0)
+scale = Vector3(0.45, 0.45, 0.5)
+
+[sub_resource type="Resource" id="Resource_0y12l"]
+script = ExtResource("2_ef5vb")
+species = 7
+head_index = 2
+position = Vector3(0, -0.73, -0.18)
+rotation = Vector3(-20.55, 0, 0)
+scale = Vector3(0.5, 0.5, 0.55)
+
+[sub_resource type="Resource" id="Resource_kbcnn"]
+script = ExtResource("2_ef5vb")
+species = 7
+head_index = 3
+position = Vector3(0, -0.66, -0.24)
+rotation = Vector3(-20.55, 0, 0)
+scale = Vector3(0.45, 0.45, 0.5)
+
+[sub_resource type="Resource" id="Resource_nk2mc"]
+script = ExtResource("2_ef5vb")
+species = 8
+head_index = 3
+position = Vector3(0, -0.8, -0.03)
+rotation = Vector3(-0.62, 0, 0)
+scale = Vector3(0.55, 0.5, 0.5)
+
+[sub_resource type="Resource" id="Resource_57ry5"]
+script = ExtResource("2_ef5vb")
+species = 8
+head_index = 2
+position = Vector3(0, -0.8, -0.03)
+rotation = Vector3(-0.62, 0, 0)
+scale = Vector3(0.5, 0.5, 0.5)
+
+[sub_resource type="Resource" id="Resource_y5ahc"]
+script = ExtResource("2_ef5vb")
+species = 8
+head_index = 1
+position = Vector3(0, -0.8, -0.03)
+rotation = Vector3(-0.62, 0, 0)
+scale = Vector3(0.55, 0.5, 0.5)
+
+[sub_resource type="Resource" id="Resource_bkf5t"]
+script = ExtResource("2_ef5vb")
+species = 8
+head_index = 0
+position = Vector3(0, -0.8, -0.03)
+rotation = Vector3(-0.62, 0, 0)
+scale = Vector3(0.5, 0.5, 0.5)
+
+[resource]
+script = ExtResource("5_lynoq")
+accessory_placements = Array[ExtResource("1_11pn8")]([SubResource("Resource_8pqho"), SubResource("Resource_4qx3c"), SubResource("Resource_s7khx"), SubResource("Resource_g7cfs"), SubResource("Resource_10r2o"), SubResource("Resource_1pn5b"), SubResource("Resource_12s3o"), SubResource("Resource_ri0uk"), SubResource("Resource_iuwe1"), SubResource("Resource_4hlks"), SubResource("Resource_rrf6k"), SubResource("Resource_shykx"), SubResource("Resource_5lxyc"), SubResource("Resource_h15cx"), SubResource("Resource_2gm5v"), SubResource("Resource_ss5a7"), SubResource("Resource_g43iw"), SubResource("Resource_s5fl3"), SubResource("Resource_n3gkc"), SubResource("Resource_k5eti"), SubResource("Resource_5rw3p"), SubResource("Resource_2enl1"), SubResource("Resource_7heev"), SubResource("Resource_1bdb1"), SubResource("Resource_c36o5"), SubResource("Resource_jafqh"), SubResource("Resource_7roc0"), SubResource("Resource_46dnc"), SubResource("Resource_0y12l"), SubResource("Resource_kbcnn"), SubResource("Resource_nk2mc"), SubResource("Resource_57ry5"), SubResource("Resource_y5ahc"), SubResource("Resource_bkf5t")])
+qualitoon = 3
+rarity = 0
+evergreen = false
+realtime = false
+slot = 1
+world_scale = 0.17
+want_ui_spin = true
+ui_cam_offset = 0.0
+item_name = "Roman Helmet"
+item_description = "Show 'em no mercy!"
+big_description = "Cogs are instantly defeated when below 8% HP"
+model = ExtResource("4_qj4qk")
+stats_add = {
+"cog_hp_death_threshold": 0.08
+}
+stats_multiply = {}
+player_values = {}
+arbitrary_data = {}
+item_script = ExtResource("4_7yjio")
+remember_item = true
+icon = ExtResource("3_qqo28")
+shop_category_title = "Boost Item"
+shop_category_color = Color(0.196078, 0.580392, 0.917647, 1)
+force_show_shop_category = false
+custom_shop_price = 0

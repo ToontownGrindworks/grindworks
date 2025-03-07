@@ -1,10 +1,11 @@
 [gd_scene load_steps=5 format=3 uid="uid://iprh7uid48eg"]
 
 [ext_resource type="Texture2D" uid="uid://bnblnoll8svhh" path="res://ui_assets/battle/alarm_clock.png" id="1_ywg0q"]
-[ext_resource type="Script" path="res://objects/battle/misc_battle_objects/timer/battle_timer.gd" id="2_ob8ly"]
+[ext_resource type="Script" uid="uid://d1tgqabc877jn" path="res://objects/battle/misc_battle_objects/timer/battle_timer.gd" id="2_ob8ly"]
 [ext_resource type="FontFile" uid="uid://815gwlftl5ik" path="res://fonts/impress-bt.ttf" id="3_p72mw"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_84311"]
+resource_local_to_scene = true
 font = ExtResource("3_p72mw")
 font_size = 48
 font_color = Color(0, 0, 0, 1)
@@ -25,6 +26,7 @@ expand_mode = 1
 script = ExtResource("2_ob8ly")
 
 [node name="TimeLabel" type="Label" parent="."]
+unique_name_in_owner = true
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5

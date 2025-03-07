@@ -1,6 +1,6 @@
 [gd_scene load_steps=22 format=4 uid="uid://bx4qgugxa0mos"]
 
-[ext_resource type="Texture2D" uid="uid://bto05c554e0om" path="res://models/props/gags/marbles/marbles_marble_1.png" id="1_85jih"]
+[ext_resource type="Texture2D" uid="uid://3mb7skoeyvis" path="res://models/props/gags/marbles/marbles_marble_1.png" id="1_85jih"]
 [ext_resource type="Texture2D" uid="uid://demxnk1bxf80m" path="res://models/props/gags/marbles/marbles_marble_2.png" id="2_fyiwf"]
 [ext_resource type="Texture2D" uid="uid://c4d8cjcguk3d1" path="res://models/props/gags/marbles/marbles_marble_3.png" id="3_wv8i7"]
 [ext_resource type="Texture2D" uid="uid://csgopihbgnob3" path="res://models/props/gags/marbles/marbles_marble_5.png" id="4_mbhdb"]
@@ -287,7 +287,7 @@ tracks/13/keys = PackedFloat32Array(0, 1, 4.88361e-06, 8.12802e-06, -3.96941e-11
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_1enp5"]
 _data = {
-"toss": SubResource("Animation_xaqkh")
+&"toss": SubResource("Animation_xaqkh")
 }
 
 [node name="marbles2" type="Node3D"]

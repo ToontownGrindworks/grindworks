@@ -1,10 +1,10 @@
 [gd_resource type="Resource" script_class="ItemAccessory" load_steps=40 format=3 uid="uid://dlhslwloer383"]
 
-[ext_resource type="Script" path="res://objects/items/classes/accessory_placement.gd" id="1_5ds8c"]
-[ext_resource type="Script" path="res://objects/items/classes/head_placement.gd" id="2_0w2sp"]
+[ext_resource type="Script" uid="uid://fb0tqfojo57q" path="res://objects/items/classes/accessory_placement.gd" id="1_5ds8c"]
+[ext_resource type="Script" uid="uid://c4eyu1xvv7h2l" path="res://objects/items/classes/head_placement.gd" id="2_0w2sp"]
 [ext_resource type="PackedScene" uid="uid://brqcobi5kuxdx" path="res://models/accessories/glasses/masquerade/tt_m_chr_avt_acc_msk_masqueradeTypeMask.glb" id="2_yrdo0"]
 [ext_resource type="Texture2D" uid="uid://dshgxj3tp8n72" path="res://models/accessories/glasses/masquerade/tt_m_chr_avt_acc_msk_masqueradeTypeMask.glb-pix-1.png" id="3_22ouo"]
-[ext_resource type="Script" path="res://objects/items/classes/item_accessory.gd" id="3_kr7ei"]
+[ext_resource type="Script" uid="uid://dvu24b3o8i3sj" path="res://objects/items/classes/item_accessory.gd" id="3_kr7ei"]
 
 [sub_resource type="Resource" id="Resource_kaugx"]
 script = ExtResource("2_0w2sp")
@@ -26,9 +26,9 @@ scale = Vector3(0.25, 0.25, 0.25)
 script = ExtResource("2_0w2sp")
 species = 2
 head_index = 2
-position = Vector3(0.01, 0.2, 0.55)
+position = Vector3(-0.01, 0.21, 0.42)
 rotation = Vector3(0, 0, 0)
-scale = Vector3(0.23, 0.23, 0.23)
+scale = Vector3(0.21, 0.23, 0.4)
 
 [sub_resource type="Resource" id="Resource_i1gk2"]
 script = ExtResource("2_0w2sp")
@@ -122,9 +122,9 @@ scale = Vector3(0.25, 0.25, 0.25)
 script = ExtResource("2_0w2sp")
 species = 3
 head_index = 2
-position = Vector3(0.01, 0, 0.6)
+position = Vector3(-0.01, -0.04, 0.48)
 rotation = Vector3(0, 0, 0)
-scale = Vector3(0.25, 0.25, 0.25)
+scale = Vector3(0.28, 0.27, 0.48)
 
 [sub_resource type="Resource" id="Resource_reevy"]
 script = ExtResource("2_0w2sp")
@@ -202,9 +202,9 @@ scale = Vector3(0.25, 0.25, 0.25)
 script = ExtResource("2_0w2sp")
 species = 6
 head_index = 1
-position = Vector3(0.01, 0.25, 0.6)
-rotation = Vector3(0, 0, 0)
-scale = Vector3(0.27, 0.27, 0.27)
+position = Vector3(0.01, 0.2, 0.53)
+rotation = Vector3(-8.27, 0, 0)
+scale = Vector3(0.29, 0.33, 0.45)
 
 [sub_resource type="Resource" id="Resource_ovr3q"]
 script = ExtResource("2_0w2sp")
@@ -250,9 +250,9 @@ scale = Vector3(0.2, 0.2, 0.2)
 script = ExtResource("2_0w2sp")
 species = 8
 head_index = 3
-position = Vector3(0.01, -0.25, 0.52)
-rotation = Vector3(0, 0, 0)
-scale = Vector3(0.25, 0.25, 0.25)
+position = Vector3(0, -0.25, 0.44)
+rotation = Vector3(-5.48, 0, 0)
+scale = Vector3(0.28, 0.27, 0.4)
 
 [sub_resource type="Resource" id="Resource_mx7ql"]
 script = ExtResource("2_0w2sp")
@@ -281,8 +281,8 @@ scale = Vector3(0.25, 0.25, 0.25)
 [resource]
 script = ExtResource("3_kr7ei")
 accessory_placements = Array[ExtResource("1_5ds8c")]([SubResource("Resource_kaugx"), SubResource("Resource_vmwby"), SubResource("Resource_cieib"), SubResource("Resource_i1gk2"), SubResource("Resource_a4xaj"), SubResource("Resource_b2usb"), SubResource("Resource_7pqfy"), SubResource("Resource_2n0ny"), SubResource("Resource_8ctuf"), SubResource("Resource_yuq37"), SubResource("Resource_eq0gv"), SubResource("Resource_4tfvn"), SubResource("Resource_m2jn4"), SubResource("Resource_pow21"), SubResource("Resource_2hjum"), SubResource("Resource_reevy"), SubResource("Resource_u7qom"), SubResource("Resource_h8vmm"), SubResource("Resource_hc00e"), SubResource("Resource_e5wtu"), SubResource("Resource_ljem4"), SubResource("Resource_0fctt"), SubResource("Resource_nd61y"), SubResource("Resource_fd844"), SubResource("Resource_oe3bk"), SubResource("Resource_ovr3q"), SubResource("Resource_hqpci"), SubResource("Resource_ajol1"), SubResource("Resource_76fv6"), SubResource("Resource_0mejl"), SubResource("Resource_yvv27"), SubResource("Resource_mx7ql"), SubResource("Resource_qpwj0"), SubResource("Resource_dllae")])
-qualitoon = 3
-qualitoon_rarity = 6
+qualitoon = 2
+rarity = 0
 evergreen = false
 realtime = false
 slot = 2

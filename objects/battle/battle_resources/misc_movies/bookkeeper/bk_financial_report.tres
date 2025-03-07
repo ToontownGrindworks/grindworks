@@ -1,12 +1,13 @@
 [gd_resource type="Resource" script_class="BKFinancialReport" load_steps=2 format=3 uid="uid://dhye8rdo1dnwh"]
 
-[ext_resource type="Script" path="res://objects/battle/battle_resources/misc_movies/bookkeeper/bk_financial_report.gd" id="1_7ejm4"]
+[ext_resource type="Script" uid="uid://bjpwnk0exjsxv" path="res://objects/battle/battle_resources/misc_movies/bookkeeper/bk_financial_report.gd" id="1_7ejm4"]
 
 [resource]
 script = ExtResource("1_7ejm4")
 play_sound = true
 accuracy = 75
 damage = 1
+ignore_stats = false
 summary = "Applies a random debuff!"
 attack_lines = Array[String](["Our profits are up 25% this quarter.", "You're a blemish on my balance sheet.", "Watch out, you're in the red."])
 target_type = 0

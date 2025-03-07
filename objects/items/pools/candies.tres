@@ -1,8 +1,8 @@
 [gd_resource type="Resource" script_class="ItemPool" load_steps=8 format=3 uid="uid://behe2qpqivkvt"]
 
-[ext_resource type="Script" path="res://objects/items/classes/item.gd" id="1_qkmsk"]
+[ext_resource type="Script" uid="uid://combwqypom1ru" path="res://objects/items/classes/item.gd" id="1_qkmsk"]
 [ext_resource type="Resource" uid="uid://danb3hsfnfror" path="res://objects/items/resources/passive/candies/candy_damage.tres" id="2_rw1lj"]
-[ext_resource type="Script" path="res://objects/items/classes/item_pool.gd" id="2_vdgus"]
+[ext_resource type="Script" uid="uid://wiibpvvki8vs" path="res://objects/items/classes/item_pool.gd" id="2_vdgus"]
 [ext_resource type="Resource" uid="uid://cckkv76gxoem3" path="res://objects/items/resources/passive/candies/candy_defense.tres" id="3_yyqys"]
 [ext_resource type="Resource" uid="uid://y5nhq5oudm83" path="res://objects/items/resources/passive/candies/candy_evasiveness.tres" id="4_13nni"]
 [ext_resource type="Resource" uid="uid://rytsv7bygrwl" path="res://objects/items/resources/passive/candies/candy_luck.tres" id="5_bcv2b"]

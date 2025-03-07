@@ -1,7 +1,7 @@
 [gd_scene load_steps=8 format=3 uid="uid://cn4a51dwspr5o"]
 
 [ext_resource type="PackedScene" uid="uid://b0d1er4oqiqcn" path="res://objects/general_ui/general_button/general_button.tscn" id="1_2o5xy"]
-[ext_resource type="Script" path="res://objects/battle/misc_battle_objects/spam_game/spam_game.gd" id="1_h8o37"]
+[ext_resource type="Script" uid="uid://iljdtsltk8he" path="res://objects/battle/misc_battle_objects/spam_game/spam_game.gd" id="1_h8o37"]
 [ext_resource type="Texture2D" uid="uid://ddcktpjy3gdew" path="res://ui_assets/misc/uiAccessoryDelete_up.png" id="2_xi5wf"]
 [ext_resource type="Texture2D" uid="uid://b7ri5sq021cvo" path="res://ui_assets/misc/uiAccessoryDelete_down.png" id="3_swq6t"]
 [ext_resource type="Texture2D" uid="uid://dn8vndd37lqom" path="res://ui_assets/misc/uiAccessoryDelete_rollover.png" id="4_unsxa"]

@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://5hvtmu8sf5ub"]
 
-[ext_resource type="Script" path="res://objects/player/ui/timer/game_timer.gd" id="1_iduyu"]
+[ext_resource type="Script" uid="uid://dqxltut4qssyo" path="res://objects/player/ui/timer/game_timer.gd" id="1_iduyu"]
 [ext_resource type="FontFile" uid="uid://815gwlftl5ik" path="res://fonts/impress-bt.ttf" id="2_tu3l7"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_ndimm"]

@@ -1,13 +1,13 @@
 [gd_resource type="Resource" script_class="CogDNA" load_steps=12 format=3 uid="uid://hsr7nv4yasb7"]
 
-[ext_resource type="Script" path="res://objects/battle/battle_resources/cog_attacks/cog_attack.gd" id="1_inyrk"]
+[ext_resource type="Script" uid="uid://bb27him60xtnk" path="res://objects/battle/battle_resources/cog_attacks/cog_attack.gd" id="1_inyrk"]
 [ext_resource type="Resource" uid="uid://c27ek2anjbx88" path="res://objects/battle/battle_resources/cog_attacks/resources/pound_key.tres" id="2_uwgxm"]
 [ext_resource type="Resource" uid="uid://dwkmwkdn3ws4k" path="res://objects/battle/battle_resources/cog_attacks/resources/evil_eye.tres" id="4_jbdkh"]
 [ext_resource type="PackedScene" uid="uid://2ewnjjvwgpwy" path="res://models/cogs/heads/coldcaller.glb" id="4_ts45w"]
-[ext_resource type="Script" path="res://objects/cog/cogdna.gd" id="5_tbeoa"]
+[ext_resource type="Script" uid="uid://okjbx502s3r5" path="res://objects/cog/cogdna.gd" id="5_tbeoa"]
 [ext_resource type="Texture2D" uid="uid://2fj5qbvh3qa1" path="res://models/cogs/textures/misc/sleeve_2.png" id="5_v7ur7"]
 [ext_resource type="Texture2D" uid="uid://idf1e68fml3o" path="res://models/cogs/textures/misc/blazer_1.png" id="6_m1odc"]
-[ext_resource type="Script" path="res://objects/battle/battle_resources/status_effect.gd" id="6_msats"]
+[ext_resource type="Script" uid="uid://df7irk63ikx4k" path="res://objects/battle/battle_resources/status_effect.gd" id="6_msats"]
 [ext_resource type="Texture2D" uid="uid://o3hrfvdxeisb" path="res://models/cogs/textures/misc/leg_4.png" id="7_kwmn3"]
 [ext_resource type="Resource" uid="uid://b4vuuxwhv0d3v" path="res://objects/battle/battle_resources/status_effects/resources/status_effect_mod_cog.tres" id="9_h8ib0"]
 [ext_resource type="Texture2D" uid="uid://2u10opem6dj5" path="res://models/cogs/heads/hotliner.png" id="9_knla6"]
@@ -39,6 +39,6 @@ is_admin = false
 health_mod = 1.0
 battle_phrases = Array[String](["You'll have to act fast.", "Ah, our first caller.", "This call will be recorded.", "This is your last call.", "Right on schedule.", "You're in the hot seat now.", "I've got a few burning questions for you, Toon.", "Is it hot in here, or is it just me?", "Play with fire, and you'll get burned."])
 external_assets = {
-"head_model": "",
-"head_textures": []
+&"head_model": "",
+&"head_textures": []
 }

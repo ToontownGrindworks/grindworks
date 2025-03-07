@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://bmkdj1ocsunjm"]
 
 [ext_resource type="Texture2D" uid="uid://cqx2ellqku7do" path="res://objects/items/custom/treasure/snow_particle.png" id="1_eb13y"]
-[ext_resource type="Script" path="res://objects/items/custom/treasure/treasure.gd" id="7_j0e6y"]
+[ext_resource type="Script" uid="uid://chicrk2hhiqyn" path="res://objects/items/custom/treasure/treasure.gd" id="7_j0e6y"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_qfpg2"]
 size = Vector3(1.3, 1.3, 0.06)

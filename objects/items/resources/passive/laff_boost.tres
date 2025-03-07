@@ -1,16 +1,18 @@
 [gd_resource type="Resource" script_class="Item" load_steps=3 format=3 uid="uid://c3sjb3vivkvux"]
 
-[ext_resource type="Script" path="res://objects/items/classes/item.gd" id="1_mjn23"]
+[ext_resource type="Script" uid="uid://combwqypom1ru" path="res://objects/items/classes/item.gd" id="1_mjn23"]
 [ext_resource type="PackedScene" uid="uid://dfwa4083sf5u8" path="res://objects/items/custom/laff_boost/laff_boost.tscn" id="1_p7xa2"]
 
 [resource]
 script = ExtResource("1_mjn23")
-qualitoon = 2
+qualitoon = 1
+rarity = 0
 evergreen = true
 realtime = false
 slot = 0
 world_scale = 1.85
 want_ui_spin = true
+ui_cam_offset = 0.0
 item_name = "Laff Boost"
 item_description = "You feel happier!"
 big_description = "Increases your maximum laff."
@@ -24,3 +26,5 @@ arbitrary_data = {}
 remember_item = false
 shop_category_title = "Boost Item"
 shop_category_color = Color(1, 0.54902, 0, 1)
+force_show_shop_category = false
+custom_shop_price = 0

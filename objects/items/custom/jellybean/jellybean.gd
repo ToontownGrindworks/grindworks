@@ -30,9 +30,9 @@ var colors = {
 ## Bean Values
 var values := {
 	BeanColor.RED: 3,
-	BeanColor.GREEN: 5,
-	BeanColor.LIGHT_BLUE: 7,
-	BeanColor.YELLOW: 10,
+	BeanColor.YELLOW: 5,
+	BeanColor.GREEN: 7,
+	BeanColor.LIGHT_BLUE: 10,
 	BeanColor.BLUE: 15,
 	BeanColor.PINK: 20
 }

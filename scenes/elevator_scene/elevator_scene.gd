@@ -38,7 +38,7 @@ func _ready():
 	AudioManager.set_default_music(load('res://audio/music/beta_installer.ogg'))
 	
 	# Save progress at every elevator scene
-	await TaskMgr.delay(0.1)
+	await Task.delay(0.1)
 	SaveFileService.save()
 	
 	# Get the next random floor

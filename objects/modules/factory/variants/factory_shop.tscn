@@ -3,7 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://srxbjtdik0jv" path="res://objects/modules/mint/base_rooms/mint_skele_room2.tscn" id="1_isvc1"]
 [ext_resource type="Texture2D" uid="uid://brgqli0hmk7ls" path="res://models/facilities/factory/FINALFACTORY_101.png" id="2_mmm1w"]
 [ext_resource type="PackedScene" uid="uid://cy4iox7mj5ei0" path="res://objects/toon/toon.tscn" id="4_xkbfc"]
-[ext_resource type="Script" path="res://objects/toon/toon_dna.gd" id="5_8trba"]
+[ext_resource type="Script" uid="uid://yg7gxug4rab" path="res://objects/toon/toon_dna.gd" id="5_8trba"]
 [ext_resource type="PackedScene" uid="uid://drmdabed2lrwg" path="res://objects/props/etc/board_sign/board_sign.tscn" id="6_dy7xl"]
 [ext_resource type="PackedScene" uid="uid://ciesu8xyj70oc" path="res://objects/interactables/shop/toon_shop.tscn" id="7_pv6u8"]
 [ext_resource type="PackedScene" uid="uid://ciyyhun2e5nmf" path="res://objects/props/etc/crate/crate_general.tscn" id="8_v0xcw"]

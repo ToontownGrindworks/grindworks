@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://cs3g65h2tadxl"]
 
 [ext_resource type="FontFile" uid="uid://cup2yr5w7or1l" path="res://fonts/Minnie.TTF" id="1_xxk0j"]
-[ext_resource type="Script" path="res://objects/battle/3d_text/3d_text.gd" id="2_o7bnj"]
+[ext_resource type="Script" uid="uid://budpcfaq165ci" path="res://objects/battle/3d_text/3d_text.gd" id="2_o7bnj"]
 
 [node name="3DText" type="Label3D"]
 billboard = 1

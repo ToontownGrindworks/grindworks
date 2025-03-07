@@ -1,0 +1,60 @@
+[gd_resource type="Resource" script_class="ReleaseNote" load_steps=2 format=3 uid="uid://des1jj7jkakly"]
+
+[ext_resource type="Script" uid="uid://d1j0hh6tsgy0r" path="res://scenes/title_screen/release_notes/release_note.gd" id="1_xntby"]
+
+[resource]
+script = ExtResource("1_xntby")
+release_version = "v1.0.2"
+notes = "[TITLE]Engine
+Updated to Godot version 4.4
+Updated some internal plugins
+Enabled physics interpolation, making player and camera movement less jittery on high framerates
+Temporarily introduced a \"Loading...\" screen at game startup to fix an engine-level issue
+[TITLE]Items
+Added Princess Hat (1-Star)
+Added Bee Wings (3-Star)
+Added Roman Helmet (4-Star)
+Added Rainbow Wig (4-Star)
+Added Star Glasses (5-Star)
+Added Angel Wings (5-Star)
+Dragon wings' stat boosts are now additive rather than multiplicative, making their scaling less aggressive
+1-Star is now the new quality minimum, and all 0-Star items have been made 1-Star
+Adjusted star rating and rarity for various items
+Adjusted placements for some accessories
+Rewrote how item rarity is calculated, adding more granularity and making the so-called \"Icecream parlor\" shops less likely
+Adjusted jellybean colors to represent the rainbow in order of amount
+[TITLE]Proxy Cogs
+A new proxy Cog has appeared in Cog HQ
+Proxy Cogs have gained a new ability
+[TITLE]Characters
+Barnacle Bessie's drop gag's minimum level will increase throughout the run, making her character ability more reliable
+Lowered Moe Zart's damage boost
+[TITLE]Cog Creator
+Custom Cogs now have a toggle for making Proxy Cogs
+Fixed an issue where custom Cogs would take over the existing Cogs in the game
+Fixed an issue where a custom imported Cog head's file path would be lost until re-opening the game
+Changing a Cog's body type will no longer auto-assign Pickpocket
+Known Issue: Custom Cogs still occasionally use the error attack even when they have attacks properly assigned
+[TITLE]Obstacles
+Lowered the height of the paths for rolling golf balls in the Cog Golf Course to make them easier to run over
+Slightly tweaked the height of platforming gears in one of the rooms in the Sellbot Factory
+Slightly lowered the speed of the big golf ball in one of the Cog Golf Course rooms
+Adjusted the collision of D.A. Office puzzle panels to make diagonal movements more forgiving
+Stompers now give control back to the player quicker after being stomped
+Tweaked collisions in the Factory stomper room to feel less \"sticky\" around pipes
+Made platforms with chests on them in the Mint not sink into lava
+[TITLE]Tweaks
+Text on game timers will now turn red when at 5 seconds remaining or less
+Track Frames will now tell you the gag you get on pickup
+Damage over time status effects will now combine into one effect if multiple of the same effect are used in the same turn
+Added a FreeCam tool
+[TITLE]Bugfixes
+Buttons can no longer be pressed when player isn't in walk state
+Fixed a few typos on some item descriptions
+Fixed a rare achievement not triggering properly
+Fixed missing hand textures when fat Cogs are exploding
+Fixed Mover & Shakers being completely absent from the game
+Fixed a Factory paint floor's collision not properly extending to the full room size
+Fixed an issue where pressing \"Try Again\" as the mystery toon would fail to randomize your stats/name
+Fixed an unintended skippable battle in the DA Office
+Patched a skip in the Mint lava mixer room"

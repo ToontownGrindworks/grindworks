@@ -107,7 +107,7 @@ tracks/13/keys = PackedFloat32Array(0, 1, 1.69017, -0.725323, 128.399)
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_t3hhq"]
 _data = {
-"spray": SubResource("Animation_s3y1g")
+&"spray": SubResource("Animation_s3y1g")
 }
 
 [sub_resource type="Animation" id="Animation_dty4l"]
@@ -214,7 +214,7 @@ tracks/13/keys = PackedFloat32Array(0, 1, 1.69017, -0.725323, 128.399)
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_er5bc"]
 _data = {
-"firehose|hose|BaseLayer": SubResource("Animation_dty4l")
+&"firehose|hose|BaseLayer": SubResource("Animation_dty4l")
 }
 
 [node name="hose" instance=ExtResource("1_ymsl3")]

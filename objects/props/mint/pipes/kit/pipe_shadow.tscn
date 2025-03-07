@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=4 uid="uid://csdrrw6xiokuy"]
 
-[ext_resource type="Texture2D" uid="uid://djpsx1jhvcu24" path="res://models/props/facility_objects/mint/pipes/textures/ShadowCircle.png" id="1_748mk"]
+[ext_resource type="Texture2D" uid="uid://grux0mcs1i4m" path="res://models/props/facility_objects/mint/pipes/textures/ShadowCircle.png" id="1_748mk"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_cetjq"]
 resource_name = "pasted__CircleShadow_SHD"

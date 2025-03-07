@@ -1,7 +1,7 @@
 [gd_scene load_steps=60 format=3 uid="uid://bnasbyeb0e04q"]
 
 [ext_resource type="PackedScene" uid="uid://dlfqvfif8vmi1" path="res://models/cogs/suitb/skelecog/suitB-skelecog.glb" id="1_r2d8g"]
-[ext_resource type="Script" path="res://objects/cog/skelecog_directory.gd" id="2_3init"]
+[ext_resource type="Script" uid="uid://djrvaa2pgbrps" path="res://objects/cog/skelecog_directory.gd" id="2_3init"]
 [ext_resource type="PackedScene" uid="uid://c1d40yp47h4wq" path="res://objects/cog/hp_light/hp_light.tscn" id="2_i5itp"]
 [ext_resource type="Texture2D" uid="uid://csyn6i71uv3s2" path="res://models/cogs/suitb/skelecog/suitB-skelecog_cogB_bulb1b.png" id="2_ue5iv"]
 [ext_resource type="Texture2D" uid="uid://cmjss0pvkovre" path="res://models/cogs/suitb/skelecog/suitB-skelecog_cogB_armB1.png" id="3_rp5o4"]
@@ -47,7 +47,7 @@
 [ext_resource type="Animation" uid="uid://c1f22rxnv7u7y" path="res://models/cogs/suitb/animations/victory.res" id="40_wxhiv"]
 [ext_resource type="Animation" uid="uid://ciig3pe40nbt3" path="res://models/cogs/suitb/animations/walk.res" id="41_apta5"]
 [ext_resource type="Animation" uid="uid://du74sxnmhdmm1" path="res://models/cogs/suitb/animations/walknreach.res" id="42_c01ym"]
-[ext_resource type="Script" path="res://objects/cog/nametag/cog_nametag_node.gd" id="43_mm2cl"]
+[ext_resource type="Script" uid="uid://h62hy6uqeb12" path="res://objects/cog/nametag/cog_nametag_node.gd" id="43_mm2cl"]
 [ext_resource type="PackedScene" uid="uid://brnb8h6sm4vgr" path="res://objects/cog/nametag/cog_nametag.tscn" id="44_iarmn"]
 [ext_resource type="Animation" uid="uid://xxhclajv531k" path="res://models/cogs/suitb/animations/buffed.res" id="48_psb3m"]
 [ext_resource type="Animation" uid="uid://dv0fsks6aaknv" path="res://models/cogs/suitb/animations/laugh.res" id="49_8spgo"]
@@ -1362,49 +1362,49 @@ tracks/131/keys = PackedFloat32Array(0, 1, 0.00346809, -0.0695931, 0.00291184, 0
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_vmmio"]
 _data = {
-"RESET": SubResource("Animation_hqtkb"),
-"anvil-drop": ExtResource("4_i7ney"),
-"buffed": ExtResource("48_psb3m"),
-"clap": SubResource("Animation_8lhc6"),
-"drop": ExtResource("5_ay774"),
-"effort": ExtResource("6_4tysb"),
-"finger-wag": ExtResource("7_npuk6"),
-"flailing": ExtResource("8_rxqhu"),
-"hold-eraser": ExtResource("9_ixmuq"),
-"hold-pencil": ExtResource("10_e5hdf"),
-"hypnotize": ExtResource("11_d2q7p"),
-"jump": ExtResource("12_8gebk"),
-"landing": ExtResource("13_cn8d6"),
-"laugh": ExtResource("49_8spgo"),
-"lured": ExtResource("14_dmpk8"),
-"magic1": ExtResource("15_tmbe8"),
-"magic2": ExtResource("16_hdfwu"),
-"magic3": ExtResource("17_dyt75"),
-"neutral": ExtResource("18_qmxf1"),
-"pen-squirt": ExtResource("19_a8ylk"),
-"pencil-sharpener": ExtResource("20_4a1oi"),
-"phone": ExtResource("21_e78f5"),
-"pickpocket": ExtResource("22_fd2jl"),
-"pie-small": ExtResource("23_d7t3u"),
-"rake": ExtResource("24_mvrxl"),
-"roll-o-dex": ExtResource("25_g5nkj"),
-"sidestep-left": ExtResource("26_7tp81"),
-"sidestep-right": ExtResource("27_mrnje"),
-"slip-backward": ExtResource("28_ayx0a"),
-"slip-forward": ExtResource("29_pp407"),
-"soak": ExtResource("30_a2xcf"),
-"speak": ExtResource("31_rnudg"),
-"squirt-large": ExtResource("32_q14yi"),
-"squirt-small": ExtResource("33_mmpa2"),
-"stomp": ExtResource("34_tjpet"),
-"throw-object": ExtResource("35_u3mt5"),
-"throw-paper": ExtResource("36_p3m0a"),
-"tray-neutral": ExtResource("37_irc1b"),
-"tray-walk": ExtResource("38_sfmis"),
-"tug-o-war": ExtResource("39_kv6lb"),
-"victory": ExtResource("40_wxhiv"),
-"walk": ExtResource("41_apta5"),
-"walknreach": ExtResource("42_c01ym")
+&"RESET": SubResource("Animation_hqtkb"),
+&"anvil-drop": ExtResource("4_i7ney"),
+&"buffed": ExtResource("48_psb3m"),
+&"clap": SubResource("Animation_8lhc6"),
+&"drop": ExtResource("5_ay774"),
+&"effort": ExtResource("6_4tysb"),
+&"finger-wag": ExtResource("7_npuk6"),
+&"flailing": ExtResource("8_rxqhu"),
+&"hold-eraser": ExtResource("9_ixmuq"),
+&"hold-pencil": ExtResource("10_e5hdf"),
+&"hypnotize": ExtResource("11_d2q7p"),
+&"jump": ExtResource("12_8gebk"),
+&"landing": ExtResource("13_cn8d6"),
+&"laugh": ExtResource("49_8spgo"),
+&"lured": ExtResource("14_dmpk8"),
+&"magic1": ExtResource("15_tmbe8"),
+&"magic2": ExtResource("16_hdfwu"),
+&"magic3": ExtResource("17_dyt75"),
+&"neutral": ExtResource("18_qmxf1"),
+&"pen-squirt": ExtResource("19_a8ylk"),
+&"pencil-sharpener": ExtResource("20_4a1oi"),
+&"phone": ExtResource("21_e78f5"),
+&"pickpocket": ExtResource("22_fd2jl"),
+&"pie-small": ExtResource("23_d7t3u"),
+&"rake": ExtResource("24_mvrxl"),
+&"roll-o-dex": ExtResource("25_g5nkj"),
+&"sidestep-left": ExtResource("26_7tp81"),
+&"sidestep-right": ExtResource("27_mrnje"),
+&"slip-backward": ExtResource("28_ayx0a"),
+&"slip-forward": ExtResource("29_pp407"),
+&"soak": ExtResource("30_a2xcf"),
+&"speak": ExtResource("31_rnudg"),
+&"squirt-large": ExtResource("32_q14yi"),
+&"squirt-small": ExtResource("33_mmpa2"),
+&"stomp": ExtResource("34_tjpet"),
+&"throw-object": ExtResource("35_u3mt5"),
+&"throw-paper": ExtResource("36_p3m0a"),
+&"tray-neutral": ExtResource("37_irc1b"),
+&"tray-walk": ExtResource("38_sfmis"),
+&"tug-o-war": ExtResource("39_kv6lb"),
+&"victory": ExtResource("40_wxhiv"),
+&"walk": ExtResource("41_apta5"),
+&"walknreach": ExtResource("42_c01ym")
 }
 
 [node name="suitB-skelecog" node_paths=PackedStringArray("skeleton", "animator", "department_emblem", "health_meter", "nametag_node", "nametag", "head_node", "head_bone", "left_hand_bone", "right_hand_bone", "right_index_bone", "health_bone", "tie_mesh", "color_overlay_meshes") instance=ExtResource("1_r2d8g")]

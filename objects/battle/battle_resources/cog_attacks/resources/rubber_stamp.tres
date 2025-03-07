@@ -1,11 +1,12 @@
 [gd_resource type="Resource" script_class="RubberStamp" load_steps=2 format=3 uid="uid://doowiij7lpxy1"]
 
-[ext_resource type="Script" path="res://objects/battle/battle_resources/cog_attacks/rubber_stamp.gd" id="1_ie2h0"]
+[ext_resource type="Script" uid="uid://4w25g8obmlh" path="res://objects/battle/battle_resources/cog_attacks/rubber_stamp.gd" id="1_ie2h0"]
 
 [resource]
 script = ExtResource("1_ie2h0")
 accuracy = 75
 damage = 2
+ignore_stats = false
 summary = ""
 attack_lines = Array[String](["I always make a good impression.", "It's important to apply firm and even pressure.", "A perfect imprint every time.", "I want to stamp you out.", "You must be RETURNED TO SENDER.", "You've been CANCELLED.", "You have a PRIORITY delivery.", "I'll make sure you RECEIVED my message.", "You're not going anywhere - you have POSTAGE DUE.", "I'll need a response ASAP."])
 target_type = 0

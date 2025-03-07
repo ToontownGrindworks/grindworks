@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=3 uid="uid://g1nav4uqhm7i"]
 
 [ext_resource type="Texture2D" uid="uid://f7ntk0vapgkd" path="res://models/cogs/heads/face.png" id="1_na0na"]
-[ext_resource type="Script" path="res://scenes/cog_creator/file_displayer.gd" id="1_nituf"]
+[ext_resource type="Script" uid="uid://brvr2hl2xooyt" path="res://scenes/cog_creator/file_displayer.gd" id="1_nituf"]
 [ext_resource type="FontFile" uid="uid://815gwlftl5ik" path="res://fonts/impress-bt.ttf" id="2_ts4jl"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6twr0"]

@@ -1,7 +1,7 @@
 [gd_scene load_steps=33 format=3 uid="uid://1r5i4ax366co"]
 
 [ext_resource type="PackedScene" uid="uid://bbmpk0bcnkij1" path="res://objects/modules/cgc/base_rooms/cgc_long_room.tscn" id="1_ybll3"]
-[ext_resource type="Script" path="res://objects/modules/cgc/variants/cgc_long_parkour_oil.gd" id="2_jka4d"]
+[ext_resource type="Script" uid="uid://blgvkbi1igqay" path="res://objects/modules/cgc/variants/cgc_long_parkour_oil.gd" id="2_jka4d"]
 [ext_resource type="PackedScene" uid="uid://cwldqwunkk4ar" path="res://objects/props/cgc/resizeable_ground.tscn" id="2_m4jup"]
 [ext_resource type="PackedScene" uid="uid://b3p8q3fhmuo35" path="res://objects/props/cgc/resizeable_hedge_cube.tscn" id="3_a3up8"]
 [ext_resource type="PackedScene" uid="uid://pn7r3ut085aw" path="res://objects/props/cgc/hedge_pillar.tscn" id="3_ok8v5"]
@@ -404,7 +404,7 @@ points = Array[Vector3]([Vector3(14.5, -0.344, 30.372)])
 [node name="Golfdoors" type="Node3D" parent="." index="12"]
 
 [node name="GolfDoor1" parent="Golfdoors" index="0" instance=ExtResource("16_y2dli")]
-transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -4.25431, 0, 70.5313)
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -4.25431, -0.155288, 70.5313)
 
 [node name="GolfCouseDoor2" parent="Golfdoors/GolfDoor1" index="2"]
 transform = Transform3D(1.74103e-08, 0, -1.46, 0, 1.46, 0, 1.46, 0, 1.74103e-08, -0.968452, 1.414, 11.5606)
@@ -413,7 +413,7 @@ transform = Transform3D(1.74103e-08, 0, -1.46, 0, 1.46, 0, 1.46, 0, 1.74103e-08,
 curve = SubResource("Curve3D_vhymy")
 
 [node name="GolfDoor2" parent="Golfdoors" index="1" instance=ExtResource("16_y2dli")]
-transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -3.93467, 0, 11.82)
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -3.93467, -0.155288, 11.82)
 
 [node name="GolfCouseDoor2" parent="Golfdoors/GolfDoor2" index="2"]
 transform = Transform3D(1.74103e-08, 0, -1.46, 0, 1.46, 0, 1.46, 0, 1.74103e-08, -0.968452, 1.414, 11.5606)

@@ -1,12 +1,13 @@
 extends Node
 
-const VERSION_NUMBER := "v1.0.1"
+const VERSION_NUMBER := "v1.0.2"
 
 ## Holds any value you may want accessible globally and quickly
 
 func _ready() -> void:
 	import_custom_cogs()
 	Util.s_floor_started.connect(on_floor_start)
+	print("Game Version: %s" % VERSION_NUMBER)
 
 #region COGS:
 # Bodies:
@@ -39,6 +40,12 @@ func add_standard_cog(cog_dna: CogDNA) -> void:
 func remove_standard_cog(cog_dna: CogDNA) -> void:
 	GRUNT_COG_POOL.load().cogs.erase(cog_dna)
 
+func add_proxy(cog_dna : CogDNA) -> void:
+	MOD_COG_POOL.load().cogs.append(cog_dna)
+
+func remove_proxy(cog_dna : CogDNA) -> void:
+	MOD_COG_POOL.load().cogs.append(cog_dna)
+
 ## Custom Cogs
 var ALL_COGS_POOL := LazyLoader.defer("res://objects/cog/presets/pools/all_cogs.tres")
 const COG_SAVE_PATH := "user://save/custom_cogs/"
@@ -49,25 +56,33 @@ var custom_cog_head_directory := {}
 var custom_cog_tex_directory := {}
 
 func import_custom_cogs() -> void:
+	clear_custom_cogs()
 	if DirAccess.dir_exists_absolute(COG_SAVE_PATH):
 		import_cog_heads()
 		import_cog_head_textures()
 		import_cog_dna()
 
 func import_cog_dna() -> void:
-	clear_custom_cogs()
 	for file_name in DirAccess.get_files_at(COG_SAVE_PATH):
 		if not file_name.get_extension() == "tres":
 			continue
 		var loaded_file = ResourceLoader.load(COG_SAVE_PATH + file_name)
 		if loaded_file is CogDNA:
-			Globals.add_standard_cog(loaded_file)
+			if not loaded_file.is_mod_cog:
+				add_standard_cog(loaded_file)
+			else:
+				add_proxy(loaded_file)
 			loaded_custom_cogs.append(loaded_file)
 
 func clear_custom_cogs() -> void:
-	for cog : Variant in Globals.GRUNT_COG_POOL.load().cogs:
+	for cog : Variant in GRUNT_COG_POOL.load().cogs:
 		if cog.resource_path.begins_with("user://"):
-			Globals.remove_standard_cog(cog)
+			if not cog.is_mod_cog:
+				remove_standard_cog(cog)
+			else:
+				remove_proxy(cog)
+	custom_cog_head_directory.clear()
+	custom_cog_tex_directory.clear()
 
 func import_cog_heads() -> void:
 	for file in DirAccess.get_files_at(COG_SAVE_PATH):
@@ -77,8 +92,9 @@ func import_cog_heads() -> void:
 func import_head(file_path : String) -> PackedScene:
 	var node3d := Util.load_gltf_at_runtime(file_path)
 	if node3d == null:
-		print(":(")
+		print("Failed to load Cog head at runtime")
 	else:
+		print("Successfully loaded Cog head at path %s" % file_path)
 		var packed_head := pack_head(node3d)
 		packed_head.set_path(file_path)
 		custom_cog_head_directory[file_path] = packed_head

@@ -1,13 +1,13 @@
 [gd_resource type="Resource" script_class="Item" load_steps=4 format=3 uid="uid://bd5d562nvcvr2"]
 
 [ext_resource type="PackedScene" uid="uid://coep3qp3slla5" path="res://objects/items/custom/jellybean/light_blue_jellybean.tscn" id="1_205nu"]
-[ext_resource type="Script" path="res://objects/items/classes/item.gd" id="2_ft6ul"]
+[ext_resource type="Script" uid="uid://combwqypom1ru" path="res://objects/items/classes/item.gd" id="2_ft6ul"]
 [ext_resource type="AudioStream" uid="uid://b8pshap2d5xwv" path="res://audio/sfx/ui/tick_counter.ogg" id="2_gx04w"]
 
 [resource]
 script = ExtResource("2_ft6ul")
-qualitoon = 2
-qualitoon_rarity = 1
+qualitoon = 1
+rarity = 0
 evergreen = true
 realtime = false
 slot = 0

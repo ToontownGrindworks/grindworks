@@ -33,11 +33,11 @@ func set_item(new_item: Item) -> void:
 	$UI.visible = item != null
 	if not item:
 		reacting = false
-		do_reaction(2)
+		Util.get_player().toon.set_emotion(Toon.Emotion.NEUTRAL)
 		return
 	
 	item_name = item.item_name
-	set_stars(int(item.qualitoon))
+	set_stars(int(item.qualitoon) + 1)
 	description = item.big_description
 	
 	if reactions_enabled:
@@ -45,7 +45,7 @@ func set_item(new_item: Item) -> void:
 		do_reaction(int(item.qualitoon))
 	else:
 		if reacting:
-			do_reaction(2)
+			Util.get_player().toon.set_emotion(Toon.Emotion.NEUTRAL)
 			reacting = false
 
 func set_stars(stars: int):
@@ -71,7 +71,7 @@ func _process(_delta):
 
 func do_reaction(qualitoon: int):
 	match qualitoon:
-		1:
-			Util.get_player().toon.set_mouth(Toon.Emotion.ANGRY)
+		0:
+			Util.get_player().toon.set_emotion(Toon.Emotion.SAD)
 		_:
-			Util.get_player().toon.set_emotion(qualitoon as Toon.Emotion)
+			Util.get_player().toon.set_emotion((qualitoon + 1) as Toon.Emotion)

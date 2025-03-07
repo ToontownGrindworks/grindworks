@@ -1,8 +1,38 @@
 [gd_resource type="Resource" script_class="ReleaseNote" load_steps=2 format=3 uid="uid://bw8jta1tqisll"]
 
-[ext_resource type="Script" path="res://scenes/title_screen/release_notes/release_note.gd" id="1_6kjba"]
+[ext_resource type="Script" uid="uid://d1j0hh6tsgy0r" path="res://scenes/title_screen/release_notes/release_note.gd" id="1_6kjba"]
 
 [resource]
 script = ExtResource("1_6kjba")
 release_version = "v1.0.1"
-notes = Array[String](["[TITLE]Release Notes Panel", "Added it", "[TITLE]Settings", "Added a setting to skip the intro when starting a new game if you've beaten the game at least once", "Added a camera sensitivity setting", "[TITLE]Obstacles", "Added invincibility frames to the player when hit by an obstacle", "Stompers now wait for longer after the player gets squashed to continue stomping", "D.A. Office puzzles now show a short description of their objectives when interacted", "Tweaked stomper collisions to be more consistent", "[TITLE]Tweaks", "Made some optimizations to make the game load up to twice as fast on startup", "Slightly lowered the values of one of Moe Zart's abilities", "Tweaked some collisions in the Factory Pipe Room", "Tweaked the color of the blue squares in the Lawbot puzzles to be easier to read", "Increased the game floor's room repeat protection from 2 to 3", "Shrank the player hitbox further", "The left and right movement keys can now be used to move between items in the Shop interface", "[TITLE]Bugfixes", "Fixed low quality tie texture on Sellbot skelecogs", "Fixed an oversight with the Detective Hat that would cause its ability to not unlure Cogs", "Fixed cleanup issues with active game timers when going sad or finishing a floor", "Updated the \"going sad\" state to make it more consistent", "Fixed an issue that could cause game audio to be permanently pitched-down if quickly pressing \"Try Again\" after going sad", "Fixed the Factory Silo boss' win area causing the music to restart whenever you entered it", "Fixed ground floor saying \"Floor 0\" when entering the floor", "Fixed some Proxy Cogs having skelecog voicelines", "Fixed an issue with the final unlockable character's implementation", "[TITLE]Hotfix #1", "Fixed some scenarios where the \"I'm Stuck!\" button could disappear and wouldn't show up again", "Fixed a crash with room generation in the Sellbot Factory"])
+notes = "[TITLE]Release Notes Panel
+Added it
+[TITLE]Settings
+Added a setting to skip the intro when starting a new game if you've beaten the game at least once
+Added a camera sensitivity setting
+[TITLE]Obstacles
+Added invincibility frames to the player when hit by an obstacle
+Stompers now wait for longer after the player gets squashed to continue stomping
+D.A. Office puzzles now show a short description of their objectives when interacted
+Tweaked stomper collisions to be more consistent
+[TITLE]Tweaks
+Made some optimizations to make the game load up to twice as fast on startup
+Slightly lowered the values of one of Moe Zart's abilities
+Tweaked some collisions in the Factory Pipe Room
+Tweaked the color of the blue squares in the Lawbot puzzles to be easier to read
+Increased the game floor's room repeat protection from 2 to 3
+Shrank the player hitbox further
+The left and right movement keys can now be used to move between items in the Shop interface
+[TITLE]Bugfixes
+Fixed low quality tie texture on Sellbot skelecogs
+Fixed an oversight with the Detective Hat that would cause its ability to not unlure Cogs
+Fixed cleanup issues with active game timers when going sad or finishing a floor
+Updated the \"going sad\" state to make it more consistent
+Fixed an issue that could cause game audio to be permanently pitched-down if quickly pressing \"Try Again\" after going sad
+Fixed the Factory Silo boss' win area causing the music to restart whenever you entered it
+Fixed ground floor saying \"Floor 0\" when entering the floor
+Fixed some Proxy Cogs having skelecog voicelines
+Fixed an issue with the final unlockable character's implementation
+[TITLE]Hotfix #1
+Fixed some scenarios where the \"I'm Stuck!\" button could disappear and wouldn't show up again
+Fixed a crash with room generation in the Sellbot Factory"

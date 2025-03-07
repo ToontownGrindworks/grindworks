@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://cwxcsghwv7u5t"]
 
-[ext_resource type="Shader" path="res://objects/general_ui/circle_transition/circle_transition.gdshader" id="1_dkmn1"]
-[ext_resource type="Script" path="res://objects/general_ui/circle_transition/circle_transition.gd" id="2_h00cg"]
+[ext_resource type="Shader" uid="uid://bvhiiam7fg40k" path="res://objects/general_ui/circle_transition/circle_transition.gdshader" id="1_dkmn1"]
+[ext_resource type="Script" uid="uid://doih0uwol2aht" path="res://objects/general_ui/circle_transition/circle_transition.gd" id="2_h00cg"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_wuddf"]
 shader = ExtResource("1_dkmn1")

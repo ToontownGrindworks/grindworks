@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://cfo33omswp84g"]
 
 [ext_resource type="Texture2D" uid="uid://br2ylpdxr8bph" path="res://objects/battle/effects/splat/splatter.png" id="1_vbbjs"]
-[ext_resource type="Script" path="res://objects/battle/effects/splat/splat.gd" id="2_1qep2"]
+[ext_resource type="Script" uid="uid://h3nsnqqyrt1u" path="res://objects/battle/effects/splat/splat.gd" id="2_1qep2"]
 [ext_resource type="FontFile" uid="uid://cup2yr5w7or1l" path="res://fonts/Minnie.TTF" id="2_2fedr"]
 
 [node name="Splat" type="Sprite3D"]

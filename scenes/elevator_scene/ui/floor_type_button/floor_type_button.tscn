@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://lyhs775rihha" path="res://ui_assets/misc/tt_t_gui_cmg_bossCog_bossBackground.png" id="1_1fbip"]
 [ext_resource type="PackedScene" uid="uid://b0d1er4oqiqcn" path="res://objects/general_ui/general_button/general_button.tscn" id="1_ruv55"]
-[ext_resource type="Script" path="res://scenes/elevator_scene/ui/floor_type_button/floor_type_button.gd" id="2_olb87"]
+[ext_resource type="Script" uid="uid://c2fmkcgyt0dij" path="res://scenes/elevator_scene/ui/floor_type_button/floor_type_button.gd" id="2_olb87"]
 [ext_resource type="FontFile" uid="uid://dyjvd6wmo0bmg" path="res://fonts/vtRemingtonPortable.ttf" id="2_r4fe4"]
 [ext_resource type="Texture2D" uid="uid://xf7s2qvt73i" path="res://ui_assets/misc/quality_star.png" id="3_omjfc"]
 [ext_resource type="Texture2D" uid="uid://c87bgol1mb7y8" path="res://ui_assets/misc/quality_star_unfilled.png" id="4_d6i4p"]

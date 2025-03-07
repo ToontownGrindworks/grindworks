@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=3 uid="uid://bqneqxfv6jbkv"]
 
-[ext_resource type="Script" path="res://objects/props/shticks/cog_building/cog_building.gd" id="1_855uj"]
+[ext_resource type="Script" uid="uid://c4swjusttlekv" path="res://objects/props/shticks/cog_building/cog_building.gd" id="1_855uj"]
 [ext_resource type="PackedScene" uid="uid://1r362cdkkbg3" path="res://models/props/shticks_props/cogbldg/bossed_bot_building-alt.fbx" id="1_omxke"]
 [ext_resource type="PackedScene" uid="uid://b6eexfh4v078o" path="res://objects/interactables/elevators/sellbot_elevator.tscn" id="5_kg8qf"]
 [ext_resource type="Texture2D" uid="uid://4x0dyub833je" path="res://models/props/shticks_props/cogbldg/suitSign.png" id="7_o1uf4"]

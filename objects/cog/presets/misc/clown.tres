@@ -1,16 +1,16 @@
 [gd_resource type="Resource" script_class="CogDNA" load_steps=14 format=3 uid="uid://baep1t1jv5ebj"]
 
-[ext_resource type="Script" path="res://objects/battle/battle_resources/cog_attacks/cog_attack.gd" id="1_u8onf"]
+[ext_resource type="Script" uid="uid://bb27him60xtnk" path="res://objects/battle/battle_resources/cog_attacks/cog_attack.gd" id="1_u8onf"]
 [ext_resource type="Texture2D" uid="uid://dnrnk4pxnsid2" path="res://models/cogs/textures/clown/sleeveClown.png" id="2_eovg2"]
 [ext_resource type="Resource" uid="uid://sey860nn14jg" path="res://objects/battle/battle_resources/cog_attacks/resources/pick_pocket.tres" id="2_tmyoo"]
-[ext_resource type="Script" path="res://objects/cog/cogdna.gd" id="2_ujpsh"]
+[ext_resource type="Script" uid="uid://okjbx502s3r5" path="res://objects/cog/cogdna.gd" id="2_ujpsh"]
 [ext_resource type="Resource" uid="uid://doowiij7lpxy1" path="res://objects/battle/battle_resources/cog_attacks/resources/rubber_stamp.tres" id="3_udsor"]
 [ext_resource type="Texture2D" uid="uid://btgvnsbwmgf80" path="res://models/cogs/textures/clown/blazerClown.png" id="3_yfyoq"]
 [ext_resource type="Resource" uid="uid://by0leo7nlf311" path="res://objects/battle/battle_resources/cog_attacks/resources/heckle.tres" id="5_7gsud"]
 [ext_resource type="PackedScene" uid="uid://byxlrkmrk4vbr" path="res://models/cogs/heads/clown1.tscn" id="9_cwjtd"]
 [ext_resource type="Texture2D" uid="uid://bo5ojd8rwaa68" path="res://models/cogs/heads/clown1_faceClown.png" id="10_f8tb1"]
-[ext_resource type="Texture2D" uid="uid://bwmakebpdpncg" path="res://models/cogs/heads/clown1_hatClown.png" id="11_rah54"]
-[ext_resource type="Script" path="res://objects/battle/battle_resources/status_effect.gd" id="12_pm25q"]
+[ext_resource type="Texture2D" uid="uid://u5kphma0y0af" path="res://models/cogs/heads/clown1_hatClown.png" id="11_rah54"]
+[ext_resource type="Script" uid="uid://df7irk63ikx4k" path="res://objects/battle/battle_resources/status_effect.gd" id="12_pm25q"]
 [ext_resource type="Resource" uid="uid://crpq72du32gfq" path="res://objects/battle/battle_resources/status_effects/resources/boss_logic_clown.tres" id="13_cypbu"]
 [ext_resource type="Resource" uid="uid://c8rs8upqmscoh" path="res://objects/battle/battle_resources/status_effects/resources/attentive.tres" id="13_xm6rg"]
 
@@ -41,6 +41,6 @@ is_admin = false
 health_mod = 1.3
 battle_phrases = Array[String](["My business is funny business."])
 external_assets = {
-"head_model": "",
-"head_textures": []
+&"head_model": "",
+&"head_textures": []
 }

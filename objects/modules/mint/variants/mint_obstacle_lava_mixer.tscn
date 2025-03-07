@@ -1,4 +1,4 @@
-[gd_scene load_steps=31 format=3 uid="uid://c8h76u7dspxxc"]
+[gd_scene load_steps=32 format=3 uid="uid://c8h76u7dspxxc"]
 
 [ext_resource type="PackedScene" uid="uid://cf0211exl150l" path="res://objects/modules/mint/base_rooms/mint_obstacle_room.tscn" id="1_1bm4i"]
 [ext_resource type="PackedScene" uid="uid://xxhl4spi53gq" path="res://objects/props/mint/mint_stairs.tscn" id="2_picoi"]
@@ -50,7 +50,7 @@ subdivide_width = 32
 subdivide_depth = 32
 
 [sub_resource type="Curve" id="Curve_2bttc"]
-max_value = 0.7
+_limits = [0.0, 0.7, 0.0, 1.0]
 _data = [Vector2(0, 0), 0.0, 0.0, 0, 0, Vector2(0.0562249, 0.835582), 0.0, 0.0, 0, 0, Vector2(0.128514, 0.451939), 0.0, 0.0, 0, 0, Vector2(0.204819, 0.802698), 0.0, 0.0, 0, 0, Vector2(0.289157, 0.440978), 0.0, 0.0, 0, 0, Vector2(0.39759, 1), 0.0, 0.0, 0, 0, Vector2(0.481928, 0.397133), 0.0, 0.0, 0, 0, Vector2(0.554217, 1), 0.0, 0.0, 0, 0, Vector2(0.678715, 0.375211), 0.0, 0.0, 0, 0, Vector2(0.763052, 1), 0.0, 0.0, 0, 0, Vector2(0.871486, 0.408094), 0.0, 0.0, 0, 0, Vector2(0.939759, 1), 0.0, 0.0, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]
 point_count = 13
 
@@ -96,6 +96,9 @@ particles_anim_loop = false
 
 [sub_resource type="QuadMesh" id="QuadMesh_pf67i"]
 material = SubResource("StandardMaterial3D_3kdnn")
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_508q2"]
+size = Vector3(1.59814, 6.08704, 4.11986)
 
 [node name="Root Scene" instance=ExtResource("1_1bm4i")]
 
@@ -159,22 +162,25 @@ transform = Transform3D(4.45438e-08, 0, -0.66, 0, 1.15, 0, 0.59, 0, 4.98286e-08,
 [node name="shelf2" parent="Shelves" index="0" instance=ExtResource("3_p2bc6")]
 transform = Transform3D(1, 0, 0, 0, 0.89, 0, 0, 0, 1, 16.7742, 3.07899, -14.2083)
 
-[node name="shelf4" parent="Shelves" index="1" instance=ExtResource("3_p2bc6")]
+[node name="shelf3" parent="Shelves" index="1" instance=ExtResource("3_p2bc6")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 0.89, 0, 1, 0, -4.37114e-08, 19.1276, 3.07899, -8.5395)
+
+[node name="shelf4" parent="Shelves" index="2" instance=ExtResource("3_p2bc6")]
 transform = Transform3D(1, 0, 0, 0, 0.89, 0, 0, 0, 1, 8.4346, 3.07899, -14.2083)
 
-[node name="shelf5" parent="Shelves" index="2" instance=ExtResource("3_p2bc6")]
+[node name="shelf5" parent="Shelves" index="3" instance=ExtResource("3_p2bc6")]
 transform = Transform3D(1, 0, 0, 0, 0.89, 0, 0, 0, 1, 4.28426, 3.07899, -14.2083)
 
-[node name="shelf6" parent="Shelves" index="3" instance=ExtResource("3_p2bc6")]
+[node name="shelf6" parent="Shelves" index="4" instance=ExtResource("3_p2bc6")]
 transform = Transform3D(1, 0, 0, 0, 0.89, 0, 0, 0, 1, 0.11999, 3.07899, -14.2083)
 
-[node name="shelf7" parent="Shelves" index="4" instance=ExtResource("3_p2bc6")]
+[node name="shelf7" parent="Shelves" index="5" instance=ExtResource("3_p2bc6")]
 transform = Transform3D(1, 0, 0, 0, 0.89, 0, 0, 0, 1, -3.98269, 3.07899, -14.2083)
 
-[node name="shelf8" parent="Shelves" index="5" instance=ExtResource("3_p2bc6")]
+[node name="shelf8" parent="Shelves" index="6" instance=ExtResource("3_p2bc6")]
 transform = Transform3D(1, 0, 0, 0, 0.89, 0, 0, 0, 1, -8.12575, 3.07899, -14.2083)
 
-[node name="shelf9" parent="Shelves" index="6" instance=ExtResource("3_p2bc6")]
+[node name="shelf9" parent="Shelves" index="7" instance=ExtResource("3_p2bc6")]
 transform = Transform3D(1, 0, 0, 0, 0.89, 0, 0, 0, 1, -12.2891, 3.07899, -14.2083)
 
 [node name="Crates" type="Node3D" parent="." index="14"]
@@ -375,13 +381,10 @@ transform = Transform3D(0.691677, 0, -0.722207, 0, 1, 0, 0.722207, 0, 0.691677, 
 [node name="cb_safe6" parent="Props" index="5" instance=ExtResource("9_kki62")]
 transform = Transform3D(0.691677, 0, -0.722207, 0, 1, 0, 0.722207, 0, 0.691677, 12.5888, 3.06404, -19.9814)
 
-[node name="cb_safe2" parent="Props" index="6" instance=ExtResource("9_kki62")]
-transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 19.216, 3.06404, -7.62713)
-
-[node name="cb_safe3" parent="Props" index="7" instance=ExtResource("9_kki62")]
+[node name="cb_safe3" parent="Props" index="6" instance=ExtResource("9_kki62")]
 transform = Transform3D(-0.84935, 0, 0.527831, 0, 1, 0, -0.527831, 0, -0.84935, -11.8417, 3.33689, 12.3597)
 
-[node name="WallPipe1" parent="Props" index="8" instance=ExtResource("10_4gwes")]
+[node name="WallPipe1" parent="Props" index="7" instance=ExtResource("10_4gwes")]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -1.10218, -1.92505, 13.3089)
 
 [node name="mint_crate35" parent="Props/WallPipe1" index="2" instance=ExtResource("4_ajbpu")]
@@ -390,7 +393,7 @@ transform = Transform3D(-8.02104e-08, 0, 1.835, 0, 1.84, 0, -1.835, 0, -8.02104e
 [node name="WallPipe1" parent="Props/WallPipe1" index="3" instance=ExtResource("10_4gwes")]
 transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 19.0363, -1.28733, 6.11668)
 
-[node name="boiler_a2" parent="Props" index="9" instance=ExtResource("8_0uaq4")]
+[node name="boiler_a2" parent="Props" index="8" instance=ExtResource("8_0uaq4")]
 transform = Transform3D(0.877849, 0, 0.478937, 0, 1, 0, -0.478937, 0, 0.877849, -9.77855, 3.03438, -23.26)
 
 [node name="PaintMixers" type="Node3D" parent="." index="18"]
@@ -465,6 +468,12 @@ lifetime = 5.0
 visibility_aabb = AABB(-30.4062, -20.4292, -22.1821, 68.5996, 48.2961, 59.6166)
 process_material = SubResource("ParticleProcessMaterial_6qo1q")
 draw_pass_1 = SubResource("QuadMesh_pf67i")
+
+[node name="Blockers" type="StaticBody3D" parent="." index="21"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Blockers" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19.4194, 6.10529, -8.51424)
+shape = SubResource("BoxShape3D_508q2")
 
 [editable path="Crates/mint_crate20"]
 [editable path="Crates/mint_crate21"]

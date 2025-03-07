@@ -99,6 +99,6 @@ func get_stats() -> String:
 			player_stats = BattleService.ongoing_battle.battle_stats[Util.get_player()]
 		else:
 			player_stats = Util.get_player().stats
-		string += "\nSelf-Heal: %s%%" % (player_stats.get_stat('throw_heal_boost') * 100)
+		string += "\nSelf-Heal: %s%%" % roundi(player_stats.get_stat('throw_heal_boost') * 100)
 
 	return string

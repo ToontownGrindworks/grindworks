@@ -3,8 +3,8 @@
 [ext_resource type="PackedScene" uid="uid://461ajltncxsc" path="res://objects/modules/cgc/base_rooms/cgc_mole_room.tscn" id="1_y4lq3"]
 [ext_resource type="PackedScene" uid="uid://5m1a0suouie8" path="res://objects/props/cgc/fence_with_end.tscn" id="9_1e15g"]
 [ext_resource type="PackedScene" uid="uid://cy4iox7mj5ei0" path="res://objects/toon/toon.tscn" id="10_15ijt"]
-[ext_resource type="Script" path="res://objects/interactables/mole_stomp/mole_stomp.gd" id="10_600br"]
-[ext_resource type="Script" path="res://objects/toon/toon_dna.gd" id="11_tbro7"]
+[ext_resource type="Script" uid="uid://dyt7mhhg2lwrv" path="res://objects/interactables/mole_stomp/mole_stomp.gd" id="10_600br"]
+[ext_resource type="Script" uid="uid://yg7gxug4rab" path="res://objects/toon/toon_dna.gd" id="11_tbro7"]
 [ext_resource type="PackedScene" uid="uid://drmdabed2lrwg" path="res://objects/props/etc/board_sign/board_sign.tscn" id="12_sfans"]
 [ext_resource type="PackedScene" uid="uid://ciesu8xyj70oc" path="res://objects/interactables/shop/toon_shop.tscn" id="13_3poqf"]
 [ext_resource type="PackedScene" uid="uid://ciyyhun2e5nmf" path="res://objects/props/etc/crate/crate_general.tscn" id="14_kjccx"]
@@ -33,7 +33,7 @@ func _ready() -> void:
 func haunted_setup() -> void:
 	$shop_counter.toon_speaks = false
 	
-	await TaskMgr.delay(5.0)
+	await Task.delay(5.0)
 	
 	keeper.construct_toon(get_base_dna())
 	

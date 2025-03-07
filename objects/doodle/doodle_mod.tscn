@@ -1,6 +1,6 @@
 [gd_scene load_steps=95 format=4 uid="uid://dbcmfw8e67wkl"]
 
-[ext_resource type="Script" path="res://objects/doodle/doodle_mod.gd" id="1_2mmrh"]
+[ext_resource type="Script" uid="uid://dcydfmdl48hhm" path="res://objects/doodle/doodle_mod.gd" id="1_2mmrh"]
 [ext_resource type="Texture2D" uid="uid://chbgl7ncu7ay" path="res://models/doodle/doodle_BeanBirdFeathersTail3.png" id="1_tnwjw"]
 [ext_resource type="Texture2D" uid="uid://bl2a27nqom1m8" path="res://models/doodle/doodle_beanBunnyTail1.png" id="2_s3vcj"]
 [ext_resource type="Texture2D" uid="uid://cbpyx4alfhaoy" path="res://models/doodle/Beanbody3stripes6.png" id="4_b3qrl"]
@@ -1010,24 +1010,24 @@ blend_shape_mode = 0
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_nxukc"]
 _data = {
-"appear": ExtResource("30_sj84c"),
-"backflip": ExtResource("36_jw4ao"),
-"dance": ExtResource("35_v4ee7"),
-"dig": ExtResource("28_yoftv"),
-"disappear": ExtResource("27_4logu"),
-"into_dig": ExtResource("29_f3hwi"),
-"jump": ExtResource("25_v4puq"),
-"jump_hang": ExtResource("26_no1l8"),
-"neutral": ExtResource("23_0cr4m"),
-"neutral_happy": ExtResource("31_d0nmp"),
-"neutral_sad": ExtResource("32_7q048"),
-"playdead": ExtResource("38_njl3w"),
-"playdead_out": ExtResource("39_2ywra"),
-"rollover": ExtResource("40_5i2su"),
-"speak": ExtResource("37_x4s81"),
-"walk": ExtResource("24_ydixh"),
-"walk_happy": ExtResource("33_dsiss"),
-"walk_sad": ExtResource("34_3618f")
+&"appear": ExtResource("30_sj84c"),
+&"backflip": ExtResource("36_jw4ao"),
+&"dance": ExtResource("35_v4ee7"),
+&"dig": ExtResource("28_yoftv"),
+&"disappear": ExtResource("27_4logu"),
+&"into_dig": ExtResource("29_f3hwi"),
+&"jump": ExtResource("25_v4puq"),
+&"jump_hang": ExtResource("26_no1l8"),
+&"neutral": ExtResource("23_0cr4m"),
+&"neutral_happy": ExtResource("31_d0nmp"),
+&"neutral_sad": ExtResource("32_7q048"),
+&"playdead": ExtResource("38_njl3w"),
+&"playdead_out": ExtResource("39_2ywra"),
+&"rollover": ExtResource("40_5i2su"),
+&"speak": ExtResource("37_x4s81"),
+&"walk": ExtResource("24_ydixh"),
+&"walk_happy": ExtResource("33_dsiss"),
+&"walk_sad": ExtResource("34_3618f")
 }
 
 [node name="doodle" type="Node3D" node_paths=PackedStringArray("noses", "ears", "tails", "colored_meshes")]

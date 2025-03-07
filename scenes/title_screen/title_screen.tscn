@@ -1,10 +1,10 @@
 [gd_scene load_steps=44 format=3 uid="uid://cqxrerk1d75to"]
 
 [ext_resource type="PackedScene" uid="uid://b0d1er4oqiqcn" path="res://objects/general_ui/general_button/general_button.tscn" id="1_6oj83"]
-[ext_resource type="Script" path="res://scenes/title_screen/title_screen.gd" id="1_pgrta"]
+[ext_resource type="Script" uid="uid://bg0as47hsfrlg" path="res://scenes/title_screen/title_screen.gd" id="1_pgrta"]
 [ext_resource type="FontFile" uid="uid://dyjvd6wmo0bmg" path="res://fonts/vtRemingtonPortable.ttf" id="9_ikkwa"]
 [ext_resource type="FontFile" uid="uid://cup2yr5w7or1l" path="res://fonts/Minnie.TTF" id="10_dmagf"]
-[ext_resource type="Shader" path="res://scenes/title_screen/hue_shift.gdshader" id="10_ngpco"]
+[ext_resource type="Shader" uid="uid://ryrnfqn0ixe5" path="res://scenes/title_screen/hue_shift.gdshader" id="10_ngpco"]
 [ext_resource type="Texture2D" uid="uid://ddcktpjy3gdew" path="res://ui_assets/misc/uiAccessoryDelete_up.png" id="11_iexge"]
 [ext_resource type="PackedScene" uid="uid://dkd6dg5s5uuef" path="res://objects/general_ui/base_panel.tscn" id="11_s4o3l"]
 [ext_resource type="Texture2D" uid="uid://b7ri5sq021cvo" path="res://ui_assets/misc/uiAccessoryDelete_down.png" id="12_nwwc5"]
@@ -27,13 +27,15 @@
 [ext_resource type="PackedScene" uid="uid://csdrrw6xiokuy" path="res://objects/props/mint/pipes/kit/pipe_shadow.tscn" id="24_uev5m"]
 [ext_resource type="PackedScene" uid="uid://duuriwh75afua" path="res://objects/props/mint/mint_crate.tscn" id="25_5he60"]
 [ext_resource type="PackedScene" uid="uid://bolaea3btm1ae" path="res://objects/props/office/da_crate.tscn" id="26_7gl7a"]
-[ext_resource type="Script" path="res://objects/interactables/mole_stomp/mole_stomp.gd" id="27_hepkt"]
+[ext_resource type="Script" uid="uid://dyt7mhhg2lwrv" path="res://objects/interactables/mole_stomp/mole_stomp.gd" id="27_hepkt"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_j5ei2"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_v8joy"]
+resource_local_to_scene = true
 font = ExtResource("9_ikkwa")
 font_size = 36
+font_color = Color(0.999911, 0.640551, 0.225015, 1)
 shadow_color = Color(0, 0, 0, 1)
 shadow_offset = Vector2(2, 2)
 
@@ -57,7 +59,7 @@ font_color = Color(1, 1, 0, 1)
 shadow_size = 8
 shadow_color = Color(0.411688, 0.411688, 3.85046e-07, 1)
 
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_n8suo"]
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_fdkeb"]
 resource_local_to_scene = true
 shader = ExtResource("10_ngpco")
 shader_parameter/Shift_Hue = 0.585
@@ -73,7 +75,7 @@ shader = ExtResource("10_ngpco")
 shader_parameter/Shift_Hue = 0.045
 shader_parameter/alpha = 1.0
 
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_a824h"]
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_hdew4"]
 resource_local_to_scene = true
 shader = ExtResource("10_ngpco")
 shader_parameter/Shift_Hue = 0.585
@@ -168,6 +170,7 @@ grow_horizontal = 2
 grow_vertical = 0
 text = "Click to begin..."
 label_settings = SubResource("LabelSettings_v8joy")
+horizontal_alignment = 1
 
 [node name="GameLogo" type="TextureRect" parent="GUI/Logo"]
 layout_mode = 1
@@ -269,7 +272,7 @@ alignment = 1
 
 [node name="BackButton" parent="GUI/NewGameMenu/ButtonContainer" instance=ExtResource("1_6oj83")]
 unique_name_in_owner = true
-material = SubResource("ShaderMaterial_n8suo")
+material = SubResource("ShaderMaterial_fdkeb")
 custom_minimum_size = Vector2(164, 64)
 layout_mode = 2
 size_flags_horizontal = 0
@@ -374,7 +377,7 @@ label_settings = SubResource("LabelSettings_5vlir")
 
 [node name="ContinueButton" parent="GUI/NewGameMenu/MiddleButtons" instance=ExtResource("1_6oj83")]
 unique_name_in_owner = true
-material = SubResource("ShaderMaterial_a824h")
+material = SubResource("ShaderMaterial_hdew4")
 custom_minimum_size = Vector2(164, 64)
 layout_mode = 2
 size_flags_horizontal = 0

@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://3g3evro83qm7"]
 
 [ext_resource type="PackedScene" uid="uid://b6cvjwnt2mmx8" path="res://models/props/facility_objects/mint/cog_nation_crate/cog_nation_crate.fbx" id="1_fw3e1"]
-[ext_resource type="Script" path="res://objects/props/mint/cog_nation_crate.gd" id="2_63jhq"]
+[ext_resource type="Script" uid="uid://brg4426ad80b" path="res://objects/props/mint/cog_nation_crate.gd" id="2_63jhq"]
 
 [sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_iougx"]
 data = PackedVector3Array(27.8709, 105.85, 27.8709, 27.8709, 54.7534, 27.8709, -27.8709, 54.7534, 27.8709, -27.8709, 54.7534, 27.8709, -27.8709, 105.85, 27.8709, 27.8709, 105.85, 27.8709, 27.8709, 54.7534, -27.8709, 27.8709, 105.85, -27.8709, -27.8709, 105.85, -27.8709, -27.8709, 105.85, -27.8709, -27.8709, 54.7534, -27.8709, 27.8709, 54.7534, -27.8709, 27.8709, 105.85, -27.8709, 27.8709, 54.7534, -27.8709, 27.8709, 54.7534, 27.8709, 27.8709, 54.7534, 27.8709, 27.8709, 105.85, 27.8709, 27.8709, 105.85, -27.8709, -27.8709, 105.85, 27.8709, -27.8709, 54.7534, 27.8709, -27.8709, 54.7534, -27.8709, -27.8709, 54.7534, -27.8709, -27.8709, 105.85, -27.8709, -27.8709, 105.85, 27.8709)

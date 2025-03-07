@@ -2,13 +2,10 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dx6nfjq0i07qb"
+uid="uid://ddikao42wkl4c"
 path="res://.godot/imported/tt_m_chr_avt_acc_msk_jackieOShades_tt_t_chr_avt_acc_msk_jackieOShades.png-74f2ed0b7e958b25d0d8f497c87ceae7.ctex"
 metadata={
 "vram_texture": false
-}
-generator_parameters={
-"md5": "a62cbb59448463518e6799b384294082"
 }
 
 [deps]
@@ -19,7 +16,7 @@ dest_files=["res://.godot/imported/tt_m_chr_avt_acc_msk_jackieOShades_tt_t_chr_a
 [params]
 
 compress/mode=3
-compress/high_quality=false
+compress/high_quality=true
 compress/lossy_quality=0.7
 compress/hdr_compression=1
 compress/normal_map=0

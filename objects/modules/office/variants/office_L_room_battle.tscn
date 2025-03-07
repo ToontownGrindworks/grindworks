@@ -1,8 +1,8 @@
 [gd_scene load_steps=28 format=3 uid="uid://cqrejftx6uyso"]
 
 [ext_resource type="PackedScene" uid="uid://ywlfb4whkjcx" path="res://objects/modules/office/base_rooms/office_L_room.tscn" id="1_n4mhl"]
-[ext_resource type="Texture2D" uid="uid://8mtdcfqpi5bt" path="res://models/facilities/office/textures/LB_Ceiling2.png" id="2_qsgki"]
-[ext_resource type="Texture2D" uid="uid://dg7k4e6ew4rk" path="res://models/facilities/office/textures/LB_tanSurface2.png" id="3_j0nmw"]
+[ext_resource type="Texture2D" uid="uid://dqmp1vpb7ao0u" path="res://models/facilities/office/textures/LB_Ceiling2.png" id="2_qsgki"]
+[ext_resource type="Texture2D" uid="uid://u0k5kfqlf8sc" path="res://models/facilities/office/textures/LB_tanSurface2.png" id="3_j0nmw"]
 [ext_resource type="PackedScene" uid="uid://btajacdw0exth" path="res://objects/props/office/partition.tscn" id="4_5dnvp"]
 [ext_resource type="PackedScene" uid="uid://bolaea3btm1ae" path="res://objects/props/office/da_crate.tscn" id="5_l0hhy"]
 [ext_resource type="PackedScene" uid="uid://bqvkntyk0ljsq" path="res://objects/goon/goon.tscn" id="5_yqbps"]

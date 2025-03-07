@@ -2,13 +2,10 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cqjpru8pfovs5"
+uid="uid://ckr2bju2itjgb"
 path="res://.godot/imported/tt_m_chr_avt_acc_hat_jugheadHat_tt_t_chr_avt_acc_hat_jugheadHat.png-c7b63b489fde2ff8ad5f1af925d630c6.ctex"
 metadata={
 "vram_texture": false
-}
-generator_parameters={
-"md5": "b8cbb4ea93501bfc61b48297792f256e"
 }
 
 [deps]
@@ -19,7 +16,7 @@ dest_files=["res://.godot/imported/tt_m_chr_avt_acc_hat_jugheadHat_tt_t_chr_avt_
 [params]
 
 compress/mode=3
-compress/high_quality=false
+compress/high_quality=true
 compress/lossy_quality=0.7
 compress/hdr_compression=1
 compress/normal_map=0

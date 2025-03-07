@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="ToonBottoms" load_steps=3 format=3 uid="uid://b7i8ll3jt5jja"]
 
-[ext_resource type="Script" path="res://objects/toon/clothing/toon_bottoms.gd" id="1_yxebi"]
+[ext_resource type="Script" uid="uid://c8kas2j4io1jh" path="res://objects/toon/clothing/toon_bottoms.gd" id="1_yxebi"]
 [ext_resource type="Texture2D" uid="uid://bwbe11pfn3to0" path="res://models/toon/textures/clothes/skirts/desat_skirt_1_4.png" id="2_1in8d"]
 
 [resource]

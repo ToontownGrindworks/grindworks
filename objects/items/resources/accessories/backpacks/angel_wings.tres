@@ -1,0 +1,67 @@
+[gd_resource type="Resource" script_class="ItemAccessory" load_steps=9 format=3 uid="uid://bye8a25d8np3f"]
+
+[ext_resource type="Script" uid="uid://fb0tqfojo57q" path="res://objects/items/classes/accessory_placement.gd" id="1_to132"]
+[ext_resource type="Script" uid="uid://duxq3xtgnln43" path="res://objects/items/classes/body_placement.gd" id="2_yauy7"]
+[ext_resource type="Texture2D" uid="uid://p74i8fx4wflf" path="res://models/accessories/backpacks/angel_wings/angel_wings-pix-1.png" id="3_17rcm"]
+[ext_resource type="PackedScene" uid="uid://b0ax1vrm0l4q3" path="res://models/accessories/backpacks/angel_wings/angel_wings.tscn" id="4_to132"]
+[ext_resource type="Script" uid="uid://dvu24b3o8i3sj" path="res://objects/items/classes/item_accessory.gd" id="6_n260u"]
+
+[sub_resource type="Resource" id="Resource_xqi40"]
+script = ExtResource("2_yauy7")
+body_type = 0
+position = Vector3(0.01, 0.56, -1.14)
+rotation = Vector3(0, 0, 0)
+scale = Vector3(0.4, 0.4, 0.4)
+
+[sub_resource type="Resource" id="Resource_bsqs6"]
+script = ExtResource("2_yauy7")
+body_type = 1
+position = Vector3(0.01, 0.56, -0.85)
+rotation = Vector3(0, 0, 0)
+scale = Vector3(0.4, 0.4, 0.4)
+
+[sub_resource type="Resource" id="Resource_n1he7"]
+script = ExtResource("2_yauy7")
+body_type = 2
+position = Vector3(0.01, 0.78, -0.92)
+rotation = Vector3(0, 0, 0)
+scale = Vector3(0.4, 0.4, 0.4)
+
+[resource]
+script = ExtResource("6_n260u")
+accessory_placements = Array[ExtResource("1_to132")]([SubResource("Resource_xqi40"), SubResource("Resource_bsqs6"), SubResource("Resource_n1he7")])
+qualitoon = 4
+rarity = 7
+evergreen = false
+realtime = false
+slot = 3
+world_scale = 0.15
+want_ui_spin = true
+ui_cam_offset = 0.4
+item_name = "Angel Wings"
+item_description = "Your power soars"
+big_description = "+ 7% Damage
+- 7% Defense
++ 7% Evasiveness
++ 7% Luck
++ 7% Speed
++ 7 max Laff"
+model = ExtResource("4_to132")
+stats_add = {
+"damage": 0.07,
+"defense": -0.07,
+"evasiveness": 0.07,
+"hp": 7,
+"luck": 0.07,
+"max_hp": 7,
+"speed": 0.07
+}
+stats_multiply = {}
+player_values = {}
+arbitrary_data = {}
+remember_item = true
+icon = ExtResource("3_17rcm")
+shop_category_title = "Boost Item"
+shop_category_color = Color(0.196078, 0.580392, 0.917647, 1)
+force_show_shop_category = false
+custom_shop_price = 0

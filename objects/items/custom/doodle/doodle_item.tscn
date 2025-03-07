@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://cvqrdnwudqe35"]
 
-[ext_resource type="Script" path="res://objects/items/custom/doodle/doodle_item.gd" id="1_6173o"]
+[ext_resource type="Script" uid="uid://hr4by22frxso" path="res://objects/items/custom/doodle/doodle_item.gd" id="1_6173o"]
 [ext_resource type="PackedScene" uid="uid://utwlvgq8mlgv" path="res://objects/doodle/roaming_doodle/roaming_doodle.tscn" id="2_umufi"]
 
 [node name="Doodle" type="Node3D"]

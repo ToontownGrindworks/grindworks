@@ -1,7 +1,7 @@
 [gd_resource type="Resource" script_class="StatEffectBKCooked" load_steps=3 format=3 uid="uid://bym756qv26oub"]
 
-[ext_resource type="Script" path="res://objects/battle/battle_resources/status_effects/boss_effects/status_effect_bk_cooked.gd" id="1_c5rea"]
-[ext_resource type="Texture2D" uid="uid://d23er1qplly1g" path="res://ui_assets/battle/statuses/fire_sale_dot.png" id="1_sahrn"]
+[ext_resource type="Script" uid="uid://cdih22qb0uf7h" path="res://objects/battle/battle_resources/status_effects/boss_effects/status_effect_bk_cooked.gd" id="1_c5rea"]
+[ext_resource type="Texture2D" uid="uid://vu8qo2uocf23" path="res://ui_assets/battle/statuses/cooked.png" id="1_jwwh5"]
 
 [resource]
 script = ExtResource("1_c5rea")
@@ -9,7 +9,7 @@ amount = 10
 instant_effect = false
 quality = 1
 rounds = -1
-icon = ExtResource("1_sahrn")
+icon = ExtResource("1_jwwh5")
 icon_color = Color(1, 1, 1, 1)
 icon_scale = 1.0
 mini_icon_color = Color(1, 1, 1, 1)
@@ -18,4 +18,3 @@ visible = true
 description = "This is a status effect"
 status_name = "Cooked"
 id = 14
-_generate_id = false

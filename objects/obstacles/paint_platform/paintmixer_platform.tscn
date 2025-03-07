@@ -1,6 +1,6 @@
 [gd_scene load_steps=13 format=4 uid="uid://q13pfs05aior"]
 
-[ext_resource type="Script" path="res://objects/obstacles/paint_platform/paintmixer_platform.gd" id="1_cx3te"]
+[ext_resource type="Script" uid="uid://dmfcl80cfloh8" path="res://objects/obstacles/paint_platform/paintmixer_platform.gd" id="1_cx3te"]
 [ext_resource type="Texture2D" uid="uid://cg73nmwwywaxm" path="res://models/props/facility_objects/mint/paint_platform/paintmixer_platform_GearCapJoint.png" id="1_d07dt"]
 [ext_resource type="Texture2D" uid="uid://dnu04pswpyrb4" path="res://models/props/facility_objects/mint/paint_platform/paintmixer_platform_GearCap1.png" id="3_4kvxm"]
 [ext_resource type="Material" uid="uid://3vaa7lwfnthq" path="res://objects/obstacles/paint_platform/edge_paint_mat.tres" id="3_j1ag4"]

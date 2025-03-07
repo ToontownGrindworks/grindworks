@@ -2,21 +2,21 @@
 
 [ext_resource type="PackedScene" uid="uid://cu152iitwfet2" path="res://objects/modules/cgc/base_rooms/cgc_finale_room.tscn" id="1_mmshg"]
 [ext_resource type="PackedScene" uid="uid://direah3lbjuu5" path="res://objects/battle/battle_node/battle_node.tscn" id="2_rx16n"]
-[ext_resource type="Script" path="res://objects/battle/battle_resources/misc_movies/slendercog_boss/slendercog_intro.gd" id="3_0e570"]
+[ext_resource type="Script" uid="uid://dv4tase543hrx" path="res://objects/battle/battle_resources/misc_movies/slendercog_boss/slendercog_intro.gd" id="3_0e570"]
 [ext_resource type="PackedScene" uid="uid://dflwjcy6fj0av" path="res://objects/cog/cog.tscn" id="3_b8xw3"]
 [ext_resource type="Resource" uid="uid://cfgq4sxagf8fo" path="res://objects/cog/presets/misc/slender_cog.tres" id="4_25su3"]
 [ext_resource type="PackedScene" uid="uid://bdp0i14kr0hs4" path="res://objects/battle/misc_battle_objects/tv_static/tv_static.tscn" id="5_6dda5"]
-[ext_resource type="Script" path="res://objects/battle/battle_resources/cog_attacks/cog_attack.gd" id="7_ioibr"]
+[ext_resource type="Script" uid="uid://bb27him60xtnk" path="res://objects/battle/battle_resources/cog_attacks/cog_attack.gd" id="7_ioibr"]
 [ext_resource type="Resource" uid="uid://doowiij7lpxy1" path="res://objects/battle/battle_resources/cog_attacks/resources/rubber_stamp.tres" id="8_xp6yb"]
 [ext_resource type="PackedScene" uid="uid://bptrv8nm0esos" path="res://models/cogs/heads/gladhander.glb" id="9_370r7"]
 [ext_resource type="Texture2D" uid="uid://in7gk76fauii" path="res://models/cogs/heads/no_more_face_man.png" id="10_smhgv"]
-[ext_resource type="Script" path="res://objects/cog/cogdna.gd" id="11_8wrdy"]
-[ext_resource type="Script" path="res://objects/battle/battle_resources/status_effect.gd" id="11_32hyv"]
+[ext_resource type="Script" uid="uid://okjbx502s3r5" path="res://objects/cog/cogdna.gd" id="11_8wrdy"]
+[ext_resource type="Script" uid="uid://df7irk63ikx4k" path="res://objects/battle/battle_resources/status_effect.gd" id="11_32hyv"]
 [ext_resource type="Resource" uid="uid://dy5pfjs8ivlt3" path="res://objects/cog/presets/misc/vessel.tres" id="12_g6khf"]
-[ext_resource type="Script" path="res://objects/cog/cog_pool.gd" id="12_n57ab"]
+[ext_resource type="Script" uid="uid://ocitcstc3bru" path="res://objects/cog/cog_pool.gd" id="12_n57ab"]
 [ext_resource type="Resource" uid="uid://c24yy1wqmg24o" path="res://objects/battle/battle_resources/cog_attacks/resources/razzle_dazzle.tres" id="12_vg7rx"]
 [ext_resource type="PackedScene" uid="uid://i3q2b1jvfc74" path="res://models/cogs/heads/yesman.glb" id="13_v2pu4"]
-[ext_resource type="Shader" path="res://objects/battle/misc_battle_objects/tv_static/vignette.gdshader" id="17_q5l77"]
+[ext_resource type="Shader" uid="uid://e1qa08jjtmws" path="res://objects/battle/misc_battle_objects/tv_static/vignette.gdshader" id="17_q5l77"]
 [ext_resource type="AudioStream" uid="uid://cik845h8j6l" path="res://audio/sfx/battle/cogs/misc/staticlight.ogg" id="17_xvbh6"]
 [ext_resource type="AudioStream" uid="uid://ugb4nuwn8oce" path="res://audio/sfx/battle/cogs/misc/staticmedium.ogg" id="18_kw3o7"]
 [ext_resource type="AudioStream" uid="uid://bo1fabhs1xuxg" path="res://audio/music/slendercog_ambience/Slendercog P1.mp3" id="19_ysamv"]
@@ -53,7 +53,7 @@ const BASE_VOLUME := -20.0
 @onready var music : Node = %DynamicMusic
 var during_round := true
 
-var alpha : float:
+var alpha: float:
 	get:
 		return tv_static.alpha
 
@@ -86,13 +86,13 @@ func get_character_pos(pos : String) -> Vector3:
 		return node.global_position
 	return Vector3.ZERO
 
-func static_alpha_changed(alpha : float) -> void:
+func static_alpha_changed(new_alpha: float) -> void:
 	for i in sfx_static.get_child_count():
-		var player : AudioStreamPlayer = sfx_static.get_child(i)
-		var goal : float = STATIC_GOALS[i]
-		var goal_ratio := minf(alpha / goal, 1.0)
+		var player: AudioStreamPlayer = sfx_static.get_child(i)
+		var goal: float = STATIC_GOALS[i]
+		var goal_ratio := minf(new_alpha / goal, 1.0)
 		player.set_volume_db(BASE_VOLUME - (BASE_VOLUME * goal_ratio))
-	static_meter.value = alpha / SlenderStaticIncrease.ALPHA_GOAL
+	static_meter.value = new_alpha / SlenderStaticIncrease.ALPHA_GOAL
 
 ## Inserts self into related battle actions
 func on_action_added(action : BattleAction):
@@ -213,8 +213,8 @@ is_admin = false
 health_mod = 1.0
 battle_phrases = Array[String](["You'll find I'm a handful", "I'm a very hands-on kinda guy.", "Offhandedly, I'd say you're in trouble.", "Let's get right to the business at hand.", "I think the handwriting is on the wall.", "I can be quite handy.", "Would you like some hand-me-downs?", "Let me show you some of my handiwork.", "Let's seal the deal.", "Let's shake on it.", "Put it there, Toon.", "You'll notice I have a very firm grip.", "I'm going to enjoy this.", "This is going to be fun.", "I'm glad you came!"])
 external_assets = {
-"head_model": "",
-"head_textures": []
+&"head_model": "",
+&"head_textures": []
 }
 
 [sub_resource type="Resource" id="Resource_5ii2d"]
@@ -241,8 +241,8 @@ is_admin = false
 health_mod = 1.0
 battle_phrases = Array[String](["I'm ready to rock and roll your end credits.", "Today the role of defeated Toon will be played by - YOU!", "Lights, camera, action!", "I told you not to call me.", "Are you ready for your final scene?", "I hope you don't forget your lines.", "This scene will go on the cutting room floor.", "There's no business like it!", "Let's start rolling."])
 external_assets = {
-"head_model": "",
-"head_textures": []
+&"head_model": "",
+&"head_textures": []
 }
 
 [sub_resource type="Resource" id="Resource_d0722"]
@@ -252,7 +252,7 @@ cogs = Array[ExtResource("11_8wrdy")]([SubResource("Resource_7g6l0"), ExtResourc
 [sub_resource type="BoxShape3D" id="BoxShape3D_meq3u"]
 size = Vector3(8.67212, 5.26587, 11.3602)
 
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_yxpmw"]
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_ean6k"]
 shader = ExtResource("17_q5l77")
 shader_parameter/base_alpha = 0.0
 shader_parameter/alpha_high = 1.0
@@ -330,7 +330,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.402954, 2.66833, 5.18011)
 shape = SubResource("BoxShape3D_meq3u")
 
 [node name="TVStatic" parent="BossFight" index="1" instance=ExtResource("5_6dda5")]
-material = SubResource("ShaderMaterial_yxpmw")
+material = SubResource("ShaderMaterial_ean6k")
 alpha = 0.0
 
 [node name="CharPositions" type="Node3D" parent="BossFight" index="2"]

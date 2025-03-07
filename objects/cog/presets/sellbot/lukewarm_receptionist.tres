@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="CogDNA" load_steps=12 format=3 uid="uid://b8unldthyldm"]
 
-[ext_resource type="Script" path="res://objects/battle/battle_resources/cog_attacks/cog_attack.gd" id="1_v721g"]
+[ext_resource type="Script" uid="uid://bb27him60xtnk" path="res://objects/battle/battle_resources/cog_attacks/cog_attack.gd" id="1_v721g"]
 [ext_resource type="Resource" uid="uid://c27ek2anjbx88" path="res://objects/battle/battle_resources/cog_attacks/resources/pound_key.tres" id="2_6enlv"]
 [ext_resource type="Resource" uid="uid://dwkmwkdn3ws4k" path="res://objects/battle/battle_resources/cog_attacks/resources/evil_eye.tres" id="3_4sy8p"]
 [ext_resource type="Texture2D" uid="uid://2fj5qbvh3qa1" path="res://models/cogs/textures/misc/sleeve_2.png" id="4_syaha"]
@@ -8,8 +8,8 @@
 [ext_resource type="Texture2D" uid="uid://o3hrfvdxeisb" path="res://models/cogs/textures/misc/leg_4.png" id="6_c64v8"]
 [ext_resource type="PackedScene" uid="uid://2ewnjjvwgpwy" path="res://models/cogs/heads/coldcaller.glb" id="7_7xbt4"]
 [ext_resource type="Texture2D" uid="uid://bq8afiw8fq5r4" path="res://models/cogs/heads/coldcaller_desat.png" id="8_vcsnp"]
-[ext_resource type="Script" path="res://objects/cog/cogdna.gd" id="9_iwy0p"]
-[ext_resource type="Script" path="res://objects/battle/battle_resources/status_effect.gd" id="10_6deip"]
+[ext_resource type="Script" uid="uid://okjbx502s3r5" path="res://objects/cog/cogdna.gd" id="9_iwy0p"]
+[ext_resource type="Script" uid="uid://df7irk63ikx4k" path="res://objects/battle/battle_resources/status_effect.gd" id="10_6deip"]
 [ext_resource type="Resource" uid="uid://b4vuuxwhv0d3v" path="res://objects/battle/battle_resources/status_effects/resources/status_effect_mod_cog.tres" id="11_8tmfi"]
 
 [resource]
@@ -39,6 +39,6 @@ is_admin = false
 health_mod = 1.0
 battle_phrases = Array[String](["I take my coffee lukewarm.", "Do you have an appointment?", "You'll find my service just right.", "I prefer not to take sides, but it seems I must make an exception.", "I'll let my superiors know they have a pest problem."])
 external_assets = {
-"head_model": "",
-"head_textures": []
+&"head_model": "",
+&"head_textures": []
 }

@@ -1,28 +1,29 @@
 [gd_scene load_steps=33 format=3 uid="uid://wpoc3xs1yy0"]
 
-[ext_resource type="Script" path="res://objects/player/player.gd" id="1_nexlg"]
-[ext_resource type="Script" path="res://objects/battle/battle_resources/stats.gd" id="2_mf0eg"]
-[ext_resource type="Script" path="res://objects/toon/clothing/toon_bottoms.gd" id="3_h0xpu"]
-[ext_resource type="Script" path="res://objects/items/classes/item.gd" id="3_hfcpd"]
-[ext_resource type="Script" path="res://objects/player/player_stats.gd" id="4_f7fek"]
-[ext_resource type="Script" path="res://objects/quests/quest.gd" id="4_flein"]
+[ext_resource type="Script" uid="uid://b4cxlqwfntoba" path="res://objects/player/player.gd" id="1_nexlg"]
+[ext_resource type="Script" uid="uid://o2fe7ud1faj6" path="res://objects/battle/battle_resources/stats.gd" id="2_mf0eg"]
+[ext_resource type="Script" uid="uid://c8kas2j4io1jh" path="res://objects/toon/clothing/toon_bottoms.gd" id="3_h0xpu"]
+[ext_resource type="Script" uid="uid://combwqypom1ru" path="res://objects/items/classes/item.gd" id="3_hfcpd"]
+[ext_resource type="Script" uid="uid://b68uqtpqs73wk" path="res://objects/player/player_stats.gd" id="4_f7fek"]
+[ext_resource type="Script" uid="uid://dfa2ic7ngy7sg" path="res://objects/quests/quest.gd" id="4_flein"]
 [ext_resource type="Texture2D" uid="uid://v0n7tknvy2jk" path="res://models/toon/textures/clothes/shorts/desat_shorts_10_2.png" id="4_rtbea"]
 [ext_resource type="PackedScene" uid="uid://b4tvnlm52jblo" path="res://objects/items/ui/item_descriptions/item_description.tscn" id="5_ajyaa"]
 [ext_resource type="PackedScene" uid="uid://cy4iox7mj5ei0" path="res://objects/toon/toon.tscn" id="5_ryhr4"]
-[ext_resource type="Script" path="res://objects/toon/toon_dna.gd" id="5_wb3eg"]
+[ext_resource type="Script" uid="uid://yg7gxug4rab" path="res://objects/toon/toon_dna.gd" id="5_wb3eg"]
 [ext_resource type="PackedScene" uid="uid://cumojo4vtowmv" path="res://objects/toon/laff_meter.tscn" id="6_553ug"]
-[ext_resource type="Script" path="res://objects/toon/clothing/toon_shirt.gd" id="6_l82lg"]
+[ext_resource type="Script" uid="uid://dfqwh4jmdy0iw" path="res://objects/toon/clothing/toon_shirt.gd" id="6_l82lg"]
 [ext_resource type="Texture2D" uid="uid://c4qvk4ssy1c0n" path="res://models/toon/textures/clothes/shirts/desat_shirt_4.png" id="7_vfl64"]
 [ext_resource type="Texture2D" uid="uid://cdawen500xuqx" path="res://models/toon/textures/clothes/shirts/desat_sleeve_4.png" id="8_bwbup"]
 [ext_resource type="PackedScene" uid="uid://bvnev7qmiu3dq" path="res://objects/general_ui/bean_jar/bean_jar.tscn" id="9_2bgkf"]
 [ext_resource type="Resource" uid="uid://tyi7ukxtvcgc" path="res://objects/battle/battle_resources/gag_loadouts/loadouts/standard_loadout.tres" id="9_cak40"]
-[ext_resource type="Script" path="res://objects/player/character.gd" id="10_7fcej"]
+[ext_resource type="Script" uid="uid://ts8xpgftpmty" path="res://objects/player/character.gd" id="10_7fcej"]
 [ext_resource type="Resource" uid="uid://cyiwxplege133" path="res://objects/items/resources/passive/emergency_unite.tres" id="12_sveqr"]
+[ext_resource type="PackedScene" uid="uid://d1vtqaf4hmrdj" path="res://objects/player/player_camera.tscn" id="16_tmow5"]
 [ext_resource type="PackedScene" uid="uid://b8xccla84x6gh" path="res://objects/quests/quest_notification/quest_notification.tscn" id="19_2bvb5"]
 [ext_resource type="FontFile" uid="uid://cup2yr5w7or1l" path="res://fonts/Minnie.TTF" id="20_fnojw"]
-[ext_resource type="Script" path="res://objects/player/floor_label.gd" id="21_dh5ch"]
+[ext_resource type="Script" uid="uid://dmbp7gb7omh12" path="res://objects/player/floor_label.gd" id="21_dh5ch"]
 [ext_resource type="PackedScene" uid="uid://5hvtmu8sf5ub" path="res://objects/player/ui/timer/game_timer.tscn" id="22_0c65h"]
-[ext_resource type="Script" path="res://objects/player/boost_text_queue.gd" id="23_468de"]
+[ext_resource type="Script" uid="uid://bnmo4cxoda23r" path="res://objects/player/boost_text_queue.gd" id="23_468de"]
 
 [sub_resource type="Resource" id="Resource_jj61k"]
 script = ExtResource("2_mf0eg")
@@ -80,47 +81,49 @@ random_character_stored_name = ""
 script = ExtResource("4_f7fek")
 money = 55
 items = Array[ExtResource("3_hfcpd")]([])
-gags_unlocked = {
-"Drop": 7.0,
-"Lure": 7.0,
-"Sound": 7.0,
-"Squirt": 7.0,
-"Throw": 7.0,
-"Trap": 7.0
-}
-gag_balance = {
-"Drop": 10.0,
-"Lure": 10.0,
-"Sound": 10.0,
-"Squirt": 10.0,
-"Throw": 10.0,
-"Trap": 10.0
-}
-gag_effectiveness = {
+gags_unlocked = Dictionary[String, int]({
+"Drop": 7,
+"Lure": 7,
+"Sound": 7,
+"Squirt": 7,
+"Throw": 7,
+"Trap": 7
+})
+gag_balance = Dictionary[String, int]({
+"Drop": 10,
+"Lure": 10,
+"Sound": 10,
+"Squirt": 10,
+"Throw": 10,
+"Trap": 10
+})
+gag_effectiveness = Dictionary[String, float]({
 "Drop": 1.0,
 "Lure": 1.0,
 "Sound": 1.0,
 "Squirt": 1.0,
 "Throw": 1.05,
 "Trap": 1.0
-}
-gag_regeneration = {
-"Drop": 5.0,
-"Lure": 5.0,
-"Sound": 5.0,
-"Squirt": 5.0,
-"Throw": 5.0,
-"Trap": 5.0
-}
-gag_vouchers = {
-"Drop": 1.0,
-"Lure": 1.0,
-"Sound": 1.0,
-"Squirt": 1.0,
-"Throw": 1.0,
-"Trap": 1.0
-}
-toonups = {
+})
+gag_regeneration = Dictionary[String, int]({
+"Drop": 5,
+"Lure": 5,
+"Sound": 5,
+"Squirt": 5,
+"Throw": 5,
+"Trap": 5
+})
+gag_vouchers = Dictionary[String, int]({
+"Drop": 1,
+"Lure": 1,
+"Sound": 1,
+"Squirt": 1,
+"Throw": 1,
+"Trap": 1
+})
+gag_battle_start_point_boost = Dictionary[String, int]({})
+global_battle_start_point_boost = 0
+toonups = Dictionary[int, int]({
 0: 1,
 1: 1,
 2: 1,
@@ -128,7 +131,7 @@ toonups = {
 4: 1,
 5: 1,
 6: 0
-}
+})
 gag_cap = 100
 gag_discount = -1
 character = SubResource("Resource_e5olc")
@@ -149,6 +152,7 @@ cashbot_boost = 1.0
 lawbot_boost = 1.0
 bossbot_boost = 1.0
 proxy_chance_boost = 0.0
+cog_hp_death_threshold = 0.0
 damage = 2.0
 defense = 1.2
 evasiveness = 1.1
@@ -162,9 +166,6 @@ turns = 3
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_3sqh5"]
 radius = 0.292689
 height = 1.12841
-
-[sub_resource type="SeparationRayShape3D" id="SeparationRayShape3D_6nfhs"]
-length = 0.05
 
 [sub_resource type="LabelSettings" id="LabelSettings_530nt"]
 font = ExtResource("20_fnojw")
@@ -185,14 +186,10 @@ head_node = NodePath("Head")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.564, 0)
 shape = SubResource("CapsuleShape3D_3sqh5")
 
-[node name="SpringArm" type="SpringArm3D" parent="."]
+[node name="PlayerCamera" parent="." instance=ExtResource("16_tmow5")]
+unique_name_in_owner = true
+process_physics_priority = -100
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.06085, 0)
-shape = SubResource("SeparationRayShape3D_6nfhs")
-spring_length = 2.5
-
-[node name="Camera" type="Camera3D" parent="SpringArm"]
-current = true
-fov = 52.0
 
 [node name="Head" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.920243, 0)

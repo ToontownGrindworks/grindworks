@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://pf8wemjjkadg"]
 
-[ext_resource type="Script" path="res://scenes/minigames/objects/hover_selection/hover_selector.gd" id="1_0pcte"]
+[ext_resource type="Script" uid="uid://ca0cq16e82udt" path="res://scenes/minigames/objects/hover_selection/hover_selector.gd" id="1_0pcte"]
 [ext_resource type="FontFile" uid="uid://815gwlftl5ik" path="res://fonts/impress-bt.ttf" id="1_qard5"]
 [ext_resource type="Texture2D" uid="uid://crhfvqyw7kbdg" path="res://ui_assets/misc/arrow_red.png" id="2_rs0u4"]
 

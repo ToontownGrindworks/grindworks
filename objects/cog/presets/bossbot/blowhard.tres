@@ -1,0 +1,44 @@
+[gd_resource type="Resource" script_class="CogDNA" load_steps=12 format=3 uid="uid://vb0alxh52g8q"]
+
+[ext_resource type="Script" uid="uid://bb27him60xtnk" path="res://objects/battle/battle_resources/cog_attacks/cog_attack.gd" id="1_ec4bb"]
+[ext_resource type="Resource" uid="uid://dxpqtt8gh5brv" path="res://objects/battle/battle_resources/cog_attacks/resources/finger_wag.tres" id="2_hd464"]
+[ext_resource type="Resource" uid="uid://b4kaq7rjifwfc" path="res://objects/battle/battle_resources/cog_attacks/resources/liquidate.tres" id="2_o2whk"]
+[ext_resource type="Resource" uid="uid://bpupdhbap1rq" path="res://objects/battle/battle_resources/cog_attacks/resources/freeze_assets.tres" id="3_01ki7"]
+[ext_resource type="Texture2D" uid="uid://2fj5qbvh3qa1" path="res://models/cogs/textures/misc/sleeve_2.png" id="5_4p8hq"]
+[ext_resource type="Texture2D" uid="uid://idf1e68fml3o" path="res://models/cogs/textures/misc/blazer_1.png" id="6_3ib0h"]
+[ext_resource type="Texture2D" uid="uid://o3hrfvdxeisb" path="res://models/cogs/textures/misc/leg_4.png" id="7_3nv83"]
+[ext_resource type="PackedScene" uid="uid://cf4icv3p0tfoq" path="res://models/cogs/heads/blowhard.glb" id="8_ec4bb"]
+[ext_resource type="Script" uid="uid://okjbx502s3r5" path="res://objects/cog/cogdna.gd" id="10_llanl"]
+[ext_resource type="Script" uid="uid://df7irk63ikx4k" path="res://objects/battle/battle_resources/status_effect.gd" id="11_i4jfh"]
+[ext_resource type="Resource" uid="uid://b4vuuxwhv0d3v" path="res://objects/battle/battle_resources/status_effects/resources/status_effect_mod_cog.tres" id="12_iirv8"]
+
+[resource]
+script = ExtResource("10_llanl")
+department = 3
+suit = 2
+custom_blazer_tex = ExtResource("6_3ib0h")
+custom_arm_tex = ExtResource("5_4p8hq")
+custom_leg_tex = ExtResource("7_3nv83")
+cog_name = "Blowhard"
+name_plural = ""
+head = ExtResource("8_ec4bb")
+head_scale = Vector3(1, 1, 1)
+head_pos = Vector3(0, -0.1, 0)
+scale = 6.6
+head_textures = Array[Texture2D]([])
+hand_color = Color(0.568627, 0.568627, 0.8, 1)
+head_color = Color(1, 1, 1, 1)
+custom_nametag_height = 0.0
+custom_nametag_suffix = ""
+attacks = Array[ExtResource("1_ec4bb")]([ExtResource("2_o2whk"), ExtResource("3_01ki7"), ExtResource("2_hd464")])
+level_low = 7
+level_high = 20
+status_effects = Array[ExtResource("11_i4jfh")]([ExtResource("12_iirv8")])
+is_mod_cog = true
+is_admin = false
+health_mod = 1.0
+battle_phrases = Array[String](["I'll huff, and I'll puff, and I'll blow you down.", "We'll have a whale of a time.", "There's a blustering breeze rolling through.", "Save your breath.", "Not to brag, but you'll never beat me.", "Watch out, this whale is killer."])
+external_assets = {
+&"head_model": "",
+&"head_textures": []
+}

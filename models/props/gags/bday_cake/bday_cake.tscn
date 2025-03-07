@@ -172,8 +172,8 @@ tracks/12/keys = PackedFloat32Array(0, 1, 1, 0.999999, 1, 0.0666667, 1, 1, 0.999
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_m0qmf"]
 _data = {
-"RESET": SubResource("Animation_eshfh"),
-"candles": SubResource("Animation_pglfg")
+&"RESET": SubResource("Animation_eshfh"),
+&"candles": SubResource("Animation_pglfg")
 }
 
 [node name="bday_cake" instance=ExtResource("1_pehkf")]

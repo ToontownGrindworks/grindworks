@@ -13,6 +13,7 @@ extends TextureRect
 		node = x
 		if node:
 			sub_viewport.add_child(node)
+			node.reset_physics_interpolation()
 		adjust_cam()
 		setup_tween()
 @export var want_spin_tween := false:

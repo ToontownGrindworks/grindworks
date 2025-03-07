@@ -1,11 +1,12 @@
 [gd_resource type="Resource" script_class="FingerWag" load_steps=2 format=3 uid="uid://dxpqtt8gh5brv"]
 
-[ext_resource type="Script" path="res://objects/battle/battle_resources/cog_attacks/finger_wag.gd" id="1_r5atw"]
+[ext_resource type="Script" uid="uid://xaes6j4t2nyu" path="res://objects/battle/battle_resources/cog_attacks/finger_wag.gd" id="1_r5atw"]
 
 [resource]
 script = ExtResource("1_r5atw")
 accuracy = 75
 damage = 2
+ignore_stats = false
 summary = ""
 attack_lines = Array[String](["I have told you a thousand times.", "Now see here Toon.", "Don't make me laugh.", "Don't make me come over there.", "I'm tired of repeating myself.", "I believe we've been over this.", "You have no respect for us Cogs.", "I think it's time you pay attention.", "Blah, Blah, Blah, Blah, Blah.", "Don't make me stop this meeting.", "Am I going to have to separate you?", "We've been through this before."])
 target_type = 0

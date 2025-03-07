@@ -1,7 +1,7 @@
 [gd_scene load_steps=56 format=3 uid="uid://b3cufsy6ifc6i"]
 
 [ext_resource type="PackedScene" uid="uid://bslqqf7nauy6y" path="res://models/cogs/suitb/suitb.glb" id="1_4876t"]
-[ext_resource type="Script" path="res://objects/cog/suit_directory.gd" id="2_vk3iu"]
+[ext_resource type="Script" uid="uid://cqkt0omtc1wel" path="res://objects/cog/suit_directory.gd" id="2_vk3iu"]
 [ext_resource type="Texture2D" uid="uid://btku14fh0vw7p" path="res://models/cogs/misc/hp_light/cog_light.png" id="4_oe2av"]
 [ext_resource type="Animation" uid="uid://dtvm3q57k5sf3" path="res://models/cogs/suitb/animations/anvil-drop.res" id="5_npeff"]
 [ext_resource type="Animation" uid="uid://b8r1ttvvc1gw2" path="res://models/cogs/suitb/animations/drop.res" id="6_u6evk"]
@@ -10,7 +10,7 @@
 [ext_resource type="Animation" uid="uid://cn33nrxqhiw01" path="res://models/cogs/suitb/animations/flailing.res" id="9_7p5jj"]
 [ext_resource type="PackedScene" uid="uid://c1d40yp47h4wq" path="res://objects/cog/hp_light/hp_light.tscn" id="9_scc6t"]
 [ext_resource type="Texture2D" uid="uid://cjynqnh16rd0p" path="res://models/cogs/misc/hp_light/boss.png" id="10_c5qto"]
-[ext_resource type="Script" path="res://objects/cog/nametag/cog_nametag_node.gd" id="10_gny0p"]
+[ext_resource type="Script" uid="uid://h62hy6uqeb12" path="res://objects/cog/nametag/cog_nametag_node.gd" id="10_gny0p"]
 [ext_resource type="Animation" uid="uid://buw43ir73uapa" path="res://models/cogs/suitb/animations/hold-eraser.res" id="10_qmfew"]
 [ext_resource type="Animation" uid="uid://6rbn7k8j8mv4" path="res://models/cogs/suitb/animations/hold-pencil.res" id="11_jmmh2"]
 [ext_resource type="Animation" uid="uid://bxbg6wexkqjan" path="res://models/cogs/suitb/animations/hypnotize.res" id="12_ndr52"]
@@ -1348,51 +1348,51 @@ tracks/131/keys = PackedFloat32Array(0, 1, 0.00346809, -0.0695931, 0.00291184, 0
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_paxjq"]
 _data = {
-"RESET": SubResource("Animation_eqw01"),
-"anvil-drop": ExtResource("5_npeff"),
-"buffed": ExtResource("45_m03fe"),
-"clap": SubResource("Animation_05p85"),
-"drop": ExtResource("6_u6evk"),
-"effort": ExtResource("7_qrl80"),
-"finger-wag": ExtResource("8_w67cx"),
-"flailing": ExtResource("9_7p5jj"),
-"goose-lose": ExtResource("44_071au"),
-"hold-eraser": ExtResource("10_qmfew"),
-"hold-pencil": ExtResource("11_jmmh2"),
-"hypnotize": ExtResource("12_ndr52"),
-"jump": ExtResource("13_rusmy"),
-"landing": ExtResource("14_uomcs"),
-"laugh": ExtResource("48_pflmo"),
-"lured": ExtResource("15_nn00d"),
-"magic1": ExtResource("16_itlai"),
-"magic2": ExtResource("17_0hbjo"),
-"magic3": ExtResource("18_b7tma"),
-"neutral": ExtResource("19_ddey3"),
-"pen-squirt": ExtResource("20_l207m"),
-"pencil-sharpener": ExtResource("21_aaehk"),
-"phone": ExtResource("22_wykua"),
-"pickpocket": ExtResource("23_1fvst"),
-"pie-small": ExtResource("24_dcrk5"),
-"rake": ExtResource("25_iwbeo"),
-"roll-o-dex": ExtResource("26_fr3l4"),
-"sidestep-left": ExtResource("27_cgj1y"),
-"sidestep-right": ExtResource("28_a8xgn"),
-"slip-backward": ExtResource("29_q4jks"),
-"slip-forward": ExtResource("30_skhkq"),
-"soak": ExtResource("31_a2e26"),
-"speak": ExtResource("32_yefym"),
-"squirt-large": ExtResource("33_ec3sk"),
-"squirt-small": ExtResource("34_0n3va"),
-"stomp": ExtResource("35_giqfh"),
-"throw-object": ExtResource("36_qxpkc"),
-"throw-paper": ExtResource("37_c8f5b"),
-"times-up": ExtResource("48_7yy2t"),
-"tray-neutral": ExtResource("38_h4mxu"),
-"tray-walk": ExtResource("39_l1u0b"),
-"tug-o-war": ExtResource("40_dhube"),
-"victory": ExtResource("41_1nk1e"),
-"walk": ExtResource("42_01pjg"),
-"walknreach": ExtResource("43_4bpsk")
+&"RESET": SubResource("Animation_eqw01"),
+&"anvil-drop": ExtResource("5_npeff"),
+&"buffed": ExtResource("45_m03fe"),
+&"clap": SubResource("Animation_05p85"),
+&"drop": ExtResource("6_u6evk"),
+&"effort": ExtResource("7_qrl80"),
+&"finger-wag": ExtResource("8_w67cx"),
+&"flailing": ExtResource("9_7p5jj"),
+&"goose-lose": ExtResource("44_071au"),
+&"hold-eraser": ExtResource("10_qmfew"),
+&"hold-pencil": ExtResource("11_jmmh2"),
+&"hypnotize": ExtResource("12_ndr52"),
+&"jump": ExtResource("13_rusmy"),
+&"landing": ExtResource("14_uomcs"),
+&"laugh": ExtResource("48_pflmo"),
+&"lured": ExtResource("15_nn00d"),
+&"magic1": ExtResource("16_itlai"),
+&"magic2": ExtResource("17_0hbjo"),
+&"magic3": ExtResource("18_b7tma"),
+&"neutral": ExtResource("19_ddey3"),
+&"pen-squirt": ExtResource("20_l207m"),
+&"pencil-sharpener": ExtResource("21_aaehk"),
+&"phone": ExtResource("22_wykua"),
+&"pickpocket": ExtResource("23_1fvst"),
+&"pie-small": ExtResource("24_dcrk5"),
+&"rake": ExtResource("25_iwbeo"),
+&"roll-o-dex": ExtResource("26_fr3l4"),
+&"sidestep-left": ExtResource("27_cgj1y"),
+&"sidestep-right": ExtResource("28_a8xgn"),
+&"slip-backward": ExtResource("29_q4jks"),
+&"slip-forward": ExtResource("30_skhkq"),
+&"soak": ExtResource("31_a2e26"),
+&"speak": ExtResource("32_yefym"),
+&"squirt-large": ExtResource("33_ec3sk"),
+&"squirt-small": ExtResource("34_0n3va"),
+&"stomp": ExtResource("35_giqfh"),
+&"throw-object": ExtResource("36_qxpkc"),
+&"throw-paper": ExtResource("37_c8f5b"),
+&"times-up": ExtResource("48_7yy2t"),
+&"tray-neutral": ExtResource("38_h4mxu"),
+&"tray-walk": ExtResource("39_l1u0b"),
+&"tug-o-war": ExtResource("40_dhube"),
+&"victory": ExtResource("41_1nk1e"),
+&"walk": ExtResource("42_01pjg"),
+&"walknreach": ExtResource("43_4bpsk")
 }
 
 [node name="suitb" node_paths=PackedStringArray("skeleton", "animator", "department_emblem", "health_meter", "nametag_node", "nametag", "head_node", "head_bone", "left_hand_bone", "right_hand_bone", "right_index_bone", "health_bone", "color_overlay_meshes") instance=ExtResource("1_4876t")]

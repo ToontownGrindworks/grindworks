@@ -1,14 +1,14 @@
 [gd_scene load_steps=63 format=3 uid="uid://dqoqpd1hkuwja"]
 
 [ext_resource type="PackedScene" uid="uid://d1p4lknci4r4o" path="res://models/cogs/suita/suita.glb" id="1_dqh8a"]
-[ext_resource type="Script" path="res://objects/cog/suit_directory.gd" id="2_gqcip"]
+[ext_resource type="Script" uid="uid://cqkt0omtc1wel" path="res://objects/cog/suit_directory.gd" id="2_gqcip"]
 [ext_resource type="Animation" uid="uid://b2rpcj414kldf" path="res://models/cogs/suita/animations/laugh.res" id="5_3e18s"]
 [ext_resource type="Animation" uid="uid://d26q5uxypo7td" path="res://models/cogs/suita/animations/anvil-drop.res" id="6_s1k7q"]
 [ext_resource type="Animation" uid="uid://c6pfdnytqsl68" path="res://models/cogs/suita/animations/awalk.res" id="7_wusrs"]
 [ext_resource type="Animation" uid="uid://dg10uywcjkp2p" path="res://models/cogs/suita/animations/cigar-smoke.res" id="8_f4lnf"]
 [ext_resource type="Animation" uid="uid://dpbe6wvyrkoyq" path="res://models/cogs/suita/animations/clap.res" id="9_047kq"]
 [ext_resource type="PackedScene" uid="uid://c1d40yp47h4wq" path="res://objects/cog/hp_light/hp_light.tscn" id="9_knmx4"]
-[ext_resource type="Script" path="res://objects/cog/nametag/cog_nametag_node.gd" id="10_3iyms"]
+[ext_resource type="Script" uid="uid://h62hy6uqeb12" path="res://objects/cog/nametag/cog_nametag_node.gd" id="10_3iyms"]
 [ext_resource type="Texture2D" uid="uid://cjynqnh16rd0p" path="res://models/cogs/misc/hp_light/boss.png" id="10_ceb88"]
 [ext_resource type="Animation" uid="uid://bfwgws083hqhq" path="res://models/cogs/suita/animations/drop.res" id="10_lqgin"]
 [ext_resource type="Animation" uid="uid://bpvx3onsrehbd" path="res://models/cogs/suita/animations/effort.res" id="11_t7ie2"]
@@ -423,61 +423,61 @@ tracks/50/keys = PackedFloat32Array(0, 1, 0, 0, 0, 1)
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_s0gun"]
 _data = {
-"RESET": SubResource("Animation_4sj62"),
-"anvil-drop": ExtResource("6_s1k7q"),
-"awalk": ExtResource("7_wusrs"),
-"buffed": ExtResource("57_npeln"),
-"cigar-smoke": ExtResource("8_f4lnf"),
-"clap": ExtResource("9_047kq"),
-"compensation": ExtResource("56_jicf4"),
-"drop": ExtResource("10_lqgin"),
-"effort": ExtResource("11_t7ie2"),
-"finger-wag": ExtResource("12_aocvy"),
-"flailing": ExtResource("13_vigkw"),
-"fountain-pen": ExtResource("14_rfgvk"),
-"glower": ExtResource("15_o03a8"),
-"golf-club-swing": ExtResource("16_3l078"),
-"hypnotize": ExtResource("17_et0oy"),
-"landing": ExtResource("18_n7es4"),
-"laugh": ExtResource("5_3e18s"),
-"leftsit-hungry": ExtResource("19_epm7s"),
-"lured": ExtResource("20_i0152"),
-"magic1": ExtResource("21_fkb5s"),
-"magic2": ExtResource("22_f3mu2"),
-"magic3": ExtResource("23_b1ar7"),
-"neutral": ExtResource("24_f7ht6"),
-"phone": ExtResource("25_k0lun"),
-"pickpocket": ExtResource("26_k3rmr"),
-"pie-small": ExtResource("27_3a8va"),
-"rake": ExtResource("28_ijcu6"),
-"rightsit-hungry": ExtResource("29_hhjl8"),
-"roll-o-dex": ExtResource("30_oxom1"),
-"rubber-stamp": ExtResource("31_6tna2"),
-"sidestep-left": ExtResource("32_p2thr"),
-"sidestep-right": ExtResource("33_l3b13"),
-"sit": ExtResource("34_pw61k"),
-"sit-angry": ExtResource("35_h1v4o"),
-"sit-eat": ExtResource("36_uejgr"),
-"sit-eat-in": ExtResource("37_csng7"),
-"sit-eat-out": ExtResource("38_q1m6v"),
-"sit-lose": ExtResource("39_d0olq"),
-"slip-backward": ExtResource("40_8rg38"),
-"slip-forward": ExtResource("41_dq12d"),
-"smile": ExtResource("42_aak2x"),
-"soak": ExtResource("43_drt6u"),
-"song-and-dance": ExtResource("44_s6mbl"),
-"speak": ExtResource("45_eol2r"),
-"squirt-large": ExtResource("46_aihih"),
-"squirt-small": ExtResource("47_7hds5"),
-"stomp": ExtResource("58_e788e"),
-"throw-object": ExtResource("48_cy8hc"),
-"throw-paper": ExtResource("49_mxnmc"),
-"tray-neutral": ExtResource("50_mj3f5"),
-"tray-walk": ExtResource("51_8fg7y"),
-"tug-o-war": ExtResource("52_nmxyb"),
-"victory": ExtResource("53_ocs7r"),
-"walk": ExtResource("54_ru5yb"),
-"walknreach": ExtResource("55_awdup")
+&"RESET": SubResource("Animation_4sj62"),
+&"anvil-drop": ExtResource("6_s1k7q"),
+&"awalk": ExtResource("7_wusrs"),
+&"buffed": ExtResource("57_npeln"),
+&"cigar-smoke": ExtResource("8_f4lnf"),
+&"clap": ExtResource("9_047kq"),
+&"compensation": ExtResource("56_jicf4"),
+&"drop": ExtResource("10_lqgin"),
+&"effort": ExtResource("11_t7ie2"),
+&"finger-wag": ExtResource("12_aocvy"),
+&"flailing": ExtResource("13_vigkw"),
+&"fountain-pen": ExtResource("14_rfgvk"),
+&"glower": ExtResource("15_o03a8"),
+&"golf-club-swing": ExtResource("16_3l078"),
+&"hypnotize": ExtResource("17_et0oy"),
+&"landing": ExtResource("18_n7es4"),
+&"laugh": ExtResource("5_3e18s"),
+&"leftsit-hungry": ExtResource("19_epm7s"),
+&"lured": ExtResource("20_i0152"),
+&"magic1": ExtResource("21_fkb5s"),
+&"magic2": ExtResource("22_f3mu2"),
+&"magic3": ExtResource("23_b1ar7"),
+&"neutral": ExtResource("24_f7ht6"),
+&"phone": ExtResource("25_k0lun"),
+&"pickpocket": ExtResource("26_k3rmr"),
+&"pie-small": ExtResource("27_3a8va"),
+&"rake": ExtResource("28_ijcu6"),
+&"rightsit-hungry": ExtResource("29_hhjl8"),
+&"roll-o-dex": ExtResource("30_oxom1"),
+&"rubber-stamp": ExtResource("31_6tna2"),
+&"sidestep-left": ExtResource("32_p2thr"),
+&"sidestep-right": ExtResource("33_l3b13"),
+&"sit": ExtResource("34_pw61k"),
+&"sit-angry": ExtResource("35_h1v4o"),
+&"sit-eat": ExtResource("36_uejgr"),
+&"sit-eat-in": ExtResource("37_csng7"),
+&"sit-eat-out": ExtResource("38_q1m6v"),
+&"sit-lose": ExtResource("39_d0olq"),
+&"slip-backward": ExtResource("40_8rg38"),
+&"slip-forward": ExtResource("41_dq12d"),
+&"smile": ExtResource("42_aak2x"),
+&"soak": ExtResource("43_drt6u"),
+&"song-and-dance": ExtResource("44_s6mbl"),
+&"speak": ExtResource("45_eol2r"),
+&"squirt-large": ExtResource("46_aihih"),
+&"squirt-small": ExtResource("47_7hds5"),
+&"stomp": ExtResource("58_e788e"),
+&"throw-object": ExtResource("48_cy8hc"),
+&"throw-paper": ExtResource("49_mxnmc"),
+&"tray-neutral": ExtResource("50_mj3f5"),
+&"tray-walk": ExtResource("51_8fg7y"),
+&"tug-o-war": ExtResource("52_nmxyb"),
+&"victory": ExtResource("53_ocs7r"),
+&"walk": ExtResource("54_ru5yb"),
+&"walknreach": ExtResource("55_awdup")
 }
 
 [node name="suita" node_paths=PackedStringArray("skeleton", "animator", "wrists_and_shoes", "department_emblem", "health_meter", "nametag_node", "nametag", "head_node", "head_bone", "left_hand_bone", "right_hand_bone", "right_index_bone", "health_bone", "color_overlay_meshes") instance=ExtResource("1_dqh8a")]

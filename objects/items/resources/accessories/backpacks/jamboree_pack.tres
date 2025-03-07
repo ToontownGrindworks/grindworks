@@ -1,10 +1,10 @@
 [gd_resource type="Resource" script_class="ItemAccessory" load_steps=10 format=3 uid="uid://bfiv6exev26qj"]
 
-[ext_resource type="Script" path="res://objects/items/classes/accessory_placement.gd" id="1_vjyui"]
-[ext_resource type="Script" path="res://objects/items/classes/item_accessory.gd" id="2_0yskw"]
+[ext_resource type="Script" uid="uid://fb0tqfojo57q" path="res://objects/items/classes/accessory_placement.gd" id="1_vjyui"]
+[ext_resource type="Script" uid="uid://dvu24b3o8i3sj" path="res://objects/items/classes/item_accessory.gd" id="2_0yskw"]
 [ext_resource type="PackedScene" uid="uid://c4kf2mtj3ve8e" path="res://models/accessories/backpacks/jamboree_pack/tt_m_chr_avt_acc_pac_band.glb" id="2_unwvj"]
-[ext_resource type="Script" path="res://objects/items/classes/body_placement.gd" id="2_vce8d"]
-[ext_resource type="Script" path="res://objects/items/custom/item_jamboree_pack.gd" id="3_0luck"]
+[ext_resource type="Script" uid="uid://duxq3xtgnln43" path="res://objects/items/classes/body_placement.gd" id="2_vce8d"]
+[ext_resource type="Script" uid="uid://de8q70fftey0b" path="res://objects/items/custom/item_jamboree_pack.gd" id="3_0luck"]
 [ext_resource type="Texture2D" uid="uid://cj5ba8i75l4mp" path="res://models/accessories/backpacks/jamboree_pack/tt_m_chr_avt_acc_pac_band.glb-pix-1.png" id="3_2je2v"]
 
 [sub_resource type="Resource" id="Resource_j7yfl"]
@@ -31,8 +31,8 @@ scale = Vector3(0.25, 0.25, 0.25)
 [resource]
 script = ExtResource("2_0yskw")
 accessory_placements = Array[ExtResource("1_vjyui")]([SubResource("Resource_j7yfl"), SubResource("Resource_7erd4"), SubResource("Resource_hkqv2")])
-qualitoon = 4
-qualitoon_rarity = 6
+qualitoon = 3
+rarity = 0
 evergreen = false
 realtime = false
 slot = 3

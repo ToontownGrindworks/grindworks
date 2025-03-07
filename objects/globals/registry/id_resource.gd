@@ -6,10 +6,7 @@ class_name IDResource
 @export var id: int = 0
 
 @warning_ignore("unused_private_class_variable")
-@export var _generate_id: bool:
-	set(x):
-		if x != false:
-			generate_new_id()
+@export_tool_button("Generate ID", "Callable") var _generate_id = func(): generate_new_id()
 
 ## Returns the resource path for these associated resources.
 ## Can be overridden by base classes.
@@ -33,7 +30,7 @@ static func get_fresh_registry(base: GDScript) -> DynamicRegistry:
 ## Generates a new ID for this resource.
 func generate_new_id(p := true) -> void:
 	var script: GDScript = get_registry_path.get_object()
-	var registry: DynamicRegistry = await get_fresh_registry(script)
+	var registry: DynamicRegistry = get_fresh_registry(script)
 	if registry.has_id_collision(id):
 		var old_id := id
 		id = registry.get_available_id()

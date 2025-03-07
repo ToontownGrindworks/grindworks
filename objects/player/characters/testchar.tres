@@ -1,10 +1,10 @@
 [gd_resource type="Resource" script_class="PlayerCharacter" load_steps=8 format=3 uid="uid://c6oqw7m6eh4yy"]
 
-[ext_resource type="Script" path="res://objects/player/character.gd" id="1_grtey"]
-[ext_resource type="Script" path="res://objects/battle/battle_resources/stats.gd" id="1_j1jpo"]
-[ext_resource type="Script" path="res://objects/toon/toon_dna.gd" id="1_t03ah"]
+[ext_resource type="Script" uid="uid://ts8xpgftpmty" path="res://objects/player/character.gd" id="1_grtey"]
+[ext_resource type="Script" uid="uid://o2fe7ud1faj6" path="res://objects/battle/battle_resources/stats.gd" id="1_j1jpo"]
+[ext_resource type="Script" uid="uid://yg7gxug4rab" path="res://objects/toon/toon_dna.gd" id="1_t03ah"]
 [ext_resource type="Resource" uid="uid://tyi7ukxtvcgc" path="res://objects/battle/battle_resources/gag_loadouts/loadouts/standard_loadout.tres" id="2_w38qq"]
-[ext_resource type="Script" path="res://objects/items/classes/item.gd" id="4_al6k5"]
+[ext_resource type="Script" uid="uid://combwqypom1ru" path="res://objects/items/classes/item.gd" id="4_al6k5"]
 
 [sub_resource type="Resource" id="Resource_q3qk8"]
 script = ExtResource("1_j1jpo")
@@ -33,7 +33,7 @@ leg_color = Color(1, 1, 1, 1)
 script = ExtResource("1_grtey")
 character_name = "RandomToon"
 character_summary = "- Stats are randomized
-- Gets one random item
+- Starts with 2 random items
 - Starts with 2 random tracks"
 dna = SubResource("Resource_gqohd")
 gag_loadout = ExtResource("2_w38qq")

@@ -51,7 +51,7 @@ func action():
 		cog_anim = 'hypnotize'
 		press_button()
 		sfx_delay = 2.4
-		TaskMgr.delay(2.5).connect(animate_presentation.bind(prop))
+		Task.delay(2.5).connect(animate_presentation.bind(prop))
 	
 	battle_node.focus_character(user)
 	

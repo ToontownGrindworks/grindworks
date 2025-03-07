@@ -1,6 +1,6 @@
 [gd_scene load_steps=12 format=3 uid="uid://d03k2e6a74tko"]
 
-[ext_resource type="Script" path="res://objects/battle/effects/cloud_attacks/brain_storm.gd" id="1_bdrpr"]
+[ext_resource type="Script" uid="uid://cpt2uoqbnoxlr" path="res://objects/battle/effects/cloud_attacks/brain_storm.gd" id="1_bdrpr"]
 [ext_resource type="Texture2D" uid="uid://hj27ekw5lrcw" path="res://objects/battle/effects/cloud_attacks/brainstorm-box.png" id="2_ydnf4"]
 [ext_resource type="Texture2D" uid="uid://bkqparbmg1ga6" path="res://objects/battle/effects/cloud_attacks/brainstorm-env.png" id="3_1xs3u"]
 [ext_resource type="Texture2D" uid="uid://bhne0pufvrjus" path="res://objects/battle/effects/cloud_attacks/brainstorm-track.png" id="4_545rn"]

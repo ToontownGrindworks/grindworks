@@ -213,7 +213,7 @@ func resume_player_safe() -> void:
 		get_player().state = Player.PlayerState.WALK
 
 func barrier(_signal: Signal, timeout: float = 10.0) -> Signal:
-	return SignalBarrier.new([_signal, TaskMgr.delay(timeout)], SignalBarrier.BarrierType.ANY).s_complete
+	return SignalBarrier.new([_signal, Task.delay(timeout)], SignalBarrier.BarrierType.ANY).s_complete
 
 func do_item_hover(item: Item) -> void:
 	var desc: String = item.big_description if Util.get_player().see_descriptions else item.item_description

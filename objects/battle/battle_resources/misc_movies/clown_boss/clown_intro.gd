@@ -58,7 +58,7 @@ func play() -> Tween:
 	
 	# Pan camera back
 	movie.set_trans(Tween.TRANS_QUAD)
-	movie.tween_callback(CameraTransition.from_global_transform.bind(battle_node, Util.get_player().camera.global_transform, cam_angles.get_node('IntroPos'), 6.0))
+	movie.tween_callback(CameraTransition.from_global_transform.bind(battle_node, Util.get_player().camera.camera.global_transform, cam_angles.get_node('IntroPos'), 6.0))
 	
 	# Toon walks into room (Parallel)
 	movie.set_parallel(true)

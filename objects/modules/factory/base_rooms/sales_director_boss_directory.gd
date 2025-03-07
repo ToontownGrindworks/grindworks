@@ -12,7 +12,7 @@ extends Node3D
 var manager: BattleManager = null
 
 func _ready() -> void:
-	await TaskMgr.delay(0.25)
+	await Task.delay(0.25)
 	await battle_node.s_battle_initialized
 	manager = await BattleService.s_battle_started
 

@@ -1,11 +1,11 @@
-[gd_resource type="Resource" script_class="UnionBusterLogic" load_steps=3 format=3 uid="uid://d3i0k8gaybnbp"]
+[gd_resource type="Resource" script_class="UnionBusterLogic" load_steps=2 format=3 uid="uid://d3i0k8gaybnbp"]
 
-[ext_resource type="Script" path="res://objects/battle/battle_resources/status_effects/boss_effects/boss_logic_union_buster.gd" id="1_ko6e5"]
-[ext_resource type="Resource" uid="uid://cygiwl5au267j" path="res://objects/battle/battle_resources/misc_movies/union_buster/contract_limit.tres" id="1_mv72f"]
+[ext_resource type="Script" uid="uid://cfep0d3jo2lcn" path="res://objects/battle/battle_resources/status_effects/boss_effects/boss_logic_union_buster.gd" id="1_ko6e5"]
 
 [resource]
 script = ExtResource("1_ko6e5")
-contract_limit_attack = ExtResource("1_mv72f")
+contract_limit_cooldown = 2
+liability_waiver_cooldown = 2
 quality = 2
 rounds = -1
 icon_color = Color(1, 1, 1, 1)

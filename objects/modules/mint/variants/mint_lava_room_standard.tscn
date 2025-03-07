@@ -6,7 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://drpj1lganwu6n" path="res://objects/props/mint/crossbeam.tscn" id="4_st8rj"]
 [ext_resource type="Material" uid="uid://dmafgykr0wfb3" path="res://models/facilities/general/materials/lava_mat.tres" id="5_4oyln"]
 [ext_resource type="Texture2D" uid="uid://dw0ovgcnsmkqi" path="res://objects/misc/spotlight_1.png" id="6_br1g2"]
-[ext_resource type="Texture2D" uid="uid://2yv2gsrwpljc" path="res://models/facilities/mint/textures/CementFloorx4.png" id="7_bb4kg"]
+[ext_resource type="Texture2D" uid="uid://bixkesses7em4" path="res://models/facilities/mint/textures/CementFloorx4.png" id="7_bb4kg"]
 [ext_resource type="Texture2D" uid="uid://c72xdn0nwkaug" path="res://models/facilities/mint/textures/CFOCeiling2.png" id="8_cjdog"]
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_sixwu"]
@@ -16,7 +16,7 @@ subdivide_width = 16
 subdivide_depth = 16
 
 [sub_resource type="Curve" id="Curve_pqkv5"]
-max_value = 0.7
+_limits = [0.0, 0.7, 0.0, 1.0]
 _data = [Vector2(0, 0), 0.0, 0.0, 0, 0, Vector2(0.0562249, 0.835582), 0.0, 0.0, 0, 0, Vector2(0.128514, 0.451939), 0.0, 0.0, 0, 0, Vector2(0.204819, 0.802698), 0.0, 0.0, 0, 0, Vector2(0.289157, 0.440978), 0.0, 0.0, 0, 0, Vector2(0.39759, 1), 0.0, 0.0, 0, 0, Vector2(0.481928, 0.397133), 0.0, 0.0, 0, 0, Vector2(0.554217, 1), 0.0, 0.0, 0, 0, Vector2(0.678715, 0.375211), 0.0, 0.0, 0, 0, Vector2(0.763052, 1), 0.0, 0.0, 0, 0, Vector2(0.871486, 0.408094), 0.0, 0.0, 0, 0, Vector2(0.939759, 1), 0.0, 0.0, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]
 point_count = 13
 
@@ -110,9 +110,11 @@ texture_type = 1
 [node name="SinkingPlatform5" parent="." index="8" instance=ExtResource("2_ewjut")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.145061, 4.95042)
 texture_type = 1
+sink_level = 0.0
+sink_speed = 0.0
 
 [node name="treasure_chest" parent="SinkingPlatform5" index="1" instance=ExtResource("3_2k71q")]
-transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0.228509, 0)
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0.148567, 0)
 
 [node name="CollisionShape3D" parent="LavaFloor" index="0"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0113525, -0.505948, 0.15686)

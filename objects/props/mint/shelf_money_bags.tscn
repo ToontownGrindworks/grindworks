@@ -1,7 +1,7 @@
 [gd_scene load_steps=11 format=4 uid="uid://k8228k6jwvf7"]
 
 [ext_resource type="PackedScene" uid="uid://ddgcp7s7nqu44" path="res://models/props/facility_objects/mint/shelf/shelf_3.fbx" id="1_2y5ds"]
-[ext_resource type="Script" path="res://objects/props/mint/shelf_money_bags.gd" id="1_v2aqt"]
+[ext_resource type="Script" uid="uid://dnl272m6ccpqr" path="res://objects/props/mint/shelf_money_bags.gd" id="1_v2aqt"]
 [ext_resource type="Material" uid="uid://8dk6vuxlwx0a" path="res://models/props/facility_objects/mint/shelf/materials/shelf_back_regular_mat.tres" id="3_artp5"]
 [ext_resource type="Material" uid="uid://cx217kphtc1fn" path="res://models/props/facility_objects/mint/shelf/materials/shelf_panel_regular_mat.tres" id="4_egl0w"]
 [ext_resource type="Material" uid="uid://dcs8evi0rbxge" path="res://models/props/facility_objects/mint/shelf/materials/moneybag_regular_mat.tres" id="5_nfpwn"]

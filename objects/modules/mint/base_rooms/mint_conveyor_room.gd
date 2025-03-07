@@ -13,7 +13,7 @@ const SFX_LAND := preload("res://audio/sfx/misc/CHQ_SOS_cage_land.ogg")
 
 var objs_a: Array[Node3D] = []
 var objs_b: Array[Node3D] = []
-var obj_task_id: int = 0
+var obj_task: Task
 var ramp_seq: Tween:
 	set(x):
 		if ramp_seq and ramp_seq.is_valid():
@@ -33,7 +33,7 @@ func spawn_both_objects(instant := true) -> void:
 	if instant:
 		spawn_random_obj("a")
 		spawn_random_obj("b")
-	obj_task_id = TaskMgr.delayed_call(get_random_object_time(), spawn_both_objects)
+	obj_task = Task.delayed_call(self, get_random_object_time(), spawn_both_objects)
 
 func spawn_random_obj(side: String) -> void:
 	var spawn_point: Node3D
@@ -88,13 +88,12 @@ func lower_ramp(_x=null) -> void:
 		LerpProperty.new(%RampRotator, ^"rotation_degrees:x", 3.0, -30.2).interp(Tween.EASE_OUT, Tween.TRANS_BOUNCE),
 	]).as_tween(self)
 	AudioManager.play_sound(SFX_SWAP)
-	await TaskMgr.delay(1.1)
+	await Task.delay(1.1)
 	AudioManager.play_sound(SFX_LAND)
 
 func _exit_tree() -> void:
-	if obj_task_id != 0:
-		TaskMgr.cancel_task(obj_task_id)
-		obj_task_id = 0
+	if obj_task:
+		obj_task = obj_task.cancel()
 
 func reset() -> void:
 	if Util.get_player().stats.hp > 0:

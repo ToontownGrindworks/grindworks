@@ -33,14 +33,13 @@ const DEBUG_COLLISION_PRINT := false
 @export var partners: Array[CharacterBody3D] = []
 
 ## Child References
-@onready var springarm := $SpringArm
-@onready var camera := $SpringArm/Camera
+@onready var camera := %PlayerCamera
 @onready var camera_dist: float:
 	set(x):
 		var cam_tween := create_tween()
-		cam_tween.tween_property(springarm, 'spring_length', x, 0.1)
+		cam_tween.tween_property(camera, 'spring_length', x, 0.1)
 	get:
-		return springarm.spring_length
+		return camera.spring_length
 @onready var move_sfx := $MoveSFX
 @onready var laff_meter := $LaffMeter
 @onready var bean_jar := $BeanJar
@@ -85,6 +84,7 @@ var random_cog_heals := false
 var custom_gag_order := false
 var less_shop_items := false
 var better_battle_rewards := false
+var no_negative_anomalies := false
 var throw_heals := true
 var trap_needs_lure := true
 ## Damage immunity from light-based obstacles, such as spotlights and goon beams.
@@ -121,22 +121,12 @@ func _ready() -> void:
 	set_animation('neutral')
 	
 	# Correct rotation
-	springarm.rotate_y(rotation.y)
-	toon.rotation.y = springarm.rotation.y
+	camera.rotate_y(rotation.y)
+	toon.rotation.y = camera.rotation.y
 	rotation = Vector3(0, 0, 0)
 	
 	# Hook up stats
 	connect_stats()
-
-func _unhandled_input(event) -> void:
-	if not control_style:
-		return
-	
-	# Orbital Camera
-	if event is InputEventMouseMotion and state == PlayerState.WALK and Input.mouse_mode == Input.MOUSE_MODE_CAPTURED:
-		springarm.rotate_y(-event.relative.x * Globals.SENSITIVITY * SaveFileService.settings_file.camera_sensitivity)
-		springarm.rotation.x -= event.relative.y * Globals.SENSITIVITY * SaveFileService.settings_file.camera_sensitivity
-		springarm.rotation.x = clamp(springarm.rotation.x, deg_to_rad(-89), deg_to_rad(89))
 
 func _physics_process(delta: float) -> void:
 	if state == PlayerState.WALK:
@@ -195,7 +185,7 @@ func _physics_process_walk(delta: float) -> void:
 		# Get the input/direction vectors
 		var input_dir = Input.get_vector("move_left", "move_right", "move_forward", "move_back")
 		var direction = (transform.basis * Vector3(input_dir.x, 0, input_dir.y)).normalized()
-		direction = direction.rotated(Vector3(0,1,0),springarm.rotation.y)
+		direction = direction.rotated(Vector3(0, 1, 0), camera.rotation.y)
 		if direction:
 			moving = true
 			velocity.x = direction.x * speed
@@ -224,7 +214,7 @@ func _physics_process_walk(delta: float) -> void:
 			velocity.z = move_toward(velocity.z, 0, speed)
 		
 		var input_turn := Input.get_axis("move_left", "move_right")
-		toon.rotation.y+=(deg_to_rad(TURN_SPEED * delta) * -input_turn)
+		toon.rotation.y += (deg_to_rad(TURN_SPEED * delta) * -input_turn)
 		recenter_camera()
 		
 		moving = (direction or input_turn)
@@ -264,6 +254,14 @@ func _physics_process_walk(delta: float) -> void:
 	if Input.is_action_just_pressed("pause"):
 		Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
 		get_tree().get_root().add_child(load(PAUSE_MENU).instantiate())
+	
+	if Input.is_action_just_pressed('toggle_freecam') and SaveFileService.settings_file.dev_tools:
+		var cam := PlayerFreeCam.new(self)
+		cam.fov = camera.fov
+		add_child(cam)
+		cam.global_transform = camera.camera.global_transform
+		set_animation('neutral')
+
 
 func assess_anim() -> void:
 	var anim := base_anim
@@ -338,9 +336,9 @@ func lose():
 	state = PlayerState.SAD
 	Util.stuck_lock = false
 	set_animation('lose')
-	await TaskMgr.delay(2.0)
+	await Task.delay(2.0)
 	AudioManager.play_sound(load('res://audio/sfx/toon/ENC_Lose.ogg'))
-	await TaskMgr.delay(2.0)
+	await Task.delay(2.0)
 	var shrink_tween := create_tween()
 	shrink_tween.tween_property(toon, 'scale', Vector3(.01, .01, .01), 2.0)
 	await shrink_tween.finished
@@ -412,6 +410,8 @@ func connect_stats() -> void:
 	# Regenerate points at end of round
 	if not BattleService.s_round_ended.is_connected(stats.on_round_end):
 		BattleService.s_round_ended.connect(stats.on_round_end)
+	if not BattleService.s_battle_started.is_connected(stats.on_battle_started):
+		BattleService.s_battle_started.connect(stats.on_battle_started)
 	s_stats_connected.emit(stats)
 
 var prev_hp := -1
@@ -439,9 +439,8 @@ func quick_heal(amount: int) -> void:
 
 func recenter_camera(instant := true) -> void:
 	if instant:
-		springarm.rotation = Vector3.ZERO
-		springarm.rotation_degrees.y = toon.rotation_degrees.y + 180.0
-
+		camera.rotation = Vector3.ZERO
+		camera.rotation_degrees.y = toon.rotation_degrees.y + 180.0
 
 func do_invincibility_frames() -> void:
 	set_collision_mask_value(Globals.HAZARD_COLLISION_LAYER, false)
@@ -459,7 +458,6 @@ func do_iframe_tween(time := IFRAME_TIME) -> Tween:
 	var delay_dec := 0.05
 	var delay_mininmum := 0.1
 	var blink_time := 0.0
-	var min_time := 2.0
 	while delay > delay_mininmum:
 		iframe_tween.tween_interval(delay)
 		iframe_tween.tween_callback(swap_toon_visibility)

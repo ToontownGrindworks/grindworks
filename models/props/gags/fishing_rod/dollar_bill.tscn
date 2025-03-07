@@ -107,7 +107,7 @@ tracks/8/keys = PackedFloat32Array(0, 1, -3.41061e-13, 9.94864e-15, 2.77914e-12,
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_jk3wm"]
 _data = {
-"cast": SubResource("Animation_hqp0a")
+&"cast": SubResource("Animation_hqp0a")
 }
 
 [node name="dollar_bill" type="Node3D"]
