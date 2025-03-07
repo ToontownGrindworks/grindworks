@@ -15,6 +15,8 @@ class_name BattleUI
 
 @onready var status_container: HBoxContainer = %StatusContainer
 
+@onready var manager: BattleManager = get_parent()
+
 # Signals
 signal s_gag_pressed(gag: BattleAction)
 signal s_gag_selected(gag: BattleAction)
@@ -31,7 +33,7 @@ var turn := 0:
 		refresh_turns()
 var remaining_turns: int:
 	get:
-		return Util.get_player().stats.turns - turn
+		return manager.battle_stats[Util.get_player()].turns - turn
 var selected_gags: Array[ToonAttack] = []
 var fire_action: ToonAttackFire
 
@@ -102,7 +104,8 @@ func gag_selected(gag: BattleAction) -> void:
 	turn += 1
 
 func refresh_turns():
-	attack_label.set_text("Turns Remaining: " + str(Util.get_player().stats.turns - turn))
+	attack_label.set_text("Turns Remaining: " + str(manager.battle_stats[Util.get_player()].turns - turn))
+	gag_order_menu.update_panels()
 	
 	if remaining_turns == 0:
 		for track in gag_tracks.get_children():

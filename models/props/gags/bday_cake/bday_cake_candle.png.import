@@ -2,26 +2,21 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dmqbgl3l7rjj"
-path.s3tc="res://.godot/imported/bday_cake_candle.png-17a617d061c4904005829cb5b3f79291.s3tc.ctex"
-path.etc2="res://.godot/imported/bday_cake_candle.png-17a617d061c4904005829cb5b3f79291.etc2.ctex"
+uid="uid://bn4q08c4qyr5c"
+path="res://.godot/imported/bday_cake_candle.png-17a617d061c4904005829cb5b3f79291.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc", "etc2_astc"],
-"vram_texture": true
-}
-generator_parameters={
-"md5": "4834ee82f22a1cefaba8a141acc0dba8"
+"vram_texture": false
 }
 
 [deps]
 
 source_file="res://models/props/gags/bday_cake/bday_cake_candle.png"
-dest_files=["res://.godot/imported/bday_cake_candle.png-17a617d061c4904005829cb5b3f79291.s3tc.ctex", "res://.godot/imported/bday_cake_candle.png-17a617d061c4904005829cb5b3f79291.etc2.ctex"]
+dest_files=["res://.godot/imported/bday_cake_candle.png-17a617d061c4904005829cb5b3f79291.ctex"]
 
 [params]
 
-compress/mode=2
-compress/high_quality=false
+compress/mode=3
+compress/high_quality=true
 compress/lossy_quality=0.7
 compress/hdr_compression=1
 compress/normal_map=0

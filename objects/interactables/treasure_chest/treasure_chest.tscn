@@ -430,7 +430,7 @@ skeleton = NodePath("")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
-"": SubResource("AnimationLibrary_thjf0")
+&"": SubResource("AnimationLibrary_thjf0")
 }
 
 [node name="OpenArea" type="Area3D" parent="."]
