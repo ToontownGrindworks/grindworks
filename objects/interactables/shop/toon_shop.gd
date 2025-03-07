@@ -90,7 +90,7 @@ func get_price(world_item: WorldItem) -> int:
 	if item.custom_shop_price != 0:
 		base_price = item.custom_shop_price
 	else:
-		base_price = float(item.qualitoon as int + 1) * 5.5
+		base_price = 2.0 + float(item.qualitoon as int + 1) * 7.0
 	var mult: float = RandomService.randf_range_channel('shop_item_random', 0.9, 1.1)
 	base_price = max(0, (base_price * mult) - Util.get_player().stats.shop_discount)
 	var price_with_discount := base_price
@@ -126,6 +126,6 @@ func exit() -> void:
 	ui.hide()
 	if toon and toon_speaks:
 		toon.speak("Thanks for stopping by!")
-	await CameraTransition.from_current(self, Util.get_player().camera, 1.0).s_done
+	await CameraTransition.from_current(self, Util.get_player().camera.camera, 1.0).s_done
 	Util.get_player().state = Player.PlayerState.WALK
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)

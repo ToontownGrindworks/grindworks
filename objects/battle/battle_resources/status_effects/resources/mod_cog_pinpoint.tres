@@ -1,7 +1,7 @@
 [gd_resource type="Resource" load_steps=3 format=3 uid="uid://j87d6c2o6o4b"]
 
 [ext_resource type="Texture2D" uid="uid://b5msql025cie3" path="res://ui_assets/battle/statuses/pinpoint_accuracy.png" id="1_7mlav"]
-[ext_resource type="Script" path="res://objects/battle/battle_resources/status_effects/mod_cog_effects/cog_mod_pinpoint.gd" id="1_ytbth"]
+[ext_resource type="Script" uid="uid://d1pjtuh5m6y21" path="res://objects/battle/battle_resources/status_effects/mod_cog_effects/cog_mod_pinpoint.gd" id="1_ytbth"]
 
 [resource]
 script = ExtResource("1_ytbth")

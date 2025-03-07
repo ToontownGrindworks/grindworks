@@ -1,14 +1,14 @@
 [gd_scene load_steps=16 format=3 uid="uid://utwlvgq8mlgv"]
 
-[ext_resource type="Script" path="res://objects/doodle/roaming_doodle/roaming_doodle.gd" id="1_dy8iu"]
+[ext_resource type="Script" uid="uid://cxr2mqjkvrlhg" path="res://objects/doodle/roaming_doodle/roaming_doodle.gd" id="1_dy8iu"]
 [ext_resource type="PackedScene" uid="uid://dbcmfw8e67wkl" path="res://objects/doodle/doodle_mod.tscn" id="2_57yw2"]
-[ext_resource type="Script" path="res://objects/battle/battle_resources/doodle_actions/doodle_action.gd" id="2_msfie"]
+[ext_resource type="Script" uid="uid://cg32ll1v6ulut" path="res://objects/battle/battle_resources/doodle_actions/doodle_action.gd" id="2_msfie"]
 [ext_resource type="PackedScene" uid="uid://suibio7o1avg" path="res://objects/misc/drop_shadow/drop_shadow.tscn" id="3_tqv7o"]
-[ext_resource type="Script" path="res://objects/battle/battle_resources/doodle_actions/doodle_jump.gd" id="3_xx7sp"]
-[ext_resource type="Script" path="res://objects/battle/battle_resources/doodle_actions/doodle_backflip.gd" id="4_0gpjk"]
-[ext_resource type="Script" path="res://objects/battle/battle_resources/doodle_actions/doodle_playdead.gd" id="5_vp8wd"]
-[ext_resource type="Script" path="res://objects/battle/battle_resources/doodle_actions/doodle_rollover.gd" id="6_ritgp"]
-[ext_resource type="Script" path="res://objects/battle/battle_resources/doodle_actions/doodle_speak.gd" id="7_eviyd"]
+[ext_resource type="Script" uid="uid://4ahhg4jtvuqw" path="res://objects/battle/battle_resources/doodle_actions/doodle_jump.gd" id="3_xx7sp"]
+[ext_resource type="Script" uid="uid://bqx0oywr45aqn" path="res://objects/battle/battle_resources/doodle_actions/doodle_backflip.gd" id="4_0gpjk"]
+[ext_resource type="Script" uid="uid://cmvv00xaiht4t" path="res://objects/battle/battle_resources/doodle_actions/doodle_playdead.gd" id="5_vp8wd"]
+[ext_resource type="Script" uid="uid://by5vgwqs2ee8q" path="res://objects/battle/battle_resources/doodle_actions/doodle_rollover.gd" id="6_ritgp"]
+[ext_resource type="Script" uid="uid://crgdx7p85u8i0" path="res://objects/battle/battle_resources/doodle_actions/doodle_speak.gd" id="7_eviyd"]
 
 [sub_resource type="Resource" id="Resource_ds0yl"]
 script = ExtResource("3_xx7sp")
@@ -45,7 +45,7 @@ radius = 0.166849
 height = 0.484297
 
 [node name="RoamingDoodle" type="CharacterBody3D"]
-collision_layer = 4
+collision_layer = 0
 collision_mask = 5
 floor_snap_length = 1.0
 script = ExtResource("1_dy8iu")

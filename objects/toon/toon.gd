@@ -322,7 +322,7 @@ func do_blink() -> void:
 		# Only blink if eyes are open right now
 		if eyes_open:
 			close_eyes()
-			await TaskMgr.delay(0.1)
+			await Task.delay(0.1)
 			open_eyes()
 
 #region ANIMATIONS
@@ -334,10 +334,17 @@ func teleport_in() -> void:
 	body.position.y -= 10.0
 	var hole : Node3D = load('res://objects/misc/teleport_hole/teleport_hole.tscn').instantiate()
 	add_child(hole)
-	hole.position.y = 0.1
+	hole.position.y = 0.01
 	hole.scale *= 0.4
 	hole.get_node('AnimationPlayer').play('grow')
 	await hole.get_node('AnimationPlayer').animation_finished
+	var meshes: Array[MeshInstance3D] = [
+		body.shirt, body.bottoms, body.neck, body.arm_left, body.arm_right,
+		body.sleeve_left, body.sleeve_right, body.hand_left, body.hand_right,
+		body.leg_left, body.leg_right, body.foot_left, body.foot_right,
+		body.ear_left, body.ear_right
+	]
+	hole.get_node('ClipPlane').apply_to_mesh_instances(meshes)
 	set_animation('happy')
 	body.animator.seek(0.4)
 	var jump_tween := create_tween()
@@ -346,6 +353,7 @@ func teleport_in() -> void:
 	await jump_tween.finished
 	hole.get_node('AnimationPlayer').play('shrink')
 	await body.animator.animation_finished
+	hole.get_node('ClipPlane').unapply_from_mesh_instances(meshes)
 	hole.queue_free()
 
 func teleport_out() -> void:
@@ -358,7 +366,7 @@ func teleport_out() -> void:
 	hole.rotation_degrees.z = 90.0
 	set_animation('teleport')
 	AudioManager.play_sound(load("res://audio/sfx/toon/AV_teleport.ogg"))
-	await TaskMgr.delay(1.6)
+	await Task.delay(1.6)
 	hole.reparent(self)
 	var throw_tween := create_tween()
 	throw_tween.set_parallel(true)

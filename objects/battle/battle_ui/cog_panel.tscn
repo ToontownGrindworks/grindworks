@@ -1,7 +1,7 @@
 [gd_scene load_steps=20 format=4 uid="uid://g50de2joqp6k"]
 
 [ext_resource type="Texture2D" uid="uid://d0hyk56ofpvrm" path="res://ui_assets/battle/target_select/ToonBtl_Status_BG.png" id="1_1tuon"]
-[ext_resource type="Script" path="res://objects/battle/battle_ui/cog_panel.gd" id="2_luwxf"]
+[ext_resource type="Script" uid="uid://twsu6btug060" path="res://objects/battle/battle_ui/cog_panel.gd" id="2_luwxf"]
 [ext_resource type="Texture2D" uid="uid://btku14fh0vw7p" path="res://models/cogs/misc/hp_light/cog_light.png" id="3_jlr6j"]
 [ext_resource type="PackedScene" uid="uid://bwnrw7jcf01kq" path="res://objects/general_ui/node_viewer/node_viewer.tscn" id="3_t5175"]
 [ext_resource type="Texture2D" uid="uid://dg7eslyvsgjpm" path="res://models/cogs/misc/hp_light/glow.png" id="4_3emoa"]

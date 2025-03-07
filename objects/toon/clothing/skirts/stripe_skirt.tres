@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="ToonBottoms" load_steps=2 format=3 uid="uid://bnti2pm0p2fnn"]
 
-[ext_resource type="Script" path="res://objects/toon/clothing/toon_bottoms.gd" id="1_31lu6"]
+[ext_resource type="Script" uid="uid://c8kas2j4io1jh" path="res://objects/toon/clothing/toon_bottoms.gd" id="1_31lu6"]
 
 [resource]
 script = ExtResource("1_31lu6")

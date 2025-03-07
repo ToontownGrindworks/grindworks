@@ -1,13 +1,13 @@
 [gd_resource type="Resource" script_class="GagLoadout" load_steps=9 format=3 uid="uid://tyi7ukxtvcgc"]
 
-[ext_resource type="Script" path="res://objects/battle/battle_resources/gag_loadouts/track.gd" id="1_ejseq"]
+[ext_resource type="Script" uid="uid://b6b6pfoqyolr" path="res://objects/battle/battle_resources/gag_loadouts/track.gd" id="1_ejseq"]
 [ext_resource type="Resource" uid="uid://5dld88ul3rb5" path="res://objects/battle/battle_resources/gag_loadouts/gag_tracks/trap.tres" id="3_f35fq"]
 [ext_resource type="Resource" uid="uid://dqldfsmn7g606" path="res://objects/battle/battle_resources/gag_loadouts/gag_tracks/lure.tres" id="4_0jpk2"]
 [ext_resource type="Resource" uid="uid://cvaos6ucteefy" path="res://objects/battle/battle_resources/gag_loadouts/gag_tracks/sound.tres" id="5_lim3m"]
 [ext_resource type="Resource" uid="uid://0528viy6hdsv" path="res://objects/battle/battle_resources/gag_loadouts/gag_tracks/throw.tres" id="6_nlbmv"]
 [ext_resource type="Resource" uid="uid://dvxiqtapdvmj4" path="res://objects/battle/battle_resources/gag_loadouts/gag_tracks/squirt.tres" id="7_m7vt2"]
 [ext_resource type="Resource" uid="uid://lf7h5xkbt2op" path="res://objects/battle/battle_resources/gag_loadouts/gag_tracks/drop.tres" id="8_gt0y2"]
-[ext_resource type="Script" path="res://objects/battle/battle_resources/gag_loadouts/gag_loadout.gd" id="119_h062j"]
+[ext_resource type="Script" uid="uid://ckypnf7t805p3" path="res://objects/battle/battle_resources/gag_loadouts/gag_loadout.gd" id="119_h062j"]
 
 [resource]
 script = ExtResource("119_h062j")

@@ -1,12 +1,13 @@
 [gd_resource type="Resource" script_class="Quake" load_steps=2 format=3 uid="uid://55lp6noha8te"]
 
-[ext_resource type="Script" path="res://objects/battle/battle_resources/cog_attacks/quake.gd" id="1_rkhcu"]
+[ext_resource type="Script" uid="uid://chapsu358g1bt" path="res://objects/battle/battle_resources/cog_attacks/quake.gd" id="1_rkhcu"]
 
 [resource]
 script = ExtResource("1_rkhcu")
 anim_type = 1
 accuracy = 75
 damage = 4
+ignore_stats = false
 summary = ""
 attack_lines = Array[String](["You're right on the epicenter.", "You're standing on a fault line.", "It's going to be a bumpy ride.", "I think of this as a natural disaster.", "It's a disaster of seismic proportions.", "This one's off the Richter scale.", "Time to duck and cover.", "You seem disturbed.", "Ready for a jolt?", "I'll have you shaken, not stirred.", "This will shake you up.", "I suggest a good escape plan."])
 target_type = 0

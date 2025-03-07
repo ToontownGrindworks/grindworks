@@ -19,18 +19,18 @@ func action():
 	
 	# Play hose anim
 	hose.get_node('AnimationPlayer').play('spray')
-	await TaskMgr.delay(0.05)
+	await Task.delay(0.05)
 	user.set_animation('fire_hose')
 	user.face_position(target.global_position)
 	
-	await TaskMgr.delay(1.95)
+	await Task.delay(1.95)
 	# Soak the Cog
 	soak_opponent(target.head_node, hose.get_node('firehose/Skeleton3D/NozzleAttach'), 1.0)
 	
 	# Play sfx
 	AudioManager.play_sound(load("res://audio/sfx/battle/gags/squirt/firehose_spray.ogg"))
 	
-	await TaskMgr.delay(0.1)
+	await Task.delay(0.1)
 	manager.s_focus_char.emit(target)
 	
 	# Accuracy roll
@@ -51,7 +51,7 @@ func action():
 				target.set_animation('squirt-small')
 			apply_debuff(target)
 			s_hit.emit()
-			await TaskMgr.delay(0.5 * (2 if was_lured else 1))
+			await Task.delay(0.5 * (2 if was_lured else 1))
 			manager.battle_text(target, "Drenched!", BattleText.colors.orange[0], BattleText.colors.orange[1])
 		else:
 			manager.battle_text(target, "IMMUNE")

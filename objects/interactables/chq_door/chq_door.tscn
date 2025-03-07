@@ -1,6 +1,6 @@
 [gd_scene load_steps=100 format=4 uid="uid://dunq1mgh6t4kc"]
 
-[ext_resource type="Script" path="res://objects/interactables/chq_door/chq_door.gd" id="1_kr1fc"]
+[ext_resource type="Script" uid="uid://djotlquer5gy0" path="res://objects/interactables/chq_door/chq_door.gd" id="1_kr1fc"]
 [ext_resource type="Texture2D" uid="uid://ufw0rm8val7g" path="res://models/props/facility_objects/door/chq_door_0.png" id="2_dryf5"]
 [ext_resource type="Texture2D" uid="uid://bry32njriuedm" path="res://models/props/facility_objects/door/chq_door_1.png" id="3_cjkct"]
 [ext_resource type="Texture2D" uid="uid://ebov1ni7sf8m" path="res://models/props/facility_objects/door/chq_door_2.png" id="4_alpfm"]
@@ -10,7 +10,7 @@
 [ext_resource type="Texture2D" uid="uid://jgjepxd66x88" path="res://models/props/facility_objects/door/chq_door_6.png" id="8_ourm8"]
 [ext_resource type="Texture2D" uid="uid://cqovij5q2qd2o" path="res://models/props/facility_objects/door/chq_door_7.png" id="9_c5hvc"]
 [ext_resource type="Texture2D" uid="uid://d2fqbjfgxj2et" path="res://models/props/facility_objects/door/chq_door_8.png" id="10_gl5ob"]
-[ext_resource type="Texture2D" uid="uid://mlqvda6dd3fp" path="res://models/props/facility_objects/door/chq_door_9.png" id="11_aqdeq"]
+[ext_resource type="Texture2D" uid="uid://se8xw018ofpy" path="res://models/props/facility_objects/door/chq_door_9.png" id="11_aqdeq"]
 [ext_resource type="AudioStream" uid="uid://o5q42s2don3s" path="res://audio/sfx/objects/facility_door/CHQ_FACT_door_open_sliding.ogg" id="12_45335"]
 [ext_resource type="AudioStream" uid="uid://dkg044ypvvr1k" path="res://audio/sfx/objects/facility_door/CHQ_FACT_arms_retracting.ogg" id="12_q5jmq"]
 [ext_resource type="AudioStream" uid="uid://bjq35qkc8135u" path="res://audio/sfx/objects/facility_door/CHQ_FACT_door_open_final.ogg" id="12_rqy1s"]

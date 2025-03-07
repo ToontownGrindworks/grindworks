@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="CogDNA" load_steps=12 format=3 uid="uid://sriemy4rvliw"]
 
-[ext_resource type="Script" path="res://objects/battle/battle_resources/cog_attacks/cog_attack.gd" id="1_q1snv"]
+[ext_resource type="Script" uid="uid://bb27him60xtnk" path="res://objects/battle/battle_resources/cog_attacks/cog_attack.gd" id="1_q1snv"]
 [ext_resource type="Texture2D" uid="uid://cnt8x3wtl3iae" path="res://models/cogs/textures/statue_blue/arm.png" id="2_f2ecd"]
 [ext_resource type="Texture2D" uid="uid://pdagxujmibi0" path="res://models/cogs/textures/statue_blue/blazer.png" id="3_2rogu"]
 [ext_resource type="Texture2D" uid="uid://knqap3nho7jm" path="res://models/cogs/textures/statue_blue/hand.png" id="4_jcufi"]
@@ -9,8 +9,8 @@
 [ext_resource type="PackedScene" uid="uid://cia8tr5rx1b5x" path="res://models/cogs/heads/tightwad.glb" id="7_5atq7"]
 [ext_resource type="Texture2D" uid="uid://bsvume3orunyf" path="res://models/cogs/textures/statue_blue/sleeve_1.png" id="7_8mo4u"]
 [ext_resource type="Texture2D" uid="uid://gxk5ojkxrmoo" path="res://models/cogs/heads/tt_t_ene_hed_bottomFeeder_statue.png" id="8_5er3r"]
-[ext_resource type="Script" path="res://objects/cog/cogdna.gd" id="9_detj4"]
-[ext_resource type="Script" path="res://objects/battle/battle_resources/status_effect.gd" id="10_hbxee"]
+[ext_resource type="Script" uid="uid://okjbx502s3r5" path="res://objects/cog/cogdna.gd" id="9_detj4"]
+[ext_resource type="Script" uid="uid://df7irk63ikx4k" path="res://objects/battle/battle_resources/status_effect.gd" id="10_hbxee"]
 
 [resource]
 script = ExtResource("9_detj4")
@@ -25,13 +25,14 @@ custom_shoe_tex = ExtResource("6_v8rbn")
 cog_name = "Statue Man"
 name_plural = "Statue Men"
 head = ExtResource("7_5atq7")
-head_scale = 1.0
+head_scale = Vector3(1, 1, 1)
 head_pos = Vector3(0, 0, 0)
 scale = 4.0
 head_textures = Array[Texture2D]([ExtResource("8_5er3r")])
 hand_color = Color(1, 1, 1, 1)
 head_color = Color(1, 1, 1, 1)
 custom_nametag_height = 0.0
+custom_nametag_suffix = ""
 attacks = Array[ExtResource("1_q1snv")]([])
 level_low = 3
 level_high = 5
@@ -41,6 +42,6 @@ is_admin = false
 health_mod = 1.0
 battle_phrases = Array[String](["My business strategy is rock solid."])
 external_assets = {
-"head_model": "",
-"head_textures": []
+&"head_model": "",
+&"head_textures": []
 }

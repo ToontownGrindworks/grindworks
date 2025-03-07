@@ -3,9 +3,8 @@ class_name DynamicRegistry
 ## A registry object that can be created at runtime.
 
 var _registry: Array = []
-var _next_internal_id: int = 0
-var _id_to_def: Dictionary = {}
-var _def_to_id: Dictionary = {}
+var _id_to_def: Dictionary[int, Resource] = {}
+var _def_to_id: Dictionary[Resource, int] = {}
 
 var id_collisions: Dictionary = {}
 

@@ -6,7 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://5m1a0suouie8" path="res://objects/props/cgc/fence_with_end.tscn" id="4_qfsp3"]
 [ext_resource type="PackedScene" uid="uid://hjl7feh88kw3" path="res://objects/props/cgc/pillar.tscn" id="6_bdmfr"]
 [ext_resource type="PackedScene" uid="uid://pn7r3ut085aw" path="res://objects/props/cgc/hedge_pillar.tscn" id="7_m70eg"]
-[ext_resource type="Script" path="res://objects/interactables/mole_stomp/mole_stomp.gd" id="8_h3qo4"]
+[ext_resource type="Script" uid="uid://dyt7mhhg2lwrv" path="res://objects/interactables/mole_stomp/mole_stomp.gd" id="8_h3qo4"]
 [ext_resource type="PackedScene" uid="uid://c3x8mxt3ia342" path="res://models/props/cog_props/golf/golf_club.glb" id="9_c5qfw"]
 [ext_resource type="PackedScene" uid="uid://dxyq5lb5oineo" path="res://objects/interactables/treasure_chest/treasure_chest.tscn" id="10_lmehd"]
 [ext_resource type="PackedScene" uid="uid://d3br8qv0sep7h" path="res://objects/props/cgc/tree1.tscn" id="11_awqic"]
@@ -246,8 +246,8 @@ transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 1, -12.5325, 0, 1.35058)
 transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 1, -21.4949, 0, -4.49014)
 
 [node name="GolfDoor1" parent="." index="29" instance=ExtResource("2_8t80u")]
-transform = Transform3D(0.584335, 0, 0.811513, 0, 1, 0, -0.811513, 0, 0.584335, 0, 0, -1.08717)
-speed = 0.45
+transform = Transform3D(0.584335, 0, 0.811513, 0, 1, 0, -0.811513, 0, 0.584335, 0, -0.18191, -1.08717)
+speed = 0.41
 
 [node name="RollingGolfBall" parent="GolfDoor1" index="0"]
 transform = Transform3D(35, 0, 0, 0, 35, 0, 0, 0, 35, 0, 2.74524, 0)

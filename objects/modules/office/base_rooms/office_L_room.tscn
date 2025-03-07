@@ -6,7 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://bahckbv3btte0" path="res://models/facilities/office/textures/CBStationLightTubes.png" id="4_d2kwh"]
 [ext_resource type="Texture2D" uid="uid://c2orm44yrj4uj" path="res://models/facilities/office/textures/LB_tanSurface.png" id="5_xey3e"]
 [ext_resource type="Texture2D" uid="uid://20v2ot480e" path="res://models/facilities/office/textures/CFOCeiling2.png" id="6_vh8lt"]
-[ext_resource type="Texture2D" uid="uid://dlsxflimrk6bn" path="res://models/facilities/office/textures/LB_WoodPanel.png" id="7_pgki4"]
+[ext_resource type="Texture2D" uid="uid://dgjkxg5lxpvxb" path="res://models/facilities/office/textures/LB_WoodPanel.png" id="7_pgki4"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_kidmp"]
 size = Vector3(41.5595, 19.4565, 31.782)

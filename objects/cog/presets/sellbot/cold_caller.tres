@@ -1,12 +1,12 @@
 [gd_resource type="Resource" script_class="CogDNA" load_steps=8 format=3 uid="uid://b4jf6084dolhy"]
 
-[ext_resource type="Script" path="res://objects/battle/battle_resources/cog_attacks/cog_attack.gd" id="1_2qty4"]
-[ext_resource type="Script" path="res://objects/cog/cogdna.gd" id="1_ejo17"]
+[ext_resource type="Script" uid="uid://bb27him60xtnk" path="res://objects/battle/battle_resources/cog_attacks/cog_attack.gd" id="1_2qty4"]
+[ext_resource type="Script" uid="uid://okjbx502s3r5" path="res://objects/cog/cogdna.gd" id="1_ejo17"]
 [ext_resource type="Resource" uid="uid://c27ek2anjbx88" path="res://objects/battle/battle_resources/cog_attacks/resources/pound_key.tres" id="2_l467j"]
 [ext_resource type="Resource" uid="uid://bpupdhbap1rq" path="res://objects/battle/battle_resources/cog_attacks/resources/freeze_assets.tres" id="3_5un0a"]
 [ext_resource type="Texture2D" uid="uid://cbv3oai8awwag" path="res://models/cogs/heads/coldcaller_tt_t_ene_hed_coldCaller.png" id="5_05iy8"]
 [ext_resource type="PackedScene" uid="uid://2ewnjjvwgpwy" path="res://models/cogs/heads/coldcaller.glb" id="5_w07wc"]
-[ext_resource type="Script" path="res://objects/battle/battle_resources/status_effect.gd" id="6_ilbpj"]
+[ext_resource type="Script" uid="uid://df7irk63ikx4k" path="res://objects/battle/battle_resources/status_effect.gd" id="6_ilbpj"]
 
 [resource]
 script = ExtResource("1_ejo17")
@@ -32,6 +32,6 @@ is_admin = false
 health_mod = 1.0
 battle_phrases = Array[String](["Boy, did you get your wires crossed.", "I was hoping you'd answer my call.", "You rang?", "I'm going to cause a ringing sensation.", "This call is going to cost you.", "You've got big trouble on the line.", "Surprised to hear from me?", "Are you ready to accept my charges?", "This caller always collects.", "I'm one smooth operator.", "Hold the phone -- I'm here.", "Have you been waiting for my call?", "I always make my calls direct."])
 external_assets = {
-"head_model": "",
-"head_textures": []
+&"head_model": "",
+&"head_textures": []
 }

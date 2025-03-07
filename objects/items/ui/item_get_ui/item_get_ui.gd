@@ -22,7 +22,7 @@ func _ready():
 		%NodeViewer.camera_position_offset = item.ui_cam_offset
 		%NodeViewer.node = model
 		%NodeViewer.want_spin_tween = item.want_ui_spin
-	await TaskMgr.delay(4.0)
+	await Task.delay(4.0)
 	
 	var leave_tween = create_tween()
 	leave_tween.tween_property(banner, 'modulate:a', 0.0, 1.0)

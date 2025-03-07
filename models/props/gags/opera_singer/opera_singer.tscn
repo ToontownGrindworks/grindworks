@@ -35,8 +35,8 @@ tracks/0/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_yblmm"]
 _data = {
-"RESET": SubResource("Animation_ckb18"),
-"sound": SubResource("Animation_wqvl3")
+&"RESET": SubResource("Animation_ckb18"),
+&"sound": SubResource("Animation_wqvl3")
 }
 
 [node name="opera_singer" instance=ExtResource("1_06q7i")]

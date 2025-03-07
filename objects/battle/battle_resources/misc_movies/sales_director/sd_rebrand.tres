@@ -1,11 +1,12 @@
 [gd_resource type="Resource" script_class="SalesDirectorRebrand" load_steps=2 format=3 uid="uid://wxle3imysyb1"]
 
-[ext_resource type="Script" path="res://objects/battle/battle_resources/misc_movies/sales_director/sd_rebrand.gd" id="1_niadr"]
+[ext_resource type="Script" uid="uid://c2yy7gfukolva" path="res://objects/battle/battle_resources/misc_movies/sales_director/sd_rebrand.gd" id="1_niadr"]
 
 [resource]
 script = ExtResource("1_niadr")
 accuracy = 75
 damage = 1
+ignore_stats = false
 summary = ""
 attack_lines = Array[String]([])
 target_type = 0

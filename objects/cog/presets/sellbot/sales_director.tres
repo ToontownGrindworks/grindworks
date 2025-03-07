@@ -1,13 +1,13 @@
 [gd_resource type="Resource" script_class="CogDNA" load_steps=10 format=3 uid="uid://d4j0edul57mrg"]
 
-[ext_resource type="Script" path="res://objects/battle/battle_resources/cog_attacks/cog_attack.gd" id="1_6iots"]
+[ext_resource type="Script" uid="uid://bb27him60xtnk" path="res://objects/battle/battle_resources/cog_attacks/cog_attack.gd" id="1_6iots"]
 [ext_resource type="Resource" uid="uid://dxpqtt8gh5brv" path="res://objects/battle/battle_resources/cog_attacks/resources/finger_wag.tres" id="2_5so0f"]
 [ext_resource type="Resource" uid="uid://b4kaq7rjifwfc" path="res://objects/battle/battle_resources/cog_attacks/resources/liquidate.tres" id="3_qf647"]
 [ext_resource type="PackedScene" uid="uid://dvhibmrq8p7i6" path="res://models/cogs/heads/sales_director.glb" id="4_3r8al"]
 [ext_resource type="Resource" uid="uid://dc3wprcrjg58t" path="res://objects/battle/battle_resources/cog_attacks/resources/audit.tres" id="4_oocyo"]
 [ext_resource type="Texture2D" uid="uid://cam2cj6dqh32m" path="res://models/cogs/heads/sales_director_SalesDirector.png" id="5_n8nvs"]
-[ext_resource type="Script" path="res://objects/cog/cogdna.gd" id="6_xt54l"]
-[ext_resource type="Script" path="res://objects/battle/battle_resources/status_effect.gd" id="7_eupb4"]
+[ext_resource type="Script" uid="uid://okjbx502s3r5" path="res://objects/cog/cogdna.gd" id="6_xt54l"]
+[ext_resource type="Script" uid="uid://df7irk63ikx4k" path="res://objects/battle/battle_resources/status_effect.gd" id="7_eupb4"]
 [ext_resource type="Resource" uid="uid://c8rs8upqmscoh" path="res://objects/battle/battle_resources/status_effects/resources/attentive.tres" id="9_4ekax"]
 
 [resource]
@@ -34,6 +34,6 @@ is_admin = true
 health_mod = 2.0
 battle_phrases = Array[String](["I am going to direct some sales."])
 external_assets = {
-"head_model": "",
-"head_textures": []
+&"head_model": "",
+&"head_textures": []
 }

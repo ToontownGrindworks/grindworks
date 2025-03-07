@@ -12,7 +12,7 @@ const GAG_IMMUNITY_EFFECT := preload("res://objects/battle/battle_resources/stat
 
 
 func _ready() -> void:
-	await TaskMgr.delay(0.25)
+	await Task.delay(0.25)
 	
 	# Assign the initial gag immunities of the Cogs
 	assign_gag_immunities(battle_node.cogs)

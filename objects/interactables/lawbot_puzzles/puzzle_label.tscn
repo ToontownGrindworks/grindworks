@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://cbptyo7sgd36r"]
 
-[ext_resource type="Script" path="res://objects/interactables/lawbot_puzzles/puzzle_label.gd" id="1_4ayno"]
+[ext_resource type="Script" uid="uid://c361a784xpv62" path="res://objects/interactables/lawbot_puzzles/puzzle_label.gd" id="1_4ayno"]
 [ext_resource type="FontFile" uid="uid://dyjvd6wmo0bmg" path="res://fonts/vtRemingtonPortable.ttf" id="1_cci3s"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_kdfep"]

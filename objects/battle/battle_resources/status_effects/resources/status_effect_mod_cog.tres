@@ -1,6 +1,6 @@
 [gd_resource type="Resource" load_steps=2 format=3 uid="uid://b4vuuxwhv0d3v"]
 
-[ext_resource type="Script" path="res://objects/battle/battle_resources/status_effects/mod_cog_effects/status_effect_mod_cog.gd" id="1_ra8hc"]
+[ext_resource type="Script" uid="uid://bugy870b31dkg" path="res://objects/battle/battle_resources/status_effects/mod_cog_effects/status_effect_mod_cog.gd" id="1_ra8hc"]
 
 [resource]
 script = ExtResource("1_ra8hc")

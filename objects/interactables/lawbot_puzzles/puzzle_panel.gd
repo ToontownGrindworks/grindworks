@@ -59,7 +59,7 @@ func _ready() -> void:
 	area.position = Vector3(.5,0,.5)
 	collision_shape.set_shape(BoxShape3D.new())
 	collision_box = collision_shape.shape
-	collision_box.size*=.75
+	collision_box.size*=.7
 	collision_box.size.y=100.0
 	area.body_entered.connect(body_entered)
 	area.body_exited.connect(body_exited)

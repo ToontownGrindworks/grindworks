@@ -2,12 +2,12 @@
 
 [ext_resource type="PackedScene" uid="uid://cl1ahysqqwxwo" path="res://objects/items/custom/jellybean/green_jellybean.tscn" id="1_ml2et"]
 [ext_resource type="AudioStream" uid="uid://b8pshap2d5xwv" path="res://audio/sfx/ui/tick_counter.ogg" id="2_6pgkm"]
-[ext_resource type="Script" path="res://objects/items/classes/item.gd" id="2_7dpeg"]
+[ext_resource type="Script" uid="uid://combwqypom1ru" path="res://objects/items/classes/item.gd" id="2_7dpeg"]
 
 [resource]
 script = ExtResource("2_7dpeg")
-qualitoon = 2
-qualitoon_rarity = 0
+qualitoon = 1
+rarity = 0
 evergreen = true
 realtime = false
 slot = 0

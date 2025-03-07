@@ -94,7 +94,7 @@ func _ready():
 func load_run() -> void:
 	# Try to get the current run
 	if FileAccess.file_exists(SAVE_FILE_PATH+RUN_FILE_NAME):
-		var file = ResourceLoader.load(SAVE_FILE_PATH+RUN_FILE_NAME, "", 0).duplicate()
+		var file = ResourceLoader.load(SAVE_FILE_PATH+RUN_FILE_NAME, "", ResourceLoader.CacheMode.CACHE_MODE_IGNORE).duplicate()
 		if file is SaveFile:
 			run_file = file
 			s_game_loaded.emit()

@@ -11,7 +11,7 @@
 [ext_resource type="PackedScene" uid="uid://cov8sw7eluipo" path="res://objects/obstacles/stomper/stomper.tscn" id="7_rv7pp"]
 [ext_resource type="PackedScene" uid="uid://cymudv3pxuhlj" path="res://models/props/facility_objects/da_office/stomper/law_stomper.fbx" id="8_xg4s3"]
 [ext_resource type="PackedScene" uid="uid://b8786m8c0wm1o" path="res://objects/obstacles/spotlight/spotlight.tscn" id="10_77gj2"]
-[ext_resource type="Script" path="res://objects/obstacles/room_timer.gd" id="12_7rcdk"]
+[ext_resource type="Script" uid="uid://ck228sq4cr5yc" path="res://objects/obstacles/room_timer.gd" id="12_7rcdk"]
 [ext_resource type="PackedScene" uid="uid://ceghombqxco7o" path="res://objects/props/office/bookshelf.tscn" id="12_rljhm"]
 [ext_resource type="PackedScene" uid="uid://dimw8665cqqxw" path="res://objects/props/office/desk.tscn" id="13_xwf1e"]
 [ext_resource type="PackedScene" uid="uid://bftnews8dsdpb" path="res://objects/props/office/paper_twist_stacks.tscn" id="14_3ooxg"]

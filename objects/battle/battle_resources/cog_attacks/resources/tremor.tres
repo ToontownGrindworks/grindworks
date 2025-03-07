@@ -1,12 +1,13 @@
 [gd_resource type="Resource" script_class="Quake" load_steps=2 format=3 uid="uid://bddy50xh8sfc8"]
 
-[ext_resource type="Script" path="res://objects/battle/battle_resources/cog_attacks/quake.gd" id="1_ie6md"]
+[ext_resource type="Script" uid="uid://chapsu358g1bt" path="res://objects/battle/battle_resources/cog_attacks/quake.gd" id="1_ie6md"]
 
 [resource]
 script = ExtResource("1_ie6md")
 anim_type = 1
 accuracy = 75
 damage = 4
+ignore_stats = false
 summary = ""
 attack_lines = Array[String](["Did you feel that?", "Not afraid of a little tremor are you?", "A tremor is only the beginning.", "You look jittery.", "I'll shake things up a bit!", "Are you ready to rumble?", "What's wrong? You look shaken.", "Tremor with fear!", "Why are you tremoring with fear?"])
 target_type = 0

@@ -1,15 +1,15 @@
 [gd_resource type="Resource" script_class="Track" load_steps=6 format=3 uid="uid://commywykcoirs"]
 
-[ext_resource type="Script" path="res://objects/battle/battle_resources/toon_attacks/toon_attack.gd" id="1_t78ts"]
+[ext_resource type="Script" uid="uid://cwnjrxjvy5kc3" path="res://objects/battle/battle_resources/toon_attacks/toon_attack.gd" id="1_t78ts"]
 [ext_resource type="Texture2D" uid="uid://c3ibnqgwvrh03" path="res://ui_assets/misc/BookIcon_OPEN_old.png" id="2_4hd31"]
-[ext_resource type="Script" path="res://objects/battle/battle_resources/gag_loadouts/track.gd" id="2_u73ec"]
-[ext_resource type="Script" path="res://objects/battle/battle_resources/toon_attacks/gag_spell.gd" id="3_ajgoj"]
+[ext_resource type="Script" uid="uid://b6b6pfoqyolr" path="res://objects/battle/battle_resources/gag_loadouts/track.gd" id="2_u73ec"]
+[ext_resource type="Script" uid="uid://fd7qk852y1gy" path="res://objects/battle/battle_resources/toon_attacks/gag_spell.gd" id="3_ajgoj"]
 
 [sub_resource type="Resource" id="Resource_a0apr"]
 script = ExtResource("3_ajgoj")
 icon = ExtResource("2_4hd31")
-accuracy = 100
 damage = 0
+crit_chance_mod = 1.0
 target_type = 0
 action_name = "The Murder Spell"
 one_time_use = false

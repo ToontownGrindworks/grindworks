@@ -1,10 +1,10 @@
 [gd_resource type="Resource" script_class="CogDNA" load_steps=13 format=3 uid="uid://b343pcatcpagr"]
 
-[ext_resource type="Script" path="res://objects/battle/battle_resources/cog_attacks/cog_attack.gd" id="1_uj63m"]
-[ext_resource type="Script" path="res://objects/cog/cogdna.gd" id="2_7r63x"]
+[ext_resource type="Script" uid="uid://bb27him60xtnk" path="res://objects/battle/battle_resources/cog_attacks/cog_attack.gd" id="1_uj63m"]
+[ext_resource type="Script" uid="uid://okjbx502s3r5" path="res://objects/cog/cogdna.gd" id="2_7r63x"]
 [ext_resource type="Resource" uid="uid://6hjcsu17tt4g" path="res://objects/battle/battle_resources/cog_attacks/resources/brain_storm.tres" id="2_pjcma"]
 [ext_resource type="Resource" uid="uid://b4kaq7rjifwfc" path="res://objects/battle/battle_resources/cog_attacks/resources/liquidate.tres" id="3_23ovk"]
-[ext_resource type="Script" path="res://objects/battle/battle_resources/status_effect.gd" id="3_tcrmr"]
+[ext_resource type="Script" uid="uid://df7irk63ikx4k" path="res://objects/battle/battle_resources/status_effect.gd" id="3_tcrmr"]
 [ext_resource type="Resource" uid="uid://c24yy1wqmg24o" path="res://objects/battle/battle_resources/cog_attacks/resources/razzle_dazzle.tres" id="4_nr71f"]
 [ext_resource type="Resource" uid="uid://b4vuuxwhv0d3v" path="res://objects/battle/battle_resources/status_effects/resources/status_effect_mod_cog.tres" id="4_xy74k"]
 [ext_resource type="Texture2D" uid="uid://2fj5qbvh3qa1" path="res://models/cogs/textures/misc/sleeve_2.png" id="5_7mvpa"]
@@ -40,6 +40,6 @@ is_admin = false
 health_mod = 1.0
 battle_phrases = Array[String](["Sorry we have to fight, my boss is making me.", "I regret to inform you that your stay here is no longer tolerated.", "Anything my bosses say goes, and they want you gone.", "Sorry, but I have to ask you to leave."])
 external_assets = {
-"head_model": "",
-"head_textures": []
+&"head_model": "",
+&"head_textures": []
 }

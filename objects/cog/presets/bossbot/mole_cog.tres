@@ -1,11 +1,11 @@
 [gd_resource type="Resource" script_class="CogDNA" load_steps=9 format=3 uid="uid://b2numr2pojy1o"]
 
-[ext_resource type="Script" path="res://objects/battle/battle_resources/cog_attacks/cog_attack.gd" id="1_hpxo2"]
+[ext_resource type="Script" uid="uid://bb27him60xtnk" path="res://objects/battle/battle_resources/cog_attacks/cog_attack.gd" id="1_hpxo2"]
 [ext_resource type="PackedScene" uid="uid://c83iwrx6mdta7" path="res://models/cogs/heads/mole_cog.tscn" id="2_40nyl"]
 [ext_resource type="Resource" uid="uid://dimhdaxn1tyey" path="res://objects/battle/battle_resources/cog_attacks/resources/tee_off.tres" id="3_i8akj"]
-[ext_resource type="Script" path="res://objects/cog/cogdna.gd" id="3_jkdgo"]
+[ext_resource type="Script" uid="uid://okjbx502s3r5" path="res://objects/cog/cogdna.gd" id="3_jkdgo"]
 [ext_resource type="Resource" uid="uid://b6smgrhefhpdk" path="res://objects/battle/battle_resources/cog_attacks/resources/sink_hole.tres" id="4_0itus"]
-[ext_resource type="Script" path="res://objects/battle/battle_resources/status_effect.gd" id="4_ova5f"]
+[ext_resource type="Script" uid="uid://df7irk63ikx4k" path="res://objects/battle/battle_resources/status_effect.gd" id="4_ova5f"]
 [ext_resource type="Resource" uid="uid://cl6jho6mr8gam" path="res://objects/battle/battle_resources/misc_movies/mole_cog_boss/mole_cog_launch.tres" id="4_w6nbe"]
 [ext_resource type="Resource" uid="uid://c8rs8upqmscoh" path="res://objects/battle/battle_resources/status_effects/resources/attentive.tres" id="8_kf10e"]
 
@@ -33,6 +33,6 @@ is_admin = true
 health_mod = 2.0
 battle_phrases = Array[String](["We are gonna fight now."])
 external_assets = {
-"head_model": "",
-"head_textures": []
+&"head_model": "",
+&"head_textures": []
 }

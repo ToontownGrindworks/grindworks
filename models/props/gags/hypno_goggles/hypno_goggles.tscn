@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://cu1khdq2s6jx0"]
+[gd_scene load_steps=8 format=4 uid="uid://cu1khdq2s6jx0"]
 
 [ext_resource type="Texture2D" uid="uid://d1p18lgfwcago" path="res://models/props/gags/hypno_goggles/hypno_goggles_hypno_glasses_fr1.png" id="1_2cigh"]
 
@@ -13,18 +13,18 @@ roughness = 0.552786
 resource_name = "hypno_goggles_Mesh_001"
 _surfaces = [{
 "aabb": AABB(0.0299016, 0.212654, 0.706173, 0.615515, 0.594119, 1.00136e-05),
-"attribute_data": PackedByteArray(0, 0, 128, 63, 0, 0, 0, 0, 0, 0, 128, 63, 0, 0, 128, 63, 0, 0, 0, 0, 0, 0, 128, 63, 0, 0, 0, 0, 0, 0, 0, 0),
+"attribute_data": PackedByteArray("AACAPwAAAAAAAIA/AACAPwAAAAAAAIA/AAAAAAAAAAA="),
 "bone_aabbs": [AABB(0, 0, 0, -1, -1, -1), AABB(0, 0, 0, -1, -1, -1), AABB(0, 0, 0, -1, -1, -1), AABB(0.0299016, 0.212654, 0.706173, 0.615515, 0.594119, 1.00136e-05)],
 "format": 34359745559,
 "index_count": 6,
-"index_data": PackedByteArray(0, 0, 2, 0, 1, 0, 0, 0, 3, 0, 2, 0),
+"index_data": PackedByteArray("AAACAAEAAAADAAIA"),
 "material": SubResource("StandardMaterial3D_vcwmn"),
 "name": "toon_props_cvs_PICTURES_hypno_glasses_fr1_picShader",
 "primitive": 3,
-"skin_data": PackedByteArray(3, 0, 0, 0, 0, 0, 0, 0, 255, 255, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 255, 255, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 255, 255, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 255, 255, 0, 0, 0, 0, 0, 0),
+"skin_data": PackedByteArray("AwAAAAAAAAD//wAAAAAAAAMAAAAAAAAA//8AAAAAAAADAAAAAAAAAP//AAAAAAAAAwAAAAAAAAD//wAAAAAAAA=="),
 "uv_scale": Vector4(0, 0, 0, 0),
 "vertex_count": 4,
-"vertex_data": PackedByteArray(74, 244, 244, 60, 4, 136, 78, 63, 189, 199, 52, 63, 74, 244, 244, 60, 21, 194, 89, 62, 190, 199, 52, 63, 13, 58, 37, 63, 21, 194, 89, 62, 190, 199, 52, 63, 13, 58, 37, 63, 4, 136, 78, 63, 189, 199, 52, 63, 255, 127, 255, 127, 0, 0, 255, 63, 255, 127, 255, 127, 0, 0, 255, 63, 255, 127, 255, 127, 0, 0, 255, 63, 255, 127, 255, 127, 0, 0, 255, 63)
+"vertex_data": PackedByteArray("SvT0PASITj+9xzQ/SvT0PBXCWT6+xzQ/DTolPxXCWT6+xzQ/DTolPwSITj+9xzQ//3//fwAA/z//f/9/AAD/P/9//38AAP8//3//fwAA/z8=")
 }]
 blend_shape_mode = 0
 
@@ -51,18 +51,18 @@ bind/4/pose = Transform3D(100, 0, 0, 0, 100, -7.54979e-06, 0, 7.54979e-06, 100, 
 resource_name = "hypno_goggles_Mesh"
 _surfaces = [{
 "aabb": AABB(-0.622264, 0.215214, 0.706173, 0.615517, 0.594119, 1.00136e-05),
-"attribute_data": PackedByteArray(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 128, 63, 0, 0, 128, 63, 255, 255, 127, 63, 0, 0, 128, 63, 0, 0, 0, 0),
+"attribute_data": PackedByteArray("AAAAAAAAAAAAAAAAAACAPwAAgD///38/AACAPwAAAAA="),
 "bone_aabbs": [AABB(0, 0, 0, -1, -1, -1), AABB(0, 0, 0, -1, -1, -1), AABB(0, 0, 0, -1, -1, -1), AABB(0, 0, 0, -1, -1, -1), AABB(-0.622264, 0.215214, 0.706173, 0.615517, 0.594119, 1.00136e-05)],
 "format": 34359745559,
 "index_count": 6,
-"index_data": PackedByteArray(0, 0, 2, 0, 1, 0, 0, 0, 3, 0, 2, 0),
+"index_data": PackedByteArray("AAACAAEAAAADAAIA"),
 "material": SubResource("StandardMaterial3D_vcwmn"),
 "name": "toon_props_cvs_PICTURES_hypno_glasses_fr1_picShader",
 "primitive": 3,
-"skin_data": PackedByteArray(4, 0, 0, 0, 0, 0, 0, 0, 255, 255, 0, 0, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 255, 255, 0, 0, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 255, 255, 0, 0, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 255, 255, 0, 0, 0, 0, 0, 0),
+"skin_data": PackedByteArray("BAAAAAAAAAD//wAAAAAAAAQAAAAAAAAA//8AAAAAAAAEAAAAAAAAAP//AAAAAAAABAAAAAAAAAD//wAAAAAAAA=="),
 "uv_scale": Vector4(0, 0, 0, 0),
 "vertex_count": 4,
-"vertex_data": PackedByteArray(185, 76, 31, 191, 208, 47, 79, 63, 189, 199, 52, 63, 185, 76, 31, 191, 25, 97, 92, 62, 190, 199, 52, 63, 108, 24, 221, 187, 25, 97, 92, 62, 190, 199, 52, 63, 108, 24, 221, 187, 208, 47, 79, 63, 189, 199, 52, 63, 74, 129, 255, 127, 255, 255, 89, 191, 142, 130, 255, 127, 254, 255, 183, 190, 74, 129, 255, 127, 255, 255, 89, 191, 255, 127, 255, 127, 255, 255, 255, 191)
+"vertex_data": PackedByteArray("uUwfv9AvTz+9xzQ/uUwfvxlhXD6+xzQ/bBjduxlhXD6+xzQ/bBjdu9AvTz+9xzQ/SoH/f///Wb+Ogv9//v+3vkqB/3///1m//3//f////78=")
 }]
 blend_shape_mode = 0
 
@@ -107,7 +107,7 @@ tracks/4/keys = PackedFloat32Array(0, 1, 1e-05, 1e-05, 1e-05, 0.266667, 1, 1e-05
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_t0w1i"]
 _data = {
-"hypnotize": SubResource("Animation_n34tw")
+&"hypnotize": SubResource("Animation_n34tw")
 }
 
 [node name="hypno_goggles" type="Node3D"]

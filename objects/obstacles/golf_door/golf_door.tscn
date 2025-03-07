@@ -1,6 +1,6 @@
 [gd_scene load_steps=13 format=3 uid="uid://b35wcbrb3kc82"]
 
-[ext_resource type="Script" path="res://objects/obstacles/golf_door/golf_door.gd" id="1_2qrjy"]
+[ext_resource type="Script" uid="uid://cygqh2ohiurcv" path="res://objects/obstacles/golf_door/golf_door.gd" id="1_2qrjy"]
 [ext_resource type="PackedScene" uid="uid://d0yk8glamf62r" path="res://objects/obstacles/rolling_golf_ball/rolling_golf_ball.tscn" id="2_6swar"]
 [ext_resource type="PackedScene" uid="uid://bqs0dbkws1wm" path="res://objects/props/cgc/golf_couse_door.tscn" id="3_k7vpm"]
 [ext_resource type="Texture2D" uid="uid://dbpos4t8tc4i0" path="res://models/facilities/cgc/textures/WallBricksBig2.png" id="4_wifi8"]

@@ -5,7 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://dflwjcy6fj0av" path="res://objects/cog/cog.tscn" id="3_a58n1"]
 [ext_resource type="AudioStream" uid="uid://bx3gsnhbeqger" path="res://audio/music/encntr_suit_winning_indoor.ogg" id="3_l8dbs"]
 [ext_resource type="Resource" uid="uid://hsr7nv4yasb7" path="res://objects/cog/presets/sellbot/hot_caller.tres" id="4_3ub5h"]
-[ext_resource type="Script" path="res://objects/battle/battle_resources/misc_movies/battle_entrances/battle_start_movie.gd" id="4_fa1g6"]
+[ext_resource type="Script" uid="uid://bfds4ecmwyos7" path="res://objects/battle/battle_resources/misc_movies/battle_entrances/battle_start_movie.gd" id="4_fa1g6"]
 [ext_resource type="PackedScene" uid="uid://dxyq5lb5oineo" path="res://objects/interactables/treasure_chest/treasure_chest.tscn" id="5_6mjn0"]
 [ext_resource type="Resource" uid="uid://b4jf6084dolhy" path="res://objects/cog/presets/sellbot/cold_caller.tres" id="6_2utoi"]
 [ext_resource type="PackedScene" uid="uid://y6ineseqnb3c" path="res://objects/props/mint/boiler_a1.tscn" id="6_41krn"]

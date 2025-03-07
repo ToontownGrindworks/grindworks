@@ -1,6 +1,6 @@
 [gd_resource type="Resource" load_steps=2 format=3 uid="uid://crpq72du32gfq"]
 
-[ext_resource type="Script" path="res://objects/battle/battle_resources/status_effects/boss_effects/boss_logic_clown.gd" id="1_1pc2s"]
+[ext_resource type="Script" uid="uid://doj4bxcxaj7q3" path="res://objects/battle/battle_resources/status_effects/boss_effects/boss_logic_clown.gd" id="1_1pc2s"]
 
 [resource]
 script = ExtResource("1_1pc2s")

@@ -91,23 +91,31 @@ func get_anomalies() -> Array[Script]:
 	for i in mod_count:
 		var rng_val := RandomService.randf_channel('floor_mods')
 		var mod_array: Array[String]
+		# Positive anomalies
 		if rng_val <= 0.3333:
 			mod_array = anomaly_files_pos
 			if mod_array.size() == 0:
 				mod_array = RandomService.array_pick_random('floor_mods', [anomaly_files_neutral, anomaly_files_neg])
+		# Neutral anomalies
 		elif rng_val <= 0.6666:
 			mod_array = anomaly_files_neutral
 			if mod_array.size() == 0:
 				mod_array = RandomService.array_pick_random('floor_mods', [anomaly_files_pos, anomaly_files_neg])
+		# Negative anomalies
 		else:
+			if Util.get_player() and Util.get_player().no_negative_anomalies:
+				continue
+
 			mod_array = anomaly_files_neg
 			if mod_array.size() == 0:
 				mod_array = RandomService.array_pick_random('floor_mods', [anomaly_files_pos, anomaly_files_neutral])
-		var new_mod: String = RandomService.array_pick_random('floor_mods', mod_array)
-		var loaded_mod: Script = Util.universal_load(new_mod)
-		if not loaded_mod in modifiers:
-			mods.append(loaded_mod)
-		mod_array.remove_at(mod_array.find(new_mod))
+
+		if mod_array.size() > 0:
+			var new_mod: String = RandomService.array_pick_random('floor_mods', mod_array)
+			var loaded_mod: Script = Util.universal_load(new_mod)
+			if not loaded_mod in modifiers:
+				mods.append(loaded_mod)
+			mod_array.remove_at(mod_array.find(new_mod))
 
 	return mods
 

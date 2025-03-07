@@ -1,7 +1,7 @@
 [gd_resource type="Resource" script_class="PopQuizJoke" load_steps=7 format=3 uid="uid://dl3b1615f64bq"]
 
-[ext_resource type="Script" path="res://general_resources/audio_snippet.gd" id="1_mhvhn"]
-[ext_resource type="Script" path="res://objects/battle/battle_resources/cog_attacks/pop_quiz_joke.gd" id="1_rxanr"]
+[ext_resource type="Script" uid="uid://b55u2wxwx511g" path="res://general_resources/audio_snippet.gd" id="1_mhvhn"]
+[ext_resource type="Script" uid="uid://ht8xs728r0si" path="res://objects/battle/battle_resources/cog_attacks/pop_quiz_joke.gd" id="1_rxanr"]
 [ext_resource type="AudioStream" uid="uid://yfuojmpbwpbd" path="res://audio/sfx/misc/MG_lose.ogg" id="2_ysxds"]
 [ext_resource type="AudioStream" uid="uid://b650h0my6syn8" path="res://audio/sfx/battle/gags/toonup/AA_heal_telljoke.ogg" id="4_vlypw"]
 

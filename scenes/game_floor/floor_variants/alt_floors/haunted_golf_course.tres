@@ -1,12 +1,12 @@
 [gd_resource type="Resource" script_class="FloorVariant" load_steps=9 format=3 uid="uid://brhahnbakm60"]
 
 [ext_resource type="PackedScene" uid="uid://b87j2e2rsu88h" path="res://objects/modules/cgc/variants/cgc_slendercog_boss.tscn" id="1_5myl2"]
-[ext_resource type="Script" path="res://objects/modules/facility_room.gd" id="1_qwy8y"]
+[ext_resource type="Script" uid="uid://dhyadt7p1gv78" path="res://objects/modules/facility_room.gd" id="1_qwy8y"]
 [ext_resource type="Resource" uid="uid://c0m70b5ovs2i3" path="res://scenes/game_floor/department_floors/rooms_boss.tres" id="2_3bdp3"]
 [ext_resource type="Texture2D" uid="uid://cjynqnh16rd0p" path="res://models/cogs/misc/hp_light/boss.png" id="2_pa2hh"]
-[ext_resource type="Script" path="res://scenes/game_floor/floor_modifiers/scripts/anomalies/floor_mod_power_out.gd" id="4_pdr5m"]
-[ext_resource type="Script" path="res://scenes/game_floor/floor_variants/floor_variant.gd" id="5_5pbfe"]
-[ext_resource type="Script" path="res://scenes/game_floor/floor_modifiers/scripts/misc/foor_mod_spooky_stuff.gd" id="6_q5ag6"]
+[ext_resource type="Script" uid="uid://bwci320k5lyyc" path="res://scenes/game_floor/floor_modifiers/scripts/anomalies/floor_mod_power_out.gd" id="4_pdr5m"]
+[ext_resource type="Script" uid="uid://cxvrtrods5hgg" path="res://scenes/game_floor/floor_variants/floor_variant.gd" id="5_5pbfe"]
+[ext_resource type="Script" uid="uid://hlr387ie2fnm" path="res://scenes/game_floor/floor_modifiers/scripts/misc/foor_mod_spooky_stuff.gd" id="6_q5ag6"]
 
 [sub_resource type="Resource" id="Resource_oopbd"]
 script = ExtResource("1_qwy8y")

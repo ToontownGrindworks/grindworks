@@ -21,22 +21,22 @@ func action() -> void:
 	bookshelf.scale = Vector3.ONE * 2.0
 	bookshelf.position = Vector3(0, 0.02, 7.0)
 	bookshelf.rotation_degrees.y = 180.0
-	await TaskMgr.delay(1.5)
+	await Task.delay(1.5)
 	battle_node.focus_character(targets[0])
 	AudioManager.play_snippet(SFX_HOT_AIR, 0.0, 1.43)
-	await TaskMgr.delay(0.6)
+	await Task.delay(0.6)
 	var book_rot: Tween = Sequence.new([
 		Wait.new(0.6),
-		Func.new(func(): await TaskMgr.delay(0.3); squish_toon(); AudioManager.play_sound(load("res://audio/sfx/misc/CHQ_SOS_cage_land.ogg"))),
+		Func.new(func(): await Task.delay(0.3); squish_toon(); AudioManager.play_sound(load("res://audio/sfx/misc/CHQ_SOS_cage_land.ogg"))),
 		LerpProperty.new(bookshelf, ^"rotation_degrees:x", 0.4, 90.0).interp(Tween.EASE_IN, Tween.TRANS_QUAD),
 		Wait.new(0.7),
 		LerpProperty.new(bookshelf, ^"rotation_degrees:x", 1.0, 0.0).interp(Tween.EASE_IN, Tween.TRANS_QUAD),
 	]).as_tween(battle_node)
 	await book_rot.finished
 	manager.battle_text(targets[0], "Cooked!", BattleText.colors.orange[0], BattleText.colors.orange[1])
-	await TaskMgr.delay(0.5)
+	await Task.delay(0.5)
 	await apply_cooked()
-	await TaskMgr.delay(0.5)
+	await Task.delay(0.5)
 	bookshelf.queue_free()
 
 func squish_toon() -> void:

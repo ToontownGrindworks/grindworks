@@ -49,6 +49,7 @@ func _physics_process(delta: float) -> void:
 			else:
 				delay_ball()
 			path_follow.progress_ratio = 0.0
+			golf_ball.reset_physics_interpolation()
 
 func delay_ball(wait_time := 0.0) -> void:
 	delayed = true

@@ -1,6 +1,6 @@
 [gd_scene load_steps=8 format=3 uid="uid://qlk7r45fgpsy"]
 
-[ext_resource type="Script" path="res://objects/general_ui/achievement_notification/achievement_notification.gd" id="1_kx0ri"]
+[ext_resource type="Script" uid="uid://curecccs1fqhh" path="res://objects/general_ui/achievement_notification/achievement_notification.gd" id="1_kx0ri"]
 [ext_resource type="PackedScene" uid="uid://dkd6dg5s5uuef" path="res://objects/general_ui/base_panel.tscn" id="2_8w5fi"]
 [ext_resource type="FontFile" uid="uid://cup2yr5w7or1l" path="res://fonts/Minnie.TTF" id="3_bw5ve"]
 [ext_resource type="FontFile" uid="uid://815gwlftl5ik" path="res://fonts/impress-bt.ttf" id="4_um8dm"]

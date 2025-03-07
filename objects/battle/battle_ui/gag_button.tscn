@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://bry0lwouy0leq" path="res://ui_assets/battle/gag_button/InventoryButtonDown.png" id="2_0j5m3"]
 [ext_resource type="Texture2D" uid="uid://bjw6y3vdoagi4" path="res://ui_assets/battle/gag_button/InventoryButtonRollover.png" id="3_18eg3"]
 [ext_resource type="Texture2D" uid="uid://bqir4k670c0i4" path="res://ui_assets/battle/gag_button/InventoryButtonFlat.png" id="4_2qvpg"]
-[ext_resource type="Script" path="res://objects/battle/battle_ui/gag_button.gd" id="5_ukpsq"]
+[ext_resource type="Script" uid="uid://c3haup6yga8xs" path="res://objects/battle/battle_ui/gag_button.gd" id="5_ukpsq"]
 [ext_resource type="FontFile" uid="uid://815gwlftl5ik" path="res://fonts/impress-bt.ttf" id="7_y3m4b"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_qhdea"]

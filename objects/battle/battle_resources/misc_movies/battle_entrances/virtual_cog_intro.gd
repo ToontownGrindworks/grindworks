@@ -44,7 +44,7 @@ func do_flashing(cog : Cog) -> void:
 	var color := false
 	while delay > 0.005:
 		delay*=(9.0/10.0)
-		await TaskMgr.delay(delay)
+		await Task.delay(delay)
 		color = !color
 		if color:
 			set_cog_color(FLASH_COLOR,cog)

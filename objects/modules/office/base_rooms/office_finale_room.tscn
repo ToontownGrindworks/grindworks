@@ -1,7 +1,7 @@
 [gd_scene load_steps=27 format=4 uid="uid://bmwjewy35l45"]
 
 [ext_resource type="PackedScene" uid="uid://dv4cetfqoidla" path="res://models/facilities/office/office_boss_room.fbx" id="1_21m3q"]
-[ext_resource type="Texture2D" uid="uid://dot2xcb1ym0nw" path="res://models/facilities/office/textures/LB_WoodPanel2.png" id="2_tmn5t"]
+[ext_resource type="Texture2D" uid="uid://cky52lbp24w3h" path="res://models/facilities/office/textures/LB_WoodPanel2.png" id="2_tmn5t"]
 [ext_resource type="Texture2D" uid="uid://bh04ommjmbl2x" path="res://models/facilities/office/textures/LB_books_02.png" id="2_yfdup"]
 [ext_resource type="PackedScene" uid="uid://ceghombqxco7o" path="res://objects/props/office/bookshelf.tscn" id="5_q8ji6"]
 

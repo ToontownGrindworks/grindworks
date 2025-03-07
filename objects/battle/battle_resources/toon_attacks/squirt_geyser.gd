@@ -67,7 +67,7 @@ func action() -> void:
 
 func cog_flyup(cog : Cog) -> void:
 	cog.set_animation('slip-backward')
-	TaskMgr.delay(1.0).connect(cog.pause_animator)
+	Task.delay(1.0).connect(cog.pause_animator)
 
 func cog_slip(cog : Cog) -> void:
 	cog.set_animation('slip-backward')

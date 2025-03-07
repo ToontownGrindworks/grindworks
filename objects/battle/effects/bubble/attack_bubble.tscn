@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=3 uid="uid://3fyv1wquosgf"]
 
-[ext_resource type="Shader" path="res://objects/battle/effects/bubble/attack_bubble.gdshader" id="1_gbt66"]
+[ext_resource type="Shader" uid="uid://b34s0x2gbrxmx" path="res://objects/battle/effects/bubble/attack_bubble.gdshader" id="1_gbt66"]
 
 [sub_resource type="FastNoiseLite" id="FastNoiseLite_1t5dl"]
 

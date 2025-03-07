@@ -2,7 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://dxa3077q0m2lo" path="res://objects/modules/mint/base_rooms/mint_shelf_room.tscn" id="1_hnu3i"]
 [ext_resource type="PackedScene" uid="uid://62mqao2o2egv" path="res://objects/props/mint/shelf_gold.tscn" id="2_soc5q"]
-[ext_resource type="Script" path="res://objects/modules/mint/variants/mint_golden_goose_room.gd" id="2_sveym"]
+[ext_resource type="Script" uid="uid://c87hmkm1433w" path="res://objects/modules/mint/variants/mint_golden_goose_room.gd" id="2_sveym"]
 [ext_resource type="PackedScene" uid="uid://duuriwh75afua" path="res://objects/props/mint/mint_crate.tscn" id="3_0e6qa"]
 [ext_resource type="PackedScene" uid="uid://3opgp6apv4g0" path="res://objects/interactables/elevators/mint_elevator.tscn" id="3_ty680"]
 [ext_resource type="PackedScene" uid="uid://p33fqws4qewy" path="res://objects/obstacles/conveyer_belt/conveyer_belt.tscn" id="4_dm27t"]
@@ -13,13 +13,13 @@
 [ext_resource type="PackedScene" uid="uid://cov8sw7eluipo" path="res://objects/obstacles/stomper/stomper.tscn" id="11_ai0uy"]
 [ext_resource type="PackedScene" uid="uid://bj5amoerd44or" path="res://models/props/facility_objects/stomper/stomper.fbx" id="12_6hi6f"]
 [ext_resource type="PackedScene" uid="uid://ca5iu2h5u2ltv" path="res://objects/props/mint/mint_safe.tscn" id="13_qq4kb"]
-[ext_resource type="Texture2D" uid="uid://yv5u8lprdb2f" path="res://models/facilities/mint/textures/LocomotiveSide5.png" id="14_058ps"]
+[ext_resource type="Texture2D" uid="uid://dcasoiu0axwxw" path="res://models/facilities/mint/textures/LocomotiveSide5.png" id="14_058ps"]
 [ext_resource type="PackedScene" uid="uid://klxlslni1hnn" path="res://objects/props/mint/door_frame.tscn" id="15_kdm8w"]
 [ext_resource type="PackedScene" uid="uid://co0wshh25yrlm" path="res://objects/props/etc/square_drop_shadow.tscn" id="16_sfeen"]
 [ext_resource type="PackedScene" uid="uid://b5d0mrdvwx3cp" path="res://objects/items/boss_chest_group.tscn" id="18_qqvjc"]
 [ext_resource type="PackedScene" uid="uid://dmv7dbgr2b2nr" path="res://objects/obstacles/lava_floor/lava_floor.tscn" id="18_wcv2t"]
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ec20k"]
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_t71be"]
 resource_name = "ConveyerBeltV3SHD"
 cull_mode = 2
 albedo_texture = ExtResource("5_3uxyo")
@@ -27,7 +27,7 @@ roughness = 0.552786
 uv1_scale = Vector3(1, 13.6, 1)
 uv1_offset = Vector3(0, -0.894446, 0)
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_77wh2"]
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_pu46h"]
 resource_name = "ConveyerBeltV3SHD"
 cull_mode = 2
 albedo_texture = ExtResource("5_3uxyo")
@@ -82,8 +82,8 @@ var active_stompers: Array[Node3D] = []
 var objs_a: Array[Node3D] = []
 var objs_b: Array[Node3D] = []
 var game_started := false
-var stomper_task_id: int = 0
-var obj_task_id: int = 0
+var stomper_task: Task
+var obj_task: Task
 var health := 3
 var conveyor_speed: float = 0.0:
 	set(x):
@@ -139,7 +139,6 @@ func _ready():
 	%Goose.animator.seek(1.2, true)
 	%Goose.pause_animator()
 
-
 func body_entered(body: Node3D) -> void:
 	if game_started:
 		return
@@ -155,30 +154,30 @@ func run_intro() -> void:
 	Util.get_player().apply_floor_snap()
 	Util.stuck_lock = true
 	CameraTransition.from_current(self, %GooseCam, 3.0)
-	await TaskMgr.delay(3.5)
+	await Task.delay(3.5)
 	%Goose.speak(\"What's this? A TOON? IN MY TREASURY?\")
 	%Goose.animator.play()
-	await TaskMgr.delay(4.0)
+	await Task.delay(4.0)
 	%Goose.speak(\"You think you can WALTZ IN and put your GRUBBY MITTS on MY gold!?!\")
-	await TaskMgr.delay(3.0)
+	await Task.delay(3.0)
 	%Goose.speak(\"Never! NEVER! [shake rate=30 level=15]NEVER!!!!!\")
 	%Goose.set_animation('jump')
 	Util.get_player().global_position = %PlayerStartPos.global_position
 	Util.get_player().toon.global_rotation = %PlayerStartPos.global_rotation
-	await TaskMgr.delay(3.5)
+	await Task.delay(3.5)
 	%BlockerCam.make_current()
 	fall_tween = Sequence.new([
 		LerpProperty.new(%Fallers, ^\"position\", 1.5, Vector3.ZERO).interp(Tween.EASE_OUT, Tween.TRANS_BOUNCE)
 	]).as_tween(self)
-	await TaskMgr.delay(0.5)
+	await Task.delay(0.5)
 	AudioManager.play_sound(SLAM_SFX)
 	await fall_tween.finished
-	await TaskMgr.delay(1.25)
+	await Task.delay(1.25)
 	%GooseCam.make_current()
 	%Goose.set_animation('effort')
 	%Goose.animator.seek(3.25)
 	%Goose.speak(\"YOU'LL NEVER TAKE MY NEST EGG!!!!\")
-	await TaskMgr.delay(3.0)
+	await Task.delay(3.0)
 	begin_game()
 
 func get_random_object_time() -> float:
@@ -194,13 +193,13 @@ func begin_game() -> void:
 	AudioManager.set_music(BOSS_MUSIC)
 	button_quota = get_button_quota()
 	randomize_conveyor_speed()
-	stomper_task_id = TaskMgr.delayed_call(get_random_stomp_time(), random_stomp)
-	obj_task_id = TaskMgr.delayed_call(get_random_object_time(), spawn_random_obj)
+	stomper_task = Task.delayed_call(self, get_random_stomp_time(), random_stomp)
+	obj_task = Task.delayed_call(self, get_random_object_time(), spawn_random_obj)
 
 func random_stomp(add_task := true) -> void:
 	var available_stompers: Array[Node3D] = game_stompers.filter(func(x: Node3D): return x not in active_stompers)
 	if add_task:
-		stomper_task_id = TaskMgr.delayed_call(get_random_stomp_time(), random_stomp)
+		stomper_task = Task.delayed_call(self, get_random_stomp_time(), random_stomp)
 	if available_stompers.size() == 0:
 		return
 
@@ -244,7 +243,7 @@ func deal_damage() -> void:
 		%GooseStomper.floor_position -= 0.58
 		%EntranceStomper.do_stomp()
 	%GooseStomper.do_stomp()
-	await TaskMgr.delay(0.09)
+	await Task.delay(0.09)
 	if health > 0:
 		AudioManager.play_sound(SFX_HIT)
 		%Goose.set_animation(\"slip-backward\")
@@ -253,7 +252,7 @@ func deal_damage() -> void:
 			Wait.new(0.7),
 			LerpProperty.new(%Goose, ^\"scale\", 0.7, Vector3.ONE).interp(Tween.EASE_OUT, Tween.TRANS_BOUNCE),
 		]).as_tween(self)
-		await TaskMgr.delay(2.0)
+		await Task.delay(2.0)
 		%Goose.speak(RandomService.array_pick_random('golden_goose', HIT_DIALOGUE))
 		randomize_conveyor_speed()
 		AudioManager.play_sound(SFX_SWAP)
@@ -263,12 +262,11 @@ func deal_damage() -> void:
 func win_game() -> void:
 	Util.stuck_lock = false
 	conveyor_speed = 0
-	if stomper_task_id != 0:
-		TaskMgr.cancel_task(stomper_task_id)
-		stomper_task_id = 0
-	if obj_task_id != 0:
-		TaskMgr.cancel_task(obj_task_id)
-		obj_task_id = 0
+	if stomper_task:
+		stomper_task = stomper_task.cancel()
+	if obj_task:
+		obj_task = obj_task.cancel()
+
 	make_explosion(%Goose.global_position)
 	%Goose.hide()
 	# Move it physically so that the collision doesn't stick around
@@ -298,7 +296,7 @@ func spawn_random_obj() -> void:
 		button_quota = get_button_quota()
 		is_button = true
 
-	obj_task_id = TaskMgr.delayed_call(get_random_object_time(), spawn_random_obj)
+	obj_task = Task.delayed_call(self, get_random_object_time(), spawn_random_obj)
 	var side: String = RandomService.array_pick_random('golden_goose', [\"a\", \"b\"])
 	var spawn_point: Node3D
 	var obj_arr: Array[Node3D]
@@ -331,12 +329,10 @@ func get_button_quota() -> int:
 	return 8 + (get_missing_health() * 8)
 
 func _exit_tree() -> void:
-	if stomper_task_id != 0:
-		TaskMgr.cancel_task(stomper_task_id)
-		stomper_task_id = 0
-	if obj_task_id != 0:
-		TaskMgr.cancel_task(obj_task_id)
-		obj_task_id = 0
+	if stomper_task:
+		stomper_task = stomper_task.cancel()
+	if obj_task:
+		obj_task = obj_task.cancel()
 	stomper_tweens = {}
 
 func make_explosion(pos: Vector3) -> void:
@@ -552,7 +548,7 @@ unique_name_in_owner = true
 transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 0, 0, -3.57613)
 constant_linear_velocity = Vector3(0, 0, 0)
 size = Vector3(1.7, 1, 13.6)
-platform_mat = SubResource("StandardMaterial3D_ec20k")
+platform_mat = SubResource("StandardMaterial3D_t71be")
 speed = 0.0
 
 [node name="CB2" parent="." index="9" instance=ExtResource("4_dm27t")]
@@ -560,7 +556,7 @@ unique_name_in_owner = true
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0, 1.65557)
 constant_linear_velocity = Vector3(0, 0, 0)
 size = Vector3(1.7, 1, 13.6)
-platform_mat = SubResource("StandardMaterial3D_77wh2")
+platform_mat = SubResource("StandardMaterial3D_pu46h")
 speed = 0.0
 
 [node name="BeginColl" type="Area3D" parent="." index="10"]

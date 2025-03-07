@@ -1,9 +1,9 @@
 [gd_scene load_steps=32 format=4 uid="uid://c3mhx0wv5stqs"]
 
-[ext_resource type="Script" path="res://scenes/elevator_scene/elevator_scene.gd" id="1_vjcem"]
-[ext_resource type="Script" path="res://scenes/elevator_scene/elevator_cam.gd" id="2_mmofx"]
+[ext_resource type="Script" uid="uid://dlk5wd2afjmxw" path="res://scenes/elevator_scene/elevator_scene.gd" id="1_vjcem"]
+[ext_resource type="Script" uid="uid://baosi3a5wl8b6" path="res://scenes/elevator_scene/elevator_cam.gd" id="2_mmofx"]
 [ext_resource type="PackedScene" uid="uid://dt42sn63or30c" path="res://scenes/elevator_scene/ui/elevator_ui.tscn" id="5_6p32t"]
-[ext_resource type="Script" path="res://objects/interactables/elevators/elevator.gd" id="6_gseco"]
+[ext_resource type="Script" uid="uid://cpinallk62oiy" path="res://objects/interactables/elevators/elevator.gd" id="6_gseco"]
 [ext_resource type="Texture2D" uid="uid://b2hxebb448x04" path="res://models/props/facility_objects/transporters/mint_elevator/mint_elevator_LocomotiveSide5.png" id="7_ksrjc"]
 [ext_resource type="Texture2D" uid="uid://64imno2syur0" path="res://models/props/facility_objects/transporters/mint_elevator/mint_elevator_CFOCeiling2.png" id="8_pr6bg"]
 [ext_resource type="Texture2D" uid="uid://bnujcjend7bf4" path="res://models/props/facility_objects/transporters/mint_elevator/mint_elevator_CBWallVault.png" id="9_74pqk"]
@@ -335,9 +335,9 @@ tracks/1/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_wqteh"]
 _data = {
-"RESET": SubResource("Animation_trk4b"),
-"close": SubResource("Animation_lw53s"),
-"open": SubResource("Animation_hbroo")
+&"RESET": SubResource("Animation_trk4b"),
+&"close": SubResource("Animation_lw53s"),
+&"open": SubResource("Animation_hbroo")
 }
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_njuld"]

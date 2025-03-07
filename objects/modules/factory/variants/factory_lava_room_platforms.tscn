@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://gbm60bnjeeq3"]
 
 [ext_resource type="PackedScene" uid="uid://c08pimp6mot52" path="res://objects/modules/factory/base_rooms/factory_lava_room.tscn" id="1_nti1m"]
-[ext_resource type="Script" path="res://objects/obstacles/rhythm_platforms/rhythm_platform_controller_jump.gd" id="2_p8esm"]
+[ext_resource type="Script" uid="uid://55c7paqxurld" path="res://objects/obstacles/rhythm_platforms/rhythm_platform_controller_jump.gd" id="2_p8esm"]
 [ext_resource type="PackedScene" uid="uid://d27k2kv2tqtcu" path="res://objects/obstacles/rhythm_platforms/rhythm_platform_sink.tscn" id="3_kad3l"]
 [ext_resource type="PackedScene" uid="uid://dxyq5lb5oineo" path="res://objects/interactables/treasure_chest/treasure_chest.tscn" id="4_f8sdh"]
 

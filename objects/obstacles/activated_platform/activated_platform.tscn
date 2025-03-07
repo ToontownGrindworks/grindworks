@@ -1,7 +1,7 @@
 [gd_scene load_steps=8 format=3 uid="uid://c3dlpvi042k41"]
 
 [ext_resource type="PackedScene" uid="uid://d0o37sg2xvqe6" path="res://models/props/facility_objects/conveyor_platform/platform.glb" id="1_7h0d3"]
-[ext_resource type="Script" path="res://objects/obstacles/activated_platform/activated_platform.gd" id="2_65cwc"]
+[ext_resource type="Script" uid="uid://bm5n88pudkmxj" path="res://objects/obstacles/activated_platform/activated_platform.gd" id="2_65cwc"]
 [ext_resource type="Texture2D" uid="uid://b1lwy5glu10he" path="res://models/props/facility_objects/conveyor_platform/platform_CVBeltEdge.png" id="3_dt2sh"]
 [ext_resource type="Texture2D" uid="uid://bj0ye0oxq1fea" path="res://models/props/facility_objects/conveyor_platform/platform_CVBelt1.png" id="4_kchoq"]
 

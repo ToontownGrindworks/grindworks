@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://b3pi12n08d0rr"]
 
 [ext_resource type="Texture2D" uid="uid://b8e2d36iurpr" path="res://ui_assets/quests/dice_buttons/dice_button1.png" id="1_tneho"]
-[ext_resource type="Script" path="res://objects/items/custom/quest_reroll/quest_reroll.gd" id="2_dbkr3"]
+[ext_resource type="Script" uid="uid://rgepmr8i304p" path="res://objects/items/custom/quest_reroll/quest_reroll.gd" id="2_dbkr3"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_gwn6r"]
 transparency = 1

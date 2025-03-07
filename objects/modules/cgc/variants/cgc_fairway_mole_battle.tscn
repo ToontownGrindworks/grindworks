@@ -2,10 +2,10 @@
 
 [ext_resource type="PackedScene" uid="uid://ch3xs1d1lu117" path="res://objects/modules/cgc/base_rooms/golfcourse_fairway.tscn" id="1_wgrec"]
 [ext_resource type="PackedScene" uid="uid://b3p8q3fhmuo35" path="res://objects/props/cgc/resizeable_hedge_cube.tscn" id="2_a6ih3"]
-[ext_resource type="Script" path="res://objects/modules/cgc/variants/cgc_fence_gate.gd" id="3_rq37w"]
+[ext_resource type="Script" uid="uid://h0b48xrci8d6" path="res://objects/modules/cgc/variants/cgc_fence_gate.gd" id="3_rq37w"]
 [ext_resource type="PackedScene" uid="uid://5m1a0suouie8" path="res://objects/props/cgc/fence_with_end.tscn" id="4_ysap5"]
 [ext_resource type="PackedScene" uid="uid://bwu5l3d7uncro" path="res://objects/props/cgc/hedge_pillar_spiked.tscn" id="5_4i0my"]
-[ext_resource type="Script" path="res://objects/interactables/mole_stomp/mole_stomp.gd" id="6_hp252"]
+[ext_resource type="Script" uid="uid://dyt7mhhg2lwrv" path="res://objects/interactables/mole_stomp/mole_stomp.gd" id="6_hp252"]
 [ext_resource type="PackedScene" uid="uid://pn7r3ut085aw" path="res://objects/props/cgc/hedge_pillar.tscn" id="6_wbdd7"]
 [ext_resource type="PackedScene" uid="uid://direah3lbjuu5" path="res://objects/battle/battle_node/battle_node.tscn" id="8_kcvi5"]
 [ext_resource type="PackedScene" uid="uid://dflwjcy6fj0av" path="res://objects/cog/cog.tscn" id="9_1ainf"]

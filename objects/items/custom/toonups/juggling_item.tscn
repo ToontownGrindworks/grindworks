@@ -1,7 +1,7 @@
 [gd_scene load_steps=12 format=4 uid="uid://d3nmg5rjfpsf"]
 
 [ext_resource type="Texture2D" uid="uid://cca61qrvfggks" path="res://models/props/gags/cubes/cubes_juggling_cube_3.png" id="1_b7etq"]
-[ext_resource type="Script" path="res://objects/items/custom/item_toonup_pickup.gd" id="1_rl24i"]
+[ext_resource type="Script" uid="uid://xsesvqbgiawt" path="res://objects/items/custom/item_toonup_pickup.gd" id="1_rl24i"]
 [ext_resource type="Texture2D" uid="uid://cvpaqkexcf861" path="res://models/props/gags/cubes/cubes_juggling_cube_2.png" id="2_sqh3c"]
 [ext_resource type="Texture2D" uid="uid://cyhmxktk82rwp" path="res://models/props/gags/cubes/cubes_juggling_cube_1.png" id="3_uqlgi"]
 

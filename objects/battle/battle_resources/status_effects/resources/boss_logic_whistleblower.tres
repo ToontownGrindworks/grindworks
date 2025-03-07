@@ -1,6 +1,6 @@
 [gd_resource type="Resource" load_steps=2 format=3 uid="uid://bq2178jc2wy8h"]
 
-[ext_resource type="Script" path="res://objects/battle/battle_resources/status_effects/boss_effects/boss_logic_whistleblower.gd" id="1_6jpp5"]
+[ext_resource type="Script" uid="uid://b3x744mc80w8n" path="res://objects/battle/battle_resources/status_effects/boss_effects/boss_logic_whistleblower.gd" id="1_6jpp5"]
 
 [resource]
 script = ExtResource("1_6jpp5")

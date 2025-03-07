@@ -1,9 +1,9 @@
 [gd_resource type="Resource" script_class="ItemAccessory" load_steps=9 format=3 uid="uid://crdgysckbi0r"]
 
-[ext_resource type="Script" path="res://objects/items/classes/accessory_placement.gd" id="1_36wjr"]
+[ext_resource type="Script" uid="uid://fb0tqfojo57q" path="res://objects/items/classes/accessory_placement.gd" id="1_36wjr"]
 [ext_resource type="PackedScene" uid="uid://ddauh2tpm4q3t" path="res://models/accessories/backpacks/bat_wings/tt_m_chr_avt_acc_pac_batWings.glb" id="2_lkame"]
-[ext_resource type="Script" path="res://objects/items/classes/item_accessory.gd" id="2_wrirq"]
-[ext_resource type="Script" path="res://objects/items/classes/body_placement.gd" id="2_x6rgu"]
+[ext_resource type="Script" uid="uid://dvu24b3o8i3sj" path="res://objects/items/classes/item_accessory.gd" id="2_wrirq"]
+[ext_resource type="Script" uid="uid://duxq3xtgnln43" path="res://objects/items/classes/body_placement.gd" id="2_x6rgu"]
 [ext_resource type="Texture2D" uid="uid://6fm8ne12w47v" path="res://models/accessories/backpacks/bat_wings/tt_m_chr_avt_acc_pac_batWings.glb-pix-1.png" id="3_jpgnc"]
 
 [sub_resource type="Resource" id="Resource_bcdov"]
@@ -30,8 +30,8 @@ scale = Vector3(0.6, 0.6, 0.6)
 [resource]
 script = ExtResource("2_wrirq")
 accessory_placements = Array[ExtResource("1_36wjr")]([SubResource("Resource_bcdov"), SubResource("Resource_8f25r"), SubResource("Resource_hv6iv")])
-qualitoon = 4
-qualitoon_rarity = 6
+qualitoon = 3
+rarity = 0
 evergreen = false
 realtime = false
 slot = 3

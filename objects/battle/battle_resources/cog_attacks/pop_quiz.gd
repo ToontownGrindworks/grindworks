@@ -23,7 +23,7 @@ func action() -> void:
 	var question := get_question()
 	user.speak(".")
 	user.speak(question[0])
-	await TaskMgr.delay(4.0)
+	await Task.delay(4.0)
 	battle_node.focus_character(player)
 	
 	# Create the panel 

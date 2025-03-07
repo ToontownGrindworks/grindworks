@@ -1,12 +1,12 @@
 [gd_resource type="Resource" script_class="Item" load_steps=3 format=3 uid="uid://cbjesspt1h0ts"]
 
 [ext_resource type="PackedScene" uid="uid://dv8i1reerxfpp" path="res://objects/items/custom/point_boost/point_boost.tscn" id="1_tn7fb"]
-[ext_resource type="Script" path="res://objects/items/classes/item.gd" id="2_mxr2c"]
+[ext_resource type="Script" uid="uid://combwqypom1ru" path="res://objects/items/classes/item.gd" id="2_mxr2c"]
 
 [resource]
 script = ExtResource("2_mxr2c")
-qualitoon = 5
-qualitoon_rarity = 6
+qualitoon = 4
+rarity = 0
 evergreen = true
 realtime = false
 slot = 0

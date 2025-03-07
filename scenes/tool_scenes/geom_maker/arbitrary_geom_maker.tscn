@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://bwobvby6yf4mn"]
 
-[ext_resource type="Script" path="res://scenes/tool_scenes/geom_maker/arbitrary_geom_maker.gd" id="1_iketc"]
+[ext_resource type="Script" uid="uid://c3lvheg5yeme4" path="res://scenes/tool_scenes/geom_maker/arbitrary_geom_maker.gd" id="1_iketc"]
 
 [sub_resource type="Environment" id="Environment_2diyl"]
 ambient_light_source = 2

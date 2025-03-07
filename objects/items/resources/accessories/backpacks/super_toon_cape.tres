@@ -1,8 +1,8 @@
 [gd_resource type="Resource" script_class="ItemAccessory" load_steps=9 format=3 uid="uid://dbbwxcnrbpxum"]
 
-[ext_resource type="Script" path="res://objects/items/classes/accessory_placement.gd" id="1_fylvi"]
-[ext_resource type="Script" path="res://objects/items/classes/body_placement.gd" id="2_57qhe"]
-[ext_resource type="Script" path="res://objects/items/classes/item_accessory.gd" id="2_m3eda"]
+[ext_resource type="Script" uid="uid://fb0tqfojo57q" path="res://objects/items/classes/accessory_placement.gd" id="1_fylvi"]
+[ext_resource type="Script" uid="uid://duxq3xtgnln43" path="res://objects/items/classes/body_placement.gd" id="2_57qhe"]
+[ext_resource type="Script" uid="uid://dvu24b3o8i3sj" path="res://objects/items/classes/item_accessory.gd" id="2_m3eda"]
 [ext_resource type="Texture2D" uid="uid://dt4t5fwqx07lh" path="res://models/accessories/backpacks/supertoon_cape/cape_centered-pix-1.png" id="3_jmb86"]
 [ext_resource type="PackedScene" uid="uid://ulji1om2heto" path="res://models/accessories/backpacks/supertoon_cape/cape_centered.tscn" id="3_seq16"]
 
@@ -30,8 +30,8 @@ scale = Vector3(0.3, 0.3, 0.4)
 [resource]
 script = ExtResource("2_m3eda")
 accessory_placements = Array[ExtResource("1_fylvi")]([SubResource("Resource_ryjws"), SubResource("Resource_2cphq"), SubResource("Resource_mw3is")])
-qualitoon = 3
-qualitoon_rarity = 6
+qualitoon = 1
+rarity = 0
 evergreen = false
 realtime = false
 slot = 3

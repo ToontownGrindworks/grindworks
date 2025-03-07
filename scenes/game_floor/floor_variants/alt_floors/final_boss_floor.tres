@@ -1,8 +1,8 @@
 [gd_resource type="Resource" script_class="FloorVariant" load_steps=5 format=3 uid="uid://bbpyhg16jluas"]
 
 [ext_resource type="PackedScene" uid="uid://djdspcssaqo6b" path="res://scenes/final_boss/barrel_room.tscn" id="1_0mwni"]
-[ext_resource type="Script" path="res://objects/modules/facility_room.gd" id="1_luhji"]
-[ext_resource type="Script" path="res://scenes/game_floor/floor_variants/floor_variant.gd" id="1_u2mkg"]
+[ext_resource type="Script" uid="uid://dhyadt7p1gv78" path="res://objects/modules/facility_room.gd" id="1_luhji"]
+[ext_resource type="Script" uid="uid://cxvrtrods5hgg" path="res://scenes/game_floor/floor_variants/floor_variant.gd" id="1_u2mkg"]
 [ext_resource type="Texture2D" uid="uid://tyjutuxwdlop" path="res://ui_assets/quests/gear2.png" id="1_ylmf6"]
 
 [resource]

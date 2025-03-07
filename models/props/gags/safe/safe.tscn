@@ -139,7 +139,7 @@ tracks/2/keys = PackedFloat32Array(0, 1, 8.142, 11.4462, 8.142, 0.0666667, 1, 8.
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_c1dfj"]
 _data = {
-"drop": SubResource("Animation_7ywsc")
+&"drop": SubResource("Animation_7ywsc")
 }
 
 [node name="safe2" type="Node3D"]

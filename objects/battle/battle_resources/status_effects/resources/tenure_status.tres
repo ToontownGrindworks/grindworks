@@ -1,13 +1,12 @@
 [gd_resource type="Resource" script_class="StatusEffect" load_steps=3 format=3 uid="uid://bos0wcgjeyg4w"]
 
-[ext_resource type="Script" path="res://objects/battle/battle_resources/status_effect.gd" id="1_b7pkp"]
+[ext_resource type="Script" uid="uid://df7irk63ikx4k" path="res://objects/battle/battle_resources/status_effect.gd" id="1_b7pkp"]
 [ext_resource type="Texture2D" uid="uid://ba1vx24ltymxg" path="res://ui_assets/battle/statuses/tenure.png" id="1_jk6dk"]
 
 [resource]
 script = ExtResource("1_b7pkp")
 quality = 0
 rounds = -1
-requires_user = false
 icon = ExtResource("1_jk6dk")
 icon_color = Color(1, 1, 1, 1)
 icon_scale = 1.0

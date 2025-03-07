@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="CogDNA" load_steps=12 format=3 uid="uid://cujwm36qft7u2"]
 
-[ext_resource type="Script" path="res://objects/battle/battle_resources/cog_attacks/cog_attack.gd" id="1_atffr"]
+[ext_resource type="Script" uid="uid://bb27him60xtnk" path="res://objects/battle/battle_resources/cog_attacks/cog_attack.gd" id="1_atffr"]
 [ext_resource type="Resource" uid="uid://dimhdaxn1tyey" path="res://objects/battle/battle_resources/cog_attacks/resources/tee_off.tres" id="2_u2ujs"]
 [ext_resource type="Resource" uid="uid://bhl72hd7pn8s2" path="res://objects/battle/battle_resources/cog_attacks/resources/workout.tres" id="3_7djn3"]
 [ext_resource type="Texture2D" uid="uid://2fj5qbvh3qa1" path="res://models/cogs/textures/misc/sleeve_2.png" id="4_4mwjw"]
@@ -8,8 +8,8 @@
 [ext_resource type="Texture2D" uid="uid://o3hrfvdxeisb" path="res://models/cogs/textures/misc/leg_4.png" id="6_v3q7d"]
 [ext_resource type="PackedScene" uid="uid://i3q2b1jvfc74" path="res://models/cogs/heads/yesman.glb" id="7_0olyk"]
 [ext_resource type="Texture2D" uid="uid://3iek0b78cpre" path="res://models/cogs/heads/bigshot.png" id="8_7strd"]
-[ext_resource type="Script" path="res://objects/cog/cogdna.gd" id="9_tigo6"]
-[ext_resource type="Script" path="res://objects/battle/battle_resources/status_effect.gd" id="10_4me7h"]
+[ext_resource type="Script" uid="uid://okjbx502s3r5" path="res://objects/cog/cogdna.gd" id="9_tigo6"]
+[ext_resource type="Script" uid="uid://df7irk63ikx4k" path="res://objects/battle/battle_resources/status_effect.gd" id="10_4me7h"]
 [ext_resource type="Resource" uid="uid://b4vuuxwhv0d3v" path="res://objects/battle/battle_resources/status_effects/resources/status_effect_mod_cog.tres" id="11_7i0ub"]
 
 [resource]
@@ -39,6 +39,6 @@ is_admin = false
 health_mod = 1.0
 battle_phrases = Array[String](["Shoot for the moon, and you might get to my level.", "This is going to leave a mark.", "I'll leave a crater where you stand.", "Houston, you have a problem.", "One small step for me, one giant leap for Cogs Inc."])
 external_assets = {
-"head_model": "",
-"head_textures": []
+&"head_model": "",
+&"head_textures": []
 }

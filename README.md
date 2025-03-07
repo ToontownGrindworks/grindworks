@@ -5,7 +5,7 @@ This is a single-player game based on Disney's Toontown Online developed with th
 
 ## Requirements
 
-- Godot v4.3
+- Godot v4.4
 
 ## Disclaimer
 - We are under no obligation to:
@@ -52,6 +52,8 @@ Enjoy!
   - Writer & Designer
 - LadyMisticus
   - Writer & Character Designer
+- StuckTheDuck
+  - Writer
 - Niko Frost
   - Quality Assurance
 - Raine
@@ -66,5 +68,4 @@ Enjoy!
 - Goatcanon
 - Greetings
 - Princess Sandy
-- StuckTheDuck
 - You! Yes, really.

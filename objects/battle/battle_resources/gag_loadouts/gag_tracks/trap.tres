@@ -1,9 +1,9 @@
 [gd_resource type="Resource" script_class="Track" load_steps=33 format=3 uid="uid://5dld88ul3rb5"]
 
-[ext_resource type="Script" path="res://objects/battle/battle_resources/toon_attacks/toon_attack.gd" id="1_jr3yh"]
+[ext_resource type="Script" uid="uid://cwnjrxjvy5kc3" path="res://objects/battle/battle_resources/toon_attacks/toon_attack.gd" id="1_jr3yh"]
 [ext_resource type="Texture2D" uid="uid://d3s8uol0n1834" path="res://ui_assets/battle/gags/inventory_bannana_peel.png" id="2_havg1"]
 [ext_resource type="PackedScene" uid="uid://dha1jvcr7co3d" path="res://models/props/gags/banana_peel/banana_peel.tscn" id="3_u2s4r"]
-[ext_resource type="Script" path="res://objects/battle/battle_resources/toon_attacks/trap_toss.gd" id="4_swcev"]
+[ext_resource type="Script" uid="uid://cgs0v0f7jhwsc" path="res://objects/battle/battle_resources/toon_attacks/trap_toss.gd" id="4_swcev"]
 [ext_resource type="AudioStream" uid="uid://ckic65w7wfr7l" path="res://audio/sfx/battle/gags/trap/TL_banana.ogg" id="5_1x2ri"]
 [ext_resource type="Texture2D" uid="uid://c4vottciuoo6o" path="res://ui_assets/battle/gags/inventory_rake.png" id="6_1ymct"]
 [ext_resource type="PackedScene" uid="uid://cavvmjdli6ww1" path="res://models/props/gags/rake/rake.tscn" id="7_k4nyl"]
@@ -13,7 +13,7 @@
 [ext_resource type="AudioStream" uid="uid://cgfiap65t8c7o" path="res://audio/sfx/battle/gags/trap/TL_marbles.ogg" id="11_0ofh8"]
 [ext_resource type="Texture2D" uid="uid://b738dk1seameu" path="res://ui_assets/battle/gags/inventory_quicksand_icon.png" id="12_wo0sp"]
 [ext_resource type="PackedScene" uid="uid://bsjwo3t3pgtyw" path="res://models/props/gags/quicksand/quicksand.glb" id="13_ab7jr"]
-[ext_resource type="Script" path="res://objects/battle/battle_resources/toon_attacks/trap_fall.gd" id="14_p7agb"]
+[ext_resource type="Script" uid="uid://cadbacipbjc11" path="res://objects/battle/battle_resources/toon_attacks/trap_fall.gd" id="14_p7agb"]
 [ext_resource type="AudioStream" uid="uid://bxcb1bvyobtls" path="res://audio/sfx/battle/gags/trap/TL_quicksand.ogg" id="15_ke5jd"]
 [ext_resource type="Texture2D" uid="uid://dllr28f4s08g" path="res://ui_assets/battle/gags/inventory_trapdoor.png" id="16_knhxa"]
 [ext_resource type="PackedScene" uid="uid://54b8v4xqohhn" path="res://models/props/gags/trapdoor/trapdoor.glb" id="17_815db"]
@@ -24,7 +24,7 @@
 [ext_resource type="PackedScene" uid="uid://dsgjdbl5ivwss" path="res://models/props/gags/tnt/tnt.tscn" id="20_xkotm"]
 [ext_resource type="AudioStream" uid="uid://b6fgn0i8wr1pk" path="res://audio/sfx/battle/gags/trap/TL_dynamite.ogg" id="21_dfefd"]
 [ext_resource type="AudioStream" uid="uid://d1fg8oarn1xpo" path="res://audio/sfx/toon/AV_teleport.ogg" id="21_uwxdx"]
-[ext_resource type="Script" path="res://objects/battle/battle_resources/gag_loadouts/track.gd" id="22_lrt3n"]
+[ext_resource type="Script" uid="uid://b6b6pfoqyolr" path="res://objects/battle/battle_resources/gag_loadouts/track.gd" id="22_lrt3n"]
 
 [sub_resource type="Resource" id="Resource_73lf0"]
 script = ExtResource("4_swcev")

@@ -1,6 +1,6 @@
 [gd_resource type="Resource" load_steps=2 format=3 uid="uid://5u54fycyoltu"]
 
-[ext_resource type="Script" path="res://objects/battle/battle_resources/misc_movies/goon_boss/goon_phase2.gd" id="1_tgx02"]
+[ext_resource type="Script" uid="uid://hbvshdcva80q" path="res://objects/battle/battle_resources/misc_movies/goon_boss/goon_phase2.gd" id="1_tgx02"]
 
 [resource]
 script = ExtResource("1_tgx02")

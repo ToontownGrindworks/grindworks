@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="AchievementQuota" load_steps=3 format=3 uid="uid://b8c8x8gnniev"]
 
-[ext_resource type="Script" path="res://objects/save_file/achievements/quota_achievement.gd" id="1_0fxjp"]
+[ext_resource type="Script" uid="uid://bma611yu4pdu8" path="res://objects/save_file/achievements/quota_achievement.gd" id="1_0fxjp"]
 [ext_resource type="Texture2D" uid="uid://4c2i3i1jtdfg" path="res://ui_assets/achievements/icon_achievement_gear2.png" id="1_21q50"]
 
 [resource]

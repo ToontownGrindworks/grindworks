@@ -1,7 +1,7 @@
 [gd_scene load_steps=8 format=3 uid="uid://ciabqn4r1h12x"]
 
-[ext_resource type="Script" path="res://objects/battle/misc_battle_objects/static_meter/static_meter.gd" id="1_ysewc"]
-[ext_resource type="Shader" path="res://objects/battle/misc_battle_objects/static_meter/static_meter.gdshader" id="2_7osf2"]
+[ext_resource type="Script" uid="uid://brn0a8d5qj76c" path="res://objects/battle/misc_battle_objects/static_meter/static_meter.gd" id="1_ysewc"]
+[ext_resource type="Shader" uid="uid://ceacskf8dckie" path="res://objects/battle/misc_battle_objects/static_meter/static_meter.gdshader" id="2_7osf2"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_87x6g"]
 bg_color = Color(0.6, 0.6, 0.6, 0)
@@ -24,10 +24,10 @@ noise = SubResource("FastNoiseLite_br5r3")
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_8kea5"]
 shader = ExtResource("2_7osf2")
 shader_parameter/ratio = 0.0
+shader_parameter/meter_tex = SubResource("NoiseTexture2D_3hxfv")
 shader_parameter/wave_speed = 5.0
 shader_parameter/wave_period = 8.0
 shader_parameter/wave_amplitude = 0.05
-shader_parameter/meter_tex = SubResource("NoiseTexture2D_3hxfv")
 
 [node name="StaticMeter" type="Panel"]
 anchors_preset = 11

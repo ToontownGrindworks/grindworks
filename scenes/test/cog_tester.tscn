@@ -2,7 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://k8r4dwm2bay5" path="res://objects/modules/office/base_rooms/office_entrance.tscn" id="1_pqm5n"]
 [ext_resource type="PackedScene" uid="uid://dflwjcy6fj0av" path="res://objects/cog/cog.tscn" id="2_gqgwy"]
-[ext_resource type="Script" path="res://scenes/test/cog_tester.gd" id="2_rxi8i"]
+[ext_resource type="Script" uid="uid://dsfdyywdrayhv" path="res://scenes/test/cog_tester.gd" id="2_rxi8i"]
 [ext_resource type="PackedScene" uid="uid://wpoc3xs1yy0" path="res://objects/player/player.tscn" id="4_5lgf2"]
 [ext_resource type="Resource" uid="uid://b2numr2pojy1o" path="res://objects/cog/presets/bossbot/mole_cog.tres" id="4_7v8nx"]
 [ext_resource type="Resource" uid="uid://bkkkabh3sre13" path="res://objects/cog/presets/cashbot/bookkeeper.tres" id="5_uvf8j"]

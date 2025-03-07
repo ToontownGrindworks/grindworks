@@ -25,6 +25,7 @@ func start(time: float) -> void:
 func _process(_delta) -> void:
 	if timer:
 		$TimeLabel.set_text(str(int(floor(timer.time_left))))
+		%TimeLabel.label_settings.font_color = Color.RED if timer.time_left <= 6 else Color.BLACK
 
 func scale_pop() -> void:
 	tween = Sequence.new([

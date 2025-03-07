@@ -18,12 +18,14 @@ signal s_gained_money
 @export var items: Array[Item] = []
 
 ## Gag Dicts
-@export var gags_unlocked := {}
-@export var gag_balance := {}
-@export var gag_effectiveness := {}
-@export var gag_regeneration := {}
-@export var gag_vouchers := {}
-@export var toonups := {0: 1, 1: 1, 2: 1, 3: 1, 4: 1, 5: 1, 6: 0}
+@export var gags_unlocked: Dictionary[String, int] = {}
+@export var gag_balance: Dictionary[String, int] = {}
+@export var gag_effectiveness: Dictionary[String, float] = {}
+@export var gag_regeneration: Dictionary[String, int] = {}
+@export var gag_vouchers: Dictionary[String, int] = {}
+@export var gag_battle_start_point_boost: Dictionary[String, int] = {}
+@export var global_battle_start_point_boost := 0
+@export var toonups: Dictionary[int, int] = {0: 1, 1: 1, 2: 1, 3: 1, 4: 1, 5: 1, 6: 0}
 
 @export var gag_cap := 10
 @export var gag_discount := -1
@@ -57,14 +59,17 @@ signal s_luck_changed(new_luck: float)
 
 @export var proxy_chance_boost := 0.0
 
+# How low do cogs HP need to be to die?
+@export var cog_hp_death_threshold := 0.0
+
 ## Sets the player's base gag loadout
 func set_loadout(loadout: GagLoadout) -> void:
-	var gag_dicts := [gags_unlocked, gag_balance, gag_effectiveness, gag_regeneration, gag_vouchers]
+	var gag_dicts := [gags_unlocked, gag_balance, gag_effectiveness, gag_regeneration, gag_vouchers, gag_battle_start_point_boost]
 	for dict in gag_dicts:
 		dict.clear()
 		var value 
 		match gag_dicts.find(dict):
-			0: value = 0
+			0, 5: value = 0
 			1: value = 10
 			2: value = 1.0
 			3: value = 1
@@ -118,6 +123,13 @@ func on_round_end(_battle: BattleManager) -> void:
 		if not gags_unlocked[track] > 0: continue
 		if gag_regeneration.has(track):
 			restock(track, gag_regeneration[track])
+
+func on_battle_started(_battle: BattleManager) -> void:
+	for track in gag_balance.keys():
+		if not gags_unlocked[track] > 0: continue
+		var value: int = gag_battle_start_point_boost.get(track, 0) + global_battle_start_point_boost
+		if value != 0:
+			restock(track, value)
 
 func restock(track: String, add: int) -> void:
 	gag_balance[track] = min(gag_cap, gag_balance[track] + add)

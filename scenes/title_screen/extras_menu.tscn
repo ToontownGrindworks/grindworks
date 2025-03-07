@@ -1,14 +1,14 @@
 [gd_scene load_steps=18 format=3 uid="uid://bwdn2t1oigag7"]
 
 [ext_resource type="PackedScene" uid="uid://d1qs8nf0s0y85" path="res://objects/general_ui/ui_panel/ui_panel.tscn" id="1_7bpdw"]
-[ext_resource type="Script" path="res://scenes/title_screen/extras_menu.gd" id="2_viv07"]
+[ext_resource type="Script" uid="uid://d10r3s4w1xom0" path="res://scenes/title_screen/extras_menu.gd" id="2_viv07"]
 [ext_resource type="Texture2D" uid="uid://ddlydc15tuxe3" path="res://ui_assets/general/tt_t_gui_mat_closeUp.png" id="2_vsop4"]
 [ext_resource type="FontFile" uid="uid://cup2yr5w7or1l" path="res://fonts/Minnie.TTF" id="3_e380h"]
 [ext_resource type="Texture2D" uid="uid://dkuel6g6u2cat" path="res://ui_assets/general/tt_t_gui_mat_closeDown.png" id="3_ie2hj"]
 [ext_resource type="PackedScene" uid="uid://b0d1er4oqiqcn" path="res://objects/general_ui/general_button/general_button.tscn" id="4_o8sud"]
 [ext_resource type="Texture2D" uid="uid://ddcktpjy3gdew" path="res://ui_assets/misc/uiAccessoryDelete_up.png" id="5_8c043"]
 [ext_resource type="FontFile" uid="uid://815gwlftl5ik" path="res://fonts/impress-bt.ttf" id="5_ihyn1"]
-[ext_resource type="Shader" path="res://scenes/title_screen/hue_shift.gdshader" id="6_eq33m"]
+[ext_resource type="Shader" uid="uid://ryrnfqn0ixe5" path="res://scenes/title_screen/hue_shift.gdshader" id="6_eq33m"]
 [ext_resource type="Texture2D" uid="uid://b7ri5sq021cvo" path="res://ui_assets/misc/uiAccessoryDelete_down.png" id="6_gqfi4"]
 [ext_resource type="Texture2D" uid="uid://dn8vndd37lqom" path="res://ui_assets/misc/uiAccessoryDelete_rollover.png" id="7_as4se"]
 

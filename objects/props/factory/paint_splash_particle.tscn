@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=3 uid="uid://4tnucrksbplv"]
 
 [ext_resource type="Texture2D" uid="uid://dagt56e2uov87" path="res://models/props/gags/storm_cloud/raindrop.png" id="1_kv5qd"]
-[ext_resource type="Script" path="res://objects/battle/effects/unite/unite.gd" id="2_hhrvr"]
+[ext_resource type="Script" uid="uid://2cpvx2566ywg" path="res://objects/battle/effects/unite/unite.gd" id="2_hhrvr"]
 
 [sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_hvd2s"]
 emission_shape = 2

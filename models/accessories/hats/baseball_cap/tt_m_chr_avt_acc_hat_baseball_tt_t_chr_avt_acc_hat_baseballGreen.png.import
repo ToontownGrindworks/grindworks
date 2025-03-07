@@ -2,13 +2,10 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c5xtlohf8nxj2"
+uid="uid://c7k6qvl8a1eic"
 path="res://.godot/imported/tt_m_chr_avt_acc_hat_baseball_tt_t_chr_avt_acc_hat_baseballGreen.png-5e366c33f1d605ab28d486ebc807ad8a.ctex"
 metadata={
 "vram_texture": false
-}
-generator_parameters={
-"md5": "540a45aae312e0e784570de8a7fdaac5"
 }
 
 [deps]
@@ -19,7 +16,7 @@ dest_files=["res://.godot/imported/tt_m_chr_avt_acc_hat_baseball_tt_t_chr_avt_ac
 [params]
 
 compress/mode=3
-compress/high_quality=false
+compress/high_quality=true
 compress/lossy_quality=0.7
 compress/hdr_compression=1
 compress/normal_map=0

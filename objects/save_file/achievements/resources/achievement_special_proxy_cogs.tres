@@ -1,7 +1,7 @@
 [gd_resource type="Resource" script_class="AchievementQuota" load_steps=3 format=3 uid="uid://1utalyif71ne"]
 
 [ext_resource type="Texture2D" uid="uid://bu4dg3d30h3sn" path="res://ui_assets/achievements/icon_achievement_proxy_cogs.png" id="1_g0ly7"]
-[ext_resource type="Script" path="res://objects/save_file/achievements/quota_achievement.gd" id="2_lh1wf"]
+[ext_resource type="Script" uid="uid://bma611yu4pdu8" path="res://objects/save_file/achievements/quota_achievement.gd" id="2_lh1wf"]
 
 [resource]
 script = ExtResource("2_lh1wf")

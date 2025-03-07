@@ -1,12 +1,12 @@
 [gd_resource type="Resource" script_class="Item" load_steps=3 format=3 uid="uid://bmfbgvlyor8tw"]
 
 [ext_resource type="PackedScene" uid="uid://liel1wnqugwq" path="res://objects/items/custom/toonups/pixie_item.tscn" id="1_tiwq4"]
-[ext_resource type="Script" path="res://objects/items/classes/item.gd" id="2_i3qd4"]
+[ext_resource type="Script" uid="uid://combwqypom1ru" path="res://objects/items/classes/item.gd" id="2_i3qd4"]
 
 [resource]
 script = ExtResource("2_i3qd4")
-qualitoon = 2
-qualitoon_rarity = 3
+qualitoon = 1
+rarity = 0
 evergreen = true
 realtime = false
 slot = 0
@@ -25,3 +25,4 @@ remember_item = false
 shop_category_title = "Consumable"
 shop_category_color = Color(0.105882, 0.54902, 0.537255, 1)
 force_show_shop_category = true
+custom_shop_price = 0

@@ -15,8 +15,6 @@ func setup(item : Item):
 		randomize_track()
 	else:
 		track = resource.arbitrary_data['track']
-	# Set name
-	resource.item_name = track + " Track Frame"
 	
 	# Color the mesh
 	var mesh_mat : StandardMaterial3D = mesh.surface_get_material(0).duplicate()
@@ -26,7 +24,8 @@ func setup(item : Item):
 
 func modify(ui : MeshInstance3D) -> void:
 	ui.set_surface_override_material(0,ui.mesh.surface_get_material(0).duplicate())
-	ui.get_surface_override_material(0).albedo_color = get_color()
+	ui.get_surface_override_material(0).albedo_texture = get_gag_got().icon
+	ui.get_surface_override_material(0).transparency = BaseMaterial3D.TRANSPARENCY_ALPHA
 
 # Weighted gag generation
 func randomize_track() -> void:
@@ -49,7 +48,8 @@ func get_color() -> Color:
 
 func collect() -> void:
 	Util.get_player().stats.gags_unlocked[track] += 1
-
+	resource.item_name = get_gag_got().action_name
+	resource.item_description = "New %s Gag!" % track
 func get_track(track_name : String) -> Track:
 	var loadout := Util.get_player().stats.character.gag_loadout
 	
@@ -75,3 +75,7 @@ func get_hat() -> Array[String]:
 			hat.erase(item.arbitrary_data['track'])
 	
 	return hat
+
+func get_gag_got() -> ToonAttack:
+	var gag_track := Util.get_player().stats.character.gag_loadout.get_track_of_name(track)
+	return gag_track.gags[Util.get_player().stats.gags_unlocked[track] - 1]

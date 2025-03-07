@@ -1,7 +1,7 @@
 [gd_scene load_steps=29 format=3 uid="uid://bqvkntyk0ljsq"]
 
 [ext_resource type="PackedScene" uid="uid://dbtow4wy8edpb" path="res://models/goon/goon.fbx" id="1_ctsld"]
-[ext_resource type="Script" path="res://objects/goon/goon.gd" id="2_3wkhj"]
+[ext_resource type="Script" uid="uid://didfhp7vr700l" path="res://objects/goon/goon.gd" id="2_3wkhj"]
 [ext_resource type="Animation" uid="uid://cwhd47wr6h4w2" path="res://models/goon/anim/collapse.res" id="2_h6tni"]
 [ext_resource type="Texture2D" uid="uid://cwswe81ry0mps" path="res://models/goon/goon_4.png" id="2_mcbp2"]
 [ext_resource type="Texture2D" uid="uid://c8wwphdgp12ee" path="res://models/goon/goon_light_0.png" id="3_2i708"]
@@ -496,15 +496,15 @@ tracks/59/keys = PackedFloat32Array(0, 1, 0.000743539, 0.707106, -0.000743539, 0
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_d38kg"]
 _data = {
-"RESET": SubResource("Animation_glo8x"),
-"alarm": ExtResource("14_jgnxe"),
-"collapse": ExtResource("2_h6tni"),
-"enraged": ExtResource("15_2oikq"),
-"lose": ExtResource("17_gabp8"),
-"neutral": ExtResource("16_tv4q3"),
-"recover": ExtResource("3_xgok1"),
-"spin": ExtResource("11_dovmi"),
-"walk": ExtResource("4_queaj")
+&"RESET": SubResource("Animation_glo8x"),
+&"alarm": ExtResource("14_jgnxe"),
+&"collapse": ExtResource("2_h6tni"),
+&"enraged": ExtResource("15_2oikq"),
+&"lose": ExtResource("17_gabp8"),
+&"neutral": ExtResource("16_tv4q3"),
+&"recover": ExtResource("3_xgok1"),
+&"spin": ExtResource("11_dovmi"),
+&"walk": ExtResource("4_queaj")
 }
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_ceabw"]
@@ -540,16 +540,16 @@ transform = Transform3D(1, 0, 4.89843e-16, 0, 1, 0, -4.89843e-16, 0, 1, 0, 0.064
 transform = Transform3D(1.20519, 0, 0, 0, 0.477247, 0, 0, 0, 1.20519, 0, 8.47048, 0.0979667)
 
 [node name="lft_kneeGear2_CNTRL" parent="goonie_CNTRLS/hip_CNTRL" index="1"]
-transform = Transform3D(0.24107, -0.066211, -0.00113115, 0.0662115, 0.241073, 1.59707e-07, 0.00109072, -0.000299737, 0.249997, 0.233028, -0.224795, 0.00709685)
+transform = Transform3D(0.24107, -0.066211, -0.00113116, 0.0662115, 0.241073, 1.59561e-07, 0.00109072, -0.000299737, 0.249997, 0.233028, -0.224795, 0.00709685)
 
 [node name="lft_kneeGear1_CNTRL" parent="goonie_CNTRLS/hip_CNTRL" index="2"]
-transform = Transform3D(0.241632, -0.064129, -0.00113115, 0.0641295, 0.241635, 1.60784e-07, 0.00109326, -0.000290317, 0.249997, 0.14479, -0.22477, 0.00669761)
+transform = Transform3D(0.241632, -0.064129, -0.00113115, 0.0641295, 0.241635, 1.60842e-07, 0.00109326, -0.000290317, 0.249997, 0.14479, -0.22477, 0.00669761)
 
 [node name="rt_kneeGear1_CNTRL" parent="goonie_CNTRLS/hip_CNTRL" index="3"]
-transform = Transform3D(0.239776, 0.0707652, 4.33551e-05, -0.0707652, 0.239776, 3.97449e-10, -4.15819e-05, -1.22725e-05, 0.25, -0.158442, -0.224782, 0.00689322)
+transform = Transform3D(0.239776, 0.0707652, 4.33551e-05, -0.0707652, 0.239776, 3.99723e-10, -4.15819e-05, -1.22725e-05, 0.25, -0.158442, -0.224782, 0.00689322)
 
 [node name="rt_kneeGear2_CNTRL" parent="goonie_CNTRLS/hip_CNTRL" index="4"]
-transform = Transform3D(0.238015, 0.0764776, 4.33548e-05, -0.0764776, 0.238015, 1.30967e-10, -4.12763e-05, -1.32628e-05, 0.25, -0.249209, -0.224783, 0.00690896)
+transform = Transform3D(0.238015, 0.0764776, 4.33548e-05, -0.0764776, 0.238015, 1.27329e-10, -4.12763e-05, -1.32628e-05, 0.25, -0.249209, -0.224783, 0.00690896)
 
 [node name="lft_knee_pointCNTRL" parent="goonie_CNTRLS" index="3"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.129922, 0.726637, 0.590667)
@@ -558,6 +558,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.129922, 0.726637, 0.590667)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.132096, 0.726637, 0.590667)
 
 [node name="Skeleton3D" parent="." index="2"]
+modifier_callback_mode_process = 0
 bones/1/rotation = Quaternion(0.55501, -0.438137, 0.55501, -0.438137)
 bones/2/position = Vector3(8.77633, 8.88178e-16, -1.77636e-15)
 bones/2/rotation = Quaternion(-1.913e-25, 1.68084e-17, 0.274503, 0.961586)
@@ -648,7 +649,7 @@ visible = false
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." index="4"]
 libraries = {
-"": SubResource("AnimationLibrary_d38kg")
+&"": SubResource("AnimationLibrary_d38kg")
 }
 
 [node name="PathFollower" type="PathFollow3D" parent="." index="5"]

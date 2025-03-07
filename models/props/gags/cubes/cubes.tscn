@@ -185,8 +185,8 @@ tracks/8/keys = PackedFloat32Array(0, 1, 0.001, 0.001, 0.001, 0.6, 1, 0.001, 0.0
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_5k5uj"]
 _data = {
-"RESET": SubResource("Animation_tj8c8"),
-"juggle": SubResource("Animation_bt8g8")
+&"RESET": SubResource("Animation_tj8c8"),
+&"juggle": SubResource("Animation_bt8g8")
 }
 
 [node name="cubes2" type="Node3D"]

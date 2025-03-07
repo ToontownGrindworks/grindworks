@@ -26,7 +26,7 @@ func action() -> void:
 	tween.tween_callback(battle_node.focus_character.bind(cog))
 	tween.tween_interval(2.0)
 	tween.tween_callback(cog.set_animation.bind('slip-forward'))
-	tween.tween_callback(func(): await TaskMgr.delay(0.55); AudioManager.play_sound(load("res://audio/sfx/battle/gags/trap/Toon_bodyfall_synergy.ogg")))
+	tween.tween_callback(func(): await Task.delay(0.55); AudioManager.play_sound(load("res://audio/sfx/battle/gags/trap/Toon_bodyfall_synergy.ogg")))
 	tween.tween_interval(peak)
 	tween.set_trans(Tween.TRANS_QUAD)
 	tween.parallel().tween_property(battle_node.battle_cam, 'global_position:y', (cog.global_position.y + cog.head_node.global_position.y) / 2.0, 0.5)

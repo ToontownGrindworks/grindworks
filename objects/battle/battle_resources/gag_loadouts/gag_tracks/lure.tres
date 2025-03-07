@@ -1,13 +1,13 @@
 [gd_resource type="Resource" script_class="Track" load_steps=33 format=3 uid="uid://dqldfsmn7g606"]
 
-[ext_resource type="Script" path="res://objects/battle/battle_resources/toon_attacks/toon_attack.gd" id="1_txqk2"]
+[ext_resource type="Script" uid="uid://cwnjrxjvy5kc3" path="res://objects/battle/battle_resources/toon_attacks/toon_attack.gd" id="1_txqk2"]
 [ext_resource type="Texture2D" uid="uid://0y0we63o3mb8" path="res://ui_assets/battle/gags/inventory_1dollarbill.png" id="2_xul6d"]
-[ext_resource type="Script" path="res://objects/battle/battle_resources/status_effects/lured.gd" id="3_even4"]
-[ext_resource type="Script" path="res://objects/battle/battle_resources/toon_attacks/lure_fish.gd" id="4_utcx5"]
+[ext_resource type="Script" uid="uid://gpeto6dx1eja" path="res://objects/battle/battle_resources/status_effects/lured.gd" id="3_even4"]
+[ext_resource type="Script" uid="uid://td2akjfqd0r3" path="res://objects/battle/battle_resources/toon_attacks/lure_fish.gd" id="4_utcx5"]
 [ext_resource type="Texture2D" uid="uid://d2w1gqvkuqair" path="res://ui_assets/battle/gags/inventory_5dollarbill.png" id="5_a2j3b"]
 [ext_resource type="Texture2D" uid="uid://dgxng3jvlh473" path="res://ui_assets/battle/gags/inventory_10dollarbill2.png" id="6_5viup"]
 [ext_resource type="Texture2D" uid="uid://fydnwdcn422y" path="res://ui_assets/battle/gags/inventory_small_magnet.png" id="7_gxtv4"]
-[ext_resource type="Script" path="res://objects/battle/battle_resources/toon_attacks/lure_group.gd" id="8_ulqlg"]
+[ext_resource type="Script" uid="uid://cseo0ntw14rkk" path="res://objects/battle/battle_resources/toon_attacks/lure_group.gd" id="8_ulqlg"]
 [ext_resource type="Material" uid="uid://c6k1h8avpta45" path="res://models/props/gags/fishing_rod/dollar_bill_5.tres" id="9_gbckk"]
 [ext_resource type="AudioStream" uid="uid://uh2gtpwij832" path="res://audio/sfx/battle/gags/lure/TL_small_magnet.ogg" id="9_kmvue"]
 [ext_resource type="Texture2D" uid="uid://b7b444pvm24pb" path="res://ui_assets/battle/gags/inventory_big_magnet.png" id="10_tffnr"]
@@ -15,7 +15,7 @@
 [ext_resource type="Texture2D" uid="uid://bs3kjucuht6gm" path="res://ui_assets/battle/gags/inventory_hypno_goggles.png" id="12_w77q0"]
 [ext_resource type="Material" uid="uid://4pjn47k3ssbd" path="res://models/props/gags/fishing_rod/dollar_bill_10.tres" id="13_ej7ys"]
 [ext_resource type="AudioStream" uid="uid://bn752ikuawdl0" path="res://audio/sfx/battle/gags/lure/TL_hypnotize.ogg" id="13_gdqi7"]
-[ext_resource type="Script" path="res://objects/battle/battle_resources/gag_loadouts/track.gd" id="14_tulk0"]
+[ext_resource type="Script" uid="uid://b6b6pfoqyolr" path="res://objects/battle/battle_resources/gag_loadouts/track.gd" id="14_tulk0"]
 [ext_resource type="Texture2D" uid="uid://beakxy2vgxlc1" path="res://ui_assets/battle/gags/inventory_screen.png" id="14_uk03k"]
 [ext_resource type="AudioStream" uid="uid://bgddqhaprr7vo" path="res://audio/sfx/battle/gags/lure/TL_presentation.ogg" id="15_2ony2"]
 
@@ -34,7 +34,6 @@ visible = true
 description = "This is a Status Effect"
 status_name = "Status Effect"
 id = 2
-_generate_id = false
 
 [sub_resource type="Resource" id="Resource_c2yol"]
 script = ExtResource("4_utcx5")
@@ -61,7 +60,6 @@ visible = true
 description = "This is a Status Effect"
 status_name = "Status Effect"
 id = 2
-_generate_id = false
 
 [sub_resource type="Resource" id="Resource_1ai11"]
 script = ExtResource("8_ulqlg")
@@ -89,7 +87,6 @@ visible = true
 description = "This is a Status Effect"
 status_name = "Status Effect"
 id = 2
-_generate_id = false
 
 [sub_resource type="Resource" id="Resource_ufcuq"]
 script = ExtResource("4_utcx5")
@@ -117,7 +114,6 @@ visible = true
 description = "This is a Status Effect"
 status_name = "Status Effect"
 id = 2
-_generate_id = false
 
 [sub_resource type="Resource" id="Resource_tjb7b"]
 script = ExtResource("8_ulqlg")
@@ -145,7 +141,6 @@ visible = true
 description = "This is a Status Effect"
 status_name = "Status Effect"
 id = 2
-_generate_id = false
 
 [sub_resource type="Resource" id="Resource_qe7sj"]
 script = ExtResource("4_utcx5")
@@ -173,7 +168,6 @@ visible = true
 description = "This is a Status Effect"
 status_name = "Status Effect"
 id = 2
-_generate_id = false
 
 [sub_resource type="Resource" id="Resource_f7y4b"]
 script = ExtResource("8_ulqlg")
@@ -201,7 +195,6 @@ visible = true
 description = "This is a Status Effect"
 status_name = "Status Effect"
 id = 2
-_generate_id = false
 
 [sub_resource type="Resource" id="Resource_xifqg"]
 script = ExtResource("8_ulqlg")

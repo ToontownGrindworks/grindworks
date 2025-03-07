@@ -1,12 +1,12 @@
 [gd_resource type="Resource" script_class="PoundKey" load_steps=2 format=3 uid="uid://c27ek2anjbx88"]
 
-[ext_resource type="Script" path="res://objects/battle/battle_resources/cog_attacks/pound_key.gd" id="1_al1dt"]
+[ext_resource type="Script" uid="uid://cppcm3kli1ipt" path="res://objects/battle/battle_resources/cog_attacks/pound_key.gd" id="1_al1dt"]
 
 [resource]
 script = ExtResource("1_al1dt")
-do_particles = true
 accuracy = 75
 damage = 3
+ignore_stats = false
 summary = ""
 attack_lines = Array[String](["Time to return some calls.", "I'd like to make a collect call.", "Ring-a-ling - it's for you!", "I've been wanting to drop a pound or two.", "I have a lot of clout.", "This may cause a slight pounding sensation.", "I'll just punch in this number.", "Let me call up a little surprise.", "I'll ring you up.", "O.K. Toon, it's the pound for you."])
 target_type = 0

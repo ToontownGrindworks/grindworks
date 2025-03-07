@@ -1,16 +1,16 @@
-[gd_resource type="Resource" script_class="ItemAccessory" load_steps=40 format=3 uid="uid://b6kkf2oi0ft7e"]
+[gd_resource type="Resource" script_class="ItemAccessory" load_steps=40 format=3 uid="uid://bcb5shentwkx1"]
 
-[ext_resource type="Script" path="res://objects/items/classes/accessory_placement.gd" id="1_std0l"]
-[ext_resource type="Script" path="res://objects/items/classes/head_placement.gd" id="2_ehy3i"]
+[ext_resource type="Script" uid="uid://fb0tqfojo57q" path="res://objects/items/classes/accessory_placement.gd" id="1_std0l"]
+[ext_resource type="Script" uid="uid://c4eyu1xvv7h2l" path="res://objects/items/classes/head_placement.gd" id="2_ehy3i"]
 [ext_resource type="Texture2D" uid="uid://dv8ylc7nrx4ff" path="res://models/accessories/hats/bowler_cap/tt_m_chr_avt_acc_hat_bowler.glb-pix-2.png" id="3_3c6pj"]
 [ext_resource type="PackedScene" uid="uid://cjlbtxj20nrea" path="res://models/accessories/hats/bowler_cap/tt_m_chr_avt_acc_hat_bowler.glb" id="3_os8wn"]
-[ext_resource type="Script" path="res://objects/items/classes/item_accessory.gd" id="4_4x37t"]
+[ext_resource type="Script" uid="uid://dvu24b3o8i3sj" path="res://objects/items/classes/item_accessory.gd" id="4_4x37t"]
 
 [sub_resource type="Resource" id="Resource_8pqho"]
 script = ExtResource("2_ehy3i")
 species = 2
 head_index = 0
-position = Vector3(0.09, -0.25, 0.17)
+position = Vector3(0.09, -0.23, 0.07)
 rotation = Vector3(-1, -4.61, -7.27)
 scale = Vector3(0.2, 0.2, 0.2)
 
@@ -26,7 +26,7 @@ scale = Vector3(0.2, 0.2, 0.22)
 script = ExtResource("2_ehy3i")
 species = 2
 head_index = 2
-position = Vector3(0.09, -0.23, 0.13)
+position = Vector3(0.09, -0.23, 0.07)
 rotation = Vector3(-1, -4.61, -7.27)
 scale = Vector3(0.2, 0.2, 0.2)
 
@@ -281,8 +281,8 @@ scale = Vector3(0.2, 0.2, 0.2)
 [resource]
 script = ExtResource("4_4x37t")
 accessory_placements = Array[ExtResource("1_std0l")]([SubResource("Resource_8pqho"), SubResource("Resource_4qx3c"), SubResource("Resource_s7khx"), SubResource("Resource_g7cfs"), SubResource("Resource_10r2o"), SubResource("Resource_1pn5b"), SubResource("Resource_12s3o"), SubResource("Resource_ri0uk"), SubResource("Resource_iuwe1"), SubResource("Resource_4hlks"), SubResource("Resource_rrf6k"), SubResource("Resource_shykx"), SubResource("Resource_5lxyc"), SubResource("Resource_h15cx"), SubResource("Resource_2gm5v"), SubResource("Resource_ss5a7"), SubResource("Resource_g43iw"), SubResource("Resource_s5fl3"), SubResource("Resource_n3gkc"), SubResource("Resource_k5eti"), SubResource("Resource_5rw3p"), SubResource("Resource_2enl1"), SubResource("Resource_7heev"), SubResource("Resource_1bdb1"), SubResource("Resource_c36o5"), SubResource("Resource_jafqh"), SubResource("Resource_7roc0"), SubResource("Resource_46dnc"), SubResource("Resource_0y12l"), SubResource("Resource_kbcnn"), SubResource("Resource_nk2mc"), SubResource("Resource_57ry5"), SubResource("Resource_y5ahc"), SubResource("Resource_bkf5t")])
-qualitoon = 2
-qualitoon_rarity = 6
+qualitoon = 1
+rarity = 0
 evergreen = false
 realtime = false
 slot = 1

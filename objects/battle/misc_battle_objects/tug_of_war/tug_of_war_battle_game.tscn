@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://cvn2gdshfj2t7"]
 
-[ext_resource type="Script" path="res://objects/battle/misc_battle_objects/tug_of_war/tug_of_war_battle_game.gd" id="1_x6i5y"]
+[ext_resource type="Script" uid="uid://ywrg6fdu1xfn" path="res://objects/battle/misc_battle_objects/tug_of_war/tug_of_war_battle_game.gd" id="1_x6i5y"]
 [ext_resource type="PackedScene" uid="uid://6xqpo2ctgbl3" path="res://objects/battle/misc_battle_objects/tug_of_war/tug_of_war_game.tscn" id="2_e1yic"]
 
 [node name="TugOfWarBattleGame" type="Control"]

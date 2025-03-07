@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="CogDNA" load_steps=13 format=3 uid="uid://d2dgwcpb35g3q"]
 
-[ext_resource type="Script" path="res://objects/battle/battle_resources/cog_attacks/cog_attack.gd" id="1_k7mja"]
+[ext_resource type="Script" uid="uid://bb27him60xtnk" path="res://objects/battle/battle_resources/cog_attacks/cog_attack.gd" id="1_k7mja"]
 [ext_resource type="Resource" uid="uid://dwkmwkdn3ws4k" path="res://objects/battle/battle_resources/cog_attacks/resources/evil_eye.tres" id="2_qg0m6"]
 [ext_resource type="Resource" uid="uid://c24yy1wqmg24o" path="res://objects/battle/battle_resources/cog_attacks/resources/razzle_dazzle.tres" id="3_axc08"]
 [ext_resource type="Resource" uid="uid://c3gg5tsci6aye" path="res://objects/battle/battle_resources/cog_attacks/resources/hang_up.tres" id="4_v5qjv"]
@@ -8,8 +8,8 @@
 [ext_resource type="Texture2D" uid="uid://2fj5qbvh3qa1" path="res://models/cogs/textures/misc/sleeve_2.png" id="5_sxeki"]
 [ext_resource type="Texture2D" uid="uid://idf1e68fml3o" path="res://models/cogs/textures/misc/blazer_1.png" id="6_1v0ih"]
 [ext_resource type="Texture2D" uid="uid://c1tgadika2h4n" path="res://models/cogs/heads/doubleface2.png" id="6_awq36"]
-[ext_resource type="Script" path="res://objects/cog/cogdna.gd" id="6_fsn22"]
-[ext_resource type="Script" path="res://objects/battle/battle_resources/status_effect.gd" id="7_ql3k8"]
+[ext_resource type="Script" uid="uid://okjbx502s3r5" path="res://objects/cog/cogdna.gd" id="6_fsn22"]
+[ext_resource type="Script" uid="uid://df7irk63ikx4k" path="res://objects/battle/battle_resources/status_effect.gd" id="7_ql3k8"]
 [ext_resource type="Texture2D" uid="uid://o3hrfvdxeisb" path="res://models/cogs/textures/misc/leg_4.png" id="7_vasf4"]
 [ext_resource type="Resource" uid="uid://b4vuuxwhv0d3v" path="res://objects/battle/battle_resources/status_effects/resources/status_effect_mod_cog.tres" id="9_64xf8"]
 
@@ -40,6 +40,6 @@ is_admin = false
 health_mod = 1.0
 battle_phrases = Array[String](["Trust me, we're as disturbed as you are.", "It takes two to tango—*BZZRT!*—Doubles, anyone???", "You’re in for–*BZT!*–double dipping.", "Two heads are–*ZAP!*–my double play.", "Are you ready to face–*KZT!*–my double cross."])
 external_assets = {
-"head_model": "",
-"head_textures": []
+&"head_model": "",
+&"head_textures": []
 }

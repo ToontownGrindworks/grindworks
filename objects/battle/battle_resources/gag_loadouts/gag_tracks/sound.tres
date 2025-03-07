@@ -1,9 +1,9 @@
 [gd_resource type="Resource" script_class="Track" load_steps=38 format=3 uid="uid://cvaos6ucteefy"]
 
-[ext_resource type="Script" path="res://objects/battle/battle_resources/toon_attacks/toon_attack.gd" id="1_63h6s"]
+[ext_resource type="Script" uid="uid://cwnjrxjvy5kc3" path="res://objects/battle/battle_resources/toon_attacks/toon_attack.gd" id="1_63h6s"]
 [ext_resource type="Texture2D" uid="uid://b42plu52oeyaq" path="res://ui_assets/battle/gags/inventory_bikehorn.png" id="2_imaop"]
 [ext_resource type="PackedScene" uid="uid://ctpd48nalncug" path="res://models/props/gags/bike_horn/bike_horn.tscn" id="3_5rs2c"]
-[ext_resource type="Script" path="res://objects/battle/battle_resources/toon_attacks/gag_sound.gd" id="4_yqb18"]
+[ext_resource type="Script" uid="uid://c7rpfrvobx8rf" path="res://objects/battle/battle_resources/toon_attacks/gag_sound.gd" id="4_yqb18"]
 [ext_resource type="AudioStream" uid="uid://2juxx4rstg62" path="res://audio/sfx/battle/gags/sound/AA_sound_bikehorn.ogg" id="5_algv4"]
 [ext_resource type="AudioStream" uid="uid://bav2i3kvvbiqc" path="res://audio/sfx/battle/gags/sound/MG_tag_1.ogg" id="6_5smqy"]
 [ext_resource type="Texture2D" uid="uid://dlpwdg5qa3cuo" path="res://ui_assets/battle/gags/inventory_whistle.png" id="7_xnr2d"]
@@ -27,7 +27,7 @@
 [ext_resource type="AudioStream" uid="uid://hgwtecn17iui" path="res://audio/sfx/battle/gags/sound/SZ_DD_foghorn.ogg" id="25_lsdff"]
 [ext_resource type="AudioStream" uid="uid://bf2xyte2lf8r3" path="res://audio/sfx/battle/gags/sound/mailbox_full_wobble.ogg" id="26_vt617"]
 [ext_resource type="Texture2D" uid="uid://b1fm464rbu48m" path="res://ui_assets/battle/gags/inventory_opera_singer.png" id="27_4ye62"]
-[ext_resource type="Script" path="res://objects/battle/battle_resources/gag_loadouts/track.gd" id="27_mb0m2"]
+[ext_resource type="Script" uid="uid://b6b6pfoqyolr" path="res://objects/battle/battle_resources/gag_loadouts/track.gd" id="27_mb0m2"]
 [ext_resource type="PackedScene" uid="uid://brx5luolo4twm" path="res://models/props/gags/opera_singer/opera_singer.tscn" id="28_3b0st"]
 [ext_resource type="AudioStream" uid="uid://bes06h30xhwkh" path="res://audio/sfx/battle/gags/sound/AA_sound_Opera_Singer.ogg" id="29_tm062"]
 

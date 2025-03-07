@@ -1,8 +1,8 @@
 [gd_resource type="Resource" script_class="ItemAccessory" load_steps=9 format=3 uid="uid://cmrx0t67871w2"]
 
-[ext_resource type="Script" path="res://objects/items/classes/item_accessory.gd" id="1_kbdgi"]
-[ext_resource type="Script" path="res://objects/items/classes/accessory_placement.gd" id="1_pof3x"]
-[ext_resource type="Script" path="res://objects/items/classes/body_placement.gd" id="2_5y17v"]
+[ext_resource type="Script" uid="uid://dvu24b3o8i3sj" path="res://objects/items/classes/item_accessory.gd" id="1_kbdgi"]
+[ext_resource type="Script" uid="uid://fb0tqfojo57q" path="res://objects/items/classes/accessory_placement.gd" id="1_pof3x"]
+[ext_resource type="Script" uid="uid://duxq3xtgnln43" path="res://objects/items/classes/body_placement.gd" id="2_5y17v"]
 [ext_resource type="PackedScene" uid="uid://bw6o4v00od7c5" path="res://models/accessories/backpacks/shark_fin/tt_m_chr_avt_acc_pac_sharkFin.glb" id="3_3ovak"]
 [ext_resource type="Texture2D" uid="uid://i56qjyr3q5pv" path="res://models/accessories/backpacks/shark_fin/tt_m_chr_avt_acc_pac_sharkFin.glb-pix-1.png" id="3_gvol2"]
 
@@ -30,8 +30,8 @@ scale = Vector3(0.3, 0.3, 0.3)
 [resource]
 script = ExtResource("1_kbdgi")
 accessory_placements = Array[ExtResource("1_pof3x")]([SubResource("Resource_3frid"), SubResource("Resource_3jk26"), SubResource("Resource_cixyy")])
-qualitoon = 3
-qualitoon_rarity = 6
+qualitoon = 2
+rarity = 0
 evergreen = false
 realtime = false
 slot = 3

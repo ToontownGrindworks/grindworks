@@ -1,12 +1,13 @@
 [gd_resource type="Resource" script_class="CogAttackReinforcements" load_steps=2 format=3 uid="uid://bu2vv1aru6dpg"]
 
-[ext_resource type="Script" path="res://objects/battle/battle_resources/cog_attacks/reinforcement_call.gd" id="1_1hl4t"]
+[ext_resource type="Script" uid="uid://c6itql0dvd0fk" path="res://objects/battle/battle_resources/cog_attacks/reinforcement_call.gd" id="1_1hl4t"]
 
 [resource]
 script = ExtResource("1_1hl4t")
 cog_amount = 3
 accuracy = 75
 damage = 1
+ignore_stats = false
 summary = ""
 attack_lines = Array[String](["Looks like I'll be needing some help."])
 target_type = 0

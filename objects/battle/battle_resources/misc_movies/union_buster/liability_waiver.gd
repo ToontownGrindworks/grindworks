@@ -44,7 +44,7 @@ func action() -> void:
 			LerpProperty.new(paper, ^"global_position", 0.6, final_pos).interp(Tween.EASE_IN, Tween.TRANS_QUAD)
 		]),
 	]).as_tween(user)
-	await TaskMgr.delay(0.5)
+	await Task.delay(0.5)
 	battle_node.focus_character(target_cog)
 	await manager.barrier(projectile.finished, 1.0)
 	paper.queue_free()

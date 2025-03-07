@@ -193,7 +193,7 @@ tracks/2/keys = PackedFloat32Array(0, 1, 1, 1, 1, 0.0666667, 1, 1, 1, 1, 0.1, 1,
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_lgip0"]
 _data = {
-"sound": SubResource("Animation_6hn6y")
+&"sound": SubResource("Animation_6hn6y")
 }
 
 [node name="aoogah2" type="Node3D"]

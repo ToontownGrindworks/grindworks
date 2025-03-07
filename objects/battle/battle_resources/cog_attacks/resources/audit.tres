@@ -1,12 +1,13 @@
 [gd_resource type="Resource" script_class="Tabulate" load_steps=2 format=3 uid="uid://dc3wprcrjg58t"]
 
-[ext_resource type="Script" path="res://objects/battle/battle_resources/cog_attacks/tabulate.gd" id="1_71xnd"]
+[ext_resource type="Script" uid="uid://hamb7hsc7s4i" path="res://objects/battle/battle_resources/cog_attacks/tabulate.gd" id="1_71xnd"]
 
 [resource]
 script = ExtResource("1_71xnd")
 play_sound = true
 accuracy = 75
 damage = 4
+ignore_stats = false
 summary = ""
 attack_lines = Array[String](["I believe your books don't balance.", "Looks like you're in the red.", "Let me help you with your books.", "Your debit column is much too high.", "Let's check your assets.", "This will put you in debt.", "Let's take a close look at what you owe.", "This should drain your account.", "Time for you to account for your expenses.", "I've found an error in your books."])
 target_type = 0

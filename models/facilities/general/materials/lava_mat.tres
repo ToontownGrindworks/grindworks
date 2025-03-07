@@ -1,6 +1,6 @@
 [gd_resource type="ShaderMaterial" load_steps=5 format=3 uid="uid://dmafgykr0wfb3"]
 
-[ext_resource type="Shader" path="res://general_resources/shaders/lava_shader.gdshader" id="1_ub7mi"]
+[ext_resource type="Shader" uid="uid://bwqy10j7lib06" path="res://general_resources/shaders/lava_shader.gdshader" id="1_ub7mi"]
 [ext_resource type="Texture2D" uid="uid://dutf3tiqr8h1t" path="res://models/facilities/mint/textures/lava7.png" id="2_xlrn8"]
 
 [sub_resource type="FastNoiseLite" id="FastNoiseLite_mqphr"]
@@ -21,10 +21,10 @@ resource_name = "lava"
 render_priority = 0
 shader = ExtResource("1_ub7mi")
 shader_parameter/albedo = Color(1, 1, 1, 1)
+shader_parameter/texture_albedo = ExtResource("2_xlrn8")
 shader_parameter/heat_color = Color(1, 0.813341, 0.690464, 1)
 shader_parameter/uv1_scale = Vector3(10, 10, 10)
 shader_parameter/uv1_offset = Vector3(0, 0, 0)
 shader_parameter/height_scale = 0.3
-shader_parameter/emission_color = Vector3(2, 0, 0)
-shader_parameter/texture_albedo = ExtResource("2_xlrn8")
 shader_parameter/displacement = SubResource("NoiseTexture2D_dbi8t")
+shader_parameter/emission_color = Vector3(2, 0, 0)

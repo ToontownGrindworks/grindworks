@@ -37,7 +37,7 @@ func _ready() -> void:
 
 
 func body_entered(body : Node3D) -> void:
-	if body is Player:
+	if body is Player and body.state == Player.PlayerState.WALK:
 		press()
 
 ## Presses the button and marks as pressed

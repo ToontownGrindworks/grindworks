@@ -1,0 +1,15 @@
+[gd_scene load_steps=4 format=3 uid="uid://dj20ibx427eum"]
+
+[ext_resource type="PackedScene" uid="uid://pgwaivt6bmwq" path="res://models/accessories/hats/roman_helmet/tt_m_chr_avt_acc_hat_romanHelmet.glb" id="1_krn46"]
+[ext_resource type="Texture2D" uid="uid://b6q0vmoeqkdis" path="res://models/accessories/hats/roman_helmet/tt_m_chr_avt_acc_hat_romanHelmet_tt_t_chr_avt_acc_hat_romanHelmet.png" id="2_7subw"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_82css"]
+resource_name = "default.243"
+cull_mode = 2
+vertex_color_use_as_albedo = true
+albedo_texture = ExtResource("2_7subw")
+
+[node name="tt_m_chr_avt_acc_hat_romanHelmet2" instance=ExtResource("1_krn46")]
+
+[node name="tt_m_chr_avt_acc_hat_romanHelmet" parent="." index="0"]
+surface_material_override/0 = SubResource("StandardMaterial3D_82css")

@@ -76,10 +76,14 @@ func _to_string():
 func get_stat(stat: String) -> float:
 	if stat in self:
 		var base_stat = get(stat)
+		var additive_total := 0.0
 		var multiplier_total := 1.0
 		for multiplier in multipliers:
 			if multiplier.stat == stat:
-				multiplier_total += multiplier.amount
-		return base_stat * multiplier_total
+				if multiplier.additive:
+					additive_total += multiplier.amount
+				else:
+					multiplier_total += multiplier.amount
+		return (base_stat + additive_total) * multiplier_total
 	else:
 		return 1.0

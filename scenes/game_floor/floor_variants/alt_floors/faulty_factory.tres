@@ -1,11 +1,11 @@
 [gd_resource type="Resource" script_class="FloorVariant" load_steps=9 format=3 uid="uid://dk64pnype64ch"]
 
-[ext_resource type="Script" path="res://objects/modules/facility_room.gd" id="1_6lg5s"]
+[ext_resource type="Script" uid="uid://dhyadt7p1gv78" path="res://objects/modules/facility_room.gd" id="1_6lg5s"]
 [ext_resource type="PackedScene" uid="uid://cpa5vpkfj7mq6" path="res://objects/modules/factory/variants/factory_clown_boss.tscn" id="1_am843"]
 [ext_resource type="Resource" uid="uid://c1kumm74qwmtf" path="res://scenes/game_floor/department_floors/rooms_sell.tres" id="1_g2dp2"]
-[ext_resource type="Script" path="res://scenes/game_floor/floor_variants/floor_variant.gd" id="1_w4gfx"]
-[ext_resource type="Script" path="res://scenes/game_floor/floor_modifiers/scripts/misc/floor_mod_all_fusion.gd" id="2_1ft4g"]
-[ext_resource type="Script" path="res://scenes/game_floor/floor_modifiers/scripts/misc/floor_mod_sbhq_sky.gd" id="2_61pcp"]
+[ext_resource type="Script" uid="uid://cxvrtrods5hgg" path="res://scenes/game_floor/floor_variants/floor_variant.gd" id="1_w4gfx"]
+[ext_resource type="Script" uid="uid://dlj1yivlwm1k0" path="res://scenes/game_floor/floor_modifiers/scripts/misc/floor_mod_all_fusion.gd" id="2_1ft4g"]
+[ext_resource type="Script" uid="uid://bto4vf3x4gmme" path="res://scenes/game_floor/floor_modifiers/scripts/misc/floor_mod_sbhq_sky.gd" id="2_61pcp"]
 [ext_resource type="Texture2D" uid="uid://bnvln6hkbsr3d" path="res://models/cogs/misc/hp_light/sell.png" id="2_djfgp"]
 
 [sub_resource type="Resource" id="Resource_nkyqb"]

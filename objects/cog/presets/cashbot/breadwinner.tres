@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="CogDNA" load_steps=13 format=3 uid="uid://tfs8jtibs727"]
 
-[ext_resource type="Script" path="res://objects/battle/battle_resources/cog_attacks/cog_attack.gd" id="1_tt8ui"]
+[ext_resource type="Script" uid="uid://bb27him60xtnk" path="res://objects/battle/battle_resources/cog_attacks/cog_attack.gd" id="1_tt8ui"]
 [ext_resource type="Resource" uid="uid://b4kaq7rjifwfc" path="res://objects/battle/battle_resources/cog_attacks/resources/liquidate.tres" id="2_x14fq"]
 [ext_resource type="Resource" uid="uid://dxpqtt8gh5brv" path="res://objects/battle/battle_resources/cog_attacks/resources/finger_wag.tres" id="3_r2bt6"]
 [ext_resource type="PackedScene" uid="uid://d1mcdliu4fa2u" path="res://models/cogs/heads/moneybags.glb" id="4_7d01h"]
@@ -8,8 +8,8 @@
 [ext_resource type="Texture2D" uid="uid://dcikrnqt76tm" path="res://models/cogs/heads/BreadWinner.png" id="5_gbr5o"]
 [ext_resource type="Texture2D" uid="uid://2fj5qbvh3qa1" path="res://models/cogs/textures/misc/sleeve_2.png" id="5_o1xbe"]
 [ext_resource type="Texture2D" uid="uid://idf1e68fml3o" path="res://models/cogs/textures/misc/blazer_1.png" id="6_jfb8l"]
-[ext_resource type="Script" path="res://objects/cog/cogdna.gd" id="6_pxjit"]
-[ext_resource type="Script" path="res://objects/battle/battle_resources/status_effect.gd" id="7_28jv1"]
+[ext_resource type="Script" uid="uid://okjbx502s3r5" path="res://objects/cog/cogdna.gd" id="6_pxjit"]
+[ext_resource type="Script" uid="uid://df7irk63ikx4k" path="res://objects/battle/battle_resources/status_effect.gd" id="7_28jv1"]
 [ext_resource type="Texture2D" uid="uid://o3hrfvdxeisb" path="res://models/cogs/textures/misc/leg_4.png" id="7_buqry"]
 [ext_resource type="Resource" uid="uid://b4vuuxwhv0d3v" path="res://objects/battle/battle_resources/status_effects/resources/status_effect_mod_cog.tres" id="12_iwn2e"]
 
@@ -38,8 +38,8 @@ status_effects = Array[ExtResource("7_28jv1")]([ExtResource("12_iwn2e")])
 is_mod_cog = true
 is_admin = false
 health_mod = 1.0
-battle_phrases = Array[String](["Money will be the yeast of your concerns.", "I'm on the rise!", "Time to separate the wheat from the chaff.", "Prepare to be toasted.", "Don't try to butter me up.", "Your stale jokes won't fly here.", "I'm on a roll!", "Would you like a knuckle sandwich?"])
+battle_phrases = Array[String](["Money will be the yeast of your concerns.", "I'm on the rise!", "Time to separate the wheat from the chaff.", "Prepare to be toasted.", "Don't try to butter me up.", "Your stale jokes won't fly here.", "I'm on a roll!", "Would you like a knuckle sandwich?", "Quit loafing around."])
 external_assets = {
-"head_model": "",
-"head_textures": []
+&"head_model": "",
+&"head_textures": []
 }

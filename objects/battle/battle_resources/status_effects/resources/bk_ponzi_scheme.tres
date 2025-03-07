@@ -1,7 +1,7 @@
 [gd_resource type="Resource" script_class="StatusEffectBKMentalMath" load_steps=3 format=3 uid="uid://cqpql5i2vg740"]
 
 [ext_resource type="Texture2D" uid="uid://cfafx2jnp12eb" path="res://ui_assets/battle/statuses/ponzi_scheme.png" id="1_vdk6x"]
-[ext_resource type="Script" path="res://objects/battle/battle_resources/status_effects/boss_effects/status_effect_bk_mental_math.gd" id="2_6tkc7"]
+[ext_resource type="Script" uid="uid://d3udiybfvhxtw" path="res://objects/battle/battle_resources/status_effects/boss_effects/status_effect_bk_mental_math.gd" id="2_6tkc7"]
 
 [resource]
 script = ExtResource("2_6tkc7")

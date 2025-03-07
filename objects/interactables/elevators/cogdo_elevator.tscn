@@ -1,7 +1,7 @@
 [gd_scene load_steps=9 format=3 uid="uid://b8mtvfipu1qsg"]
 
 [ext_resource type="PackedScene" uid="uid://by0o2v7at52hb" path="res://models/props/facility_objects/transporters/cogdo_elevator/cogdo_elevator.fbx" id="1_us7nt"]
-[ext_resource type="Script" path="res://objects/interactables/elevators/elevator.gd" id="2_twhhj"]
+[ext_resource type="Script" uid="uid://cpinallk62oiy" path="res://objects/interactables/elevators/elevator.gd" id="2_twhhj"]
 
 [sub_resource type="Animation" id="Animation_bibmt"]
 length = 0.001
@@ -116,10 +116,10 @@ tracks/1/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_7isgk"]
 _data = {
-"RESET": SubResource("Animation_bibmt"),
-"RESET_OPEN": SubResource("Animation_0mowk"),
-"close": SubResource("Animation_4w2nm"),
-"open": SubResource("Animation_a7du6")
+&"RESET": SubResource("Animation_bibmt"),
+&"RESET_OPEN": SubResource("Animation_0mowk"),
+&"close": SubResource("Animation_4w2nm"),
+&"open": SubResource("Animation_a7du6")
 }
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_ea5o7"]

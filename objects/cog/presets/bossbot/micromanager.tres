@@ -1,12 +1,12 @@
 [gd_resource type="Resource" script_class="CogDNA" load_steps=9 format=3 uid="uid://d1dagndttbsbw"]
 
-[ext_resource type="Script" path="res://objects/battle/battle_resources/cog_attacks/cog_attack.gd" id="1_fninl"]
+[ext_resource type="Script" uid="uid://bb27him60xtnk" path="res://objects/battle/battle_resources/cog_attacks/cog_attack.gd" id="1_fninl"]
 [ext_resource type="Resource" uid="uid://dxpqtt8gh5brv" path="res://objects/battle/battle_resources/cog_attacks/resources/finger_wag.tres" id="2_tgow6"]
-[ext_resource type="Script" path="res://objects/cog/cogdna.gd" id="2_vvdst"]
+[ext_resource type="Script" uid="uid://okjbx502s3r5" path="res://objects/cog/cogdna.gd" id="2_vvdst"]
 [ext_resource type="Resource" uid="uid://6hjcsu17tt4g" path="res://objects/battle/battle_resources/cog_attacks/resources/brain_storm.tres" id="3_1oh3g"]
 [ext_resource type="Resource" uid="uid://bhl72hd7pn8s2" path="res://objects/battle/battle_resources/cog_attacks/resources/workout.tres" id="4_ehswu"]
 [ext_resource type="Texture2D" uid="uid://g2arre8hbe1f" path="res://models/cogs/heads/micromanager_tt_t_ene_hed_micromanager.png" id="5_j4xuo"]
-[ext_resource type="Script" path="res://objects/battle/battle_resources/status_effect.gd" id="6_ldukp"]
+[ext_resource type="Script" uid="uid://df7irk63ikx4k" path="res://objects/battle/battle_resources/status_effect.gd" id="6_ldukp"]
 [ext_resource type="PackedScene" uid="uid://qwlosgm5bb8q" path="res://models/cogs/heads/micromanager.glb" id="6_sc1kr"]
 
 [resource]
@@ -16,13 +16,14 @@ suit = 2
 cog_name = "Micromanager"
 name_plural = ""
 head = ExtResource("6_sc1kr")
-head_scale = 1.0
+head_scale = Vector3(1, 1, 1)
 head_pos = Vector3(0, 0, 0)
 scale = 2.5
 head_textures = Array[Texture2D]([ExtResource("5_j4xuo")])
 hand_color = Color(0.94902, 0.74902, 0.74902, 1)
 head_color = Color(1, 1, 1, 1)
 custom_nametag_height = 0.0
+custom_nametag_suffix = ""
 attacks = Array[ExtResource("1_fninl")]([ExtResource("2_tgow6"), ExtResource("3_1oh3g"), ExtResource("4_ehswu")])
 level_low = 4
 level_high = 11
@@ -32,6 +33,6 @@ is_admin = false
 health_mod = 1.0
 battle_phrases = Array[String](["We're going to do this my way.", "Well, you've managed to find me.", "I can be very intimidating.", "I'll take care of you in no time.", "Oh good, a project.", "I may be small, but I'm also tough.", "I'm going to get in your business!", "No job is too small for me.", "I want the job done right, so I'll do it myself.", "I'm going to get into your business.", "I'm going to be breathing down your neck.", "Sometimes big hurts come in small packages.", "You need someone to manage your assets.", "Sometimes big problems can lead to little misunderstandings.", "It looks like you need some managing."])
 external_assets = {
-"head_model": "",
-"head_textures": []
+&"head_model": "",
+&"head_textures": []
 }

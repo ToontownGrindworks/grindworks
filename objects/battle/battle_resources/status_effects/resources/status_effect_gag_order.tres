@@ -1,10 +1,11 @@
 [gd_resource type="Resource" load_steps=3 format=3 uid="uid://bc1chueh2m57j"]
 
-[ext_resource type="Script" path="res://objects/battle/battle_resources/toon_attacks/toon_attack.gd" id="1_4mmou"]
-[ext_resource type="Script" path="res://objects/battle/battle_resources/status_effects/status_effect_gag_ban.gd" id="2_pkvv5"]
+[ext_resource type="Script" uid="uid://cwnjrxjvy5kc3" path="res://objects/battle/battle_resources/toon_attacks/toon_attack.gd" id="1_4mmou"]
+[ext_resource type="Script" uid="uid://byo8ok8qshtyi" path="res://objects/battle/battle_resources/status_effects/status_effect_gag_ban.gd" id="2_pkvv5"]
 
 [resource]
 script = ExtResource("2_pkvv5")
+banned_color = Color(0.545098, 0, 0, 1)
 gags = Array[ExtResource("1_4mmou")]([])
 quality = 1
 rounds = 0

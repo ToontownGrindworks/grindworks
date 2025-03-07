@@ -1,6 +1,7 @@
-[gd_resource type="Resource" script_class="CogPool" load_steps=10 format=3 uid="uid://b7svvigolg3sq"]
+[gd_resource type="Resource" script_class="CogPool" load_steps=11 format=3 uid="uid://b7svvigolg3sq"]
 
 [ext_resource type="Resource" uid="uid://cx6xpa02hhvfj" path="res://objects/cog/presets/lawbot/bottom_feeder.tres" id="1_62fdn"]
+[ext_resource type="Script" uid="uid://okjbx502s3r5" path="res://objects/cog/cogdna.gd" id="1_f07ph"]
 [ext_resource type="Resource" uid="uid://bqu2erj3ece7u" path="res://objects/cog/presets/lawbot/bloodsucker.tres" id="2_jh57k"]
 [ext_resource type="Resource" uid="uid://4fdep217ep8s" path="res://objects/cog/presets/lawbot/double_talker.tres" id="3_n4pa8"]
 [ext_resource type="Resource" uid="uid://yiwg5566shlq" path="res://objects/cog/presets/lawbot/ambulance_chaser.tres" id="4_kjs8c"]
@@ -8,8 +9,8 @@
 [ext_resource type="Resource" uid="uid://crdecksepx8wc" path="res://objects/cog/presets/lawbot/spin_doctor.tres" id="6_ml4qy"]
 [ext_resource type="Resource" uid="uid://bfruo6oh25whk" path="res://objects/cog/presets/lawbot/legal_eagle.tres" id="7_mifoy"]
 [ext_resource type="Resource" uid="uid://dmi4ular4dbie" path="res://objects/cog/presets/lawbot/big_wig.tres" id="8_oavnw"]
-[ext_resource type="Script" path="res://objects/cog/cog_pool.gd" id="9_kxehi"]
+[ext_resource type="Script" uid="uid://ocitcstc3bru" path="res://objects/cog/cog_pool.gd" id="9_kxehi"]
 
 [resource]
 script = ExtResource("9_kxehi")
-cogs = Array[Resource("res://objects/cog/cogdna.gd")]([ExtResource("1_62fdn"), ExtResource("2_jh57k"), ExtResource("3_n4pa8"), ExtResource("4_kjs8c"), ExtResource("5_knqr0"), ExtResource("6_ml4qy"), ExtResource("7_mifoy"), ExtResource("8_oavnw")])
+cogs = Array[ExtResource("1_f07ph")]([ExtResource("1_62fdn"), ExtResource("2_jh57k"), ExtResource("3_n4pa8"), ExtResource("4_kjs8c"), ExtResource("5_knqr0"), ExtResource("6_ml4qy"), ExtResource("7_mifoy"), ExtResource("8_oavnw")])

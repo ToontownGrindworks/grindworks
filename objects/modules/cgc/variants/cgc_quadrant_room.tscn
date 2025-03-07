@@ -1,9 +1,9 @@
 [gd_scene load_steps=30 format=3 uid="uid://b5be6q4r0cn2l"]
 
 [ext_resource type="PackedScene" uid="uid://bln8k5hdfnymx" path="res://objects/props/cgc/resizeable_wall.tscn" id="1_w0qh8"]
-[ext_resource type="Script" path="res://objects/modules/cgc/variants/cgc_quadrant_room.gd" id="1_yjbtq"]
+[ext_resource type="Script" uid="uid://bq1p137ibyqwh" path="res://objects/modules/cgc/variants/cgc_quadrant_room.gd" id="1_yjbtq"]
 [ext_resource type="PackedScene" uid="uid://cwldqwunkk4ar" path="res://objects/props/cgc/resizeable_ground.tscn" id="2_qcf8b"]
-[ext_resource type="Script" path="res://objects/interactables/mole_stomp/mole_stomp.gd" id="4_pp8jr"]
+[ext_resource type="Script" uid="uid://dyt7mhhg2lwrv" path="res://objects/interactables/mole_stomp/mole_stomp.gd" id="4_pp8jr"]
 [ext_resource type="PackedScene" uid="uid://dmv7dbgr2b2nr" path="res://objects/obstacles/lava_floor/lava_floor.tscn" id="6_q0w5i"]
 [ext_resource type="Material" uid="uid://cp8vv8al3i6nl" path="res://models/facilities/general/materials/oil_mat.tres" id="7_x1lri"]
 [ext_resource type="PackedScene" uid="uid://b3p8q3fhmuo35" path="res://objects/props/cgc/resizeable_hedge_cube.tscn" id="9_ckfp5"]
@@ -53,7 +53,7 @@ var moles_remaining := quota
 var game_timer: Control
 var game_started := false
 
-var mole_task_id: int = 0
+var mole_task: Task
 
 var damage: int
 
@@ -96,7 +96,7 @@ func spawn_new_mole() -> void:
 	var mole: MoleHole = mole_game.get_random_mole()
 	mole.force_cog_mole = true
 	mole.mole_cog_boost_time = 2.5
-	mole_task_id = TaskMgr.delayed_call(randf_range(mole_popup_time_range.x, mole_popup_time_range.y), spawn_new_mole)
+	mole_task = Task.delayed_call(self, randf_range(mole_popup_time_range.x, mole_popup_time_range.y), spawn_new_mole)
 
 func hookup_moles() -> void:
 	for mole_game: MoleStompGame in mole_games:
@@ -139,9 +139,8 @@ func end_game() -> void:
 	s_game_won.emit()
 
 func cancel_mole_task() -> void:
-	if mole_task_id != 0:
-		TaskMgr.cancel_task(mole_task_id)
-		mole_task_id = 0
+	if mole_task:
+		mole_task = mole_task.cancel()
 
 func _exit_tree() -> void:
 	cancel_mole_task()

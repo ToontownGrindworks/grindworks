@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://cem8tunfmfrl0"]
 
-[ext_resource type="Script" path="res://objects/modules/mint/variants/golden_goose_obj_button.gd" id="1_7kvd5"]
+[ext_resource type="Script" uid="uid://jq04k0biw8as" path="res://objects/modules/mint/variants/golden_goose_obj_button.gd" id="1_7kvd5"]
 [ext_resource type="PackedScene" uid="uid://dbrst2twjd0pu" path="res://objects/interactables/button/button.tscn" id="2_di4w3"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_ano0g"]
