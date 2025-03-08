@@ -5,7 +5,7 @@ class_name ToonAttack
 @export var damage: int
 @export var crit_chance_mod := 1.0
 # The Smirky Curse is real...
-@export var accuracy: int
+var accuracy = 999
 
 # Used in the UI to temporarily store the price of a gag
 var price: int

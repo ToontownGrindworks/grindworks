@@ -3,7 +3,7 @@ extends StatusEffect
 class_name StatusAutoSound
 
 @export var sound_gag: GagSound
-@export var accuracy: int
+@export var accuracy = 999
 
 func apply() -> void:
 	manager.s_round_started.connect(round_started)

@@ -57,10 +57,10 @@ bottoms = SubResource("Resource_8j8br")
 [resource]
 script = ExtResource("9_338hm")
 character_name = "Smirky Bumberpop"
-character_summary = "Friendly Influence: Soundless, uses Sound Vouchers gained with Hype to crowdsource
-- Starts with 2 Sound Vouchers
-- Starts with Lure and Drop
-- Beware the Smirky Curse..."
+character_summary = "Friendly Influence: Soundless, but can stack up outside help with Sound Vouchers
+(Beware the Smirky Curse...)
+Swift Sponsor: Hype gives Sound Vouchers
+- Starts with Lure and Drop"
 dna = SubResource("Resource_ncdqk")
 gag_loadout = ExtResource("8_el7k0")
 starting_laff = 30
