@@ -10,7 +10,7 @@
 [ext_resource type="Resource" uid="uid://tyi7ukxtvcgc" path="res://objects/battle/battle_resources/gag_loadouts/loadouts/standard_loadout.tres" id="8_m7j15"]
 [ext_resource type="Script" uid="uid://ts8xpgftpmty" path="res://objects/player/character.gd" id="9_a086s"]
 [ext_resource type="Script" uid="uid://combwqypom1ru" path="res://objects/items/classes/item.gd" id="10_368g1"]
-[ext_resource type="Resource" uid="uid://b52pii4rouksj" path="res://objects/items/resources/passive/Judgement.tres" id="11_dbb6c"]
+[ext_resource type="Resource" uid="uid://b52pii4rouksj" path="res://mod_assets/sans/Judgement.tres" id="11_dbb6c"]
 
 [sub_resource type="Resource" id="Resource_ls34v"]
 script = ExtResource("1_atowm")
