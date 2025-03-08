@@ -36,9 +36,9 @@ func get_random_item(pool: ItemPool, override_rolls := false) -> Item:
 			return load('res://objects/items/resources/passive/track_frame.tres')
 		# Laff roll
 		var laff_roll := RandomService.randf_channel("laff_rolls")
-		print('Laff rate is %f, and Laff roll is %f' % [get_laff_rate(), laff_roll])
-		if laff_roll < get_laff_rate():
-			print('Forcing laff spawn')
+		print('laff rate is %f, and laff roll is %f' % [get_laff_rate(), laff_roll])
+		if laff_roll < get_laff_rate() and not Util.player.stats.melancholic:
+			print('forcing laff spawn')
 			return load('res://objects/items/resources/passive/laff_boost.tres')
 		var bean_roll := RandomService.randf_channel("bean_rolls")
 		print('Bean rate is %f and bean roll is %f' % [get_bean_rate(), bean_roll])
@@ -226,6 +226,9 @@ const FLOOR_LAFF_INCREMENT := 14
 const LIKELIHOOD_PER_POINT := 0.1
 func get_laff_rate() -> float:
 	if not is_instance_valid(Util.get_player()):
+		return 0.0
+	
+	if Util.get_player().stats.melancholic:
 		return 0.0
 	
 	# Get the current laff total

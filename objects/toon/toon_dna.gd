@@ -20,7 +20,8 @@ enum ToonSpecies {
 	MONKEY,
 	MOUSE,
 	PIG,
-	RABBIT
+	RABBIT,
+	SANS
 }
 @export var species := ToonSpecies.DOG
 @export var head_index := 0
@@ -37,7 +38,8 @@ const SPECIES_SCALE := {
 	ToonSpecies.MONKEY : 0.8,
 	ToonSpecies.MOUSE : 0.7,
 	ToonSpecies.PIG : 0.9,
-	ToonSpecies.RABBIT : 0.87
+	ToonSpecies.RABBIT : 0.87,
+	ToonSpecies.SANS : 1
 }
 ## This is an adjustment to make the Dog (normally 0.85) scale be at 1.0
 const BASE_SCALE := 1.17647058824

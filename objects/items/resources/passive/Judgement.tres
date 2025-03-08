@@ -1,0 +1,33 @@
+[gd_resource type="Resource" script_class="Item" load_steps=4 format=3 uid="uid://b52pii4rouksj"]
+
+[ext_resource type="Texture2D" uid="uid://bv83ogannla6q" path="res://models/props/toon_props/resistance_fist/sans-pix.png" id="1_3jsoa"]
+[ext_resource type="Script" path="res://objects/items/custom/item_sans_judgement.gd" id="1_fhiev"]
+[ext_resource type="Script" path="res://objects/items/classes/item.gd" id="3_tpgja"]
+
+[resource]
+script = ExtResource("3_tpgja")
+qualitoon = 6
+qualitoon_rarity = 6
+evergreen = true
+realtime = false
+slot = 0
+world_scale = 1.0
+want_ui_spin = true
+ui_cam_offset = 0.0
+item_name = "The Weakest Enemy"
+item_description = "what? you think i'm just gonna stand there and take it?"
+big_description = "Any damage can be dodged with a quick reaction (-10% Defense when activated), Difficulty depends on Defense and Evasiveness"
+stats_add = {}
+stats_multiply = {}
+stats_set = {
+"clutch": true
+}
+player_values = {}
+arbitrary_data = {}
+item_script = ExtResource("1_fhiev")
+remember_item = true
+icon = ExtResource("1_3jsoa")
+shop_category_title = "Boost Item"
+shop_category_color = Color(0.196078, 0.580392, 0.917647, 1)
+force_show_shop_category = false
+custom_shop_price = 0

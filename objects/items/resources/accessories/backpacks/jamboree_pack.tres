@@ -45,6 +45,7 @@ big_description = "Grants Sound knockback damage."
 model = ExtResource("2_unwvj")
 stats_add = {}
 stats_multiply = {}
+stats_set = {}
 player_values = {}
 arbitrary_data = {}
 item_script = ExtResource("3_0luck")

@@ -420,9 +420,23 @@ func check_hp(hp : int) -> void:
 	if prev_hp > -1 and laff_lock and hp > prev_hp:
 		stats.hp = prev_hp
 	
-	if hp == 0 and not BattleService.ongoing_battle:
-		lose()
+	if hp == 0:
+		var actually_die := true
+		if stats.clutch:
+			actually_die = !await attempt_clutch()
+		if actually_die and not BattleService.ongoing_battle:
+			lose()
+	
 	prev_hp = stats.hp
+	
+func attempt_clutch() -> bool:
+	Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
+	Util.get_tree().get_root().add_child(load("res://objects/battle/misc_battle_objects/clutch_dodge/clutch_dodge.tscn").instantiate())
+	var result = await Util.s_clutch_ended
+	if result:
+		quick_heal(Util.get_player().stats.max_hp)
+		laff_meter.update_hp()
+	return result
 
 func quick_heal(amount: int) -> void:
 	var pre_hp := stats.hp

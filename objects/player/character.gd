@@ -154,3 +154,7 @@ func generate_random_gags(player: Player) -> void:
 	# Start player off with anywhere from level 1-3 gags
 	for track in selected_tracks:
 		player.stats.gags_unlocked[track.track_name] += RandomService.randi_channel('true_random') % 2 + 1
+
+func sans(player: Player) -> void:
+	for track in player.stats.gags_unlocked.keys():
+		player.stats.gags_unlocked[track] = 1

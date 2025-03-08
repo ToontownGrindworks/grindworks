@@ -300,6 +300,7 @@ stats_add = {
 "max_hp": 10
 }
 stats_multiply = {}
+stats_set = {}
 player_values = {}
 arbitrary_data = {}
 remember_item = true

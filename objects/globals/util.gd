@@ -37,6 +37,8 @@ signal s_player_died
 signal s_fullscreen_toggled(fullscreen: bool)
 signal s_floor_number_changed
 
+signal s_clutch_ended(result: bool)
+
 var floor_type : DepartmentFloor
 var window_focused := true
 

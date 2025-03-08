@@ -297,6 +297,7 @@ stats_add = {
 "bossbot_boost": 0.1
 }
 stats_multiply = {}
+stats_set = {}
 player_values = {}
 arbitrary_data = {}
 remember_item = true

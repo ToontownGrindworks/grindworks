@@ -156,6 +156,7 @@ proxy_chance_boost = 0.0
 money_gain_rate = 1.0
 allow_item_chests = true
 cog_hp_death_threshold = 0.0
+clutch = false
 damage = 2.0
 defense = 1.2
 evasiveness = 1.1
