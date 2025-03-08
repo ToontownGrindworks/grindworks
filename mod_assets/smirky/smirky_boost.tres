@@ -292,7 +292,8 @@ want_ui_spin = true
 ui_cam_offset = 0.2
 item_name = "Friendly Influence"
 item_description = "Welcome to the Smirksters!"
-big_description = "Using Sound Vouchers calls a friend to target a random Cog with Sound; -25% Sound Damage, Smirky Curse in effect (-20% Sound Accuracy)"
+big_description = "- Using Sound Vouchers calls a friend to target a random Cog with Sound
+- 25% less Sound Damage, Smirky Curse in effect (-20% Sound Accuracy)"
 model = ExtResource("3_6wqmo")
 stats_add = {}
 stats_multiply = {}

@@ -284,24 +284,25 @@ script = ExtResource("5_x1t2n")
 accessory_placements = Array[ExtResource("1_1x0vv")]([SubResource("Resource_8pqho"), SubResource("Resource_4qx3c"), SubResource("Resource_s7khx"), SubResource("Resource_g7cfs"), SubResource("Resource_10r2o"), SubResource("Resource_1pn5b"), SubResource("Resource_12s3o"), SubResource("Resource_ri0uk"), SubResource("Resource_iuwe1"), SubResource("Resource_4hlks"), SubResource("Resource_rrf6k"), SubResource("Resource_shykx"), SubResource("Resource_5lxyc"), SubResource("Resource_h15cx"), SubResource("Resource_2gm5v"), SubResource("Resource_ss5a7"), SubResource("Resource_g43iw"), SubResource("Resource_s5fl3"), SubResource("Resource_n3gkc"), SubResource("Resource_k5eti"), SubResource("Resource_5rw3p"), SubResource("Resource_2enl1"), SubResource("Resource_7heev"), SubResource("Resource_1bdb1"), SubResource("Resource_c36o5"), SubResource("Resource_jafqh"), SubResource("Resource_7roc0"), SubResource("Resource_46dnc"), SubResource("Resource_0y12l"), SubResource("Resource_kbcnn"), SubResource("Resource_nk2mc"), SubResource("Resource_57ry5"), SubResource("Resource_y5ahc"), SubResource("Resource_bkf5t")])
 qualitoon = 0
 rarity = 0
-evergreen = false
+evergreen = true
 realtime = false
 slot = 2
 world_scale = 0.17
 want_ui_spin = true
 ui_cam_offset = 0.0
 item_name = "Under the Heat"
-item_description = "I am the light!"
-big_description = "Gain 1 stack up to 8 for each round without taking damage, reset if hit;
-+7% Damage, +7% Luck, +2% Evasiveness, -8% Defense, and -2 timer seconds per stack;
-22 second timer with 1 stack, time multiplied by Speed;
-Gain 1 extra turn at 1 stack and another at max stacks"
+item_description = "Gonna light 'em up!"
+big_description = "- Gain 1 Heat up to 5 for each round without taking damage, reset if hit while below max laff
+- At 1 Heat: Gain 1 extra turn, add a 22 second battle timer for each round
+- At max Heat: Gain another extra turn
+- For each Heat: +5% to all stats, -2 battle timer seconds"
 model = ExtResource("5_k307b")
 stats_add = {}
 stats_multiply = {}
 stats_set = {}
 player_values = {}
 arbitrary_data = {
+"max_hp_taken": 0,
 "stacks": 0
 }
 item_script = ExtResource("4_8fxce")

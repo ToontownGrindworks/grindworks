@@ -9,19 +9,28 @@ const SFX_TIMER = preload("res://audio/sfx/objects/moles/MG_sfx_travel_game_bell
 const SFX_HEAT = preload("res://audio/sfx/sequences/elevator_trick/elevator_trick_open.ogg")
 const SFX_MAX = preload("res://audio/sfx/battle/gags/lure/TL_hypnotize.ogg")
 @export var stat_mods := {
-	'damage' = 0.07,
-	'defense' = -0.08,
-	'evasiveness' = 0.02,
-	'luck' = 0.07
-} 
+	'damage' = 0.05,
+	'defense' = 0.05,
+	'evasiveness' = 0.05,
+	'luck' = 0.05,
+	'speed' = 0.05,
+	'max_hp' = -0.10
+}
+
+@export var max_hp_return_factor := 0.75
 @export var timer_mod := -2.0
-@export var max_stacks := 8
+@export var max_stacks := 5
 
 var stacks: int:
 	set(x):
 		stacks = x
 		if item is Item:
 			item.arbitrary_data["stacks"] = x
+var max_hp_taken: int:
+	set(x):
+		max_hp_taken = x
+		if item is Item:
+			item.arbitrary_data["max_hp_taken"] = x
 	
 var flawless_round := false
 
@@ -37,6 +46,7 @@ var item: Item
 func on_collect(_item: Item, _object: Node3D) -> void:
 	item = _item
 	stacks = item.arbitrary_data["stacks"]
+	max_hp_taken = item.arbitrary_data["max_hp_taken"]
 	var player: Player
 	if not Util.get_player():
 		player = await Util.s_player_assigned
@@ -55,9 +65,10 @@ func setup(_player : Player) -> void:
 	player.stats.hp_changed.connect(player_hp_change)
 	
 func player_hp_change(new_hp : int) -> void:
-	if new_hp < current_hp:
+	var max_hp: int = player.stats.max_hp
+	if new_hp < current_hp and new_hp < max_hp:
 		flawless_round = false
-		if stacks > 0:
+		if stacks > 0  and current_hp < max_hp:
 			player.boost_queue.queue_text("Heat Extinguished", Color.DARK_RED)
 			modify_stats(-stacks)
 			stacks = 0
@@ -94,10 +105,21 @@ func modify_stats(factor: float) -> void:
 		battle_stats = manager.battle_stats[player]
 	
 	for key in stat_mods:
+		var new_value = stat_mods[key] * factor
+		if key == 'max_hp':
+			new_value = ceil(new_value * player.stats.max_hp)
+			if factor < 0:
+				new_value = ceil(max_hp_taken * max_hp_return_factor)
+				max_hp_taken = 0
+			else:
+				max_hp_taken -= new_value
 		if key in stats:
-			stats[key] += stat_mods[key] * factor
+			stats[key] += new_value
 			if battle_stats:
-				battle_stats[key] += stat_mods[key] * factor
+				battle_stats[key] += new_value
+				
+	if current_hp > player.stats.max_hp:
+		player.stats.hp = player.stats.max_hp
 
 ## Runs the battle timer at the beginning of each round
 func on_round_reset(_manager: BattleManager) -> void:
@@ -122,21 +144,22 @@ func on_round_reset(_manager: BattleManager) -> void:
 	
 	# Give bonus turn 1 heat and at max heat
 	var turns_given: int = player.stats.turns
+	var has_cogs := manager.cogs.size() > 0
 	if stacks > 0:
 		turns_given += 1
+		timer = Util.run_timer((ROUND_TIME + (stacks * timer_mod)) * player.stats['speed'], TIMER_ANCHOR)
+		timer.timer.timeout.connect(on_timeout.bind(manager.battle_ui))
+		timer.reparent(manager.battle_ui)
+		if has_cogs:
+			AudioManager.play_sound(SFX_TIMER, -6.0)
 	if stacks == max_stacks:
-		AudioManager.play_sound(SFX_MAX)
 		turns_given += 1
+		if has_cogs:
+			AudioManager.play_sound(SFX_MAX)
 	manager.battle_stats[player].turns = turns_given
 	manager.battle_ui.refresh_turns()
 	
 	flawless_round = true
-	if stacks >= 1:
-		timer = Util.run_timer(ROUND_TIME + (stacks * timer_mod), TIMER_ANCHOR)
-		timer.timer.timeout.connect(on_timeout.bind(manager.battle_ui))
-		timer.reparent(manager.battle_ui)
-		#if manager.cogs.size() > 0:
-			#AudioManager.play_sound(SFX_TIMER)
 
 func on_timeout(ui: BattleUI) -> void:
 	# Good way to tell if round isn't over is if the UI is still visible

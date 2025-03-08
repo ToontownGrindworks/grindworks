@@ -290,8 +290,9 @@ world_scale = 0.15
 want_ui_spin = true
 ui_cam_offset = 0.0
 item_name = "Pact Conjurer"
-item_description = "We are fighter, brighter, igniter..."
-big_description = "Tightened Security is on all floors"
+item_description = "Burning power has a price..."
+big_description = "- Gaining Heat reduces Max Laff by 10%, losing Heat returns 75% of the lost Max Laff
+- Tightened Security is on all floors"
 model = ExtResource("4_mras5")
 stats_add = {}
 stats_multiply = {}
