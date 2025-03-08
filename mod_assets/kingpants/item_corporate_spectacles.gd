@@ -6,6 +6,8 @@ extends ItemScript
 const ROUND_TIME := 24
 const TIMER_ANCHOR := Control.PRESET_TOP_RIGHT
 const SFX_TIMER = preload("res://audio/sfx/objects/moles/MG_sfx_travel_game_bell_for_trolley.ogg")
+const SFX_HEAT = preload("res://audio/sfx/sequences/elevator_trick/elevator_trick_open.ogg")
+const SFX_MAX = preload("res://audio/sfx/battle/gags/lure/TL_hypnotize.ogg")
 @export var stat_mods := {
 	'damage' = 0.07,
 	'defense' = -0.08,
@@ -56,6 +58,7 @@ func player_hp_change(new_hp : int) -> void:
 	if new_hp < current_hp:
 		flawless_round = false
 		if stacks > 0:
+			player.boost_queue.queue_text("Heat Extinguished", Color.DARK_RED)
 			modify_stats(-stacks)
 			stacks = 0
 	current_hp = new_hp
@@ -103,6 +106,18 @@ func on_round_reset(_manager: BattleManager) -> void:
 	if flawless_round and stacks < max_stacks:
 		stacks += 1
 		modify_stats(1.0)
+		var message: String
+		var sfx: AudioStream
+		if stacks == max_stacks:
+			sfx = SFX_MAX
+			message = "Maximuim Heat!!!"
+		else:
+			sfx = SFX_HEAT
+			message = "Heat Rising"
+			for i in stacks:
+				message += "!"
+		player.boost_queue.queue_text(message, Color.DARK_RED.blend(Color(0.06 * stacks, 0.06 * stacks, 0.06 * stacks)))
+		AudioManager.play_sound(SFX_HEAT, 0.0, "SFX", 1.0 + (0.06 * stacks))
 	print("Heat: " +str(stacks))
 	
 	# Give bonus turn 1 heat and at max heat
@@ -110,6 +125,7 @@ func on_round_reset(_manager: BattleManager) -> void:
 	if stacks > 0:
 		turns_given += 1
 	if stacks == max_stacks:
+		AudioManager.play_sound(SFX_MAX)
 		turns_given += 1
 	manager.battle_stats[player].turns = turns_given
 	manager.battle_ui.refresh_turns()
