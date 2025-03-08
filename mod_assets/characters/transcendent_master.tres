@@ -7,8 +7,8 @@
 [ext_resource type="Resource" uid="uid://ku2bgq1npgus" path="res://objects/toon/clothing/shirts/star_shirt.tres" id="5_ne6o2"]
 [ext_resource type="Resource" uid="uid://tyi7ukxtvcgc" path="res://objects/battle/battle_resources/gag_loadouts/loadouts/standard_loadout.tres" id="8_2qj1n"]
 [ext_resource type="Script" uid="uid://ts8xpgftpmty" path="res://objects/player/character.gd" id="9_dl5bg"]
+[ext_resource type="Resource" uid="uid://dj8ywg7pnysgv" path="res://mod_assets/transcendent/sages_ascent.tres" id="9_yamx4"]
 [ext_resource type="Script" uid="uid://combwqypom1ru" path="res://objects/items/classes/item.gd" id="10_3hosj"]
-[ext_resource type="Resource" uid="uid://rp2nc8f2wt77" path="res://objects/items/resources/accessories/backpacks/dragon_wings.tres" id="11_hg211"]
 
 [sub_resource type="Resource" id="Resource_jj61k"]
 script = ExtResource("1_u7dsc")
@@ -46,13 +46,13 @@ bottoms = SubResource("Resource_ugrs1")
 [resource]
 script = ExtResource("9_dl5bg")
 character_name = "Transcendent Master"
-character_summary = "- Start with Dragon Wings
+character_summary = "Sage's Ascent: Multiplicative wealth for power
 - Chests do not give accessories
 - All jellybean gain is halved
 - Start with Squirt and Drop"
 dna = SubResource("Resource_klv40")
 gag_loadout = ExtResource("8_2qj1n")
 starting_laff = 30
-starting_items = Array[ExtResource("10_3hosj")]([ExtResource("11_hg211")])
+starting_items = Array[ExtResource("10_3hosj")]([ExtResource("9_yamx4")])
 base_stats = SubResource("Resource_jj61k")
 random_character_stored_name = ""
