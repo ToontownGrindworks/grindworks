@@ -298,7 +298,9 @@ stats_add = {}
 stats_multiply = {}
 stats_set = {}
 player_values = {}
-arbitrary_data = {}
+arbitrary_data = {
+"stacks": 0
+}
 item_script = ExtResource("4_hw1gx")
 remember_item = true
 icon = ExtResource("3_h4nvs")

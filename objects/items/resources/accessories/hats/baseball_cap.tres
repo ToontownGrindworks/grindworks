@@ -300,6 +300,7 @@ stats_add = {
 stats_multiply = {
 "gag_boost:Throw": 1.2
 }
+stats_set = {}
 player_values = {}
 arbitrary_data = {}
 remember_item = true

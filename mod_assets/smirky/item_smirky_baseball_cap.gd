@@ -4,8 +4,9 @@ var current_battle: BattleManager
 var round_limit := 2
 var stacks: int:
 	set(x):
+		stacks = x
 		if item is Item:
-			item.arbitrary_data["stacks"] = x
+			item.arbitrary_data["stacks"] = stacks
 var streak_bonus := 15
 
 var item: Item
@@ -29,6 +30,7 @@ func resolve_hype(result: bool) -> void:
 	if result:
 		popup_message += "Hype Train"
 		stacks += 1
+		print("Hype Streak: " + str(stacks))
 		for i in stacks:
 			popup_message += "!"
 		var bonus := floori((stacks * streak_bonus) / 100)

@@ -17,6 +17,7 @@ const SFX_TIMER = preload("res://audio/sfx/objects/moles/MG_sfx_travel_game_bell
 
 var stacks: int:
 	set(x):
+		stacks = x
 		if item is Item:
 			item.arbitrary_data["stacks"] = x
 	
