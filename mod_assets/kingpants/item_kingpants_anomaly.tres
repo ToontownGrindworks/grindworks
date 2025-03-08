@@ -290,12 +290,14 @@ world_scale = 0.15
 want_ui_spin = true
 ui_cam_offset = 0.0
 item_name = "Pact Conjurer"
-item_description = "We are fighter, brighter, igniter... (NOT IMPLEMENTED)"
-big_description = "+1 Negative Anomaly per floor (NOT IMPLEMENTED)"
+item_description = "We are fighter, brighter, igniter..."
+big_description = "Tightened Security is on all floors"
 model = ExtResource("4_mras5")
 stats_add = {}
 stats_multiply = {}
-player_values = {}
+player_values = {
+"force_tightened_security": true
+}
 arbitrary_data = {}
 remember_item = true
 icon = ExtResource("3_sg4sc")

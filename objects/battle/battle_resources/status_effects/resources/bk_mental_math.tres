@@ -17,4 +17,3 @@ visible = true
 description = "The Bookkeeper is focusing! Do not target her."
 status_name = "Mental Math"
 id = 21
-_generate_id = false

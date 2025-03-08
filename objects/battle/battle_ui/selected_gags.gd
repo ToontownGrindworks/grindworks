@@ -18,7 +18,15 @@ signal s_gag_canceled(index : int)
 func _ready():
 	# Add the first gag panel to the array
 	panels.append(gag_panel)
+	configure_panel(gag_panel)
 	update_panels()
+
+func configure_panel(panel) -> void:
+	panel.get_node('GagIcon').mouse_entered.connect(hover_slot.bind(panels.find(panel)))
+	panel.get_node('GagIcon').mouse_exited.connect(stop_hover)
+	panel.get_node('GeneralButton').disabled = true
+	panel.get_node('GeneralButton').hide()
+	panel.get_node('GeneralButton').pressed.connect(cancel_gag.bind(panels.find(panel)))
 		
 func update_panels() -> void:
 	# Amount of panels is based on Player turns (-1)
@@ -32,11 +40,8 @@ func update_panels() -> void:
 		
 		# X Button configuration
 		for panel in panels:
-			panel.get_node('GagIcon').mouse_entered.connect(hover_slot.bind(panels.find(panel)))
-			panel.get_node('GagIcon').mouse_exited.connect(stop_hover)
-			panel.get_node('GeneralButton').disabled = true
-			panel.get_node('GeneralButton').hide()
-			panel.get_node('GeneralButton').pressed.connect(cancel_gag.bind(panels.find(panel)))
+			configure_panel(panel)
+	
 	if panels_to_make < 0:
 		for i in abs(panels_to_make):
 			panels.pop_back().queue_free()

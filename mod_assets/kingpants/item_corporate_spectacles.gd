@@ -8,14 +8,18 @@ const TIMER_ANCHOR := Control.PRESET_TOP_RIGHT
 const SFX_TIMER = preload("res://audio/sfx/objects/moles/MG_sfx_travel_game_bell_for_trolley.ogg")
 @export var stat_mods := {
 	'damage' = 0.07,
-	'defense' = -0.05,
+	'defense' = -0.08,
 	'evasiveness' = 0.02,
 	'luck' = 0.07
-}
+} 
 @export var timer_mod := -2.0
 @export var max_stacks := 8
 
-var stacks := 0
+var stacks: int:
+	set(x):
+		if item is Item:
+			item.arbitrary_data["stacks"] = x
+	
 var flawless_round := false
 
 ## Battle Timer created by Util
@@ -25,7 +29,11 @@ var player: Player
 var manager: BattleManager
 var current_hp: int
 
+var item: Item
+
 func on_collect(_item: Item, _object: Node3D) -> void:
+	item = _item
+	stacks = item.arbitrary_data["stacks"]
 	var player: Player
 	if not Util.get_player():
 		player = await Util.s_player_assigned

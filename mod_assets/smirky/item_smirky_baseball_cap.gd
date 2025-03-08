@@ -2,8 +2,13 @@ extends ItemScript
 
 var current_battle: BattleManager
 var round_limit := 2
-var streak := 0
+var stacks: int:
+	set(x):
+		if item is Item:
+			item.arbitrary_data["stacks"] = x
 var streak_bonus := 15
+
+var item: Item
 
 func setup() -> void:
 	BattleService.s_battle_started.connect(on_battle_start)
@@ -23,16 +28,16 @@ func resolve_hype(result: bool) -> void:
 	
 	if result:
 		popup_message += "Hype Train"
-		streak += 1
-		for i in streak:
+		stacks += 1
+		for i in stacks:
 			popup_message += "!"
-		var bonus := floori((streak * streak_bonus) / 100)
-		bonus += int(RandomService.randi_channel('true_random') % 100 < (streak * streak_bonus))
+		var bonus := floori((stacks * streak_bonus) / 100)
+		bonus += int(RandomService.randi_channel('true_random') % 100 < (stacks * streak_bonus))
 		if bonus > 1:
 			popup_message += " (x" + str(1 + bonus) + ")"
 		player.stats.gag_vouchers["Sound"] += 1 + bonus
 	else:
-		streak = 0
+		stacks = 0
 		popup_message += "Influence Reset"
 	player.boost_queue.queue_text(popup_message, Color.MEDIUM_PURPLE)
 
@@ -51,7 +56,9 @@ func on_round_ended(manager: BattleManager) -> void:
 		manager.s_action_added.disconnect(on_action_added)
 
 func on_collect(_item: Item, _model: Node3D) -> void:
+	item = _item
+	stacks = item.arbitrary_data["stacks"]
 	setup()
 
 func on_load(_item: Item) -> void:
-	setup()
+	on_collect(_item, null)

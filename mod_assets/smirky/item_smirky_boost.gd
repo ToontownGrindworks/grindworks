@@ -10,6 +10,7 @@ var manager: BattleManager
 
 func on_collect(_item: Item, _object: Node3D) -> void:
 	var player: Player
+	
 	if not Util.get_player():
 		player = await Util.s_player_assigned
 	else:

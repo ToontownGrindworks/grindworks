@@ -1,12 +1,12 @@
 [gd_resource type="Resource" script_class="Item" load_steps=3 format=3 uid="uid://p8l3jgbfmf1m"]
 
-[ext_resource type="Script" path="res://mod_assets/smirky/item_smirky_boost.gd" id="1_g0y7q"]
-[ext_resource type="Script" path="res://objects/items/classes/item.gd" id="2_n1b2t"]
+[ext_resource type="Script" uid="uid://c7kt6ntf4dwk7" path="res://mod_assets/smirky/item_smirky_boost.gd" id="1_g0y7q"]
+[ext_resource type="Script" uid="uid://combwqypom1ru" path="res://objects/items/classes/item.gd" id="2_n1b2t"]
 
 [resource]
 script = ExtResource("2_n1b2t")
 qualitoon = 0
-qualitoon_rarity = 6
+rarity = 0
 evergreen = false
 realtime = false
 slot = 0
@@ -19,7 +19,9 @@ big_description = "we have bessie at home"
 stats_add = {}
 stats_multiply = {}
 player_values = {}
-arbitrary_data = {}
+arbitrary_data = {
+"stacks": 0
+}
 item_script = ExtResource("1_g0y7q")
 remember_item = true
 shop_category_title = "Boost Item"

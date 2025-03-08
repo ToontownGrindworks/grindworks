@@ -1,6 +1,6 @@
 [gd_scene load_steps=13 format=4 uid="uid://idagtqd5cor5"]
 
-[ext_resource type="Texture2D" uid="uid://b3rqgdcn5w8m8" path="res://models/props/gags/foghorn/foghorn_foghorn_out.png" id="1_xcnk4"]
+[ext_resource type="Texture2D" uid="uid://cvt4j7gbo7dyn" path="res://models/props/gags/foghorn/foghorn_foghorn_out.png" id="1_xcnk4"]
 [ext_resource type="Texture2D" uid="uid://ddm0kbibm6c80" path="res://models/props/gags/foghorn/foghorn_foghorn_mouth.png" id="2_euwmy"]
 [ext_resource type="Texture2D" uid="uid://hg2wgydke3lx" path="res://models/props/gags/foghorn/foghorn_foghorn_in.png" id="3_spler"]
 

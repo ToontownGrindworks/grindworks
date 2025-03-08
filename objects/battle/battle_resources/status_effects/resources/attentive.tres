@@ -16,4 +16,3 @@ visible = true
 description = "Unlures at the end of the round"
 status_name = "Attentive"
 id = 1
-_generate_id = false

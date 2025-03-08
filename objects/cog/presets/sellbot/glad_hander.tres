@@ -5,7 +5,7 @@
 [ext_resource type="Script" uid="uid://okjbx502s3r5" path="res://objects/cog/cogdna.gd" id="2_isdwj"]
 [ext_resource type="PackedScene" uid="uid://bptrv8nm0esos" path="res://models/cogs/heads/gladhander.glb" id="3_jngi7"]
 [ext_resource type="Resource" uid="uid://bhl72hd7pn8s2" path="res://objects/battle/battle_resources/cog_attacks/resources/workout.tres" id="3_r6wq7"]
-[ext_resource type="Texture2D" uid="uid://mxt1dt43lqfm" path="res://models/cogs/heads/gladhander_tt_t_ene_hed_yesMan.png" id="4_b75b3"]
+[ext_resource type="Texture2D" uid="uid://cskothj4ypasr" path="res://models/cogs/heads/gladhander_tt_t_ene_hed_yesMan.png" id="4_b75b3"]
 [ext_resource type="Script" uid="uid://df7irk63ikx4k" path="res://objects/battle/battle_resources/status_effect.gd" id="8_7orgg"]
 
 [resource]

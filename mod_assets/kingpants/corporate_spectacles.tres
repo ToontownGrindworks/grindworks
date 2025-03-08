@@ -293,16 +293,16 @@ ui_cam_offset = 0.0
 item_name = "Under the Heat"
 item_description = "I am the light!"
 big_description = "Gain 1 stack up to 8 for each round without taking damage, reset if hit;
-+7% Damage, +7% Luck, +2% Evasiveness, -5% Defense, and -2 timer seconds per stack;
++7% Damage, +7% Luck, +2% Evasiveness, -8% Defense, and -2 timer seconds per stack;
 22 second timer with 1 stack, time multiplied by Speed;
 Gain 1 extra turn at 1 stack and another at max stacks"
 model = ExtResource("5_k307b")
 stats_add = {}
 stats_multiply = {}
-player_values = {
-"force_tightened_security": true
+player_values = {}
+arbitrary_data = {
+"stacks": 0
 }
-arbitrary_data = {}
 item_script = ExtResource("4_8fxce")
 remember_item = true
 icon = ExtResource("3_xdo4s")

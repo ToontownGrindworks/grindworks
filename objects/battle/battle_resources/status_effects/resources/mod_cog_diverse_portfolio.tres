@@ -16,4 +16,3 @@ visible = true
 description = "+1 Turn, -33% Damage"
 status_name = "Diverse Portfolio"
 id = 23
-_generate_id = false

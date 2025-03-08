@@ -16,4 +16,3 @@ visible = true
 description = "This is a Status Effect"
 status_name = "Red Light"
 id = 28
-_generate_id = false

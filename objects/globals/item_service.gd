@@ -44,7 +44,7 @@ func get_random_item(pool: ItemPool, override_rolls := false) -> Item:
 		print('Bean rate is %f and bean roll is %f' % [get_bean_rate(), bean_roll])
 		if bean_roll < get_bean_rate():
 			print('Forcing bean spawn')
-			return get_random_item(BEAN_POOL, true)
+			#return get_random_item(BEAN_POOL, true)
 	
 	# Trim out all seen items from pool
 	var trimmed_pool: Array[Item] = []
@@ -246,7 +246,7 @@ func get_laff_rate() -> float:
 
 const BEAN_GOAL := 30
 const LIKELIHOOD_PER_BEAN := 0.05
-const BEAN_POOL := preload('res://objects/items/pools/jellybeans.tres')
+@onready var BEAN_POOL = load('res://objects/items/pools/jellybeans.tres')
 func get_bean_rate() -> float:
 	if not is_instance_valid(Util.get_player()):
 		return 0.0

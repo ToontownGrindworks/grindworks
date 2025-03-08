@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://20v2ot480e" path="res://models/facilities/office/textures/CFOCeiling2.png" id="2_crcuk"]
 [ext_resource type="PackedScene" uid="uid://ceghombqxco7o" path="res://objects/props/office/bookshelf.tscn" id="2_qgg6c"]
 [ext_resource type="Texture2D" uid="uid://c2orm44yrj4uj" path="res://models/facilities/office/textures/LB_tanSurface.png" id="3_rfufk"]
-[ext_resource type="Texture2D" uid="uid://c22vsww70r3wa" path="res://models/facilities/office/textures/CementFloor7.png" id="4_d7f3c"]
+[ext_resource type="Texture2D" uid="uid://jmddjyrgeyra" path="res://models/facilities/office/textures/CementFloor7.png" id="4_d7f3c"]
 [ext_resource type="PackedScene" uid="uid://bx0hib3faipy4" path="res://objects/obstacles/gavel/gavel_obstacle.tscn" id="4_ppolh"]
 [ext_resource type="PackedScene" uid="uid://btajacdw0exth" path="res://objects/props/office/partition.tscn" id="5_o7t8j"]
 [ext_resource type="PackedScene" uid="uid://d0bnakgqatchq" path="res://objects/props/office/lamp_big.tscn" id="6_i70vi"]

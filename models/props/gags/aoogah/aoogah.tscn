@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://bei20m6bj0v2n" path="res://models/props/gags/aoogah/aoogah_aoogah_boxF.png" id="2_tobro"]
 [ext_resource type="Texture2D" uid="uid://cho1n5pwt8y6s" path="res://models/props/gags/aoogah/aoogah_minnie_planter_handle2.png" id="3_k5m4o"]
 [ext_resource type="Texture2D" uid="uid://ck31nx4dc1mrk" path="res://models/props/gags/aoogah/aoogah_MM_planterbox_side.png" id="4_0ra6f"]
-[ext_resource type="Texture2D" uid="uid://mdaj6d615ex8" path="res://models/props/gags/aoogah/aoogah_aoogah_in.png" id="5_plbqs"]
+[ext_resource type="Texture2D" uid="uid://y5n5l1wckpos" path="res://models/props/gags/aoogah/aoogah_aoogah_in.png" id="5_plbqs"]
 [ext_resource type="Texture2D" uid="uid://dqf5p6wucxkkr" path="res://models/props/gags/aoogah/aoogah_bikehorn_out.png" id="6_r78m2"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6p8sf"]
