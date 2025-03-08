@@ -119,7 +119,7 @@ func set_caged_toon_dna(dna: ToonDNA) -> void:
 func get_caged_toon_dna() -> ToonDNA:
 	var unlock_index: int = SaveFileService.progress_file.characters_unlocked
 	var can_unlock: bool = Util.get_player().stats.character.character_name == Globals.TOON_UNLOCK_ORDER[unlock_index - 1].character_name
-	if Util.get_player().stats.character.character_name == Globals.TOON_UNLOCK_ORDER[5].character_name:
+	if Util.get_player().stats.character.character_name == Globals.TOON_UNLOCK_ORDER[0].character_name:
 		can_unlock = false
 	if not can_unlock:
 		var dna := ToonDNA.new()
