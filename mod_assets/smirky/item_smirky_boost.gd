@@ -5,6 +5,7 @@ extends ItemScript
 const SFX_VOUCHER := "res://audio/sfx/battle/gags/sound/LB_receive_evidence.ogg"
 
 var player: Player
+@export var accuracy: float = 0.8
 
 var manager: BattleManager
 
@@ -44,10 +45,14 @@ func try_apply_sound(manager: BattleManager) -> void:
 		var new_status := AUTO_SOUND.duplicate()
 		new_status.sound_gag = get_random_sound_resource()
 		new_status.target = cog
+		new_status.accuracy = accuracy
 		manager.add_status_effect(new_status)
 		manager.battle_ui.repopulate_status_effects()
 		AudioManager.play_sound(load(SFX_VOUCHER))
 
 func get_random_sound_resource() -> GagSound:
-	var idx: int = RandomService.randi_range_channel('true_random', 0, player.stats.get_highest_gag_level() - 1)
+	var min_sound_level: int = max(0, Util.floor_number - 2)
+	# Prevent range errors by making sure the max drop level is at least 1 higher than the min drop level
+	var max_sound_level: int = max(min_sound_level, player.stats.get_highest_gag_level() - 1)
+	var idx = RandomService.randi_range_channel('true_random', min_sound_level, max_sound_level)
 	return SOUND_GAGS.gags[idx].duplicate()

@@ -1,13 +1,13 @@
 extends ItemScript
 
 var current_battle: BattleManager
-var round_limit := 2
+var round_limit := 3
 var stacks: int:
 	set(x):
 		stacks = x
 		if item is Item:
 			item.arbitrary_data["stacks"] = stacks
-var streak_bonus := 15
+var streak_bonus := 6
 
 var item: Item
 
@@ -20,16 +20,17 @@ func on_battle_start(manager: BattleManager) -> void:
 	manager.s_round_started.connect(on_round_start.bind(manager))
 	
 func on_battle_ended(manager: BattleManager) -> void:
-	resolve_hype(manager.current_round <= round_limit)
+	resolve_hype(manager.current_round)
 		
-func resolve_hype(result: bool) -> void:
+func resolve_hype(current_round: int) -> void:
+	var result = current_round <= round_limit
 	print("Hype: " + str(result))
 	var popup_message := ""
 	var player = Util.get_player()
 	
 	if result:
 		popup_message += "Hype Train"
-		stacks += 1
+		stacks += round_limit - current_round + 1
 		print("Hype Streak: " + str(stacks))
 		for i in stacks:
 			popup_message += "!"

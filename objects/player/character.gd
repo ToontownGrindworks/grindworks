@@ -115,8 +115,8 @@ func kingpants(player: Player) -> void:
 func smirkybumberpop(player: Player) -> void:
 	player.stats.gags_unlocked['Drop'] = 1
 	player.stats.gags_unlocked['Lure'] = 1
-	# Same case as Bessie
-	player.stats.gag_effectiveness['Sound'] = 1.0
+	# Same case as Bessie; nerf effectiveness in v0.1c
+	player.stats.gag_effectiveness['Sound'] = 0.75
 	player.stats.gag_vouchers['Sound'] = 2
 	
 func doctorgooglymoogly(player: Player) -> void:

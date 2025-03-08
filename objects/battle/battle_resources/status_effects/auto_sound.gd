@@ -3,6 +3,7 @@ extends StatusEffect
 class_name StatusAutoSound
 
 @export var sound_gag: GagSound
+@export var accuracy: float = 1.0
 
 func apply() -> void:
 	manager.s_round_started.connect(round_started)
@@ -16,6 +17,7 @@ func round_started(_actions: Array[BattleAction]) -> void:
 	new_sound.main_target = target
 	new_sound.targets = Util.get_splash_targets(manager.cogs.find(target), manager)
 	new_sound.user = Util.get_player()
+	new_sound.accuracy = accuracy
 	#TODO: Make this into toon summons with sound
 	#new_sound.special_action_exclude = true
 	#new_sound.skip_button_movie = true
