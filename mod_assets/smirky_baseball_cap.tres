@@ -296,6 +296,7 @@ big_description = "Gain a Sound Voucher after winning a battle in two rounds; co
 model = ExtResource("5_ki0it")
 stats_add = {}
 stats_multiply = {}
+stats_set = {}
 player_values = {}
 arbitrary_data = {}
 item_script = ExtResource("4_hw1gx")

@@ -18,6 +18,7 @@ item_description = ""
 big_description = "we have bessie at home"
 stats_add = {}
 stats_multiply = {}
+stats_set = {}
 player_values = {}
 arbitrary_data = {
 "stacks": 0

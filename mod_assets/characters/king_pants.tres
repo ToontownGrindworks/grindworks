@@ -13,6 +13,7 @@
 
 [sub_resource type="Resource" id="Resource_q3qk8"]
 script = ExtResource("1_pnnf4")
+melancholic = false
 damage = 1.0
 defense = 1.0
 evasiveness = 1.0

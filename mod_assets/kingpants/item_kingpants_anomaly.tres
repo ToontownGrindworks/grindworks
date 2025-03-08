@@ -295,6 +295,7 @@ big_description = "Tightened Security is on all floors"
 model = ExtResource("4_mras5")
 stats_add = {}
 stats_multiply = {}
+stats_set = {}
 player_values = {
 "force_tightened_security": true
 }

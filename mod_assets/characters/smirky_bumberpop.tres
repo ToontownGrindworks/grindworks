@@ -16,6 +16,7 @@
 
 [sub_resource type="Resource" id="Resource_jj61k"]
 script = ExtResource("1_ale64")
+melancholic = false
 damage = 1.0
 defense = 1.0
 evasiveness = 1.0

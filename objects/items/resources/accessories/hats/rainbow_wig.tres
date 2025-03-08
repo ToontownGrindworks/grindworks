@@ -299,6 +299,7 @@ stats_add = {
 "max_hp": 5
 }
 stats_multiply = {}
+stats_set = {}
 player_values = {
 "no_negative_anomalies": true
 }

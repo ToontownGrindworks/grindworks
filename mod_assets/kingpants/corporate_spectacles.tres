@@ -299,6 +299,7 @@ Gain 1 extra turn at 1 stack and another at max stacks"
 model = ExtResource("5_k307b")
 stats_add = {}
 stats_multiply = {}
+stats_set = {}
 player_values = {}
 arbitrary_data = {
 "stacks": 0

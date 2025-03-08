@@ -1,13 +1,13 @@
 [gd_resource type="Resource" script_class="Item" load_steps=4 format=3 uid="uid://b52pii4rouksj"]
 
 [ext_resource type="Texture2D" uid="uid://bv83ogannla6q" path="res://models/props/toon_props/resistance_fist/sans-pix.png" id="1_3jsoa"]
-[ext_resource type="Script" path="res://objects/items/custom/item_sans_judgement.gd" id="1_fhiev"]
-[ext_resource type="Script" path="res://objects/items/classes/item.gd" id="3_tpgja"]
+[ext_resource type="Script" uid="uid://u63vkixbf037" path="res://objects/items/custom/item_sans_judgement.gd" id="1_fhiev"]
+[ext_resource type="Script" uid="uid://combwqypom1ru" path="res://objects/items/classes/item.gd" id="3_tpgja"]
 
 [resource]
 script = ExtResource("3_tpgja")
 qualitoon = 6
-qualitoon_rarity = 6
+rarity = 0
 evergreen = true
 realtime = false
 slot = 0
