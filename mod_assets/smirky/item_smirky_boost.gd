@@ -5,7 +5,7 @@ extends ItemScript
 const SFX_VOUCHER := "res://audio/sfx/battle/gags/sound/LB_receive_evidence.ogg"
 
 var player: Player
-@export var accuracy: float = 0.8
+@export var accuracy: int = 80
 
 var manager: BattleManager
 
