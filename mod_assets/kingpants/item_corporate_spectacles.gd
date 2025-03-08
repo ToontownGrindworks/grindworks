@@ -117,7 +117,7 @@ func on_round_reset(_manager: BattleManager) -> void:
 			for i in stacks:
 				message += "!"
 		player.boost_queue.queue_text(message, Color.DARK_RED.lightened(stacks * 0.06))
-		AudioManager.play_sound(SFX_HEAT, 0.0, "SFX", 1.0 + (0.06 * stacks))
+		AudioManager.play_sound(SFX_HEAT, 0.0, "SFX", 1.0 + (0.03 * stacks))
 	print("Heat: " +str(stacks))
 	
 	# Give bonus turn 1 heat and at max heat
@@ -135,8 +135,8 @@ func on_round_reset(_manager: BattleManager) -> void:
 		timer = Util.run_timer(ROUND_TIME + (stacks * timer_mod), TIMER_ANCHOR)
 		timer.timer.timeout.connect(on_timeout.bind(manager.battle_ui))
 		timer.reparent(manager.battle_ui)
-		if manager.cogs.size() > 0:
-			AudioManager.play_sound(SFX_TIMER)
+		#if manager.cogs.size() > 0:
+			#AudioManager.play_sound(SFX_TIMER)
 
 func on_timeout(ui: BattleUI) -> void:
 	# Good way to tell if round isn't over is if the UI is still visible
