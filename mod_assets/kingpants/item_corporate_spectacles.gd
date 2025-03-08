@@ -116,7 +116,7 @@ func on_round_reset(_manager: BattleManager) -> void:
 			message = "Heat Rising"
 			for i in stacks:
 				message += "!"
-		player.boost_queue.queue_text(message, Color.DARK_RED.blend(Color(0.06 * stacks, 0.06 * stacks, 0.06 * stacks)))
+		player.boost_queue.queue_text(message, Color.DARK_RED.lightened(stacks * 0.06))
 		AudioManager.play_sound(SFX_HEAT, 0.0, "SFX", 1.0 + (0.06 * stacks))
 	print("Heat: " +str(stacks))
 	
