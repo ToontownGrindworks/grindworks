@@ -115,7 +115,7 @@ tracks/3/keys = PackedFloat32Array(0, 1, -2.63457e-12, 3.8147e-06, -7.62939e-06)
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_jx02v"]
 _data = {
-"drop": SubResource("Animation_lvxrp")
+&"drop": SubResource("Animation_lvxrp")
 }
 
 [node name="piano2" type="Node3D"]

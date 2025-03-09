@@ -2,7 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://clx5o10oq0fup" path="res://models/accessories/glasses/aviator_glasses/tt_m_chr_avt_acc_msk_aviator.glb" id="1_neatn"]
 [ext_resource type="Texture2D" uid="uid://cqtvnq5wu36pl" path="res://models/accessories/glasses/aviator_glasses/tt_m_chr_avt_acc_msk_aviator_tt_t_chr_avt_acc_msk_aviator.png" id="2_li4wk"]
-[ext_resource type="Script" path="res://models/accessories/glasses/aviator_glasses/aviators.gd" id="2_n27rg"]
+[ext_resource type="Script" uid="uid://bfokag8egjn1r" path="res://models/accessories/glasses/aviator_glasses/aviators.gd" id="2_n27rg"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_wsf0v"]
 resource_name = "default.260"

@@ -17,8 +17,10 @@ var menu_index := 0
 
 
 func _ready() -> void:
+	Globals.import_custom_cogs()
+	
 	# Duplicate the Cog's DNA so we aren't editing anything important wink wink
-	cog.set_dna(safe_cogs.cogs[RandomService.randi_channel('true_random') % safe_cogs.cogs.size()])
+	cog.set_dna(safe_cogs.cogs[RandomService.randi_channel('true_random') % safe_cogs.cogs.size()].duplicate())
 	cog.set_animation("neutral")
 	
 	_prepare_menus()
@@ -118,7 +120,7 @@ func close_open_menu() -> void:
 
 func open_file(file : UIFile) -> void:
 	close_open_menu()
-	cog.set_dna(ResourceLoader.load(file.file_path))
+	cog.set_dna(ResourceLoader.load(file.file_path).duplicate())
 	_prepare_menus()
 	opened_file = file.file_path
 
@@ -328,6 +330,7 @@ func set_hand_color(color : Color) -> void:
 @onready var level_min_label : Label = $Menus/AtrributeSelectors/VBoxContainer/LevelMinimum/Label
 @onready var level_max_slider : HSlider = $Menus/AtrributeSelectors/VBoxContainer/LevelMaximum/HSlider
 @onready var level_max_label : Label = $Menus/AtrributeSelectors/VBoxContainer/LevelMaximum/Label
+@onready var proxy_button : CheckBox = $Menus/AtrributeSelectors/VBoxContainer/ProxyToggle/CheckBox
 
 
 func _ready_attribute() -> void:
@@ -335,6 +338,7 @@ func _ready_attribute() -> void:
 	level_max_slider.set_value(cog.dna.level_high)
 	level_min_slider.set_value(cog.dna.level_low)
 	refresh_plural_name()
+	proxy_button.set_pressed(cog.dna.is_mod_cog)
 
 func set_cog_name(new_name : String) -> void:
 	cog.dna.cog_name = new_name
@@ -362,10 +366,20 @@ func set_maximum_level(value : float) -> void:
 		level_min_slider.set_value(value)
 	if cog.level > cog.dna.level_high:
 		_refresh_cog()
+
+const PROXY_EFFECT := preload('res://objects/battle/battle_resources/status_effects/resources/status_effect_mod_cog.tres')
+func proxy_toggled(yes : bool) -> void:
+	if yes:
+		cog.dna.is_mod_cog = true
+		cog.dna.status_effects.append(PROXY_EFFECT)
+	else:
+		cog.dna.is_mod_cog = false
+		cog.dna.status_effects.erase(PROXY_EFFECT)
+	_refresh_cog()
+
 #endregion
 
 #region ATTACK SELECTION
-const ATTACK_PICKPOCKET := preload("res://objects/battle/battle_resources/cog_attacks/resources/pick_pocket.tres")
 
 @onready var attack_template : HBoxContainer = $Menus/AttackPicker/CheckBoxContainer
 @onready var attack_container_a : VBoxContainer = $Menus/AttackPicker/MenuA/ScrollContainer/AttackContainer
@@ -418,7 +432,6 @@ func attack_pressed(toggle : bool, attack : CogAttack) -> void:
 
 func reset_attacks(_index : int) -> void:
 	cog.dna.attacks.clear()
-	cog.dna.attacks.append(ATTACK_PICKPOCKET)
 	show_correct_menu()
 	refresh_attacks()
 

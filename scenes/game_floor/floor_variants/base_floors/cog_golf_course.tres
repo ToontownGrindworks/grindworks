@@ -1,11 +1,11 @@
 [gd_resource type="Resource" script_class="FloorVariant" load_steps=7 format=3 uid="uid://d3bnj680tmqdo"]
 
 [ext_resource type="Resource" uid="uid://brhahnbakm60" path="res://scenes/game_floor/floor_variants/alt_floors/haunted_golf_course.tres" id="1_4ytks"]
-[ext_resource type="Script" path="res://scenes/game_floor/floor_variants/floor_variant.gd" id="1_i4cca"]
+[ext_resource type="Script" uid="uid://cxvrtrods5hgg" path="res://scenes/game_floor/floor_variants/floor_variant.gd" id="1_i4cca"]
 [ext_resource type="Resource" uid="uid://c0m70b5ovs2i3" path="res://scenes/game_floor/department_floors/rooms_boss.tres" id="1_yvk4d"]
 [ext_resource type="Texture2D" uid="uid://cjynqnh16rd0p" path="res://models/cogs/misc/hp_light/boss.png" id="2_068k4"]
-[ext_resource type="Script" path="res://scenes/game_floor/floor_modifiers/scripts/misc/floor_mod_bbhq_sky.gd" id="2_jb1lp"]
-[ext_resource type="Script" path="res://objects/modules/facility_room.gd" id="2_s2hnm"]
+[ext_resource type="Script" uid="uid://cek1eptxkgnu1" path="res://scenes/game_floor/floor_modifiers/scripts/misc/floor_mod_bbhq_sky.gd" id="2_jb1lp"]
+[ext_resource type="Script" uid="uid://dhyadt7p1gv78" path="res://objects/modules/facility_room.gd" id="2_s2hnm"]
 
 [resource]
 script = ExtResource("1_i4cca")

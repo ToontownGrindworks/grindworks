@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://mxt1dt43lqfm" path="res://models/cogs/heads/gladhander_tt_t_ene_hed_yesMan.png" id="1_llwci"]
 [ext_resource type="Texture2D" uid="uid://0pfwdalkeotx" path="res://models/cogs/heads/gladhander_mask.png" id="2_hk4ib"]
-[ext_resource type="Script" path="res://models/cogs/shaders/colorscale_mask/rainbow_mask.gd" id="3_snd5m"]
+[ext_resource type="Script" uid="uid://d3il20ah53h78" path="res://models/cogs/shaders/colorscale_mask/rainbow_mask.gd" id="3_snd5m"]
 
 [sub_resource type="GDScript" id="GDScript_qqap4"]
 resource_name = "shader_applier"

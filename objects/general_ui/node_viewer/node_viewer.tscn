@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://bwnrw7jcf01kq"]
 
-[ext_resource type="Script" path="res://objects/general_ui/node_viewer/node_viewer.gd" id="1_iqgby"]
+[ext_resource type="Script" uid="uid://bwmpvkngej14y" path="res://objects/general_ui/node_viewer/node_viewer.gd" id="1_iqgby"]
 
 [sub_resource type="ViewportTexture" id="ViewportTexture_qgthv"]
 viewport_path = NodePath("SubViewport")
@@ -14,6 +14,7 @@ camera = NodePath("SubViewport/Camera3D")
 
 [node name="SubViewport" type="SubViewport" parent="."]
 unique_name_in_owner = true
+physics_interpolation_mode = 2
 own_world_3d = true
 transparent_bg = true
 snap_2d_transforms_to_pixel = true

@@ -1,7 +1,7 @@
 [gd_resource type="Resource" load_steps=3 format=3 uid="uid://fuot6gdeues1"]
 
 [ext_resource type="Texture2D" uid="uid://ioseo1bufwaa" path="res://ui_assets/battle/statuses/embezzler.png" id="1_tfqxw"]
-[ext_resource type="Script" path="res://objects/battle/battle_resources/status_effects/mod_cog_effects/cog_mod_embezzler.gd" id="1_uvikr"]
+[ext_resource type="Script" uid="uid://b2lqbuu81d2mx" path="res://objects/battle/battle_resources/status_effects/mod_cog_effects/cog_mod_embezzler.gd" id="1_uvikr"]
 
 [resource]
 script = ExtResource("1_uvikr")

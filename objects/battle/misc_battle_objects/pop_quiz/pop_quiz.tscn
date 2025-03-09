@@ -1,7 +1,7 @@
 [gd_scene load_steps=10 format=3 uid="uid://b5hgufi22sqfs"]
 
 [ext_resource type="PackedScene" uid="uid://dkd6dg5s5uuef" path="res://objects/general_ui/base_panel.tscn" id="2_8t5ff"]
-[ext_resource type="Script" path="res://objects/battle/misc_battle_objects/pop_quiz/pop_quiz.gd" id="2_cfnds"]
+[ext_resource type="Script" uid="uid://dcamidi03onc7" path="res://objects/battle/misc_battle_objects/pop_quiz/pop_quiz.gd" id="2_cfnds"]
 [ext_resource type="FontFile" uid="uid://815gwlftl5ik" path="res://fonts/impress-bt.ttf" id="3_1nun8"]
 [ext_resource type="PackedScene" uid="uid://b0d1er4oqiqcn" path="res://objects/general_ui/general_button/general_button.tscn" id="4_ellir"]
 [ext_resource type="Texture2D" uid="uid://b5exblt5wcdwd" path="res://ui_assets/general/Schtickerbook_startparty_button_inactive.png" id="5_3i8r0"]

@@ -38,7 +38,7 @@ func action():
 	else:
 		manager.battle_text(target,"MISSED")
 	
-	await user.animator.animation_finished
+	await manager.barrier(user.animator.animation_finished, 4.0)
 	
 	# Delete dollar
 	if dollar:

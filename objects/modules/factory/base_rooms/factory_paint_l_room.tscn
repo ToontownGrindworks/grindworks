@@ -1,7 +1,7 @@
 [gd_scene load_steps=44 format=4 uid="uid://bs24a1pbm1pba"]
 
 [ext_resource type="PackedScene" uid="uid://cqahudkf6anvg" path="res://models/facilities/factory/factory_paint_l_room.fbx" id="1_jv2l6"]
-[ext_resource type="Script" path="res://objects/modules/factory/base_rooms/factory_paint_l_room.gd" id="2_6tj2p"]
+[ext_resource type="Script" uid="uid://qonvoc3f5vsl" path="res://objects/modules/factory/base_rooms/factory_paint_l_room.gd" id="2_6tj2p"]
 [ext_resource type="Texture2D" uid="uid://do8mo6ao1sm0e" path="res://models/facilities/factory/FINALFACTORY_66.png" id="2_qrvgo"]
 [ext_resource type="Texture2D" uid="uid://d35gru1sglser" path="res://models/facilities/factory/FINALFACTORY_24.png" id="3_ucoje"]
 [ext_resource type="Texture2D" uid="uid://ckjvdqmnty5ng" path="res://models/facilities/factory/FINALFACTORY_65.png" id="4_7iwnu"]
@@ -13,7 +13,7 @@
 [ext_resource type="Texture2D" uid="uid://bfarayhobfa4j" path="res://models/facilities/factory/GearEdgePaint.png" id="10_v5a8t"]
 [ext_resource type="Texture2D" uid="uid://conb0dcb5scpe" path="res://models/facilities/factory/GearCap1.png" id="11_jp1gv"]
 [ext_resource type="PackedScene" uid="uid://dmv7dbgr2b2nr" path="res://objects/obstacles/lava_floor/lava_floor.tscn" id="12_s3kry"]
-[ext_resource type="Shader" path="res://general_resources/shaders/liquid_shader.gdshader" id="13_qwjlu"]
+[ext_resource type="Shader" uid="uid://b3xje7jv3si6v" path="res://general_resources/shaders/liquid_shader.gdshader" id="13_qwjlu"]
 [ext_resource type="Texture2D" uid="uid://dj5lnvim0vwrs" path="res://models/facilities/factory/SB_Paint.png" id="14_i41qd"]
 [ext_resource type="PackedScene" uid="uid://dgjcjdwr47ch7" path="res://objects/props/factory/smoke_particles.tscn" id="16_1jb32"]
 
@@ -405,7 +405,7 @@ blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_j7e17")
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_yfo43"]
-size = Vector3(32.4503, 0.419852, 27.2088)
+size = Vector3(26.4236, 0.419852, 28.4525)
 
 [sub_resource type="FastNoiseLite" id="FastNoiseLite_mqphr"]
 noise_type = 3
@@ -425,11 +425,11 @@ resource_name = "lava"
 render_priority = 0
 shader = ExtResource("13_qwjlu")
 shader_parameter/albedo = Color(0.847474, 0.847474, 0.847474, 1)
+shader_parameter/texture_albedo = ExtResource("14_i41qd")
 shader_parameter/uv1_scale = Vector3(1, 1, 1)
 shader_parameter/uv1_offset = Vector3(0, 0, 0)
 shader_parameter/uv1_scroll = 0.01
 shader_parameter/height_scale = 0.3
-shader_parameter/texture_albedo = ExtResource("14_i41qd")
 shader_parameter/displacement = SubResource("NoiseTexture2D_r0pwm")
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_cm1h1"]
@@ -453,7 +453,7 @@ surface_material_override/2 = SubResource("StandardMaterial3D_4hguf")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Bridge/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_unldy")
 
-[node name="ENTRANCE" parent="." index="4"]
+[node name="ENTRANCE" parent="." index="3"]
 transform = Transform3D(-4.37114e-06, 100, 4.37114e-06, 0, -4.37114e-06, 100, 100, 4.37114e-06, 1.91069e-13, 29.7258, 10.1414, 1.62619)
 
 [node name="Node3D" parent="ENTRANCE" index="0" instance_placeholder="res://scenes/tool_scenes/entrance_placer/entrance_placer.tscn"]
@@ -467,7 +467,7 @@ transform = Transform3D(0.01, 0, 0, 0, -1.19209e-09, -0.01, 0, 0.01, -1.19209e-0
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Floor/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_ojauc")
 
-[node name="PaintLiquid" parent="." index="7"]
+[node name="PaintLiquid" parent="." index="6"]
 visible = false
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Walls" index="0"]
@@ -475,14 +475,14 @@ visible = false
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Walls/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_34p4q")
 
-[node name="RoomArea" type="Area3D" parent="." index="16"]
+[node name="RoomArea" type="Area3D" parent="." index="15"]
 collision_mask = 2
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="RoomArea" index="0"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.15031, 10.5313, -6.61049)
 shape = SubResource("BoxShape3D_m146l")
 
-[node name="NavigationRegion3D" type="NavigationRegion3D" parent="." index="17"]
+[node name="NavigationRegion3D" type="NavigationRegion3D" parent="." index="16"]
 navigation_mesh = SubResource("NavigationMesh_ty7r5")
 use_edge_connections = false
 
@@ -498,34 +498,34 @@ visible = false
 mesh = SubResource("ArrayMesh_mrtb5")
 skeleton = NodePath("")
 
-[node name="LavaFloor" parent="." index="18" instance=ExtResource("12_s3kry")]
+[node name="LavaFloor" parent="." index="17" instance=ExtResource("12_s3kry")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.03127, -5.00822)
 tick_delay = 3.0
 base_damage = -4
 damage_name = "Goopy Paint"
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="LavaFloor" index="0"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.47221, -0.249593, 0.0807405)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.2066, -0.25, 2.17413)
 shape = SubResource("BoxShape3D_yfo43")
 
-[node name="LavaPlane" type="MeshInstance3D" parent="." index="19"]
+[node name="LavaPlane" type="MeshInstance3D" parent="." index="18"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.66526, 2.84041, -4.50482)
 mesh = SubResource("PlaneMesh_cm1h1")
 
-[node name="FloorColl" type="StaticBody3D" parent="." index="20"]
+[node name="FloorColl" type="StaticBody3D" parent="." index="19"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.15704, -5.24282)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="FloorColl" index="0"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.38739, -0.354345, 0.977951)
 shape = SubResource("BoxShape3D_gx2uu")
 
-[node name="PlayerSpawn" type="Node3D" parent="." index="21"]
+[node name="PlayerSpawn" type="Node3D" parent="." index="20"]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 16.5723, 10.1468, 1.6062)
 
-[node name="SmokeParticles" parent="." index="22" instance=ExtResource("16_1jb32")]
+[node name="SmokeParticles" parent="." index="21" instance=ExtResource("16_1jb32")]
 transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 9.86831, 45.372, 14.9216)
 
-[node name="SmokeParticles2" parent="." index="23" instance=ExtResource("16_1jb32")]
+[node name="SmokeParticles2" parent="." index="22" instance=ExtResource("16_1jb32")]
 transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 3.37539, 54.7115, 18.376)
 
 [connection signal="s_lava_hit" from="LavaFloor" to="." method="reset"]

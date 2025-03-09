@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="UBContractLimit" load_steps=3 format=3 uid="uid://cygiwl5au267j"]
 
-[ext_resource type="Script" path="res://objects/battle/battle_resources/misc_movies/union_buster/contract_limit.gd" id="1_mhqkr"]
+[ext_resource type="Script" uid="uid://clkp2a8ticyy5" path="res://objects/battle/battle_resources/misc_movies/union_buster/contract_limit.gd" id="1_mhqkr"]
 [ext_resource type="Resource" uid="uid://tjnjddkoq0rm" path="res://objects/battle/battle_resources/status_effects/resources/ub_contract_limit_bomb.tres" id="2_olevr"]
 
 [resource]
@@ -8,6 +8,7 @@ script = ExtResource("1_mhqkr")
 status_effect = ExtResource("2_olevr")
 accuracy = 200
 damage = 0
+ignore_stats = false
 summary = "Union Buster plans to destroy this Cog!"
 attack_lines = Array[String](["Your service will be no longer required.", "Thank you for your service, expect your pink slip."])
 target_type = 3

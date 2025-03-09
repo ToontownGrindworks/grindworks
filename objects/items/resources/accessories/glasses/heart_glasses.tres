@@ -1,8 +1,8 @@
 [gd_resource type="Resource" script_class="ItemAccessory" load_steps=40 format=3 uid="uid://dxf17redyyn30"]
 
-[ext_resource type="Script" path="res://objects/items/classes/accessory_placement.gd" id="1_tjmsu"]
-[ext_resource type="Script" path="res://objects/items/classes/head_placement.gd" id="2_5ac6u"]
-[ext_resource type="Script" path="res://objects/items/classes/item_accessory.gd" id="2_rfnrb"]
+[ext_resource type="Script" uid="uid://fb0tqfojo57q" path="res://objects/items/classes/accessory_placement.gd" id="1_tjmsu"]
+[ext_resource type="Script" uid="uid://c4eyu1xvv7h2l" path="res://objects/items/classes/head_placement.gd" id="2_5ac6u"]
+[ext_resource type="Script" uid="uid://dvu24b3o8i3sj" path="res://objects/items/classes/item_accessory.gd" id="2_rfnrb"]
 [ext_resource type="PackedScene" uid="uid://cieocqdcjp4aj" path="res://models/accessories/glasses/heart_glasses/tt_m_chr_avt_acc_msk_heartGlasses.glb" id="3_sgmjk"]
 [ext_resource type="Texture2D" uid="uid://br5dvo2q2y246" path="res://models/accessories/glasses/heart_glasses/tt_m_chr_avt_acc_msk_heartGlasses.glb-pix-1.png" id="3_valot"]
 
@@ -82,9 +82,9 @@ scale = Vector3(0.32, 0.32, 0.32)
 script = ExtResource("2_5ac6u")
 species = 2
 head_index = 2
-position = Vector3(0, 0.3, 0.2)
-rotation = Vector3(0, 0, 0)
-scale = Vector3(0.32, 0.32, 0.32)
+position = Vector3(0, 0.25, 0.16)
+rotation = Vector3(-5.48, 0, 0)
+scale = Vector3(0.29, 0.31, 0.32)
 
 [sub_resource type="Resource" id="Resource_s50hw"]
 script = ExtResource("2_5ac6u")
@@ -122,9 +122,9 @@ scale = Vector3(0.35, 0.35, 0.35)
 script = ExtResource("2_5ac6u")
 species = 3
 head_index = 2
-position = Vector3(0.01, 0, 0.1)
-rotation = Vector3(0, 0, 0)
-scale = Vector3(0.35, 0.35, 0.35)
+position = Vector3(-0.01, -0.03, 0.23)
+rotation = Vector3(3.83, 0, 0)
+scale = Vector3(0.39, 0.4, 0.35)
 
 [sub_resource type="Resource" id="Resource_4kkyn"]
 script = ExtResource("2_5ac6u")
@@ -204,7 +204,7 @@ species = 6
 head_index = 1
 position = Vector3(0, 0.25, 0.1)
 rotation = Vector3(0, 0, 0)
-scale = Vector3(0.4, 0.4, 0.4)
+scale = Vector3(0.41, 0.48, 0.4)
 
 [sub_resource type="Resource" id="Resource_7wim7"]
 script = ExtResource("2_5ac6u")
@@ -250,9 +250,9 @@ scale = Vector3(0.25, 0.25, 0.25)
 script = ExtResource("2_5ac6u")
 species = 8
 head_index = 3
-position = Vector3(0, -0.15, 0.1)
-rotation = Vector3(0, 0, 0)
-scale = Vector3(0.32, 0.32, 0.32)
+position = Vector3(0, -0.27, 0.25)
+rotation = Vector3(-8.28, 0, 0)
+scale = Vector3(0.4, 0.41, 0.26)
 
 [sub_resource type="Resource" id="Resource_usrxq"]
 script = ExtResource("2_5ac6u")
@@ -281,14 +281,14 @@ scale = Vector3(0.32, 0.32, 0.32)
 [resource]
 script = ExtResource("2_rfnrb")
 accessory_placements = Array[ExtResource("1_tjmsu")]([SubResource("Resource_176f6"), SubResource("Resource_x68bj"), SubResource("Resource_tywsh"), SubResource("Resource_kws3j"), SubResource("Resource_yieus"), SubResource("Resource_wkvcu"), SubResource("Resource_uxo7k"), SubResource("Resource_4ifvd"), SubResource("Resource_8s6ta"), SubResource("Resource_coyai"), SubResource("Resource_s50hw"), SubResource("Resource_31e43"), SubResource("Resource_bhju1"), SubResource("Resource_4jt0v"), SubResource("Resource_bgiib"), SubResource("Resource_4kkyn"), SubResource("Resource_3y6g0"), SubResource("Resource_uhlwv"), SubResource("Resource_gsh2b"), SubResource("Resource_ft5iv"), SubResource("Resource_i8v0m"), SubResource("Resource_odgx8"), SubResource("Resource_pbhoq"), SubResource("Resource_pc5lg"), SubResource("Resource_svsej"), SubResource("Resource_7wim7"), SubResource("Resource_ft67b"), SubResource("Resource_ttujy"), SubResource("Resource_stcre"), SubResource("Resource_f8ofp"), SubResource("Resource_plibo"), SubResource("Resource_usrxq"), SubResource("Resource_qmjbw"), SubResource("Resource_f1fm0")])
-qualitoon = 3
-qualitoon_rarity = 6
+qualitoon = 2
+rarity = 0
 evergreen = false
 realtime = false
 slot = 2
 world_scale = 0.1
 want_ui_spin = true
-ui_cam_offset = 0.1
+ui_cam_offset = 0.2
 item_name = "Heart Glasses"
 item_description = "How lovely!"
 big_description = "5% chance for any Cog attack to heal you instead."

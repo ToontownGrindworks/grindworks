@@ -2,7 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://nxbhnd4nvt85" path="res://models/props/pickups/candy/Candy.glb" id="1_d3srj"]
 [ext_resource type="Texture2D" uid="uid://dm2najag24ptd" path="res://models/props/pickups/candy/Candy_CandyWrapper.png" id="2_e3cmc"]
-[ext_resource type="Script" path="res://models/props/pickups/candy/candy.gd" id="2_p27yg"]
+[ext_resource type="Script" uid="uid://backs20chdcm1" path="res://models/props/pickups/candy/candy.gd" id="2_p27yg"]
 [ext_resource type="Material" uid="uid://bhr54g3wafqjk" path="res://models/props/pickups/candy/candy_overlay_arrows.tres" id="4_imcd3"]
 [ext_resource type="PackedScene" uid="uid://b1ebxidhw6o1q" path="res://objects/battle/effects/pixie_dust/pixie_dust.tscn" id="5_5t50c"]
 

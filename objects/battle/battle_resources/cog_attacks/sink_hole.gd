@@ -66,7 +66,7 @@ func do_damage(player: Player) -> void:
 			manager.affect_target(player, 'hp', ceili(damage / 3), false)
 		else:
 			manager.battle_text(player, 'MISSED')
-		await TaskMgr.delay(1.5)
+		await Task.delay(1.5)
 
 func hp_check(hp: int, minigame: Control) -> void:
 	if hp <= 0 and is_instance_valid(minigame):

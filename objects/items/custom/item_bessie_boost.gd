@@ -7,12 +7,12 @@ var player: Player
 
 
 func on_collect(_item: Item, _object: Node3D) -> void:
-	var player: Player
+	var _player: Player
 	if not Util.get_player():
-		player = await Util.s_player_assigned
+		_player = await Util.s_player_assigned
 	else:
-		player = Util.get_player()
-	setup(player)
+		_player = Util.get_player()
+	setup(_player)
 
 func on_load(item: Item) -> void:
 	on_collect(item, null)
@@ -32,5 +32,14 @@ func try_apply_drop(manager: BattleManager) -> void:
 		manager.add_status_effect(new_status)
 
 func get_random_drop_resource() -> GagDrop:
-	var idx: int = RandomService.randi_range_channel('true_random', 0, player.stats.get_highest_gag_level() - 1)
+	var idx: int = 0
+	# Min drop level works as follows:
+	# 1 (flowerpot) on floors 0-2
+	# 2 (sandbag) on floor 3
+	# 3 (anvil) on floor 4
+	# 4 (big weight) on floor 5 and directors
+	var min_drop_level: int = max(0, Util.floor_number - 2)
+	# Prevent range errors by making sure the max drop level is at least 1 higher than the min drop level
+	var max_drop_level: int = max(min_drop_level, player.stats.get_highest_gag_level() - 1)
+	idx = RandomService.randi_range_channel('true_random', min_drop_level, max_drop_level)
 	return DROP_GAGS.gags[idx].duplicate()

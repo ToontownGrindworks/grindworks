@@ -1,7 +1,7 @@
 [gd_resource type="Resource" load_steps=3 format=3 uid="uid://b5v43bx133to1"]
 
 [ext_resource type="Texture2D" uid="uid://cx2fi27hwfpnw" path="res://ui_assets/battle/statuses/red_light.png" id="1_mjgn4"]
-[ext_resource type="Script" path="res://objects/battle/battle_resources/misc_movies/traffic_manager/status_effect_red_light.gd" id="2_jor4p"]
+[ext_resource type="Script" uid="uid://xienrh0vujxf" path="res://objects/battle/battle_resources/misc_movies/traffic_manager/status_effect_red_light.gd" id="2_jor4p"]
 
 [resource]
 script = ExtResource("2_jor4p")

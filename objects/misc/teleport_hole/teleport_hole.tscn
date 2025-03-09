@@ -1,7 +1,8 @@
-[gd_scene load_steps=10 format=3 uid="uid://cp2ncy4ta6ubt"]
+[gd_scene load_steps=11 format=3 uid="uid://cp2ncy4ta6ubt"]
 
 [ext_resource type="PackedScene" uid="uid://b7504o1ma7vu8" path="res://models/props/drop_shadow/drop_shadow.glb" id="1_lj6lr"]
 [ext_resource type="Texture2D" uid="uid://1fotk4key644" path="res://models/props/drop_shadow/drop_shadow_drop-shadow.png" id="2_dlsek"]
+[ext_resource type="PackedScene" uid="uid://bx8nbwm5cd4vd" path="res://objects/misc/clip_plane/clip_plane.tscn" id="3_yk4bo"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4w8gv"]
 resource_name = "OFMaterial1"
@@ -156,9 +157,9 @@ tracks/2/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_jvtrx"]
 _data = {
-"RESET": SubResource("Animation_7mpre"),
-"grow": SubResource("Animation_xmw47"),
-"shrink": SubResource("Animation_6beha")
+&"RESET": SubResource("Animation_7mpre"),
+&"grow": SubResource("Animation_xmw47"),
+&"shrink": SubResource("Animation_6beha")
 }
 
 [node name="TeleportHole" type="Node3D"]
@@ -171,7 +172,10 @@ mesh = SubResource("ArrayMesh_231o3")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
-"": SubResource("AnimationLibrary_jvtrx")
+&"": SubResource("AnimationLibrary_jvtrx")
 }
+
+[node name="ClipPlane" parent="." instance=ExtResource("3_yk4bo")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00779903, -5.96046e-08, 0.00086832)
 
 [editable path="drop_shadow2"]

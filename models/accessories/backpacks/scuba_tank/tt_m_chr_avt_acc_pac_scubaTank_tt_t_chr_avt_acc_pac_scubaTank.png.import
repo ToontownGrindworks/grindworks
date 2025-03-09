@@ -2,13 +2,10 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bf0pvaxtw2evw"
+uid="uid://e3tokke7aqwm"
 path="res://.godot/imported/tt_m_chr_avt_acc_pac_scubaTank_tt_t_chr_avt_acc_pac_scubaTank.png-4a0fea357b519811b380d6e6224dc836.ctex"
 metadata={
 "vram_texture": false
-}
-generator_parameters={
-"md5": "f66b4e2a9bfe879708575cdefcdf776a"
 }
 
 [deps]
@@ -19,7 +16,7 @@ dest_files=["res://.godot/imported/tt_m_chr_avt_acc_pac_scubaTank_tt_t_chr_avt_a
 [params]
 
 compress/mode=3
-compress/high_quality=false
+compress/high_quality=true
 compress/lossy_quality=0.7
 compress/hdr_compression=1
 compress/normal_map=0

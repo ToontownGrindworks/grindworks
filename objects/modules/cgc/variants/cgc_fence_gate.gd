@@ -39,7 +39,7 @@ func open() -> void:
 		LerpProperty.new(right_pivot, "rotation_degrees:y", 3.0, -75.0).interp(Tween.EASE_IN_OUT, Tween.TRANS_QUAD),
 	]).as_tween(self)
 
-	await TaskMgr.delay(2.0)
+	await Task.delay(2.0)
 	if want_cam_cut and is_instance_valid(Util.get_player()):
 		Util.get_player().state = Player.PlayerState.WALK
 		Util.get_player().camera.make_current()
@@ -55,7 +55,7 @@ func play_close_anim() -> void:
 			LerpProperty.new(right_pivot, "rotation_degrees:y", 0.12, 0.0).interp(Tween.EASE_OUT, Tween.TRANS_QUAD),
 		]),
 	]).as_tween(self)
-	await TaskMgr.delay(0.5)
+	await Task.delay(0.5)
 	AudioManager.play_sound(SFX_CLOSE)
 
 func connect_button(button: CogButton) -> void:

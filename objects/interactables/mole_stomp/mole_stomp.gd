@@ -175,9 +175,9 @@ func on_player_launched() -> void:
 
 	if want_launch:
 		if launch_cam:
-			launch_cam.global_transform = Util.get_player().camera.global_transform
+			launch_cam.global_transform = Util.get_player().camera.camera.global_transform
 			launch_cam.make_current()
-			await TaskMgr.delay(2.0)
+			await Task.delay(2.0)
 			Util.get_player().camera.make_current()
 
 func stop_and_disable_moles() -> void:

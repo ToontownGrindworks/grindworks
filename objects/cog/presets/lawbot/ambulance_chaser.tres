@@ -1,13 +1,13 @@
 [gd_resource type="Resource" script_class="CogDNA" load_steps=9 format=3 uid="uid://yiwg5566shlq"]
 
-[ext_resource type="Script" path="res://objects/battle/battle_resources/cog_attacks/cog_attack.gd" id="1_hddah"]
+[ext_resource type="Script" uid="uid://bb27him60xtnk" path="res://objects/battle/battle_resources/cog_attacks/cog_attack.gd" id="1_hddah"]
 [ext_resource type="Resource" uid="uid://erbbarg5bxm8" path="res://objects/battle/battle_resources/cog_attacks/resources/rolodex.tres" id="2_7oa6g"]
-[ext_resource type="Script" path="res://objects/cog/cogdna.gd" id="2_yq53k"]
+[ext_resource type="Script" uid="uid://okjbx502s3r5" path="res://objects/cog/cogdna.gd" id="2_yq53k"]
 [ext_resource type="Resource" uid="uid://55lp6noha8te" path="res://objects/battle/battle_resources/cog_attacks/resources/shake.tres" id="3_xlph2"]
 [ext_resource type="Resource" uid="uid://c3gg5tsci6aye" path="res://objects/battle/battle_resources/cog_attacks/resources/hang_up.tres" id="4_df06f"]
 [ext_resource type="PackedScene" uid="uid://chabxrjxqxstl" path="res://models/cogs/heads/ambulancechaser.glb" id="4_e5itg"]
 [ext_resource type="Texture2D" uid="uid://c054agx0tyrdv" path="res://models/cogs/heads/ambulancechaser_tt_t_ene_hed_ambulanceChaser_new.png" id="6_pdwv7"]
-[ext_resource type="Script" path="res://objects/battle/battle_resources/status_effect.gd" id="7_kqtxb"]
+[ext_resource type="Script" uid="uid://df7irk63ikx4k" path="res://objects/battle/battle_resources/status_effect.gd" id="7_kqtxb"]
 
 [resource]
 script = ExtResource("2_yq53k")
@@ -33,6 +33,6 @@ is_admin = false
 health_mod = 1.0
 battle_phrases = Array[String](["I'm going to chase you out of town!", "This is no laughing matter.", "It's all uphill from here.", "I'm going to enjoy this.", "I'm going to give you the business.", "Did you hear a siren?", "I doubt you can keep up with me.", "I love the thrill of the chase!", "Do you have insurance?", "I hope you brought a stretcher with you.", "Looks like you won't be around much longer."])
 external_assets = {
-"head_model": "",
-"head_textures": []
+&"head_model": "",
+&"head_textures": []
 }

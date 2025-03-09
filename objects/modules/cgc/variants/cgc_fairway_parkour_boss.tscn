@@ -4,14 +4,14 @@
 [ext_resource type="PackedScene" uid="uid://htqva4ris6a4" path="res://objects/props/cgc/cgc_kart_door.tscn" id="2_rrbqw"]
 [ext_resource type="PackedScene" uid="uid://dcxxijtaocc15" path="res://objects/interactables/elevators/golf_cart.tscn" id="3_l0d42"]
 [ext_resource type="PackedScene" uid="uid://5m1a0suouie8" path="res://objects/props/cgc/fence_with_end.tscn" id="4_aafw1"]
-[ext_resource type="Script" path="res://objects/modules/cgc/variants/cgc_fence_gate.gd" id="5_hwvb7"]
+[ext_resource type="Script" uid="uid://h0b48xrci8d6" path="res://objects/modules/cgc/variants/cgc_fence_gate.gd" id="5_hwvb7"]
 [ext_resource type="PackedScene" uid="uid://bwu5l3d7uncro" path="res://objects/props/cgc/hedge_pillar_spiked.tscn" id="6_vw2gq"]
 [ext_resource type="AudioStream" uid="uid://neyk2d1b3k4i" path="res://audio/sfx/objects/moles/Mole_Stomp.ogg" id="7_5tibx"]
 [ext_resource type="PackedScene" uid="uid://b35wcbrb3kc82" path="res://objects/obstacles/golf_door/golf_door.tscn" id="7_pdy4e"]
 [ext_resource type="Texture2D" uid="uid://dbpos4t8tc4i0" path="res://models/facilities/cgc/textures/WallBricksBig2.png" id="8_k4l14"]
 [ext_resource type="PackedScene" uid="uid://pn7r3ut085aw" path="res://objects/props/cgc/hedge_pillar.tscn" id="10_avmfe"]
 [ext_resource type="PackedScene" uid="uid://bwnrw7jcf01kq" path="res://objects/general_ui/node_viewer/node_viewer.tscn" id="11_as1jd"]
-[ext_resource type="Script" path="res://objects/interactables/mole_stomp/mole_stomp.gd" id="11_nvcsc"]
+[ext_resource type="Script" uid="uid://dyt7mhhg2lwrv" path="res://objects/interactables/mole_stomp/mole_stomp.gd" id="11_nvcsc"]
 [ext_resource type="FontFile" uid="uid://cup2yr5w7or1l" path="res://fonts/Minnie.TTF" id="12_dd2y1"]
 [ext_resource type="PackedScene" uid="uid://cweh68oq3ya3" path="res://models/props/facility_objects/cgc/evil_golf_ball/evil_ball.fbx" id="15_18jq5"]
 [ext_resource type="PackedScene" uid="uid://b5d0mrdvwx3cp" path="res://objects/items/boss_chest_group.tscn" id="15_77tfq"]
@@ -85,8 +85,8 @@ var game_timer: Control
 var game_started := false
 var speech_bubble: SpeechBubble
 
-var mole_task_id: int = 0
-var sanity_task_id: int = 0
+var mole_task: Task
+var sanity_task: Task
 
 var golf_ball_speed: float = 0.4:
 	set(x):
@@ -142,8 +142,8 @@ func start_game() -> void:
 	%DialogueBall.hide()
 	await CameraTransition.from_current(self, %MolePreviewCam, 1.0).s_done
 	%FenceGate.play_close_anim()
-	await TaskMgr.delay(2.0)
-	await CameraTransition.from_current(self, Util.get_player().camera, 3.0).s_done
+	await Task.delay(2.0)
+	await CameraTransition.from_current(self, Util.get_player().camera.camera, 3.0).s_done
 	Util.resume_player_safe()
 
 	quota = quota  # Reset the label text via the setter
@@ -160,7 +160,7 @@ func start_game() -> void:
 	AudioManager.set_music_volume(0.0)
 
 	# Give a free win if you're somehow still here after 5 minutes
-	sanity_task_id = TaskMgr.delayed_call(60 * 5, mole_hit)
+	sanity_task = Task.delayed_call(self, 60 * 5, mole_hit)
 
 func make_game_timer(timer_time: int = GameTimeBase) -> void:
 	game_timer = Util.run_timer(timer_time, Control.PRESET_BOTTOM_RIGHT)
@@ -182,7 +182,7 @@ func spawn_new_mole() -> void:
 	var mole: MoleHole = mole_game.get_random_mole()
 	mole.force_cog_mole = true
 	mole.mole_cog_boost_time = 2.75
-	mole_task_id = TaskMgr.delayed_call(randf_range(mole_popup_time_range.x, mole_popup_time_range.y), spawn_new_mole)
+	mole_task = Task.delayed_call(self, randf_range(mole_popup_time_range.x, mole_popup_time_range.y), spawn_new_mole)
 
 func hookup_moles() -> void:
 	for mole_game: MoleStompGame in mole_games:
@@ -252,14 +252,12 @@ func set_timer_to_time(timer_time: int) -> void:
 	AudioManager.play_sound(SFX_TIMER_CHANGE)
 
 func cancel_mole_task() -> void:
-	if mole_task_id != 0:
-		TaskMgr.cancel_task(mole_task_id)
-		mole_task_id = 0
+	if mole_task:
+		mole_task = mole_task.cancel()
 
 func cancel_sanity_task() -> void:
-	if sanity_task_id != 0:
-		TaskMgr.cancel_task(sanity_task_id)
-		sanity_task_id = 0
+	if sanity_task:
+		sanity_task = sanity_task.cancel()
 
 func _exit_tree() -> void:
 	cancel_mole_task()
@@ -362,8 +360,8 @@ tracks/2/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_dgwf0"]
 _data = {
-"RESET": SubResource("Animation_dky35"),
-"dialogue": SubResource("Animation_1bk0c")
+&"RESET": SubResource("Animation_dky35"),
+&"dialogue": SubResource("Animation_1bk0c")
 }
 
 [node name="fairway" instance=ExtResource("1_85mw3")]
@@ -517,7 +515,7 @@ transform = Transform3D(0.957168, 0, -0.289533, 0, 1, 0, 0.289533, 0, 0.957168, 
 unique_name_in_owner = true
 
 [node name="GolfDoor1" parent="GolfDoors" index="0" instance=ExtResource("7_pdy4e")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16.8671, 0, 8.44716)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16.8671, -0.170229, 8.44716)
 start_off = true
 want_evil_ball = true
 speed = 0.7
@@ -537,7 +535,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.21, 0)
 curve = SubResource("Curve3D_yqroi")
 
 [node name="GolfDoor2" parent="GolfDoors" index="1" instance=ExtResource("7_pdy4e")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.77963, 0, 8.44716)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.77963, -0.170229, 8.44716)
 start_off = true
 want_evil_ball = true
 speed = 0.7
@@ -557,7 +555,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.21, 0)
 curve = SubResource("Curve3D_yqroi")
 
 [node name="GolfDoor3" parent="GolfDoors" index="2" instance=ExtResource("7_pdy4e")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24.506, 0, 8.44716)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24.506, -0.170229, 8.44716)
 start_off = true
 want_evil_ball = true
 speed = 0.7
@@ -577,7 +575,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.21, 0)
 curve = SubResource("Curve3D_yqroi")
 
 [node name="GolfDoor4" parent="GolfDoors" index="3" instance=ExtResource("7_pdy4e")]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 16.122, -0.02, 12.643)
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 16.122, -0.190229, 12.643)
 start_off = true
 want_evil_ball = true
 speed = 0.7
@@ -597,7 +595,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.21, 0)
 curve = SubResource("Curve3D_ksf2h")
 
 [node name="GolfDoor5" parent="GolfDoors" index="4" instance=ExtResource("7_pdy4e")]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 16.122, -0.02, -14.812)
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 16.122, -0.190229, -14.812)
 start_off = true
 want_evil_ball = true
 speed = 0.7
@@ -811,7 +809,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.85873, 0)
 [node name="BallAnim" type="AnimationPlayer" parent="DialogueBall" index="2"]
 unique_name_in_owner = true
 libraries = {
-"": SubResource("AnimationLibrary_dgwf0")
+&"": SubResource("AnimationLibrary_dgwf0")
 }
 
 [node name="DialogueCam" type="Camera3D" parent="." index="34"]

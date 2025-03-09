@@ -1,14 +1,14 @@
 [gd_resource type="Resource" script_class="Item" load_steps=5 format=3 uid="uid://cmjhh4fc3c231"]
 
 [ext_resource type="PackedScene" uid="uid://dhg405h16fbv3" path="res://objects/items/custom/scale/lb_scale.tscn" id="1_df1fs"]
-[ext_resource type="Script" path="res://objects/items/classes/item.gd" id="1_qqjau"]
-[ext_resource type="Script" path="res://objects/items/custom/scale/lb_scale.gd" id="1_ssrur"]
+[ext_resource type="Script" uid="uid://combwqypom1ru" path="res://objects/items/classes/item.gd" id="1_qqjau"]
+[ext_resource type="Script" uid="uid://do8xn3hnwlr8g" path="res://objects/items/custom/scale/lb_scale.gd" id="1_ssrur"]
 [ext_resource type="Texture2D" uid="uid://di30t7iyqoeca" path="res://objects/items/custom/scale/lb_scale-pix-1.png" id="1_uk4kc"]
 
 [resource]
 script = ExtResource("1_qqjau")
 qualitoon = 4
-qualitoon_rarity = 5
+rarity_weight = 7
 evergreen = false
 realtime = false
 slot = 0

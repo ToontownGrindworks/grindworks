@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://dsj8qebkjj6wm"]
 
-[ext_resource type="Script" path="res://objects/items/custom/jellybean/jellybean.gd" id="1_8gld8"]
+[ext_resource type="Script" uid="uid://bswkfahdn7nkg" path="res://objects/items/custom/jellybean/jellybean.gd" id="1_8gld8"]
 [ext_resource type="PackedScene" uid="uid://biosycr5f2tcv" path="res://models/props/pickups/jellybean/jellybean.glb" id="1_y0o4u"]
 
 [node name="jellybean2" instance=ExtResource("1_y0o4u")]

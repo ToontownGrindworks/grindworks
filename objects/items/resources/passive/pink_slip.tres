@@ -1,12 +1,12 @@
 [gd_resource type="Resource" script_class="Item" load_steps=3 format=3 uid="uid://b77qp325baypa"]
 
 [ext_resource type="PackedScene" uid="uid://d20abt3jbvx3r" path="res://objects/items/custom/pink_slip/pink_slip_mod.tscn" id="1_6k08u"]
-[ext_resource type="Script" path="res://objects/items/classes/item.gd" id="1_vhofi"]
+[ext_resource type="Script" uid="uid://combwqypom1ru" path="res://objects/items/classes/item.gd" id="1_vhofi"]
 
 [resource]
 script = ExtResource("1_vhofi")
-qualitoon = 5
-qualitoon_rarity = 6
+qualitoon = 4
+rarity = 0
 evergreen = true
 realtime = false
 slot = 0
@@ -27,3 +27,4 @@ remember_item = false
 shop_category_title = "Consumable"
 shop_category_color = Color(0.105882, 0.54902, 0.537255, 1)
 force_show_shop_category = true
+custom_shop_price = 0

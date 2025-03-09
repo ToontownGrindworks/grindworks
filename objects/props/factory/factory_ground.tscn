@@ -55,10 +55,10 @@ noise = SubResource("FastNoiseLite_f5xuh")
 render_priority = 0
 shader = SubResource("Shader_y51td")
 shader_parameter/albedo = Color(1, 1, 1, 1)
+shader_parameter/texture_albedo = ExtResource("1_kwsm8")
 shader_parameter/uv1_scale = Vector3(200, 200, 200)
 shader_parameter/uv1_offset = Vector3(0, 0, 0)
 shader_parameter/height_scale = 3.0
-shader_parameter/texture_albedo = ExtResource("1_kwsm8")
 shader_parameter/displacement = SubResource("NoiseTexture2D_3it41")
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_isa8u"]

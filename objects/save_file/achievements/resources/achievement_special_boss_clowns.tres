@@ -1,7 +1,7 @@
 [gd_resource type="Resource" script_class="SignalAchievement" load_steps=3 format=3 uid="uid://bc4rttodkxd3q"]
 
 [ext_resource type="Texture2D" uid="uid://bsqg2sedjobwk" path="res://ui_assets/achievements/icon_achievement_clown.png" id="1_anqy2"]
-[ext_resource type="Script" path="res://objects/save_file/achievements/signal_achievement.gd" id="1_xi3wd"]
+[ext_resource type="Script" uid="uid://bu0ypaddtve76" path="res://objects/save_file/achievements/signal_achievement.gd" id="1_xi3wd"]
 
 [resource]
 script = ExtResource("1_xi3wd")

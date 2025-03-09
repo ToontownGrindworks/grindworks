@@ -1,0 +1,20 @@
+[gd_scene load_steps=5 format=3 uid="uid://bx8nbwm5cd4vd"]
+
+[ext_resource type="Script" uid="uid://1ujmarh0b2wp" path="res://objects/misc/clip_plane/clip_plane.gd" id="1_drkg8"]
+[ext_resource type="Shader" uid="uid://cuqxf8is8t6rd" path="res://general_resources/shaders/two_toned_flash.gdshader" id="1_wkoso"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_drkg8"]
+render_priority = 0
+shader = ExtResource("1_wkoso")
+shader_parameter/top_color = Color(0.759604, 0.664709, 0.365308, 1)
+shader_parameter/bottom_color = Color(0.917605, 0, 0.0970401, 1)
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_28nja"]
+material = SubResource("ShaderMaterial_drkg8")
+
+[node name="ClipPlane" type="Node3D"]
+script = ExtResource("1_drkg8")
+
+[node name="DebugVisualizer" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0053432, 4.76837e-07, 0.00326157)
+mesh = SubResource("PlaneMesh_28nja")

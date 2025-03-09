@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://cuomm0ifx302o"]
+
+[ext_resource type="PackedScene" uid="uid://d4f6m5hw0jb4k" path="res://models/accessories/glasses/star_glasses/tt_m_chr_avt_acc_msk_starGlasses.glb" id="1_5h3ig"]
+
+[node name="tt_m_chr_avt_acc_msk_starGlasses" instance=ExtResource("1_5h3ig")]

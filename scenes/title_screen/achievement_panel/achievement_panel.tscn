@@ -2,7 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://d1qs8nf0s0y85" path="res://objects/general_ui/ui_panel/ui_panel.tscn" id="1_mgr4m"]
 [ext_resource type="FontFile" uid="uid://815gwlftl5ik" path="res://fonts/impress-bt.ttf" id="2_a0dcy"]
-[ext_resource type="Script" path="res://scenes/title_screen/achievement_panel/achievement_panel.gd" id="2_s0f7j"]
+[ext_resource type="Script" uid="uid://deom06rxtbi8o" path="res://scenes/title_screen/achievement_panel/achievement_panel.gd" id="2_s0f7j"]
 [ext_resource type="Theme" uid="uid://dhqxwi6busihb" path="res://objects/general_ui/settings_menu/slider_theme.tres" id="3_7ndhd"]
 [ext_resource type="FontFile" uid="uid://cup2yr5w7or1l" path="res://fonts/Minnie.TTF" id="3_ufk8j"]
 [ext_resource type="Texture2D" uid="uid://1bb3mssq7ac5" path="res://ui_assets/achievements/icon_achievement_lock.png" id="6_2b0he"]

@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="TrafficManagerLogic" load_steps=2 format=3 uid="uid://6jkkkmjn4jdd"]
 
-[ext_resource type="Script" path="res://objects/battle/battle_resources/status_effects/boss_effects/boss_logic_traffic_manager.gd" id="1_jkwow"]
+[ext_resource type="Script" uid="uid://cn5n2jtet834y" path="res://objects/battle/battle_resources/status_effects/boss_effects/boss_logic_traffic_manager.gd" id="1_jkwow"]
 
 [resource]
 script = ExtResource("1_jkwow")

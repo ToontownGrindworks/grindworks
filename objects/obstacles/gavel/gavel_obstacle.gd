@@ -83,5 +83,6 @@ func squash_player(player: Player) -> void:
 func slip_player(player: Player) -> void:
 	player.state = Player.PlayerState.STOPPED
 	player.set_animation('slip_backward')
-	await TaskMgr.delay(2.75)
+	await Task.delay(2.75)
 	player.state = Player.PlayerState.WALK
+	player.do_invincibility_frames()

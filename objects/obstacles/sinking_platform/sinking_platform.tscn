@@ -1,6 +1,6 @@
 [gd_scene load_steps=7 format=3 uid="uid://cdjmlidf0pm6b"]
 
-[ext_resource type="Script" path="res://objects/obstacles/sinking_platform/sinking_platform.gd" id="1_866e6"]
+[ext_resource type="Script" uid="uid://y8162bivi546" path="res://objects/obstacles/sinking_platform/sinking_platform.gd" id="1_866e6"]
 [ext_resource type="PackedScene" uid="uid://d0o37sg2xvqe6" path="res://models/props/facility_objects/conveyor_platform/platform.glb" id="2_eg61r"]
 [ext_resource type="Material" uid="uid://b4jsk4lpyajdh" path="res://objects/obstacles/sinking_platform/edge_regular_mat.tres" id="3_256js"]
 [ext_resource type="Material" uid="uid://daqwoobakutyf" path="res://objects/obstacles/sinking_platform/top_regular_mat.tres" id="4_2drc3"]

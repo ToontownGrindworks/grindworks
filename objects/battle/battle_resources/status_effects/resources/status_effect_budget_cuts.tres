@@ -1,13 +1,12 @@
 [gd_resource type="Resource" load_steps=2 format=3 uid="uid://j1j0q0kyp1lc"]
 
-[ext_resource type="Script" path="res://objects/battle/battle_resources/status_effects/status_effect_budget_cuts.gd" id="1_v0abf"]
+[ext_resource type="Script" uid="uid://bmistc2puf3db" path="res://objects/battle/battle_resources/status_effects/status_effect_budget_cuts.gd" id="1_v0abf"]
 
 [resource]
 script = ExtResource("1_v0abf")
 track_name = ""
 quality = 1
 rounds = 2
-requires_user = false
 icon_color = Color(1, 1, 1, 1)
 icon_scale = 1.0
 mini_icon_color = Color(1, 1, 1, 1)

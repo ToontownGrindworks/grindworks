@@ -1,27 +1,33 @@
-[gd_scene load_steps=34 format=3 uid="uid://chtdvbuf0ivvt"]
+[gd_scene load_steps=40 format=3 uid="uid://chtdvbuf0ivvt"]
 
 [ext_resource type="PackedScene" uid="uid://cv2afui5p28af" path="res://objects/modules/mint/base_rooms/mint_diamond_room.tscn" id="1_h2rqk"]
 [ext_resource type="PackedScene" uid="uid://direah3lbjuu5" path="res://objects/battle/battle_node/battle_node.tscn" id="2_alx7d"]
 [ext_resource type="PackedScene" uid="uid://dflwjcy6fj0av" path="res://objects/cog/cog.tscn" id="3_okjj0"]
 [ext_resource type="PackedScene" uid="uid://wpoc3xs1yy0" path="res://objects/player/player.tscn" id="4_fefq8"]
-[ext_resource type="Script" path="res://objects/battle/battle_resources/stats.gd" id="5_wgpvb"]
-[ext_resource type="Script" path="res://objects/toon/clothing/toon_bottoms.gd" id="6_sp5d7"]
-[ext_resource type="Script" path="res://objects/toon/toon_dna.gd" id="7_42kli"]
-[ext_resource type="Script" path="res://objects/toon/clothing/toon_shirt.gd" id="8_suqae"]
-[ext_resource type="Script" path="res://objects/battle/battle_resources/gag_loadouts/track.gd" id="9_4i7n6"]
+[ext_resource type="Script" uid="uid://o2fe7ud1faj6" path="res://objects/battle/battle_resources/stats.gd" id="5_wgpvb"]
+[ext_resource type="Script" uid="uid://c8kas2j4io1jh" path="res://objects/toon/clothing/toon_bottoms.gd" id="6_sp5d7"]
+[ext_resource type="Script" uid="uid://yg7gxug4rab" path="res://objects/toon/toon_dna.gd" id="7_42kli"]
+[ext_resource type="Script" uid="uid://dfqwh4jmdy0iw" path="res://objects/toon/clothing/toon_shirt.gd" id="8_suqae"]
+[ext_resource type="Script" uid="uid://b6b6pfoqyolr" path="res://objects/battle/battle_resources/gag_loadouts/track.gd" id="9_4i7n6"]
 [ext_resource type="Resource" uid="uid://ct1l0ln1js2xw" path="res://objects/battle/battle_resources/gag_loadouts/gag_tracks/toon_up.tres" id="10_p0q4k"]
 [ext_resource type="Resource" uid="uid://5dld88ul3rb5" path="res://objects/battle/battle_resources/gag_loadouts/gag_tracks/trap.tres" id="11_hy8sk"]
 [ext_resource type="Resource" uid="uid://dqldfsmn7g606" path="res://objects/battle/battle_resources/gag_loadouts/gag_tracks/lure.tres" id="12_ex1ui"]
-[ext_resource type="Script" path="res://objects/player/character.gd" id="13_d0tkq"]
+[ext_resource type="Script" uid="uid://ts8xpgftpmty" path="res://objects/player/character.gd" id="13_d0tkq"]
 [ext_resource type="Resource" uid="uid://cvaos6ucteefy" path="res://objects/battle/battle_resources/gag_loadouts/gag_tracks/sound.tres" id="13_eed60"]
-[ext_resource type="Script" path="res://objects/items/classes/item.gd" id="14_7upve"]
+[ext_resource type="Script" uid="uid://combwqypom1ru" path="res://objects/items/classes/item.gd" id="14_7upve"]
 [ext_resource type="Resource" uid="uid://0528viy6hdsv" path="res://objects/battle/battle_resources/gag_loadouts/gag_tracks/throw.tres" id="14_ww67o"]
 [ext_resource type="Resource" uid="uid://cyiwxplege133" path="res://objects/items/resources/passive/emergency_unite.tres" id="15_8ctgi"]
 [ext_resource type="Resource" uid="uid://dvxiqtapdvmj4" path="res://objects/battle/battle_resources/gag_loadouts/gag_tracks/squirt.tres" id="15_h0hwy"]
 [ext_resource type="Resource" uid="uid://lf7h5xkbt2op" path="res://objects/battle/battle_resources/gag_loadouts/gag_tracks/drop.tres" id="16_diqeu"]
-[ext_resource type="Script" path="res://objects/quests/quest.gd" id="16_qov7a"]
-[ext_resource type="Script" path="res://objects/player/player_stats.gd" id="17_8fcps"]
-[ext_resource type="Script" path="res://objects/battle/battle_resources/gag_loadouts/gag_loadout.gd" id="17_aepo7"]
+[ext_resource type="Script" uid="uid://dfa2ic7ngy7sg" path="res://objects/quests/quest.gd" id="16_qov7a"]
+[ext_resource type="Script" uid="uid://b68uqtpqs73wk" path="res://objects/player/player_stats.gd" id="17_8fcps"]
+[ext_resource type="Script" uid="uid://ckypnf7t805p3" path="res://objects/battle/battle_resources/gag_loadouts/gag_loadout.gd" id="17_aepo7"]
+[ext_resource type="PackedScene" uid="uid://dxyq5lb5oineo" path="res://objects/interactables/treasure_chest/treasure_chest.tscn" id="23_16xtn"]
+[ext_resource type="Resource" uid="uid://ba7mgoe7i5oq4" path="res://objects/items/resources/accessories/backpacks/gag_pack.tres" id="24_1xuw6"]
+[ext_resource type="Resource" uid="uid://bf2i5ld0s7yri" path="res://objects/items/resources/accessories/hats/detective_hat.tres" id="25_66vty"]
+[ext_resource type="Resource" uid="uid://dxf17redyyn30" path="res://objects/items/resources/accessories/glasses/heart_glasses.tres" id="26_ouruu"]
+[ext_resource type="Resource" uid="uid://c3sjb3vivkvux" path="res://objects/items/resources/passive/laff_boost.tres" id="27_4p2an"]
+[ext_resource type="Resource" uid="uid://bb2aknsfptslx" path="res://objects/items/resources/accessories/hats/fedora.tres" id="28_qncha"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_5pfdn"]
 size = Vector3(14.6639, 5.65576, 10.2309)
@@ -89,30 +95,31 @@ gag_loadout = SubResource("Resource_s4oci")
 starting_laff = 25
 starting_items = Array[ExtResource("14_7upve")]([ExtResource("15_8ctgi")])
 base_stats = SubResource("Resource_4yraj")
+random_character_stored_name = ""
 
 [sub_resource type="Resource" id="Resource_vs51t"]
 script = ExtResource("17_8fcps")
 money = 30
 items = Array[ExtResource("14_7upve")]([])
-gags_unlocked = {
-"Drop": 7.0,
-"Lure": 7.0,
-"Sound": 7.0,
-"Squirt": 7.0,
-"Throw": 7.0,
-"Toon-Up": 7.0,
-"Trap": 7.0
-}
-gag_balance = {
-"Drop": 10.0,
-"Lure": 10.0,
-"Sound": 10.0,
-"Squirt": 10.0,
-"Throw": 10.0,
-"Toon-Up": 10.0,
-"Trap": 10.0
-}
-gag_effectiveness = {
+gags_unlocked = Dictionary[String, int]({
+"Drop": 7,
+"Lure": 7,
+"Sound": 7,
+"Squirt": 7,
+"Throw": 7,
+"Toon-Up": 7,
+"Trap": 7
+})
+gag_balance = Dictionary[String, int]({
+"Drop": 10,
+"Lure": 10,
+"Sound": 10,
+"Squirt": 10,
+"Throw": 10,
+"Toon-Up": 10,
+"Trap": 10
+})
+gag_effectiveness = Dictionary[String, float]({
 "Drop": 1.0,
 "Lure": 1.0,
 "Sound": 1.0,
@@ -120,26 +127,28 @@ gag_effectiveness = {
 "Throw": 1.05,
 "Toon-Up": 1.0,
 "Trap": 1.0
-}
-gag_regeneration = {
-"Drop": 5.0,
-"Lure": 5.0,
-"Sound": 5.0,
-"Squirt": 5.0,
-"Throw": 5.0,
-"Toon-Up": 5.0,
-"Trap": 5.0
-}
-gag_vouchers = {
-"Drop": 1.0,
-"Lure": 1.0,
-"Sound": 1.0,
-"Squirt": 1.0,
-"Throw": 1.0,
-"Toon-Up": 1.0,
-"Trap": 1.0
-}
-toonups = {
+})
+gag_regeneration = Dictionary[String, int]({
+"Drop": 5,
+"Lure": 5,
+"Sound": 5,
+"Squirt": 5,
+"Throw": 5,
+"Toon-Up": 5,
+"Trap": 5
+})
+gag_vouchers = Dictionary[String, int]({
+"Drop": 1,
+"Lure": 1,
+"Sound": 1,
+"Squirt": 1,
+"Throw": 1,
+"Toon-Up": 1,
+"Trap": 1
+})
+gag_battle_start_point_boost = Dictionary[String, int]({})
+global_battle_start_point_boost = 0
+toonups = Dictionary[int, int]({
 0: 1,
 1: 1,
 2: 1,
@@ -147,7 +156,7 @@ toonups = {
 4: 1,
 5: 1,
 6: 0
-}
+})
 gag_cap = 100
 gag_discount = -1
 character = SubResource("Resource_br8l0")
@@ -168,6 +177,7 @@ cashbot_boost = 1.0
 lawbot_boost = 1.0
 bossbot_boost = 1.0
 proxy_chance_boost = 0.0
+cog_hp_death_threshold = 0.0
 damage = 2.0
 defense = 1.25
 evasiveness = 1.1
@@ -216,3 +226,23 @@ shape = SubResource("BoxShape3D_5pfdn")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.22207, 0, -10.4431)
 state = 0
 stats = SubResource("Resource_vs51t")
+
+[node name="treasure_chest" parent="." instance=ExtResource("23_16xtn")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.0877, 0, -5.41882)
+override_item = ExtResource("24_1xuw6")
+
+[node name="treasure_chest2" parent="." instance=ExtResource("23_16xtn")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.9695, 0, -5.41882)
+override_item = ExtResource("25_66vty")
+
+[node name="treasure_chest3" parent="." instance=ExtResource("23_16xtn")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.5301, 0, -5.41882)
+override_item = ExtResource("26_ouruu")
+
+[node name="treasure_chest4" parent="." instance=ExtResource("23_16xtn")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.05854, 0, -5.41882)
+override_item = ExtResource("27_4p2an")
+
+[node name="treasure_chest5" parent="." instance=ExtResource("23_16xtn")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.65817, 0, -5.41882)
+override_item = ExtResource("28_qncha")

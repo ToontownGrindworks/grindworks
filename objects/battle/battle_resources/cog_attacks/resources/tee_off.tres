@@ -1,11 +1,12 @@
 [gd_resource type="Resource" script_class="TeeOff" load_steps=2 format=3 uid="uid://dimhdaxn1tyey"]
 
-[ext_resource type="Script" path="res://objects/battle/battle_resources/cog_attacks/tee_off.gd" id="1_61n4c"]
+[ext_resource type="Script" uid="uid://mpf2gmahd2fk" path="res://objects/battle/battle_resources/cog_attacks/tee_off.gd" id="1_61n4c"]
 
 [resource]
 script = ExtResource("1_61n4c")
 accuracy = 75
 damage = 4
+ignore_stats = false
 summary = ""
 attack_lines = Array[String](["You're not up to par.", "Fore!", "I'm getting teed off.", "Caddie, I'll need my driver!", "Just try and avoid this hazard.", "Swing!", "This is a sure hole in one.", "You're in my fairway.", "Notice my grip.", "Watch the birdie!", "Keep your eye on the ball!", "Mind if I play through?"])
 target_type = 0

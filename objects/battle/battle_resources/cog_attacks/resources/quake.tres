@@ -1,12 +1,13 @@
 [gd_resource type="Resource" script_class="Quake" load_steps=2 format=3 uid="uid://cae3lr6y4rrb8"]
 
-[ext_resource type="Script" path="res://objects/battle/battle_resources/cog_attacks/quake.gd" id="1_e4ii2"]
+[ext_resource type="Script" uid="uid://chapsu358g1bt" path="res://objects/battle/battle_resources/cog_attacks/quake.gd" id="1_e4ii2"]
 
 [resource]
 script = ExtResource("1_e4ii2")
 anim_type = 0
 accuracy = 75
 damage = 5
+ignore_stats = false
 summary = ""
 attack_lines = Array[String](["Let's quake, rattle, and roll.", "I've got a whole lot of quakin' goin' on!", "I see you quakin' in your shoes.", "Here it comes, it's the big one!", "This one's off the Richter scale.", "Now the earth will quake!", "Hey, what's shakin'? You!", "Ever been in an earthquake?", "You're on shaky ground now!"])
 target_type = 0

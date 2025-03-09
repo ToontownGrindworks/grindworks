@@ -1,6 +1,6 @@
 [gd_scene load_steps=10 format=3 uid="uid://liel1wnqugwq"]
 
-[ext_resource type="Script" path="res://objects/items/custom/item_toonup_pickup.gd" id="1_di7e0"]
+[ext_resource type="Script" uid="uid://xsesvqbgiawt" path="res://objects/items/custom/item_toonup_pickup.gd" id="1_di7e0"]
 [ext_resource type="Texture2D" uid="uid://cirwmv4jg6xt4" path="res://ui_assets/battle/gags/inventory_pixiedust.png" id="1_v4hkb"]
 [ext_resource type="PackedScene" uid="uid://b1ebxidhw6o1q" path="res://objects/battle/effects/pixie_dust/pixie_dust.tscn" id="2_4qn0x"]
 

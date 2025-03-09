@@ -1,7 +1,7 @@
-[gd_scene load_steps=25 format=3 uid="uid://ewhq7f4agtnn"]
+[gd_scene load_steps=26 format=3 uid="uid://ewhq7f4agtnn"]
 
 [ext_resource type="Texture2D" uid="uid://bfms6y76d307c" path="res://ui_assets/quests/questCard.png" id="1_fkhaq"]
-[ext_resource type="Script" path="res://objects/quests/scroll/quest_scroll.gd" id="2_ov785"]
+[ext_resource type="Script" uid="uid://b0bjdhw5lkq75" path="res://objects/quests/scroll/quest_scroll.gd" id="2_ov785"]
 [ext_resource type="FontFile" uid="uid://cup2yr5w7or1l" path="res://fonts/Minnie.TTF" id="3_36m3l"]
 [ext_resource type="Texture2D" uid="uid://q70laflyv64j" path="res://ui_assets/quests/questPictureFrame.png" id="4_k75p4"]
 [ext_resource type="Texture2D" uid="uid://b5exblt5wcdwd" path="res://ui_assets/general/Schtickerbook_startparty_button_inactive.png" id="6_leohh"]
@@ -19,6 +19,9 @@
 font = ExtResource("3_36m3l")
 font_size = 18
 font_color = Color(0.309804, 0.254902, 0.2, 1)
+
+[sub_resource type="ViewportTexture" id="ViewportTexture_51sdj"]
+viewport_path = NodePath("SubViewport")
 
 [sub_resource type="LabelSettings" id="LabelSettings_u86cx"]
 font = ExtResource("6_o77g1")
@@ -107,8 +110,8 @@ tracks/1/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_lj152"]
 _data = {
-"RESET": SubResource("Animation_5h5h4"),
-"quest_pop-in": SubResource("Animation_mqy6a")
+&"RESET": SubResource("Animation_5h5h4"),
+&"quest_pop-in": SubResource("Animation_mqy6a")
 }
 
 [node name="QuestScroll" type="Control"]
@@ -184,6 +187,24 @@ offset_right = 28.0
 offset_bottom = 28.5
 grow_horizontal = 2
 grow_vertical = 2
+expand_mode = 1
+
+[node name="QuestIconViewer" parent="QuestBG/IconBG" instance=ExtResource("7_55fdq")]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(56, 56)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -28.0
+offset_top = -28.0
+offset_right = 28.0
+offset_bottom = 28.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = SubResource("ViewportTexture_51sdj")
 expand_mode = 1
 
 [node name="QuotaLabel" type="Label" parent="QuestBG"]
@@ -279,10 +300,10 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -25.0
-offset_top = -25.0
-offset_right = 25.0
-offset_bottom = 25.0
+offset_left = -28.5
+offset_top = -28.5
+offset_right = 21.5
+offset_bottom = 21.5
 grow_horizontal = 2
 grow_vertical = 2
 texture = SubResource("ViewportTexture_eccfs")
@@ -307,6 +328,8 @@ texture_normal = ExtResource("8_v5yml")
 texture_pressed = ExtResource("9_2kyfp")
 texture_hover = ExtResource("10_5vx2a")
 texture_disabled = null
+hover_db_offset = 6.0
+press_db_offset = 0.0
 text = "Collect"
 
 [node name="Label" parent="QuestBG/CollectButton" index="0"]
@@ -325,10 +348,12 @@ texture_normal = ExtResource("11_y86ue")
 texture_pressed = ExtResource("12_4jfhj")
 texture_hover = ExtResource("13_qsmcp")
 texture_disabled = null
+hover_db_offset = 6.0
+press_db_offset = 0.0
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
-"": SubResource("AnimationLibrary_lj152")
+&"": SubResource("AnimationLibrary_lj152")
 }
 
 [connection signal="pressed" from="QuestBG/CollectButton" to="." method="complete_quest"]

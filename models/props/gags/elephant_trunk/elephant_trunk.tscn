@@ -228,7 +228,7 @@ tracks/14/keys = PackedFloat32Array(0, 1, 0.614022, 0.437958, 0.680199, 0.066666
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_0uoea"]
 _data = {
-"sound": SubResource("Animation_yp1q1")
+&"sound": SubResource("Animation_yp1q1")
 }
 
 [node name="elephant_trunk" type="Node3D"]

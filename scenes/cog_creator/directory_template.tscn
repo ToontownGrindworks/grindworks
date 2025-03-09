@@ -1,7 +1,7 @@
 [gd_scene load_steps=12 format=3 uid="uid://dtt6wufe1nbkt"]
 
 [ext_resource type="Texture2D" uid="uid://6jo5d4qtcd44" path="res://ui_assets/general/panel.png" id="1_vimnd"]
-[ext_resource type="Script" path="res://scenes/cog_creator/directory_template.gd" id="2_0hv1k"]
+[ext_resource type="Script" uid="uid://dhc7mwrcd48x2" path="res://scenes/cog_creator/directory_template.gd" id="2_0hv1k"]
 [ext_resource type="FontFile" uid="uid://815gwlftl5ik" path="res://fonts/impress-bt.ttf" id="2_ekq46"]
 [ext_resource type="PackedScene" uid="uid://b0d1er4oqiqcn" path="res://objects/general_ui/general_button/general_button.tscn" id="5_pr71t"]
 [ext_resource type="Texture2D" uid="uid://ddcktpjy3gdew" path="res://ui_assets/misc/uiAccessoryDelete_up.png" id="6_c3pty"]
@@ -12,6 +12,7 @@
 font = ExtResource("2_ekq46")
 font_size = 36
 font_color = Color(0, 0, 0, 1)
+shadow_color = Color(0, 0, 0, 0.392157)
 
 [sub_resource type="LabelSettings" id="LabelSettings_ujs02"]
 font = ExtResource("2_ekq46")
@@ -47,8 +48,8 @@ script = ExtResource("2_0hv1k")
 layout_mode = 1
 anchors_preset = 10
 anchor_right = 1.0
-offset_top = 22.0
-offset_bottom = 68.0
+offset_top = 36.0
+offset_bottom = 82.0
 grow_horizontal = 2
 text = "Select a File:"
 label_settings = SubResource("LabelSettings_usm56")
@@ -90,6 +91,8 @@ texture_normal = ExtResource("6_c3pty")
 texture_pressed = ExtResource("7_45tr8")
 texture_hover = ExtResource("8_kbhdn")
 texture_disabled = null
+hover_db_offset = 6.0
+press_db_offset = 0.0
 text = "Load Custom"
 
 [node name="Label" parent="FooterButtons/OpenButton" index="0"]
@@ -145,6 +148,8 @@ texture_normal = ExtResource("6_c3pty")
 texture_pressed = ExtResource("7_45tr8")
 texture_hover = ExtResource("8_kbhdn")
 texture_disabled = null
+hover_db_offset = 6.0
+press_db_offset = 0.0
 text = "Cancel"
 
 [node name="Label" parent="LoadPanel/CancelButton" index="0"]

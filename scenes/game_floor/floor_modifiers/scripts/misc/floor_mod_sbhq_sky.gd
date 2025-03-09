@@ -25,6 +25,6 @@ func modify_floor() -> void:
 func get_mod_name() -> String:
 	return "Sellbot Skybox"
 
-func _process(delta):
+func _process(_delta: float):
 	if skybox and is_instance_valid(skybox):
 		skybox.global_position.y = -25

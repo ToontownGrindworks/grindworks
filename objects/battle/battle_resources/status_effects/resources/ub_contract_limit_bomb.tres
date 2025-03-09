@@ -1,7 +1,7 @@
 [gd_resource type="Resource" script_class="UBContractLimitBomb" load_steps=3 format=3 uid="uid://tjnjddkoq0rm"]
 
 [ext_resource type="Texture2D" uid="uid://dpk1byqv1qdrv" path="res://ui_assets/battle/statuses/contract_limit.png" id="1_uljh3"]
-[ext_resource type="Script" path="res://objects/battle/battle_resources/status_effects/boss_effects/ub_contract_limit_bomb.gd" id="1_yimdi"]
+[ext_resource type="Script" uid="uid://dd46kdf18o7dr" path="res://objects/battle/battle_resources/status_effects/boss_effects/ub_contract_limit_bomb.gd" id="1_yimdi"]
 
 [resource]
 script = ExtResource("1_yimdi")

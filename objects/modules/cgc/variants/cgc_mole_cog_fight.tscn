@@ -2,11 +2,11 @@
 
 [ext_resource type="PackedScene" uid="uid://cu152iitwfet2" path="res://objects/modules/cgc/base_rooms/cgc_finale_room.tscn" id="1_6f8n4"]
 [ext_resource type="PackedScene" uid="uid://direah3lbjuu5" path="res://objects/battle/battle_node/battle_node.tscn" id="2_e72f8"]
-[ext_resource type="Script" path="res://objects/modules/cgc/variants/cgc_mole_cog_fight.gd" id="2_voars"]
+[ext_resource type="Script" uid="uid://c4nw6cx477ku2" path="res://objects/modules/cgc/variants/cgc_mole_cog_fight.gd" id="2_voars"]
 [ext_resource type="PackedScene" uid="uid://dflwjcy6fj0av" path="res://objects/cog/cog.tscn" id="3_mmpwg"]
 [ext_resource type="PackedScene" uid="uid://ktka8nwybead" path="res://objects/interactables/mole_stomp/mole_hole.tscn" id="3_roimw"]
 [ext_resource type="AudioStream" uid="uid://02mc3k3k1brp" path="res://audio/music/ground_floor_investor.ogg" id="4_j8nep"]
-[ext_resource type="Script" path="res://objects/battle/battle_resources/misc_movies/mole_cog_boss/mole_cog_intro.gd" id="4_pn2yh"]
+[ext_resource type="Script" uid="uid://hfbobmntcpoi" path="res://objects/battle/battle_resources/misc_movies/mole_cog_boss/mole_cog_intro.gd" id="4_pn2yh"]
 [ext_resource type="Resource" uid="uid://b2numr2pojy1o" path="res://objects/cog/presets/bossbot/mole_cog.tres" id="5_k3qvb"]
 
 [sub_resource type="Resource" id="Resource_8dvvi"]

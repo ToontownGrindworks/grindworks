@@ -1,12 +1,13 @@
 [gd_resource type="Resource" script_class="PickPocket" load_steps=2 format=3 uid="uid://b8evcct5837aq"]
 
-[ext_resource type="Script" path="res://objects/battle/battle_resources/cog_attacks/pickpocket.gd" id="1_yf3l4"]
+[ext_resource type="Script" uid="uid://cjunlfb0wvfkq" path="res://objects/battle/battle_resources/cog_attacks/pickpocket.gd" id="1_yf3l4"]
 
 [resource]
 script = ExtResource("1_yf3l4")
 do_money_steal = true
 accuracy = 75
 damage = 2
+ignore_stats = false
 summary = ""
 attack_lines = Array[String](["Let me check your valuables.", "Hey, what's that over there?", "Like taking candy from a baby.", "What a steal.", "I'll hold this for you.", "Watch my hands at all times.", "The hand is quicker than the eye.", "There's nothing up my sleeve.", "The management is not responsible for lost items.", "Finder's keepers.", "You'll never see it coming.", "One for me, none for you.", "Don't mind if I do.", "You won't be needing this..."])
 target_type = 0

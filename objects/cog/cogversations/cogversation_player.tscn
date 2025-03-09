@@ -1,7 +1,7 @@
 [gd_scene load_steps=8 format=3 uid="uid://dkalbmvn3bglh"]
 
-[ext_resource type="Script" path="res://objects/cog/cogversations/cogversation_player.gd" id="1_6e2d8"]
-[ext_resource type="Script" path="res://objects/cog/cogversations/cogversation.gd" id="2_j15vm"]
+[ext_resource type="Script" uid="uid://pv3v6xpbok32" path="res://objects/cog/cogversations/cogversation_player.gd" id="1_6e2d8"]
+[ext_resource type="Script" uid="uid://blgaheg48ieas" path="res://objects/cog/cogversations/cogversation.gd" id="2_j15vm"]
 
 [sub_resource type="Resource" id="Resource_vc4e4"]
 script = ExtResource("2_j15vm")

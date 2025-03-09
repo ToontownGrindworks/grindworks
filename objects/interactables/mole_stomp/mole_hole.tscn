@@ -1,7 +1,7 @@
 [gd_scene load_steps=10 format=3 uid="uid://ktka8nwybead"]
 
 [ext_resource type="PackedScene" uid="uid://djt2mhgxahh5k" path="res://models/props/facility_objects/cgc/moles/mole_hole.fbx" id="1_nu0kn"]
-[ext_resource type="Script" path="res://objects/interactables/mole_stomp/mole_hole.gd" id="2_38kih"]
+[ext_resource type="Script" uid="uid://bi24p7yxpr0ow" path="res://objects/interactables/mole_stomp/mole_hole.gd" id="2_38kih"]
 [ext_resource type="PackedScene" uid="uid://dy45kccck15hb" path="res://models/props/facility_objects/cgc/moles/mole_cog.fbx" id="2_m5muj"]
 [ext_resource type="PackedScene" uid="uid://ccswixs4tcud2" path="res://models/props/facility_objects/cgc/moles/mole_norm.fbx" id="3_0sgf7"]
 [ext_resource type="PackedScene" uid="uid://dl32qcjfnv5nl" path="res://models/props/facility_objects/cgc/moles/mole_hit.fbx" id="4_ohgmt"]

@@ -12,11 +12,11 @@ visible = false
 [node name="GolfDoors" type="Node3D" parent="." index="17"]
 
 [node name="GolfDoor1" parent="GolfDoors" index="0" instance=ExtResource("2_whdq6")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.325, 0, -0.077)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.325, -0.195522, -0.077)
 speed = 0.5
 
 [node name="GolfDoor2" parent="GolfDoors" index="1" instance=ExtResource("2_whdq6")]
-transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 5.712, 0, -2.727)
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 5.712, -0.195522, -2.727)
 
 [node name="treasure_chest" parent="." index="18" instance=ExtResource("3_wd526")]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, -0.0574844, 0)

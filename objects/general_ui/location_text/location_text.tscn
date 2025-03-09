@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://djs6mw66dxqp3"]
 
-[ext_resource type="Script" path="res://objects/general_ui/location_text/location_text.gd" id="1_ve6as"]
+[ext_resource type="Script" uid="uid://bkpkvqpj01qm0" path="res://objects/general_ui/location_text/location_text.gd" id="1_ve6as"]
 [ext_resource type="FontFile" uid="uid://cup2yr5w7or1l" path="res://fonts/Minnie.TTF" id="1_y2m6m"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_mqy68"]

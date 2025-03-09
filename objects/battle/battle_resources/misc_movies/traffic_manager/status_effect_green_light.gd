@@ -1,3 +1,4 @@
+@tool
 extends StatusEffect
 
 const GAG_BAN_EFFECT := preload('res://objects/battle/battle_resources/status_effects/resources/status_effect_gag_order.tres')

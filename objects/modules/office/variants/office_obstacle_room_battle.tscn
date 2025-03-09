@@ -1,7 +1,7 @@
 [gd_scene load_steps=14 format=3 uid="uid://dr73mb443i5jj"]
 
 [ext_resource type="PackedScene" uid="uid://c8flauti1cf1p" path="res://objects/modules/office/base_rooms/office_obstacle_room.tscn" id="1_pb5w1"]
-[ext_resource type="Script" path="res://objects/modules/office/variants/office_obstacle_room_battle.gd" id="2_5wahr"]
+[ext_resource type="Script" uid="uid://coxlnc5fxn07c" path="res://objects/modules/office/variants/office_obstacle_room_battle.gd" id="2_5wahr"]
 [ext_resource type="PackedScene" uid="uid://dbrst2twjd0pu" path="res://objects/interactables/button/button.tscn" id="4_2pbvk"]
 [ext_resource type="PackedScene" uid="uid://c3dlpvi042k41" path="res://objects/obstacles/activated_platform/activated_platform.tscn" id="5_qyy4m"]
 [ext_resource type="PackedScene" uid="uid://dxyq5lb5oineo" path="res://objects/interactables/treasure_chest/treasure_chest.tscn" id="6_iu2v3"]

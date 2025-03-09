@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://d1vtqaf4hmrdj"]
+
+[ext_resource type="Script" uid="uid://b1a3vx5q2kc6s" path="res://objects/player/player_camera.gd" id="1_s0hvc"]
+
+[sub_resource type="SeparationRayShape3D" id="SeparationRayShape3D_6nfhs"]
+length = 0.05
+
+[node name="PlayerCamera" type="SpringArm3D"]
+physics_interpolation_mode = 2
+top_level = true
+shape = SubResource("SeparationRayShape3D_6nfhs")
+spring_length = 2.5
+script = ExtResource("1_s0hvc")
+
+[node name="Camera" type="Camera3D" parent="."]
+unique_name_in_owner = true
+current = true
+fov = 52.0

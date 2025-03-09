@@ -3,7 +3,7 @@ class_name PathLoader
 ## A class that provides path loading utilities.
 
 ## Gathers the filepaths for all files matching the extension within a given directory.
-static func load_filepaths(path: String, ext := ".tres", recursive := true, filter_type: Variant = Object) -> Array[String]:
+static func load_filepaths(path: String, ext := ".tres", recursive := true, _filter_type: Variant = Object) -> Array[String]:
 	if not path.ends_with("/"):
 		path += '/'
 	if not DirAccess.dir_exists_absolute(path):

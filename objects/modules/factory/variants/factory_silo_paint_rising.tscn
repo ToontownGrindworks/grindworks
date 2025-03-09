@@ -1,7 +1,7 @@
 [gd_scene load_steps=106 format=4 uid="uid://bablbd6r8nx4u"]
 
 [ext_resource type="PackedScene" uid="uid://d0l3ucdou3gof" path="res://objects/modules/factory/base_rooms/factory_silo.tscn" id="1_kwh8e"]
-[ext_resource type="Script" path="res://objects/modules/factory/variants/factory_silo_paint_boss.gd" id="2_7yupl"]
+[ext_resource type="Script" uid="uid://c45m4ugolua3j" path="res://objects/modules/factory/variants/factory_silo_paint_boss.gd" id="2_7yupl"]
 [ext_resource type="Texture2D" uid="uid://id8v81ei4r5b" path="res://models/facilities/factory/FINALFACTORY_69.png" id="2_iej83"]
 [ext_resource type="Texture2D" uid="uid://v4wcbjb7c7cj" path="res://models/facilities/factory/FINALFACTORY_71.png" id="3_cgw8p"]
 [ext_resource type="Texture2D" uid="uid://bq3p655m2hvhy" path="res://models/props/facility_objects/factory/paint/PaintStream_SB_Paint.png" id="3_qkuwo"]

@@ -1,12 +1,12 @@
 [gd_resource type="Resource" script_class="CogDNA" load_steps=11 format=3 uid="uid://ba7yjm7wpt1fu"]
 
-[ext_resource type="Script" path="res://objects/battle/battle_resources/cog_attacks/cog_attack.gd" id="1_4pu63"]
+[ext_resource type="Script" uid="uid://bb27him60xtnk" path="res://objects/battle/battle_resources/cog_attacks/cog_attack.gd" id="1_4pu63"]
 [ext_resource type="Resource" uid="uid://dxpqtt8gh5brv" path="res://objects/battle/battle_resources/cog_attacks/resources/finger_wag.tres" id="2_nb47t"]
 [ext_resource type="Resource" uid="uid://cfwymrymjx7s5" path="res://objects/battle/battle_resources/cog_attacks/resources/write_off.tres" id="3_cnhv6"]
 [ext_resource type="Resource" uid="uid://bddy50xh8sfc8" path="res://objects/battle/battle_resources/cog_attacks/resources/tremor.tres" id="4_f8d0e"]
 [ext_resource type="PackedScene" uid="uid://bryhp1p7si3oo" path="res://models/cogs/heads/UnionBuster.glb" id="5_ipvxg"]
-[ext_resource type="Script" path="res://objects/cog/cogdna.gd" id="7_u2aib"]
-[ext_resource type="Script" path="res://objects/battle/battle_resources/status_effect.gd" id="8_mvwwv"]
+[ext_resource type="Script" uid="uid://okjbx502s3r5" path="res://objects/cog/cogdna.gd" id="7_u2aib"]
+[ext_resource type="Script" uid="uid://df7irk63ikx4k" path="res://objects/battle/battle_resources/status_effect.gd" id="8_mvwwv"]
 [ext_resource type="Resource" uid="uid://d3i0k8gaybnbp" path="res://objects/battle/battle_resources/status_effects/resources/boss_logic_union_buster.tres" id="8_t203t"]
 [ext_resource type="Resource" uid="uid://c8rs8upqmscoh" path="res://objects/battle/battle_resources/status_effects/resources/attentive.tres" id="9_fy7td"]
 [ext_resource type="Resource" uid="uid://bos0wcgjeyg4w" path="res://objects/battle/battle_resources/status_effects/resources/tenure_status.tres" id="10_0qqr8"]
@@ -35,6 +35,6 @@ is_admin = false
 health_mod = 4.87
 battle_phrases = Array[String](["I am going to bust some unions."])
 external_assets = {
-"head_model": "",
-"head_textures": []
+&"head_model": "",
+&"head_textures": []
 }

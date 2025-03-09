@@ -134,7 +134,7 @@ func generate_floor() -> void:
 	
 	player.global_position = entrance.get_node('SPAWNPOINT').global_position
 	player.state = Player.PlayerState.WALK
-	player.camera.current = true
+	player.camera.make_current()
 	player.recenter_camera(true)
 	player.face_position(entrance.get_node('EXIT').global_position)
 	if Util.floor_number == 0:
@@ -179,7 +179,7 @@ func add_random_room():
 	append_room(new_room)
 
 func append_room(room: PackedScene):
-	var new_module = room.instantiate()
+	var new_module: Node3D = room.instantiate()
 	room_node.add_child(new_module)
 	new_module.name = str(room_order.size())
 	# For all rooms except the entrance, do some tricky math to attach them 

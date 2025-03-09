@@ -2,19 +2,46 @@ extends Resource
 class_name Item
 
 enum QualitoonRating {
-	Q0,
 	Q1,
 	Q2,
 	Q3,
 	Q4,
 	Q5,
-	NIL
 }
+
+enum Rarity {
+	NIL,
+	Q1,
+	Q2,
+	Q3,
+	Q4,
+	Q5,
+	Q6,
+	Q7
+}
+
+const RarityToRolls: Dictionary[Rarity, int] = {
+	Rarity.Q1: 0,
+	Rarity.Q2: 1,
+	Rarity.Q3: 2,
+	Rarity.Q4: 3,
+	Rarity.Q5: 4,
+	Rarity.Q6: 5,
+	Rarity.Q7: 6,
+}
+
+const QualityToRarity: Dictionary[QualitoonRating, Rarity] = {
+	QualitoonRating.Q1: Rarity.Q1,
+	QualitoonRating.Q2: Rarity.Q2,
+	QualitoonRating.Q3: Rarity.Q3,
+	QualitoonRating.Q4: Rarity.Q4,
+	QualitoonRating.Q5: Rarity.Q5,
+}
+
 ## The in-game displayed qualitoon of an item
 @export var qualitoon: QualitoonRating
-## Optional override for rarity
-## Leaving as Q0 means the game will take the base qualitoon as the rarity
-@export var qualitoon_rarity := QualitoonRating.NIL
+## Item rarity value. Q0 = Super duper common. Q7 = Super duper rare. Nil uses qualitoon as rarity.
+@export var rarity: Rarity = Rarity.NIL
 ## Evergreen items can appear multiple times per-run.
 @export var evergreen := false
 ## Realtime items exist and run processes in the game world.

@@ -3,12 +3,12 @@
 [ext_resource type="Texture2D" uid="uid://dj32koje0oucv" path="res://objects/items/custom/treasure/music.png" id="1_h3kp7"]
 [ext_resource type="PackedScene" uid="uid://bmkdj1ocsunjm" path="res://objects/items/custom/treasure/treasure.tscn" id="2_b4gat"]
 [ext_resource type="AudioStream" uid="uid://xd35cu8acybx" path="res://audio/sfx/battle/gags/toonup/sparkly.ogg" id="3_jd4ha"]
-[ext_resource type="Script" path="res://objects/items/classes/item.gd" id="3_qs8ii"]
+[ext_resource type="Script" uid="uid://combwqypom1ru" path="res://objects/items/classes/item.gd" id="3_qs8ii"]
 
 [resource]
 script = ExtResource("3_qs8ii")
-qualitoon = 2
-qualitoon_rarity = 6
+qualitoon = 1
+rarity = 0
 evergreen = true
 realtime = false
 slot = 0

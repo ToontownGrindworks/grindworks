@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://ingagky3itmv"]
 
 [ext_resource type="PackedScene" uid="uid://k8228k6jwvf7" path="res://objects/props/mint/shelf_money_bags.tscn" id="1_0pauh"]
-[ext_resource type="Script" path="res://objects/props/mint/shelf_money_no_bottom.gd" id="1_cfemb"]
+[ext_resource type="Script" uid="uid://d0t7ttfj3c7v6" path="res://objects/props/mint/shelf_money_no_bottom.gd" id="1_cfemb"]
 
 [node name="shelf2" type="Node3D"]
 script = ExtResource("1_cfemb")

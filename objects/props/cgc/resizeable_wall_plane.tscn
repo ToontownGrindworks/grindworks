@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://c6bqbu1bxlh3l"]
 
-[ext_resource type="Script" path="res://objects/props/cgc/resizeable_wall_plane.gd" id="1_yp11u"]
+[ext_resource type="Script" uid="uid://ds630g3ar5u6d" path="res://objects/props/cgc/resizeable_wall_plane.gd" id="1_yp11u"]
 [ext_resource type="Material" uid="uid://b5dlmfxcuep8p" path="res://objects/props/cgc/wall_plane_mat_side.tres" id="2_unh1w"]
 
 [sub_resource type="QuadMesh" id="QuadMesh_i3ebp"]

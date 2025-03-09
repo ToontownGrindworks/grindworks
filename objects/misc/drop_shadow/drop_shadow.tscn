@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=3 uid="uid://suibio7o1avg"]
 
-[ext_resource type="Script" path="res://objects/misc/drop_shadow/drop_shadow.gd" id="1_lmaue"]
+[ext_resource type="Script" uid="uid://npyjv53cefmg" path="res://objects/misc/drop_shadow/drop_shadow.gd" id="1_lmaue"]
 [ext_resource type="Texture2D" uid="uid://1fotk4key644" path="res://models/props/drop_shadow/drop_shadow_drop-shadow.png" id="1_re78r"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7n0tv"]

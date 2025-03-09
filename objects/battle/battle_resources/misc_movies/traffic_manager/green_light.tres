@@ -1,6 +1,6 @@
 [gd_resource type="Resource" load_steps=2 format=3 uid="uid://diycwprjw6sid"]
 
-[ext_resource type="Script" path="res://objects/battle/battle_resources/misc_movies/traffic_manager/green_light.gd" id="1_xec7x"]
+[ext_resource type="Script" uid="uid://d2e65km36tdu3" path="res://objects/battle/battle_resources/misc_movies/traffic_manager/green_light.gd" id="1_xec7x"]
 
 [resource]
 script = ExtResource("1_xec7x")

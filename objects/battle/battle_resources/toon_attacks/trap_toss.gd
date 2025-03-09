@@ -163,9 +163,9 @@ func banana():
 		prop.get_node("AnimationPlayer").play("toss")
 	var shrink_tween := manager.create_tween()
 	shrink_tween.tween_property(path if path else prop, 'scale', Vector3(.001, .001, .001), 0.75)
-	await TaskMgr.delay(0.55)
+	await Task.delay(0.55)
 	AudioManager.play_sound(HIT_GROUND_SFX)
-	await TaskMgr.delay(0.45)
+	await Task.delay(0.45)
 	shrink_tween.kill()
 	if activating_lure:
 		activating_lure.current_activating_trap = self

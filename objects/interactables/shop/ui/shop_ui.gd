@@ -37,7 +37,7 @@ func set_item(item: Item, price: int, discounted := false) -> void:
 		sale_label.visible = discounted
 		sale_label.position = Vector2(57, 48) if price_label.text.length() == 1 else Vector2(75, 48)
 		if item.is_acessory or item.force_show_shop_category:
-			set_stars(int(item.qualitoon))
+			set_stars(int(item.qualitoon + 1))
 			%DescTitle.label_settings.font_size = 22
 			%DescTitle.label_settings.font_color = item.shop_category_color
 			%DescTitle.text = item.shop_category_title.to_upper()
@@ -73,7 +73,7 @@ func get_wallet() -> int:
 func can_afford(price: int) -> bool:
 	return get_wallet() >= price and not price == -1
 
-func _process(delta: float) -> void:
+func _process(_delta: float) -> void:
 	if not is_visible_in_tree():
 		return
 

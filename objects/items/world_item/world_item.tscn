@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://dd0wuj2dwr7st"]
 
-[ext_resource type="Script" path="res://objects/items/world_item/world_item.gd" id="1_nfv0m"]
+[ext_resource type="Script" uid="uid://bgqiukhefc5t7" path="res://objects/items/world_item/world_item.gd" id="1_nfv0m"]
 [ext_resource type="Resource" uid="uid://j75am6rbrvrj" path="res://objects/items/pools/progressives.tres" id="2_hicf3"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_d6sih"]

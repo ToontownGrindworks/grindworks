@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://dtd5trt20o7o6"]
 
 [ext_resource type="FontFile" uid="uid://cup2yr5w7or1l" path="res://fonts/Minnie.TTF" id="1_uo1tt"]
-[ext_resource type="Script" path="res://objects/pause_menu/anomaly_label.gd" id="2_eh44i"]
+[ext_resource type="Script" uid="uid://hrhp2i1cgtt2" path="res://objects/pause_menu/anomaly_label.gd" id="2_eh44i"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_k82le"]
 resource_local_to_scene = true

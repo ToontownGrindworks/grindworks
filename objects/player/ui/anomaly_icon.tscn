@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://c1dbrggljuy8l"]
 
 [ext_resource type="Texture2D" uid="uid://c1g18m5e1uptq" path="res://ui_assets/player_ui/pause/anomaly_triangle_2.png" id="1_3alay"]
-[ext_resource type="Script" path="res://objects/player/ui/anomaly_icon.gd" id="1_o5cv3"]
+[ext_resource type="Script" uid="uid://cpja0o43uavhq" path="res://objects/player/ui/anomaly_icon.gd" id="1_o5cv3"]
 [ext_resource type="Texture2D" uid="uid://bfr0abg8111kf" path="res://ui_assets/player_ui/pause/RecordProfits.png" id="4_lnlti"]
 
 [node name="AnomalyIcon" type="Control"]

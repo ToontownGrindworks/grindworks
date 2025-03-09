@@ -2,26 +2,21 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bto05c554e0om"
-path.s3tc="res://.godot/imported/marbles_marble_1.png-2e76349259dc2a3473c0a4edc67d7ddd.s3tc.ctex"
-path.etc2="res://.godot/imported/marbles_marble_1.png-2e76349259dc2a3473c0a4edc67d7ddd.etc2.ctex"
+uid="uid://3mb7skoeyvis"
+path="res://.godot/imported/marbles_marble_1.png-2e76349259dc2a3473c0a4edc67d7ddd.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc", "etc2_astc"],
-"vram_texture": true
-}
-generator_parameters={
-"md5": "1ba10c040c1ecb46c231e5cc5275eb16"
+"vram_texture": false
 }
 
 [deps]
 
 source_file="res://models/props/gags/marbles/marbles_marble_1.png"
-dest_files=["res://.godot/imported/marbles_marble_1.png-2e76349259dc2a3473c0a4edc67d7ddd.s3tc.ctex", "res://.godot/imported/marbles_marble_1.png-2e76349259dc2a3473c0a4edc67d7ddd.etc2.ctex"]
+dest_files=["res://.godot/imported/marbles_marble_1.png-2e76349259dc2a3473c0a4edc67d7ddd.ctex"]
 
 [params]
 
-compress/mode=2
-compress/high_quality=false
+compress/mode=3
+compress/high_quality=true
 compress/lossy_quality=0.7
 compress/hdr_compression=1
 compress/normal_map=0

@@ -38,7 +38,7 @@ func action() -> void:
 	battle_node.focus_character(user)
 	user.speak(RandomService.array_pick_random('true_random', PHRASES))
 	user.set_animation('throw-paper')
-	await TaskMgr.delay(2.4)
+	await Task.delay(2.4)
 	paint_bucket.reparent(battle_node)
 	await user.get_tree().process_frame
 	var new_pos: Vector3 = target.body.nametag_node.global_position + Vector3(0, 3, 0)
@@ -50,7 +50,7 @@ func action() -> void:
 			LerpProperty.new(paint_bucket, ^"global_position", 0.6, final_pos).interp(Tween.EASE_IN, Tween.TRANS_QUAD)
 		]),
 	]).as_tween(user)
-	await TaskMgr.delay(0.5)
+	await Task.delay(0.5)
 	battle_node.focus_character(target)
 	await manager.barrier(projectile.finished, 1.0)
 	paint_bucket.queue_free()
@@ -66,7 +66,7 @@ func action() -> void:
 	var max_hp_diff: int = target.stats.max_hp - old_max_hp
 	target.stats.hp += max_hp_diff
 	manager.battle_text(target, "Max HP Up!", BattleText.colors.orange[0], BattleText.colors.orange[1])
-	await TaskMgr.delay(0.6)
+	await Task.delay(0.6)
 	var lure_immunity: StatusEffectGagImmunity = load("res://objects/battle/battle_resources/status_effects/resources/status_effect_gag_immunity.tres").duplicate()
 	if lure_immunity.id not in manager.get_status_ids_for_target(target):
 		lure_immunity.set_track(load("res://objects/battle/battle_resources/gag_loadouts/gag_tracks/lure.tres"))
@@ -74,4 +74,4 @@ func action() -> void:
 		lure_immunity.target = target
 		manager.add_status_effect(lure_immunity)
 		manager.battle_text(target, "Lure Immunity!", BattleText.colors.orange[0], BattleText.colors.orange[1])
-	await TaskMgr.delay(1.4)
+	await Task.delay(1.4)

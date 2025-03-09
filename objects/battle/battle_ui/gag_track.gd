@@ -85,7 +85,7 @@ func refresh():
 		else:
 			gag_buttons[i].hide()
 	
-	point_label.text = "Points: " + str(Util.get_player().stats.gag_balance[track.track_name]) + '/' + str(Util.get_player().stats.gag_cap)
+	point_label.text = "Points: " + str(roundi(Util.get_player().stats.gag_balance[track.track_name])) + '/' + str(roundi(Util.get_player().stats.gag_cap))
 	if Util.get_player().stats.gag_balance[track.track_name] > Util.get_player().stats.gag_cap:
 		point_label.self_modulate = WARNING_COLOR
 	else:

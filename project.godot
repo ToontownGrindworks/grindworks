@@ -16,17 +16,18 @@ warnings/check_angle_interpolation_type_conflicting=false
 [application]
 
 config/name="Toontown: The Grindworks"
-config/version="1.0.1"
+config/version="1.0.2"
 run/main_scene="res://scenes/title_screen/title_screen.tscn"
-config/features=PackedStringArray("4.3", "Forward Plus")
+config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="res://ui_assets/general/logo_eyes.png"
 config/windows_native_icon="res://ui_assets/general/icon.ico"
 
 [autoload]
 
+TaskContainer="*res://addons/task/task_container.gd"
+Logging="*res://addons/toonlike_tools/logging/logging.gd"
 Util="*res://objects/globals/util.gd"
 ItemService="*res://objects/globals/item_service.gd"
-TaskMgr="*res://addons/task_mgr/task_mgr.gd"
 AudioManager="*res://objects/globals/audio_manager.gd"
 SceneLoader="*res://objects/globals/scene_loader.gd"
 Globals="*res://objects/globals/globals.gd"
@@ -49,7 +50,7 @@ mouse_cursor/custom_image="res://ui_assets/cursor.png"
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/graphedit2/plugin.cfg", "res://addons/intervals/plugin.cfg", "res://addons/node_screenshot_tool/plugin.cfg", "res://addons/script-tabs/plugin.cfg")
+enabled=PackedStringArray("res://addons/graphedit2/plugin.cfg", "res://addons/intervals/plugin.cfg", "res://addons/node_screenshot_tool/plugin.cfg", "res://addons/script-tabs/plugin.cfg", "res://addons/task/plugin.cfg", "res://addons/toonlike_tools/plugin.cfg")
 
 [file_customization]
 
@@ -158,15 +159,24 @@ fullscreen={
 "events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":true,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":4194309,"key_label":0,"unicode":0,"location":0,"echo":false,"script":null)
 ]
 }
+toggle_freecam={
+"deadzone": 0.2,
+"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":4194337,"key_label":0,"unicode":0,"location":0,"echo":false,"script":null)
+]
+}
 
 [navigation]
 
 3d/default_edge_connection_margin=10.0
 
+[physics]
+
+common/physics_interpolation=true
+
 [rendering]
 
 textures/vram_compression/import_etc2_astc=true
-environment/glow/upscale_mode=0
 anti_aliasing/quality/msaa_3d=2
+environment/glow/upscale_mode=0
 mesh_lod/lod_change/threshold_pixels=0.0
 environment/defaults/default_environment="res://scenes/game_floor/default_environment.tres"

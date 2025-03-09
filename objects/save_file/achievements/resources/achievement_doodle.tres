@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="SignalAchievement" load_steps=3 format=3 uid="uid://b8ly6khc6da4c"]
 
-[ext_resource type="Script" path="res://objects/save_file/achievements/signal_achievement.gd" id="1_h66rg"]
+[ext_resource type="Script" uid="uid://bu0ypaddtve76" path="res://objects/save_file/achievements/signal_achievement.gd" id="1_h66rg"]
 [ext_resource type="Texture2D" uid="uid://db4cemym2ofdj" path="res://ui_assets/achievements/icon_achievement_doodle.png" id="1_pve37"]
 
 [resource]

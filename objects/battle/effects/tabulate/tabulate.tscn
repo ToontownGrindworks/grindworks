@@ -1,7 +1,7 @@
 [gd_scene load_steps=9 format=3 uid="uid://v3juvm27wfpu"]
 
 [ext_resource type="FontFile" uid="uid://dyjvd6wmo0bmg" path="res://fonts/vtRemingtonPortable.ttf" id="1_07bxl"]
-[ext_resource type="Script" path="res://objects/battle/effects/tabulate/tabulate_particles.gd" id="1_tbxt0"]
+[ext_resource type="Script" uid="uid://b8kohmcui4bot" path="res://objects/battle/effects/tabulate/tabulate_particles.gd" id="1_tbxt0"]
 
 [sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_bsnrg"]
 particle_flag_rotate_y = true

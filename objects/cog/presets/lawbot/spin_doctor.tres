@@ -1,12 +1,12 @@
 [gd_resource type="Resource" script_class="CogDNA" load_steps=8 format=3 uid="uid://crdecksepx8wc"]
 
-[ext_resource type="Script" path="res://objects/battle/battle_resources/cog_attacks/cog_attack.gd" id="1_kwfgp"]
-[ext_resource type="Script" path="res://objects/cog/cogdna.gd" id="2_jcjul"]
+[ext_resource type="Script" uid="uid://bb27him60xtnk" path="res://objects/battle/battle_resources/cog_attacks/cog_attack.gd" id="1_kwfgp"]
+[ext_resource type="Script" uid="uid://okjbx502s3r5" path="res://objects/cog/cogdna.gd" id="2_jcjul"]
 [ext_resource type="Resource" uid="uid://cfwymrymjx7s5" path="res://objects/battle/battle_resources/cog_attacks/resources/write_off.tres" id="2_ky1fn"]
 [ext_resource type="PackedScene" uid="uid://cwg7ajjhom2dw" path="res://models/cogs/heads/telemarketer.glb" id="3_2jiob"]
 [ext_resource type="Resource" uid="uid://cae3lr6y4rrb8" path="res://objects/battle/battle_resources/cog_attacks/resources/quake.tres" id="3_6isp2"]
 [ext_resource type="Texture2D" uid="uid://l0uswjwbs1c7" path="res://models/cogs/heads/spindoctor.png" id="4_yurm8"]
-[ext_resource type="Script" path="res://objects/battle/battle_resources/status_effect.gd" id="7_pfyt6"]
+[ext_resource type="Script" uid="uid://df7irk63ikx4k" path="res://objects/battle/battle_resources/status_effect.gd" id="7_pfyt6"]
 
 [resource]
 script = ExtResource("2_jcjul")
@@ -15,13 +15,14 @@ suit = 1
 cog_name = "Spin Doctor"
 name_plural = ""
 head = ExtResource("3_2jiob")
-head_scale = 1.0
+head_scale = Vector3(1, 1, 1)
 head_pos = Vector3(0, 0, 0)
 scale = 5.65
 head_textures = Array[Texture2D]([ExtResource("4_yurm8")])
 hand_color = Color(0.5, 0.8, 0.75, 1)
 head_color = Color(1, 1, 1, 1)
 custom_nametag_height = 0.0
+custom_nametag_suffix = ""
 attacks = Array[ExtResource("1_kwfgp")]([ExtResource("2_ky1fn"), ExtResource("3_6isp2")])
 level_low = 6
 level_high = 13
@@ -31,6 +32,6 @@ is_admin = false
 health_mod = 1.0
 battle_phrases = Array[String](["You'll never know when I'll stop.", "Care to take a few turns with me?", "The doctor is in, the Toon is out.", "I have my own special spin on the subject.", "Let me take you for a spin...", "The doctor will see you now.", "You look like you need a doctor.", "You think this won't hurt a bit, but it will!"])
 external_assets = {
-"head_model": "",
-"head_textures": []
+&"head_model": "",
+&"head_textures": []
 }

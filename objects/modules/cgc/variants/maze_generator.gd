@@ -47,7 +47,7 @@ func fill_maze() -> void:
 		return
 	for i in grid_size.x:
 		for j in grid_size.y:
-			await TaskMgr.delay(0.01)
+			await Task.delay(0.01)
 			var new_unit : Node3D = base_unit.duplicate()
 			generated_maze.add_child(new_unit)
 			new_unit.show()
@@ -76,7 +76,7 @@ func generate_maze() -> void:
 	
 	# Make maze
 	while not unvisited_cells.is_empty():
-		await TaskMgr.delay(0.01)
+		await Task.delay(0.01)
 		var cell2 = find_unvisited_neighbor(unvisited_cells,cell)
 		
 		if cell2:

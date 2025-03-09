@@ -2,7 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://chdkp682v5kgu" path="res://objects/modules/factory/base_rooms/factory_paint_mixer.tscn" id="1_owb7g"]
 [ext_resource type="PackedScene" uid="uid://q13pfs05aior" path="res://objects/obstacles/paint_platform/paintmixer_platform.tscn" id="2_718mm"]
-[ext_resource type="Script" path="res://objects/obstacles/lava_floor/lava_floor.gd" id="3_so2ux"]
+[ext_resource type="Script" uid="uid://0v6jh8nv5lnx" path="res://objects/obstacles/lava_floor/lava_floor.gd" id="3_so2ux"]
 [ext_resource type="PackedScene" uid="uid://dxyq5lb5oineo" path="res://objects/interactables/treasure_chest/treasure_chest.tscn" id="5_ldx13"]
 
 [sub_resource type="CylinderShape3D" id="CylinderShape3D_7s7ng"]

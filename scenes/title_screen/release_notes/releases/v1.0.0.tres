@@ -1,8 +1,9 @@
 [gd_resource type="Resource" script_class="ReleaseNote" load_steps=2 format=3 uid="uid://bx7woce22mgxb"]
 
-[ext_resource type="Script" path="res://scenes/title_screen/release_notes/release_note.gd" id="1_a3iht"]
+[ext_resource type="Script" uid="uid://d1j0hh6tsgy0r" path="res://scenes/title_screen/release_notes/release_note.gd" id="1_a3iht"]
 
 [resource]
 script = ExtResource("1_a3iht")
 release_version = "v1.0.0"
-notes = Array[String](["[TITLE]Toontown: The Grindworks", "The game released"])
+notes = "[TITLE]Toontown: The Grindworks
+The game released"

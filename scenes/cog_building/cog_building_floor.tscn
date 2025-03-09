@@ -1,7 +1,7 @@
 [gd_scene load_steps=249 format=4 uid="uid://pg3dqtneqvwt"]
 
 [ext_resource type="Texture2D" uid="uid://bybwlevpkmfua" path="res://models/misc_zones/cog_building/cog_building_floor1_0.png" id="1_6qk73"]
-[ext_resource type="Script" path="res://scenes/cog_building/cog_building_floor.gd" id="1_60jla"]
+[ext_resource type="Script" uid="uid://bh347rsny7oxl" path="res://scenes/cog_building/cog_building_floor.gd" id="1_60jla"]
 [ext_resource type="Texture2D" uid="uid://h3khxb0teejo" path="res://models/misc_zones/cog_building/cog_building_floor1_1.png" id="2_cy6yq"]
 [ext_resource type="Texture2D" uid="uid://dt7eoqh4f0b83" path="res://models/misc_zones/cog_building/cog_building_floor1_2.png" id="3_8l78b"]
 [ext_resource type="Texture2D" uid="uid://1lonyogvflba" path="res://models/misc_zones/cog_building/cog_building_floor1_3.png" id="4_1x0sw"]
@@ -15,13 +15,13 @@
 [ext_resource type="Texture2D" uid="uid://ceiyf6j2wk0tq" path="res://models/misc_zones/cog_building/cog_building_floor1_11.png" id="12_k6eah"]
 [ext_resource type="PackedScene" uid="uid://b6eexfh4v078o" path="res://objects/interactables/elevators/sellbot_elevator.tscn" id="13_gtdut"]
 [ext_resource type="Texture2D" uid="uid://5il51f14jc3v" path="res://models/misc_zones/cog_building/cog_building_floor1_12.png" id="13_i2qip"]
-[ext_resource type="Script" path="res://objects/interactables/elevators/elevator_trick.gd" id="15_vt1eg"]
+[ext_resource type="Script" uid="uid://lrjgymvdpx1q" path="res://objects/interactables/elevators/elevator_trick.gd" id="15_vt1eg"]
 [ext_resource type="Texture2D" uid="uid://boe882ch1itll" path="res://models/misc_zones/cog_building/cog_building_machine.png" id="17_wis5x"]
 [ext_resource type="AudioStream" uid="uid://mpgro8mw3l64" path="res://audio/music/encntr_general_bg_indoor.ogg" id="19_ryjah"]
-[ext_resource type="Script" path="res://objects/battle/battle_resources/misc_movies/battle_entrances/battle_start_movie.gd" id="20_3wle6"]
+[ext_resource type="Script" uid="uid://bfds4ecmwyos7" path="res://objects/battle/battle_resources/misc_movies/battle_entrances/battle_start_movie.gd" id="20_3wle6"]
 [ext_resource type="PackedScene" uid="uid://direah3lbjuu5" path="res://objects/battle/battle_node/battle_node.tscn" id="20_e03ya"]
 [ext_resource type="PackedScene" uid="uid://dflwjcy6fj0av" path="res://objects/cog/cog.tscn" id="21_ogpp3"]
-[ext_resource type="Script" path="res://scenes/elevator_scene/elevator_cam.gd" id="22_vg1r1"]
+[ext_resource type="Script" uid="uid://baosi3a5wl8b6" path="res://scenes/elevator_scene/elevator_cam.gd" id="22_vg1r1"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_sul2v"]
 resource_name = "lambert1"

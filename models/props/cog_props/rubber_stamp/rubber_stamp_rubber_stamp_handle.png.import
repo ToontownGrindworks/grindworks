@@ -2,26 +2,21 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cvwltwex1tg3y"
-path.s3tc="res://.godot/imported/rubber_stamp_rubber_stamp_handle.png-56921ec54b4cd6e816041bc2f82eb689.s3tc.ctex"
-path.etc2="res://.godot/imported/rubber_stamp_rubber_stamp_handle.png-56921ec54b4cd6e816041bc2f82eb689.etc2.ctex"
+uid="uid://dd4yv6e6y8fk"
+path="res://.godot/imported/rubber_stamp_rubber_stamp_handle.png-56921ec54b4cd6e816041bc2f82eb689.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc", "etc2_astc"],
-"vram_texture": true
-}
-generator_parameters={
-"md5": "6348abb09232869debbc3f196a1e95c8"
+"vram_texture": false
 }
 
 [deps]
 
 source_file="res://models/props/cog_props/rubber_stamp/rubber_stamp_rubber_stamp_handle.png"
-dest_files=["res://.godot/imported/rubber_stamp_rubber_stamp_handle.png-56921ec54b4cd6e816041bc2f82eb689.s3tc.ctex", "res://.godot/imported/rubber_stamp_rubber_stamp_handle.png-56921ec54b4cd6e816041bc2f82eb689.etc2.ctex"]
+dest_files=["res://.godot/imported/rubber_stamp_rubber_stamp_handle.png-56921ec54b4cd6e816041bc2f82eb689.ctex"]
 
 [params]
 
-compress/mode=2
-compress/high_quality=false
+compress/mode=3
+compress/high_quality=true
 compress/lossy_quality=0.7
 compress/hdr_compression=1
 compress/normal_map=0

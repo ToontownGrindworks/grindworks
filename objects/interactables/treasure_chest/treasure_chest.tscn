@@ -1,7 +1,7 @@
 [gd_scene load_steps=31 format=4 uid="uid://dxyq5lb5oineo"]
 
 [ext_resource type="Texture2D" uid="uid://ckb556jwaq5go" path="res://models/props/treasure_chest/treasure_chest-d399a15272bb3709c253ceb8e58370d8_treasure_chest_2.png" id="1_38t0r"]
-[ext_resource type="Script" path="res://objects/interactables/treasure_chest/treasure_chest.gd" id="1_gn78k"]
+[ext_resource type="Script" uid="uid://sb4d8oc513sj" path="res://objects/interactables/treasure_chest/treasure_chest.gd" id="1_gn78k"]
 [ext_resource type="Texture2D" uid="uid://cy5g6qdrrhvmm" path="res://models/props/treasure_chest/treasure_chest-d399a15272bb3709c253ceb8e58370d8_treasure_beans.png" id="2_260dg"]
 [ext_resource type="Resource" uid="uid://c1ieqc06wj6gp" path="res://objects/items/pools/rewards.tres" id="2_rhj8e"]
 [ext_resource type="Texture2D" uid="uid://dexb4j8qjxcfn" path="res://models/props/treasure_chest/treasure_chest-d399a15272bb3709c253ceb8e58370d8_treasure_lock.png" id="3_8kfkr"]
@@ -373,8 +373,8 @@ tracks/2/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_thjf0"]
 _data = {
-"RESET": SubResource("Animation_krmn8"),
-"open": SubResource("Animation_6ghwq")
+&"RESET": SubResource("Animation_krmn8"),
+&"open": SubResource("Animation_6ghwq")
 }
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_7nayw"]

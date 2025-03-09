@@ -1,15 +1,15 @@
 [gd_resource type="Resource" script_class="CogDNA" load_steps=12 format=3 uid="uid://cvjsct5ng6ajb"]
 
-[ext_resource type="Script" path="res://objects/battle/battle_resources/cog_attacks/cog_attack.gd" id="1_l7v14"]
+[ext_resource type="Script" uid="uid://bb27him60xtnk" path="res://objects/battle/battle_resources/cog_attacks/cog_attack.gd" id="1_l7v14"]
 [ext_resource type="Resource" uid="uid://dimhdaxn1tyey" path="res://objects/battle/battle_resources/cog_attacks/resources/tee_off.tres" id="2_7v33y"]
 [ext_resource type="Resource" uid="uid://bhl72hd7pn8s2" path="res://objects/battle/battle_resources/cog_attacks/resources/workout.tres" id="3_el7hk"]
 [ext_resource type="Texture2D" uid="uid://2fj5qbvh3qa1" path="res://models/cogs/textures/misc/sleeve_2.png" id="4_5vyqm"]
 [ext_resource type="PackedScene" uid="uid://c66nfw5bkeier" path="res://models/cogs/heads/bigcheese.glb" id="4_dtbqi"]
 [ext_resource type="Texture2D" uid="uid://idf1e68fml3o" path="res://models/cogs/textures/misc/blazer_1.png" id="5_3unsv"]
 [ext_resource type="Texture2D" uid="uid://bd2jdb8ajmntc" path="res://models/cogs/heads/big_cheese_desat.png" id="5_jjdvb"]
-[ext_resource type="Script" path="res://objects/cog/cogdna.gd" id="6_drkbb"]
+[ext_resource type="Script" uid="uid://okjbx502s3r5" path="res://objects/cog/cogdna.gd" id="6_drkbb"]
 [ext_resource type="Texture2D" uid="uid://o3hrfvdxeisb" path="res://models/cogs/textures/misc/leg_4.png" id="6_rtwev"]
-[ext_resource type="Script" path="res://objects/battle/battle_resources/status_effect.gd" id="7_ae4ce"]
+[ext_resource type="Script" uid="uid://df7irk63ikx4k" path="res://objects/battle/battle_resources/status_effect.gd" id="7_ae4ce"]
 [ext_resource type="Resource" uid="uid://b4vuuxwhv0d3v" path="res://objects/battle/battle_resources/status_effects/resources/status_effect_mod_cog.tres" id="8_0otlb"]
 
 [resource]
@@ -39,6 +39,6 @@ is_admin = false
 health_mod = 1.0
 battle_phrases = Array[String](["You'll find I'm an acquired taste.", "Feeling blue?", "Your chances are looking blue.", "You're about to get shredded."])
 external_assets = {
-"head_model": "",
-"head_textures": []
+&"head_model": "",
+&"head_textures": []
 }

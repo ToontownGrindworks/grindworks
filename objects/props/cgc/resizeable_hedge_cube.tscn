@@ -1,6 +1,6 @@
 [gd_scene load_steps=8 format=4 uid="uid://b3p8q3fhmuo35"]
 
-[ext_resource type="Script" path="res://objects/props/cgc/resizeable_hedge_cube.gd" id="1_a45qt"]
+[ext_resource type="Script" uid="uid://da2ah16ojwiji" path="res://objects/props/cgc/resizeable_hedge_cube.gd" id="1_a45qt"]
 [ext_resource type="Texture2D" uid="uid://dc5f1yrepjf5l" path="res://models/facilities/cgc/textures/CogHedgeMaze2.png" id="2_u11vj"]
 [ext_resource type="PackedScene" uid="uid://rrvc4q776fdk" path="res://objects/props/cgc/resizeable_hedge.tscn" id="3_ji2q8"]
 

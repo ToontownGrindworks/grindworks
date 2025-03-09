@@ -1,11 +1,11 @@
 [gd_resource type="Resource" script_class="CogDNA" load_steps=7 format=3 uid="uid://dpqmbcewheqv1"]
 
-[ext_resource type="Script" path="res://objects/battle/battle_resources/cog_attacks/cog_attack.gd" id="1_mjemx"]
+[ext_resource type="Script" uid="uid://bb27him60xtnk" path="res://objects/battle/battle_resources/cog_attacks/cog_attack.gd" id="1_mjemx"]
 [ext_resource type="Resource" uid="uid://erbbarg5bxm8" path="res://objects/battle/battle_resources/cog_attacks/resources/rolodex.tres" id="2_1sm6k"]
-[ext_resource type="Script" path="res://objects/cog/cogdna.gd" id="2_meefj"]
+[ext_resource type="Script" uid="uid://okjbx502s3r5" path="res://objects/cog/cogdna.gd" id="2_meefj"]
 [ext_resource type="PackedScene" uid="uid://cgixf426hp8dn" path="res://models/cogs/heads/headhunter.glb" id="3_sl41b"]
 [ext_resource type="Texture2D" uid="uid://bkejbm6l0vf12" path="res://models/cogs/heads/headhunter_tt_t_ene_hed_headHunter.png" id="4_0cmlw"]
-[ext_resource type="Script" path="res://objects/battle/battle_resources/status_effect.gd" id="5_cxaa6"]
+[ext_resource type="Script" uid="uid://df7irk63ikx4k" path="res://objects/battle/battle_resources/status_effect.gd" id="5_cxaa6"]
 
 [resource]
 script = ExtResource("2_meefj")
@@ -21,6 +21,7 @@ head_textures = Array[Texture2D]([ExtResource("4_0cmlw")])
 hand_color = Color(0.94902, 0.74902, 0.74902, 1)
 head_color = null
 custom_nametag_height = 0.0
+custom_nametag_suffix = ""
 attacks = Array[ExtResource("1_mjemx")]([ExtResource("2_1sm6k")])
 level_low = 6
 level_high = 13
@@ -30,6 +31,6 @@ is_admin = false
 health_mod = 1.0
 battle_phrases = Array[String](["You are going to have such a headache.", "Heads up!", "I'll have your head for this.", "You'll wish this was all in your head.", "A perfect trophy for my collection.", "I'm way ahead of you.", "You're headed for big trouble.", "Oh good, I've been hunting for you!", "Looks like you've got a head for trouble.", "Headed my way?", "Don't lose your head over me."])
 external_assets = {
-"head_model": "",
-"head_textures": []
+&"head_model": "",
+&"head_textures": []
 }

@@ -1,7 +1,7 @@
 [gd_scene load_steps=27 format=4 uid="uid://bnlt8eyy2ha65"]
 
-[ext_resource type="Texture2D" uid="uid://csi8gmbinwmx1" path="res://models/facilities/cgc/textures/StoneWall1e.png" id="1_l1pcu"]
-[ext_resource type="Texture2D" uid="uid://7c70kvdyj32i" path="res://models/facilities/cgc/textures/smoothwall_4.png" id="2_7o0pe"]
+[ext_resource type="Texture2D" uid="uid://csmkpukc6maca" path="res://models/facilities/cgc/textures/StoneWall1e.png" id="1_l1pcu"]
+[ext_resource type="Texture2D" uid="uid://dshqhxjrtkw3w" path="res://models/facilities/cgc/textures/smoothwall_4.png" id="2_7o0pe"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_swi44"]
 resource_name = "doorsall_landscape_lambert3"

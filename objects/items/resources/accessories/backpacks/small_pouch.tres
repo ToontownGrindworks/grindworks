@@ -1,8 +1,8 @@
 [gd_resource type="Resource" script_class="ItemAccessory" load_steps=9 format=3 uid="uid://dew5y5asdfaph"]
 
-[ext_resource type="Script" path="res://objects/items/classes/accessory_placement.gd" id="1_uh3i7"]
-[ext_resource type="Script" path="res://objects/items/classes/item_accessory.gd" id="2_8o5tv"]
-[ext_resource type="Script" path="res://objects/items/classes/body_placement.gd" id="2_31tyd"]
+[ext_resource type="Script" uid="uid://fb0tqfojo57q" path="res://objects/items/classes/accessory_placement.gd" id="1_uh3i7"]
+[ext_resource type="Script" uid="uid://dvu24b3o8i3sj" path="res://objects/items/classes/item_accessory.gd" id="2_8o5tv"]
+[ext_resource type="Script" uid="uid://duxq3xtgnln43" path="res://objects/items/classes/body_placement.gd" id="2_31tyd"]
 [ext_resource type="PackedScene" uid="uid://dyt2v1jbi5msv" path="res://models/accessories/backpacks/standard_backpack/small_pouch.tscn" id="2_cd8nj"]
 [ext_resource type="Texture2D" uid="uid://kugb2ow550mk" path="res://models/accessories/backpacks/standard_backpack/small_pouch-pix-1.png" id="3_xvk3a"]
 
@@ -30,8 +30,8 @@ scale = Vector3(0.4, 0.4, 0.4)
 [resource]
 script = ExtResource("2_8o5tv")
 accessory_placements = Array[ExtResource("1_uh3i7")]([SubResource("Resource_6vjhu"), SubResource("Resource_4scxt"), SubResource("Resource_pj1q4")])
-qualitoon = 2
-qualitoon_rarity = 6
+qualitoon = 3
+rarity = 0
 evergreen = false
 realtime = false
 slot = 3

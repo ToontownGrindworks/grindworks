@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://c2jegw5afysdk"]
 
-[ext_resource type="Script" path="res://objects/modules/cgc/variants/cgc_maze_room.gd" id="1_exayl"]
+[ext_resource type="Script" uid="uid://bbn6jelvh5r7t" path="res://objects/modules/cgc/variants/cgc_maze_room.gd" id="1_exayl"]
 [ext_resource type="PackedScene" uid="uid://direah3lbjuu5" path="res://objects/battle/battle_node/battle_node.tscn" id="2_fkpp2"]
 [ext_resource type="PackedScene" uid="uid://dflwjcy6fj0av" path="res://objects/cog/cog.tscn" id="3_xtok1"]
 
