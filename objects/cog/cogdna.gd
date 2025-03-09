@@ -50,7 +50,13 @@ enum SuitType {
 
 @export var external_assets := {
 	head_model = "",
-	head_textures = []
+	head_textures = [],
+	blazer_texture = "",
+	arm_texture = "",
+	leg_texture = "",
+	wrist_texture = "",
+	hand_texture = "",
+	shoe_texture = ""
 }
 
 func get_head() -> Node3D:

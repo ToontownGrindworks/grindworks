@@ -1395,10 +1395,11 @@ _data = {
 "walknreach": ExtResource("43_4bpsk")
 }
 
-[node name="suitb" node_paths=PackedStringArray("skeleton", "animator", "department_emblem", "health_meter", "nametag_node", "nametag", "head_node", "head_bone", "left_hand_bone", "right_hand_bone", "right_index_bone", "health_bone", "color_overlay_meshes") instance=ExtResource("1_4876t")]
+[node name="suitb" node_paths=PackedStringArray("skeleton", "animator", "wrists_and_shoes", "department_emblem", "health_meter", "nametag_node", "nametag", "head_node", "head_bone", "left_hand_bone", "right_hand_bone", "right_index_bone", "health_bone", "color_overlay_meshes") instance=ExtResource("1_4876t")]
 script = ExtResource("2_vk3iu")
 skeleton = NodePath("rig_deform/Skeleton3D")
 animator = NodePath("AnimationPlayer")
+wrists_and_shoes = NodePath("rig_deform/Skeleton3D/Object")
 department_emblem = NodePath("rig_deform/Skeleton3D/HealthBone/DeptEmblem")
 health_meter = NodePath("rig_deform/Skeleton3D/HealthBone/HpLight")
 nametag_node = NodePath("NameTag")
@@ -1477,7 +1478,7 @@ bones/49/rotation = Quaternion(-0.710225, 7.36476e-07, 0.00742107, 0.703936)
 bones/50/rotation = Quaternion(-2.98023e-08, 0, 0, 1)
 
 [node name="HeadBone" type="BoneAttachment3D" parent="rig_deform/Skeleton3D" index="5"]
-transform = Transform3D(0.99989, -0.010449, -0.0105402, 0.0104469, -0.00894892, 0.999905, -0.0105423, -0.999905, -0.00883877, 0.00453474, 6.48359, 0.000808428)
+transform = Transform3D(0.99989, -0.010449, -0.0105402, 0.0104469, -0.00894868, 0.999905, -0.0105423, -0.999905, -0.00883853, 0.00453474, 6.48359, 0.000808428)
 bone_name = "ATTACH-head"
 bone_idx = 49
 
@@ -1509,7 +1510,7 @@ bone_name = "ATTACH-hold.R"
 bone_idx = 34
 
 [node name="RightIndexBone" type="BoneAttachment3D" parent="rig_deform/Skeleton3D" index="9"]
-transform = Transform3D(0.00885332, 0.999923, -0.0087381, -0.00873822, 0.00881541, 0.999923, 0.999923, -0.00877637, 0.00881553, 4.80691, 6.1224, 0.00151289)
+transform = Transform3D(0.00885332, 0.999923, -0.00873807, -0.00873807, 0.00881541, 0.999923, 0.999923, -0.00877631, 0.00881541, 4.80691, 6.1224, 0.00151289)
 bone_name = "DEF-f_index.02.R"
 bone_idx = 43
 

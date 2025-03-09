@@ -68,41 +68,53 @@ func set_dna(dna: CogDNA):
 		dna.head_shader.apply_shader(head)
 
 	# SUIT TEXTURE
+	# Get the current working materials
+	var torso_mat: StandardMaterial3D = torso.mesh.surface_get_material(0).duplicate()
+	var leg_mat: StandardMaterial3D = legs.mesh.surface_get_material(0).duplicate()
+	var sleeve_mat: StandardMaterial3D = arms.mesh.surface_get_material(0).duplicate()
+	var wrist_mat: StandardMaterial3D = wrists_and_shoes.mesh.surface_get_material(0).duplicate()
+	var hand_mat: StandardMaterial3D = hands.mesh.surface_get_material(0).duplicate()
+	var shoe_mat: StandardMaterial3D = wrists_and_shoes.mesh.surface_get_material(1).duplicate()
+	
+	# Get textures
+	var torso_tex: Texture2D = torso_mat.albedo_texture
+	var sleeve_tex: Texture2D = sleeve_mat.albedo_texture
+	var leg_tex: Texture2D = leg_mat.albedo_texture
+	var wrist_tex: Texture2D = wrist_mat.albedo_texture
+	var hand_tex: Texture2D = hand_mat.albedo_texture
+	var shoe_tex: Texture2D = shoe_mat.albedo_texture
+	
 	# Get department name (not convoluted)
-	var torso_tex: Texture2D
-	var sleeve_tex: Texture2D
-	var leg_tex: Texture2D
 	var dept = CogDNA.CogDept.keys()[int(dna.department)].to_lower()
-	# Get each texture
+	# Get each texture for department suits
 	torso_tex = load("res://models/cogs/textures/" + dept + "/blazer.png")
 	sleeve_tex = load("res://models/cogs/textures/" + dept + "/sleeve.png")
 	leg_tex = load("res://models/cogs/textures/" + dept + "/leg.png")
 	
 	# Allow for custom textures
-	if dna.custom_arm_tex: sleeve_tex = dna.custom_arm_tex
-	if dna.custom_blazer_tex: torso_tex = dna.custom_blazer_tex
-	if dna.custom_leg_tex: leg_tex = dna.custom_leg_tex
+	torso_tex = load_custom_texture(torso_tex, dna.custom_blazer_tex, dna.external_assets, 'blazer_texture')
+	sleeve_tex = load_custom_texture(sleeve_tex, dna.custom_arm_tex, dna.external_assets, 'arm_texture')
+	leg_tex = load_custom_texture(leg_tex, dna.custom_leg_tex, dna.external_assets, 'leg_texture')
+	wrist_tex = load_custom_texture(wrist_tex, dna.custom_wrist_tex, dna.external_assets, 'wrist_texture')
+	hand_tex = load_custom_texture(hand_tex, dna.custom_hand_tex, dna.external_assets, 'hand_texture')
+	shoe_tex = load_custom_texture(shoe_tex, dna.custom_shoe_tex, dna.external_assets, 'shoe_texture')
 	
-	# Get the current working materials
-	var torso_mat = torso.mesh.surface_get_material(0).duplicate()
-	var leg_mat = legs.mesh.surface_get_material(0).duplicate()
-	var sleeve_mat = arms.mesh.surface_get_material(0).duplicate()
 	# Replace albedo textures
 	torso_mat.albedo_texture = torso_tex
 	sleeve_mat.albedo_texture = sleeve_tex
 	leg_mat.albedo_texture = leg_tex
+	wrist_mat.albedo_texture = wrist_tex
+	hand_mat.albedo_texture = hand_tex
+	hand_mat.albedo_color = dna.hand_color # Color our hand material
+	shoe_mat.albedo_texture = shoe_tex
+	
 	# Place textures onto body parts
 	torso.set_surface_override_material(0, torso_mat)
 	legs.set_surface_override_material(0, leg_mat)
 	arms.set_surface_override_material(0, sleeve_mat)
-	# Get hand material
-	var hand_mat = hands.mesh.surface_get_material(0).duplicate()
-	# Apply custom texture
-	if dna.custom_hand_tex: hand_mat.albedo_texture = dna.custom_hand_tex
-	# Change color
-	hand_mat.albedo_color = dna.hand_color
-	# Place mat on hand meshes
+	wrists_and_shoes.set_surface_override_material(0, wrist_mat)
 	hands.set_surface_override_material(0, hand_mat)
+	wrists_and_shoes.set_surface_override_material(1, shoe_mat)
 
 	# Add head mats to the override mats for color
 	if head:
@@ -114,15 +126,6 @@ func set_dna(dna: CogDNA):
 			for i in head_piece.mesh.get_surface_count():
 				override_mats.append(head_piece.get_surface_override_material(i))
 			head_piece.material_overlay = color_overlay_mat
-
-	if dna.custom_shoe_tex:
-		var shoe_mat: StandardMaterial3D = wrists_and_shoes.mesh.surface_get_material(1).duplicate()
-		shoe_mat.albedo_texture = dna.custom_shoe_tex
-		wrists_and_shoes.set_surface_override_material(1, shoe_mat)
-	if dna.custom_wrist_tex:
-		var wrist_mat: StandardMaterial3D = wrists_and_shoes.mesh.surface_get_material(0).duplicate()
-		wrist_mat.albedo_texture = dna.custom_wrist_tex
-		wrists_and_shoes.set_surface_override_material(1, wrist_mat)
 	
 	for child in skeleton.get_children():
 		if child is MeshInstance3D:
@@ -142,6 +145,14 @@ func set_dna(dna: CogDNA):
 
 	for mesh: GeometryInstance3D in color_overlay_meshes:
 		mesh.material_overlay = color_overlay_mat
+
+# Helper function to load custom textures
+func load_custom_texture(source, internal, external, external_name):
+	if internal:
+		return internal
+	elif external.has(external_name) and external[external_name] != "":
+		return ImageTexture.create_from_image(Image.load_from_file(external[external_name]))
+	return source
 
 # Colors every mesh of the body
 func set_color(color: Color) -> void:
