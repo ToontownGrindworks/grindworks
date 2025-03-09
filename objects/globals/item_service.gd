@@ -215,7 +215,7 @@ func get_gag_rate() -> float:
 	# Floor 3: 70% of all gags collected
 	# Floor 4: 90% of all gags collected
 	# Floor 5: 100% of all gags collected
-	var goal_percent := minf(GagGoals[floor_num], 1.0)
+	var goal_percent := minf(GagGoals[clamp(floor_num, 1, 6)], 1.0)
 	
 	var chance := (1.0 - (gag_percent / goal_percent)) * 1.35
 	
@@ -266,8 +266,9 @@ func get_bean_rate() -> float:
 	
 	return bean_rate
 
-func on_floor_end() -> void:
-	return
+func on_floor_end(game_floor: GameFloor) -> void:
+	if game_floor.floor_variant.floor_difficulty > Globals.FLOOR_LOOP_START - 1:
+		seen_items.clear()
 
 func item_created(item: Item) -> void:
 	items_in_play.append(item)

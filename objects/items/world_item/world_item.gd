@@ -50,7 +50,7 @@ func spawn_item() -> void:
 	add_child(model)
 	
 	# Check if the item is evergreen
-	if not item.evergreen:
+	if not item.evergreen and Util.floor_number < Globals.FLOOR_LOOP_START:
 		ItemService.seen_item(item)
 	else:
 		item = item.duplicate()
