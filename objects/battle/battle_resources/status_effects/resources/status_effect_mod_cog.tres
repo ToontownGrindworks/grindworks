@@ -14,4 +14,3 @@ visible = false
 description = "This is a Status Effect"
 status_name = "Status Effect"
 id = 0
-_generate_id = false

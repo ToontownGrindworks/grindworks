@@ -15,4 +15,3 @@ visible = true
 description = "This is a Status Effect"
 status_name = "Budget Cuts"
 id = 15
-_generate_id = false

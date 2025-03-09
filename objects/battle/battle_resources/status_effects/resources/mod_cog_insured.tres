@@ -16,4 +16,3 @@ visible = true
 description = "All other Cogs gain 25% defense while this Cog is active"
 status_name = "Insured"
 id = 6
-_generate_id = false

@@ -16,4 +16,3 @@ visible = true
 description = "Immune to Pink Slips"
 status_name = "Tenure"
 id = 2
-_generate_id = false

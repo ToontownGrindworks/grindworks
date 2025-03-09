@@ -141,6 +141,7 @@ func end_game() -> void:
 	Util.get_player().queue_free()
 	SaveFileService.delete_run_file()
 	SceneLoader.load_into_scene(TITLE_SCREEN_SCENE)
+	
 
 func fill_elevator(cog_count: int, dna: CogDNA = null) -> Array[Cog]:
 	var roll_for_proxies : bool = SaveFileService.progress_file.proxies_unlocked and not both_bosses_alive()
