@@ -38,7 +38,7 @@ const CUSTOM_TOONS : Array[PlayerCharacter] = [
 	# stop crashing my game
 	preload("res://mod_assets/characters/transcendent_master.tres"),
 	#preload("res://mod_assets/characters/doctor_googlymoogly.tres"),
-	preload('res://objects/player/characters/sans.tres'),
+	preload("res://mod_assets/characters/sans.tres"),
 ]
 
 var ALL_TOONS : Array[PlayerCharacter] = []

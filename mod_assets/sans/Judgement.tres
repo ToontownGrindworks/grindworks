@@ -1,14 +1,15 @@
-[gd_resource type="Resource" script_class="Item" load_steps=4 format=3 uid="uid://b52pii4rouksj"]
+[gd_resource type="Resource" script_class="Item" load_steps=5 format=3 uid="uid://b52pii4rouksj"]
 
 [ext_resource type="Texture2D" uid="uid://bv83ogannla6q" path="res://models/props/toon_props/resistance_fist/sans-pix.png" id="1_jdmso"]
 [ext_resource type="Script" uid="uid://u63vkixbf037" path="res://mod_assets/sans/item_sans_judgement.gd" id="2_ct5hp"]
+[ext_resource type="PackedScene" uid="uid://b53p74ixvf8rh" path="res://models/accessories/glasses/dorky/dork_glasses.glb" id="3_ct5hp"]
 [ext_resource type="Script" uid="uid://combwqypom1ru" path="res://objects/items/classes/item.gd" id="3_nww6k"]
 
 [resource]
 script = ExtResource("3_nww6k")
 qualitoon = 0
 rarity = 0
-evergreen = true
+evergreen = false
 realtime = false
 slot = 0
 world_scale = 1.0
@@ -19,6 +20,7 @@ item_description = "what? you think i'm just gonna stand there and take it?"
 big_description = "- Any damage can be dodged with a quick reaction, -5% Defense when activated
 - Dodge difficulty depends on Defense and Evasiveness
 - Laff Boosts instead give +5% Defense per laff on pickup"
+model = ExtResource("3_ct5hp")
 stats_add = {}
 stats_multiply = {}
 stats_set = {

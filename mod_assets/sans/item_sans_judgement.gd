@@ -15,9 +15,10 @@ func setup() -> void:
 		player = await Util.s_player_assigned
 	else:
 		player = Util.get_player()
-	
+	player.stats.hp = 1
+	player.stats.max_hp = 1
 	player.stats.hp_changed.connect(hp_changed)
-	player.stats.max_hp_changed.connect(hp_changed)
+	player.stats.max_hp_changed.connect(max_hp_changed)
 	hp_changed(player.stats.hp)
 
 func hp_changed(hp: int) -> void:

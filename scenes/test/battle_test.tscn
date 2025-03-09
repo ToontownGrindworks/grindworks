@@ -1,13 +1,12 @@
-[gd_scene load_steps=19 format=3 uid="uid://chtdvbuf0ivvt"]
+[gd_scene load_steps=17 format=3 uid="uid://chtdvbuf0ivvt"]
 
 [ext_resource type="PackedScene" uid="uid://cv2afui5p28af" path="res://objects/modules/mint/base_rooms/mint_diamond_room.tscn" id="1_h2rqk"]
 [ext_resource type="PackedScene" uid="uid://direah3lbjuu5" path="res://objects/battle/battle_node/battle_node.tscn" id="2_alx7d"]
 [ext_resource type="PackedScene" uid="uid://dflwjcy6fj0av" path="res://objects/cog/cog.tscn" id="3_okjj0"]
 [ext_resource type="PackedScene" uid="uid://wpoc3xs1yy0" path="res://objects/player/player.tscn" id="4_fefq8"]
-[ext_resource type="Resource" uid="uid://bq1ua1ltu2x1a" path="res://mod_assets/characters/king_pants.tres" id="5_54cx8"]
-[ext_resource type="Resource" uid="uid://b6sdcyys84ib" path="res://mod_assets/kingpants/item_kingpants_anomaly.tres" id="7_7y5tt"]
-[ext_resource type="Resource" uid="uid://g4r0lp1evug6" path="res://mod_assets/kingpants/corporate_spectacles.tres" id="8_1p8ro"]
+[ext_resource type="Resource" uid="uid://ikosvab38gt0" path="res://mod_assets/characters/sans.tres" id="5_54cx8"]
 [ext_resource type="Script" uid="uid://combwqypom1ru" path="res://objects/items/classes/item.gd" id="14_7upve"]
+[ext_resource type="Resource" uid="uid://b52pii4rouksj" path="res://mod_assets/sans/Judgement.tres" id="14_ijv3x"]
 [ext_resource type="Script" uid="uid://dfa2ic7ngy7sg" path="res://objects/quests/quest.gd" id="16_qov7a"]
 [ext_resource type="Script" uid="uid://b68uqtpqs73wk" path="res://objects/player/player_stats.gd" id="17_8fcps"]
 [ext_resource type="PackedScene" uid="uid://dxyq5lb5oineo" path="res://objects/interactables/treasure_chest/treasure_chest.tscn" id="23_16xtn"]
@@ -15,7 +14,6 @@
 [ext_resource type="Resource" uid="uid://bf2i5ld0s7yri" path="res://objects/items/resources/accessories/hats/detective_hat.tres" id="25_66vty"]
 [ext_resource type="Resource" uid="uid://dxf17redyyn30" path="res://objects/items/resources/accessories/glasses/heart_glasses.tres" id="26_ouruu"]
 [ext_resource type="Resource" uid="uid://c3sjb3vivkvux" path="res://objects/items/resources/passive/laff_boost.tres" id="27_4p2an"]
-[ext_resource type="Resource" uid="uid://bb2aknsfptslx" path="res://objects/items/resources/accessories/hats/fedora.tres" id="28_qncha"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_5pfdn"]
 size = Vector3(14.6639, 5.65576, 10.2309)
@@ -23,7 +21,7 @@ size = Vector3(14.6639, 5.65576, 10.2309)
 [sub_resource type="Resource" id="Resource_vs51t"]
 script = ExtResource("17_8fcps")
 money = 30
-items = Array[ExtResource("14_7upve")]([ExtResource("7_7y5tt"), ExtResource("8_1p8ro")])
+items = Array[ExtResource("14_7upve")]([])
 gags_unlocked = Dictionary[String, int]({
 "Drop": 7,
 "Lure": 7,
@@ -103,8 +101,8 @@ proxy_chance_boost = 0.0
 money_gain_rate = 1.0
 allow_item_chests = true
 cog_hp_death_threshold = 0.0
-clutch = false
-melancholic = false
+clutch = true
+melancholic = true
 damage = 2.0
 defense = 1.25
 evasiveness = 1.1
@@ -172,7 +170,7 @@ override_item = ExtResource("27_4p2an")
 
 [node name="treasure_chest5" parent="." instance=ExtResource("23_16xtn")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.65817, 0, -5.41882)
-override_item = ExtResource("28_qncha")
+override_item = ExtResource("14_ijv3x")
 
 [node name="treasure_chest6" parent="." instance=ExtResource("23_16xtn")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.5131, 0, -5.41882)
