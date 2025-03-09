@@ -92,12 +92,12 @@ func set_dna(dna: CogDNA):
 	leg_tex = load("res://models/cogs/textures/" + dept + "/leg.png")
 	
 	# Allow for custom textures
-	torso_tex = load_custom_texture(torso_tex, dna.custom_blazer_tex, dna.external_assets, 'blazer_texture')
-	sleeve_tex = load_custom_texture(sleeve_tex, dna.custom_arm_tex, dna.external_assets, 'arm_texture')
-	leg_tex = load_custom_texture(leg_tex, dna.custom_leg_tex, dna.external_assets, 'leg_texture')
-	wrist_tex = load_custom_texture(wrist_tex, dna.custom_wrist_tex, dna.external_assets, 'wrist_texture')
-	hand_tex = load_custom_texture(hand_tex, dna.custom_hand_tex, dna.external_assets, 'hand_texture')
-	shoe_tex = load_custom_texture(shoe_tex, dna.custom_shoe_tex, dna.external_assets, 'shoe_texture')
+	torso_tex = dna.load_custom_texture(torso_tex, dna.custom_blazer_tex, 'blazer_texture')
+	sleeve_tex = dna.load_custom_texture(sleeve_tex, dna.custom_arm_tex, 'arm_texture')
+	leg_tex = dna.load_custom_texture(leg_tex, dna.custom_leg_tex, 'leg_texture')
+	wrist_tex = dna.load_custom_texture(wrist_tex, dna.custom_wrist_tex, 'wrist_texture')
+	hand_tex = dna.load_custom_texture(hand_tex, dna.custom_hand_tex, 'hand_texture')
+	shoe_tex = dna.load_custom_texture(shoe_tex, dna.custom_shoe_tex, 'shoe_texture')
 	
 	# Replace albedo textures
 	torso_mat.albedo_texture = torso_tex
@@ -145,14 +145,6 @@ func set_dna(dna: CogDNA):
 
 	for mesh: GeometryInstance3D in color_overlay_meshes:
 		mesh.material_overlay = color_overlay_mat
-
-# Helper function to load custom textures
-func load_custom_texture(source, internal, external, external_name):
-	if internal:
-		return internal
-	elif external.has(external_name) and external[external_name] != "":
-		return ImageTexture.create_from_image(Image.load_from_file(external[external_name]))
-	return source
 
 # Colors every mesh of the body
 func set_color(color: Color) -> void:

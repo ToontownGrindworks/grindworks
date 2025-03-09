@@ -23,6 +23,7 @@ enum SuitType {
 @export var custom_wrist_tex: Texture2D
 @export var custom_hand_tex: Texture2D
 @export var custom_shoe_tex: Texture2D
+@export var custom_emblem_tex: Texture2D
 
 @export var cog_name: String = "Cog"
 @export var name_plural: String = ""
@@ -56,7 +57,8 @@ enum SuitType {
 	leg_texture = "",
 	wrist_texture = "",
 	hand_texture = "",
-	shoe_texture = ""
+	shoe_texture = "",
+	emblem_texture = ""
 }
 
 func get_head() -> Node3D:
@@ -151,6 +153,14 @@ func combine_names(name1: String, name2: String) -> String:
 	
 	# Return combined name
 	return prefix + suffix
+
+# Helper function to load custom textures
+func load_custom_texture(source, internal, external):
+	if internal:
+		return internal
+	elif external_assets.has(external) and external_assets[external] != "":
+		return ImageTexture.create_from_image(Image.load_from_file(external_assets[external]))
+	return source
 
 func get_plural_name() -> String:
 	if not name_plural == "": return name_plural

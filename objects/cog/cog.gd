@@ -291,7 +291,8 @@ func construct_cog():
 	
 	# Set the department emblem
 	department_emblem = body.department_emblem
-	department_emblem.texture = Cog.get_department_emblem(dna.department)
+	var base_tex = Cog.get_department_emblem(dna.department)
+	department_emblem.texture = dna.load_custom_texture(base_tex, dna.custom_emblem_tex, 'emblem_texture')
 	hp_light = body.health_meter
 	
 	if virtual_cog:
