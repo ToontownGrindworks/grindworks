@@ -43,6 +43,7 @@ const SpeedOptionText: Dictionary = {
 	1: "x1.25",
 	2: "x1.5",
 	3: "x1.75",
+	4: "x8.0"
 }
 
 func _sync_video_settings() -> void:

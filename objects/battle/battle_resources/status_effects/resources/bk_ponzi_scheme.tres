@@ -17,4 +17,3 @@ visible = true
 description = "The Bookkeeper is gathering resources. You must target her."
 status_name = "Ponzi Scheme"
 id = 22
-_generate_id = false

@@ -16,4 +16,3 @@ visible = true
 description = "Union Buster will eliminate this Cog for his own gain!"
 status_name = "Contract Limit"
 id = 20
-_generate_id = false

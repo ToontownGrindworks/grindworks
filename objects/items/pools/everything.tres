@@ -81,8 +81,8 @@
 [ext_resource type="Resource" uid="uid://86p47iflfkky" path="res://objects/items/resources/accessories/glasses/star_glasses.tres" id="78_ca5ap"]
 [ext_resource type="Resource" uid="uid://dt2hd3tk44mog" path="res://objects/items/resources/accessories/hats/roman_helmet.tres" id="79_cfvmp"]
 [ext_resource type="Resource" uid="uid://bye8a25d8np3f" path="res://objects/items/resources/accessories/backpacks/angel_wings.tres" id="80_w7mui"]
-[ext_resource type="Resource" uid="uid://dklddwy11ajsc" path="res://objects/items/resources/accessories/backpacks/bee_wings.tres" id="81_4dnes"]
-[ext_resource type="Resource" uid="uid://b21u7hno87mis" path="res://objects/items/resources/accessories/hats/princess_hat.tres" id="82_jpcaw"]
+[ext_resource type="Resource" uid="uid://b8woaed8cv7go" path="res://objects/items/resources/accessories/backpacks/bee_wings.tres" id="81_4dnes"]
+[ext_resource type="Resource" uid="uid://b108kx0hm0ldi" path="res://objects/items/resources/accessories/hats/princess_hat.tres" id="82_jpcaw"]
 
 [resource]
 script = ExtResource("6_ud56h")

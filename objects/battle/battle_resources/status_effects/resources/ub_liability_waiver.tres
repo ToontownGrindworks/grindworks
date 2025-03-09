@@ -18,4 +18,3 @@ visible = true
 description = "This Cog will have damage redirected to them!"
 status_name = "Liability Waiver"
 id = 30
-_generate_id = false

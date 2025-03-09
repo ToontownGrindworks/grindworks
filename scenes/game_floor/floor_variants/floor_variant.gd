@@ -76,6 +76,13 @@ func _notification(what: int):
 		# their LazyLoader threads are cleaned up.
 		FALLBACK_REWARD_POOL.ensure_realized()
 		FALLBACK_COG_POOL.ensure_realized()
+		
+# revoke my desmos membership
+func get_min_level(floor) -> int:
+	return ceili(30 - (1.2 ** (18.5 - (0.2 * floor))))
+	
+func get_max_level(floor) -> int:
+	return ceili(30 - (2 ** (4.8 - (0.125 * floor))))
 
 func get_anomalies() -> Array[Script]:
 	var mods: Array[Script] = []
@@ -129,8 +136,8 @@ func randomize_details() -> void:
 		modifiers.append(anomaly)
 	
 	floor_difficulty = Util.floor_number + 1
-	level_range.x = LEVEL_RANGES[floor_difficulty][0]
-	level_range.y = LEVEL_RANGES[floor_difficulty][1]
+	level_range.x = get_min_level(floor_difficulty)
+	level_range.y = get_max_level(floor_difficulty)
 	
 	# Add onto the room count for the difficulty
 	room_count += DIFFICULTY_ROOM_ADDITION * floor_difficulty

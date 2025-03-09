@@ -385,6 +385,7 @@ var FLOOR_VARIANTS := LazyLoader.defer_array([
 	"res://scenes/game_floor/floor_variants/base_floors/da_office.tres",
 	"res://scenes/game_floor/floor_variants/base_floors/cog_golf_course.tres",
 ])
+const FLOOR_LOOP_START = 6
 
 ## Common Scenes
 var DUST_CLOUD := LazyLoader.defer('res://objects/props/etc/dust_cloud/dust_cloud.tscn')
