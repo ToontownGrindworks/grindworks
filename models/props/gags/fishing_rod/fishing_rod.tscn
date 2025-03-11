@@ -3,7 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://cy18jvvkx3xrb" path="res://models/props/gags/fishing_rod/fishing_rod_reelstring.png" id="1_g4xjo"]
 [ext_resource type="Texture2D" uid="uid://cmyritghiil5y" path="res://models/props/gags/fishing_rod/fishing_rod_reel_caps.png" id="2_ey1m3"]
 [ext_resource type="Texture2D" uid="uid://jlxorr33sxaa" path="res://models/props/gags/fishing_rod/fishing_rod_fishing_pole_ring.png" id="3_j8lt1"]
-[ext_resource type="Texture2D" uid="uid://3n03sulsh2qr" path="res://models/props/gags/fishing_rod/fishing_rod_grip.png" id="4_edmou"]
+[ext_resource type="Texture2D" uid="uid://clqvpxmxc205f" path="res://models/props/gags/fishing_rod/fishing_rod_grip.png" id="4_edmou"]
 [ext_resource type="Texture2D" uid="uid://7r5moupyw8fa" path="res://models/props/gags/fishing_rod/fishing_rod_crank.png" id="5_78fub"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qto07"]

@@ -1,6 +1,6 @@
 [gd_scene load_steps=25 format=4 uid="uid://b83bdoxnutfks"]
 
-[ext_resource type="Texture2D" uid="uid://cagx5gc3jqrxm" path="res://models/props/gags/flower_pot/flower_pot_ceter.png" id="1_01gp6"]
+[ext_resource type="Texture2D" uid="uid://djwauv4un8d8a" path="res://models/props/gags/flower_pot/flower_pot_ceter.png" id="1_01gp6"]
 [ext_resource type="Texture2D" uid="uid://bsvmyeasctwep" path="res://models/props/gags/flower_pot/flower_pot_leaf.png" id="2_qxeoy"]
 [ext_resource type="Texture2D" uid="uid://dy5iw4bykrt0t" path="res://models/props/gags/flower_pot/flower_pot_petal.png" id="3_xjr4i"]
 [ext_resource type="Texture2D" uid="uid://d2qcf34q803co" path="res://models/props/gags/flower_pot/flower_pot_pot.png" id="4_nh5nt"]

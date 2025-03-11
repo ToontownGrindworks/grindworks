@@ -79,10 +79,10 @@ func _notification(what: int):
 		
 # revoke my desmos membership
 func get_min_level(floor) -> int:
-	return absi(ceili(30 - (1.2 * (18.5 - (0.2 * floor)))))
+	return ceili(30 - (1.2 ** (18.5 - (0.2 * floor))))
 	
 func get_max_level(floor) -> int:
-	return absi(ceili((12 - (2 * ((0.125 * floor) * 9.9))) + (2 * floor)))
+	return ceili(30 - (2 ** (4.8 - (0.125 * floor))))
 
 func get_anomalies() -> Array[Script]:
 	var mods: Array[Script] = []
@@ -95,10 +95,6 @@ func get_anomalies() -> Array[Script]:
 	var anomaly_files_pos: Array[String] = ANOMALIES_POSITIVE.duplicate()
 	var anomaly_files_neutral: Array[String] = ANOMALIES_NEUTRAL.duplicate()
 	var anomaly_files_neg: Array[String] = ANOMALIES_NEGATIVE.duplicate()
-	if Util.get_player().force_tightened_security:
-		var ts_path := load("res://scenes/game_floor/floor_modifiers/scripts/anomalies/floor_mod_level_up.gd")
-		mods.append(ts_path)
-		anomaly_files_neg.erase(ts_path)
 	for i in mod_count:
 		var rng_val := RandomService.randf_channel('floor_mods')
 		var mod_array: Array[String]

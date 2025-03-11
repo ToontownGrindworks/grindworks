@@ -2,10 +2,13 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ca8uriay2cpci"
+uid="uid://cwswe81ry0mps"
 path="res://.godot/imported/goon_4.png-a36000f0808a8c375d1e637f26889b3f.ctex"
 metadata={
 "vram_texture": false
+}
+generator_parameters={
+"md5": "7e22031795a2ed0e2c8bdf71873df630"
 }
 
 [deps]

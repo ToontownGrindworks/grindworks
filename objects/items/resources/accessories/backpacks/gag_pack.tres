@@ -46,7 +46,6 @@ stats_add = {
 "gag_discount": 1
 }
 stats_multiply = {}
-stats_set = {}
 player_values = {}
 arbitrary_data = {}
 remember_item = true

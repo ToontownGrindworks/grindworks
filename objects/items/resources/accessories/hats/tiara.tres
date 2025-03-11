@@ -296,7 +296,6 @@ big_description = "Cogs have a 50% chance to not attack on the first round."
 model = ExtResource("3_nb8ch")
 stats_add = {}
 stats_multiply = {}
-stats_set = {}
 player_values = {}
 arbitrary_data = {}
 item_script = ExtResource("3_ejwhr")

@@ -2,21 +2,26 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bnbfdmw6tqvk7"
-path="res://.godot/imported/bike_horn_bikehorn_mid.png-8236d338663c44c184948f9f112101ba.ctex"
+uid="uid://85rhedkj5jh"
+path.s3tc="res://.godot/imported/bike_horn_bikehorn_mid.png-8236d338663c44c184948f9f112101ba.s3tc.ctex"
+path.etc2="res://.godot/imported/bike_horn_bikehorn_mid.png-8236d338663c44c184948f9f112101ba.etc2.ctex"
 metadata={
-"vram_texture": false
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"vram_texture": true
+}
+generator_parameters={
+"md5": "e0a0e78206058abed56e753f3b2c3512"
 }
 
 [deps]
 
 source_file="res://models/props/gags/bike_horn/bike_horn_bikehorn_mid.png"
-dest_files=["res://.godot/imported/bike_horn_bikehorn_mid.png-8236d338663c44c184948f9f112101ba.ctex"]
+dest_files=["res://.godot/imported/bike_horn_bikehorn_mid.png-8236d338663c44c184948f9f112101ba.s3tc.ctex", "res://.godot/imported/bike_horn_bikehorn_mid.png-8236d338663c44c184948f9f112101ba.etc2.ctex"]
 
 [params]
 
-compress/mode=3
-compress/high_quality=true
+compress/mode=2
+compress/high_quality=false
 compress/lossy_quality=0.7
 compress/hdr_compression=1
 compress/normal_map=0

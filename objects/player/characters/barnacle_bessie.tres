@@ -45,7 +45,6 @@ species = 3
 head_index = 2
 eyelashes = true
 skirt = true
-cheesy_effect = 0
 head_color = Color(0.54902, 0.823529, 0.321569, 1)
 torso_color = Color(0.54902, 0.823529, 0.321569, 1)
 leg_color = Color(0.54902, 0.823529, 0.321569, 1)

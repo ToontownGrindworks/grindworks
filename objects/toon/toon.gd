@@ -197,19 +197,6 @@ func construct_toon(dna: ToonDNA = ToonDNA.new()):
 	body_node_zero = NodeGlobals.calculate_spatial_bounds(body.skeleton, false).get_center().y
 	body.position.y = -body_node_zero
 	body_node.position.y = body_node_zero
-	
-	# Process cheesy effect
-	if dna.cheesy_effect == 1:
-		head.hide()
-		var hide_nodes = [
-			'dogLLshorts_lm_leg_left_zero',
-			'dogLLshorts_lm_leg_right_zero',
-			'dogLLshorts_lm_arm_left_zero',
-			'dogLLshorts_lm_arm_right_zero',
-			'dogLLshorts_lm_neck_zero'
-		]
-		for node in hide_nodes:
-			body.get_node('dogLLshorts_LLDog_shorts/dogLLshorts_Controllers/dogLLshorts_Main_controller/dogLLshorts_Skeleton/Skeleton3D/' + node).hide()
 
 func color_mesh(mesh: MeshInstance3D, color: Color) -> void:
 	var surface_count: int = mesh.mesh.get_surface_count()

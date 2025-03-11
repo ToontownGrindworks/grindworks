@@ -2,10 +2,13 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cf2slbld5mvwd"
+uid="uid://de63k6xfs5j4l"
 path="res://.godot/imported/tt_m_chr_avt_acc_hat_detective_tt_t_chr_avt_acc_hat_detective.png-995f29f3a0053b47ab2370a226b40cc4.ctex"
 metadata={
 "vram_texture": false
+}
+generator_parameters={
+"md5": "f1d43c201c41a2fb9b39ccb1e9f5a87c"
 }
 
 [deps]
@@ -16,7 +19,7 @@ dest_files=["res://.godot/imported/tt_m_chr_avt_acc_hat_detective_tt_t_chr_avt_a
 [params]
 
 compress/mode=3
-compress/high_quality=true
+compress/high_quality=false
 compress/lossy_quality=0.7
 compress/hdr_compression=1
 compress/normal_map=0

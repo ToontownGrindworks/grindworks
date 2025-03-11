@@ -5,7 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://ciyyhun2e5nmf" path="res://objects/props/etc/crate/crate_general.tscn" id="2_wtfq4"]
 [ext_resource type="Texture2D" uid="uid://brgqli0hmk7ls" path="res://models/facilities/factory/FINALFACTORY_101.png" id="3_om5lu"]
 [ext_resource type="PackedScene" uid="uid://k8228k6jwvf7" path="res://objects/props/mint/shelf_money_bags.tscn" id="3_p38q2"]
-[ext_resource type="Texture2D" uid="uid://bhs8dbnkktob4" path="res://models/facilities/factory/FINALFACTORY_25.png" id="4_67up7"]
+[ext_resource type="Texture2D" uid="uid://cy2xdojji8fye" path="res://models/facilities/factory/FINALFACTORY_25.png" id="4_67up7"]
 [ext_resource type="PackedScene" uid="uid://bqvkntyk0ljsq" path="res://objects/goon/goon.tscn" id="4_i0pk8"]
 [ext_resource type="PackedScene" uid="uid://y6ineseqnb3c" path="res://objects/props/mint/boiler_a1.tscn" id="7_0326v"]
 [ext_resource type="PackedScene" uid="uid://celxj5u1aay0l" path="res://objects/props/etc/wood_crate.tscn" id="8_yug0n"]

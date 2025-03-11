@@ -2,7 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://b4wf014bfbpgb" path="res://models/facilities/factory/factory_silo_doublefacing.fbx" id="1_kgla4"]
 [ext_resource type="Texture2D" uid="uid://c82dhpdhopvet" path="res://models/facilities/factory/FINALFACTORY_7.png" id="2_wh5ul"]
-[ext_resource type="Texture2D" uid="uid://bhs8dbnkktob4" path="res://models/facilities/factory/FINALFACTORY_25.png" id="3_3qkg5"]
+[ext_resource type="Texture2D" uid="uid://cy2xdojji8fye" path="res://models/facilities/factory/FINALFACTORY_25.png" id="3_3qkg5"]
 [ext_resource type="Texture2D" uid="uid://cuuqo4vscu2mm" path="res://models/facilities/factory/FINALFACTORY_Fans.png" id="3_7nwcc"]
 [ext_resource type="PackedScene" uid="uid://dgjcjdwr47ch7" path="res://objects/props/factory/smoke_particles.tscn" id="5_tps0s"]
 

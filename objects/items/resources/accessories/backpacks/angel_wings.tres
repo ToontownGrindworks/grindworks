@@ -57,7 +57,6 @@ stats_add = {
 "speed": 0.07
 }
 stats_multiply = {}
-stats_set = {}
 player_values = {}
 arbitrary_data = {}
 remember_item = true

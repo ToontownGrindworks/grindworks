@@ -7,7 +7,7 @@
 [ext_resource type="Material" uid="uid://dmafgykr0wfb3" path="res://models/facilities/general/materials/lava_mat.tres" id="5_4oyln"]
 [ext_resource type="Texture2D" uid="uid://dw0ovgcnsmkqi" path="res://objects/misc/spotlight_1.png" id="6_br1g2"]
 [ext_resource type="Texture2D" uid="uid://bixkesses7em4" path="res://models/facilities/mint/textures/CementFloorx4.png" id="7_bb4kg"]
-[ext_resource type="Texture2D" uid="uid://cxtrmijd8lxya" path="res://models/facilities/mint/textures/CFOCeiling2.png" id="8_cjdog"]
+[ext_resource type="Texture2D" uid="uid://c72xdn0nwkaug" path="res://models/facilities/mint/textures/CFOCeiling2.png" id="8_cjdog"]
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_sixwu"]
 material = ExtResource("5_4oyln")

@@ -295,7 +295,6 @@ big_description = "Immune to damage from light-based obstacles"
 model = ExtResource("5_stdgc")
 stats_add = {}
 stats_multiply = {}
-stats_set = {}
 player_values = {
 "immune_to_light_damage": true
 }

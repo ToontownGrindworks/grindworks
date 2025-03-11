@@ -295,7 +295,6 @@ big_description = "5% chance for any Cog attack to heal you instead."
 model = ExtResource("3_sgmjk")
 stats_add = {}
 stats_multiply = {}
-stats_set = {}
 player_values = {
 "random_cog_heals": true
 }

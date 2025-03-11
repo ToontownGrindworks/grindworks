@@ -78,8 +78,6 @@ texture_normal = ExtResource("2_vsop4")
 texture_pressed = ExtResource("3_ie2hj")
 texture_hover = null
 texture_disabled = ExtResource("3_ie2hj")
-hover_db_offset = 6.0
-press_db_offset = 0.0
 
 [node name="Buttons" type="VBoxContainer" parent="Panel" index="3"]
 layout_mode = 1
@@ -106,8 +104,6 @@ texture_normal = ExtResource("5_8c043")
 texture_pressed = ExtResource("6_gqfi4")
 texture_hover = ExtResource("7_as4se")
 texture_disabled = null
-hover_db_offset = 6.0
-press_db_offset = 0.0
 text = "Statistics"
 
 [node name="Label" parent="Panel/Buttons/StatisticsButton" index="0"]
@@ -123,8 +119,6 @@ texture_normal = ExtResource("5_8c043")
 texture_pressed = ExtResource("6_gqfi4")
 texture_hover = ExtResource("7_as4se")
 texture_disabled = null
-hover_db_offset = 6.0
-press_db_offset = 0.0
 text = "Achievements"
 
 [node name="Label" parent="Panel/Buttons/AchievementsButton" index="0"]
@@ -140,8 +134,6 @@ texture_normal = ExtResource("5_8c043")
 texture_pressed = ExtResource("6_gqfi4")
 texture_hover = ExtResource("7_as4se")
 texture_disabled = null
-hover_db_offset = 6.0
-press_db_offset = 0.0
 text = "Credits"
 
 [node name="Label" parent="Panel/Buttons/AchievementsButton2" index="0"]
@@ -157,8 +149,6 @@ texture_normal = ExtResource("5_8c043")
 texture_pressed = ExtResource("6_gqfi4")
 texture_hover = ExtResource("7_as4se")
 texture_disabled = null
-hover_db_offset = 6.0
-press_db_offset = 0.0
 text = "Cog Creator"
 
 [node name="Label" parent="Panel/Buttons/CogCreatorButton" index="0"]

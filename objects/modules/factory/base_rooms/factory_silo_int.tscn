@@ -1,7 +1,7 @@
 [gd_scene load_steps=51 format=4 uid="uid://dumm43iwldfhs"]
 
 [ext_resource type="PackedScene" uid="uid://br0mna71u15lk" path="res://models/facilities/factory/factory_clown_silo_building.fbx" id="1_m221j"]
-[ext_resource type="Texture2D" uid="uid://bhs8dbnkktob4" path="res://models/facilities/factory/FINALFACTORY_25.png" id="2_4tohx"]
+[ext_resource type="Texture2D" uid="uid://cy2xdojji8fye" path="res://models/facilities/factory/FINALFACTORY_25.png" id="2_4tohx"]
 [ext_resource type="Texture2D" uid="uid://crg28qgli70bb" path="res://models/facilities/factory/FINALFACTORY_121.png" id="3_0e6nm"]
 [ext_resource type="Texture2D" uid="uid://baiq1e6pdwnte" path="res://models/facilities/factory/FINALFACTORY_122.png" id="4_bhcv2"]
 [ext_resource type="Texture2D" uid="uid://dh26w1g44rh1h" path="res://models/facilities/factory/FINALFACTORY_120.png" id="6_lih7a"]

@@ -8,14 +8,11 @@ class_name BattleUI
 @onready var cog_panels := %CogPanels
 @onready var main_container := %BattleMenuContainer
 @onready var gag_order_menu := %SelectedGags
-@onready var item_panel := %ItemPanel
 
 # Bottom-right buttons
 @onready var fire_button := %Fire
 
 @onready var status_container: HBoxContainer = %StatusContainer
-
-@onready var manager: BattleManager = get_parent()
 
 # Signals
 signal s_gag_pressed(gag: BattleAction)
@@ -24,7 +21,6 @@ signal s_turn_complete(gag_order: Array[ToonAttack])
 signal s_gag_canceled(gag: BattleAction)
 signal s_gags_updated(gags: Array[ToonAttack])
 signal s_update_toonups
-signal s_special_voucher_used(type: String)
 
 # Locals
 var turn := 0:
@@ -33,7 +29,7 @@ var turn := 0:
 		refresh_turns()
 var remaining_turns: int:
 	get:
-		return manager.battle_stats[Util.get_player()].turns - turn
+		return Util.get_player().stats.turns - turn
 var selected_gags: Array[ToonAttack] = []
 var fire_action: ToonAttackFire
 
@@ -104,8 +100,7 @@ func gag_selected(gag: BattleAction) -> void:
 	turn += 1
 
 func refresh_turns():
-	attack_label.set_text("Turns Remaining: " + str(manager.battle_stats[Util.get_player()].turns - turn))
-	gag_order_menu.update_panels()
+	attack_label.set_text("Turns Remaining: " + str(Util.get_player().stats.turns - turn))
 	
 	if remaining_turns == 0:
 		for track in gag_tracks.get_children():
@@ -198,12 +193,5 @@ func fire_hovered() -> void:
 		gag_hovered(fire_action)
 
 func open_items() -> void:
-	item_panel.show()
+	%ItemPanel.show()
 	main_container.hide()
-
-func repopulate_status_effects() -> void:
-	if !cog_panels.get_children():
-		return
-
-	for panel in cog_panels.get_children():
-		panel.populate_status_effects(panel.current_cog)

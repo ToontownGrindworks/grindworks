@@ -59,15 +59,8 @@ signal s_luck_changed(new_luck: float)
 
 @export var proxy_chance_boost := 0.0
 
-# Transcendent Master
-@export var money_gain_rate := 1.0
-@export var allow_item_chests := true
-
 # How low do cogs HP need to be to die?
 @export var cog_hp_death_threshold := 0.0
-
-# sans - The Weakest Enemy
-@export var clutch := false
 
 ## Sets the player's base gag loadout
 func set_loadout(loadout: GagLoadout) -> void:
@@ -157,7 +150,7 @@ func attempt_revive(_hp: int) -> void:
 	print('Revived!')
 
 func add_money(amount: int) -> void:
-	money += amount * money_gain_rate
+	money += amount
 	SaveFileService.progress_file.jellybeans_collected += amount
 
 func has_item(item_name : String) -> bool:
