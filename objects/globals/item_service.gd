@@ -36,15 +36,15 @@ func get_random_item(pool: ItemPool, override_rolls := false) -> Item:
 			return load('res://objects/items/resources/passive/track_frame.tres')
 		# Laff roll
 		var laff_roll := RandomService.randf_channel("laff_rolls")
-		print('laff rate is %f, and laff roll is %f' % [get_laff_rate(), laff_roll])
-		if laff_roll < get_laff_rate() and not Util.player.stats.melancholic:
-			print('forcing laff spawn')
+		print('Laff rate is %f, and Laff roll is %f' % [get_laff_rate(), laff_roll])
+		if laff_roll < get_laff_rate():
+			print('Forcing laff spawn')
 			return load('res://objects/items/resources/passive/laff_boost.tres')
 		var bean_roll := RandomService.randf_channel("bean_rolls")
 		print('Bean rate is %f and bean roll is %f' % [get_bean_rate(), bean_roll])
 		if bean_roll < get_bean_rate():
 			print('Forcing bean spawn')
-			#return get_random_item(BEAN_POOL, true)
+			return get_random_item(BEAN_POOL, true)
 	
 	# Trim out all seen items from pool
 	var trimmed_pool: Array[Item] = []
@@ -228,9 +228,6 @@ func get_laff_rate() -> float:
 	if not is_instance_valid(Util.get_player()):
 		return 0.0
 	
-	if Util.get_player().stats.melancholic:
-		return 0.0
-	
 	# Get the current laff total
 	# Take player's max hp + all the other laff boost items in play
 	var laff_total := Util.get_player().stats.max_hp
@@ -249,7 +246,7 @@ func get_laff_rate() -> float:
 
 const BEAN_GOAL := 30
 const LIKELIHOOD_PER_BEAN := 0.05
-@onready var BEAN_POOL = load('res://objects/items/pools/jellybeans.tres')
+const BEAN_POOL := preload('res://objects/items/pools/jellybeans.tres')
 func get_bean_rate() -> float:
 	if not is_instance_valid(Util.get_player()):
 		return 0.0

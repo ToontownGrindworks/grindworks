@@ -45,7 +45,6 @@ big_description = "75% of base speed over 1.0 is added onto crit damage multipli
 model = ExtResource("4_oaw1k")
 stats_add = {}
 stats_multiply = {}
-stats_set = {}
 player_values = {}
 arbitrary_data = {}
 item_script = ExtResource("4_iki7r")

@@ -108,14 +108,13 @@ func tween_music_pitch(duration: float = 2.0, value: float = 0.2) -> void:
 func reset_music_pitch() -> void:
 	tween_music_pitch(0.5, 1)
 
-func play_sound(sfx: AudioStream, volume_db: float = 0.0, bus: String = "SFX", pitch_scale: float = 1.0) -> AudioStreamPlayer:
+func play_sound(sfx: AudioStream, volume_db: float = 0.0, bus: String = "SFX") -> AudioStreamPlayer:
 	var sfx_player := AudioStreamPlayer.new()
 	add_child(sfx_player)
 	sound_effects.append(sfx_player)
 	sfx_player.bus = bus
 	sfx_player.stream = sfx
 	sfx_player.volume_db = volume_db
-	sfx_player.pitch_scale = pitch_scale
 	sfx_player.play()
 	sfx_player.finished.connect(sound_finished.bind(sfx_player))
 	return sfx_player

@@ -295,7 +295,6 @@ big_description = "Gags will run in the order you choose them."
 model = ExtResource("2_6qtlc")
 stats_add = {}
 stats_multiply = {}
-stats_set = {}
 player_values = {
 "custom_gag_order": true
 }

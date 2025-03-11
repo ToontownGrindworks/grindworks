@@ -297,7 +297,6 @@ stats_add = {
 "anomaly_boost": 1
 }
 stats_multiply = {}
-stats_set = {}
 player_values = {}
 arbitrary_data = {}
 remember_item = true

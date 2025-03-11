@@ -1,6 +1,6 @@
 [gd_scene load_steps=7 format=4 uid="uid://bowlh2yhq3gay"]
 
-[ext_resource type="Texture2D" uid="uid://dwstgujvcto5b" path="res://models/facilities/mint/textures/RollUpDoors.png" id="1_xbk21"]
+[ext_resource type="Texture2D" uid="uid://bgpgnhnm622sk" path="res://models/facilities/mint/textures/RollUpDoors.png" id="1_xbk21"]
 [ext_resource type="Texture2D" uid="uid://b41p14j2i1yj8" path="res://models/facilities/mint/textures/CBStationLightTubes.png" id="2_wtosd"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_124d8"]

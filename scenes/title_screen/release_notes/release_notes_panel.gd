@@ -2,11 +2,9 @@
 extends UIPanel
 
 const RELEASES_PATH := "res://scenes/title_screen/release_notes/releases/"
-const MODNOTE := "res://mod_assets/modnote.tres"
 
 # Put new releases AT THE TOP
 static var all_releases: Array[ReleaseNote] = [
-	load(MODNOTE),
 	load(RELEASES_PATH + "v1.0.2.tres"),
 	load(RELEASES_PATH + "v1.0.1.tres"),
 	load(RELEASES_PATH + "v1.0.0.tres"),

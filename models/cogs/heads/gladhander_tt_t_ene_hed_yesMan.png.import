@@ -2,10 +2,13 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cskothj4ypasr"
+uid="uid://mxt1dt43lqfm"
 path="res://.godot/imported/gladhander_tt_t_ene_hed_yesMan.png-075ddc47574b32d8037a64742d00ec08.ctex"
 metadata={
 "vram_texture": false
+}
+generator_parameters={
+"md5": "f00b0c9a8ffb0e736c5341c2ff6c8f9f"
 }
 
 [deps]

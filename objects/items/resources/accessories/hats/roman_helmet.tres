@@ -298,7 +298,6 @@ stats_add = {
 "cog_hp_death_threshold": 0.08
 }
 stats_multiply = {}
-stats_set = {}
 player_values = {}
 arbitrary_data = {}
 item_script = ExtResource("4_7yjio")

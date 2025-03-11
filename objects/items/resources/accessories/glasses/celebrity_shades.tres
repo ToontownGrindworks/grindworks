@@ -297,7 +297,6 @@ Resets at the end of the round."
 model = ExtResource("2_47p48")
 stats_add = {}
 stats_multiply = {}
-stats_set = {}
 player_values = {}
 arbitrary_data = {}
 item_script = ExtResource("3_wmd2c")

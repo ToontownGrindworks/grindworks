@@ -2,10 +2,13 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bbnk5sqoxjy4h"
+uid="uid://e0jr8mat724f"
 path="res://.godot/imported/statue_3.png-2e2aea9b0923c8f0957d8cc815750a07.ctex"
 metadata={
 "vram_texture": false
+}
+generator_parameters={
+"md5": "00c299b5cd662a10447c0b58cc5a83cf"
 }
 
 [deps]

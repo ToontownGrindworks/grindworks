@@ -2,10 +2,13 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://y0ge85q0nuip"
+uid="uid://c1ljy177qsw43"
 path="res://.godot/imported/fedora_tt_t_chr_avt_acc_hat_fedora.png-aeb17dd0c07041b4cd41e30fed3905f0.ctex"
 metadata={
 "vram_texture": false
+}
+generator_parameters={
+"md5": "0280c3e08fd8cc5d224d1e6d9bf9a7da"
 }
 
 [deps]
@@ -16,7 +19,7 @@ dest_files=["res://.godot/imported/fedora_tt_t_chr_avt_acc_hat_fedora.png-aeb17d
 [params]
 
 compress/mode=3
-compress/high_quality=true
+compress/high_quality=false
 compress/lossy_quality=0.7
 compress/hdr_compression=1
 compress/normal_map=0

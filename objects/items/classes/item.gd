@@ -70,7 +70,6 @@ enum ItemSlot {
 # Stat effects
 @export var stats_add: Dictionary
 @export var stats_multiply: Dictionary
-@export var stats_set: Dictionary
 
 ## Key should be the string name of a value
 ## Entry should be the value to set the variable to
@@ -140,10 +139,6 @@ func apply_item(player: Player) -> void:
 			var track: String = stat.get_slice(":",1)
 			if track in stats.gag_effectiveness:
 				stats.gag_effectiveness[track] *= stats_multiply[stat]
-				
-	for stat in stats_set:
-		if str(stat) in stats:
-			stats[stat] = stats_set[stat]
 	
 	for value in player_values:
 		player.set(value, player_values[value])

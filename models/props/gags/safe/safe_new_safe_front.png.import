@@ -2,21 +2,26 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://biruusph8ihsp"
-path="res://.godot/imported/safe_new_safe_front.png-5c0a27e60eada6f0de2feff7ddf18776.ctex"
+uid="uid://by4jcsj8ahwns"
+path.s3tc="res://.godot/imported/safe_new_safe_front.png-5c0a27e60eada6f0de2feff7ddf18776.s3tc.ctex"
+path.etc2="res://.godot/imported/safe_new_safe_front.png-5c0a27e60eada6f0de2feff7ddf18776.etc2.ctex"
 metadata={
-"vram_texture": false
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"vram_texture": true
+}
+generator_parameters={
+"md5": "f723c1598e57f3cc94936f9b825aeac0"
 }
 
 [deps]
 
 source_file="res://models/props/gags/safe/safe_new_safe_front.png"
-dest_files=["res://.godot/imported/safe_new_safe_front.png-5c0a27e60eada6f0de2feff7ddf18776.ctex"]
+dest_files=["res://.godot/imported/safe_new_safe_front.png-5c0a27e60eada6f0de2feff7ddf18776.s3tc.ctex", "res://.godot/imported/safe_new_safe_front.png-5c0a27e60eada6f0de2feff7ddf18776.etc2.ctex"]
 
 [params]
 
-compress/mode=3
-compress/high_quality=true
+compress/mode=2
+compress/high_quality=false
 compress/lossy_quality=0.7
 compress/hdr_compression=1
 compress/normal_map=0

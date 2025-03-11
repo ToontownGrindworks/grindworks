@@ -297,7 +297,6 @@ stats_add = {}
 stats_multiply = {
 "gag_boost:Drop": 1.1
 }
-stats_set = {}
 player_values = {}
 arbitrary_data = {}
 remember_item = true

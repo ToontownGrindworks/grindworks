@@ -296,7 +296,6 @@ big_description = "10% Chance that your gag will change to 1 level above."
 model = ExtResource("2_o5mde")
 stats_add = {}
 stats_multiply = {}
-stats_set = {}
 player_values = {}
 arbitrary_data = {}
 item_script = ExtResource("2_fqrb8")

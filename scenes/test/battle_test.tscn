@@ -1,22 +1,101 @@
-[gd_scene load_steps=17 format=3 uid="uid://chtdvbuf0ivvt"]
+[gd_scene load_steps=40 format=3 uid="uid://chtdvbuf0ivvt"]
 
 [ext_resource type="PackedScene" uid="uid://cv2afui5p28af" path="res://objects/modules/mint/base_rooms/mint_diamond_room.tscn" id="1_h2rqk"]
 [ext_resource type="PackedScene" uid="uid://direah3lbjuu5" path="res://objects/battle/battle_node/battle_node.tscn" id="2_alx7d"]
 [ext_resource type="PackedScene" uid="uid://dflwjcy6fj0av" path="res://objects/cog/cog.tscn" id="3_okjj0"]
 [ext_resource type="PackedScene" uid="uid://wpoc3xs1yy0" path="res://objects/player/player.tscn" id="4_fefq8"]
-[ext_resource type="Resource" uid="uid://ikosvab38gt0" path="res://mod_assets/characters/sans.tres" id="5_54cx8"]
+[ext_resource type="Script" uid="uid://o2fe7ud1faj6" path="res://objects/battle/battle_resources/stats.gd" id="5_wgpvb"]
+[ext_resource type="Script" uid="uid://c8kas2j4io1jh" path="res://objects/toon/clothing/toon_bottoms.gd" id="6_sp5d7"]
+[ext_resource type="Script" uid="uid://yg7gxug4rab" path="res://objects/toon/toon_dna.gd" id="7_42kli"]
+[ext_resource type="Script" uid="uid://dfqwh4jmdy0iw" path="res://objects/toon/clothing/toon_shirt.gd" id="8_suqae"]
+[ext_resource type="Script" uid="uid://b6b6pfoqyolr" path="res://objects/battle/battle_resources/gag_loadouts/track.gd" id="9_4i7n6"]
+[ext_resource type="Resource" uid="uid://ct1l0ln1js2xw" path="res://objects/battle/battle_resources/gag_loadouts/gag_tracks/toon_up.tres" id="10_p0q4k"]
+[ext_resource type="Resource" uid="uid://5dld88ul3rb5" path="res://objects/battle/battle_resources/gag_loadouts/gag_tracks/trap.tres" id="11_hy8sk"]
+[ext_resource type="Resource" uid="uid://dqldfsmn7g606" path="res://objects/battle/battle_resources/gag_loadouts/gag_tracks/lure.tres" id="12_ex1ui"]
+[ext_resource type="Script" uid="uid://ts8xpgftpmty" path="res://objects/player/character.gd" id="13_d0tkq"]
+[ext_resource type="Resource" uid="uid://cvaos6ucteefy" path="res://objects/battle/battle_resources/gag_loadouts/gag_tracks/sound.tres" id="13_eed60"]
 [ext_resource type="Script" uid="uid://combwqypom1ru" path="res://objects/items/classes/item.gd" id="14_7upve"]
-[ext_resource type="Resource" uid="uid://b52pii4rouksj" path="res://mod_assets/sans/Judgement.tres" id="14_ijv3x"]
+[ext_resource type="Resource" uid="uid://0528viy6hdsv" path="res://objects/battle/battle_resources/gag_loadouts/gag_tracks/throw.tres" id="14_ww67o"]
+[ext_resource type="Resource" uid="uid://cyiwxplege133" path="res://objects/items/resources/passive/emergency_unite.tres" id="15_8ctgi"]
+[ext_resource type="Resource" uid="uid://dvxiqtapdvmj4" path="res://objects/battle/battle_resources/gag_loadouts/gag_tracks/squirt.tres" id="15_h0hwy"]
+[ext_resource type="Resource" uid="uid://lf7h5xkbt2op" path="res://objects/battle/battle_resources/gag_loadouts/gag_tracks/drop.tres" id="16_diqeu"]
 [ext_resource type="Script" uid="uid://dfa2ic7ngy7sg" path="res://objects/quests/quest.gd" id="16_qov7a"]
 [ext_resource type="Script" uid="uid://b68uqtpqs73wk" path="res://objects/player/player_stats.gd" id="17_8fcps"]
+[ext_resource type="Script" uid="uid://ckypnf7t805p3" path="res://objects/battle/battle_resources/gag_loadouts/gag_loadout.gd" id="17_aepo7"]
 [ext_resource type="PackedScene" uid="uid://dxyq5lb5oineo" path="res://objects/interactables/treasure_chest/treasure_chest.tscn" id="23_16xtn"]
 [ext_resource type="Resource" uid="uid://ba7mgoe7i5oq4" path="res://objects/items/resources/accessories/backpacks/gag_pack.tres" id="24_1xuw6"]
 [ext_resource type="Resource" uid="uid://bf2i5ld0s7yri" path="res://objects/items/resources/accessories/hats/detective_hat.tres" id="25_66vty"]
 [ext_resource type="Resource" uid="uid://dxf17redyyn30" path="res://objects/items/resources/accessories/glasses/heart_glasses.tres" id="26_ouruu"]
 [ext_resource type="Resource" uid="uid://c3sjb3vivkvux" path="res://objects/items/resources/passive/laff_boost.tres" id="27_4p2an"]
+[ext_resource type="Resource" uid="uid://bb2aknsfptslx" path="res://objects/items/resources/accessories/hats/fedora.tres" id="28_qncha"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_5pfdn"]
 size = Vector3(14.6639, 5.65576, 10.2309)
+
+[sub_resource type="Resource" id="Resource_4yraj"]
+script = ExtResource("5_wgpvb")
+damage = 1.0
+defense = 1.0
+evasiveness = 1.0
+accuracy = 1.0
+speed = 1.0
+max_turns = 3
+max_hp = 25
+hp = 25
+turns = 1
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_kprq4"]
+load_path = "res://.godot/imported/desat_shorts_10_2.png-006293ca57932ca262d7592d1c1d61cb.ctex"
+
+[sub_resource type="Resource" id="Resource_b54tc"]
+script = ExtResource("6_sp5d7")
+texture = SubResource("CompressedTexture2D_kprq4")
+base_color = Color(0.71, 0.231, 0.435, 1)
+color_type = 0
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_d57wk"]
+load_path = "res://.godot/imported/desat_shirt_4.png-bfcf4c92cccaf058f4524676d1ca500a.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_ees5g"]
+load_path = "res://.godot/imported/desat_sleeve_4.png-dd69ccf8bbf4668cf004b15195fc4a20.ctex"
+
+[sub_resource type="Resource" id="Resource_jt2lq"]
+script = ExtResource("8_suqae")
+shirt_texture = SubResource("CompressedTexture2D_d57wk")
+sleeve_texture = SubResource("CompressedTexture2D_ees5g")
+base_color = Color(0.992157, 0.478431, 0.168627, 1)
+sleeve_color = Color(0.992157, 0.478431, 0.168627, 1)
+color_type = 0
+
+[sub_resource type="Resource" id="Resource_h5kab"]
+script = ExtResource("7_42kli")
+body_type = 0
+species = 2
+head_index = 2
+eyelashes = false
+skirt = false
+head_color = Color(0.345098, 0.819608, 0.952941, 1)
+torso_color = Color(0.345098, 0.819608, 0.952941, 1)
+leg_color = Color(0.345098, 0.819608, 0.952941, 1)
+shirt = SubResource("Resource_jt2lq")
+bottoms = SubResource("Resource_b54tc")
+
+[sub_resource type="Resource" id="Resource_s4oci"]
+script = ExtResource("17_aepo7")
+loadout = Array[ExtResource("9_4i7n6")]([ExtResource("10_p0q4k"), ExtResource("11_hy8sk"), ExtResource("12_ex1ui"), ExtResource("13_eed60"), ExtResource("14_ww67o"), ExtResource("15_h0hwy"), ExtResource("16_diqeu")])
+
+[sub_resource type="Resource" id="Resource_br8l0"]
+script = ExtResource("13_d0tkq")
+character_name = "Flippy"
+character_summary = "- Can revive once before going sad
+- 5% base Throw boost
+- Starts with Toon-Up and Throw"
+dna = SubResource("Resource_h5kab")
+gag_loadout = SubResource("Resource_s4oci")
+starting_laff = 25
+starting_items = Array[ExtResource("14_7upve")]([ExtResource("15_8ctgi")])
+base_stats = SubResource("Resource_4yraj")
+random_character_stored_name = ""
 
 [sub_resource type="Resource" id="Resource_vs51t"]
 script = ExtResource("17_8fcps")
@@ -80,7 +159,7 @@ toonups = Dictionary[int, int]({
 })
 gag_cap = 100
 gag_discount = -1
-character = ExtResource("5_54cx8")
+character = SubResource("Resource_br8l0")
 quests = Array[ExtResource("16_qov7a")]([])
 quest_rerolls = 3
 pink_slips = 10
@@ -98,11 +177,7 @@ cashbot_boost = 1.0
 lawbot_boost = 1.0
 bossbot_boost = 1.0
 proxy_chance_boost = 0.0
-money_gain_rate = 1.0
-allow_item_chests = true
 cog_hp_death_threshold = 0.0
-clutch = true
-melancholic = true
 damage = 2.0
 defense = 1.25
 evasiveness = 1.1
@@ -170,52 +245,4 @@ override_item = ExtResource("27_4p2an")
 
 [node name="treasure_chest5" parent="." instance=ExtResource("23_16xtn")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.65817, 0, -5.41882)
-override_item = ExtResource("14_ijv3x")
-
-[node name="treasure_chest6" parent="." instance=ExtResource("23_16xtn")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.5131, 0, -5.41882)
-
-[node name="treasure_chest7" parent="." instance=ExtResource("23_16xtn")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.5131, 0, -2.80612)
-
-[node name="treasure_chest8" parent="." instance=ExtResource("23_16xtn")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.5131, 0, 2.95983)
-
-[node name="treasure_chest9" parent="." instance=ExtResource("23_16xtn")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.5131, 0, 7.75116)
-
-[node name="treasure_chest10" parent="." instance=ExtResource("23_16xtn")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18.1109, 0, 7.75116)
-
-[node name="treasure_chest11" parent="." instance=ExtResource("23_16xtn")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18.1109, 0, 3.07119)
-
-[node name="treasure_chest12" parent="." instance=ExtResource("23_16xtn")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18.1109, 0, -0.684781)
-
-[node name="treasure_chest13" parent="." instance=ExtResource("23_16xtn")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18.1109, 0, -4.81119)
-
-[node name="treasure_chest14" parent="." instance=ExtResource("23_16xtn")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.0659, 0, -4.81119)
-
-[node name="treasure_chest15" parent="." instance=ExtResource("23_16xtn")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.0659, 0, -2.37918)
-
-[node name="treasure_chest16" parent="." instance=ExtResource("23_16xtn")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.0659, 0, 0.989978)
-
-[node name="treasure_chest17" parent="." instance=ExtResource("23_16xtn")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.0659, 0, 6.01081)
-
-[node name="treasure_chest18" parent="." instance=ExtResource("23_16xtn")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 23.784, 0, 6.01081)
-
-[node name="treasure_chest19" parent="." instance=ExtResource("23_16xtn")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 23.784, 0, 1.72187)
-
-[node name="treasure_chest20" parent="." instance=ExtResource("23_16xtn")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 23.784, 0, -1.47072)
-
-[node name="treasure_chest21" parent="." instance=ExtResource("23_16xtn")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 23.784, 0, -4.68717)
+override_item = ExtResource("28_qncha")

@@ -226,10 +226,10 @@ texture_hover = ExtResource("13_glcqf")
 texture_disabled = null
 hover_db_offset = 6.0
 press_db_offset = 0.0
-text = "Read Me!!!"
+text = "Release Notes"
 
 [node name="Label" parent="GUI/Logo/ReleaseNotesButton" index="0"]
-text = "Read Me!!!"
+text = "Release Notes"
 label_settings = SubResource("LabelSettings_5vlir")
 
 [node name="NewGameMenu" type="Control" parent="GUI"]

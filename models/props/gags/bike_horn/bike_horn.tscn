@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://dny7kubr70ppa" path="res://models/props/gags/bike_horn/bike_horn_bikehorn_squeeze.png" id="1_fpeqi"]
 [ext_resource type="Texture2D" uid="uid://lcgfi2miaiy3" path="res://models/props/gags/bike_horn/bike_horn_bikehorn_in.png" id="2_f1r88"]
-[ext_resource type="Texture2D" uid="uid://bnbfdmw6tqvk7" path="res://models/props/gags/bike_horn/bike_horn_bikehorn_mid.png" id="3_gsg5s"]
+[ext_resource type="Texture2D" uid="uid://85rhedkj5jh" path="res://models/props/gags/bike_horn/bike_horn_bikehorn_mid.png" id="3_gsg5s"]
 [ext_resource type="Texture2D" uid="uid://bvoactyiudpgs" path="res://models/props/gags/bike_horn/bike_horn_bikehorn_out.png" id="4_qy7je"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_c5jlq"]
