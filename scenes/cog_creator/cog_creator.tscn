@@ -123,7 +123,7 @@
 [ext_resource type="Texture2D" uid="uid://yplsj78np13m" path="res://models/cogs/heads/doubleface.png" id="71_dfklg"]
 [ext_resource type="Texture2D" uid="uid://f7ntk0vapgkd" path="res://models/cogs/heads/face.png" id="72_eph4v"]
 [ext_resource type="Texture2D" uid="uid://c2pvani3yo7i" path="res://models/cogs/heads/flunky_tt_t_ene_hed_flunky.png" id="73_q65bc"]
-[ext_resource type="Texture2D" uid="uid://mxt1dt43lqfm" path="res://models/cogs/heads/gladhander_tt_t_ene_hed_yesMan.png" id="74_v8bl5"]
+[ext_resource type="Texture2D" uid="uid://cskothj4ypasr" path="res://models/cogs/heads/gladhander_tt_t_ene_hed_yesMan.png" id="74_v8bl5"]
 [ext_resource type="Texture2D" uid="uid://bkejbm6l0vf12" path="res://models/cogs/heads/headhunter_tt_t_ene_hed_headHunter.png" id="75_a36lf"]
 [ext_resource type="Texture2D" uid="uid://d0tvo1y74ovms" path="res://models/cogs/heads/idkman_lambert2SG_color.png" id="76_1152r"]
 [ext_resource type="Texture2D" uid="uid://bpai1ahhh6nw6" path="res://models/cogs/heads/investor.png" id="77_7tvju"]

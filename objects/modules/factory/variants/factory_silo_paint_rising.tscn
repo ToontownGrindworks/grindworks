@@ -5,7 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://id8v81ei4r5b" path="res://models/facilities/factory/FINALFACTORY_69.png" id="2_iej83"]
 [ext_resource type="Texture2D" uid="uid://v4wcbjb7c7cj" path="res://models/facilities/factory/FINALFACTORY_71.png" id="3_cgw8p"]
 [ext_resource type="Texture2D" uid="uid://bq3p655m2hvhy" path="res://models/props/facility_objects/factory/paint/PaintStream_SB_Paint.png" id="3_qkuwo"]
-[ext_resource type="Texture2D" uid="uid://cy2xdojji8fye" path="res://models/facilities/factory/FINALFACTORY_25.png" id="4_1hmw6"]
+[ext_resource type="Texture2D" uid="uid://bhs8dbnkktob4" path="res://models/facilities/factory/FINALFACTORY_25.png" id="4_1hmw6"]
 [ext_resource type="PackedScene" uid="uid://b6eexfh4v078o" path="res://objects/interactables/elevators/sellbot_elevator.tscn" id="4_6paxf"]
 [ext_resource type="Texture2D" uid="uid://cc2j3d5njswb2" path="res://models/facilities/factory/FINALFACTORY_137.png" id="5_laa2d"]
 [ext_resource type="Texture2D" uid="uid://dpsidiie17khh" path="res://models/facilities/factory/FINALFACTORY_0.png" id="6_2o8v7"]

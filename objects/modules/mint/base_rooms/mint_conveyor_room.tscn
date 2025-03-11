@@ -9,7 +9,7 @@
 [ext_resource type="Texture2D" uid="uid://cl67spfbv4ht1" path="res://models/facilities/mint/textures/MagnetControl.png" id="5_d7l0k"]
 [ext_resource type="Texture2D" uid="uid://brracvf0fwcfn" path="res://models/facilities/mint/textures/PaintedWall.png" id="5_fqqp6"]
 [ext_resource type="Texture2D" uid="uid://b2bemkg545ldp" path="res://models/facilities/mint/textures/FINALFACTORY_66.png" id="5_xrlv2"]
-[ext_resource type="Texture2D" uid="uid://c72xdn0nwkaug" path="res://models/facilities/mint/textures/CFOCeiling2.png" id="6_xmi3m"]
+[ext_resource type="Texture2D" uid="uid://cxtrmijd8lxya" path="res://models/facilities/mint/textures/CFOCeiling2.png" id="6_xmi3m"]
 [ext_resource type="Texture2D" uid="uid://dd5uep74x6opm" path="res://models/facilities/mint/textures/CBWallVault.png" id="7_4n1a8"]
 [ext_resource type="PackedScene" uid="uid://p33fqws4qewy" path="res://objects/obstacles/conveyer_belt/conveyer_belt.tscn" id="7_vvvsa"]
 [ext_resource type="Texture2D" uid="uid://bj0ye0oxq1fea" path="res://models/props/facility_objects/conveyor_platform/platform_CVBelt1.png" id="8_6slq6"]

@@ -1,0 +1,57 @@
+[gd_resource type="Resource" script_class="PlayerCharacter" load_steps=13 format=3 uid="uid://j3cwaor3fv2r"]
+
+[ext_resource type="Script" uid="uid://o2fe7ud1faj6" path="res://objects/battle/battle_resources/stats.gd" id="1_yesid"]
+[ext_resource type="Script" uid="uid://c8kas2j4io1jh" path="res://objects/toon/clothing/toon_bottoms.gd" id="2_j4ttf"]
+[ext_resource type="Texture2D" uid="uid://bc47fggqh8gbp" path="res://models/toon/textures/clothes/shorts/desat_shorts_2.png" id="3_k5kf8"]
+[ext_resource type="Script" uid="uid://yg7gxug4rab" path="res://objects/toon/toon_dna.gd" id="4_dkvmc"]
+[ext_resource type="Resource" uid="uid://cdkh5jqkoodih" path="res://objects/toon/clothing/shirts/vampire_shirt.tres" id="5_avtae"]
+[ext_resource type="Resource" uid="uid://tyi7ukxtvcgc" path="res://objects/battle/battle_resources/gag_loadouts/loadouts/standard_loadout.tres" id="6_j82xv"]
+[ext_resource type="Script" uid="uid://ts8xpgftpmty" path="res://objects/player/character.gd" id="7_nj8bv"]
+[ext_resource type="Script" uid="uid://combwqypom1ru" path="res://objects/items/classes/item.gd" id="8_3tr18"]
+[ext_resource type="Resource" uid="uid://bxvpu1m80bbqf" path="res://objects/items/resources/accessories/glasses/goggles.tres" id="9_oky2q"]
+
+[sub_resource type="Resource" id="Resource_q3qk8"]
+script = ExtResource("1_yesid")
+melancholic = false
+damage = 1.25
+defense = 0.8
+evasiveness = 1.0
+accuracy = 1.0
+speed = 1.05
+max_turns = 3
+max_hp = 25
+hp = 25
+turns = 1
+
+[sub_resource type="Resource" id="Resource_jw3nq"]
+script = ExtResource("2_j4ttf")
+texture = ExtResource("3_k5kf8")
+base_color = Color(0.168477, 0.093326, 0.114709, 1)
+color_type = 0
+
+[sub_resource type="Resource" id="Resource_gqohd"]
+script = ExtResource("4_dkvmc")
+body_type = 2
+species = 8
+head_index = 1
+eyelashes = false
+skirt = false
+cheesy_effect = 1
+head_color = Color(0.435294, 0.780392, 0.94902, 1)
+torso_color = Color(0.129412, 0.129412, 0.129412, 1)
+leg_color = Color(0.129412, 0.129412, 0.129412, 1)
+shirt = ExtResource("5_avtae")
+bottoms = SubResource("Resource_jw3nq")
+
+[resource]
+script = ExtResource("7_nj8bv")
+character_name = "Doctor Googlymoogly"
+character_summary = "- Start with Goggles, +1 Gag Cost
+- All Gags in unlocked tracks are available, but Gags past the unlocked level cost 2x points
+- Starts with 3 random gag tracks at Level 2"
+dna = SubResource("Resource_gqohd")
+gag_loadout = ExtResource("6_j82xv")
+starting_laff = 30
+starting_items = Array[ExtResource("8_3tr18")]([ExtResource("9_oky2q")])
+base_stats = SubResource("Resource_q3qk8")
+random_character_stored_name = ""

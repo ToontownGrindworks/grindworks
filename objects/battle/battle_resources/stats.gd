@@ -1,6 +1,8 @@
 extends Resource
 class_name BattleStats
 
+# Settings
+@export var melancholic := false
 
 # Multiplicative
 @export var damage := 1.0:

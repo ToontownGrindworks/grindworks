@@ -2,26 +2,21 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://clqvpxmxc205f"
-path.s3tc="res://.godot/imported/fishing_rod_grip.png-e2fbe25a26fd37abc35bd975486e8c38.s3tc.ctex"
-path.etc2="res://.godot/imported/fishing_rod_grip.png-e2fbe25a26fd37abc35bd975486e8c38.etc2.ctex"
+uid="uid://3n03sulsh2qr"
+path="res://.godot/imported/fishing_rod_grip.png-e2fbe25a26fd37abc35bd975486e8c38.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc", "etc2_astc"],
-"vram_texture": true
-}
-generator_parameters={
-"md5": "490418e8140594c180a2f1d98559e656"
+"vram_texture": false
 }
 
 [deps]
 
 source_file="res://models/props/gags/fishing_rod/fishing_rod_grip.png"
-dest_files=["res://.godot/imported/fishing_rod_grip.png-e2fbe25a26fd37abc35bd975486e8c38.s3tc.ctex", "res://.godot/imported/fishing_rod_grip.png-e2fbe25a26fd37abc35bd975486e8c38.etc2.ctex"]
+dest_files=["res://.godot/imported/fishing_rod_grip.png-e2fbe25a26fd37abc35bd975486e8c38.ctex"]
 
 [params]
 
-compress/mode=2
-compress/high_quality=false
+compress/mode=3
+compress/high_quality=true
 compress/lossy_quality=0.7
 compress/hdr_compression=1
 compress/normal_map=0

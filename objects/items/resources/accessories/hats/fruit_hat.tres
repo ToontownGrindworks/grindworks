@@ -295,6 +295,7 @@ big_description = "Winning a battle within two rounds grants an item from a bett
 model = ExtResource("2_yples")
 stats_add = {}
 stats_multiply = {}
+stats_set = {}
 player_values = {
 "better_battle_rewards": true
 }

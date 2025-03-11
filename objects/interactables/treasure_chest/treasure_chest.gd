@@ -11,11 +11,11 @@ var SFX_OPEN := LazyLoader.defer("res://audio/sfx/misc/diving_treasure_pick_up.o
 @export var item_pool: ItemPool
 @export var scripted_progression := false
 
-const EXTRA_TURN := preload(ExtraTurnItem.BASE_ITEM)
-const POINT_BOOST := preload(PointBoostItem.BASE_ITEM)
-const LAFF_BOOST := preload("res://objects/items/resources/passive/laff_boost.tres")
+@onready var EXTRA_TURN := load(ExtraTurnItem.BASE_ITEM)
+@onready var POINT_BOOST := load(PointBoostItem.BASE_ITEM)
+@onready var LAFF_BOOST := load("res://objects/items/resources/passive/laff_boost.tres")
 # Ouroboros: Laff boost every 5th floor, Ground Floor is overridden manually
-const SCRIPTED_PROGRESSION_ITEMS: Dictionary = {
+var SCRIPTED_PROGRESSION_ITEMS: Dictionary = {
 	0: LAFF_BOOST,
 	1: EXTRA_TURN,
 	2: POINT_BOOST,
@@ -52,6 +52,9 @@ func assign_item(world_item: WorldItem):
 		var scripted_item: Item = SCRIPTED_PROGRESSION_ITEMS[floor_multiple]
 		# 5th floor has a +8 laff boost
 		if scripted_item == LAFF_BOOST:
+			# No laff for forced 1 laffers
+			if Util.player.stats.melancholic:
+				return
 			scripted_item = scripted_item.duplicate()
 			scripted_item.stats_add['max_hp'] = 8
 			scripted_item.stats_add['hp'] = 8

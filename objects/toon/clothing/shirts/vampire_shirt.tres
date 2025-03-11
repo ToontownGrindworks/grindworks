@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="ToonShirt" load_steps=4 format=3 uid="uid://cdkh5jqkoodih"]
+
+[ext_resource type="Script" uid="uid://dfqwh4jmdy0iw" path="res://objects/toon/clothing/toon_shirt.gd" id="1_o07v2"]
+[ext_resource type="Texture2D" uid="uid://psbf75uksp8v" path="res://models/toon/textures/clothes/shirts/tt_t_chr_avt_shirt_vampire.jpg" id="2_tgql8"]
+[ext_resource type="Texture2D" uid="uid://bsyh0y2wrdi4w" path="res://models/toon/textures/clothes/shirts/tt_t_chr_avt_shirtSleeve_vampire.jpg" id="3_2nm5s"]
+
+[resource]
+script = ExtResource("1_o07v2")
+shirt_texture = ExtResource("2_tgql8")
+sleeve_texture = ExtResource("3_2nm5s")
+base_color = Color(1, 1, 1, 1)
+sleeve_color = Color(1, 1, 1, 1)
+color_type = 1

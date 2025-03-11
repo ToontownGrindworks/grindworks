@@ -17,17 +17,17 @@ static func get_placement(item: ItemAccessory, dna: ToonDNA) -> AccessoryPlaceme
 					return placement
 	return null
 
-static func get_bone(item: ItemAccessory, player: Player) -> BoneAttachment3D:
-	if not player:
+static func get_bone(item: ItemAccessory, toon: Toon) -> BoneAttachment3D:
+	if not toon:
 		return null
 	
 	match item.slot:
 		ItemSlot.HAT:
-			return player.toon.hat_bone
+			return toon.hat_bone
 		ItemSlot.GLASSES:
-			return player.toon.glasses_bone
+			return toon.glasses_bone
 		ItemSlot.BACKPACK:
-			return player.toon.backpack_bone
+			return toon.backpack_bone
 	
 	return null
 
@@ -39,7 +39,7 @@ func apply_item(player: Player) -> void:
 		await player.ready
 	
 	var mod := model.instantiate()
-	var bone := ItemAccessory.get_bone(self,player)
+	var bone := ItemAccessory.get_bone(self,player.toon)
 	for accessory in bone.get_children():
 		accessory.queue_free()
 	bone.add_child(mod)

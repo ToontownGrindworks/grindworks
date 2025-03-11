@@ -55,30 +55,12 @@ func set_camera_angle(transform: Transform3D) -> void:
 		manager.battle_node.battle_cam.reparent(manager.battle_node)
 	manager.battle_node.battle_cam.transform = transform
 
-func reassess_splash_targets(selection: int, _manager: BattleManager) -> void:
+func reassess_splash_targets(selection: int, manager: BattleManager) -> void:
 	if target_type != ActionTarget.ENEMY_SPLASH:
 		return
-	var new_targets: Array = [_manager.cogs[selection]]
-	main_target = _manager.cogs[selection]
-	var indices: Array = []
-	if selection == 0:
-		# Far left selection, extend our range to the right
-		indices = [1, 2]
-	elif selection == _manager.cogs.size() - 1:
-		indices = [-1, -2]
-		# Far right selection, extend our range to the left
-	else:
-		# Regular selection, range to the left and right
-		indices = [-1, 1]
-
-	# Now apply the indices
-	for idx: int in indices:
-		var adjust_idx: int = selection + idx
-		if adjust_idx < 0 or adjust_idx >= _manager.cogs.size():
-			continue
-		new_targets.append(_manager.cogs[adjust_idx])
+	main_target = manager.cogs[selection]
 	# Now set the targets!
-	targets = new_targets
+	targets = Util.get_splash_targets(selection, manager)
 
 func store_boost_text(text: String, color: Color) -> void:
 	stored_boost_text.append([text, color])

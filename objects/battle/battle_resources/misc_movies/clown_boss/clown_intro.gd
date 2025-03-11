@@ -92,7 +92,8 @@ func play() -> Tween:
 	movie.tween_callback(camera.set_position.bind(Vector3.ZERO))
 	movie.tween_callback(camera.set_rotation_degrees.bind(Vector3(0,180,0)))
 	movie.tween_interval(6.0)
-	movie.tween_callback(player.toon.head.show)
+	if player.toon.cheesy_effect != 1:
+		movie.tween_callback(player.toon.head.show)
 	movie.tween_callback(camera.reparent.bind(battle_node))
 	movie.tween_callback(player.set_animation.bind('neutral'))
 

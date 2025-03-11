@@ -2,7 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://ywlfb4whkjcx" path="res://objects/modules/office/base_rooms/office_L_room.tscn" id="1_0bo6q"]
 [ext_resource type="Texture2D" uid="uid://dmelmjyqb5mqh" path="res://models/facilities/office/textures/LB_Carpet.png" id="2_5lghk"]
-[ext_resource type="Texture2D" uid="uid://dqmp1vpb7ao0u" path="res://models/facilities/office/textures/LB_Ceiling2.png" id="2_ih6u8"]
+[ext_resource type="Texture2D" uid="uid://4h8jufit87yy" path="res://models/facilities/office/textures/LB_Ceiling2.png" id="2_ih6u8"]
 [ext_resource type="Script" uid="uid://bhw074lp4woc" path="res://objects/modules/office/variants/office_l_room_puzzles.gd" id="2_xiadh"]
 [ext_resource type="Texture2D" uid="uid://u0k5kfqlf8sc" path="res://models/facilities/office/textures/LB_tanSurface2.png" id="3_xxova"]
 [ext_resource type="PackedScene" uid="uid://dbrst2twjd0pu" path="res://objects/interactables/button/button.tscn" id="6_c8je7"]

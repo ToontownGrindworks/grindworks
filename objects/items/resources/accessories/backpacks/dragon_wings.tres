@@ -51,6 +51,7 @@ Every 5 jellybeans in your bank gives:
 model = ExtResource("2_p4dy1")
 stats_add = {}
 stats_multiply = {}
+stats_set = {}
 player_values = {
 "less_shop_items": true
 }

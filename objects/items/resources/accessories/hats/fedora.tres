@@ -298,6 +298,7 @@ stats_add = {
 "evasiveness": 0.1
 }
 stats_multiply = {}
+stats_set = {}
 player_values = {}
 arbitrary_data = {}
 remember_item = true

@@ -297,6 +297,7 @@ stats_add = {
 "shop_discount": 5
 }
 stats_multiply = {}
+stats_set = {}
 player_values = {}
 arbitrary_data = {}
 remember_item = true

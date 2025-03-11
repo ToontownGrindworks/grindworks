@@ -297,6 +297,7 @@ stats_add = {
 "global_battle_start_point_boost": 5
 }
 stats_multiply = {}
+stats_set = {}
 player_values = {}
 arbitrary_data = {}
 remember_item = true

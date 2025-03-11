@@ -1,0 +1,69 @@
+[gd_resource type="Resource" script_class="PlayerCharacter" load_steps=17 format=3 uid="uid://donajs6l6anbd"]
+
+[ext_resource type="Script" uid="uid://o2fe7ud1faj6" path="res://objects/battle/battle_resources/stats.gd" id="1_ale64"]
+[ext_resource type="Script" uid="uid://c8kas2j4io1jh" path="res://objects/toon/clothing/toon_bottoms.gd" id="2_4dr0v"]
+[ext_resource type="Texture2D" uid="uid://bo5kh8g0qoy0r" path="res://mod_assets/smirky/tt_t_chr_avt_shorts_sellbotCrusher.jpg" id="3_26gsk"]
+[ext_resource type="Script" uid="uid://yg7gxug4rab" path="res://objects/toon/toon_dna.gd" id="4_tc4t0"]
+[ext_resource type="Script" uid="uid://dfqwh4jmdy0iw" path="res://objects/toon/clothing/toon_shirt.gd" id="5_wlmf8"]
+[ext_resource type="Texture2D" uid="uid://coa11oh03w1e3" path="res://mod_assets/smirky/tt_t_chr_avt_shirt_sellbotCrusher.jpg" id="6_l8ayu"]
+[ext_resource type="Texture2D" uid="uid://bj57xuikubh85" path="res://mod_assets/smirky/tt_t_chr_avt_shirtSleeve_sellbotCrusher.jpg" id="7_wlstb"]
+[ext_resource type="Resource" uid="uid://bcreonlub2ngx" path="res://mod_assets/smirky/smirky_loadout.tres" id="8_el7k0"]
+[ext_resource type="Script" uid="uid://ts8xpgftpmty" path="res://objects/player/character.gd" id="9_338hm"]
+[ext_resource type="Script" uid="uid://combwqypom1ru" path="res://objects/items/classes/item.gd" id="10_ewl0y"]
+[ext_resource type="Resource" uid="uid://c6ialunptm76f" path="res://mod_assets/smirky/smirky_boost.tres" id="11_i5hy5"]
+[ext_resource type="Resource" uid="uid://ci3d516op8yr7" path="res://mod_assets/smirky/smirky_baseball_cap.tres" id="12_7mig3"]
+
+[sub_resource type="Resource" id="Resource_jj61k"]
+script = ExtResource("1_ale64")
+melancholic = false
+damage = 1.0
+defense = 1.0
+evasiveness = 1.0
+accuracy = 1.0
+speed = 1.0
+max_turns = 3
+max_hp = 25
+hp = 25
+turns = 1
+
+[sub_resource type="Resource" id="Resource_8j8br"]
+script = ExtResource("2_4dr0v")
+texture = ExtResource("3_26gsk")
+base_color = Color(1, 1, 1, 1)
+color_type = 1
+
+[sub_resource type="Resource" id="Resource_xhyy3"]
+script = ExtResource("5_wlmf8")
+shirt_texture = ExtResource("6_l8ayu")
+sleeve_texture = ExtResource("7_wlstb")
+base_color = Color(1, 1, 1, 1)
+sleeve_color = Color(1, 1, 1, 1)
+color_type = 1
+
+[sub_resource type="Resource" id="Resource_ncdqk"]
+script = ExtResource("4_tc4t0")
+body_type = 1
+species = 2
+head_index = 2
+eyelashes = false
+skirt = false
+cheesy_effect = 0
+head_color = Color(0.345098, 0.819608, 0.952941, 1)
+torso_color = Color(0.345098, 0.819608, 0.952941, 1)
+leg_color = Color(0.345098, 0.819608, 0.952941, 1)
+shirt = SubResource("Resource_xhyy3")
+bottoms = SubResource("Resource_8j8br")
+
+[resource]
+script = ExtResource("9_338hm")
+character_name = "Smirky Bumberpop"
+character_summary = "Friendly Influence: Soundless, but can stack up outside help with Sound Vouchers
+(Beware the Smirky Curse...)
+Swift Sponsor: Hype gives Sound Vouchers
+- Starts with Lure and Drop"
+dna = SubResource("Resource_ncdqk")
+gag_loadout = ExtResource("8_el7k0")
+starting_laff = 30
+starting_items = Array[ExtResource("10_ewl0y")]([ExtResource("11_i5hy5"), ExtResource("12_7mig3")])
+base_stats = SubResource("Resource_jj61k")
+random_character_stored_name = ""

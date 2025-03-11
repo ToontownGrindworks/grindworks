@@ -297,6 +297,7 @@ big_description = "- Scrambles the gags in your loadout, including point cost.
 model = ExtResource("2_s8ghy")
 stats_add = {}
 stats_multiply = {}
+stats_set = {}
 player_values = {}
 arbitrary_data = {}
 item_script = ExtResource("3_q5860")

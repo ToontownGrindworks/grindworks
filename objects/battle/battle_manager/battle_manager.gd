@@ -38,7 +38,7 @@ var has_moved : Array[Node3D] = []
 
 ## Signals
 signal s_focus_char(character: Node3D)
-signal s_battle_ended
+signal s_battle_ended(round: int)
 signal s_battle_ending
 signal s_round_started(actions: Array[BattleAction])
 signal s_round_ended
@@ -246,6 +246,7 @@ func end_battle() -> void:
 			battle_node.get_parent().add_child(chest)
 			chest.global_position = battle_node.global_position
 			chest.global_rotation = battle_node.global_rotation
+			# Samba Hat
 			if player.better_battle_rewards == true and current_round <= 2:
 				chest.item_pool = load(ITEM_POOL_PROGRESSIVES)
 				player.boost_queue.queue_text("Bounty!", Color.GREEN)

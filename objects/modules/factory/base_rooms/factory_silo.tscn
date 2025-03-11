@@ -1,6 +1,6 @@
 [gd_scene load_steps=129 format=4 uid="uid://d0l3ucdou3gof"]
 
-[ext_resource type="Texture2D" uid="uid://cy2xdojji8fye" path="res://models/facilities/factory/FINALFACTORY_25.png" id="1_vmyv1"]
+[ext_resource type="Texture2D" uid="uid://bhs8dbnkktob4" path="res://models/facilities/factory/FINALFACTORY_25.png" id="1_vmyv1"]
 [ext_resource type="Texture2D" uid="uid://cc2j3d5njswb2" path="res://models/facilities/factory/FINALFACTORY_137.png" id="3_0u1dh"]
 [ext_resource type="Texture2D" uid="uid://dpsidiie17khh" path="res://models/facilities/factory/FINALFACTORY_0.png" id="4_wxwsv"]
 [ext_resource type="Texture2D" uid="uid://bbms6ptrhjiye" path="res://models/facilities/factory/FINALFACTORY_118.png" id="5_vfvcr"]

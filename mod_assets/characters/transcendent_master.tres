@@ -1,0 +1,58 @@
+[gd_resource type="Resource" script_class="PlayerCharacter" load_steps=13 format=3 uid="uid://in4flyjtp8hn"]
+
+[ext_resource type="Script" uid="uid://o2fe7ud1faj6" path="res://objects/battle/battle_resources/stats.gd" id="1_u7dsc"]
+[ext_resource type="Script" uid="uid://c8kas2j4io1jh" path="res://objects/toon/clothing/toon_bottoms.gd" id="2_qg16j"]
+[ext_resource type="Texture2D" uid="uid://v0n7tknvy2jk" path="res://models/toon/textures/clothes/shorts/desat_shorts_10_2.png" id="3_023va"]
+[ext_resource type="Script" uid="uid://yg7gxug4rab" path="res://objects/toon/toon_dna.gd" id="4_t120b"]
+[ext_resource type="Resource" uid="uid://ku2bgq1npgus" path="res://objects/toon/clothing/shirts/star_shirt.tres" id="5_ne6o2"]
+[ext_resource type="Resource" uid="uid://tyi7ukxtvcgc" path="res://objects/battle/battle_resources/gag_loadouts/loadouts/standard_loadout.tres" id="8_2qj1n"]
+[ext_resource type="Script" uid="uid://ts8xpgftpmty" path="res://objects/player/character.gd" id="9_dl5bg"]
+[ext_resource type="Resource" uid="uid://dj8ywg7pnysgv" path="res://mod_assets/transcendent/sages_ascent.tres" id="9_yamx4"]
+[ext_resource type="Script" uid="uid://combwqypom1ru" path="res://objects/items/classes/item.gd" id="10_3hosj"]
+
+[sub_resource type="Resource" id="Resource_jj61k"]
+script = ExtResource("1_u7dsc")
+melancholic = false
+damage = 1.0
+defense = 1.0
+evasiveness = 1.0
+accuracy = 1.0
+speed = 1.0
+max_turns = 3
+max_hp = 25
+hp = 25
+turns = 1
+
+[sub_resource type="Resource" id="Resource_ugrs1"]
+script = ExtResource("2_qg16j")
+texture = ExtResource("3_023va")
+base_color = Color(0.71, 0.231, 0.435, 1)
+color_type = 0
+
+[sub_resource type="Resource" id="Resource_klv40"]
+script = ExtResource("4_t120b")
+body_type = 2
+species = 0
+head_index = 2
+eyelashes = false
+skirt = false
+cheesy_effect = 0
+head_color = Color(0.13731, 0.244544, 0.634011, 1)
+torso_color = Color(0.137255, 0.243137, 0.635294, 1)
+leg_color = Color(0.137255, 0.243137, 0.635294, 1)
+shirt = ExtResource("5_ne6o2")
+bottoms = SubResource("Resource_ugrs1")
+
+[resource]
+script = ExtResource("9_dl5bg")
+character_name = "Transcendent Master"
+character_summary = "Sage's Ascent: Multiplicative wealth for power
+- Chests do not give accessories
+- All jellybean gain is halved
+- Start with Squirt and Drop"
+dna = SubResource("Resource_klv40")
+gag_loadout = ExtResource("8_2qj1n")
+starting_laff = 30
+starting_items = Array[ExtResource("10_3hosj")]([ExtResource("9_yamx4")])
+base_stats = SubResource("Resource_jj61k")
+random_character_stored_name = ""

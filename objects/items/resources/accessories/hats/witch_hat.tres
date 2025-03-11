@@ -296,6 +296,7 @@ big_description = "Squirt inflicts poison damage upon Cogs."
 model = ExtResource("2_dp6aq")
 stats_add = {}
 stats_multiply = {}
+stats_set = {}
 player_values = {}
 arbitrary_data = {}
 item_script = ExtResource("3_k6hh1")

@@ -46,6 +46,7 @@ stats_add = {
 "damage": 0.15
 }
 stats_multiply = {}
+stats_set = {}
 player_values = {}
 arbitrary_data = {}
 remember_item = true

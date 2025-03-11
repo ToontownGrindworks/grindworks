@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="StatusAutoSound" load_steps=2 format=3 uid="uid://ctyi28cpgsqfj"]
+
+[ext_resource type="Script" uid="uid://dd1v63piwek8p" path="res://objects/battle/battle_resources/status_effects/auto_sound.gd" id="1_06itn"]
+
+[resource]
+script = ExtResource("1_06itn")
+quality = 1
+rounds = 0
+icon_color = Color(1, 1, 1, 1)
+icon_scale = 1.0
+mini_icon_color = Color(1, 1, 1, 1)
+mini_icon_scale = 1.0
+visible = true
+description = "This is a Status Effect"
+status_name = "Status Effect"
+id = 34
