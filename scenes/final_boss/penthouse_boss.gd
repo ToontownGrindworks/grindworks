@@ -43,13 +43,18 @@ var darkened_sky := false
 func _ready() -> void:
 	set_caged_toon_dna(get_caged_toon_dna())
 	AudioManager.set_music(MUSIC_TRACK)
+	
+	# Simple boss level scale
+	boss_cog.level = Util.floor_number * 4
+	boss_cog_2.level = Util.floor_number * 4
+	
 	# Pick the first boss
 	var boss_choices := possible_bosses.duplicate()
 	if DEBUG_FORCE_BOSS_ONE != null and OS.is_debug_build() and WANT_DEBUG_BOSSES:
 		boss_one_choice = DEBUG_FORCE_BOSS_ONE
 	else:
 		boss_one_choice = RandomService.array_pick_random('base_seed', boss_choices)
-	boss_cog.set_dna(boss_one_choice)
+	boss_cog.set_dna(boss_one_choice, false)
 	boss_choices.erase(boss_one_choice)
 
 	# Pick the second boss
@@ -57,11 +62,11 @@ func _ready() -> void:
 		boss_two_choice = DEBUG_FORCE_BOSS_TWO
 	else:
 		boss_two_choice = RandomService.array_pick_random('base_seed', boss_choices)
-	boss_cog_2.set_dna(boss_two_choice)
+	boss_cog_2.set_dna(boss_two_choice, false)
 
 	# Nerf their damage got damn!!!
-	boss_cog.stats.damage = 1.2
-	boss_cog_2.stats.damage = 1.2
+	boss_cog.stats.damage *= 0.75
+	boss_cog_2.stats.damage *= 0.75
 
 	# Start the battle
 	Util.get_player().state = Player.PlayerState.WALK
