@@ -159,7 +159,7 @@ func roll_for_level() -> void:
 		if is_instance_valid(Util.floor_manager):
 			custom_level_range = Util.floor_manager.level_range
 		elif dna: 
-			custom_level_range = Vector2i(dna.level_low, dna.level_high)
+			custom_level_range.x = dna.level_low
 		level = RandomService.randi_range_channel('cog_levels', custom_level_range.x, custom_level_range.y)
 	
 	# Allow for Cogs to be higher level than the floor intends
@@ -250,7 +250,7 @@ static func test_dna(cog_dna: CogDNA, cog_level: int) -> bool:
 	
 	# If DNA exists and we are in standard range
 	# Return whether or not the cog level is within the dna's level range
-	return cog_level in range(cog_dna.level_low, cog_dna.level_high + 1)
+	return cog_level >= cog_dna.level_low
 
 func construct_cog():
 	# Allow Cog DNA to be refreshed and reset

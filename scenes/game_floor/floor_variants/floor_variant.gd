@@ -79,10 +79,10 @@ func _notification(what: int):
 		
 # revoke my desmos membership
 func get_min_level(floor) -> int:
-	return ceili(30 - (1.2 ** (18.5 - (0.2 * floor))))
+	return absi(ceili(30 - (1.2 * (18.5 - (0.2 * floor)))))
 	
 func get_max_level(floor) -> int:
-	return ceili((12 - (2 ** ((0.125 * floor) * 9.9))) + (2 * floor))
+	return absi(ceili(30 - (2 * (4.8 - (0.125 * floor)))))
 
 func get_anomalies() -> Array[Script]:
 	var mods: Array[Script] = []
