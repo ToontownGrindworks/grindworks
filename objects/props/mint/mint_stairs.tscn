@@ -1,7 +1,7 @@
 [gd_scene load_steps=11 format=4 uid="uid://xxhl4spi53gq"]
 
 [ext_resource type="Texture2D" uid="uid://brg7tsqoenlxv" path="res://models/facilities/mint/textures/WallCementLightEdge.png" id="1_51bh0"]
-[ext_resource type="Texture2D" uid="uid://2yv2gsrwpljc" path="res://models/facilities/mint/textures/CementFloorx4.png" id="2_nkqag"]
+[ext_resource type="Texture2D" uid="uid://bixkesses7em4" path="res://models/facilities/mint/textures/CementFloorx4.png" id="2_nkqag"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_mpgqq"]
 resource_name = "WallCementLightEdgeSHD_WallCementLightEdgeSHD"

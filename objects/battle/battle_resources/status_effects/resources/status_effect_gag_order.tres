@@ -17,4 +17,3 @@ visible = false
 description = "This is a Status Effect"
 status_name = "Gag Order"
 id = 17
-_generate_id = false

@@ -1,9 +1,9 @@
 [gd_scene load_steps=25 format=4 uid="uid://ywlfb4whkjcx"]
 
 [ext_resource type="PackedScene" uid="uid://dbgywapc3jhh8" path="res://models/facilities/office/office_L_room.fbx" id="1_xtu2q"]
-[ext_resource type="Texture2D" uid="uid://c22vsww70r3wa" path="res://models/facilities/office/textures/CementFloor7.png" id="2_vrep3"]
-[ext_resource type="Texture2D" uid="uid://bcjubltj5t675" path="res://models/facilities/office/textures/RollUpDoors.png" id="3_hoiu3"]
-[ext_resource type="Texture2D" uid="uid://bahckbv3btte0" path="res://models/facilities/office/textures/CBStationLightTubes.png" id="4_d2kwh"]
+[ext_resource type="Texture2D" uid="uid://jmddjyrgeyra" path="res://models/facilities/office/textures/CementFloor7.png" id="2_vrep3"]
+[ext_resource type="Texture2D" uid="uid://d1yccge71c2no" path="res://models/facilities/office/textures/RollUpDoors.png" id="3_hoiu3"]
+[ext_resource type="Texture2D" uid="uid://cwsb163k5ij6d" path="res://models/facilities/office/textures/CBStationLightTubes.png" id="4_d2kwh"]
 [ext_resource type="Texture2D" uid="uid://c2orm44yrj4uj" path="res://models/facilities/office/textures/LB_tanSurface.png" id="5_xey3e"]
 [ext_resource type="Texture2D" uid="uid://20v2ot480e" path="res://models/facilities/office/textures/CFOCeiling2.png" id="6_vh8lt"]
 [ext_resource type="Texture2D" uid="uid://dgjkxg5lxpvxb" path="res://models/facilities/office/textures/LB_WoodPanel.png" id="7_pgki4"]

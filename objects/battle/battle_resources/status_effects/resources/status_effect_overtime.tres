@@ -16,4 +16,3 @@ visible = true
 description = "+1 Turn"
 status_name = "Overtime"
 id = 27
-_generate_id = false

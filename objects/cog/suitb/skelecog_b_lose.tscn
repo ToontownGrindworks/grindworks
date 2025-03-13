@@ -4,8 +4,8 @@
 [ext_resource type="Script" uid="uid://djrvaa2pgbrps" path="res://objects/cog/skelecog_directory.gd" id="1_oy25y"]
 [ext_resource type="Texture2D" uid="uid://csyn6i71uv3s2" path="res://models/cogs/suitb/skelecog/suitB-skelecog_cogB_bulb1b.png" id="3_jl154"]
 [ext_resource type="Texture2D" uid="uid://cmjss0pvkovre" path="res://models/cogs/suitb/skelecog/suitB-skelecog_cogB_armB1.png" id="4_nfkxf"]
-[ext_resource type="Texture2D" uid="uid://drrs5agk2gp30" path="res://models/cogs/suitb/skelecog/suitB-skelecog_cogB_armB2.png" id="5_ewu5u"]
-[ext_resource type="Texture2D" uid="uid://c4x82w1t0oh8n" path="res://models/cogs/suitb/skelecog/suitB-skelecog_cogB_armB3.png" id="6_sx6ac"]
+[ext_resource type="Texture2D" uid="uid://cqep0lah4w1o4" path="res://models/cogs/suitb/skelecog/suitB-skelecog_cogB_armB2.png" id="5_ewu5u"]
+[ext_resource type="Texture2D" uid="uid://bm1hmv40w3s68" path="res://models/cogs/suitb/skelecog/suitB-skelecog_cogB_armB3.png" id="6_sx6ac"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1u8xt"]
 resource_name = "default.018"

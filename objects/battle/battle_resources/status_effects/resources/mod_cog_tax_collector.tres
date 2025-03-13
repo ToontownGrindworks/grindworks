@@ -16,4 +16,3 @@ visible = true
 description = "+1 Gag cost while in battle."
 status_name = "Tax Collector"
 id = 26
-_generate_id = false

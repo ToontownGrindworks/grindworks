@@ -5,7 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://c4d8cjcguk3d1" path="res://models/props/gags/marbles/marbles_marble_3.png" id="3_wv8i7"]
 [ext_resource type="Texture2D" uid="uid://csgopihbgnob3" path="res://models/props/gags/marbles/marbles_marble_5.png" id="4_mbhdb"]
 [ext_resource type="Texture2D" uid="uid://dp8q6i2jakt01" path="res://models/props/gags/marbles/marbles_marble_4.png" id="5_jufeb"]
-[ext_resource type="Texture2D" uid="uid://oydpvt2cgsme" path="res://models/props/gags/marbles/marbles_marble_6.png" id="6_11b3y"]
+[ext_resource type="Texture2D" uid="uid://cri7h44cqlbox" path="res://models/props/gags/marbles/marbles_marble_6.png" id="6_11b3y"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1laom"]
 resource_name = "toon_props_cvs_PICTURES_marble_1_picShader"

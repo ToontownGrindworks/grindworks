@@ -14,4 +14,3 @@ visible = false
 description = "Bookkeeper logic"
 status_name = "Bookkeeper logic"
 id = 13
-_generate_id = false

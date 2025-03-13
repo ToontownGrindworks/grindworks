@@ -357,7 +357,7 @@ fov = 52.0
 
 [node name="SceneAnimator" type="AnimationPlayer" parent="." index="10"]
 libraries = {
-"": SubResource("AnimationLibrary_tjyyh")
+&"": SubResource("AnimationLibrary_tjyyh")
 }
 autoplay = "default"
 

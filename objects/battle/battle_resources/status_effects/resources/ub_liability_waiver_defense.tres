@@ -18,4 +18,3 @@ visible = true
 description = "This is a Status Effect"
 status_name = "Liability Defense"
 id = 29
-_generate_id = false

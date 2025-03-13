@@ -16,4 +16,3 @@ visible = true
 description = "Heals 6x the damage they deal"
 status_name = "Embezzler"
 id = 25
-_generate_id = false
