@@ -40,4 +40,5 @@ gag_loadout = ExtResource("2_w38qq")
 starting_laff = 30
 starting_items = Array[ExtResource("4_al6k5")]([])
 base_stats = SubResource("Resource_q3qk8")
+start_unlocked = false
 random_character_stored_name = ""
