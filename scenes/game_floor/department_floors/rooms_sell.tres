@@ -2,7 +2,7 @@
 
 [ext_resource type="AudioStream" uid="uid://b8q4035btjkkk" path="res://audio/music/CHQ_FACT_bg.ogg" id="1_57p8i"]
 [ext_resource type="Script" uid="uid://bs13ap551050v" path="res://scenes/game_floor/department_floors/department_floor.gd" id="1_mxwab"]
-[ext_resource type="AudioStream" uid="uid://cw2dv426p5vjy" path="res://audio/music/encntr_general_bg.ogg" id="2_3fcy8"]
+[ext_resource type="AudioStream" uid="uid://crp6kylqpid6i" path="res://audio/music/encntr_sellbot.ogg" id="2_x2jwy"]
 [ext_resource type="Script" uid="uid://dhyadt7p1gv78" path="res://objects/modules/facility_room.gd" id="3_jw8rd"]
 [ext_resource type="PackedScene" uid="uid://dui2hdkuqux28" path="res://objects/modules/factory/variants/factory_gear_room_battle.tscn" id="4_i1303"]
 [ext_resource type="PackedScene" uid="uid://b1sjkcka65imo" path="res://objects/modules/factory/base_rooms/factory_entrance.tscn" id="4_n2qep"]
@@ -111,4 +111,4 @@ final_rooms = Array[ExtResource("3_jw8rd")]([SubResource("Resource_yfkbg"), SubR
 one_time_rooms = Array[PackedScene]([ExtResource("17_hupyr")])
 special_rooms = Array[ExtResource("3_jw8rd")]([SubResource("Resource_6xghj")])
 background_music = Array[AudioStream]([ExtResource("1_57p8i")])
-battle_music = ExtResource("2_3fcy8")
+battle_music = ExtResource("2_x2jwy")

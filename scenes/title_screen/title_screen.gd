@@ -159,14 +159,14 @@ func play_pressed() -> void:
 func create_toons() -> void:
 	var toons := Globals.TOON_UNLOCK_ORDER.duplicate()
 	for i in range(toons.size() -1, -1, -1):
-		if i >= SaveFileService.progress_file.characters_unlocked:
+		if i >= SaveFileService.progress_file.characters_unlocked and not toons[i].start_unlocked:
 			toons.remove_at(i)
 
 	var starting_point := (-floorf(toons.size() / 2)) * TOON_SEPARATION
 	if toons.size() % 2 == 0: starting_point += (TOON_SEPARATION / 2.0)
 	
 	for character : PlayerCharacter in toons:
-		await Task.delay(0.25)
+		await Task.delay(0.125)
 		var toon := spawn_toon(character)
 		toon_origin.add_child(toon)
 		toon.construct_toon(toon.toon_dna)
@@ -207,6 +207,32 @@ func toon_canceled() -> void:
 
 func new_game() -> void:
 	state = MenuState.TRANSITIONING
+	for otherToon: Toon in toon_origin.get_children():
+		if not otherToon == selected_toon:
+			otherToon.set_eyes(Toon.Emotion.SAD)
+			var roll: int = RandomService.randi_range_channel('true_random', 1, 4)
+			match roll:
+				1:
+					var doIt = func() -> void:
+						otherToon.set_animation('cringe')
+					Task.delayed_call(otherToon, 0.25, doIt)
+				2:
+					var doIt = func() -> void:
+						var explosion: AnimatedSprite3D = load('res://models/cogs/misc/explosion/cog_explosion.tscn').instantiate()
+						otherToon.add_child(explosion)
+						explosion.global_position = otherToon.body_node.global_position
+						explosion.scale = Vector3(5, 5, 5)
+						explosion.play('explode')
+						otherToon.body.hide()
+						otherToon.drop_shadow.hide()
+						await Util.barrier(explosion.animation_finished, 0.5)
+						explosion.hide()
+					otherToon.set_eyes(Toon.Emotion.ANGRY)
+					Task.delayed_call(otherToon, 1.5, doIt)
+				_:
+					var doIt = func() -> void:
+						otherToon.set_animation('lose')
+					Task.delayed_call(otherToon, RandomService.randf_range_channel('true_random', 0.05, 1), doIt)
 	var toon_tween := create_tween()
 	toon_tween.tween_callback(make_toon_look.bind(selected_toon, elevator.player_pos.global_position))
 	toon_tween.tween_callback(selected_toon.set_animation.bind('run'))

@@ -3,7 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://b1nbdcg8lvn4k" path="res://objects/modules/office/base_rooms/connector1.tscn" id="1_i5e2j"]
 [ext_resource type="Script" uid="uid://bs13ap551050v" path="res://scenes/game_floor/department_floors/department_floor.gd" id="1_kxs6h"]
 [ext_resource type="AudioStream" uid="uid://c56el0mbft2yb" path="res://audio/music/DA_Office.ogg" id="1_ojny5"]
-[ext_resource type="AudioStream" uid="uid://k3mankqgl7a4" path="res://audio/music/LB_juryBG.ogg" id="2_18ffd"]
+[ext_resource type="AudioStream" uid="uid://cbc2hvymnxxaf" path="res://audio/music/encntr_lawbot.ogg" id="2_x72hs"]
 [ext_resource type="Script" uid="uid://dhyadt7p1gv78" path="res://objects/modules/facility_room.gd" id="3_75e7d"]
 [ext_resource type="PackedScene" uid="uid://dtaq2wty6bytx" path="res://objects/modules/office/variants/office_battle_room_battle.tscn" id="3_gbl83"]
 [ext_resource type="PackedScene" uid="uid://cr1htfcl3unfw" path="res://objects/modules/office/variants/office_diamond_room_battle.tscn" id="4_w1muv"]
@@ -109,4 +109,4 @@ final_rooms = Array[ExtResource("3_75e7d")]([SubResource("Resource_b6b7v"), SubR
 one_time_rooms = Array[PackedScene]([])
 special_rooms = Array[ExtResource("3_75e7d")]([SubResource("Resource_lddew")])
 background_music = Array[AudioStream]([ExtResource("1_ojny5")])
-battle_music = ExtResource("2_18ffd")
+battle_music = ExtResource("2_x72hs")

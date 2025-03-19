@@ -27,7 +27,8 @@ const TOON_UNLOCK_ORDER : Array[PlayerCharacter] = [
 	preload('res://objects/player/characters/julius_wheezer.tres'),
 	preload('res://objects/player/characters/barnacle_bessie.tres'),
 	preload('res://objects/player/characters/moe_zart.tres'),
-	preload('res://objects/player/characters/testchar.tres')
+	preload('res://objects/player/characters/testchar.tres'),
+	preload('res://objects/player/characters/yocow.tres'),
 ]
 
 ## Global Cog Pools

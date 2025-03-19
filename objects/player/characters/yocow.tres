@@ -1,0 +1,64 @@
+[gd_resource type="Resource" script_class="PlayerCharacter" load_steps=16 format=3 uid="uid://c6ejmc0xt4qe3"]
+
+[ext_resource type="Script" uid="uid://o2fe7ud1faj6" path="res://objects/battle/battle_resources/stats.gd" id="1_ljyq0"]
+[ext_resource type="Script" uid="uid://c8kas2j4io1jh" path="res://objects/toon/clothing/toon_bottoms.gd" id="2_w0mkh"]
+[ext_resource type="Texture2D" uid="uid://v0n7tknvy2jk" path="res://models/toon/textures/clothes/shorts/desat_shorts_10_2.png" id="3_gon5p"]
+[ext_resource type="Script" uid="uid://yg7gxug4rab" path="res://objects/toon/toon_dna.gd" id="4_1jp67"]
+[ext_resource type="Script" uid="uid://dfqwh4jmdy0iw" path="res://objects/toon/clothing/toon_shirt.gd" id="5_kbbm4"]
+[ext_resource type="Texture2D" uid="uid://c4qvk4ssy1c0n" path="res://models/toon/textures/clothes/shirts/desat_shirt_4.png" id="6_p1hx8"]
+[ext_resource type="Texture2D" uid="uid://cdawen500xuqx" path="res://models/toon/textures/clothes/shirts/desat_sleeve_4.png" id="7_n63y6"]
+[ext_resource type="Resource" uid="uid://tyi7ukxtvcgc" path="res://objects/battle/battle_resources/gag_loadouts/loadouts/standard_loadout.tres" id="8_nbexb"]
+[ext_resource type="Script" uid="uid://ts8xpgftpmty" path="res://objects/player/character.gd" id="9_rid3y"]
+[ext_resource type="Script" uid="uid://combwqypom1ru" path="res://objects/items/classes/item.gd" id="10_e10je"]
+[ext_resource type="Resource" uid="uid://cyiwxplege133" path="res://objects/items/resources/passive/emergency_unite.tres" id="11_ev2yc"]
+
+[sub_resource type="Resource" id="Resource_jj61k"]
+script = ExtResource("1_ljyq0")
+damage = 1.0
+defense = 1.0
+evasiveness = 1.0
+accuracy = 1.0
+speed = 1.0
+max_turns = 3
+max_hp = 25
+hp = 25
+turns = 1
+
+[sub_resource type="Resource" id="Resource_ugrs1"]
+script = ExtResource("2_w0mkh")
+texture = ExtResource("3_gon5p")
+base_color = Color(0.313726, 0.47451, 0.580392, 1)
+color_type = 0
+
+[sub_resource type="Resource" id="Resource_2lryd"]
+script = ExtResource("5_kbbm4")
+shirt_texture = ExtResource("6_p1hx8")
+sleeve_texture = ExtResource("7_n63y6")
+base_color = Color(0.494118, 0.411765, 0.529412, 1)
+sleeve_color = Color(0.494118, 0.411765, 0.529412, 1)
+color_type = 0
+
+[sub_resource type="Resource" id="Resource_ax4gq"]
+script = ExtResource("4_1jp67")
+body_type = 1
+species = 3
+head_index = 2
+eyelashes = false
+skirt = false
+head_color = Color(0.941698, 0, 0.193592, 1)
+torso_color = Color(0.941176, 0, 0.192157, 1)
+leg_color = Color(0.941176, 0, 0.192157, 1)
+shirt = SubResource("Resource_2lryd")
+bottoms = SubResource("Resource_ugrs1")
+
+[resource]
+script = ExtResource("9_rid3y")
+character_name = "Yocow"
+character_summary = "- Yodar"
+dna = SubResource("Resource_ax4gq")
+gag_loadout = ExtResource("8_nbexb")
+starting_laff = 30
+starting_items = Array[ExtResource("10_e10je")]([ExtResource("11_ev2yc")])
+base_stats = SubResource("Resource_jj61k")
+start_unlocked = true
+random_character_stored_name = ""

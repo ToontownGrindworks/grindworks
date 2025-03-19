@@ -8,6 +8,7 @@ class_name PlayerCharacter
 @export var starting_laff := 25
 @export var starting_items: Array[Item]
 @export var base_stats: BattleStats
+@export var start_unlocked: bool
 
 # sory
 @export var random_character_stored_name := ""
