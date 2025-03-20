@@ -33,6 +33,8 @@ Ground Floor Investor's platform will now sink a bit faster, and the damage over
 Mole Cog's Reinforcement call will now happen at the end of the first round
 The Security Goon's projection system has been upgraded to support 4 Cogs
 Reinforcement Cogs will now try to shuffle in between the directors in the Penthouse encounter
+Union Buster will now have zero cooldown between using his abilities, as long as he able to
+If Union Buster is in the fight, reinforcements will be called in every round instead of every other round
 [TITLE]Tweaks
 Added a mod loader
 Hovering over a Toontask reward will now show you a description of the item

@@ -6,7 +6,7 @@
 [ext_resource type="Resource" uid="uid://cae3lr6y4rrb8" path="res://objects/battle/battle_resources/cog_attacks/resources/quake.tres" id="4_oduic"]
 [ext_resource type="Resource" uid="uid://55lp6noha8te" path="res://objects/battle/battle_resources/cog_attacks/resources/shake.tres" id="5_phrcf"]
 [ext_resource type="PackedScene" uid="uid://d2pl7oar1aevb" path="res://models/cogs/heads/movershaker.glb" id="6_8ik2y"]
-[ext_resource type="Texture2D" uid="uid://8jclto0lc8r0" path="res://models/cogs/heads/movershaker_tt_t_ene_hed_moverShaker.png" id="7_andep"]
+[ext_resource type="Texture2D" uid="uid://0md7vdsufcf6" path="res://models/cogs/heads/movershaker_movershaker.png" id="7_jv581"]
 [ext_resource type="Script" uid="uid://okjbx502s3r5" path="res://objects/cog/cogdna.gd" id="8_f1gcb"]
 [ext_resource type="Script" uid="uid://df7irk63ikx4k" path="res://objects/battle/battle_resources/status_effect.gd" id="9_hqbam"]
 
@@ -20,7 +20,7 @@ head = ExtResource("6_8ik2y")
 head_scale = Vector3(1, 1, 1)
 head_pos = Vector3(0, 0, 0)
 scale = 4.375
-head_textures = Array[Texture2D]([ExtResource("7_andep")])
+head_textures = Array[Texture2D]([ExtResource("7_jv581")])
 hand_color = Color(0.988235, 0.839216, 0.8, 1)
 head_color = Color(1, 1, 1, 1)
 custom_nametag_height = 0.0

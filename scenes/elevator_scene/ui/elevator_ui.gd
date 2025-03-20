@@ -59,7 +59,7 @@ func start_tip_tween() -> void:
 	tip_tween.tween_property(tip_label, 'self_modulate:a', 1.0, FADE_TIME)
 
 func change_tip(tips : PackedStringArray) -> void:
-	tip_label.set_text("TOON TIP:\n" + tips[RandomService.randi_channel('true_random') % tips.size() - 2])
+	tip_label.set_text("TOON TIP:\n" + tips[RandomService.randi_channel('true_random') % tips.size() - 3])
 
 func refresh_anomalies(anomaly_list : Array[Script]) -> void:
 	for child in anomaly_container.get_children():

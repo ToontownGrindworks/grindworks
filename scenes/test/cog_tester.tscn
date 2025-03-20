@@ -4,8 +4,8 @@
 [ext_resource type="PackedScene" uid="uid://dflwjcy6fj0av" path="res://objects/cog/cog.tscn" id="2_gqgwy"]
 [ext_resource type="Script" uid="uid://dsfdyywdrayhv" path="res://scenes/test/cog_tester.gd" id="2_rxi8i"]
 [ext_resource type="PackedScene" uid="uid://wpoc3xs1yy0" path="res://objects/player/player.tscn" id="4_5lgf2"]
-[ext_resource type="Resource" uid="uid://b2numr2pojy1o" path="res://objects/cog/presets/bossbot/mole_cog.tres" id="4_7v8nx"]
-[ext_resource type="Resource" uid="uid://bkkkabh3sre13" path="res://objects/cog/presets/cashbot/bookkeeper.tres" id="5_uvf8j"]
+[ext_resource type="Resource" uid="uid://cdnhms1ktp5l3" path="res://objects/cog/presets/sellbot/rainbow_hander.tres" id="4_ws0mt"]
+[ext_resource type="Resource" uid="uid://d7keo6qbekul" path="res://objects/cog/presets/bossbot/downsizer.tres" id="5_3el4x"]
 [ext_resource type="Resource" uid="uid://ckn41hxv8gwaw" path="res://objects/cog/presets/lawbot/whistleblower.tres" id="6_qwc3d"]
 [ext_resource type="Resource" uid="uid://ba7yjm7wpt1fu" path="res://objects/cog/presets/bossbot/union_buster.tres" id="7_p8s5t"]
 
@@ -15,13 +15,13 @@ script = ExtResource("2_rxi8i")
 [node name="Cog" parent="." index="5" instance=ExtResource("2_gqgwy")]
 unique_name_in_owner = true
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.60011, 0, -2.91055)
-dna = ExtResource("4_7v8nx")
+dna = ExtResource("4_ws0mt")
 skelecog_chance = 0
 
 [node name="Cog2" parent="." index="6" instance=ExtResource("2_gqgwy")]
 unique_name_in_owner = true
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.44539, 0, -2.91055)
-dna = ExtResource("5_uvf8j")
+dna = ExtResource("5_3el4x")
 skelecog_chance = 0
 
 [node name="Cog3" parent="." index="7" instance=ExtResource("2_gqgwy")]

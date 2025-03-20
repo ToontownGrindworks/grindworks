@@ -6,8 +6,8 @@
 [ext_resource type="Resource" uid="uid://bhl72hd7pn8s2" path="res://objects/battle/battle_resources/cog_attacks/resources/workout.tres" id="3_rdjay"]
 [ext_resource type="Resource" uid="uid://c31yj6hc78hh3" path="res://objects/battle/battle_resources/cog_attacks/resources/eviction_notice.tres" id="4_bcwjg"]
 [ext_resource type="PackedScene" uid="uid://d2pl7oar1aevb" path="res://models/cogs/heads/movershaker.glb" id="5_6gkh7"]
+[ext_resource type="Texture2D" uid="uid://c0rrpulky77a4" path="res://models/cogs/heads/bloodsucker.png" id="6_bcwjg"]
 [ext_resource type="Script" uid="uid://df7irk63ikx4k" path="res://objects/battle/battle_resources/status_effect.gd" id="6_ojm04"]
-[ext_resource type="Texture2D" uid="uid://8vri7bn76cva" path="res://models/cogs/heads/tt_t_ene_hed_bloodSucker.png" id="6_tb35l"]
 
 [resource]
 script = ExtResource("2_t585t")
@@ -19,7 +19,7 @@ head = ExtResource("5_6gkh7")
 head_scale = Vector3(1, 1, 1)
 head_pos = Vector3(0, 0, 0)
 scale = 4.375
-head_textures = Array[Texture2D]([ExtResource("6_tb35l")])
+head_textures = Array[Texture2D]([ExtResource("6_bcwjg")])
 hand_color = Color(0.95, 0.95, 1, 1)
 head_color = Color(1, 1, 1, 1)
 custom_nametag_height = 0.0

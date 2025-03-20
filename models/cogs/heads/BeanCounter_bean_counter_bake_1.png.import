@@ -2,16 +2,19 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://0vjqjtxk5jji"
-path="res://.godot/imported/organic_gags.png-9e1b0f0181af373357c53b86a4493496.ctex"
+uid="uid://c0qnmnei5yn5m"
+path="res://.godot/imported/BeanCounter_bean_counter_bake_1.png-94f22779e08eb7816d16636eda9dfbcd.ctex"
 metadata={
 "vram_texture": false
+}
+generator_parameters={
+"md5": "f271fb5cf71dc21922300cc2297331ad"
 }
 
 [deps]
 
-source_file="res://ui_assets/player_ui/pause/organic_gags.png"
-dest_files=["res://.godot/imported/organic_gags.png-9e1b0f0181af373357c53b86a4493496.ctex"]
+source_file="res://models/cogs/heads/BeanCounter_bean_counter_bake_1.png"
+dest_files=["res://.godot/imported/BeanCounter_bean_counter_bake_1.png-94f22779e08eb7816d16636eda9dfbcd.ctex"]
 
 [params]
 
@@ -30,5 +33,5 @@ process/premult_alpha=false
 process/normal_map_invert_y=false
 process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
-process/size_limit=128
+process/size_limit=0
 detect_3d/compress_to=0

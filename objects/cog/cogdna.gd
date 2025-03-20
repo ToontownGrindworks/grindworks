@@ -233,6 +233,8 @@ static func from_json(string : String) -> CogDNA:
 	var dict = JSON.parse_string(string)
 	var dna := CogDNA.new()
 	for attribute in ATTRIBUTE_LIST:
+		if dna.get(attribute) is Vector3:
+			dna.set(attribute, string_to_vector3(dict[attribute]))
 		if dict[attribute] is Array:
 			dna.get(attribute).assign(dict[attribute])
 		else:
@@ -244,7 +246,9 @@ static func from_json(string : String) -> CogDNA:
 		for attribute_name in externals.keys():
 			var attribute : Variant = externals[attribute_name]
 			if attribute is String:
-				if Util.file_exists(attribute) or attribute.begins_with('res://'):
+				if is_image_file(attribute) and not attribute.begins_with("res://"):
+					pass
+				elif Util.file_exists(attribute) or attribute.begins_with('res://'):
 					dna.set(attribute_name, load(attribute))
 			elif attribute is Array:
 				## head textures are a special case bc they hate me
@@ -259,6 +263,24 @@ static func from_json(string : String) -> CogDNA:
 						if Util.file_exists(file) or file.begins_with('res://'):
 							new_array.append(file)
 					dna.external_assets.set(attribute_name, new_array)
-		
-	
 	return dna
+
+
+static func string_to_vector3(string := "") -> Vector3:
+	if string:
+		var new_string: String = string
+		new_string = new_string.erase(0, 1)
+		new_string = new_string.erase(new_string.length() - 1, 1)
+		var array: Array = new_string.split(", ")
+
+		return Vector3(float(array[0]), float(array[1]), float(array[2]))
+
+	return Vector3.ONE
+
+
+const IMAGE_TYPES := [".jpg", ".png"]
+static func is_image_file(path : String) -> bool:
+	for image_type in IMAGE_TYPES:
+		if path.ends_with(image_type):
+			return true
+	return false

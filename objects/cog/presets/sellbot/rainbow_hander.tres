@@ -1,0 +1,45 @@
+[gd_resource type="Resource" script_class="CogDNA" load_steps=12 format=3 uid="uid://cdnhms1ktp5l3"]
+
+[ext_resource type="Script" uid="uid://bb27him60xtnk" path="res://objects/battle/battle_resources/cog_attacks/cog_attack.gd" id="1_h4ns7"]
+[ext_resource type="Resource" uid="uid://doowiij7lpxy1" path="res://objects/battle/battle_resources/cog_attacks/resources/rubber_stamp.tres" id="2_704l8"]
+[ext_resource type="Script" uid="uid://okjbx502s3r5" path="res://objects/cog/cogdna.gd" id="2_b7iut"]
+[ext_resource type="Script" uid="uid://df7irk63ikx4k" path="res://objects/battle/battle_resources/status_effect.gd" id="3_0a6v7"]
+[ext_resource type="Resource" uid="uid://bhl72hd7pn8s2" path="res://objects/battle/battle_resources/cog_attacks/resources/workout.tres" id="3_ltkp4"]
+[ext_resource type="Texture2D" uid="uid://2fj5qbvh3qa1" path="res://models/cogs/textures/misc/sleeve_2.png" id="4_fe048"]
+[ext_resource type="PackedScene" uid="uid://bptrv8nm0esos" path="res://models/cogs/heads/gladhander.glb" id="4_or1n2"]
+[ext_resource type="Texture2D" uid="uid://idf1e68fml3o" path="res://models/cogs/textures/misc/blazer_1.png" id="5_s6koo"]
+[ext_resource type="Texture2D" uid="uid://o3hrfvdxeisb" path="res://models/cogs/textures/misc/leg_4.png" id="6_k6pp1"]
+[ext_resource type="Resource" uid="uid://bop6fnfdh04vf" path="res://models/cogs/shaders/colorscale_mask/glad_hander_mask.tres" id="8_s6koo"]
+[ext_resource type="Resource" uid="uid://b4vuuxwhv0d3v" path="res://objects/battle/battle_resources/status_effects/resources/status_effect_mod_cog.tres" id="11_1h557"]
+
+[resource]
+script = ExtResource("2_b7iut")
+department = 0
+suit = 2
+custom_blazer_tex = ExtResource("5_s6koo")
+custom_arm_tex = ExtResource("4_fe048")
+custom_leg_tex = ExtResource("6_k6pp1")
+cog_name = "Rainbow Capitalist"
+name_plural = ""
+head = ExtResource("4_or1n2")
+head_scale = Vector3(1, 1, 1)
+head_pos = Vector3(0, 0, 0)
+scale = 4.75
+head_textures = Array[Texture2D]([])
+head_shader = ExtResource("8_s6koo")
+hand_color = Color(0.960784, 0.960784, 0.960784, 1)
+head_color = Color(1, 1, 1, 1)
+custom_nametag_height = 0.0
+custom_nametag_suffix = ""
+attacks = Array[ExtResource("1_h4ns7")]([ExtResource("2_704l8"), ExtResource("3_ltkp4")])
+level_low = 4
+level_high = 11
+status_effects = Array[ExtResource("3_0a6v7")]([ExtResource("11_1h557")])
+is_mod_cog = true
+is_admin = false
+health_mod = 1.0
+battle_phrases = Array[String](["You'll find I have a colorful background.", "Color me impressed, you’ve made it this far.", "You’ll do nicely to cleanse my palette."])
+external_assets = {
+&"head_model": "",
+&"head_textures": []
+}

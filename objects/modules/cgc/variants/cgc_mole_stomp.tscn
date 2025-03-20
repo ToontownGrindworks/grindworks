@@ -12,7 +12,6 @@ size = Vector3(8.98352, 8.01105, 3.54165)
 [node name="MoleStomp" type="Area3D" parent="." index="4" node_paths=PackedStringArray("door", "launch_cam")]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 5.66192, -0.09, -8.22481)
 script = ExtResource("2_ferxm")
-game_time = 45.0
 door = NodePath("../CogDoor")
 launch_cam = NodePath("LaunchCam")
 

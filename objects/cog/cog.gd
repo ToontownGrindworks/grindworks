@@ -257,6 +257,10 @@ func construct_cog():
 	if body:
 		body.queue_free()
 	
+	# Some Cog shaders want to change aspects of a Cog's DNA before building
+	if dna.head_shader:
+		dna.head_shader.tweak_cog(self)
+	
 	if fusion:
 		dna = dna.duplicate()
 		var second_dna: CogDNA 

@@ -1,3 +1,4 @@
+
 extends BattleStartMovie
 class_name SlendercogIntro
 
@@ -52,7 +53,7 @@ func play() -> Tween:
 	movie.tween_callback(player.set_animation.bind('cringe'))
 	movie.tween_method(tv_static.set_alpha, 0.0, 1.0, 2.0)
 	movie.parallel().tween_method(directory.static_alpha_changed, 0.0, 1.0, 2.0)
-	movie.parallel().tween_callback(battle_node.focus_character.bind(slendercog)).set_delay(1.0)
+	movie.parallel().tween_callback(battle_node.focus_character.bind(slendercog, 4.0)).set_delay(1.0)
 	movie.tween_interval(0.5)
 	
 	# Fade Slendercog in

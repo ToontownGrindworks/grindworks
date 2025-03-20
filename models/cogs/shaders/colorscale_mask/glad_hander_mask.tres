@@ -1,0 +1,15 @@
+[gd_resource type="Resource" load_steps=4 format=3 uid="uid://bop6fnfdh04vf"]
+
+[ext_resource type="Texture2D" uid="uid://mxt1dt43lqfm" path="res://models/cogs/heads/gladhander_tt_t_ene_hed_yesMan.png" id="1_n3l4f"]
+[ext_resource type="Texture2D" uid="uid://0pfwdalkeotx" path="res://models/cogs/heads/gladhander_mask.png" id="2_rfaby"]
+[ext_resource type="Script" uid="uid://dawkuwjwecbfh" path="res://models/cogs/shaders/colorscale_mask/glad_hander_mask.gd" id="3_n3l4f"]
+
+[resource]
+script = ExtResource("3_n3l4f")
+base_tex = ExtResource("1_n3l4f")
+mask_tex = ExtResource("2_rfaby")
+base_color = Color(1, 1, 1, 1)
+randomize_base_color = false
+mask_color = Color(1, 1, 1, 1)
+randomize_mask_color = false
+metadata/_custom_type_script = "uid://b8le1p54jw5gn"

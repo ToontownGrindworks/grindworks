@@ -1,8 +1,9 @@
-[gd_scene load_steps=39 format=3 uid="uid://chtdvbuf0ivvt"]
+[gd_scene load_steps=40 format=3 uid="uid://chtdvbuf0ivvt"]
 
 [ext_resource type="PackedScene" uid="uid://cv2afui5p28af" path="res://objects/modules/mint/base_rooms/mint_diamond_room.tscn" id="1_h2rqk"]
 [ext_resource type="PackedScene" uid="uid://direah3lbjuu5" path="res://objects/battle/battle_node/battle_node.tscn" id="2_alx7d"]
 [ext_resource type="PackedScene" uid="uid://dflwjcy6fj0av" path="res://objects/cog/cog.tscn" id="3_okjj0"]
+[ext_resource type="Resource" uid="uid://cdnhms1ktp5l3" path="res://objects/cog/presets/sellbot/rainbow_hander.tres" id="4_16xtn"]
 [ext_resource type="PackedScene" uid="uid://wpoc3xs1yy0" path="res://objects/player/player.tscn" id="4_fefq8"]
 [ext_resource type="Script" uid="uid://o2fe7ud1faj6" path="res://objects/battle/battle_resources/stats.gd" id="5_wgpvb"]
 [ext_resource type="Script" uid="uid://c8kas2j4io1jh" path="res://objects/toon/clothing/toon_bottoms.gd" id="6_sp5d7"]
@@ -214,6 +215,7 @@ transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0, 
 cogs = [NodePath("Cog")]
 
 [node name="Cog" parent="Root Scene/BattleNode2" instance=ExtResource("3_okjj0")]
+dna = ExtResource("4_16xtn")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Root Scene/BattleNode2"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.13974, 2.82789, 1.11899)

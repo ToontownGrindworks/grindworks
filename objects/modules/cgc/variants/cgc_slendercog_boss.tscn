@@ -111,9 +111,9 @@ func someone_died(who : Node3D, manager : BattleManager) -> void:
 	action.should_increase = during_round
 	
 	# Let's decrease static a bit
-	if alpha >= 0.2:
+	if alpha >= 0.1:
 		var tween := create_tween()
-		tween.tween_method(tv_static.set_alpha, alpha, alpha - 0.2, 2.0)
+		tween.tween_method(tv_static.set_alpha, alpha, alpha - 0.1, 2.0)
 		tween.finished.connect(tween.kill)
 
 func on_battle_ended() -> void:

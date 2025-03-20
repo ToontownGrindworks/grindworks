@@ -2,16 +2,19 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://0vjqjtxk5jji"
-path="res://.godot/imported/organic_gags.png-9e1b0f0181af373357c53b86a4493496.ctex"
+uid="uid://0md7vdsufcf6"
+path="res://.godot/imported/movershaker_movershaker.png-0b68bc16e56a7048340e3d33f17d1a81.ctex"
 metadata={
 "vram_texture": false
+}
+generator_parameters={
+"md5": "39068ab2e34a893684bda251bc8f0e63"
 }
 
 [deps]
 
-source_file="res://ui_assets/player_ui/pause/organic_gags.png"
-dest_files=["res://.godot/imported/organic_gags.png-9e1b0f0181af373357c53b86a4493496.ctex"]
+source_file="res://models/cogs/heads/movershaker_movershaker.png"
+dest_files=["res://.godot/imported/movershaker_movershaker.png-0b68bc16e56a7048340e3d33f17d1a81.ctex"]
 
 [params]
 
@@ -30,5 +33,5 @@ process/premult_alpha=false
 process/normal_map_invert_y=false
 process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
-process/size_limit=128
+process/size_limit=0
 detect_3d/compress_to=0

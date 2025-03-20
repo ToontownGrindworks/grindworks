@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="ReleaseNote" load_steps=2 format=3 uid="uid://bqorwqusrfwa7"]
+
+[ext_resource type="Script" uid="uid://d1j0hh6tsgy0r" path="res://scenes/title_screen/release_notes/release_note.gd" id="1_or0hp"]
+
+[resource]
+script = ExtResource("1_or0hp")
+release_version = "v1.0.4"
+notes = "[TITLE]Proxy Cogs
+A new proxy Cog has appeared in Cog HQ
+[TITLE]Bosses
+Reduced the amount of static decreased by defeating Slendercog
+[TITLE]Tweaks
+Added new heads for Downsizer/ Bean Counter & Bloodsucker / Mover & Shaker
+Added some fun new textures to the Cog Creator
+Adjusted the size of the Organic Gags anomaly icon
+Increased the time allotted for the 6x6 mole stomp game in the Cog Golf Course
+[TITLE]Bugfixes
+Fixed elevator scene showing a blank tip
+Fixed Custom Cog Head scaling
+Fixed Union Buster's Patches not being present in previous patch notes
+Fixed Union Buster's Contract Limit Boost applying a damage down instead of a damage up
+Fixed a Crash that occurred when a custom Cog included external suit textures
+Fixed a potential softlock in the Sound gag movie
+Fixed a camera angle mishap in the Slendercog Boss fight"

@@ -16,7 +16,7 @@ warnings/check_angle_interpolation_type_conflicting=false
 [application]
 
 config/name="Toontown: The Grindworks"
-config/version="1.0.3"
+config/version="1.0.4"
 run/main_scene="res://scenes/title_screen/title_screen.tscn"
 config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="res://ui_assets/general/logo_eyes.png"

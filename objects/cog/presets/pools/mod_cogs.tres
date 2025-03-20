@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="CogPool" load_steps=27 format=3 uid="uid://bmj3cbv7sk3jj"]
+[gd_resource type="Resource" script_class="CogPool" load_steps=28 format=3 uid="uid://bmj3cbv7sk3jj"]
 
 [ext_resource type="Script" uid="uid://okjbx502s3r5" path="res://objects/cog/cogdna.gd" id="1_lsh24"]
 [ext_resource type="Script" uid="uid://ocitcstc3bru" path="res://objects/cog/cog_pool.gd" id="2_7nern"]
@@ -26,7 +26,8 @@
 [ext_resource type="Resource" uid="uid://crfps8y3g8jav" path="res://objects/cog/presets/bossbot/kiss_up.tres" id="23_eauh4"]
 [ext_resource type="Resource" uid="uid://vb0alxh52g8q" path="res://objects/cog/presets/bossbot/blowhard.tres" id="24_p8bl3"]
 [ext_resource type="Resource" uid="uid://d0fkce5etr6u5" path="res://objects/cog/presets/cashbot/cheapskate.tres" id="25_7uxyh"]
+[ext_resource type="Resource" uid="uid://cdnhms1ktp5l3" path="res://objects/cog/presets/sellbot/rainbow_hander.tres" id="26_mx56t"]
 
 [resource]
 script = ExtResource("2_7nern")
-cogs = Array[ExtResource("1_lsh24")]([ExtResource("2_qrj4r"), ExtResource("3_l57fc"), ExtResource("4_odnjs"), ExtResource("5_3ek2m"), ExtResource("6_bxs0h"), ExtResource("7_dq1c7"), ExtResource("8_qnfbc"), ExtResource("9_cmuvu"), ExtResource("10_ogwuy"), ExtResource("11_ymbqm"), ExtResource("12_3uo0b"), ExtResource("13_ewe0g"), ExtResource("14_qr3it"), ExtResource("15_uo5q3"), ExtResource("16_oe4d7"), ExtResource("17_y5diu"), ExtResource("18_dp360"), ExtResource("18_h1xy3"), ExtResource("20_mm6hb"), ExtResource("21_4q70o"), ExtResource("22_5ub6f"), ExtResource("23_eauh4"), ExtResource("24_p8bl3"), ExtResource("25_7uxyh")])
+cogs = Array[ExtResource("1_lsh24")]([ExtResource("2_qrj4r"), ExtResource("3_l57fc"), ExtResource("4_odnjs"), ExtResource("5_3ek2m"), ExtResource("6_bxs0h"), ExtResource("7_dq1c7"), ExtResource("8_qnfbc"), ExtResource("9_cmuvu"), ExtResource("10_ogwuy"), ExtResource("11_ymbqm"), ExtResource("12_3uo0b"), ExtResource("13_ewe0g"), ExtResource("14_qr3it"), ExtResource("15_uo5q3"), ExtResource("16_oe4d7"), ExtResource("17_y5diu"), ExtResource("18_dp360"), ExtResource("18_h1xy3"), ExtResource("20_mm6hb"), ExtResource("21_4q70o"), ExtResource("22_5ub6f"), ExtResource("23_eauh4"), ExtResource("24_p8bl3"), ExtResource("25_7uxyh"), ExtResource("26_mx56t")])

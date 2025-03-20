@@ -79,9 +79,12 @@ func set_dna(dna: CogDNA):
 	leg_tex = load("res://models/cogs/textures/" + dept + "/leg.png")
 	
 	# Allow for custom textures
-	if dna.custom_arm_tex: sleeve_tex = dna.custom_arm_tex
-	if dna.custom_blazer_tex: torso_tex = dna.custom_blazer_tex
-	if dna.custom_leg_tex: leg_tex = dna.custom_leg_tex
+	if get_custom_texture(dna, 'custom_arm_tex'):
+		sleeve_tex = get_custom_texture(dna, 'custom_arm_tex')
+	if get_custom_texture(dna, 'custom_blazer_tex'):
+		torso_tex = get_custom_texture(dna, 'custom_blazer_tex')
+	if get_custom_texture(dna, 'custom_leg_tex'):
+		leg_tex = get_custom_texture(dna, 'custom_leg_tex')
 	
 	# Get the current working materials
 	var torso_mat = torso.mesh.surface_get_material(0).duplicate()
@@ -107,7 +110,8 @@ func set_dna(dna: CogDNA):
 	# Add head mats to the override mats for color
 	if head:
 		for i in head.mesh.get_surface_count():
-			override_mats.append(head.get_surface_override_material(i))
+			if head.get_surface_override_material(i) is StandardMaterial3D:
+				override_mats.append(head.get_surface_override_material(i))
 		head.material_overlay = color_overlay_mat
 	elif head_pieces:
 		for head_piece: MeshInstance3D in head_pieces:
@@ -159,3 +163,14 @@ func flash_instant(color: Color, time: float = 0.2, strength: float = 0.7) -> vo
 func flash(color: Color, time: float = 0.2, strength: float = 0.7) -> void:
 	if color_overlay_mat:
 		color_overlay_mat.flash(self, color, time, strength)
+
+static func get_custom_texture(dna : CogDNA, value : StringName) -> Texture2D:
+	if not value in dna:
+		return null
+	var tex : Texture2D = dna.get(value)
+	
+	if not tex:
+		if dna.external_assets.has(value):
+			if dna.external_assets.get(value) is String:
+				tex = ImageTexture.create_from_image(Image.load_from_file(dna.external_assets.get(value)))
+	return tex
