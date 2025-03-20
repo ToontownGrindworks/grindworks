@@ -96,7 +96,7 @@ func action():
 		await manager.sleep(1.0)
 	
 	if user.get_animation() == 'shout':
-		await manager.barrier(user.animator.animation_finished, 4.0)
+		await user.animator.animation_finished
 	
 	megaphone.queue_free()
 

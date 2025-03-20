@@ -67,7 +67,5 @@ Enjoy!
 ### Special Thanks
 - Goatcanon
 - Greetings
-- Just a BLU Toon
-- Niji
 - Princess Sandy
 - You! Yes, really.
