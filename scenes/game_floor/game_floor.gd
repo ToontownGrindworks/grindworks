@@ -46,6 +46,7 @@ func _ready() -> void:
 	if room_count % 2 == 0:
 		room_count += 1
 	Util.floor_number += 1
+	DiscordManager.update_presence()
 	generate_floor()
 	if SaveFileService.run_file:
 		SaveFileService.run_file.floor_choice = null
